@@ -1,0 +1,12 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass rtBoolean
+            : HV4DT.HV4DTPROVIDER
+    {
+        rtBoolean();
+
+
+    }
+
+}

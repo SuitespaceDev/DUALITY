@@ -1,0 +1,14 @@
+namespace HV4DCFG
+{
+    [default_interface]
+    runtimeclass HV4DDOCENTRY 
+        : HV4D.HV4DCONTRACT.IHV4DSYSFILE,
+          HV4D.HV4DCONTRACT.IHV4DDOC,
+          HV4D.HV4DCONTRACT.IHV4DRTCDESCS,
+          HV4D.HV4DCONTRACT.IHV4DXML
+    {
+        HV4DDOCENTRY();
+
+    }
+
+}

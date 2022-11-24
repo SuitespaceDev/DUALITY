@@ -1,0 +1,10 @@
+namespace THV4D
+{
+    [default_interface]
+    runtimeclass RTHV4DAPPLICATION
+    {
+        RTHV4DAPPLICATION();
+
+    }
+
+}

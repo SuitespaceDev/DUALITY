@@ -1,0 +1,20 @@
+namespace HV4DCONTRACT
+{
+    [uuid("8B798CC7-005A-4B82-9F29-DC86714B7825")]
+    [version(0x10000001)]
+    interface IAsync
+    {
+
+
+    };
+
+    [default_interface]
+    runtimeclass HV4DASYNC
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DASYNC();
+
+
+    }
+
+}

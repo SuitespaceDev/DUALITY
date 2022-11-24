@@ -1,0 +1,10 @@
+namespace HV4DCACHE
+{
+    [default_interface]
+    runtimeclass RTHV4DCACHE : HV4D.HV4DSYS.IHV4DCACHE
+    {
+        RTHV4DCACHE();
+
+    }
+
+}

@@ -1,0 +1,12 @@
+namespace HV4DCONTRACT
+{
+    [default_interface]
+    runtimeclass HV4DSERVICE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSERVICE();
+
+
+    }
+
+}

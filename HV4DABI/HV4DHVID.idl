@@ -1,0 +1,37 @@
+namespace HV4DABI
+{
+	struct HVID {
+		String a;
+		String b;
+		String c;
+		String d;
+		String e;
+	};
+
+    [default_interface]
+    runtimeclass HV4DHVID
+		: HV4DT.IHV4DTPROVIDER
+    {
+        HV4DHVID();
+    
+		HV4D.HV4DRETURN HV4DFromHstring(String hvid);
+
+		HV4D.HV4DRETURN HV4DFromABI(HVID hvid);
+
+		HV4D.HV4DRETURN HV4DFromWinRT(HV4DHVID hvid);
+
+		HV4D.HV4DRETURN HV4DToHstring(out String hvid);
+
+		HV4D.HV4DRETURN HV4DToABI(out HVID hvid);
+
+		HV4D.HV4DRETURN HV4DToWinRT(out HV4DHVID hvid);
+
+		HV4D.HV4DRETURN HV4DIsEqualHstring(String hvid);
+
+		HV4D.HV4DRETURN HV4DIsEqualABI(HVID hvid);
+
+		HV4D.HV4DRETURN HV4DIsEqualWinRT(HV4DHVID hvid);
+
+    }
+
+}

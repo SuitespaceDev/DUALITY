@@ -1,0 +1,10 @@
+namespace Duality23
+{
+    [default_interface]
+    runtimeclass PostgreSQLDBAccountUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        PostgreSQLDBAccountUserPage();
+
+    }
+
+}

@@ -1,0 +1,11 @@
+namespace HV4DBINDINGS
+{
+    [default_interface]
+    runtimeclass HV4DTSERVICE
+        : HV4DT.IHV4DTNODE
+    {
+        HV4DTSERVICE();
+
+    }
+
+}

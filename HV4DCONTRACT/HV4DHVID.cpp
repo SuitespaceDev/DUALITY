@@ -1,0 +1,83 @@
+﻿#include "pch.h"
+#include "HV4DHVID.h"
+#if __has_include("HV4DHVID.g.cpp")
+#include "HV4DHVID.g.cpp"
+#endif
+
+using namespace winrt;
+
+using namespace winrt::HV4D;
+
+namespace winrt::HV4DABI::implementation
+{
+	HV4DHVID::HV4DHVID()
+	{
+
+		return;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DFromHstring(hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DFromABI(HVID const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DFromWinRT(winrt::HV4DABI::HV4DHVID const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DToHstring(hstring&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DToABI(HVID&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DToWinRT(winrt::HV4DABI::HV4DHVID)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DIsEqualHstring(hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DIsEqualABI(HVID const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHVID::HV4DIsEqualWinRT(winrt::HV4DABI::HV4DHVID const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+}

@@ -1,0 +1,94 @@
+
+	void RecentProject::HV4DPopulateRecent()
+	{
+		std::vector<const CHV4DINDEX* const>* IndexedProjects{ nullptr };
+
+		HV4DGetIndexedProjects(IndexedProjects);
+
+		CHV4DINDEX Project{};
+
+		HV4D_INDEX_DESC WinrtProjectIndex{};
+
+		Project = *IndexedProjects->at(0);
+
+		if (Project.HV4DGetWinrtIndex(WinrtProjectIndex) != HV4DRETURN::HV4D_OPERATION_SUCCEEDED)
+		{
+			HV4DThrowInvalidProject();
+
+		}
+
+		RecentProjectButton001().Opacity(1.0f);
+		RecentProjectName001().Text(WinrtProjectIndex.project_name.mp);
+		RecentProjectDate001().Text(
+			WinrtProjectIndex.saved_mmddyyyy.mm + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.dd + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.yyyy);
+		RecentProjectLocation001().Text(WinrtProjectIndex.project_file.p);
+
+		Project = *IndexedProjects->at(1);
+
+		if (Project.HV4DGetWinrtIndex(WinrtProjectIndex) != HV4DRETURN::HV4D_OPERATION_SUCCEEDED)
+		{
+			HV4DThrowInvalidProject();
+
+		}
+
+		RecentProjectButton002().Opacity(1.0f);
+		RecentProjectName002().Text(WinrtProjectIndex.project_name.mp);
+		RecentProjectDate002().Text(
+			WinrtProjectIndex.saved_mmddyyyy.mm + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.dd + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.yyyy);
+		RecentProjectLocation002().Text(WinrtProjectIndex.project_file.p);
+
+		Project = *IndexedProjects->at(2);
+
+		if (Project.HV4DGetWinrtIndex(WinrtProjectIndex) != HV4DRETURN::HV4D_OPERATION_SUCCEEDED)
+		{
+			HV4DThrowInvalidProject();
+
+		}
+
+		RecentProjectButton003().Opacity(1.0f);
+		RecentProjectName003().Text(WinrtProjectIndex.project_name.mp);
+		RecentProjectDate003().Text(
+			WinrtProjectIndex.saved_mmddyyyy.mm + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.dd + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.yyyy);
+		RecentProjectLocation003().Text(WinrtProjectIndex.project_file.p);
+
+		Project = *IndexedProjects->at(3);
+
+		if (Project.HV4DGetWinrtIndex(WinrtProjectIndex) != HV4DRETURN::HV4D_OPERATION_SUCCEEDED)
+		{
+			HV4DThrowInvalidProject();
+
+		}
+
+		RecentProjectButton004().Opacity(1.0f);
+		RecentProjectName004().Text(WinrtProjectIndex.project_name.mp);
+		RecentProjectDate004().Text(
+			WinrtProjectIndex.saved_mmddyyyy.mm + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.dd + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.yyyy);
+		RecentProjectLocation004().Text(WinrtProjectIndex.project_file.p);
+
+		Project = *IndexedProjects->at(4);
+
+		if (Project.HV4DGetWinrtIndex(WinrtProjectIndex) != HV4DRETURN::HV4D_OPERATION_SUCCEEDED)
+		{
+			HV4DThrowInvalidProject();
+
+		}
+
+		RecentProjectButton005().Opacity(1.0f);
+		RecentProjectName005().Text(WinrtProjectIndex.project_name.mp);
+		RecentProjectDate005().Text(
+			WinrtProjectIndex.saved_mmddyyyy.mm + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.dd + L"/" +
+			WinrtProjectIndex.saved_mmddyyyy.yyyy);
+		RecentProjectLocation005().Text(WinrtProjectIndex.project_file.p);
+
+		return;
+
+	}

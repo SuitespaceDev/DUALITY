@@ -1,0 +1,38 @@
+namespace HV4DABI
+{
+	[uuid(4C1D5F78-2464-4198-A978-3683434838BD)]
+	[version(0x10000001)]
+	interface IPipeline : IInspectable
+	{
+		HV4D.HV4DRETURN HV4DInitialize(Object e);
+
+		HV4D.HV4DRETURN HV4DNewQueue();
+
+		HV4D.HV4DRETURN HV4DInitializeGPU();
+
+		HV4D.HV4DRETURN HV4DNewRTV();
+
+		HV4D.HV4DRETURN HV4DNewShader();
+
+		HV4D.HV4DRETURN HV4DLoadInputBuffer();
+
+		HV4D.HV4DRETURN HV4DBindPipeline();
+
+		HV4D.HV4DRETURN HV4DUpdate();
+
+		HV4D.HV4DRETURN HV4DRender();
+
+		HV4D.HV4DRETURN HV4DDestroy();
+
+	};
+
+    [default_interface]
+    runtimeclass HV4DPIPELINE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DPIPELINE();
+
+
+    }
+
+}

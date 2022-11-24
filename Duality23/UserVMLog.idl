@@ -1,0 +1,10 @@
+namespace Duality23
+{
+    [default_interface]
+    runtimeclass UserVMLog : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserVMLog();
+
+    }
+
+}

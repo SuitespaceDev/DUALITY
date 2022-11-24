@@ -1,0 +1,43 @@
+namespace Duality23
+{
+	[bindable]
+	[default_interface]
+	runtimeclass UserVMContact : Microsoft.UI.Xaml.Controls.UserControl
+	{
+		UserVMContact();
+
+	    String LabelUserName;
+
+	    String ValueUserName;
+
+	    String LabelAddressOne;
+
+	    String ValueAddressOne;
+
+	    String LabelAddressTwo;
+
+		String ValueAddressTwo;
+
+		String LabelCity;
+
+	    String ValueCity;
+
+	    String LabelRegion;
+
+	    String ValueRegion;
+
+	    String LabelEMail;
+
+		String ValueEMail;
+
+		String LabelPrimaryPhone;
+
+		String ValuePrimaryPhone;
+
+		String LabelSecondaryPhone;
+
+		String ValueSecondaryPhone;
+
+	}
+
+}

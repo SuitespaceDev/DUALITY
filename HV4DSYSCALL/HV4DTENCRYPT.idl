@@ -1,0 +1,12 @@
+namespace HV4DSYSCALL
+{
+    [default_interface]
+    runtimeclass HV4DTENCRYPT
+          : HV4DT.IHV4DTNODE,
+            HV4DT.IHV4DTPROVIDER
+    {
+        HV4DTENCRYPT();
+
+    }
+
+}

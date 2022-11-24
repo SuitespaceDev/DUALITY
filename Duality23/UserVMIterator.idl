@@ -1,0 +1,11 @@
+namespace Duality23
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserVMIterator : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserVMIterator();
+
+    }
+
+}

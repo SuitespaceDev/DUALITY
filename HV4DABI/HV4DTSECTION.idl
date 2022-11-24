@@ -1,0 +1,11 @@
+namespace HV4DABI
+{
+    [default_interface]
+    runtimeclass HV4DTSECTION
+        : HV4DT.IHV4DTNODE
+    {
+        HV4DTSECTION();
+
+    }
+
+}

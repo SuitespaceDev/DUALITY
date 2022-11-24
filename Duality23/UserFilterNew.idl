@@ -1,0 +1,17 @@
+namespace Duality23
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserFilterNew : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterNew();
+    
+        String Label;
+
+        String Value;
+
+        event Windows.Foundation.EventHandler<String> FilterChanged;
+
+    }
+
+}

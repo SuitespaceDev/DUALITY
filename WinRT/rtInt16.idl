@@ -1,0 +1,12 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass rtInt16
+            : HV4DT.HV4DTPROVIDER
+    {
+        rtInt16();
+
+
+    }
+
+}

@@ -1,0 +1,12 @@
+namespace HV4DABI
+{
+    [default_interface]
+    runtimeclass HV4DWORLD
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DWORLD();
+
+
+    }
+
+}

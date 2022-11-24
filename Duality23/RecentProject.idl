@@ -1,0 +1,10 @@
+namespace Duality23
+{
+    [default_interface]
+    runtimeclass RecentProject : Microsoft.UI.Xaml.Controls.Page
+    {
+        RecentProject();
+
+    }
+
+}

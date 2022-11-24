@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Midl Include="Duality.idl">
+      <Filter>2. Application\a. Main</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>1. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>1. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Landing.cpp">
+      <Filter>2. Application\c. Landing</Filter>
+    </ClCompile>
+    <ClCompile Include="Machine.cpp">
+      <Filter>2. Application\d. Machine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="1. Project">
+      <UniqueIdentifier>{03199cb7-9783-49f1-b231-11ec97143177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application">
+      <UniqueIdentifier>{a1f9921a-bcf3-4abc-b99f-fde46be750e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\a. Main">
+      <UniqueIdentifier>{2a9524bd-fbc5-45bf-9c5d-88f2ee9a9bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\b. Window">
+      <UniqueIdentifier>{db35c2da-37ef-48f2-a0a6-1e75fc1ed907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\d. Machine">
+      <UniqueIdentifier>{8fab1ebe-4f28-4ecb-a5b8-f40ff534f55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\c. Landing">
+      <UniqueIdentifier>{5dc30a20-d423-43e6-831f-d6751d021851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\e. Diagnostics">
+      <UniqueIdentifier>{83b1219a-9d96-4fc1-a394-07d5cf7308d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Model">
+      <UniqueIdentifier>{b2a02505-9105-4cda-be2a-80773946f274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. View">
+      <UniqueIdentifier>{2c0ab878-c742-423c-9e8a-b5fa8ed57156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7. View Model">
+      <UniqueIdentifier>{68d654ae-bd2e-406e-b0d9-52d9e8b235af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="8. Pages">
+      <UniqueIdentifier>{a4838f0f-36e1-45ea-ad20-6b28bb2e8dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Application\f. Operational">
+      <UniqueIdentifier>{4e14c935-c09b-47d6-87ff-1141977700ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest">
+      <Filter>1. Project</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>1. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>1. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>1. Project</Filter>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Duality.xaml">
+      <Filter>2. Application\a. Main</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="RootUI.xaml">
+      <Filter>2. Application\b. Window</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>1. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

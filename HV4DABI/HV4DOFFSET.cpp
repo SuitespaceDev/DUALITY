@@ -1,0 +1,104 @@
+﻿#include "pch.h"
+#include "HV4DOFFSET.h"
+#if __has_include("HV4DOFFSET.g.cpp")
+#include "HV4DOFFSET.g.cpp"
+#endif
+
+using namespace winrt;
+
+using namespace winrt::HV4D;
+
+namespace winrt::HV4DABI::implementation
+{
+	HV4DOFFSET::HV4DOFFSET()
+	{
+
+		return;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DFromUInt64(uint64_t const&, uint64_t const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DFromHstring(hstring const&, hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DFromABI(OFFSET const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DFromWinRT(winrt::HV4DABI::HV4DOFFSET const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DToUInt64(uint64_t&, uint64_t&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DToHstring(hstring&, hstring&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DToABI(OFFSET&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DToWinRT(winrt::HV4DABI::HV4DOFFSET)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DIsEqualUInt64(uint64_t const&, uint64_t const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DIsEqualHstring(hstring const&, hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DIsEqualABI(OFFSET const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DOFFSET::HV4DIsEqualWinRT(winrt::HV4DABI::HV4DOFFSET const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+}

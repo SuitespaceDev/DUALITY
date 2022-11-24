@@ -1,0 +1,35 @@
+import "HV4D.idl";
+
+namespace HV4D.HV4DWINRT
+{
+	enum HV4D_SYSTEM_FILE_FIELD_ID {
+		HV4D_GUID			= 0,
+		HV4D_MMM			= 1,
+		HV4D_MMDDYYYY		= 2,
+		HV4D_HHMMSS			= 3,
+		HV4D_NAME			= 4,
+		HV4D_PATH			= 5,
+		HV4D_FILE			= 6,
+		HV4D_OFFSET			= 7,
+		HV4D_SIZE			= 8,
+		HV4D_FILEOFFSET		= 9,
+		HV4D_FILESIZE		= 10
+	};
+
+	struct HV4D_SYSTEM_FILE_DESC {
+		HV4D.HV4DHVID	        hvid;
+		HV4D.HV4DMMM             mmm;
+		HV4D.HV4DMMDDYYYY	mmddyyyy;
+		HV4D.HV4DHHMMSS	      hhmmss;
+		HV4D.HV4DMAXPATH		name;
+		HV4D.HV4DABS			file;
+		HV4D.HV4DOFFSET		  offset;
+		HV4D.HV4DOFFSET		 fileoff;
+	};
+
+	struct HV4D_ENUMERATED_SYSTEM_FILE_FIELD {
+		HV4D_SYSTEM_FILE_FIELD_ID enumid;
+		String field;
+	};
+
+}

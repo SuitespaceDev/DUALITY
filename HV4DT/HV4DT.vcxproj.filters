@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{b83cced1-d5e0-4253-aefd-249ce6ca1f3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. IHV4DTUNKNOWN">
+      <UniqueIdentifier>{6115d477-74ca-4bd7-bc8e-6c6ac4e59535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. IHV4DTNODE">
+      <UniqueIdentifier>{32bf4809-c14e-4853-9847-112becadd7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. IHV4DTTABLE">
+      <UniqueIdentifier>{e4a5ee89-91fc-4f91-9864-15580705f40e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="14. IHV4DTEVENT">
+      <UniqueIdentifier>{9b6f4ead-294f-4354-a78b-68ba9c91ecd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="12. IHV4DTPARAMETER">
+      <UniqueIdentifier>{d3eab846-94d6-4387-a936-6006ac2e698a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11. IHV4DTFUNCTION">
+      <UniqueIdentifier>{a785d587-e46e-429c-8cc3-e93947661580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10. IHV4DTCONTRACT">
+      <UniqueIdentifier>{7fdd041b-54d4-40e5-9be2-d31673e8af88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. IHV4DPROPPAGE">
+      <UniqueIdentifier>{65f389f9-ef34-47a3-a28a-b162336d33a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="8. IHV4DTPROVIDER">
+      <UniqueIdentifier>{03c3f142-18d9-4204-95eb-f5c71adc3f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7. IHV4DTSERVICE">
+      <UniqueIdentifier>{94fa93e3-2f62-447f-8769-50bd94a4ac56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. IHV4DTPROCESS">
+      <UniqueIdentifier>{f84744f0-0f58-4433-96a6-56822eadefc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. IHV4DTLIBRARY">
+      <UniqueIdentifier>{fb36a461-a46b-49c6-ab9d-9cf9b89395a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. IHV4DTINDEX">
+      <UniqueIdentifier>{fe253598-c246-44b9-b903-1b3d8072155a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="13. IHV4DTITERATOR">
+      <UniqueIdentifier>{f9ed8eaf-fef6-4b8a-b4bb-6b8bf0616fd2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IHV4DTCONTRACT.idl">
+      <Filter>10. IHV4DTCONTRACT</Filter>
+    </Midl>
+    <Midl Include="IHV4DTEVENT.idl">
+      <Filter>14. IHV4DTEVENT</Filter>
+    </Midl>
+    <Midl Include="IHV4DTFUNCTION.idl">
+      <Filter>11. IHV4DTFUNCTION</Filter>
+    </Midl>
+    <Midl Include="IHV4DTINDEX.idl">
+      <Filter>4. IHV4DTINDEX</Filter>
+    </Midl>
+    <Midl Include="IHV4DTITERATE.idl">
+      <Filter>13. IHV4DTITERATOR</Filter>
+    </Midl>
+    <Midl Include="IHV4DTLIBRARY.idl">
+      <Filter>5. IHV4DTLIBRARY</Filter>
+    </Midl>
+    <Midl Include="IHV4DTNODE.idl">
+      <Filter>2. IHV4DTNODE</Filter>
+    </Midl>
+    <Midl Include="IHV4DTPARAMETER.idl">
+      <Filter>12. IHV4DTPARAMETER</Filter>
+    </Midl>
+    <Midl Include="IHV4DTPROCESS.idl">
+      <Filter>6. IHV4DTPROCESS</Filter>
+    </Midl>
+    <Midl Include="IHV4DTPROVIDER.idl">
+      <Filter>8. IHV4DTPROVIDER</Filter>
+    </Midl>
+    <Midl Include="IHV4DTSERVICE.idl">
+      <Filter>7. IHV4DTSERVICE</Filter>
+    </Midl>
+    <Midl Include="IHV4DTTABLE.idl">
+      <Filter>3. IHV4DTTABLE</Filter>
+    </Midl>
+    <Midl Include="IHV4DTUNKNOWN.idl">
+      <Filter>1. IHV4DTUNKNOWN</Filter>
+    </Midl>
+    <Midl Include="IHV4DPROPPAGE.idl">
+      <Filter>9. IHV4DPROPPAGE</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

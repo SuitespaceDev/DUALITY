@@ -1,0 +1,17 @@
+namespace Duality23
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserFile : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFile();
+
+        String Label;
+
+        String Value;
+
+        String Placeholder;
+
+    }
+
+}

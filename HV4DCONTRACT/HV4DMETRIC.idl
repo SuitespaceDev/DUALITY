@@ -1,0 +1,21 @@
+namespace HV4DCONTRACT
+{
+	[uuid("777DEFD5-3662-4348-84EF-FD8AF1B0E657")]
+	[version(0x10000001)]
+	interface IMetric
+	{
+		 HV4D.HV4DRETURN HV4DLoadMetaDataFromFile();
+
+	};
+
+
+    [default_interface]
+    runtimeclass HV4DMETRIC
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DMETRIC();
+
+
+    }
+
+}

@@ -1,0 +1,12 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass rtSingle
+            : HV4DT.HV4DTPROVIDER
+    {
+        rtSingle();
+
+
+    }
+
+}

@@ -1,0 +1,164 @@
+﻿<Page
+    x:Class="Duality23.KernelUserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality23"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Duality23Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ScrollViewer Padding="24,24,24,24">
+
+        <StackPanel>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="QUERY MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="QUERY MODULE MMM"/>
+            <local:UserCombo Label="QUERY MODULE NAME"/>
+            <local:UserBlock Label="QUERY MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="QUERY MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="QUERY MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="QUERY MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="QUERY MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="QUERY MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="BIND MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="BIND MODULE MMM"/>
+            <local:UserCombo Label="BIND MODULE NAME"/>
+            <local:UserBlock Label="BIND MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="BIND MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="BIND MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="BIND MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="BIND MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="BIND MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="TREE MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="TREE MODULE MMM"/>
+            <local:UserCombo Label="TREE MODULE NAME"/>
+            <local:UserBlock Label="TREE MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="TREE MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="TREE MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="TREE MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="TREE MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="TREE MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="STREAM MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="STREAM MODULE MMM"/>
+            <local:UserCombo Label="STREAM MODULE NAME"/>
+            <local:UserBlock Label="STREAM MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="STREAM MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="STREAM MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="STREAM MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="STREAM MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="STREAM MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="DEBUG MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="DEBUG MODULE MMM"/>
+            <local:UserCombo Label="DEBUG MODULE NAME"/>
+            <local:UserBlock Label="DEBUG MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="DEBUG MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="DEBUG MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="DEBUG MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="DEBUG MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="DEBUG MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <local:UserBlock Label="METRIC MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
+            <local:UserCombo Label="METRIC MODULE MMM"/>
+            <local:UserCombo Label="METRIC MODULE NAME"/>
+            <local:UserBlock Label="METRIC MODULE CREATED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="METRIC MODULE CREATED TIME" Value="17:04"/>
+            <local:UserBlock Label="METRIC MODULE SAVED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="METRIC MODULE SAVED TIME" Value="17:04"/>
+            <local:UserBlock Label="METRIC MODULE OPENED DATE" Value="11/11/2022"/>
+            <local:UserBlock Label="METRIC MODULE OPENED TIME" Value="17:04"/>
+
+            <local:UserDivider/>
+
+            <Border x:Name="ProfileDescription"
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="2"
+                Grid.Column="0" Grid.ColumnSpan="4" 
+                Grid.Row="9" Grid.RowSpan="5"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Margin="3,3,3,3"
+                Padding="0,0,0,0">
+
+                <TextBox Foreground="Black"
+                         AcceptsReturn="True" 
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Stretch"  
+                         VerticalAlignment="Stretch"
+                         FontWeight="Medium"
+                         FontSize="14"
+                         Height="500"
+                         Padding="3,3,3,3"
+                         PlaceholderText="Add description here ..."
+                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+            </Border>
+
+            <Grid Height="60"
+                  Grid.Column="0" Grid.ColumnSpan="2"
+                  Grid.Row="14" VariableSizedWrapGrid.RowSpan="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Background="{StaticResource HV4DPropertyPageGrey}"
+                Content=""
+                Grid.Column="0" Grid.ColumnSpan="1"
+                Margin="3,3,3,3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"/>
+
+                <Button Background="{StaticResource HV4DPropertyPageGrey}"
+                Content="" 
+                Grid.Column="1" Grid.ColumnSpan="1"
+                Margin="3,3,3,3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"/>
+
+                <Button Background="{StaticResource HV4DPropertyPageGrey}"
+                Content="" 
+                Grid.Column="2" Grid.ColumnSpan="1"
+                Margin="3,3,3,3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"/>
+
+                <Button Background="{StaticResource HV4DPropertyPageGrey}"
+                Content="" 
+                Grid.Column="3" Grid.ColumnSpan="1"
+                Margin="3,3,3,3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"/>
+
+            </Grid>
+
+        </StackPanel>
+
+    </ScrollViewer>
+
+</Page>

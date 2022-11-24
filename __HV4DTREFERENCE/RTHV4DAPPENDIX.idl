@@ -1,0 +1,10 @@
+namespace HV4DAPPENDIX
+{
+    [default_interface]
+    runtimeclass RTHV4DAPPENDIX
+    {
+        RTHV4DAPPENDIX();
+
+    }
+
+}

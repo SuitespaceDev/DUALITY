@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props')" />
+  <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props')" />
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <PropertyGroup Label="Globals">
+    <WindowsPackageType>None</WindowsPackageType>
+    <CppWinRTOptimized>true</CppWinRTOptimized>
+    <CppWinRTRootNamespaceAutoMerge>true</CppWinRTRootNamespaceAutoMerge>
+    <MinimalCoreWin>true</MinimalCoreWin>
+    <ProjectGuid>{1729f28d-c979-402e-b640-4eb25f2f7339}</ProjectGuid>
+    <ProjectName>Duality23</ProjectName>
+    <RootNamespace>Duality23</RootNamespace>
+    <TargetName>$(RootNamespace)</TargetName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>false</AppContainerApplication>
+    <AppxPackage>false</AppxPackage>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|arm64">
+      <Configuration>Debug</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|arm64">
+      <Configuration>Release</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '16.0'">v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DesktopCompatible>true</DesktopCompatible>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_XAML_GENERATED_MAIN;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(WindowsPackageType)'!='None' and Exists('Package.appxmanifest')">
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppUserPage.xaml.h">
+      <DependentUpon>AppUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="AsyncUserPage.xaml.h">
+      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="BitmapUserPage.xaml.h">
+      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="BlankProject.xaml.h">
+      <DependentUpon>BlankProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="BuildAccountUserPage.xaml.h">
+      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="BuildMetadata.xaml.h">
+      <DependentUpon>BuildMetadata.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="BuildProfile.xaml.h">
+      <DependentUpon>BuildProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="BusUserPage.xaml.h">
+      <DependentUpon>BusUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DNewProfile.h">
+      <DependentUpon>CHV4DNewProfile.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CloudProject.xaml.h">
+      <DependentUpon>CloudProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="ComputeKernelUserPage.xaml.h">
+      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ContextMenuUserPage.xaml.h">
+      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ContractUserPage.xaml.h">
+      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ControlUserPage.xaml.h">
+      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CortexUserPage.xaml.h">
+      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="DatacenterAccountUserPage.xaml.h">
+      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="DebugUserPage.xaml.h">
+      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="Diagnostics.xaml.h">
+      <DependentUpon>Diagnostics.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="DraftSpaceUserPage.xaml.h">
+      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="Duality.xaml.h">
+      <DependentUpon>Duality.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Duality23UserPage.xaml.h">
+      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="DualityWindow.xaml.h">
+      <DependentUpon>DualityWindow.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="FunctionalUserPage.xaml.h">
+      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="GitProject.xaml.h">
+      <DependentUpon>GitProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="DriveUserPage.xaml.h">
+      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="IteratorUserPage.xaml.h">
+      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="KernelUserPage.xaml.h">
+      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ImageUserPage.xaml.h">
+      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="KeyboardUserPage.xaml.h">
+      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="LanguageUserPage.xaml.h">
+      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="MassUserPage.xaml.h">
+      <DependentUpon>MassUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="MetricUserPage.xaml.h">
+      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="MouseUserPage.xaml.h">
+      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ParameterUserPage.xaml.h">
+      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistBinaryUserPage.xaml.h">
+      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistJSONUserPage.xaml.h">
+      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistPostgreSQLUserPage.xaml.h">
+      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistQIFUserPage.xaml.h">
+      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistXAMLUserPage.xaml.h">
+      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PersistXMLUserPage.xaml.h">
+      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PipeUserPage.xaml.h">
+      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PostgreSQLDBAccountUserPage.xaml.h">
+      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ProjectAccountUserPage.xaml.h">
+      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryBinaryUserPage.xaml.h">
+      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryJSONUserPage.xaml.h">
+      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryPostgreSQLUserPage.xaml.h">
+      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryQIFUserPage.xaml.h">
+      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryXAMLUserPage.xaml.h">
+      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="QueryXMLUserPage.xaml.h">
+      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="RPCUserPage.xaml.h">
+      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="SharedMemUserPage.xaml.h">
+      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ShellUserPage.xaml.h">
+      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ThemeUserPage.xaml.h">
+      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ToolBarUserPage.xaml.h">
+      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="USBUserPage.xaml.h">
+      <DependentUpon>USBUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserBlock.xaml.h">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserCombo.xaml.h">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserDivider.xaml.h">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserEntry.xaml.h">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="OpenProject.xaml.h">
+      <DependentUpon>OpenProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Operational.xaml.h">
+      <DependentUpon>Operational.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RecentProject.xaml.h">
+      <DependentUpon>RecentProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SaveToCloud.xaml.h">
+      <DependentUpon>SaveToCloud.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SaveToGit.xaml.h">
+      <DependentUpon>SaveToGit.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SaveToPC.xaml.h">
+      <DependentUpon>SaveToPC.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="TemplateProject.xaml.h">
+      <DependentUpon>TemplateProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserMEventDebug.h">
+      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMContact.xaml.h">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMContract.xaml.h">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMDebug.xaml.h">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFile.xaml.h">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterNew.xaml.h">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserPassword.xaml.h">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterProcessID.xaml.h">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilter.xaml.h">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterTime.xaml.h">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterType.xaml.h">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMIterator.xaml.h">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMLog.xaml.h">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMMouse.xaml.h">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMParameter.xaml.h">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMTNode.xaml.h">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserVMRuntimeClass.xaml.h">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="WidgetUserPage.xaml.h">
+      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="WindowUserPage.xaml.h">
+      <DependentUpon>WindowUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserMSelectable.h">
+      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="XAMLPgUserPage.xaml.h">
+      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppUserPage.xaml.cpp">
+      <DependentUpon>AppUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="AsyncUserPage.xaml.cpp">
+      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="BitmapUserPage.xaml.cpp">
+      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="BlankProject.xaml.cpp">
+      <DependentUpon>BlankProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="BuildAccountUserPage.xaml.cpp">
+      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="BuildMetadata.xaml.cpp">
+      <DependentUpon>BuildMetadata.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="BuildProfile.xaml.cpp">
+      <DependentUpon>BuildProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="BusUserPage.xaml.cpp">
+      <DependentUpon>BusUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DNewProfile.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="CloudProject.xaml.cpp">
+      <DependentUpon>CloudProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="ComputeKernelUserPage.xaml.cpp">
+      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ContextMenuUserPage.xaml.cpp">
+      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ContractUserPage.xaml.cpp">
+      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ControlUserPage.xaml.cpp">
+      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="CortexUserPage.xaml.cpp">
+      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="DatacenterAccountUserPage.xaml.cpp">
+      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="DebugUserPage.xaml.cpp">
+      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Diagnostics.xaml.cpp">
+      <DependentUpon>Diagnostics.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="DraftSpaceUserPage.xaml.cpp">
+      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Duality.xaml.cpp">
+      <DependentUpon>Duality.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Duality23UserPage.xaml.cpp">
+      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="DualityWindow.xaml.cpp">
+      <DependentUpon>DualityWindow.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="FunctionalUserPage.xaml.cpp">
+      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="GitProject.xaml.cpp">
+      <DependentUpon>GitProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="DriveUserPage.xaml.cpp">
+      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="IteratorUserPage.xaml.cpp">
+      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="KernelUserPage.xaml.cpp">
+      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ImageUserPage.xaml.cpp">
+      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="KeyboardUserPage.xaml.cpp">
+      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="LanguageUserPage.xaml.cpp">
+      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="MassUserPage.xaml.cpp">
+      <DependentUpon>MassUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="MetricUserPage.xaml.cpp">
+      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="MouseUserPage.xaml.cpp">
+      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ParameterUserPage.xaml.cpp">
+      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistBinaryUserPage.xaml.cpp">
+      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistJSONUserPage.xaml.cpp">
+      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistPostgreSQLUserPage.xaml.cpp">
+      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistQIFUserPage.xaml.cpp">
+      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistXAMLUserPage.xaml.cpp">
+      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PersistXMLUserPage.xaml.cpp">
+      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PipeUserPage.xaml.cpp">
+      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PostgreSQLDBAccountUserPage.xaml.cpp">
+      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ProjectAccountUserPage.xaml.cpp">
+      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryBinaryUserPage.xaml.cpp">
+      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryJSONUserPage.xaml.cpp">
+      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryPostgreSQLUserPage.xaml.cpp">
+      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryQIFUserPage.xaml.cpp">
+      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryXAMLUserPage.xaml.cpp">
+      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="QueryXMLUserPage.xaml.cpp">
+      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="RPCUserPage.xaml.cpp">
+      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="SharedMemUserPage.xaml.cpp">
+      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ShellUserPage.xaml.cpp">
+      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ThemeUserPage.xaml.cpp">
+      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ToolBarUserPage.xaml.cpp">
+      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="USBUserPage.xaml.cpp">
+      <DependentUpon>USBUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserBlock.xaml.cpp">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserCombo.xaml.cpp">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserDivider.xaml.cpp">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserEntry.xaml.cpp">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="OpenProject.xaml.cpp">
+      <DependentUpon>OpenProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Operational.xaml.cpp">
+      <DependentUpon>Operational.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="RecentProject.xaml.cpp">
+      <DependentUpon>RecentProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SaveToCloud.xaml.cpp">
+      <DependentUpon>SaveToCloud.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SaveToGit.xaml.cpp">
+      <DependentUpon>SaveToGit.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SaveToPC.xaml.cpp">
+      <DependentUpon>SaveToPC.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="TemplateProject.xaml.cpp">
+      <DependentUpon>TemplateProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserMEventDebug.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMContact.xaml.cpp">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMContract.xaml.cpp">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMDebug.xaml.cpp">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFile.xaml.cpp">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterNew.xaml.cpp">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserPassword.xaml.cpp">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterProcessID.xaml.cpp">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilter.xaml.cpp">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterTime.xaml.cpp">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterType.xaml.cpp">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMIterator.xaml.cpp">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMLog.xaml.cpp">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMMouse.xaml.cpp">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMParameter.xaml.cpp">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMTNode.xaml.cpp">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserVMRuntimeClass.xaml.cpp">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="WidgetUserPage.xaml.cpp">
+      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="WindowUserPage.xaml.cpp">
+      <DependentUpon>WindowUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserMSelectable.cpp" />
+    <ClCompile Include="XAMLPgUserPage.xaml.cpp">
+      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="PropertySheet.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AppUserPage.idl">
+      <DependentUpon>AppUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="AsyncUserPage.idl">
+      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BitmapUserPage.idl">
+      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BlankProject.idl">
+      <DependentUpon>BlankProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BuildAccountUserPage.idl">
+      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BuildMetadata.idl">
+      <DependentUpon>BuildMetadata.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BuildProfile.idl">
+      <DependentUpon>BuildProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="BusUserPage.idl">
+      <DependentUpon>BusUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="CloudProject.idl">
+      <DependentUpon>CloudProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ComputeKernelUserPage.idl">
+      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ContextMenuUserPage.idl">
+      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ContractUserPage.idl">
+      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ControlUserPage.idl">
+      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="CortexUserPage.idl">
+      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DatacenterAccountUserPage.idl">
+      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DebugUserPage.idl">
+      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="Diagnostics.idl">
+      <DependentUpon>Diagnostics.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DraftSpaceUserPage.idl">
+      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="Duality.idl">
+      <DependentUpon>Duality.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="Duality23UserPage.idl">
+      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DualityWindow.idl">
+      <DependentUpon>DualityWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="FunctionalUserPage.idl">
+      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="GitProject.idl">
+      <DependentUpon>GitProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DriveUserPage.idl">
+      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IteratorUserPage.idl">
+      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="KeyboardUserPage.idl">
+      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="LanguageUserPage.idl">
+      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="MassUserPage.idl">
+      <DependentUpon>MassUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="MouseUserPage.idl">
+      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ParameterUserPage.idl">
+      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistBinaryUserPage.idl">
+      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistJSONUserPage.idl">
+      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistPostgreSQLUserPage.idl">
+      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistQIFUserPage.idl">
+      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistXAMLUserPage.idl">
+      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PersistXMLUserPage.idl">
+      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PipeUserPage.idl">
+      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryBinaryUserPage.idl">
+      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryJSONUserPage.idl">
+      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryPostgreSQLUserPage.idl">
+      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryQIFUserPage.idl">
+      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryXAMLUserPage.idl">
+      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="QueryXMLUserPage.idl">
+      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="RPCUserPage.idl">
+      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SharedMemUserPage.idl">
+      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ShellUserPage.idl">
+      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ThemeUserPage.idl">
+      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ToolBarUserPage.idl">
+      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="USBUserPage.idl">
+      <DependentUpon>USBUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserMEventDebug.idl">
+      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserMSelectable.idl">
+      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="KernelUserPage.idl">
+      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ImageUserPage.idl">
+      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="MetricUserPage.idl">
+      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PostgreSQLDBAccountUserPage.idl">
+      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ProjectAccountUserPage.idl">
+      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserBlock.idl">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserCombo.idl">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserDivider.idl">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserEntry.idl">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="OpenProject.idl">
+      <DependentUpon>OpenProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="Operational.idl">
+      <DependentUpon>Operational.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="RecentProject.idl">
+      <DependentUpon>RecentProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SaveToCloud.idl">
+      <DependentUpon>SaveToCloud.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SaveToGit.idl">
+      <DependentUpon>SaveToGit.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SaveToPC.idl">
+      <DependentUpon>SaveToPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TemplateProject.idl">
+      <DependentUpon>TemplateProject.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMContact.idl">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMContract.idl">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMDebug.idl">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFile.idl">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterNew.idl">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserPassword.idl">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterProcessID.idl">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilter.idl">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterTime.idl">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterType.idl">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMIterator.idl">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMLog.idl">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMMouse.idl">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMParameter.idl">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMTNode.idl">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserVMRuntimeClass.idl">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="WidgetUserPage.idl">
+      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="WindowUserPage.idl">
+      <DependentUpon>WindowUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="XAMLPgUserPage.idl">
+      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CreateProcess.txt" />
+    <Text Include="GUID.txt" />
+    <Text Include="LoadDll.txt" />
+    <Text Include="LoaderSettings.txt" />
+    <Text Include="PopulateRecent.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AppUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AsyncUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BitmapUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BlankProject.xaml" />
+    <Page Include="BuildAccountUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BuildMetadata.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BuildProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CloudProject.xaml" />
+    <Page Include="ComputeKernelUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ContextMenuUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ContractUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ControlUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CortexUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DatacenterAccountUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DebugUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Diagnostics.xaml" />
+    <ApplicationDefinition Include="Duality.xaml">
+      <FileType>Document</FileType>
+    </ApplicationDefinition>
+    <Page Include="DraftSpaceUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Duality23Buttons.xaml" />
+    <Page Include="Duality23Theme.xaml" />
+    <Page Include="Duality23UserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DualityWindow.xaml" />
+    <Page Include="FunctionalUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GitProject.xaml" />
+    <Page Include="DriveUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="IteratorUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KernelUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImageUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KeyboardUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LanguageUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MassUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MetricUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MouseUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParameterUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistBinaryUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistJSONUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistPostgreSQLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistQIFUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistXAMLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersistXMLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PipeUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PostgreSQLDBAccountUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProjectAccountUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryBinaryUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryJSONUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryPostgreSQLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryQIFUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryXAMLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryXMLUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RPCUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SharedMemUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ShellUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ThemeUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ToolBarUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="USBUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserCombo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserDivider.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpenProject.xaml" />
+    <Page Include="Operational.xaml" />
+    <Page Include="RecentProject.xaml" />
+    <Page Include="SaveToCloud.xaml" />
+    <Page Include="SaveToGit.xaml" />
+    <Page Include="SaveToPC.xaml" />
+    <Page Include="TemplateProject.xaml" />
+    <Page Include="UserVMContact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMContract.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMDebug.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterNew.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterProcessID.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterTime.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterType.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMIterator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMLog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMMouse.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMParameter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMTNode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserVMRuntimeClass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WidgetUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XAMLPgUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <!-- 
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if 
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
+    <Import Project="..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets'))" />
+  </Target>
+</Project>

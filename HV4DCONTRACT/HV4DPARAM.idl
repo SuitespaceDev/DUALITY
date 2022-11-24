@@ -1,0 +1,11 @@
+import "RTHV4DHVID.idl";
+import "RTHV4DMAXPATH.idl";
+
+namespace HV4DABI
+{
+	struct HV4DPARAM {
+		HV4DHVID	 hvid;
+		HV4DMAXPATH  name;
+	};
+
+}

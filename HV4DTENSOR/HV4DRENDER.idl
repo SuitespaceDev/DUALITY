@@ -1,0 +1,43 @@
+namespace HV4DABI.HV4DRENDER
+{
+	struct HV4DRESOLUTION {
+		Int32 x;
+		Int32 y;
+	};
+
+	struct HV4DAA {
+		String s;
+	};
+
+	struct HV4DMSAA {
+		String s;
+	};
+
+	struct HV4DSS {
+		Boolean b;
+	};
+
+	struct HV4DFILTER {
+		String s;
+	};
+
+	struct HV4DPXFILTER {
+		HV4DFILTER   	m;
+		Int32			x;
+		Int32			y;
+		Boolean			b;
+	};
+
+	struct HV4DGAMMA {
+		Single s;
+	};
+
+	struct HV4DNEAR {
+		Single f;
+	};
+
+	struct HV4DFAR {
+		Single f;
+	};
+
+}

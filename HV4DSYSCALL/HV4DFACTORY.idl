@@ -1,0 +1,12 @@
+namespace HV4DSYSCALL
+{
+    [default_interface]
+    runtimeclass HV4DFACTORY
+    {
+        HV4DFACTORY();
+
+        HV4D.HV4DRETURN HV4DGetActivationFactory(String dll, String rtclass, out Object factory);
+
+    }
+
+}

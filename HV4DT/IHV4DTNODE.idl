@@ -1,0 +1,27 @@
+namespace HV4DT
+{
+	[uuid(44DD2497-C5AB-40BD-8EB0-B23F8E3F2826)]
+	[version(0x10000001)]
+	interface IHV4DTNODE : IInspectable
+	{
+		HV4D.HV4DRETURN HV4DNodeSolution(out Guid guid, out String mmm, out String mp);
+
+		HV4D.HV4DRETURN HV4DNodeHVID(out HV4D.HV4DT_TYPE_ENUM t, out Guid guid, out String s);
+
+		HV4D.HV4DRETURN HV4DWasCreatedOn(out UInt64 t);
+
+		HV4D.HV4DRETURN HV4DWasSavedOn(out UInt64 t);
+
+		HV4D.HV4DRETURN HV4DWasOpenedOn(out UInt64 t);
+
+		HV4D.HV4DRETURN HV4DNodeParent(out IHV4DTNODE n);
+
+		HV4D.HV4DRETURN HV4DNodeNextSibling(out IHV4DTNODE n);
+
+		HV4D.HV4DRETURN HV4DNodePrevSibling(out IHV4DTNODE n);
+
+		HV4D.HV4DRETURN HV4DNodeChildren(out Windows.Foundation.Collections.IMap<Guid, IHV4DTNODE> o);
+
+	};
+
+}

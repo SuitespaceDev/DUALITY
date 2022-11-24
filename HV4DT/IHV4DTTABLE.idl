@@ -1,0 +1,10 @@
+namespace HV4DT
+{
+	[uuid(24671319-AC5E-4BC6-9E00-AB457C4E6585)]
+	[version(0x10000001)]
+	interface IHV4DTTABLE : IInspectable
+	{
+
+	}
+
+}

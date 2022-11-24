@@ -1,0 +1,451 @@
+
+        <Rectangle x:Name="TitleXMLQueryModule"
+                   Fill="{StaticResource XMLQueryModule}" 
+                   Width="584" Height="76"
+                   Canvas.Top="400" Canvas.Left="30"/>
+
+        <Rectangle x:Name="TitlePostrgreSQLDB" 
+                   Fill="{StaticResource PostgreSQLDB}" 
+                   Width="465" Height="74"
+                   Canvas.Top="50" Canvas.Left="900"/>
+
+        <Grid x:Name="GridPage" 
+              Canvas.Top="130" Canvas.Left="30"
+              Height="200" Width="720">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="SOLUTION_HVID" Text="SOLUTION HVID" 
+                   Grid.Column="0" 
+                   Grid.Row="0" 
+                   Foreground="{StaticResource HV4DLightPurple}"
+                   FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_HVID_PUT" Text='{}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}' 
+                 Grid.Column="1"
+                 Grid.Row="0" 
+                 Background="{StaticResource HV4DHighlightStandard}"
+                 FontWeight="Medium"
+                 FontSize="12"/>
+
+
+            <TextBlock x:Name="SOLUTION_MMM" Text="SOLUTION MMM" 
+                       Grid.Column="0"
+                       Grid.Row="2" 
+                       Foreground="{StaticResource HV4DLightPurple}"
+                       FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_MMM_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="2" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="SOLUTION_MAXPATH" Text="SOLUTION NAME" 
+                       Grid.Column="0" 
+                       Grid.Row="4" 
+                       Foreground="{StaticResource HV4DLightPurple}"
+                       FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_MAXPATH_PUT" 
+                       Grid.Column="1"
+                       Grid.Row="4" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="PAGE_HVID" Text="PAGE HVID" 
+                         Grid.Column="3" 
+                         Grid.Row="0" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_HVID_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="0" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="PAGE_MMM" Text="PAGE MMM" 
+                         Grid.Column="3" 
+                         Grid.Row="2" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_MMM_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="2" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="PAGE_MAXPATH" Text="PAGE NAME" 
+                         Grid.Column="3" 
+                         Grid.Row="4" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_MAXPATH_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="4" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="SOLUTION_CREATED_MMDDYY" Text="CREATED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="6" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_CREATED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="6" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="SOLUTION_SAVED_MMDDYY" Text="SAVED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="8" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_SAVED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="8" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="SOLUTION_OPENED_MMDDYY" Text="OPENED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="10" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="SOLUTION_OPENED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="10" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="PAGE_CREATED_HHMMSS" Text="CREATED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="6" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_CREATED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="6" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="PAGE_SAVED_HHMMSS" Text="SAVED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="8" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_SAVED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="8" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="PAGE_OPENED_HHMMSS" Text="OPENED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="10" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="PAGE_OPENED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="10" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+        </Grid>
+
+        
+        <!-- ********************************************************************************************* -->
+
+        <Canvas Canvas.Top="350" Canvas.Left="30"
+                    Height="10" Width="700">
+
+            <Line X1="25" X2="690" 
+                      Y1="5" Y2="5"                  
+                      Stroke="Black" 
+                      StrokeThickness="1"/>
+
+        </Canvas>
+
+        <!-- ********************************************************************************************* -->
+
+        <Grid x:Name="GridPostgreSQLDB" 
+              Canvas.Top="130" Canvas.Left="780"
+              Height="200" Width="720">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="POSTGRESQLDB_A_HVID" Text="SOLUTION HVID" 
+                   Grid.Column="0" 
+                   Grid.Row="0" 
+                   Foreground="{StaticResource HV4DLightPurple}"
+                   FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_A_HVID_PUT" Text='{}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}' 
+                 Grid.Column="1"
+                 Grid.Row="0" 
+                 Background="{StaticResource HV4DHighlightStandard}"
+                 FontWeight="Medium"
+                 FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_A_MMM" Text="SOLUTION MMM" 
+                       Grid.Column="0"
+                       Grid.Row="2" 
+                       Foreground="{StaticResource HV4DLightPurple}"
+                       FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_A_MMM_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="2" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_A_MAXPATH" Text="SOLUTION NAME" 
+                       Grid.Column="0" 
+                       Grid.Row="4" 
+                       Foreground="{StaticResource HV4DLightPurple}"
+                       FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_A_MAXPATH_PUT" 
+                       Grid.Column="1"
+                       Grid.Row="4" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_HVID" Text="PAGE HVID" 
+                         Grid.Column="3" 
+                         Grid.Row="0" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_HVID_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="0" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_MMM" Text="PAGE MMM" 
+                         Grid.Column="3" 
+                         Grid.Row="2" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_MMM_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="2" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_MAXPATH" Text="PAGE NAME" 
+                         Grid.Column="3" 
+                         Grid.Row="4" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_MAXPATH_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="4" 
+                       Background="{StaticResource HV4DLightPurple}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_CREATED_MMDDYY" Text="CREATED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="6" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_CREATED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="6" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_SAVED_MMDDYY" Text="SAVED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="8" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_SAVED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="8" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_OPENED_MMDDYY" Text="OPENED DATE" 
+                         Grid.Column="0" 
+                         Grid.Row="10" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_OPENED_MMDDYY_PUT" 
+                       Grid.Column="1" 
+                       Grid.Row="10" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <!-- ********************************************************************************************* -->
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_CREATED_HHMMSS" Text="CREATED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="6" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_CREATED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="6" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_SAVED_HHMMSS" Text="SAVED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="8" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_SAVED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="8" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+            <TextBlock x:Name="POSTGRESQLDB_B_OPENED_HHMMSS" Text="OPENED TIME" 
+                         Grid.Column="3" 
+                         Grid.Row="10" 
+                         Foreground="{StaticResource HV4DLightPurple}"
+                         FontSize="12"/>
+
+            <TextBox x:Name="POSTGRESQLDB_B_OPENED_HHMMSS_PUT" 
+                       Grid.Column="4" 
+                       Grid.Row="10" 
+                       Background="{StaticResource HV4DHighlightStandard}"
+                       FontWeight="Medium"
+                       FontSize="12"/>
+
+
+        </Grid>
+
+        
+        <!-- ********************************************************************************************* -->
+
+
+        <Canvas Canvas.Top="350" Canvas.Left="800"
+                    Height="10" Width="700">
+
+            <Line X1="25" X2="690" 
+                      Y1="5" Y2="5"                  
+                      Stroke="Black" 
+                      StrokeThickness="1"/>
+
+        </Canvas>
+
+        
+        <!-- ********************************************************************************************* -->
+

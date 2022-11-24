@@ -1,0 +1,10 @@
+namespace Duality23
+{
+    [default_interface]
+    runtimeclass QueryQIFUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        QueryQIFUserPage();
+
+    }
+
+}

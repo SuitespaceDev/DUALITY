@@ -1,0 +1,15 @@
+import "HV4DFLOW.idl";
+
+namespace HV4D.HV4DCONTRACT
+{
+	[uuid(D55C40D3-2E72-4CFB-BD6A-84BABCD95D02)]
+	[version(0x10000001)]
+	interface IHV4DRTCDESC : IInspectable
+	{
+		HV4D.HV4DFLOW.HV4DRETURN HV4DValidateWINRT();
+
+		HV4D.HV4DFLOW.HV4DRETURN HV4DClearWINRT();
+
+	}
+
+}

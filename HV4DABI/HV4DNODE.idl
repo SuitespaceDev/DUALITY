@@ -1,0 +1,21 @@
+namespace HV4DABI
+{
+    [uuid(A1198628-F216-421B-8DDE-0E97BF6B13A4)]
+    [version(0x10000001)]
+    interface INode : IInspectable
+    {
+
+
+
+    }
+
+    [default_interface]
+    runtimeclass HV4DNODE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DNODE();
+
+
+    }
+
+}

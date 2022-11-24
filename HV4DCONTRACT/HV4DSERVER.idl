@@ -1,0 +1,20 @@
+namespace HV4DCONTRACT
+{
+    [uuid("33ACBBF2-C328-48D2-A388-4AB5EF065261")]
+    [version(0x10000001)]
+    interface IServer
+    {
+
+
+    };
+
+    [default_interface]
+    runtimeclass HV4DSERVER
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSERVER();
+
+
+    }
+
+}

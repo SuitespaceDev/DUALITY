@@ -1,0 +1,83 @@
+﻿#include "pch.h"
+#include "HV4DCLASST.h"
+#if __has_include("HV4DCLASST.g.cpp")
+#include "HV4DCLASST.g.cpp"
+#endif
+
+using namespace winrt;
+
+using namespace winrt::HV4D;
+
+namespace winrt::HV4DABI::implementation
+{
+	HV4DCLASST::HV4DCLASST()
+	{
+
+		return;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DFromHstring(hstring const&, hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DFromABI(CLASST const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DFromWinRT(winrt::HV4DABI::HV4DCLASST const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DToHstring(hstring&, hstring&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DToABI(CLASST&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DToWinRT(winrt::HV4DABI::HV4DCLASST&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DIsEqualHstring(hstring const&, hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DIsEqualABI(CLASST const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DCLASST::HV4DIsEqualWinRT(winrt::HV4DABI::HV4DCLASST const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+}

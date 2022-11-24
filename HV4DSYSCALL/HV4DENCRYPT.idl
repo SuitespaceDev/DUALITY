@@ -1,0 +1,14 @@
+namespace HV4DSYSCALL
+{
+    [default_interface]
+    runtimeclass HV4DENCRYPT
+    {
+        HV4DENCRYPT();
+
+        HV4D.HV4DRETURN HV4DEncryptVolumeName(Guid e, String k, out Guid o);
+
+        HV4D.HV4DRETURN HV4DDecryptVolumeName(Guid e, String k, out Guid o);
+
+    }
+
+}

@@ -1,0 +1,12 @@
+namespace HV4DCFG
+{
+    [default_interface]
+    runtimeclass RTHV4DDOCBODY
+        : HV4D.HV4DCONTRACT.IHV4DWINRT,
+          Windows.Foundation.Collections.IMap<HV4D.HV4DWINRT.HV4D_DUALITY_FIELD_ID, String>
+    {
+        RTHV4DDOCBODY();
+
+    }
+
+}

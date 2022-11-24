@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{5dedcb96-1ccd-406e-9433-8f19659f5eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{c7cb2c3e-a279-46e7-b2ae-d87fd08f9384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DABS">
+      <UniqueIdentifier>{ee59169b-4a08-43dc-a78c-1289d993d2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DCLASST">
+      <UniqueIdentifier>{15ee67d1-20b1-4f87-a6c1-78e5d2c4668b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DHHMMSS">
+      <UniqueIdentifier>{600312bd-14c0-48bf-882d-a9e43dc96aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DHVID">
+      <UniqueIdentifier>{02468791-5244-42c8-a319-03d3e8439056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DINTERUPT">
+      <UniqueIdentifier>{0e603345-b9c4-4a73-8469-2bc64f8bcc5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DKEY">
+      <UniqueIdentifier>{bf39a87c-1d4b-4195-af25-a0c6597fb39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMAXPATH">
+      <UniqueIdentifier>{08777d6c-80f3-4440-b3c7-67ea6fef0e30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMMDDYYYY">
+      <UniqueIdentifier>{4eea522f-426d-40ae-83c9-2c87ed6d871a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMMM">
+      <UniqueIdentifier>{3656327e-1e66-4717-b9f2-2528d37c5af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DNUMERIC">
+      <UniqueIdentifier>{9d17f348-a9a9-4d8f-8887-be4319259d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DOFFSET">
+      <UniqueIdentifier>{0f866952-5530-43d4-acf5-438aef79a17b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DSTRING">
+      <UniqueIdentifier>{129d9eed-ae7f-4f28-992a-ff1aa53f7df8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DCLASST.cpp">
+      <Filter>HV4DCLASST</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTABS.cpp">
+      <Filter>HV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DABS.cpp">
+      <Filter>HV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTCLASST.cpp">
+      <Filter>HV4DCLASST</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DCLASST.cpp">
+      <Filter>HV4DCLASST</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DABS.cpp">
+      <Filter>HV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DINTERUPT.cpp">
+      <Filter>HV4DINTERUPT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DINTERUPT.cpp">
+      <Filter>HV4DINTERUPT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTINTERUPT.cpp">
+      <Filter>HV4DINTERUPT</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHVID.cpp">
+      <Filter>HV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHVID.cpp">
+      <Filter>HV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTHVID.cpp">
+      <Filter>HV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHHMMSS.cpp">
+      <Filter>HV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTHHMMSS.cpp">
+      <Filter>HV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMAXPATH.cpp">
+      <Filter>HV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMAXPATH.cpp">
+      <Filter>HV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTMAXPATH.cpp">
+      <Filter>HV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMDDYYYY.cpp">
+      <Filter>HV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMMDDYYYY.cpp">
+      <Filter>HV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTMMDDYYYY.cpp">
+      <Filter>HV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMM.cpp">
+      <Filter>HV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMMM.cpp">
+      <Filter>HV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTMMM.cpp">
+      <Filter>HV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DNUMERIC.cpp">
+      <Filter>HV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DNUMERIC.cpp">
+      <Filter>HV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTNUMERIC.cpp">
+      <Filter>HV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DOFFSET.cpp">
+      <Filter>HV4DOFFSET</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DOFFSET.cpp">
+      <Filter>HV4DOFFSET</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTOFFSET.cpp">
+      <Filter>HV4DOFFSET</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSTRING.cpp">
+      <Filter>HV4DSTRING</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSTRING.cpp">
+      <Filter>HV4DSTRING</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSTRING.cpp">
+      <Filter>HV4DSTRING</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHHMMSS.cpp">
+      <Filter>HV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTKEY.cpp">
+      <Filter>HV4DKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DKEY.cpp">
+      <Filter>HV4DKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DKEY.cpp">
+      <Filter>HV4DKEY</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DINTERUPT.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DINTERUPT</Filter>
+    </Midl>
+    <Midl Include="HV4DTINTERUPT.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DINTERUPT</Filter>
+    </Midl>
+    <Midl Include="HV4DHVID.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHVID</Filter>
+    </Midl>
+    <Midl Include="HV4DTHVID.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHVID</Filter>
+    </Midl>
+    <Midl Include="HV4DHHMMSS.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHHMMSS</Filter>
+    </Midl>
+    <Midl Include="HV4DTHHMMSS.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHHMMSS</Filter>
+    </Midl>
+    <Midl Include="HV4DMAXPATH.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMAXPATH</Filter>
+    </Midl>
+    <Midl Include="HV4DTMAXPATH.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMAXPATH</Filter>
+    </Midl>
+    <Midl Include="HV4DMMDDYYYY.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMDDYYYY</Filter>
+    </Midl>
+    <Midl Include="HV4DTMMDDYYYY.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMDDYYYY</Filter>
+    </Midl>
+    <Midl Include="HV4DMMM.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMM</Filter>
+    </Midl>
+    <Midl Include="HV4DTMMM.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMM</Filter>
+    </Midl>
+    <Midl Include="HV4DNUMERIC.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DNUMERIC</Filter>
+    </Midl>
+    <Midl Include="HV4DTNUMERIC.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DNUMERIC</Filter>
+    </Midl>
+    <Midl Include="HV4DOFFSET.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DOFFSET</Filter>
+    </Midl>
+    <Midl Include="HV4DTOFFSET.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DOFFSET</Filter>
+    </Midl>
+    <Midl Include="HV4DSTRING.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DSTRING</Filter>
+    </Midl>
+    <Midl Include="HV4DTSTRING.idl">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DSTRING</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DABI.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DCLASST.h" />
+    <ClInclude Include="CHV4DINTERUPT.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DINTERUPT</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DINTERUPT.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DINTERUPT</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTINTERUPT.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DINTERUPT</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DHVID.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHVID</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DHVID.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHVID</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTHVID.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHVID</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DHHMMSS.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHHMMSS</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DHHMMSS.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHHMMSS</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTHHMMSS.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DHHMMSS</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DMAXPATH.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMAXPATH</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DMAXPATH.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMAXPATH</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTMAXPATH.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMAXPATH</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DMMDDYYYY.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMDDYYYY</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DMMDDYYYY.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMDDYYYY</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTMMDDYYYY.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMDDYYYY</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DMMM.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMM</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DMMM.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMM</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTMMM.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DMMM</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DNUMERIC.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DNUMERIC</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DNUMERIC.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DNUMERIC</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTNUMERIC.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DNUMERIC</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DOFFSET.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DOFFSET</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DOFFSET.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DOFFSET</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTOFFSET.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DOFFSET</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DSTRING.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DSTRING</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DSTRING.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DSTRING</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTSTRING.h">
+      <Filter>c. HV4DPARAMETERS\HV4D\HV4DSTRING</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DHHMMSS.h">
+      <Filter>Parameters\Simple Types\HV4DHHMMSS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

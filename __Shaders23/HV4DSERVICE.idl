@@ -1,0 +1,12 @@
+namespace Shaders23
+{
+    [default_interface]
+    runtimeclass HV4DSERVICE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSERVICE();
+
+
+    }
+
+}

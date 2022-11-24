@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{287ce93d-cfd3-43eb-8adb-9f5717b786d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN">
+      <UniqueIdentifier>{e865c572-647d-4f94-b741-228e243f25d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_ALREADY_CONFIGURED">
+      <UniqueIdentifier>{f8bb9d48-15bf-49d2-8db6-4c48649a74be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_DIR_ALREADY_EXISTS">
+      <UniqueIdentifier>{b0671c07-667f-488a-ae52-7158fe113eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_DIR_DOESNT_EXIST">
+      <UniqueIdentifier>{e281ef47-2fcf-4944-93d4-0512afaef7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_FALSE">
+      <UniqueIdentifier>{3814093e-aa85-44e0-a6f8-ff99c4d68a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_FILE_ALREADY_EXISTS">
+      <UniqueIdentifier>{77f41dcc-fbbd-4f12-951e-6ee32d87a4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_FILE_BAD_FORMATTING">
+      <UniqueIdentifier>{a2511839-487f-4057-887c-3c1d53c1c5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_FILE_DOESNT_EXIST">
+      <UniqueIdentifier>{66a00ac4-f79f-48bb-987a-e7afef59c37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_FILE_HANDLE_OPEN">
+      <UniqueIdentifier>{d4b2d3ac-3238-457a-873a-7561e147191e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_IMAGE_NOT_LOADED">
+      <UniqueIdentifier>{c1844dbb-5337-48d4-99b1-4618c968dc3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED">
+      <UniqueIdentifier>{9661d41c-7581-4f45-b413-16767ecaea34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_INVALID_ARGUMENT">
+      <UniqueIdentifier>{360f0018-6ec3-4b8c-8911-c255bb9d49b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_INVALID_INTERFACE">
+      <UniqueIdentifier>{75f70d1b-149f-4555-bd61-68aedce98829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_INVALID_POINTER">
+      <UniqueIdentifier>{e07bd13e-872e-4e21-a6de-e57463afa6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_MODULE_NOT_FOUND">
+      <UniqueIdentifier>{a538b100-f0e1-4e05-b44e-ff3966556611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_NO_FILE_OPEN">
+      <UniqueIdentifier>{cad8656d-6c5d-452d-b5fa-7a8776e764f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_NOT_CONFIGURED">
+      <UniqueIdentifier>{a2de847b-ef1b-4de1-af6e-d2c63d07da5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_NOT_SYSTEM_MODULE">
+      <UniqueIdentifier>{ac6fd4e4-0598-40e3-b1da-30720610ee57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_OPERATION_FAILED">
+      <UniqueIdentifier>{7289d9c8-9b50-4ec8-a3ab-e1666723bbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_OPERATION_SUCCEEDED">
+      <UniqueIdentifier>{1f40d88e-5500-4355-bfd8-37a585136069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_OUT_OF_MEM">
+      <UniqueIdentifier>{de6713b3-6030-4813-be64-cef41272c0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_OUT_OF_RANGE">
+      <UniqueIdentifier>{8b2fdf1b-51d5-43b0-b838-1c49dc0505a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS">
+      <UniqueIdentifier>{b1873f9c-f2b3-47ec-a8f7-afef01295f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_PROCESS_NOT_FOUND">
+      <UniqueIdentifier>{91672dca-1b7a-407e-93ba-4d2d070c5a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_PROPERLY_CONFIGURED">
+      <UniqueIdentifier>{e15dfacb-ca22-4055-a8c5-81a646ac6000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_RTCLASS_NOT_FOUND">
+      <UniqueIdentifier>{f5c574eb-c84e-4047-9847-0a370e2f7a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_TRUE">
+      <UniqueIdentifier>{657d5234-c55b-48e8-a413-1df661aa2f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_UNKNOWN">
+      <UniqueIdentifier>{1e942fb9-08e3-4fb0-92a3-b6edccfa9ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DRETURN\HV4D_VALID_ARGUMENT">
+      <UniqueIdentifier>{829579da-6d62-4d49-917d-a797d942d131}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4D.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DRETURN.h">
+      <Filter>HV4DRETURN</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

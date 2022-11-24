@@ -1,0 +1,11 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass tInt16
+        : HV4DT.IHV4DTNODE
+    {
+        tInt16();
+
+    }
+
+}

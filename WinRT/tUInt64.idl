@@ -1,0 +1,11 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass tUInt64
+        : HV4DT.IHV4DTNODE
+    {
+        tUInt64();
+
+    }
+
+}

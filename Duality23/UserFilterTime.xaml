@@ -1,0 +1,48 @@
+﻿<UserControl
+    x:Class="Duality23.UserFilterTime"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality23"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="UserFilterTimeLoaded">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Duality23Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border 
+        BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+        BorderThickness="1"
+        HorizontalAlignment="Stretch"
+        Height="32">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <local:UserFilter x:Name="MMM" Label="MMM" Value="Jan" FilterGroup="MMM" Grid.Column="0" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="DD" Label="DD" Value="01" FilterGroup="DD" Grid.Column="1" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="YYYY" Label="YYYY" Value="2010" FilterGroup="YYYY" Grid.Column="2" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="HH" Label="HH" Value="23" FilterGroup="HH" Grid.Column="3" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="MM" Label="MM" Value="59" FilterGroup="MM" Grid.Column="4" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="SS" Label="SS" Value="59" FilterGroup="SS" Grid.Column="5" Grid.ColumnSpan="1"/>
+            <local:UserFilter x:Name="OP" Label="()" Value="==" FilterGroup="OP" Grid.Column="6" Grid.ColumnSpan="1"/>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

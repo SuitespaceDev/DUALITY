@@ -1,0 +1,12 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass rtUInt8
+            : HV4DT.HV4DTPROVIDER
+    {
+        rtUInt8();
+
+
+    }
+
+}

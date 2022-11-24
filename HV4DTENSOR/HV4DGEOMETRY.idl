@@ -1,0 +1,59 @@
+namespace HV4DABI.HV4DGEOMETRY
+{
+	struct HV4DVERTCOORD {
+		Single		x;
+		Single		y;
+		Single		z;
+	};
+
+	struct HV4DVERTNORM {
+		Single		a;
+		Single		b;
+		Single		c;
+	};
+
+	struct HV4DTEXTCOORD {
+		Single		u;
+		Single		v;
+	};
+
+	struct HV4DRGBA {
+		Single	    r;
+		Single		g;
+		Single		b;
+		Single		a;
+	};
+
+	struct HV4DVERT {
+		HV4DVERTCOORD		vcoord;
+		HV4DVERTNORM    	normal;
+		HV4DTEXTCOORD		tcoord;
+	};
+
+	struct HV4DVERTFLAT {
+		HV4DVERTCOORD  		vcoord;
+		HV4DVERTNORM    	normal;
+		HV4DRGBA			tcoord;
+	};
+
+	struct HV4DTRI {
+		HV4DVERT			vert1;
+		HV4DVERT			vert2;
+		HV4DVERT			vert3;
+	};
+
+	struct HV4DTRIFLAT {
+		HV4DVERTFLAT		vert1;
+		HV4DVERTFLAT		vert2;
+		HV4DVERTFLAT		vert3;
+	};
+
+	struct HV4DOBJ {
+		String				 name;
+		UInt32				verts;
+		UInt32				texts;
+		UInt32				norms;
+		UInt32				faces;
+	};
+
+}

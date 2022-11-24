@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{43a7442b-cf87-4d7a-97cf-1bf9581a185e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Template Code">
+      <UniqueIdentifier>{288372a6-34f5-41b1-b4ea-9e9c0851c92a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{f4f15add-f3d1-4398-a9f0-8bbc46f70651}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlCreateBoot.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlCreateConfiguration.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlReadBoot.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlReadConfiguration.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlWriteBoot.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXmlWriteConfiguration.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DDOCENTRY.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMODULE.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="RTHV4DCACHE.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="RTHV4DDOCBODY.cpp">
+      <Filter>Template Code</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DDOCENTRY.idl">
+      <Filter>Template Code</Filter>
+    </Midl>
+    <Midl Include="HV4DMODULE.idl">
+      <Filter>Template Code</Filter>
+    </Midl>
+    <Midl Include="RTHV4DCACHE.idl">
+      <Filter>Template Code</Filter>
+    </Midl>
+    <Midl Include="RTHV4DDOCBODY.idl">
+      <Filter>Template Code</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DBINDINGS.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlCreateBoot.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlCreateConfiguration.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlReadBoot.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlReadConfiguration.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlWriteBoot.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CHV4DXmlWriteConfiguration.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DDOCENTRY.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DMODULE.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="RTHV4DCACHE.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+    <ClInclude Include="RTHV4DDOCBODY.h">
+      <Filter>Template Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

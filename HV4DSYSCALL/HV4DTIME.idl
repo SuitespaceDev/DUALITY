@@ -1,0 +1,14 @@
+namespace HV4DSYSCALL
+{
+    [default_interface]
+    runtimeclass HV4DTIME
+    {
+        HV4DTIME();
+    
+        HV4D.HV4DRETURN HV4DIsValidTime(UInt64 t);
+
+        HV4D.HV4DRETURN HV4DIsValidTime(String mmddyyyy, String hhmmss);
+
+    }
+
+}

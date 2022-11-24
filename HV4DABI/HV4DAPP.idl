@@ -1,0 +1,20 @@
+namespace HV4DABI
+{
+    [uuid(157F533E-5EFC-48C7-BACA-B506E4857B90)]
+    [version(0x10000001)]
+    interface IApp : IInspectable
+    {
+
+
+    };
+
+    [default_interface]
+    runtimeclass HV4DAPP
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DAPP();
+
+
+    }
+
+}

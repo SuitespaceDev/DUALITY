@@ -1,0 +1,21 @@
+namespace HV4DCONTRACT
+{
+    [uuid("2B187070-1490-4202-95DA-C9F5912AE611")]
+    [version(0x10000001)]
+    interface IIStream
+    {
+
+
+
+    }
+
+    [default_interface]
+    runtimeclass HV4DISTREAM
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DISTREAM();
+
+
+    }
+
+}

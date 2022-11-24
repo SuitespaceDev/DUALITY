@@ -1,0 +1,19 @@
+namespace HV4DABI
+{
+	[uuid(895F1DCD-D1D0-414E-BBFA-31D0A298B29D)]
+	[version(0x10000001)]
+	interface IWorld : IInspectable
+	{
+		 HV4D.HV4DRETURN HV4DPopulateFromFile();
+
+	};
+
+    [default_interface]
+    runtimeclass HV4DTWORLD
+        : HV4DT.IHV4DTNODE
+    {
+        HV4DTWORLD();
+
+    }
+
+}

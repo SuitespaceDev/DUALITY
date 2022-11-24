@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Midl Include="SaveToCloud.idl">
+      <Filter>Xaml\Serialize</Filter>
+    </Midl>
+    <Midl Include="SaveToGit.idl">
+      <Filter>Xaml\Serialize</Filter>
+    </Midl>
+    <Midl Include="SaveToPC.idl">
+      <Filter>Xaml\Serialize</Filter>
+    </Midl>
+    <Midl Include="BlankProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="CloudProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="GitProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="OpenProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="RecentProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="TemplateProject.idl">
+      <Filter>Xaml\Picker</Filter>
+    </Midl>
+    <Midl Include="Diagnostics.idl">
+      <Filter>Xaml\Nucleic</Filter>
+    </Midl>
+    <Midl Include="Duality.idl">
+      <Filter>Xaml\Nucleic\i. Application</Filter>
+    </Midl>
+    <Midl Include="DualityWindow.idl">
+      <Filter>Xaml\Nucleic\ii. Window</Filter>
+    </Midl>
+    <Midl Include="Operational.idl">
+      <Filter>Xaml\Nucleic\iii. In Progress</Filter>
+    </Midl>
+    <Midl Include="UserFilter.idl">
+      <Filter>Bootstrapper\Resource\UserModel</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DNewProfile.cpp">
+      <Filter>Property Pages\Build Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMSelectable.cpp">
+      <Filter>Resource\UserModel</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMEventDebug.cpp">
+      <Filter>Resource\UserModel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{7e5196e0-bf07-431f-80d3-e85ca35b94f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xText">
+      <UniqueIdentifier>{fedf73f6-214f-44ae-a6be-6ec7597bcc87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper">
+      <UniqueIdentifier>{e5405067-08fc-461e-a126-38e74cc48ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Serialize">
+      <UniqueIdentifier>{160c823e-61fb-44c0-9941-daa7f207024d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Picker">
+      <UniqueIdentifier>{dccb7d09-66b5-4b24-b857-f36072a59acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Operational">
+      <UniqueIdentifier>{1d8d9f96-5951-47bb-acc5-54a27a99f63b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Diagnostics">
+      <UniqueIdentifier>{15b4e4c9-bc62-442f-bb93-35ff55bf3bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Application">
+      <UniqueIdentifier>{c75b46d2-e555-4926-b16e-c4e99880ca43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Window">
+      <UniqueIdentifier>{fd589118-2b93-4f28-a3a7-45ea54b125c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bootstrapper\Build Metadata">
+      <UniqueIdentifier>{16f31d42-1c82-481a-8923-6ca1057e7569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages">
+      <UniqueIdentifier>{75eed99c-4eb1-4796-bc91-53b641395cc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap">
+      <UniqueIdentifier>{d68c7115-16de-4f7b-a322-cc8ba09b649f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap\Application">
+      <UniqueIdentifier>{3c8aaa4e-cc7a-4440-8abf-31fda5bff8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap\Window">
+      <UniqueIdentifier>{2cd60e31-63a9-4c71-b783-eea2b60f3ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common">
+      <UniqueIdentifier>{c3d97548-d890-4296-b049-0a2e2aebb45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query">
+      <UniqueIdentifier>{f15fea29-ed16-48ba-aff3-1acee0047ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query Binary">
+      <UniqueIdentifier>{8dc3d73e-b55c-495f-93fa-6be1bf7603df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query JSON">
+      <UniqueIdentifier>{8d4a3787-f504-43b7-9043-936dd038aa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query XML">
+      <UniqueIdentifier>{cc2723dd-a284-4c78-ac8d-5249b1c0dbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query QIF">
+      <UniqueIdentifier>{346174ad-08c9-4792-b848-19a345344566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query PostgreSQL">
+      <UniqueIdentifier>{f40da30b-88eb-4df1-a611-bac237ebc6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding">
+      <UniqueIdentifier>{590e5ff0-ed47-49d5-83ed-5bbb8c11c07d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist Binary">
+      <UniqueIdentifier>{91d8a930-b242-4299-8d45-2b10c0ee914f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist JSON">
+      <UniqueIdentifier>{f995c1b9-4811-4344-8792-3c7fadbfecaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist XML">
+      <UniqueIdentifier>{c6cfe6ba-a6b8-4cd5-8b03-d3e30f541ee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist QIF">
+      <UniqueIdentifier>{3e287cdc-c2db-42ad-a1e0-a3f093110a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist PostgreSQL">
+      <UniqueIdentifier>{711c434e-024c-4906-8a82-02d215c5a778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Diagnostics">
+      <UniqueIdentifier>{a29904ff-e942-4cac-9c6c-f513afc2e0a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Diagnostics\Debug">
+      <UniqueIdentifier>{c51a7f10-1490-418a-9e2d-ec6d0dd97418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Diagnostics\Metric">
+      <UniqueIdentifier>{a7f93094-d72d-4919-8723-1d12613046ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\IO">
+      <UniqueIdentifier>{a78af973-2c49-44ff-9ecf-257079f6619d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\IO\Bus">
+      <UniqueIdentifier>{e36f364b-1d42-4b74-8296-a6bddae517c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\IO\Keyboard">
+      <UniqueIdentifier>{bbc38104-a735-412d-87ef-246e6dcc8ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\IO\Mouse">
+      <UniqueIdentifier>{0939d996-6a5b-4fd4-883f-f554b46e1ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\IO\USB">
+      <UniqueIdentifier>{6d577017-e660-4b01-8bb5-f716d2191a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline">
+      <UniqueIdentifier>{305135be-a0de-4944-8f1b-e8054d826358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline\Language">
+      <UniqueIdentifier>{6baf5ce5-0012-4350-b709-bbd67cbeb699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline\Cortex">
+      <UniqueIdentifier>{a62ee6c3-a08f-4af6-9518-77e85c57e4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process">
+      <UniqueIdentifier>{5c7166c7-ab19-46c6-9245-51386cbf6a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Accounts">
+      <UniqueIdentifier>{8c78c6f0-09dd-4c9b-b0ca-9000633e1506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX">
+      <UniqueIdentifier>{b3daf625-1464-4912-9ce8-511bbeeaccb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Library">
+      <UniqueIdentifier>{24d877b9-d7c2-4a9c-b66a-2d08c87af2f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Library\Functional">
+      <UniqueIdentifier>{b9fcf76f-ec0d-4149-9506-d13b7f4f7cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Build Profile">
+      <UniqueIdentifier>{6e4a0388-dcba-4d8c-82d3-2e2388e53cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\Control">
+      <UniqueIdentifier>{3addf6c2-0d4b-49bd-b19f-09752df4f281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\Theme">
+      <UniqueIdentifier>{c41c329f-32e8-492a-96a7-5246ae568374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\XAML Pg">
+      <UniqueIdentifier>{0d801281-704d-4bc8-9e58-01750a0465ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline\Mass">
+      <UniqueIdentifier>{01fd7fba-de32-4764-a601-bd043ffcb3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline\Bitmap">
+      <UniqueIdentifier>{0befddd8-0274-4418-92e8-5bff6e523697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Accounts\Build Account">
+      <UniqueIdentifier>{43a9b4fb-4bc6-4989-84e9-eea4cd1c6050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Accounts\Project Account">
+      <UniqueIdentifier>{aa6c8baa-5a14-4f03-a3ab-aa9f8d069240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Library\Contract">
+      <UniqueIdentifier>{2d71004e-d4a8-47bb-ac88-9ba5176586e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Library\Iterator">
+      <UniqueIdentifier>{0f72164d-3601-41e7-8401-9485364ec3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Library\Parameter">
+      <UniqueIdentifier>{004aa178-ca9c-43e1-950d-b155757b97a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\App">
+      <UniqueIdentifier>{b4fa8d40-eb90-47ad-ba80-85de9cfffbdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\Shell">
+      <UniqueIdentifier>{0ae21856-4e29-4db3-a9cf-bfb990ca648b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\Context Menu">
+      <UniqueIdentifier>{e7398cc3-18f3-42ce-992b-aaee1dfef0d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\Tool Bar">
+      <UniqueIdentifier>{519fdb49-3b6c-4082-b226-938a9a652056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\UX\Widget">
+      <UniqueIdentifier>{2ceab73a-7bcc-4018-ac4d-37e8cdc285cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap\Drive">
+      <UniqueIdentifier>{db0b98e2-fc48-4021-8822-b2d4b14b4541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap\Image">
+      <UniqueIdentifier>{b54ab897-bff9-46fc-9e2c-eb0db1eada9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Bootstrap\Kernel">
+      <UniqueIdentifier>{1975384d-266a-4e9a-a02a-360a6938f5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Accounts\Datacenter Account">
+      <UniqueIdentifier>{b255f580-da2a-443d-a5c4-30bd9c0ba881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Accounts\PostgreSQL DB Account">
+      <UniqueIdentifier>{a55d1094-0aff-4750-a5f7-b061b94c8c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Data Binding\Persist XAML">
+      <UniqueIdentifier>{7edd61a0-b590-431c-9c01-cad35ff747d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Common\Query\Query XAML">
+      <UniqueIdentifier>{492ea956-1631-4428-b319-7f10d757a9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Pipeline\ComputeKernel">
+      <UniqueIdentifier>{d6d2a15e-4574-40c8-87cd-f19990bc6977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\Async">
+      <UniqueIdentifier>{92bb1142-95f2-4cde-9aa0-81e28e261a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\RPC">
+      <UniqueIdentifier>{480aa371-baf4-4dee-8a30-a7b03231e73e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\Pipe">
+      <UniqueIdentifier>{da2004af-b8d1-4a4c-8a26-deb117794819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\SharedMem">
+      <UniqueIdentifier>{88030681-9915-4423-b4b2-d51e04efebbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property Pages\Process\DraftSpaceUserPage">
+      <UniqueIdentifier>{38d12822-2d06-48c2-934a-3fc1a8db4226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{b482ecb9-0559-4c1f-a4d9-2a9fd3cafeb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\UserEntry">
+      <UniqueIdentifier>{ca451414-e214-4771-9294-ed6bfed2a973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Theme">
+      <UniqueIdentifier>{337b77f7-94ff-4ed9-b798-be70e31fb31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\UserModel">
+      <UniqueIdentifier>{04e44bed-7acf-48e3-8532-57579b6777a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\UserFilter">
+      <UniqueIdentifier>{3c647ae5-a539-4378-bfca-52142795cffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\UserViewModel">
+      <UniqueIdentifier>{61300e7f-490b-4f7c-a4e2-14a028de96db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CreateProcess.txt">
+      <Filter>xText</Filter>
+    </Text>
+    <Text Include="GUID.txt">
+      <Filter>xText</Filter>
+    </Text>
+    <Text Include="LoaderSettings.txt">
+      <Filter>xText</Filter>
+    </Text>
+    <Text Include="PopulateRecent.txt">
+      <Filter>xText</Filter>
+    </Text>
+    <Text Include="LoadDll.txt">
+      <Filter>xText</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SaveToCloud.xaml">
+      <Filter>Bootstrapper\Serialize</Filter>
+    </Page>
+    <Page Include="SaveToGit.xaml">
+      <Filter>Bootstrapper\Serialize</Filter>
+    </Page>
+    <Page Include="SaveToPC.xaml">
+      <Filter>Bootstrapper\Serialize</Filter>
+    </Page>
+    <Page Include="BlankProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="CloudProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="GitProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="OpenProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="RecentProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="TemplateProject.xaml">
+      <Filter>Bootstrapper\Picker</Filter>
+    </Page>
+    <Page Include="DualityWindow.xaml">
+      <Filter>Bootstrapper\Window</Filter>
+    </Page>
+    <Page Include="Operational.xaml">
+      <Filter>Bootstrapper\Operational</Filter>
+    </Page>
+    <Page Include="Diagnostics.xaml">
+      <Filter>Bootstrapper\Diagnostics</Filter>
+    </Page>
+    <Page Include="BuildProfile.xaml">
+      <Filter>Property Pages\Build Profile</Filter>
+    </Page>
+    <Page Include="UserBlock.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="UserCombo.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="UserDivider.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="UserEntry.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="Duality23Buttons.xaml">
+      <Filter>Resource\Theme</Filter>
+    </Page>
+    <Page Include="Duality23Theme.xaml">
+      <Filter>Resource\Theme</Filter>
+    </Page>
+    <Page Include="DriveUserPage.xaml">
+      <Filter>Property Pages\Bootstrap\Drive</Filter>
+    </Page>
+    <Page Include="ImageUserPage.xaml">
+      <Filter>Property Pages\Bootstrap\Image</Filter>
+    </Page>
+    <Page Include="Duality23UserPage.xaml">
+      <Filter>Property Pages\Bootstrap\Application</Filter>
+    </Page>
+    <Page Include="WindowUserPage.xaml">
+      <Filter>Property Pages\Bootstrap\Window</Filter>
+    </Page>
+    <Page Include="KernelUserPage.xaml">
+      <Filter>Property Pages\Bootstrap\Kernel</Filter>
+    </Page>
+    <Page Include="BuildMetadata.xaml">
+      <Filter>Bootstrapper\Build Metadata</Filter>
+    </Page>
+    <Page Include="BuildAccountUserPage.xaml">
+      <Filter>Property Pages\Accounts\Build Account</Filter>
+    </Page>
+    <Page Include="DatacenterAccountUserPage.xaml">
+      <Filter>Property Pages\Accounts\Datacenter Account</Filter>
+    </Page>
+    <Page Include="PostgreSQLDBAccountUserPage.xaml">
+      <Filter>Property Pages\Accounts\PostgreSQL DB Account</Filter>
+    </Page>
+    <Page Include="ProjectAccountUserPage.xaml">
+      <Filter>Property Pages\Accounts\Project Account</Filter>
+    </Page>
+    <Page Include="UserPassword.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="UserFile.xaml">
+      <Filter>Resource\UserEntry</Filter>
+    </Page>
+    <Page Include="DebugUserPage.xaml">
+      <Filter>Property Pages\Common\Diagnostics\Debug</Filter>
+    </Page>
+    <Page Include="MetricUserPage.xaml">
+      <Filter>Property Pages\Common\Diagnostics\Metric</Filter>
+    </Page>
+    <Page Include="UserVMDebug.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMLog.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMMouse.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserFilterType.xaml">
+      <Filter>Resource\UserFilter</Filter>
+    </Page>
+    <Page Include="UserFilterTime.xaml">
+      <Filter>Resource\UserFilter</Filter>
+    </Page>
+    <Page Include="UserFilterNew.xaml">
+      <Filter>Resource\UserFilter</Filter>
+    </Page>
+    <Page Include="UserFilter.xaml">
+      <Filter>Resource\UserFilter</Filter>
+    </Page>
+    <Page Include="UserFilterProcessID.xaml">
+      <Filter>Resource\UserFilter</Filter>
+    </Page>
+    <Page Include="UserVMParameter.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMContract.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMIterator.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="PersistXMLUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist XML</Filter>
+    </Page>
+    <Page Include="PersistXAMLUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist XAML</Filter>
+    </Page>
+    <Page Include="PersistBinaryUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist Binary</Filter>
+    </Page>
+    <Page Include="PersistJSONUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist JSON</Filter>
+    </Page>
+    <Page Include="PersistPostgreSQLUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist PostgreSQL</Filter>
+    </Page>
+    <Page Include="PersistQIFUserPage.xaml">
+      <Filter>Property Pages\Common\Data Binding\Persist QIF</Filter>
+    </Page>
+    <Page Include="QueryBinaryUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query Binary</Filter>
+    </Page>
+    <Page Include="QueryJSONUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query JSON</Filter>
+    </Page>
+    <Page Include="QueryPostgreSQLUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query PostgreSQL</Filter>
+    </Page>
+    <Page Include="QueryQIFUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query QIF</Filter>
+    </Page>
+    <Page Include="QueryXMLUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query XML</Filter>
+    </Page>
+    <Page Include="QueryXAMLUserPage.xaml">
+      <Filter>Property Pages\Common\Query\Query XAML</Filter>
+    </Page>
+    <Page Include="BusUserPage.xaml">
+      <Filter>Property Pages\IO\Bus</Filter>
+    </Page>
+    <Page Include="KeyboardUserPage.xaml">
+      <Filter>Property Pages\IO\Keyboard</Filter>
+    </Page>
+    <Page Include="MouseUserPage.xaml">
+      <Filter>Property Pages\IO\Mouse</Filter>
+    </Page>
+    <Page Include="USBUserPage.xaml">
+      <Filter>Property Pages\IO\USB</Filter>
+    </Page>
+    <Page Include="ContractUserPage.xaml">
+      <Filter>Property Pages\Library\Contract</Filter>
+    </Page>
+    <Page Include="FunctionalUserPage.xaml">
+      <Filter>Property Pages\Library\Functional</Filter>
+    </Page>
+    <Page Include="IteratorUserPage.xaml">
+      <Filter>Property Pages\Library\Iterator</Filter>
+    </Page>
+    <Page Include="ParameterUserPage.xaml">
+      <Filter>Property Pages\Library\Parameter</Filter>
+    </Page>
+    <Page Include="BitmapUserPage.xaml">
+      <Filter>Property Pages\Pipeline\Bitmap</Filter>
+    </Page>
+    <Page Include="CortexUserPage.xaml">
+      <Filter>Property Pages\Pipeline\Cortex</Filter>
+    </Page>
+    <Page Include="ComputeKernelUserPage.xaml">
+      <Filter>Property Pages\Pipeline\ComputeKernel</Filter>
+    </Page>
+    <Page Include="LanguageUserPage.xaml">
+      <Filter>Property Pages\Pipeline\Language</Filter>
+    </Page>
+    <Page Include="MassUserPage.xaml">
+      <Filter>Property Pages\Pipeline\Mass</Filter>
+    </Page>
+    <Page Include="AppUserPage.xaml">
+      <Filter>Property Pages\Process\App</Filter>
+    </Page>
+    <Page Include="AsyncUserPage.xaml">
+      <Filter>Property Pages\Process\Async</Filter>
+    </Page>
+    <Page Include="SharedMemUserPage.xaml">
+      <Filter>Property Pages\Process\SharedMem</Filter>
+    </Page>
+    <Page Include="PipeUserPage.xaml">
+      <Filter>Property Pages\Process\Pipe</Filter>
+    </Page>
+    <Page Include="RPCUserPage.xaml">
+      <Filter>Property Pages\Process\RPC</Filter>
+    </Page>
+    <Page Include="ShellUserPage.xaml">
+      <Filter>Property Pages\Process\Shell</Filter>
+    </Page>
+    <Page Include="ContextMenuUserPage.xaml">
+      <Filter>Property Pages\UX\Context Menu</Filter>
+    </Page>
+    <Page Include="ControlUserPage.xaml">
+      <Filter>Property Pages\UX\Control</Filter>
+    </Page>
+    <Page Include="ThemeUserPage.xaml">
+      <Filter>Property Pages\UX\Theme</Filter>
+    </Page>
+    <Page Include="ToolBarUserPage.xaml">
+      <Filter>Property Pages\UX\Tool Bar</Filter>
+    </Page>
+    <Page Include="WidgetUserPage.xaml">
+      <Filter>Property Pages\UX\Widget</Filter>
+    </Page>
+    <Page Include="XAMLPgUserPage.xaml">
+      <Filter>Property Pages\UX\XAML Pg</Filter>
+    </Page>
+    <Page Include="DraftSpaceUserPage.xaml">
+      <Filter>Property Pages\Process\DraftSpaceUserPage</Filter>
+    </Page>
+    <Page Include="UserVMRuntimeClass.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMTNode.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+    <Page Include="UserVMContact.xaml">
+      <Filter>Resource\UserViewModel</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Duality.xaml">
+      <Filter>Bootstrapper\Application</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest">
+      <Filter>a. Project</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

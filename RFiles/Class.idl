@@ -1,0 +1,9 @@
+namespace RFiles
+{
+    [default_interface]
+    runtimeclass Class
+    {
+        Class();
+        Int32 MyProperty;
+    }
+}

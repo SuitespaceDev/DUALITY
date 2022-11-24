@@ -1,0 +1,10 @@
+namespace HV4DTREE
+{
+    [default_interface]
+    runtimeclass RTHV4DTREE : HV4D.HV4DSYS.IHV4DTREE
+    {
+        RTHV4DTREE();
+
+    }
+
+}

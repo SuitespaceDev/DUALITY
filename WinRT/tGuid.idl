@@ -1,0 +1,11 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass tGuid
+        : HV4DT.IHV4DTNODE
+    {
+        tGuid();
+
+    }
+
+}

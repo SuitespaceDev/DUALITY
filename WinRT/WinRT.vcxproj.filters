@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="tBoolean.cpp">
+      <Filter>Boolean</Filter>
+    </ClCompile>
+    <ClCompile Include="rtBoolean.cpp">
+      <Filter>Boolean</Filter>
+    </ClCompile>
+    <ClCompile Include="cBoolean.cpp">
+      <Filter>Boolean</Filter>
+    </ClCompile>
+    <ClCompile Include="tChar.cpp">
+      <Filter>Char</Filter>
+    </ClCompile>
+    <ClCompile Include="rtChar.cpp">
+      <Filter>Char</Filter>
+    </ClCompile>
+    <ClCompile Include="cChar.cpp">
+      <Filter>Char</Filter>
+    </ClCompile>
+    <ClCompile Include="tDouble.cpp">
+      <Filter>Double</Filter>
+    </ClCompile>
+    <ClCompile Include="rtDouble.cpp">
+      <Filter>Double</Filter>
+    </ClCompile>
+    <ClCompile Include="cDouble.cpp">
+      <Filter>Double</Filter>
+    </ClCompile>
+    <ClCompile Include="tGuid.cpp">
+      <Filter>Guid</Filter>
+    </ClCompile>
+    <ClCompile Include="rtGuid.cpp">
+      <Filter>Guid</Filter>
+    </ClCompile>
+    <ClCompile Include="cGuid.cpp">
+      <Filter>Guid</Filter>
+    </ClCompile>
+    <ClCompile Include="tInt16.cpp">
+      <Filter>Int16</Filter>
+    </ClCompile>
+    <ClCompile Include="rtInt16.cpp">
+      <Filter>Int16</Filter>
+    </ClCompile>
+    <ClCompile Include="cInt16.cpp">
+      <Filter>Int16</Filter>
+    </ClCompile>
+    <ClCompile Include="tInt32.cpp">
+      <Filter>Int32</Filter>
+    </ClCompile>
+    <ClCompile Include="rtInt32.cpp">
+      <Filter>Int32</Filter>
+    </ClCompile>
+    <ClCompile Include="cInt32.cpp">
+      <Filter>Int32</Filter>
+    </ClCompile>
+    <ClCompile Include="tInt64.cpp">
+      <Filter>Int64</Filter>
+    </ClCompile>
+    <ClCompile Include="rtInt64.cpp">
+      <Filter>Int64</Filter>
+    </ClCompile>
+    <ClCompile Include="cInt64.cpp">
+      <Filter>Int64</Filter>
+    </ClCompile>
+    <ClCompile Include="tSingle.cpp">
+      <Filter>Single</Filter>
+    </ClCompile>
+    <ClCompile Include="rtSingle.cpp">
+      <Filter>Single</Filter>
+    </ClCompile>
+    <ClCompile Include="cSingle.cpp">
+      <Filter>Single</Filter>
+    </ClCompile>
+    <ClCompile Include="tString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="rtString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="cString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="tUInt8.cpp">
+      <Filter>UInt8</Filter>
+    </ClCompile>
+    <ClCompile Include="rtUInt8.cpp">
+      <Filter>UInt8</Filter>
+    </ClCompile>
+    <ClCompile Include="cUInt8.cpp">
+      <Filter>UInt8</Filter>
+    </ClCompile>
+    <ClCompile Include="tUInt16.cpp">
+      <Filter>UInt16</Filter>
+    </ClCompile>
+    <ClCompile Include="rtUInt16.cpp">
+      <Filter>UInt16</Filter>
+    </ClCompile>
+    <ClCompile Include="cUInt16.cpp">
+      <Filter>UInt16</Filter>
+    </ClCompile>
+    <ClCompile Include="tUInt32.cpp">
+      <Filter>UInt32</Filter>
+    </ClCompile>
+    <ClCompile Include="rtUInt32.cpp">
+      <Filter>UInt32</Filter>
+    </ClCompile>
+    <ClCompile Include="cUInt32.cpp">
+      <Filter>UInt32</Filter>
+    </ClCompile>
+    <ClCompile Include="tUInt64.cpp">
+      <Filter>UInt64</Filter>
+    </ClCompile>
+    <ClCompile Include="rtUInt64.cpp">
+      <Filter>UInt64</Filter>
+    </ClCompile>
+    <ClCompile Include="cUInt64.cpp">
+      <Filter>UInt64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="WinRT.def">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{f491923f-1101-423f-976c-68002317e364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UInt8">
+      <UniqueIdentifier>{b66325c4-0288-491a-9f9f-a49c8f5618be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UInt16">
+      <UniqueIdentifier>{a63249d8-8451-437b-9f99-6157d2825ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UInt32">
+      <UniqueIdentifier>{d994b19f-1b04-40ff-8c40-f8a416560b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UInt64">
+      <UniqueIdentifier>{46f72d93-013f-446a-a6e7-01b55ca1a218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Char">
+      <UniqueIdentifier>{78ffd5b7-d507-4634-a062-727160556acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Double">
+      <UniqueIdentifier>{53f80d4f-db36-4e46-8704-26fa96ecdc90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guid">
+      <UniqueIdentifier>{eb8981c8-ca27-4499-80e9-3b8c95f9b1b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Int16">
+      <UniqueIdentifier>{e184455e-e7f9-4614-8b05-2c543acf2c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Int32">
+      <UniqueIdentifier>{5033915e-9bfb-47dc-8f09-24c19ce3660a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Int64">
+      <UniqueIdentifier>{1f7b6321-51d6-488f-b64e-a6521099ee92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boolean">
+      <UniqueIdentifier>{b6a4bc9f-0cb5-4a2c-a319-6a867161372a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Single">
+      <UniqueIdentifier>{5acee9d3-9a1a-45ea-b5f4-06ab2dfe6705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{e8684942-050a-4d85-bcd6-79968282486b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+namespace HV4DCONTRACT
+{
+	[uuid("6C92AF7D-F653-49E8-8055-AD7BF8CFCA3D")]
+	[version(0x10000001)]
+	interface IShader
+	{
+		 HV4D.HV4DRETURN HV4DBindShader();
+
+	};
+
+    [default_interface]
+    runtimeclass HV4DSHADER
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSHADER();
+
+
+    }
+
+}

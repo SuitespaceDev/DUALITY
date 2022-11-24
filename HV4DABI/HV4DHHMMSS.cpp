@@ -1,0 +1,84 @@
+﻿#include "pch.h"
+#include "HV4DHHMMSS.h"
+#if __has_include("HV4DHHMMSS.g.cpp")
+#include "HV4DHHMMSS.g.cpp"
+#endif
+
+using namespace winrt;
+
+using namespace winrt::HV4D;
+
+namespace winrt::HV4DABI::implementation
+{
+	HV4DHHMMSS::HV4DHHMMSS()
+	{
+
+		return;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DFromHstring(hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DFromABI(winrt::HV4DABI::HHMMSS const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DFromWinRT(winrt::HV4DABI::HV4DHHMMSS const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DToHstring(hstring&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DToABI(winrt::HV4DABI::HHMMSS&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DToWinRT(winrt::HV4DABI::HV4DHHMMSS&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DIsEqualHstring(hstring const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DIsEqualABI(winrt::HV4DABI::HHMMSS const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+	HV4DRETURN HV4DHHMMSS::HV4DIsEqualWinRT(winrt::HV4DABI::HV4DHHMMSS const&)
+	{
+
+		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+
+	}
+
+
+}

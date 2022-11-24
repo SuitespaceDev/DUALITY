@@ -1,0 +1,12 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass rtGuid
+            : HV4DT.HV4DTPROVIDER
+    {
+        rtGuid();
+
+
+    }
+
+}

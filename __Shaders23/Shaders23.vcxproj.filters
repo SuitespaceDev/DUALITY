@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{a5d8b07f-95eb-4457-bdc7-bf0bca4961e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{9abe638f-aef4-4b0c-912a-d35dbd954a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders23.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

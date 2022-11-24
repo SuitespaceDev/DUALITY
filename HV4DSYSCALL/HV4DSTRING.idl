@@ -1,0 +1,18 @@
+namespace HV4DSYSCALL
+{
+    [default_interface]
+    runtimeclass HV4DSTRING
+    {
+        HV4DSTRING();
+    
+        HV4D.HV4DRETURN HV4DSubStr(String str, UInt32 i, UInt32 n, out String o);
+
+        HV4D.HV4DRETURN HV4DNoSymbols(String e, out String o);
+
+        HV4D.HV4DRETURN HV4DHasSymbols(String e);
+
+        HV4D.HV4DRETURN HV4DNoEscape(String e, out String o);
+
+    }
+
+}

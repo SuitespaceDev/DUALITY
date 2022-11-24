@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c2126647-a577-405d-b417-e04536be5eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{64c82864-9de8-4df9-aed1-e81dd728f916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{7f7bedcc-1785-4587-a05c-0dfaa53403b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Class Factories">
+      <UniqueIdentifier>{2a5fe944-d52f-4401-ac74-d88c0dba0053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{62cf38ab-5e63-4dd3-a318-ffd68bd287d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{5eac9f81-af41-4578-8712-89cb462e074a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DObjLoader.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DPixels.cpp">
+      <Filter>Class\Class Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DRTV.cpp">
+      <Filter>Class\Class Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DQueue.cpp">
+      <Filter>Class\Class Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DCommandList.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DRenderTarget.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DShaderCT.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DShaderRT.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DPeregrine23.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="Peregrine23.def">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="IPeregrine23.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

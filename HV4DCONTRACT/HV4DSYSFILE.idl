@@ -1,0 +1,32 @@
+import "HV4DSECTION.idl";
+
+namespace HV4DCONTRACT
+{
+	[uuid("8DD258BC-8655-47C7-9468-DB9BED06651E")]
+	[version(0x10000001)]
+	interface IHV4DSYSFILE
+	{
+		 HV4D.HV4DRETURN HV4DSetSystemFilePath(HV4DABI.ABS e);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFilePath(HV4DABI.ABS o);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFileSection(HV4DABI.HVID e, ISection o);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFileSections(Windows.Foundation.Collections.IMap<HV4DABI.HVID, ISection> o);
+
+		 HV4D.HV4DRETURN HV4DValidateSystemFile();
+
+		 HV4D.HV4DRETURN HV4DClearSystemFile();
+
+	}
+
+    [default_interface]
+    runtimeclass HV4DSYSFILE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSYSFILE();
+
+
+    }
+
+}

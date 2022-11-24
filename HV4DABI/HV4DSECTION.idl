@@ -1,0 +1,19 @@
+namespace HV4DABI
+{
+    [uuid(E6DC989F-DE3B-4865-AF70-F75733CB6256)]
+    [version(0x10000001)]
+    interface ISection : IInspectable
+    {
+
+    }
+
+    [default_interface]
+    runtimeclass HV4DSECTION
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSECTION();
+
+
+    }
+
+}

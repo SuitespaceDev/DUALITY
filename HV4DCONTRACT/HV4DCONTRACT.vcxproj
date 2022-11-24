@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props')" />
+  <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props')" />
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <PropertyGroup Label="Globals">
+    <CppWinRTOptimized>true</CppWinRTOptimized>
+    <CppWinRTRootNamespaceAutoMerge>true</CppWinRTRootNamespaceAutoMerge>
+    <MinimalCoreWin>true</MinimalCoreWin>
+    <ProjectGuid>{8359E101-CC79-4B7B-B67D-BB0293E91ADF}</ProjectGuid>
+    <ProjectName>HV4DCONTRACT</ProjectName>
+    <RootNamespace>HV4DCONTRACT</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>false</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <DesktopCompatible>true</DesktopCompatible>
+    <UseWinUI>true</UseWinUI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|arm64">
+      <Configuration>Debug</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|arm64">
+      <Configuration>Release</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '16.0'">v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <GenerateManifest>false</GenerateManifest>
+    <DesktopCompatible>true</DesktopCompatible>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>HV4DCONTRACT.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DSYSCALL\HV4DSYSCALL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CHV4DAPP.h">
+      <DependentUpon>CHV4DAPP.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DASYNC.h">
+      <DependentUpon>CHV4DASYNC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DCLIENT.h">
+      <DependentUpon>CHV4DCLIENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DDEBUG.h">
+      <DependentUpon>CHV4DDEBUG.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DDOCUMENT.h">
+      <DependentUpon>CHV4DDOCUMENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DEVENT.h">
+      <DependentUpon>CHV4DEVENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DFILE.h">
+      <DependentUpon>CHV4DFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DGLOBAL.h">
+      <DependentUpon>CHV4DGLOBAL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DHPC.h">
+      <DependentUpon>CHV4DHPC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DISTREAM.h">
+      <DependentUpon>CHV4DISTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DKERNEL.h">
+      <DependentUpon>CHV4DKERNEL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DMETA.h">
+      <DependentUpon>CHV4DMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DMETRIC.h">
+      <DependentUpon>CHV4DMETRIC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DNODE.h">
+      <DependentUpon>CHV4DNODE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DOBJECT.h">
+      <DependentUpon>CHV4DOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DOSTREAM.h">
+      <DependentUpon>CHV4DOSTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DPIPELINE.h">
+      <DependentUpon>CHV4DPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSECTION.h">
+      <DependentUpon>CHV4DSECTION.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSERVER.h">
+      <DependentUpon>CHV4DSERVER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSERVICE.h">
+      <DependentUpon>CHV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSHADER.h">
+      <DependentUpon>CHV4DSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSHELL.h">
+      <DependentUpon>CHV4DSHELL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DSYSFILE.h">
+      <DependentUpon>CHV4DSYSFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DTREE.h">
+      <DependentUpon>CHV4DTREE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DVIEW.h">
+      <DependentUpon>CHV4DVIEW.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DWINRT.h">
+      <DependentUpon>CHV4DWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DWORLD.h">
+      <DependentUpon>CHV4DWORLD.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CHV4DXML.h">
+      <DependentUpon>CHV4DXML.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DAPP.h">
+      <DependentUpon>HV4DAPP.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DASYNC.h">
+      <DependentUpon>HV4DASYNC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DCLIENT.h">
+      <DependentUpon>HV4DCLIENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DDEBUG.h">
+      <DependentUpon>HV4DDEBUG.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DDOCUMENT.h">
+      <DependentUpon>HV4DDOCUMENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DEVENT.h">
+      <DependentUpon>HV4DEVENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DFILE.h">
+      <DependentUpon>HV4DFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DGLOBAL.h">
+      <DependentUpon>HV4DGLOBAL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DHPC.h">
+      <DependentUpon>HV4DHPC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DISTREAM.h">
+      <DependentUpon>HV4DISTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DKERNEL.h">
+      <DependentUpon>HV4DKERNEL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DMETA.h">
+      <DependentUpon>HV4DMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DMETRIC.h">
+      <DependentUpon>HV4DMETRIC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DNODE.h">
+      <DependentUpon>HV4DNODE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DOBJECT.h">
+      <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DOSTREAM.h">
+      <DependentUpon>HV4DOSTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DPIPELINE.h">
+      <DependentUpon>HV4DPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSECTION.h">
+      <DependentUpon>HV4DSECTION.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSERVER.h">
+      <DependentUpon>HV4DSERVER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSERVICE.h">
+      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSHADER.h">
+      <DependentUpon>HV4DSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSHELL.h">
+      <DependentUpon>HV4DSHELL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSYSFILE.h">
+      <DependentUpon>HV4DSYSFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTAPP.h">
+      <DependentUpon>HV4DTAPP.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTASYNC.h">
+      <DependentUpon>HV4DTASYNC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTCLIENT.h">
+      <DependentUpon>HV4DTCLIENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTDEBUG.h">
+      <DependentUpon>HV4DTDEBUG.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTDOCUMENT.h">
+      <DependentUpon>HV4DTDOCUMENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTEVENT.h">
+      <DependentUpon>HV4DTEVENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTFILE.h">
+      <DependentUpon>HV4DTFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTGLOBAL.h">
+      <DependentUpon>HV4DTGLOBAL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTHPC.h">
+      <DependentUpon>HV4DTHPC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTISTREAM.h">
+      <DependentUpon>HV4DTISTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTKERNEL.h">
+      <DependentUpon>HV4DTKERNEL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTMETA.h">
+      <DependentUpon>HV4DTMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTMETRIC.h">
+      <DependentUpon>HV4DTMETRIC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTNODE.h">
+      <DependentUpon>HV4DTNODE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTOBJECT.h">
+      <DependentUpon>HV4DTOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTOSTREAM.h">
+      <DependentUpon>HV4DTOSTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTPIPELINE.h">
+      <DependentUpon>HV4DTPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTREE.h">
+      <DependentUpon>HV4DTREE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSECTION.h">
+      <DependentUpon>HV4DTSECTION.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSERVER.h">
+      <DependentUpon>HV4DTSERVER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSERVICE.h">
+      <DependentUpon>HV4DTSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSHADER.h">
+      <DependentUpon>HV4DTSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSHELL.h">
+      <DependentUpon>HV4DTSHELL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTSYSFILE.h">
+      <DependentUpon>HV4DTSYSFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTTREE.h">
+      <DependentUpon>HV4DTTREE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTVIEW.h">
+      <DependentUpon>HV4DTVIEW.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTWINRT.h">
+      <DependentUpon>HV4DTWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTWORLD.h">
+      <DependentUpon>HV4DTWORLD.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DTXML.h">
+      <DependentUpon>HV4DTXML.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DVIEW.h">
+      <DependentUpon>HV4DVIEW.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DWINRT.h">
+      <DependentUpon>HV4DWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DWORLD.h">
+      <DependentUpon>HV4DWORLD.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DXML.h">
+      <DependentUpon>HV4DXML.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CHV4DAPP.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DASYNC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DCLIENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DDEBUG.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DDOCUMENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DEVENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DGLOBAL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DHPC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DISTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DKERNEL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DMETA.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DMETRIC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DNODE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DOBJECT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DOSTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DPIPELINE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSECTION.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVICE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSHADER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSHELL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DSYSFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DTREE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DVIEW.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DWINRT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DWORLD.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DXML.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DAPP.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DASYNC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DCLIENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DDEBUG.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DDOCUMENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DEVENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DGLOBAL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DHPC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DISTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DKERNEL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DMETA.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DMETRIC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DNODE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DOBJECT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DOSTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DPIPELINE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSECTION.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSHADER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSHELL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSYSFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTAPP.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTASYNC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTCLIENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTDEBUG.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTDOCUMENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTEVENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTGLOBAL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTHPC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTISTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTKERNEL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTMETA.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTMETRIC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTNODE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTOBJECT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTOSTREAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTPIPELINE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTREE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSECTION.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVICE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSHADER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSHELL.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTSYSFILE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTTREE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTVIEW.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTWINRT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTWORLD.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DTXML.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DVIEW.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DWINRT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DWORLD.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DXML.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DABI.def" />
+    <None Include="packages.config" />
+    <None Include="PropertySheet.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DAPP.idl">
+      <DependentUpon>HV4DAPP.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DASYNC.idl">
+      <DependentUpon>HV4DASYNC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DCLIENT.idl">
+      <DependentUpon>HV4DCLIENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DDEBUG.idl">
+      <DependentUpon>HV4DDEBUG.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DDOCUMENT.idl">
+      <DependentUpon>HV4DDOCUMENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DEVENT.idl">
+      <DependentUpon>HV4DEVENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DFILE.idl">
+      <DependentUpon>HV4DFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DGLOBAL.idl">
+      <DependentUpon>HV4DGLOBAL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DHPC.idl">
+      <DependentUpon>HV4DHPC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DISTREAM.idl">
+      <DependentUpon>HV4DISTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DKERNEL.idl">
+      <DependentUpon>HV4DKERNEL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DMETA.idl">
+      <DependentUpon>HV4DMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DMETRIC.idl">
+      <DependentUpon>HV4DMETRIC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DNODE.idl">
+      <DependentUpon>HV4DNODE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DOBJECT.idl">
+      <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DOSTREAM.idl">
+      <DependentUpon>HV4DOSTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DPIPELINE.idl">
+      <DependentUpon>HV4DPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSECTION.idl">
+      <DependentUpon>HV4DSECTION.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSERVER.idl">
+      <DependentUpon>HV4DSERVER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSERVICE.idl">
+      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSHADER.idl">
+      <DependentUpon>HV4DSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSHELL.idl">
+      <DependentUpon>HV4DSHELL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSYSFILE.idl">
+      <DependentUpon>HV4DSYSFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTAPP.idl">
+      <DependentUpon>HV4DTAPP.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTASYNC.idl">
+      <DependentUpon>HV4DTASYNC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTCLIENT.idl">
+      <DependentUpon>HV4DTCLIENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTDEBUG.idl">
+      <DependentUpon>HV4DTDEBUG.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTDOCUMENT.idl">
+      <DependentUpon>HV4DTDOCUMENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTEVENT.idl">
+      <DependentUpon>HV4DTEVENT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTFILE.idl">
+      <DependentUpon>HV4DTFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTGLOBAL.idl">
+      <DependentUpon>HV4DTGLOBAL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTHPC.idl">
+      <DependentUpon>HV4DTHPC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTISTREAM.idl">
+      <DependentUpon>HV4DTISTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTKERNEL.idl">
+      <DependentUpon>HV4DTKERNEL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTMETA.idl">
+      <DependentUpon>HV4DTMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTMETRIC.idl">
+      <DependentUpon>HV4DTMETRIC.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTNODE.idl">
+      <DependentUpon>HV4DTNODE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTOBJECT.idl">
+      <DependentUpon>HV4DTOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTOSTREAM.idl">
+      <DependentUpon>HV4DTOSTREAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTPIPELINE.idl">
+      <DependentUpon>HV4DTPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTREE.idl">
+      <DependentUpon>HV4DTREE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSECTION.idl">
+      <DependentUpon>HV4DTSECTION.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSERVER.idl">
+      <DependentUpon>HV4DTSERVER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSERVICE.idl">
+      <DependentUpon>HV4DTSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSHADER.idl">
+      <DependentUpon>HV4DTSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSHELL.idl">
+      <DependentUpon>HV4DTSHELL.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTSYSFILE.idl">
+      <DependentUpon>HV4DTSYSFILE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTTREE.idl">
+      <DependentUpon>HV4DTTREE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTVIEW.idl">
+      <DependentUpon>HV4DTVIEW.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTWINRT.idl">
+      <DependentUpon>HV4DTWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTWORLD.idl">
+      <DependentUpon>HV4DTWORLD.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DTXML.idl">
+      <DependentUpon>HV4DTXML.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DVIEW.idl">
+      <DependentUpon>HV4DVIEW.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DWINRT.idl">
+      <DependentUpon>HV4DWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DWORLD.idl">
+      <DependentUpon>HV4DWORLD.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DXML.idl">
+      <DependentUpon>HV4DXML.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HV4DSYSCALL">
+      <HintPath>..\x64\Debug\HV4DSYSCALL\HV4DSYSCALL.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets')" />
+    <Import Project="..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.ImplementationLibrary.1.0.220914.1\build\native\Microsoft.Windows.ImplementationLibrary.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22621.755\build\Microsoft.Windows.SDK.BuildTools.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.2.221116.1\build\native\Microsoft.WindowsAppSDK.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.221121.5\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,10 @@
+namespace HV4DNUMERIC
+{
+    [default_interface]
+    runtimeclass HV4DSERVICE
+    {
+        HV4DSERVICE();
+
+    }
+
+}

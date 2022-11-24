@@ -1,0 +1,23 @@
+import "HV4DHVID.idl";
+import "HV4DMMDDYYYY.idl";
+import "HV4DHHMMSS.idl";
+
+namespace HV4DABI
+{
+	struct INTERUPT {
+		HVID				hvid;
+		MMDDYYYY		mmddyyyy;
+		HHMMSS			  hhmmss;
+		HV4D.HV4DRETURN		 msg;
+	};
+
+    [default_interface]
+    runtimeclass HV4DINTERUPT
+		: HV4DT.IHV4DTPROVIDER
+    {
+        HV4DINTERUPT();
+
+
+    }
+
+}

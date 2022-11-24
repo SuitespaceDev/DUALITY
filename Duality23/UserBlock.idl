@@ -1,0 +1,15 @@
+namespace Duality23
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserBlock : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserBlock();
+
+        String Label;
+
+        String Value;
+
+    }
+
+}

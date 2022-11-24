@@ -1,0 +1,25 @@
+import "HV4DHVID.idl";
+import "HV4DMMM.idl";
+import "HV4DMAXPATH.idl";
+import "HV4DABS.idl";
+import "HV4DCLASST.idl";
+
+namespace HV4DABI
+{
+	struct TNODEX {
+		HVID		hvid;
+		MMM			 mmm;
+		MAXPATH		name;
+		ABS			 dll;
+		CLASST	  classt;
+	};
+
+    [default_interface]
+    runtimeclass HV4DTNODEX
+		: HV4DT.IHV4DTPROVIDER
+    {
+		HV4DTNODEX();
+
+    }
+
+}

@@ -1,0 +1,36 @@
+namespace HV4DABI
+{
+	struct MMM {
+		String  mil;
+		String  maj;
+		String  min;
+	};
+
+    [default_interface]
+    runtimeclass HV4DMMM
+		: HV4DT.IHV4DTPROVIDER
+    {
+        HV4DMMM();
+    
+		HV4D.HV4DRETURN HV4DFromHstring(String e);
+	
+		HV4D.HV4DRETURN HV4DFromABI(MMM e);
+	
+		HV4D.HV4DRETURN HV4DFromWinRT(HV4DMMM e);
+	
+		HV4D.HV4DRETURN HV4DToHstring(out String e);
+	
+		HV4D.HV4DRETURN HV4DToABI(out MMM e);
+	
+		HV4D.HV4DRETURN HV4DToWinRT(out HV4DMMM e);
+	
+		HV4D.HV4DRETURN HV4DIsEqualHstring(String e);
+	
+		HV4D.HV4DRETURN HV4DIsEqualABI(MMM e);
+	
+		HV4D.HV4DRETURN HV4DIsEqualWinRT(HV4DMMM e);
+	
+
+    }
+
+}

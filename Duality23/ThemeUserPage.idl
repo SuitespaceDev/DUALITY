@@ -1,0 +1,10 @@
+namespace Duality23
+{
+    [default_interface]
+    runtimeclass ThemeUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        ThemeUserPage();
+
+    }
+
+}

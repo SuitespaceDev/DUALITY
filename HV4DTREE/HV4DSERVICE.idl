@@ -1,0 +1,10 @@
+namespace HV4DATT
+{
+    [default_interface]
+    runtimeclass HV4DSERVICE
+    {
+        HV4DSERVICE();
+
+    }
+
+}

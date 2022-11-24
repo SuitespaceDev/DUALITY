@@ -1,0 +1,19 @@
+namespace HV4DABI
+{
+    [uuid(EBEF780B-2115-492E-8AC8-47BF7D188ABF)]
+    [version(0x10000001)]
+    interface IHPC : IInspectable
+    {
+
+    };
+
+    [default_interface]
+    runtimeclass HV4DHPC
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DHPC();
+
+
+    }
+
+}

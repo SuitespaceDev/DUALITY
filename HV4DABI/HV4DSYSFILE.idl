@@ -1,0 +1,35 @@
+import "HV4DABS.idl";
+
+import "HV4DHVID.idl";
+import "HV4DSECTION.idl";
+
+namespace HV4DABI
+{
+	[uuid(8DD258BC-8655-47C7-9468-DB9BED06651E)]
+	[version(0x10000001)]
+	interface IHV4DSYSFILE : IInspectable
+	{
+		 HV4D.HV4DRETURN HV4DSetSystemFilePath(ABS e);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFilePath(ABS o);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFileSection(HVID e, ISection o);
+
+		 HV4D.HV4DRETURN HV4DGetSystemFileSections(Windows.Foundation.Collections.IMap<HVID, ISection> o);
+
+		 HV4D.HV4DRETURN HV4DValidateSystemFile();
+
+		 HV4D.HV4DRETURN HV4DClearSystemFile();
+
+	}
+
+    [default_interface]
+    runtimeclass HV4DSYSFILE
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DSYSFILE();
+
+
+    }
+
+}

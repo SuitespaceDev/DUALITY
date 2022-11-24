@@ -1,0 +1,20 @@
+namespace HV4DABI
+{
+	[uuid(31063F12-F1AF-40CA-AB35-1BBD50F09C04)]
+	[version(0x10000001)]
+	interface IObject : IInspectable
+	{
+		 HV4D.HV4DRETURN HV4DBufferFromFile();
+
+	};
+
+    [default_interface]
+    runtimeclass HV4DOBJECT
+            : HV4DT.IHV4DTPROVIDER
+    {
+        HV4DOBJECT();
+
+
+    }
+
+}

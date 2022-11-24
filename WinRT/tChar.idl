@@ -1,0 +1,11 @@
+namespace WinRT
+{
+    [default_interface]
+    runtimeclass tChar
+        : HV4DT.IHV4DTNODE
+    {
+        tChar();
+
+    }
+
+}

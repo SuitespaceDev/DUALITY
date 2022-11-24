@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{5dedcb96-1ccd-406e-9433-8f19659f5eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{c7cb2c3e-a279-46e7-b2ae-d87fd08f9384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts">
+      <UniqueIdentifier>{eddecd17-28a7-4417-8f14-969f5d0051b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework">
+      <UniqueIdentifier>{25e6f93a-3bda-433d-9234-bef1a973e642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DAPP">
+      <UniqueIdentifier>{ac9cf708-e3d8-4f14-9f1a-e31813d77342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DASYNC">
+      <UniqueIdentifier>{15afa1e0-8315-4a21-93c5-74026030cf90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DCLIENT">
+      <UniqueIdentifier>{d9b0c0e5-b22c-4ea8-ad72-9ec31065120c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DEVENT">
+      <UniqueIdentifier>{3c4d258b-052c-426a-935c-5cdb1cb0a4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DHPC">
+      <UniqueIdentifier>{fafe41a9-47ed-4e7c-92c6-95bb28999ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DSHELL">
+      <UniqueIdentifier>{c53adeec-cddb-4883-8050-d62cf79c50be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DSERVER">
+      <UniqueIdentifier>{a51821fd-1580-41a3-b294-0272c9d12cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DWINRT">
+      <UniqueIdentifier>{7b996a1e-c422-477c-a6ed-24046de78a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nodes">
+      <UniqueIdentifier>{d5335902-f757-4c15-a9c9-83cb4d098dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nodes\HV4DNODE">
+      <UniqueIdentifier>{11cf2d67-58e8-4642-b206-b18561fe01a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nucleus">
+      <UniqueIdentifier>{edcd9b85-f311-46ff-9228-84b6a5ad415a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nucleus\HV4DDEBUG">
+      <UniqueIdentifier>{d7f9c9d1-7298-4b1e-a40f-6e71b4d27135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nucleus\HV4DKERNEL">
+      <UniqueIdentifier>{987d0f4a-a587-4cf7-a7e1-dbcfbbf6973d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Nucleus\HV4DMETRIC">
+      <UniqueIdentifier>{fa0cd27f-c807-41e5-ba07-537d409ca648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File">
+      <UniqueIdentifier>{62d1874b-31af-43b3-8770-47f160f18389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DDOC">
+      <UniqueIdentifier>{c1cddf6e-6625-4a08-9f55-4566e5a3ae60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DXML">
+      <UniqueIdentifier>{4c43ef2e-449a-4821-84fc-16bf83b64724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DSYSFILE">
+      <UniqueIdentifier>{a3e89164-818c-418e-ac81-d9b8dd8ef282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DOSTREAM">
+      <UniqueIdentifier>{b07c756b-3bb9-403d-94f2-58d93104dd4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DISTREAM">
+      <UniqueIdentifier>{c9c0143c-7a2d-45e8-8029-0751a98cf6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DTREE">
+      <UniqueIdentifier>{92943848-97ff-436e-b895-90bf530c9e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DFILE">
+      <UniqueIdentifier>{ef56a5a8-d2b6-44de-93ec-0c1080dd942e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DSECTION">
+      <UniqueIdentifier>{f85a691b-d38d-4807-83fb-622d18d6be16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model">
+      <UniqueIdentifier>{a2142428-b7c3-4f2f-88c7-4a748b61b89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DVIEW">
+      <UniqueIdentifier>{3c1d0e85-9927-457c-a5ba-f6dc2fdd6a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DSHADER">
+      <UniqueIdentifier>{27e60ac8-fe63-4541-b972-bde72f3385a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DWORLD">
+      <UniqueIdentifier>{3ea1e9c7-d97e-458a-b9ed-5453a38c66ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DPIPELINE">
+      <UniqueIdentifier>{d991a88c-6258-49a7-a888-2b31e9d12b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DOBJECT">
+      <UniqueIdentifier>{0614fcb0-7d11-44e4-9b0a-eff6034a70bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DGLOBAL">
+      <UniqueIdentifier>{e34887e4-9c2b-4a13-9130-c4b88359947e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Model\HV4DMETA">
+      <UniqueIdentifier>{5762e2a2-563a-4f25-a605-69cdeb535858}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTAPP.cpp">
+      <Filter>Contracts\Framework\HV4DAPP</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DAPP.cpp">
+      <Filter>Contracts\Framework\HV4DAPP</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DAPP.cpp">
+      <Filter>Contracts\Framework\HV4DAPP</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTASYNC.cpp">
+      <Filter>Contracts\Framework\HV4DASYNC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DASYNC.cpp">
+      <Filter>Contracts\Framework\HV4DASYNC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DASYNC.cpp">
+      <Filter>Contracts\Framework\HV4DASYNC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTCLIENT.cpp">
+      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DCLIENT.cpp">
+      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DCLIENT.cpp">
+      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTDEBUG.cpp">
+      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DDEBUG.cpp">
+      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDEBUG.cpp">
+      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTEVENT.cpp">
+      <Filter>Contracts\Framework\HV4DEVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DEVENT.cpp">
+      <Filter>Contracts\Framework\HV4DEVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DEVENT.cpp">
+      <Filter>Contracts\Framework\HV4DEVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTFILE.cpp">
+      <Filter>Contracts\File\HV4DFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DFILE.cpp">
+      <Filter>Contracts\File\HV4DFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DFILE.cpp">
+      <Filter>Contracts\File\HV4DFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTGLOBAL.cpp">
+      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DGLOBAL.cpp">
+      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DGLOBAL.cpp">
+      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTHPC.cpp">
+      <Filter>Contracts\Framework\HV4DHPC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHPC.cpp">
+      <Filter>Contracts\Framework\HV4DHPC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHPC.cpp">
+      <Filter>Contracts\Framework\HV4DHPC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTISTREAM.cpp">
+      <Filter>Contracts\File\HV4DISTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DISTREAM.cpp">
+      <Filter>Contracts\File\HV4DISTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DISTREAM.cpp">
+      <Filter>Contracts\File\HV4DISTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTKERNEL.cpp">
+      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DKERNEL.cpp">
+      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DKERNEL.cpp">
+      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTMETA.cpp">
+      <Filter>Contracts\Model\HV4DMETA</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMETA.cpp">
+      <Filter>Contracts\Model\HV4DMETA</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMETA.cpp">
+      <Filter>Contracts\Model\HV4DMETA</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTMETRIC.cpp">
+      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMETRIC.cpp">
+      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMETRIC.cpp">
+      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTNODE.cpp">
+      <Filter>Contracts\Nodes\HV4DNODE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DNODE.cpp">
+      <Filter>Contracts\Nodes\HV4DNODE</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DNODE.cpp">
+      <Filter>Contracts\Nodes\HV4DNODE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTOBJECT.cpp">
+      <Filter>Contracts\Model\HV4DOBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DOBJECT.cpp">
+      <Filter>Contracts\Model\HV4DOBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DOBJECT.cpp">
+      <Filter>Contracts\Model\HV4DOBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTOSTREAM.cpp">
+      <Filter>Contracts\File\HV4DOSTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DOSTREAM.cpp">
+      <Filter>Contracts\File\HV4DOSTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DOSTREAM.cpp">
+      <Filter>Contracts\File\HV4DOSTREAM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTPIPELINE.cpp">
+      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DPIPELINE.cpp">
+      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DPIPELINE.cpp">
+      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSECTION.cpp">
+      <Filter>Contracts\File\HV4DSECTION</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSECTION.cpp">
+      <Filter>Contracts\File\HV4DSECTION</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSECTION.cpp">
+      <Filter>Contracts\File\HV4DSECTION</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSHADER.cpp">
+      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSHADER.cpp">
+      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSHADER.cpp">
+      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSHELL.cpp">
+      <Filter>Contracts\Framework\HV4DSHELL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSHELL.cpp">
+      <Filter>Contracts\Framework\HV4DSHELL</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSHELL.cpp">
+      <Filter>Contracts\Framework\HV4DSHELL</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSYSFILE.cpp">
+      <Filter>Contracts\File\HV4DSYSFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSYSFILE.cpp">
+      <Filter>Contracts\File\HV4DSYSFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSYSFILE.cpp">
+      <Filter>Contracts\File\HV4DSYSFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTTREE.cpp">
+      <Filter>Contracts\File\HV4DTREE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTREE.cpp">
+      <Filter>Contracts\File\HV4DTREE</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTREE.cpp">
+      <Filter>Contracts\File\HV4DTREE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTVIEW.cpp">
+      <Filter>Contracts\Model\HV4DVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DVIEW.cpp">
+      <Filter>Contracts\Model\HV4DVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DVIEW.cpp">
+      <Filter>Contracts\Model\HV4DVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTWINRT.cpp">
+      <Filter>Contracts\Framework\HV4DWINRT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DWINRT.cpp">
+      <Filter>Contracts\Framework\HV4DWINRT</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DWINRT.cpp">
+      <Filter>Contracts\Framework\HV4DWINRT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTWORLD.cpp">
+      <Filter>Contracts\Model\HV4DWORLD</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DWORLD.cpp">
+      <Filter>Contracts\Model\HV4DWORLD</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DWORLD.cpp">
+      <Filter>Contracts\Model\HV4DWORLD</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTXML.cpp">
+      <Filter>Contracts\File\HV4DXML</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DXML.cpp">
+      <Filter>Contracts\File\HV4DXML</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DXML.cpp">
+      <Filter>Contracts\File\HV4DXML</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTDOCUMENT.cpp">
+      <Filter>Contracts\File\HV4DDOC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DDOCUMENT.cpp">
+      <Filter>Contracts\File\HV4DDOC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDOCUMENT.cpp">
+      <Filter>Contracts\File\HV4DDOC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVER.cpp">
+      <Filter>Contracts\Framework\HV4DSERVER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVER.cpp">
+      <Filter>Contracts\Framework\HV4DSERVER</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVER.cpp">
+      <Filter>Contracts\Framework\HV4DSERVER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DABI.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

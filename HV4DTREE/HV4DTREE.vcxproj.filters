@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Class">
+      <UniqueIdentifier>{86063eac-278d-491e-9c18-f43603c61788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{c75d223b-7252-4497-a134-cc2cce91ea9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{539df449-62e7-45fe-9762-cfda6e6229bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSharedMemory.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSEG.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DPage.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DVOL.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSFT.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DATT.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="RTHV4DTREE.cpp" />
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DTREE.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DSharedMemory.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DPage.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DATT.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>
