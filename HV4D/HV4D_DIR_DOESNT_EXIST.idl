@@ -1,0 +1,12 @@
+import "HV4DRETURN.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4D_DIR_DOESNT_EXIST : HV4DRETURN
+    {
+        HV4D_DIR_DOESNT_EXIST();
+
+    }
+
+}

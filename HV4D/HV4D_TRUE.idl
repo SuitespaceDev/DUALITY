@@ -1,0 +1,12 @@
+import "HV4DRETURN.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4D_TRUE : HV4DRETURN
+    {
+        HV4D_TRUE();
+
+    }
+
+}

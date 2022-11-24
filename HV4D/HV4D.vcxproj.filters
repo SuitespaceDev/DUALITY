@@ -99,6 +99,90 @@
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
+    <ClCompile Include="HV4D_ALREADY_CONFIGURED.cpp">
+      <Filter>HV4DRETURN\HV4D_ALREADY_CONFIGURED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
+      <Filter>HV4DRETURN\HV4D_DIR_ALREADY_EXISTS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_DIR_DOESNT_EXIST.cpp">
+      <Filter>HV4DRETURN\HV4D_DIR_DOESNT_EXIST</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_FALSE.cpp">
+      <Filter>HV4DRETURN\HV4D_FALSE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_ALREADY_EXISTS.cpp">
+      <Filter>HV4DRETURN\HV4D_FILE_ALREADY_EXISTS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_BAD_FORMATTING.cpp">
+      <Filter>HV4DRETURN\HV4D_FILE_BAD_FORMATTING</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_DOESNT_EXIST.cpp">
+      <Filter>HV4DRETURN\HV4D_FILE_DOESNT_EXIST</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_HANDLE_OPEN.cpp">
+      <Filter>HV4DRETURN\HV4D_FILE_HANDLE_OPEN</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_IMAGE_NOT_LOADED.cpp">
+      <Filter>HV4DRETURN\HV4D_IMAGE_NOT_LOADED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_IMPROPERLY_CONFIGURED.cpp">
+      <Filter>HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_ARGUMENT.cpp">
+      <Filter>HV4DRETURN\HV4D_INVALID_ARGUMENT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_INTERFACE.cpp">
+      <Filter>HV4DRETURN\HV4D_INVALID_INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_POINTER.cpp">
+      <Filter>HV4DRETURN\HV4D_INVALID_POINTER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_MODULE_NOT_FOUND.cpp">
+      <Filter>HV4DRETURN\HV4D_MODULE_NOT_FOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_NO_FILE_OPEN.cpp">
+      <Filter>HV4DRETURN\HV4D_NO_FILE_OPEN</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_NOT_CONFIGURED.cpp">
+      <Filter>HV4DRETURN\HV4D_NOT_CONFIGURED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_NOT_SYSTEM_MODULE.cpp">
+      <Filter>HV4DRETURN\HV4D_NOT_SYSTEM_MODULE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_OPERATION_FAILED.cpp">
+      <Filter>HV4DRETURN\HV4D_OPERATION_FAILED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_OPERATION_SUCCEEDED.cpp">
+      <Filter>HV4DRETURN\HV4D_OPERATION_SUCCEEDED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_OUT_OF_MEM.cpp">
+      <Filter>HV4DRETURN\HV4D_OUT_OF_MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_OUT_OF_RANGE.cpp">
+      <Filter>HV4DRETURN\HV4D_OUT_OF_RANGE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_PAGE_ALREADY_EXISTS.cpp">
+      <Filter>HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_PROCESS_NOT_FOUND.cpp">
+      <Filter>HV4DRETURN\HV4D_PROCESS_NOT_FOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_PROPERLY_CONFIGURED.cpp">
+      <Filter>HV4DRETURN\HV4D_PROPERLY_CONFIGURED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_RTCLASS_NOT_FOUND.cpp">
+      <Filter>HV4DRETURN\HV4D_RTCLASS_NOT_FOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_TRUE.cpp">
+      <Filter>HV4DRETURN\HV4D_TRUE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_UNKNOWN.cpp">
+      <Filter>HV4DRETURN\HV4D_UNKNOWN</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_VALID_ARGUMENT.cpp">
+      <Filter>HV4DRETURN\HV4D_VALID_ARGUMENT</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4D.def">
@@ -112,8 +196,10 @@
     <ClInclude Include="pch.h">
       <Filter>a. Project</Filter>
     </ClInclude>
-    <ClInclude Include="HV4DRETURN.h">
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DRETURN.idl">
       <Filter>HV4DRETURN</Filter>
-    </ClInclude>
+    </Midl>
   </ItemGroup>
 </Project>
