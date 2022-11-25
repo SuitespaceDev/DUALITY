@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass ComputeKernelUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        ComputeKernelUserPage();
+
+    }
+
+}

@@ -1,0 +1,13 @@
+namespace Duality137
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserFilterTime : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterTime();
+
+        event Windows.Foundation.EventHandler<String> FilterChanged;
+
+    }
+
+}

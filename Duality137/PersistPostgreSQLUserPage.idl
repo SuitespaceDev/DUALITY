@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass PersistPostgreSQLUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        PersistPostgreSQLUserPage();
+
+    }
+
+}

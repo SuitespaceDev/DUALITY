@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass QueryPostgreSQLUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        QueryPostgreSQLUserPage();
+
+    }
+
+}

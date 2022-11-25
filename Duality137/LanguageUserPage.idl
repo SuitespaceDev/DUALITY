@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass LanguageUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        LanguageUserPage();
+
+    }
+
+}

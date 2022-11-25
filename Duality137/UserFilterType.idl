@@ -1,0 +1,23 @@
+import "UserMSelectable.idl";
+
+namespace Duality137
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserFilterType : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterType();
+
+        String Label;
+
+        String Value;
+
+        Windows.Foundation.Collections.IObservableVector<UserMSelectable> FilterList;
+
+        UserMSelectable MultiFilterState;
+
+        event Windows.Foundation.EventHandler<String> FilterUpdate;
+
+    }
+
+}

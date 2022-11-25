@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass ContextMenuUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        ContextMenuUserPage();
+
+    }
+
+}

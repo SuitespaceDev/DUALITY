@@ -1,0 +1,98 @@
+﻿<UserControl
+    x:Class="Duality137.UserFilterType"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Duality137Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border 
+        BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+        BorderThickness="1"
+        HorizontalAlignment="Stretch"
+        Height="32">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="0" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1">
+
+                <TextBlock 
+                    Foreground="Black" 
+                    Padding="3,3,3,3"                
+                    FontWeight="Medium"
+                    FontSize="14"
+                    Text="{x:Bind Label}"/>
+
+            </Border>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="1" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1">
+
+                <TextBlock 
+                    Foreground="Black"
+                    Padding="3,3,3,3"                           
+                    FontWeight="Medium"
+                    FontSize="14"
+                    Text="{x:Bind Value}"/>
+
+            </Border>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="3" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1"
+                Padding="3,3,3,3">
+
+                <ComboBox 
+                    x:Name="FilterListView"
+                    Foreground="Black" 
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Padding="3,3,3,3"      
+                    FontWeight="Medium"
+                    FontSize="14"
+                    ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
+                    SelectedItem="{x:Bind MultiFilterState, Mode=TwoWay}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate 
+                            x:DataType="local:UserMSelectable">
+                            <ToggleButton 
+                                HorizontalAlignment="Stretch">
+                                <TextBlock 
+                                    Text="{x:Bind Selectable, Mode=OneWay}"
+                                    TextAlignment="Left"/>
+                            </ToggleButton> 
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ComboBox>
+
+            </Border>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

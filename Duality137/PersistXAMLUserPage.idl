@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass PersistXAMLUserPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        PersistXAMLUserPage();
+
+    }
+
+}
