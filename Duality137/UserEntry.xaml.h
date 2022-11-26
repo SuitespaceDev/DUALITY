@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#include "winrt/HV4D.h"
-
 #include "UserEntry.g.h"
 
 namespace WF        = winrt::Windows::Foundation;
@@ -11,8 +9,6 @@ namespace WUXI      = winrt::Windows::UI::Xaml::Interop;
 namespace MUX       = winrt::Microsoft::UI::Xaml;
 namespace MUXC      = winrt::Microsoft::UI::Xaml::Controls;
 namespace MUXD      = winrt::Microsoft::UI::Xaml::Data;
-
-using RETURN = winrt::HV4D::HV4DRETURN;
 
 namespace winrt::Duality137::implementation
 {

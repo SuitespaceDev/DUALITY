@@ -202,9 +202,6 @@
     <Midl Include="QueryXMLUserPage.idl">
       <Filter>8. Pages\Property Pages</Filter>
     </Midl>
-    <Midl Include="RecentProject.idl">
-      <Filter>8. Pages\Pickers</Filter>
-    </Midl>
     <Midl Include="SaveToCloud.idl">
       <Filter>8. Pages\Serialize</Filter>
     </Midl>
@@ -358,11 +355,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="app.manifest">
-      <Filter>1. Project</Filter>
-    </Manifest>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config">
       <Filter>1. Project</Filter>
     </None>
@@ -383,11 +375,6 @@
     <ClInclude Include="BlankProject.xaml - Copy.h">
       <Filter>8. Pages\Pickers</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <AppxManifest Include="Package.appxmanifest">
-      <Filter>1. Project</Filter>
-    </AppxManifest>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="Duality.xaml">
@@ -499,9 +486,6 @@
     </Page>
     <Page Include="DatacenterAccountUserPage.xaml">
       <Filter>8. Pages\Property Pages\Accounts</Filter>
-    </Page>
-    <Page Include="DebugUserPage.xaml">
-      <Filter>8. Pages\Property Pages\Common\Diagnostics</Filter>
     </Page>
     <Page Include="WindowUserPage.xaml">
       <Filter>8. Pages\Property Pages\BootstrapperUserPage</Filter>
@@ -643,6 +627,15 @@
     </Page>
     <Page Include="TemplateProject.xaml">
       <Filter>8. Pages\Pickers</Filter>
+    </Page>
+    <Page Include="Operational.xaml">
+      <Filter>2. Application\f. Operational</Filter>
+    </Page>
+    <Page Include="Diagnostics.xaml">
+      <Filter>2. Application\e. Diagnostics</Filter>
+    </Page>
+    <Page Include="DebugUserPage.xaml">
+      <Filter>8. Pages\Property Pages\Common\Diagnostics</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

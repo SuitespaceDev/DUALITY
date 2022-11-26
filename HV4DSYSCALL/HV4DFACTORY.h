@@ -10,6 +10,10 @@
 
 #include "HV4DFACTORY.g.h"
 
+namespace WF = winrt::Windows::Foundation;
+
+namespace HV4D = winrt::HV4D;
+
 namespace winrt::HV4DSYSCALL::implementation
 {
 	struct HV4DFACTORY : HV4DFACTORYT<HV4DFACTORY>
@@ -18,7 +22,7 @@ namespace winrt::HV4DSYSCALL::implementation
 		HV4DFACTORY();
 
 	public:
-		__SYSCALL HV4D::HV4DRETURN HV4DGetActivationFactory(hstring const&, hstring const&, winrt::Windows::Foundation::IInspectable&);
+		__SYSCALL HV4D::IHV4DRETURN HV4DGetActivationFactory(winrt::hstring const&, hstring const&, WF::IInspectable&);
 
 	};
 

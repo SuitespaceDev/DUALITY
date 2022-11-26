@@ -1,0 +1,12 @@
+import "IHV4DTTYPE.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4DT_TYPE_NODE : IHV4DTTYPE
+    {
+        HV4DT_TYPE_NODE();
+
+    }
+
+}

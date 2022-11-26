@@ -1,37 +1,23 @@
 ﻿#pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\HV4DABI\\HV4DABI.lib")
-
 #include <shobjidl.h>
 
 #include "winrt/Windows.UI.Popups.h"
 
-#include "winrt/HV4D.h"
-#include "winrt/HV4DABI.h"
+#include "Landing.g.h"
 
-#include "../HV4DABI/CHV4DHVID.h"
-#include "../HV4DABI/CHV4DMAXPATH.h"
-#include "../HV4DABI/CHV4DKEY.h"
-
-#include "RecentProject.g.h"
-
-namespace WF = winrt::Windows::Foundation;
-namespace WFITT = winrt::Windows::Foundation::Collections;
-namespace WUPOP = winrt::Windows::UI::Popups;
-namespace MUX = winrt::Microsoft::UI::Xaml;
-namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
-namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
-namespace HV4D = winrt::HV4D;
-namespace HV4DABI = winrt::HV4DABI;
-
-using RETURN = HV4D::HV4DRETURN;
+namespace WF        = winrt::Windows::Foundation;
+namespace WFITT     = winrt::Windows::Foundation::Collections;
+namespace WUPOP     = winrt::Windows::UI::Popups;
+namespace MUX       = winrt::Microsoft::UI::Xaml;
+namespace MUXC      = winrt::Microsoft::UI::Xaml::Controls;
 
 namespace winrt::Duality137::implementation
 {
-    struct RecentProject : RecentProjectT<RecentProject>
+    struct Landing : LandingT<Landing>
     {
     public:
-        RecentProject();
+        Landing();
 
     public:
         void Loading(MUX::FrameworkElement const&, WF::IInspectable const&);
@@ -45,15 +31,15 @@ namespace winrt::Duality137::implementation
         void PopulateRecent();
 
     public:
-        void RecentProject001(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-        void RecentProject002(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-        void RecentProject003(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-        void RecentProject004(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-        void RecentProject005(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-        void RecentProject006(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing001(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing002(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing003(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing004(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing005(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+        void Landing006(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
     private:
-        void OpenRecentProject(uint32_t);
+        void OpenLanding(uint32_t);
 
     public:
         void OpenProject001(WF::IInspectable const&, MUX::RoutedEventArgs const&);
@@ -79,7 +65,7 @@ namespace winrt::Duality137::implementation
 
 namespace winrt::Duality137::factory_implementation
 {
-    struct RecentProject : RecentProjectT<RecentProject, implementation::RecentProject>
+    struct Landing : LandingT<Landing, implementation::Landing>
     {
     };
 }

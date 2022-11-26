@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#include "winrt/HV4D.h"
-
 #include "HV4DFILE.g.h"
 
 namespace winrt::HV4DCONTRACT::implementation
@@ -10,9 +8,6 @@ namespace winrt::HV4DCONTRACT::implementation
 	{
 	public:
 		HV4DFILE();
-
-	public:
-		HV4D::HV4DRETURN HV4D();
 
 	};
 

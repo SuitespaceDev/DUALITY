@@ -5,7 +5,7 @@
 #include <winrt/Microsoft.UI.Interop.h>
 #include <Microsoft.UI.Xaml.Window.h>
 
-#include "Landing.h"
+#include "Landing.xaml.h"
 
 #include "RootUI.g.h"
 

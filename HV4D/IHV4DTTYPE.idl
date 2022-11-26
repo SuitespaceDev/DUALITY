@@ -1,0 +1,25 @@
+import "HV4DOBJECT.idl";
+
+namespace HV4D
+{
+	[uuid("35BB4645-E9B1-4062-BCB4-F1E3FF7E94F8")]
+	[version(0x10000001)]
+	interface IHV4DTTYPE
+	{
+		IHV4DOBJECT HV4DSender();
+
+		Guid HV4DTType();
+
+		UInt64 HV4DTTypeID();
+
+		String HV4DTTypeName();
+
+		Guid ExtendedArgsType;
+
+		Object ExtendedArgs;
+
+		String Comments;
+
+	};
+
+}

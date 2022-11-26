@@ -8,12 +8,11 @@ namespace HV4DABI
 		HVID				hvid;
 		MMDDYYYY		mmddyyyy;
 		HHMMSS			  hhmmss;
-		HV4D.HV4DRETURN		 msg;
+		HV4D.IHV4DRETURN	 msg;
 	};
 
     [default_interface]
     runtimeclass HV4DINTERUPT
-		: HV4DT.IHV4DTPROVIDER
     {
         HV4DINTERUPT();
 

@@ -4,6 +4,8 @@
 
 #include "HV4DTIME.g.h"
 
+namespace HV4D = winrt::HV4D;
+
 namespace winrt::HV4DSYSCALL::implementation
 {
 	struct HV4DTIME : HV4DTIMET<HV4DTIME>
@@ -12,9 +14,9 @@ namespace winrt::HV4DSYSCALL::implementation
 		HV4DTIME();
 
 	public:
-		HV4D::HV4DRETURN HV4DIsValidTime(uint64_t const&);
+		HV4D::IHV4DRETURN HV4DIsValidTime(uint64_t const&);
 
-		HV4D::HV4DRETURN HV4DIsValidTime(hstring const&, hstring const&);
+		HV4D::IHV4DRETURN HV4DIsValidTime(winrt::hstring const&, winrt::hstring const&);
 
 	};
 

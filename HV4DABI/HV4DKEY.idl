@@ -14,23 +14,23 @@ namespace HV4DABI
     {
         HV4DKEY();
 
-        HV4D.HV4DRETURN HV4DFromHstring(String p, String f);
+        HV4D.IHV4DRETURN HV4DFromHstring(String p, String f);
 
-        HV4D.HV4DRETURN HV4DFromKEY(KEY key);
+        HV4D.IHV4DRETURN HV4DFromKEY(KEY key);
 
-        HV4D.HV4DRETURN HV4DFromWinRT(HV4DKEY key);
+        HV4D.IHV4DRETURN HV4DFromWinRT(HV4DKEY key);
 
-        HV4D.HV4DRETURN HV4DToHstring(out String p, out String f);
+        HV4D.IHV4DRETURN HV4DToHstring(out String p, out String f);
 
-        HV4D.HV4DRETURN HV4DToKEY(out KEY key);
+        HV4D.IHV4DRETURN HV4DToKEY(out KEY key);
 
-        HV4D.HV4DRETURN HV4DToWinRT(out HV4DKEY key);
+        HV4D.IHV4DRETURN HV4DToWinRT(out HV4DKEY key);
 
-        HV4D.HV4DRETURN HV4DIsEqualHstring(String p, String f);
+        HV4D.IHV4DRETURN HV4DIsEqualHstring(String p, String f);
 
-        HV4D.HV4DRETURN HV4DIsEqualKEY(KEY key);
+        HV4D.IHV4DRETURN HV4DIsEqualKEY(KEY key);
 
-        HV4D.HV4DRETURN HV4DIsEqualWinRT(HV4DKEY key);
+        HV4D.IHV4DRETURN HV4DIsEqualWinRT(HV4DKEY key);
 
     }
 

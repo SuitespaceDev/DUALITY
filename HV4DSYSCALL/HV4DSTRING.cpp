@@ -4,10 +4,6 @@
 #include "HV4DSTRING.g.cpp"
 #endif
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL::implementation
 {
 	HV4DSTRING::HV4DSTRING()
@@ -17,35 +13,35 @@ namespace winrt::HV4DSYSCALL::implementation
 
 	}
 
-	HV4DRETURN HV4DSTRING::HV4DSubStr(hstring const&, uint32_t const&, uint32_t const&, hstring&)
+	HV4D::IHV4DRETURN HV4DSTRING::HV4DSubStr(winrt::hstring const&, uint32_t const&, uint32_t const&, winrt::hstring&)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DSTRING::HV4DNoSymbols(hstring const&, hstring&)
+	HV4D::IHV4DRETURN HV4DSTRING::HV4DNoSymbols(winrt::hstring const&, winrt::hstring&)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DSTRING::HV4DHasSymbols(hstring const&)
+	HV4D::IHV4DRETURN HV4DSTRING::HV4DHasSymbols(winrt::hstring const&)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DSTRING::HV4DNoEscape(hstring const&, hstring&)
+	HV4D::IHV4DRETURN HV4DSTRING::HV4DNoEscape(winrt::hstring const&, winrt::hstring&)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

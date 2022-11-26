@@ -1,16 +1,16 @@
 namespace HV4DCONTRACT
 {
-	[uuid("31063F12-F1AF-40CA-AB35-1BBD50F09C04")]
-	[version(0x10000001)]
-	interface IObject
-	{
-		 HV4D.HV4DRETURN HV4DBufferFromFile();
+    [uuid("CD7DFCE5-3208-424A-8498-3D96E011821A")]
+    [version(0x10000001)]
+    interface IHV4DOBJECT
+    {
 
-	};
+
+
+    }
 
     [default_interface]
-    runtimeclass HV4DOBJECT
-            : HV4DT.IHV4DTPROVIDER
+    runtimeclass HV4DOBJECT : [default] IHV4DOBJECT
     {
         HV4DOBJECT();
 

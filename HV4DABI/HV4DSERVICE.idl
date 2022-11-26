@@ -1,8 +1,7 @@
 namespace HV4DABI
 {
     [default_interface]
-    runtimeclass HV4DSERVICE
-            : HV4DT.IHV4DTPROVIDER
+    runtimeclass HV4DSERVICE : [default] IHV4DOBJECT
     {
         HV4DSERVICE();
 

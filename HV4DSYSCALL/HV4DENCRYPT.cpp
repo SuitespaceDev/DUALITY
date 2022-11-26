@@ -4,10 +4,6 @@
 #include "HV4DENCRYPT.g.cpp"
 #endif
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL::implementation
 {
 	HV4DENCRYPT::HV4DENCRYPT()
@@ -18,17 +14,17 @@ namespace winrt::HV4DSYSCALL::implementation
 
 	}
 
-	HV4DRETURN HV4DENCRYPT::HV4DEncryptVolumeName(winrt::guid const& e, hstring const& k, winrt::guid& o)
+	HV4D::IHV4DRETURN HV4DENCRYPT::HV4DEncryptVolumeName(winrt::guid const& e, winrt::hstring const& k, winrt::guid& o)
 	{
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DENCRYPT::HV4DDecryptVolumeName(winrt::guid const& e, hstring const& k, winrt::guid& o)
+	HV4D::IHV4DRETURN HV4DENCRYPT::HV4DDecryptVolumeName(winrt::guid const& e, winrt::hstring const& k, winrt::guid& o)
 	{
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

@@ -4,15 +4,31 @@
 #include "DebugUserPage.g.cpp"
 #endif
 
-namespace winrt::Duality23::implementation
+using namespace winrt;
+using namespace Microsoft::UI::Xaml;
+
+// To learn more about WinUI, the WinUI project structure,
+// and more about our project templates, see: http://aka.ms/winui-project-info.
+
+namespace winrt::Duality137::implementation
 {
     DebugUserPage::DebugUserPage()
     {
         InitializeComponent();
-
-
-        return;
-
     }
 
+    int32_t DebugUserPage::MyProperty()
+    {
+        throw hresult_not_implemented();
+    }
+
+    void DebugUserPage::MyProperty(int32_t /* value */)
+    {
+        throw hresult_not_implemented();
+    }
+
+    void DebugUserPage::myButton_Click(IInspectable const&, RoutedEventArgs const&)
+    {
+        myButton().Content(box_value(L"Clicked"));
+    }
 }

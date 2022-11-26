@@ -2,19 +2,15 @@
 
 #include "CHV4DFACTORY.h"
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL
 {
-	HV4DRETURN CHV4DGetActivationFactory(hstring const& dll, hstring const& rtclass, Windows::Foundation::IActivationFactory o)
+	HV4D::IHV4DRETURN CHV4DGetActivationFactory(winrt::hstring const& dll, winrt::hstring const& rtclass, WF::IActivationFactory o)
 	{
 		void* dllHandle = WINRT_IMPL_LoadLibraryW(dll.c_str());
 
 		if (dllHandle == nullptr)
 		{
-			return HV4DRETURN::HV4D_MODULE_NOT_FOUND;
+			return HV4D::HV4D_MODULE_NOT_FOUND{};
 
 		}
 
@@ -22,7 +18,7 @@ namespace winrt::HV4DSYSCALL
 
 		if (proc == nullptr)
 		{
-			return HV4DRETURN::HV4D_INVALID_POINTER;
+			return HV4D::HV4D_INVALID_POINTER{};
 
 		}
 
@@ -42,7 +38,7 @@ namespace winrt::HV4DSYSCALL
 
 		if (ret != S_OK)
 		{
-			return HV4DRETURN::HV4D_RTCLASS_NOT_FOUND;
+			return HV4D::HV4D_RTCLASS_NOT_FOUND{};
 
 		}
 
@@ -51,7 +47,7 @@ namespace winrt::HV4DSYSCALL
 
 		if (oObj == nullptr)
 		{
-			return HV4DRETURN::HV4D_OPERATION_FAILED;
+			return HV4D::HV4D_OPERATION_FAILED{};
 
 		}
 
@@ -59,7 +55,7 @@ namespace winrt::HV4DSYSCALL
 
 		WindowsDeleteString(hcname);
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	};
 

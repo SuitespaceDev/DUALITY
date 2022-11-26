@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Duality137.RecentProject"
+    x:Class="Duality137.Landing"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
@@ -18,7 +18,7 @@
                 <ResourceDictionary Source="ms-appx:///Duality137Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <ImageBrush x:Key="RecentProjects" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\RecentProjects.png"/>
+            <ImageBrush x:Key="Landings" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Landings.png"/>
             <ImageBrush x:Key="OpenProject" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\OpenProject.png"/>
 
         </ResourceDictionary>
@@ -139,8 +139,8 @@
                    Grid.Column="18" Grid.ColumnSpan="13" 
                    Grid.Row="2" Grid.RowSpan="4"/>
 
-        <Rectangle x:Name="TitleRecentProjects" 
-                   Fill="{StaticResource RecentProjects}"
+        <Rectangle x:Name="TitleLandings" 
+                   Fill="{StaticResource Landings}"
                    Grid.Column="1" Grid.ColumnSpan="6" 
                    Grid.Row="13" Grid.RowSpan="4"/>
 

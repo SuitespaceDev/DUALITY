@@ -163,28 +163,8 @@
       <DependentUpon>HV4DSTRING.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="HV4DTENCRYPT.h">
-      <DependentUpon>HV4DTENCRYPT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTFACTORY.h">
-      <DependentUpon>HV4DTFACTORY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="HV4DTIME.h">
       <DependentUpon>HV4DTIME.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTKEYMAP.h">
-      <DependentUpon>HV4DTKEYMAP.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTSTRING.h">
-      <DependentUpon>HV4DTSTRING.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTTIME.h">
-      <DependentUpon>HV4DTTIME.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -218,22 +198,7 @@
     <ClCompile Include="HV4DSTRING.cpp">
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="HV4DTENCRYPT.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTFACTORY.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="HV4DTIME.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTKEYMAP.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTSTRING.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTTIME.cpp">
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -267,28 +232,8 @@
       <DependentUpon>HV4DSTRING.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="HV4DTENCRYPT.idl">
-      <DependentUpon>HV4DTENCRYPT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTFACTORY.idl">
-      <DependentUpon>HV4DTFACTORY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="HV4DTIME.idl">
       <DependentUpon>HV4DTIME.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTKEYMAP.idl">
-      <DependentUpon>HV4DTKEYMAP.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTSTRING.idl">
-      <DependentUpon>HV4DTSTRING.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTTIME.idl">
-      <DependentUpon>HV4DTTIME.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>

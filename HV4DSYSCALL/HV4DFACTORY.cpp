@@ -4,10 +4,6 @@
 #include "HV4DFACTORY.g.cpp"
 #endif
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL::implementation
 {
 	HV4DFACTORY::HV4DFACTORY()
@@ -17,10 +13,10 @@ namespace winrt::HV4DSYSCALL::implementation
 
 	}
 
-	HV4DRETURN HV4DFACTORY::HV4DGetActivationFactory(hstring const& dll, hstring const& rtclass, winrt::Windows::Foundation::IInspectable& factory)
+	HV4D::IHV4DRETURN HV4DFACTORY::HV4DGetActivationFactory(winrt::hstring const& dll, winrt::hstring const& rtclass, WF::IInspectable& factory)
 	{
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

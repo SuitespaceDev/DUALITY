@@ -1,0 +1,20 @@
+namespace HV4DCONTRACT
+{
+    [uuid("")]
+    [version(0x10000001)]
+    interface I
+    {
+
+
+
+    }
+
+    [default_interface]
+    runtimeclass HV4DPROVIDER
+    {
+        HV4DPROVIDER();
+
+
+    }
+
+}

@@ -10,8 +10,12 @@
 
 #include "winrt/HV4D.h"
 
+namespace WF = winrt::Windows::Foundation;
+
+namespace HV4D = winrt::HV4D;
+
 namespace winrt::HV4DSYSCALL
 {
-    __SYSCALL HV4D::HV4DRETURN HV4DGetActivationFactory(hstring const&, hstring const&, winrt::Windows::Foundation::IActivationFactory);
+    __SYSCALL HV4D::IHV4DRETURN HV4DGetActivationFactory(winrt::hstring const&, winrt::hstring const&, WF::IActivationFactory);
 
 }

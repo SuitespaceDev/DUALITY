@@ -5,9 +5,9 @@ namespace HV4DSYSCALL
     {
         HV4DTIME();
     
-        HV4D.HV4DRETURN HV4DIsValidTime(UInt64 t);
+        HV4D.IHV4DRETURN HV4DIsValidTime(UInt64 t);
 
-        HV4D.HV4DRETURN HV4DIsValidTime(String mmddyyyy, String hhmmss);
+        HV4D.IHV4DRETURN HV4DIsValidTime(String mmddyyyy, String hhmmss);
 
     }
 

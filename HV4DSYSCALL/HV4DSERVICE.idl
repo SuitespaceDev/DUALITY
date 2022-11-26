@@ -1,7 +1,7 @@
 namespace HV4DSYSCALL
 {
     [default_interface]
-    runtimeclass HV4DSERVICE : HV4DT.IHV4DTSERVICE
+    runtimeclass HV4DSERVICE : HV4DCONTRACT.IObject
     {
         HV4DSERVICE();
 

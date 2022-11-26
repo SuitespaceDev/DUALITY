@@ -9,9 +9,6 @@
 		<Reference Include="C:\Users\rebek\source\DUALITY\x64\Debug\HV4D\HV4D.winmd">
 			<IsWinmdFile>true</IsWinmdFile>
 		</Reference>
-		<Reference Include="C:\Users\rebek\source\DUALITY\x64\Debug\HV4DT\HV4DT.winmd">
-			<IsWinmdFile>true</IsWinmdFile>
-		</Reference>
 		<Reference Include="C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DSYSCALL\HV4DSYSCALL.winmd">
 			<IsWinmdFile>true</IsWinmdFile>
 		</Reference>

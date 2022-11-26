@@ -4,10 +4,6 @@
 #include "HV4DTIME.g.cpp"
 #endif
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL::implementation
 {
 	HV4DTIME::HV4DTIME()
@@ -17,19 +13,19 @@ namespace winrt::HV4DSYSCALL::implementation
 
 	}
 
-	HV4DRETURN HV4DTIME::HV4DIsValidTime(uint64_t const& t)
+	HV4D::IHV4DRETURN HV4DTIME::HV4DIsValidTime(uint64_t const& t)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DTIME::HV4DIsValidTime(hstring const&, hstring const&)
+	HV4D::IHV4DRETURN HV4DTIME::HV4DIsValidTime(winrt::hstring const&, winrt::hstring const&)
 	{
 
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

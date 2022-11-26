@@ -1,0 +1,12 @@
+import "HV4DOBJECT.idl";
+import "IHV4DTTYPE.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4DT_TYPE_SERVICE : [default] IHV4DOBJECT, IHV4DTTYPE
+    {
+        HV4DT_TYPE_SERVICE();
+
+    }
+
+}

@@ -1,9 +1,9 @@
-import "HV4DRETURN.idl";
+import "IHV4DRETURN.idl";
 
 namespace HV4D
 {
     [default_interface]
-    runtimeclass HV4D_DIR_DOESNT_EXIST : HV4DRETURN
+    runtimeclass HV4D_DIR_DOESNT_EXIST : [default] IHV4DOBJECT, IHV4DRETURN
     {
         HV4D_DIR_DOESNT_EXIST();
 

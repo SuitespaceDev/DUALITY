@@ -5,17 +5,17 @@ namespace HV4DSYSCALL
     {
 		HV4DKEYMAP();
     
-		HV4D.HV4DRETURN HV4DCharToNumeric(Char c, out UInt32 o);
+		HV4D.IHV4DRETURN HV4DCharToNumeric(Char c, out UInt32 o);
 
-		HV4D.HV4DRETURN HV4DCharFromNumeric(UInt32 e, out Char c);
+		HV4D.IHV4DRETURN HV4DCharFromNumeric(UInt32 e, out Char c);
 
-		HV4D.HV4DRETURN HV4DCharIsHex(Char e);
+		HV4D.IHV4DRETURN HV4DCharIsHex(Char e);
 
-		HV4D.HV4DRETURN HV4DCharIsNumeric(Char e);
+		HV4D.IHV4DRETURN HV4DCharIsNumeric(Char e);
 
-		HV4D.HV4DRETURN HV4DCharIsAlphaNumeric(Char e);
+		HV4D.IHV4DRETURN HV4DCharIsAlphaNumeric(Char e);
 
-		HV4D.HV4DRETURN HV4DCharIsSymbol(Char e);
+		HV4D.IHV4DRETURN HV4DCharIsSymbol(Char e);
 
     }
 

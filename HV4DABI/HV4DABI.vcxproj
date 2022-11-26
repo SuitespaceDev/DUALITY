@@ -230,58 +230,6 @@
       <DependentUpon>HV4DSTRING.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="HV4DTABS.h">
-      <DependentUpon>HV4DTABS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTCLASST.h">
-      <DependentUpon>HV4DTCLASST.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTHHMMSS.h">
-      <DependentUpon>HV4DTHHMMSS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTHVID.h">
-      <DependentUpon>HV4DTHVID.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTINTERUPT.h">
-      <DependentUpon>HV4DTINTERUPT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTKEY.h">
-      <DependentUpon>HV4DTKEY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTMAXPATH.h">
-      <DependentUpon>HV4DTMAXPATH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTMMDDYYYY.h">
-      <DependentUpon>HV4DTMMDDYYYY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTMMM.h">
-      <DependentUpon>HV4DTMMM.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTNUMERIC.h">
-      <DependentUpon>HV4DTNUMERIC.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTOFFSET.h">
-      <DependentUpon>HV4DTOFFSET.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTSERVICE.h">
-      <DependentUpon>HV4DTSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTSTRING.h">
-      <DependentUpon>HV4DTSTRING.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -339,46 +287,6 @@
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="HV4DSTRING.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTABS.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTCLASST.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTHHMMSS.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTHVID.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTINTERUPT.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTKEY.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTMAXPATH.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTMMDDYYYY.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTMMM.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTNUMERIC.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTOFFSET.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTSERVICE.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTSTRING.cpp">
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -442,58 +350,6 @@
     </Midl>
     <Midl Include="HV4DSTRING.idl">
       <DependentUpon>HV4DSTRING.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTABS.idl">
-      <DependentUpon>HV4DTABS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTCLASST.idl">
-      <DependentUpon>HV4DTCLASST.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTHHMMSS.idl">
-      <DependentUpon>HV4DTHHMMSS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTHVID.idl">
-      <DependentUpon>HV4DTHVID.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTINTERUPT.idl">
-      <DependentUpon>HV4DTINTERUPT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTKEY.idl">
-      <DependentUpon>HV4DTKEY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTMAXPATH.idl">
-      <DependentUpon>HV4DTMAXPATH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTMMDDYYYY.idl">
-      <DependentUpon>HV4DTMMDDYYYY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTMMM.idl">
-      <DependentUpon>HV4DTMMM.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTNUMERIC.idl">
-      <DependentUpon>HV4DTNUMERIC.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTOFFSET.idl">
-      <DependentUpon>HV4DTOFFSET.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTSERVICE.idl">
-      <DependentUpon>HV4DTSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTSTRING.idl">
-      <DependentUpon>HV4DTSTRING.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>

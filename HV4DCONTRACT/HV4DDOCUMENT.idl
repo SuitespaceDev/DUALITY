@@ -1,26 +1,17 @@
-import "HV4DWINRT.idl";
+import "HV4DOBJECT.idl";
 
 namespace HV4DCONTRACT
-{ 
-	[uuid("EDD4116A-DE20-46CB-9981-1FC04B44C86F")]
-	[version(0x10000001)]
-	interface IDocument
-	{
-		HV4D.HV4DRETURN HV4DBlankDocument(IWinRT e);
+{
+    [uuid("DDAE460F-CBE0-4503-97C4-37B049F5E6CA")]
+    [version(0x10000001)]
+    interface IHV4DDOCUMENT
+    {
 
-		HV4D.HV4DRETURN HV4DReadDocument(IWinRT e);
 
-		HV4D.HV4DRETURN HV4DWriteDocument(IWinRT e);
 
-		HV4D.HV4DRETURN HV4DValidateDocument();
+    }
 
-		HV4D.HV4DRETURN HV4DClearDocument();
-
-	}
-
-    [default_interface]
-    runtimeclass HV4DDOCUMENT
-            : HV4DT.IHV4DTPROVIDER
+    runtimeclass HV4DDOCUMENT : [default] IHV4DOBJECT
     {
         HV4DDOCUMENT();
 

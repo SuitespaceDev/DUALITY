@@ -1,12 +1,12 @@
 ﻿#include "pch.h"
-#include "RecentProject.xaml.h"
-#if __has_include("RecentProject.g.cpp")
-#include "RecentProject.g.cpp"
+#include "Landing.xaml.h"
+#if __has_include("Landing.g.cpp")
+#include "Landing.g.cpp"
 #endif
 
 namespace winrt::Duality137::implementation
 {
-	RecentProject::RecentProject()
+	Landing::Landing()
 	{
 		InitializeComponent();
 
@@ -15,7 +15,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::Loading(MUX::FrameworkElement const& sender, WF::IInspectable const& args)
+	void Landing::Loading(MUX::FrameworkElement const& sender, WF::IInspectable const& args)
 	{
 
 
@@ -24,7 +24,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::Loaded(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Loaded(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		PopulateRecent();
 
@@ -33,7 +33,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::PopulateRecent()
+	void Landing::PopulateRecent()
 	{
 
 
@@ -42,60 +42,60 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::RecentProject001(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing001(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(0);
+		OpenLanding(0);
 
 		return;
 
 	}
 
-	void RecentProject::RecentProject002(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing002(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(1);
+		OpenLanding(1);
 
 		return;
 
 	}
 
-	void RecentProject::RecentProject003(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing003(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(2);
+		OpenLanding(2);
 
 		return;
 
 	}
 
-	void RecentProject::RecentProject004(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing004(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(3);
+		OpenLanding(3);
 
 		return;
 
 	}
 
-	void RecentProject::RecentProject005(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing005(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(4);
+		OpenLanding(4);
 
 		return;
 
 	}
 
-	void RecentProject::RecentProject006(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::Landing006(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		OpenRecentProject(5);
+		OpenLanding(5);
 
 		return;
 
 	}
 
-	void RecentProject::OpenRecentProject(uint32_t i)
+	void Landing::OpenLanding(uint32_t i)
 	{
 
 
 
-		if (!Frame().Navigate(xaml_typename<Duality137::Operational>()))
+		if (!Frame().Navigate(winrt::xaml_typename<winrt::Duality137::Operational>()))
 		{
 			HV4DThrowCouldNotNavigate();
 
@@ -105,7 +105,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject001(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject001(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		Frame().Navigate(xaml_typename<Duality137::OpenProject>());
 
@@ -113,7 +113,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject002(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject002(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		Frame().Navigate(xaml_typename<Duality137::CloudProject>());
 
@@ -121,7 +121,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject003(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject003(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		Frame().Navigate(xaml_typename<Duality137::TemplateProject>());
 
@@ -129,7 +129,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject004(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject004(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		Frame().Navigate(xaml_typename<Duality137::BlankProject>());
 
@@ -137,7 +137,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject005(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject005(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		Frame().Navigate(xaml_typename<Duality137::GitProject>());
 
@@ -145,7 +145,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::OpenProject006(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::OpenProject006(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		MUX::Application().Exit();
 
@@ -153,9 +153,9 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::GoToLoaderSettings(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void Landing::GoToLoaderSettings(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		bool ret = Frame().Navigate(winrt::xaml_typename<Duality137::BuildMetadata>());
+		bool ret = Frame().Navigate(winrt::xaml_typename<winrt::Duality137::Machine>());
 
 		if (!ret) HV4DThrowCouldNotNavigate();
 
@@ -163,7 +163,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::HV4DThrowFailed()
+	void Landing::HV4DThrowFailed()
 	{
 		WUPOP::MessageDialog Msg{ L"Error." };
 
@@ -185,7 +185,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::HV4DThrowInvalidProject()
+	void Landing::HV4DThrowInvalidProject()
 	{
 		WUPOP::MessageDialog Msg{ L"Error." };
 
@@ -215,7 +215,7 @@ namespace winrt::Duality137::implementation
 
 	}
 
-	void RecentProject::HV4DThrowCouldNotNavigate()
+	void Landing::HV4DThrowCouldNotNavigate()
 	{
 		WUPOP::MessageDialog Msg{ L"Error." };
 

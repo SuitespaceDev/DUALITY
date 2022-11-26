@@ -10,17 +10,11 @@
     <ClCompile Include="HV4DSERVICE.cpp">
       <Filter>b. Service</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTENCRYPT.cpp">
-      <Filter>HV4DENCRYPT</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DENCRYPT.cpp">
       <Filter>HV4DENCRYPT</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DENCRYPT.cpp">
       <Filter>HV4DENCRYPT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTFACTORY.cpp">
-      <Filter>HV4DFACTORY</Filter>
     </ClCompile>
     <ClCompile Include="HV4DFACTORY.cpp">
       <Filter>HV4DFACTORY</Filter>
@@ -28,26 +22,17 @@
     <ClCompile Include="CHV4DFACTORY.cpp">
       <Filter>HV4DFACTORY</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTKEYMAP.cpp">
-      <Filter>HV4DKEYMAP</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DKEYMAP.cpp">
       <Filter>HV4DKEYMAP</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DKEYMAP.cpp">
       <Filter>HV4DKEYMAP</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTSTRING.cpp">
-      <Filter>HV4DSTRING</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DSTRING.cpp">
       <Filter>HV4DSTRING</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DSTRING.cpp">
       <Filter>HV4DSTRING</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTTIME.cpp">
-      <Filter>HV4DTIME</Filter>
     </ClCompile>
     <ClCompile Include="HV4DTIME.cpp">
       <Filter>HV4DTIME</Filter>

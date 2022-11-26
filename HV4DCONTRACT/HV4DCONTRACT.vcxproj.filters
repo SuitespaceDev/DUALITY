@@ -16,9 +16,6 @@
     <Filter Include="Contracts\Framework\HV4DAPP">
       <UniqueIdentifier>{ac9cf708-e3d8-4f14-9f1a-e31813d77342}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Framework\HV4DASYNC">
-      <UniqueIdentifier>{15afa1e0-8315-4a21-93c5-74026030cf90}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contracts\Framework\HV4DCLIENT">
       <UniqueIdentifier>{d9b0c0e5-b22c-4ea8-ad72-9ec31065120c}</UniqueIdentifier>
     </Filter>
@@ -34,47 +31,8 @@
     <Filter Include="Contracts\Framework\HV4DSERVER">
       <UniqueIdentifier>{a51821fd-1580-41a3-b294-0272c9d12cd4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Framework\HV4DWINRT">
-      <UniqueIdentifier>{7b996a1e-c422-477c-a6ed-24046de78a1e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nodes">
-      <UniqueIdentifier>{d5335902-f757-4c15-a9c9-83cb4d098dc6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nodes\HV4DNODE">
-      <UniqueIdentifier>{11cf2d67-58e8-4642-b206-b18561fe01a6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nucleus">
-      <UniqueIdentifier>{edcd9b85-f311-46ff-9228-84b6a5ad415a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nucleus\HV4DDEBUG">
-      <UniqueIdentifier>{d7f9c9d1-7298-4b1e-a40f-6e71b4d27135}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nucleus\HV4DKERNEL">
-      <UniqueIdentifier>{987d0f4a-a587-4cf7-a7e1-dbcfbbf6973d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\Nucleus\HV4DMETRIC">
-      <UniqueIdentifier>{fa0cd27f-c807-41e5-ba07-537d409ca648}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contracts\File">
       <UniqueIdentifier>{62d1874b-31af-43b3-8770-47f160f18389}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DDOC">
-      <UniqueIdentifier>{c1cddf6e-6625-4a08-9f55-4566e5a3ae60}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DXML">
-      <UniqueIdentifier>{4c43ef2e-449a-4821-84fc-16bf83b64724}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DSYSFILE">
-      <UniqueIdentifier>{a3e89164-818c-418e-ac81-d9b8dd8ef282}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DOSTREAM">
-      <UniqueIdentifier>{b07c756b-3bb9-403d-94f2-58d93104dd4e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DISTREAM">
-      <UniqueIdentifier>{c9c0143c-7a2d-45e8-8029-0751a98cf6e0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\File\HV4DTREE">
-      <UniqueIdentifier>{92943848-97ff-436e-b895-90bf530c9e48}</UniqueIdentifier>
     </Filter>
     <Filter Include="Contracts\File\HV4DFILE">
       <UniqueIdentifier>{ef56a5a8-d2b6-44de-93ec-0c1080dd942e}</UniqueIdentifier>
@@ -82,29 +40,110 @@
     <Filter Include="Contracts\File\HV4DSECTION">
       <UniqueIdentifier>{f85a691b-d38d-4807-83fb-622d18d6be16}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model">
+    <Filter Include="Contracts\File\HV4DDOCUMENT">
+      <UniqueIdentifier>{c1cddf6e-6625-4a08-9f55-4566e5a3ae60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3D Model">
       <UniqueIdentifier>{a2142428-b7c3-4f2f-88c7-4a748b61b89e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DVIEW">
+    <Filter Include="Contracts\3D Model\HV4DVIEW">
       <UniqueIdentifier>{3c1d0e85-9927-457c-a5ba-f6dc2fdd6a57}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DSHADER">
+    <Filter Include="Contracts\3D Model\HV4DSHADER">
       <UniqueIdentifier>{27e60ac8-fe63-4541-b972-bde72f3385a6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DWORLD">
+    <Filter Include="Contracts\3D Model\HV4DWORLD">
       <UniqueIdentifier>{3ea1e9c7-d97e-458a-b9ed-5453a38c66ce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DPIPELINE">
+    <Filter Include="Contracts\3D Model\HV4DPIPELINE">
       <UniqueIdentifier>{d991a88c-6258-49a7-a888-2b31e9d12b28}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DOBJECT">
+    <Filter Include="Contracts\3D Model\HV4DOBJECT">
       <UniqueIdentifier>{0614fcb0-7d11-44e4-9b0a-eff6034a70bc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DGLOBAL">
+    <Filter Include="Contracts\3D Model\HV4DGLOBAL">
       <UniqueIdentifier>{e34887e4-9c2b-4a13-9130-c4b88359947e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\Model\HV4DMETA">
+    <Filter Include="Contracts\3D Model\HV4DMETA">
       <UniqueIdentifier>{5762e2a2-563a-4f25-a605-69cdeb535858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DNODE">
+      <UniqueIdentifier>{ce0203d9-e159-42ae-b7e9-7535a628ea72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DPIPE">
+      <UniqueIdentifier>{15afa1e0-8315-4a21-93c5-74026030cf90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel">
+      <UniqueIdentifier>{edcd9b85-f311-46ff-9228-84b6a5ad415a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DDEBUG">
+      <UniqueIdentifier>{d7f9c9d1-7298-4b1e-a40f-6e71b4d27135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DMETRIC">
+      <UniqueIdentifier>{fa0cd27f-c807-41e5-ba07-537d409ca648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DSESSION">
+      <UniqueIdentifier>{14aa849a-150f-4834-b1a6-f46f39531628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DOSTREAM">
+      <UniqueIdentifier>{b07c756b-3bb9-403d-94f2-58d93104dd4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DISTREAM">
+      <UniqueIdentifier>{c9c0143c-7a2d-45e8-8029-0751a98cf6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DHEADER">
+      <UniqueIdentifier>{f015877e-ad11-4f60-b100-a4cdb7183b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\File\HV4DATTRIBUTE">
+      <UniqueIdentifier>{1e9de119-198f-4b88-a477-a1bea54aa6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Kernel\HV4DTREE">
+      <UniqueIdentifier>{92943848-97ff-436e-b895-90bf530c9e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query">
+      <UniqueIdentifier>{6d67414e-602f-4afa-b452-07efa1afe164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist">
+      <UniqueIdentifier>{08a4cecd-74ae-4c0f-8c84-bc80bf325655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYXML">
+      <UniqueIdentifier>{4c43ef2e-449a-4821-84fc-16bf83b64724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYXAML">
+      <UniqueIdentifier>{45f22615-4bde-412b-a4ac-04f99d4b23cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYBINARY">
+      <UniqueIdentifier>{2b374d49-a67a-4aa0-a279-3280ca0bb36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYSQL">
+      <UniqueIdentifier>{5bd562e2-996a-44d2-b88b-17a3206075aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYJSON">
+      <UniqueIdentifier>{7659353f-9b78-432a-b834-d86320cdf5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Query\HV4DQUERYQIF">
+      <UniqueIdentifier>{098ad8dc-fbd6-4f97-b00d-96307b93622a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTBINARY">
+      <UniqueIdentifier>{2daa522c-2ecb-4050-9fe8-a8dc5f377240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTXAML">
+      <UniqueIdentifier>{5032c2b1-d8ca-4ca3-a0de-3b423ceb8bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTXML">
+      <UniqueIdentifier>{c178e051-bb26-4373-a65e-5c261e2d59dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTSQL">
+      <UniqueIdentifier>{5749304c-2887-4018-8a37-e7f47ab9b080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTJSON">
+      <UniqueIdentifier>{920fdde8-d69a-4c3c-bddb-3dd15ffbeab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Persist\HV4DPERSISTQIF">
+      <UniqueIdentifier>{c74fec28-8fa1-4a6d-9400-7ce009ad5557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\Framework\HV4DDISPATCH">
+      <UniqueIdentifier>{9492e1ff-dc5f-4725-86fb-8db9caa92056}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -114,53 +153,14 @@
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTAPP.cpp">
-      <Filter>Contracts\Framework\HV4DAPP</Filter>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DAPP.cpp">
-      <Filter>Contracts\Framework\HV4DAPP</Filter>
+    <ClCompile Include="HV4DDOCUMENT.cpp">
+      <Filter>Contracts\File\HV4DDOCUMENT</Filter>
     </ClCompile>
-    <ClCompile Include="CHV4DAPP.cpp">
-      <Filter>Contracts\Framework\HV4DAPP</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTASYNC.cpp">
-      <Filter>Contracts\Framework\HV4DASYNC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DASYNC.cpp">
-      <Filter>Contracts\Framework\HV4DASYNC</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DASYNC.cpp">
-      <Filter>Contracts\Framework\HV4DASYNC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTCLIENT.cpp">
-      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DCLIENT.cpp">
-      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DCLIENT.cpp">
-      <Filter>Contracts\Framework\HV4DCLIENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTDEBUG.cpp">
-      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DDEBUG.cpp">
-      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DDEBUG.cpp">
-      <Filter>Contracts\Nucleus\HV4DDEBUG</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTEVENT.cpp">
-      <Filter>Contracts\Framework\HV4DEVENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DEVENT.cpp">
-      <Filter>Contracts\Framework\HV4DEVENT</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DEVENT.cpp">
-      <Filter>Contracts\Framework\HV4DEVENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTFILE.cpp">
-      <Filter>Contracts\File\HV4DFILE</Filter>
+    <ClCompile Include="CHV4DDOCUMENT.cpp">
+      <Filter>Contracts\File\HV4DDOCUMENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4DFILE.cpp">
       <Filter>Contracts\File\HV4DFILE</Filter>
@@ -168,203 +168,29 @@
     <ClCompile Include="CHV4DFILE.cpp">
       <Filter>Contracts\File\HV4DFILE</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTGLOBAL.cpp">
-      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DGLOBAL.cpp">
-      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DGLOBAL.cpp">
-      <Filter>Contracts\Model\HV4DGLOBAL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTHPC.cpp">
-      <Filter>Contracts\Framework\HV4DHPC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DHPC.cpp">
-      <Filter>Contracts\Framework\HV4DHPC</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DHPC.cpp">
-      <Filter>Contracts\Framework\HV4DHPC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTISTREAM.cpp">
-      <Filter>Contracts\File\HV4DISTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DISTREAM.cpp">
-      <Filter>Contracts\File\HV4DISTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DISTREAM.cpp">
-      <Filter>Contracts\File\HV4DISTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTKERNEL.cpp">
-      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DKERNEL.cpp">
-      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DKERNEL.cpp">
-      <Filter>Contracts\Nucleus\HV4DKERNEL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTMETA.cpp">
-      <Filter>Contracts\Model\HV4DMETA</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DMETA.cpp">
-      <Filter>Contracts\Model\HV4DMETA</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DMETA.cpp">
-      <Filter>Contracts\Model\HV4DMETA</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTMETRIC.cpp">
-      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DMETRIC.cpp">
-      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DMETRIC.cpp">
-      <Filter>Contracts\Nucleus\HV4DMETRIC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTNODE.cpp">
-      <Filter>Contracts\Nodes\HV4DNODE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DNODE.cpp">
-      <Filter>Contracts\Nodes\HV4DNODE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DNODE.cpp">
-      <Filter>Contracts\Nodes\HV4DNODE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTOBJECT.cpp">
-      <Filter>Contracts\Model\HV4DOBJECT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DOBJECT.cpp">
-      <Filter>Contracts\Model\HV4DOBJECT</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DOBJECT.cpp">
-      <Filter>Contracts\Model\HV4DOBJECT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTOSTREAM.cpp">
-      <Filter>Contracts\File\HV4DOSTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DOSTREAM.cpp">
-      <Filter>Contracts\File\HV4DOSTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DOSTREAM.cpp">
-      <Filter>Contracts\File\HV4DOSTREAM</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTPIPELINE.cpp">
-      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DPIPELINE.cpp">
-      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DPIPELINE.cpp">
-      <Filter>Contracts\Model\HV4DPIPELINE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSECTION.cpp">
-      <Filter>Contracts\File\HV4DSECTION</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DSECTION.cpp">
       <Filter>Contracts\File\HV4DSECTION</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DSECTION.cpp">
       <Filter>Contracts\File\HV4DSECTION</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTSHADER.cpp">
-      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    <ClCompile Include="HV4DNODE.cpp">
+      <Filter>Contracts\Framework\HV4DNODE</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DSHADER.cpp">
-      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    <ClCompile Include="CHV4DNODE.cpp">
+      <Filter>Contracts\Framework\HV4DNODE</Filter>
     </ClCompile>
-    <ClCompile Include="CHV4DSHADER.cpp">
-      <Filter>Contracts\Model\HV4DSHADER</Filter>
+    <ClCompile Include="HV4DSESSION.cpp">
+      <Filter>Contracts\Kernel\HV4DSESSION</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTSHELL.cpp">
-      <Filter>Contracts\Framework\HV4DSHELL</Filter>
+    <ClCompile Include="CHV4DSESSION.cpp">
+      <Filter>Contracts\Kernel\HV4DSESSION</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DSHELL.cpp">
-      <Filter>Contracts\Framework\HV4DSHELL</Filter>
+    <ClCompile Include="HV4DDISPATCH.cpp">
+      <Filter>Contracts\Framework\HV4DDISPATCH</Filter>
     </ClCompile>
-    <ClCompile Include="CHV4DSHELL.cpp">
-      <Filter>Contracts\Framework\HV4DSHELL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSYSFILE.cpp">
-      <Filter>Contracts\File\HV4DSYSFILE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DSYSFILE.cpp">
-      <Filter>Contracts\File\HV4DSYSFILE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DSYSFILE.cpp">
-      <Filter>Contracts\File\HV4DSYSFILE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTTREE.cpp">
-      <Filter>Contracts\File\HV4DTREE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTREE.cpp">
-      <Filter>Contracts\File\HV4DTREE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DTREE.cpp">
-      <Filter>Contracts\File\HV4DTREE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTVIEW.cpp">
-      <Filter>Contracts\Model\HV4DVIEW</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DVIEW.cpp">
-      <Filter>Contracts\Model\HV4DVIEW</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DVIEW.cpp">
-      <Filter>Contracts\Model\HV4DVIEW</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTWINRT.cpp">
-      <Filter>Contracts\Framework\HV4DWINRT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DWINRT.cpp">
-      <Filter>Contracts\Framework\HV4DWINRT</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DWINRT.cpp">
-      <Filter>Contracts\Framework\HV4DWINRT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTWORLD.cpp">
-      <Filter>Contracts\Model\HV4DWORLD</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DWORLD.cpp">
-      <Filter>Contracts\Model\HV4DWORLD</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DWORLD.cpp">
-      <Filter>Contracts\Model\HV4DWORLD</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTXML.cpp">
-      <Filter>Contracts\File\HV4DXML</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DXML.cpp">
-      <Filter>Contracts\File\HV4DXML</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DXML.cpp">
-      <Filter>Contracts\File\HV4DXML</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTDOCUMENT.cpp">
-      <Filter>Contracts\File\HV4DDOC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DDOCUMENT.cpp">
-      <Filter>Contracts\File\HV4DDOC</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DDOCUMENT.cpp">
-      <Filter>Contracts\File\HV4DDOC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSERVER.cpp">
-      <Filter>Contracts\Framework\HV4DSERVER</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DSERVER.cpp">
-      <Filter>Contracts\Framework\HV4DSERVER</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DSERVER.cpp">
-      <Filter>Contracts\Framework\HV4DSERVER</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSERVICE.cpp">
-      <Filter>b. Service</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DSERVICE.cpp">
-      <Filter>b. Service</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DSERVICE.cpp">
-      <Filter>b. Service</Filter>
+    <ClCompile Include="CHV4DDISPATCH.cpp">
+      <Filter>Contracts\Framework\HV4DDISPATCH</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

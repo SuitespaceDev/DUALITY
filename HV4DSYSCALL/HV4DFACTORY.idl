@@ -5,7 +5,7 @@ namespace HV4DSYSCALL
     {
         HV4DFACTORY();
 
-        HV4D.HV4DRETURN HV4DGetActivationFactory(String dll, String rtclass, out Object factory);
+        HV4D.IHV4DRETURN HV4DGetActivationFactory(String dll, String rtclass, out Object factory);
 
     }
 

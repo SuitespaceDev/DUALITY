@@ -2,23 +2,19 @@
 
 #include "CHV4DSTRING.h"
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL
 {
-	HV4DRETURN HV4DSubStr(hstring const& e, uint32_t const& i, uint32_t const& l, hstring& o)
+	HV4D::IHV4DRETURN HV4DSubStr(winrt::hstring const& e, uint32_t const& i, uint32_t const& l, winrt::hstring& o)
 	{
-		hstring str{ e };
+		winrt::hstring str{ e };
 
 		if ((i > str.size()) || ((i + l) > str.size()))
 		{
-			return HV4DRETURN::HV4D_FALSE;
+			return HV4D::HV4D_FALSE{};
 
 		}
 
-		hstring::const_iterator itt{};
+		winrt::hstring::const_iterator itt{};
 
 		for (itt = &str[i]; itt != &str[(i + l)]; itt++)
 		{
@@ -30,19 +26,19 @@ namespace winrt::HV4DSYSCALL
 		{
 			o = L"";
 
-			return HV4DRETURN::HV4D_FALSE;
+			return HV4D::HV4D_FALSE{};
 
 		}
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DNoSymbols(hstring const& s, hstring& o)
+	HV4D::IHV4DRETURN HV4DNoSymbols(winrt::hstring const& s, winrt::hstring& o)
 	{
 		std::vector<wchar_t>::const_iterator citt{};
 
-		for (hstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
+		for (winrt::hstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
 		{
 			citt = std::find(HV4DSymbolW()->begin(), HV4DSymbolW()->end(), *itt);
 
@@ -54,37 +50,37 @@ namespace winrt::HV4DSYSCALL
 
 		}
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4DRETURN HV4DHasSymbols(hstring const& s)
+	HV4D::IHV4DRETURN HV4DHasSymbols(winrt::hstring const& s)
 	{
 		std::vector<wchar_t>::const_iterator citt{};
 
-		for (hstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
+		for (winrt::hstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
 		{
 			citt = std::find(HV4DSymbolW()->begin(), HV4DSymbolW()->end(), *itt);
 
 			if (citt == HV4DSymbolW()->end())
 			{
-				return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+				return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 			}
 
 		}
 
-		return HV4DRETURN::HV4D_FALSE;
+		return HV4D::HV4D_FALSE{};
 
 	}
 
-	HV4DRETURN HV4DNoEscape(hstring const& s, hstring& o)
+	HV4D::IHV4DRETURN HV4DNoEscape(winrt::hstring const& s, winrt::hstring& o)
 	{
-		hstring str{ s };
+		winrt::hstring str{ s };
 
 		if (str.size() == 0)
 		{
-			return HV4DRETURN::HV4D_FALSE;
+			return HV4D::HV4D_FALSE{};
 
 		}
 
@@ -96,7 +92,7 @@ namespace winrt::HV4DSYSCALL
 
 			if ((str[i] == '\u005C') && ((str[(i - 1)] != '\u005C') && (str[(i + 1)] != '\u005C')))
 			{
-				hstring pre{}, suff{};
+				winrt::hstring pre{}, suff{};
 
 				HV4DSubStr(str, 0, (i + 1), pre);
 
@@ -110,7 +106,7 @@ namespace winrt::HV4DSYSCALL
 
 			if ((str[i] == '\u005C') && ((str[(i - 1)] == '\u005C') && (str[(i + 1)] == '\u005C')))
 			{
-				hstring pre{}, suff{};
+				winrt::hstring pre{}, suff{};
 
 				HV4DSubStr(str, 0, (i + 1), pre);
 
@@ -124,7 +120,7 @@ namespace winrt::HV4DSYSCALL
 
 		}
 
-		return HV4DRETURN::HV4D_OPERATION_SUCCEEDED;
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#include "winrt/HV4D.h"
-
 #include "UserFilter.g.h"
 
 namespace WF        = winrt::Windows::Foundation;

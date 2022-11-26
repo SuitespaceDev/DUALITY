@@ -54,14 +54,8 @@
     <ClCompile Include="CHV4DCLASST.cpp">
       <Filter>HV4DCLASST</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTABS.cpp">
-      <Filter>HV4DABS</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DABS.cpp">
       <Filter>HV4DABS</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTCLASST.cpp">
-      <Filter>HV4DCLASST</Filter>
     </ClCompile>
     <ClCompile Include="HV4DCLASST.cpp">
       <Filter>HV4DCLASST</Filter>
@@ -75,22 +69,13 @@
     <ClCompile Include="HV4DINTERUPT.cpp">
       <Filter>HV4DINTERUPT</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTINTERUPT.cpp">
-      <Filter>HV4DINTERUPT</Filter>
-    </ClCompile>
     <ClCompile Include="CHV4DHVID.cpp">
       <Filter>HV4DHVID</Filter>
     </ClCompile>
     <ClCompile Include="HV4DHVID.cpp">
       <Filter>HV4DHVID</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTHVID.cpp">
-      <Filter>HV4DHVID</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DHHMMSS.cpp">
-      <Filter>HV4DHHMMSS</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTHHMMSS.cpp">
       <Filter>HV4DHHMMSS</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DMAXPATH.cpp">
@@ -99,16 +84,10 @@
     <ClCompile Include="HV4DMAXPATH.cpp">
       <Filter>HV4DMAXPATH</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTMAXPATH.cpp">
-      <Filter>HV4DMAXPATH</Filter>
-    </ClCompile>
     <ClCompile Include="CHV4DMMDDYYYY.cpp">
       <Filter>HV4DMMDDYYYY</Filter>
     </ClCompile>
     <ClCompile Include="HV4DMMDDYYYY.cpp">
-      <Filter>HV4DMMDDYYYY</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTMMDDYYYY.cpp">
       <Filter>HV4DMMDDYYYY</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DMMM.cpp">
@@ -117,16 +96,10 @@
     <ClCompile Include="HV4DMMM.cpp">
       <Filter>HV4DMMM</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTMMM.cpp">
-      <Filter>HV4DMMM</Filter>
-    </ClCompile>
     <ClCompile Include="CHV4DNUMERIC.cpp">
       <Filter>HV4DNUMERIC</Filter>
     </ClCompile>
     <ClCompile Include="HV4DNUMERIC.cpp">
-      <Filter>HV4DNUMERIC</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTNUMERIC.cpp">
       <Filter>HV4DNUMERIC</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DOFFSET.cpp">
@@ -135,20 +108,11 @@
     <ClCompile Include="HV4DOFFSET.cpp">
       <Filter>HV4DOFFSET</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DTOFFSET.cpp">
-      <Filter>HV4DOFFSET</Filter>
-    </ClCompile>
     <ClCompile Include="CHV4DSTRING.cpp">
       <Filter>HV4DSTRING</Filter>
     </ClCompile>
     <ClCompile Include="HV4DSTRING.cpp">
       <Filter>HV4DSTRING</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSTRING.cpp">
-      <Filter>HV4DSTRING</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTSERVICE.cpp">
-      <Filter>b. Service</Filter>
     </ClCompile>
     <ClCompile Include="HV4DSERVICE.cpp">
       <Filter>b. Service</Filter>
@@ -158,9 +122,6 @@
     </ClCompile>
     <ClCompile Include="CHV4DHHMMSS.cpp">
       <Filter>HV4DHHMMSS</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTKEY.cpp">
-      <Filter>HV4DKEY</Filter>
     </ClCompile>
     <ClCompile Include="HV4DKEY.cpp">
       <Filter>HV4DKEY</Filter>

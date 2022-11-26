@@ -1,32 +1,17 @@
-import "HV4DFILE.idl";
+import "HV4DOBJECT.idl";
 
 namespace HV4DCONTRACT
 {
-	[uuid("F815E66D-CAF4-499E-89B3-810C3016E032")]
-	[version(0x10000001)]
-	interface IFile
-	{
-		HV4D.HV4DRETURN HV4DBufferSize(out UInt32 s);
+    [uuid("12887A64-4120-4220-AF51-781032B5C22E")]
+    [version(0x10000001)]
+    interface IHV4DFILE
+    {
 
-		HV4D.HV4DRETURN HV4DResizeBuffer(UInt32 s);
 
-		HV4D.HV4DRETURN HV4DGetBuffer(out Char[] e);
 
-		HV4D.HV4DRETURN HV4DPutBuffer(UInt32 o, UInt32 s, Char[] e);
+    }
 
-		HV4D.HV4DRETURN HV4DClearBuffer(Char e);
-
-		HV4D.HV4DRETURN HV4DAttachBuffer(UInt32 s, Char[] e);
-
-		HV4D.HV4DRETURN HV4DDetachBuffer();
-
-		HV4D.HV4DRETURN HV4DDuplicateFile(IFile e);
-
-	}
-
-    [default_interface]
-    runtimeclass HV4DFILE
-            : HV4DT.IHV4DTPROVIDER
+    runtimeclass HV4DFILE : [default] IHV4DOBJECT
     {
         HV4DFILE();
 

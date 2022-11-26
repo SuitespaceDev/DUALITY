@@ -8,6 +8,8 @@
 
 #include "winrt/HV4D.h"
 
+namespace HV4D = winrt::HV4D;
+
 namespace winrt::HV4DSYSCALL
 {
 	__SYSCALL const std::vector<hstring>* HV4DHourW();

@@ -1,0 +1,21 @@
+import "HV4DOBJECT.idl";
+
+namespace HV4DCONTRACT
+{
+    [uuid("66524BCF-38AD-4C72-AE58-C3F3F06D3FE9")]
+    [version(0x10000001)]
+    interface IHV4DDISPATCH
+    {
+
+
+
+    }
+
+    runtimeclass HV4DDISPATCH : [default] IHV4DOBJECT
+    {
+        HV4DDISPATCH();
+
+
+    }
+
+}

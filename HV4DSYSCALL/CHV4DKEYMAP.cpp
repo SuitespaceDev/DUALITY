@@ -2,10 +2,6 @@
 
 #include "CHV4DKEYMAP.h"
 
-using namespace winrt;
-
-using namespace winrt::HV4D;
-
 namespace winrt::HV4DSYSCALL
 {
 	const std::unordered_map<char, uint32_t> tagHV4DKeyMapA = {

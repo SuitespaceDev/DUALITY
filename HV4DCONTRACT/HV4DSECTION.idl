@@ -1,15 +1,17 @@
+import "HV4DOBJECT.idl";
+
 namespace HV4DCONTRACT
 {
-    [uuid("E6DC989F-DE3B-4865-AF70-F75733CB6256")]
+    [uuid("6312E9E2-3EFA-4C13-BA23-F6105B975982")]
     [version(0x10000001)]
-    interface ISection
+    interface IHV4DSECTION
     {
+
+
 
     }
 
-    [default_interface]
-    runtimeclass HV4DSECTION
-            : HV4DT.IHV4DTPROVIDER
+    runtimeclass HV4DSECTION : [default] IHV4DOBJECT
     {
         HV4DSECTION();
 
