@@ -153,39 +153,6 @@
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DSERVICE.cpp">
-      <Filter>b. Service</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DDOCUMENT.cpp">
-      <Filter>Contracts\File\HV4DDOCUMENT</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DDOCUMENT.cpp">
-      <Filter>Contracts\File\HV4DDOCUMENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DFILE.cpp">
-      <Filter>Contracts\File\HV4DFILE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DFILE.cpp">
-      <Filter>Contracts\File\HV4DFILE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DSECTION.cpp">
-      <Filter>Contracts\File\HV4DSECTION</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DSECTION.cpp">
-      <Filter>Contracts\File\HV4DSECTION</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DNODE.cpp">
-      <Filter>Contracts\Framework\HV4DNODE</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DNODE.cpp">
-      <Filter>Contracts\Framework\HV4DNODE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DSESSION.cpp">
-      <Filter>Contracts\Kernel\HV4DSESSION</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DSESSION.cpp">
-      <Filter>Contracts\Kernel\HV4DSESSION</Filter>
-    </ClCompile>
     <ClCompile Include="HV4DDISPATCH.cpp">
       <Filter>Contracts\Framework\HV4DDISPATCH</Filter>
     </ClCompile>

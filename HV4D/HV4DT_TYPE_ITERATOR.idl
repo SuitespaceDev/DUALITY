@@ -1,0 +1,16 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DTTYPE.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4DT_TYPE_ITERATOR : [default] IHV4DOBJECT, IHV4DTTYPE
+    {
+        HV4DT_TYPE_ITERATOR();
+
+        HV4DT_TYPE_ITERATOR(IHV4DOBJECT sender);
+
+        HV4DT_TYPE_ITERATOR(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

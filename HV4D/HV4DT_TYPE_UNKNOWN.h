@@ -1,10 +1,14 @@
 #pragma once
 
+#include <Objbase.h>
+
 #include <ctime>
 
 #include "HV4DT_TYPE_UNKNOWN.g.h"
 
 namespace WF = winrt::Windows::Foundation;
+namespace WFC = winrt::Windows::Foundation::Collections;
+namespace HV4D = winrt::HV4D;
 
 namespace winrt::HV4D::implementation
 {
@@ -13,62 +17,78 @@ namespace winrt::HV4D::implementation
 	public:
 		HV4DT_TYPE_UNKNOWN();
 
-	public:
-		winrt::guid HV4DTType() { return winrt::guid{ L"{8E625241-AA9C-4EA6-B266-963B5159A384}" }; }
+		HV4DT_TYPE_UNKNOWN(HV4D::IHV4DOBJECT const&);
+
+		HV4DT_TYPE_UNKNOWN(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
 
 	public:
-		uint64_t HV4DTTypeID() { return 0x0000000000000000; };
-
-	public:
-		winrt::hstring HV4DTTypeName() { return L"HV4DT_TYPE_UNKNOWN"; }
-
-	public:
-		uint64_t HV4DDateTime() { return (uint64_t)std::time(nullptr); }
-
-	public:
-		winrt::guid HV4DSenderType() { return sender_type; }
-
-		void HV4DSenderType(winrt::guid const& e) { sender_type = e; }
+		virtual winrt::guid HV4DUuidOfInstance();
 
 	private:
-		winrt::guid sender_type{};
+		void HV4DSetUuidOfInstance();
+
+		winrt::guid uuid_of_instance{};
 
 	public:
-		winrt::guid HV4DSenderHVID() { return sender_hvid; }
+		virtual uint64_t HV4DCreatedDateTime();
 
-		void HV4DSenderHVID(winrt::guid const& e) { sender_hvid = e; }
+		virtual uint64_t HV4DUpdatedDateTime();
 
 	private:
-		winrt::guid sender_hvid{};
+		void HV4DSetCreatedDateTime();
+
+		void HV4DSetUpdatedDateTime();
+
+		uint64_t created_date_time{ 0 };
+
+		uint64_t updated_date_time{ 0 };
 
 	public:
-		WF::IInspectable HV4DSender() { return sender; }
-
-		void HV4DSender(WF::IInspectable const& e) { sender = e; }
+		virtual WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
 
 	private:
-		WF::IInspectable sender{};
+		void HV4DListSupportedInterfaces();
+
+		WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> supported_interfaces{};
 
 	public:
-		winrt::guid HV4DExtendedArgsType() { return extended_args_type; }
+		virtual HV4D::IHV4DTTYPE HV4DGetTType();
 
-		void HV4DExtendedArgsType(winrt::guid const& e) { extended_args_type = e; }
+	public:
+		virtual HV4D::IHV4DOBJECT HV4DSender();
+
+		virtual void HV4DSender(HV4D::IHV4DOBJECT const&);
+
+	private:
+		HV4D::IHV4DOBJECT owner_handle{};
+
+	public:
+		virtual winrt::guid HV4DTType();
+
+		virtual uint64_t HV4DTTypeID();
+
+		virtual winrt::hstring HV4DTTypeName();
+
+	public:
+		virtual winrt::guid HV4DExtendedArgsType();
+
+		virtual void HV4DExtendedArgsType(winrt::guid const&);
 
 	private:
 		winrt::guid extended_args_type{};
 
 	public:
-		WF::IInspectable HV4DExtendedArgs() { return extended_args; }
+		virtual WF::IInspectable HV4DExtendedArgs();
 
-		void HV4DExtendedArgs(WF::IInspectable const& e) { extended_args = e; }
+		virtual void HV4DExtendedArgs(WF::IInspectable const&);
 
 	private:
 		WF::IInspectable extended_args{};
 
 	public:
-		winrt::hstring HV4DComments() { return comments; }
+		virtual winrt::hstring HV4DComments();
 
-		void HV4DComments(winrt::hstring const& e) { comments = e; }
+		virtual void HV4DComments(winrt::hstring const&);
 
 	private:
 		winrt::hstring comments{};

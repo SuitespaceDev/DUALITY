@@ -1,0 +1,17 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DRETURN.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4D_FILE_ALREADY_EXISTS : [default] IHV4DOBJECT, IHV4DRETURN
+    {
+        HV4D_FILE_ALREADY_EXISTS();
+
+        HV4D_FILE_ALREADY_EXISTS(IHV4DOBJECT sender);
+
+        HV4D_FILE_ALREADY_EXISTS(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

@@ -1,0 +1,22 @@
+import "IHV4DTTYPE.idl";
+import "HV4DT_TYPE_CONTRACT.idl";
+
+namespace HV4D
+{
+    [uuid("CD7DFCE5-3208-424A-8498-3D96E011821A")]
+    [version(0x10000001)]
+    interface IHV4DOBJECT
+    {
+        Guid HV4DUuidOfInstance();
+
+        UInt64 HV4DCreatedDateTime();
+
+        UInt64 HV4DUpdatedDateTime();
+
+        Windows.Foundation.Collections.IVector<HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
+
+        HV4D.IHV4DTTYPE HV4DGetTType();
+
+    }
+
+}

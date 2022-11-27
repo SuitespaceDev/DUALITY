@@ -1,0 +1,17 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DRETURN.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4D_NO_FILE_OPEN : [default] IHV4DOBJECT, IHV4DRETURN
+    {
+        HV4D_NO_FILE_OPEN();
+
+        HV4D_NO_FILE_OPEN(IHV4DOBJECT sender);
+
+        HV4D_NO_FILE_OPEN(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

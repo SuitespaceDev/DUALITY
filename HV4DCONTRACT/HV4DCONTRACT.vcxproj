@@ -130,52 +130,8 @@
       <DependentUpon>CHV4DDISPATCH.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="CHV4DDOCUMENT.h">
-      <DependentUpon>CHV4DDOCUMENT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DFILE.h">
-      <DependentUpon>CHV4DFILE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DNODE.h">
-      <DependentUpon>CHV4DNODE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DSECTION.h">
-      <DependentUpon>CHV4DSECTION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DSESSION.h">
-      <DependentUpon>CHV4DSESSION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="HV4DDISPATCH.h">
       <DependentUpon>HV4DDISPATCH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DDOCUMENT.h">
-      <DependentUpon>HV4DDOCUMENT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DFILE.h">
-      <DependentUpon>HV4DFILE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DNODE.h">
-      <DependentUpon>HV4DNODE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DSECTION.h">
-      <DependentUpon>HV4DSECTION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DSERVICE.h">
-      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DSESSION.h">
-      <DependentUpon>HV4DSESSION.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -185,51 +141,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="CHV4DDOCUMENT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DFILE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DNODE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DSECTION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DSESSION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="HV4DDISPATCH.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DDOCUMENT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DFILE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DNODE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DSECTION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DSERVICE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DSESSION.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -246,30 +158,6 @@
   <ItemGroup>
     <Midl Include="HV4DDISPATCH.idl">
       <DependentUpon>HV4DDISPATCH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DDOCUMENT.idl">
-      <DependentUpon>HV4DDOCUMENT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DFILE.idl">
-      <DependentUpon>HV4DFILE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DNODE.idl">
-      <DependentUpon>HV4DNODE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DSECTION.idl">
-      <DependentUpon>HV4DSECTION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DSERVICE.idl">
-      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DSESSION.idl">
-      <DependentUpon>HV4DSESSION.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>

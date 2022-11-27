@@ -1,11 +1,15 @@
-import "HV4DOBJECT.idl";
+import "IHV4DOBJECT.idl";
 import "IHV4DTTYPE.idl";
 
 namespace HV4D
 {
-    runtimeclass HV4DT_TYPE_SESSION : [default] IHV4DOBJECT, IHV4TTYPE
+    runtimeclass HV4DT_TYPE_SESSION : [default] IHV4DOBJECT, IHV4DTTYPE
     {
         HV4DT_TYPE_SESSION();
+
+        HV4DT_TYPE_SESSION(IHV4DOBJECT sender);
+
+        HV4DT_TYPE_SESSION(IHV4DOBJECT sender, Guid boxed, Object args);
 
     }
 

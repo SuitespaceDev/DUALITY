@@ -1,0 +1,17 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DRETURN.idl";
+
+namespace HV4D
+{
+    [default_interface]
+    runtimeclass HV4D_INVALID_ARGUMENT : [default] IHV4DOBJECT, IHV4DRETURN
+    {
+        HV4D_INVALID_ARGUMENT();
+
+        HV4D_INVALID_ARGUMENT(IHV4DOBJECT sender);
+
+        HV4D_INVALID_ARGUMENT(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

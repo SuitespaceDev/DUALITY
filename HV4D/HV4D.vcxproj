@@ -129,8 +129,8 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_ITERATE.h">
-      <DependentUpon>HV4DT_TYPE_ITERATE.cpp</DependentUpon>
+    <ClInclude Include="HV4DT_TYPE_ITERATOR.h">
+      <DependentUpon>HV4DT_TYPE_ITERATOR.cpp</DependentUpon>
       <SubType>
       </SubType>
     </ClInclude>
@@ -159,11 +159,6 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_PROVIDER.h">
-      <DependentUpon>HV4DT_TYPE_PROVIDER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SERVICE.h">
       <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
       <SubType>
@@ -171,7 +166,8 @@
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SESSION.h">
       <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>Code</SubType>
+      <SubType>
+      </SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_UIELEMENT.h">
       <DependentUpon>HV4DT_TYPE_UIELEMENT.cpp</DependentUpon>
@@ -198,6 +194,131 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="HV4D_FALSE.h">
+      <DependentUpon>HV4D_FALSE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_FILE_ALREADY_EXISTS.h">
+      <DependentUpon>HV4D_FILE_ALREADY_EXISTS.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_FILE_BAD_FORMATTING.h">
+      <DependentUpon>HV4D_FILE_BAD_FORMATTING.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_FILE_DOESNT_EXIST.h">
+      <DependentUpon>HV4D_FILE_DOESNT_EXIST.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_FILE_HANDLE_OPEN.h">
+      <DependentUpon>HV4D_FILE_HANDLE_OPEN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_IMAGE_NOT_LOADED.h">
+      <DependentUpon>HV4D_IMAGE_NOT_LOADED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_IMPROPERLY_CONFIGURED.h">
+      <DependentUpon>HV4D_IMPROPERLY_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_INVALID_ARGUMENT.h">
+      <DependentUpon>HV4D_INVALID_ARGUMENT.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_INVALID_INTERFACE.h">
+      <DependentUpon>HV4D_INVALID_INTERFACE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_INVALID_POINTER.h">
+      <DependentUpon>HV4D_INVALID_POINTER.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_MODULE_NOT_FOUND.h">
+      <DependentUpon>HV4D_MODULE_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_NOT_CONFIGURED.h">
+      <DependentUpon>HV4D_NOT_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_NOT_SYSTEM_MODULE.h">
+      <DependentUpon>HV4D_NOT_SYSTEM_MODULE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_NO_FILE_OPEN.h">
+      <DependentUpon>HV4D_NO_FILE_OPEN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_OPERATION_FAILED.h">
+      <DependentUpon>HV4D_OPERATION_FAILED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_OPERATION_SUCCEEDED.h">
+      <DependentUpon>HV4D_OPERATION_SUCCEEDED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_OUT_OF_MEM.h">
+      <DependentUpon>HV4D_OUT_OF_MEM.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_OUT_OF_RANGE.h">
+      <DependentUpon>HV4D_OUT_OF_RANGE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_PAGE_ALREADY_EXISTS.h">
+      <DependentUpon>HV4D_PAGE_ALREADY_EXISTS.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_PROCESS_NOT_FOUND.h">
+      <DependentUpon>HV4D_PROCESS_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_PROPERLY_CONFIGURED.h">
+      <DependentUpon>HV4D_PROPERLY_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_RTCLASS_NOT_FOUND.h">
+      <DependentUpon>HV4D_RTCLASS_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_TRUE.h">
+      <DependentUpon>HV4D_TRUE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_UNKNOWN.h">
+      <DependentUpon>HV4D_UNKNOWN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_VALID_ARGUMENT.h">
+      <DependentUpon>HV4D_VALID_ARGUMENT.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -221,7 +342,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_ITERATE.cpp">
+    <ClCompile Include="HV4DT_TYPE_ITERATOR.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -242,10 +363,6 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_PROP_PAGE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_PROVIDER.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -277,6 +394,106 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="HV4D_FALSE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_ALREADY_EXISTS.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_BAD_FORMATTING.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_DOESNT_EXIST.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_FILE_HANDLE_OPEN.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_IMAGE_NOT_LOADED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_IMPROPERLY_CONFIGURED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_ARGUMENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_INTERFACE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_POINTER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_MODULE_NOT_FOUND.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_NOT_CONFIGURED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_NOT_SYSTEM_MODULE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_NO_FILE_OPEN.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_OPERATION_FAILED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_OPERATION_SUCCEEDED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_OUT_OF_MEM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_OUT_OF_RANGE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_PAGE_ALREADY_EXISTS.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_PROCESS_NOT_FOUND.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_PROPERLY_CONFIGURED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_RTCLASS_NOT_FOUND.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_TRUE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_UNKNOWN.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_VALID_ARGUMENT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
@@ -287,11 +504,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="HV4DOBJECT.idl" />
-    <Midl Include="HV4DSERVICE.idl">
-      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="HV4DT_TYPE_CONTRACT.idl">
       <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
       <SubType>
@@ -312,8 +524,8 @@
       <SubType>
       </SubType>
     </Midl>
-    <Midl Include="HV4DT_TYPE_ITERATE.idl">
-      <DependentUpon>HV4DT_TYPE_ITERATE.cpp</DependentUpon>
+    <Midl Include="HV4DT_TYPE_ITERATOR.idl">
+      <DependentUpon>HV4DT_TYPE_ITERATOR.cpp</DependentUpon>
       <SubType>
       </SubType>
     </Midl>
@@ -342,11 +554,6 @@
       <SubType>
       </SubType>
     </Midl>
-    <Midl Include="HV4DT_TYPE_PROVIDER.idl">
-      <DependentUpon>HV4DT_TYPE_PROVIDER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
     <Midl Include="HV4DT_TYPE_SERVICE.idl">
       <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
       <SubType>
@@ -354,7 +561,8 @@
     </Midl>
     <Midl Include="HV4DT_TYPE_SESSION.idl">
       <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>Code</SubType>
+      <SubType>
+      </SubType>
     </Midl>
     <Midl Include="HV4DT_TYPE_UIELEMENT.idl">
       <DependentUpon>HV4DT_TYPE_UIELEMENT.cpp</DependentUpon>
@@ -380,6 +588,136 @@
       <DependentUpon>HV4D_DIR_DOESNT_EXIST.cpp</DependentUpon>
       <SubType>
       </SubType>
+    </Midl>
+    <Midl Include="HV4D_FALSE.idl">
+      <DependentUpon>HV4D_FALSE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_FILE_ALREADY_EXISTS.idl">
+      <DependentUpon>HV4D_FILE_ALREADY_EXISTS.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_FILE_BAD_FORMATTING.idl">
+      <DependentUpon>HV4D_FILE_BAD_FORMATTING.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_FILE_DOESNT_EXIST.idl">
+      <DependentUpon>HV4D_FILE_DOESNT_EXIST.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_FILE_HANDLE_OPEN.idl">
+      <DependentUpon>HV4D_FILE_HANDLE_OPEN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_IMAGE_NOT_LOADED.idl">
+      <DependentUpon>HV4D_IMAGE_NOT_LOADED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_IMPROPERLY_CONFIGURED.idl">
+      <DependentUpon>HV4D_IMPROPERLY_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_INVALID_ARGUMENT.idl">
+      <DependentUpon>HV4D_INVALID_ARGUMENT.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_INVALID_INTERFACE.idl">
+      <DependentUpon>HV4D_INVALID_INTERFACE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_INVALID_POINTER.idl">
+      <DependentUpon>HV4D_INVALID_POINTER.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_MODULE_NOT_FOUND.idl">
+      <DependentUpon>HV4D_MODULE_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_NOT_CONFIGURED.idl">
+      <DependentUpon>HV4D_NOT_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_NOT_SYSTEM_MODULE.idl">
+      <DependentUpon>HV4D_NOT_SYSTEM_MODULE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_NO_FILE_OPEN.idl">
+      <DependentUpon>HV4D_NO_FILE_OPEN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_OPERATION_FAILED.idl">
+      <DependentUpon>HV4D_OPERATION_FAILED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_OPERATION_SUCCEEDED.idl">
+      <DependentUpon>HV4D_OPERATION_SUCCEEDED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_OUT_OF_MEM.idl">
+      <DependentUpon>HV4D_OUT_OF_MEM.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_OUT_OF_RANGE.idl">
+      <DependentUpon>HV4D_OUT_OF_RANGE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_PAGE_ALREADY_EXISTS.idl">
+      <DependentUpon>HV4D_PAGE_ALREADY_EXISTS.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_PROCESS_NOT_FOUND.idl">
+      <DependentUpon>HV4D_PROCESS_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_PROPERLY_CONFIGURED.idl">
+      <DependentUpon>HV4D_PROPERLY_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_RTCLASS_NOT_FOUND.idl">
+      <DependentUpon>HV4D_RTCLASS_NOT_FOUND.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_TRUE.idl">
+      <DependentUpon>HV4D_TRUE.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_UNKNOWN.idl">
+      <DependentUpon>HV4D_UNKNOWN.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_VALID_ARGUMENT.idl">
+      <DependentUpon>HV4D_VALID_ARGUMENT.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="IHV4DOBJECT.idl" />
+    <Midl Include="HV4DSERVICE.idl">
+      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="IHV4DRETURN.idl" />
     <Midl Include="IHV4DTTYPE.idl" />

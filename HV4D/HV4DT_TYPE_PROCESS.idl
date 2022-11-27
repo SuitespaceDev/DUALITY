@@ -1,4 +1,4 @@
-import "HV4DOBJECT.idl";
+import "IHV4DOBJECT.idl";
 import "IHV4DTTYPE.idl";
 
 namespace HV4D
@@ -6,6 +6,10 @@ namespace HV4D
     runtimeclass HV4DT_TYPE_PROCESS : [default] IHV4DOBJECT, IHV4DTTYPE
     {
         HV4DT_TYPE_PROCESS();
+
+        HV4DT_TYPE_PROCESS(IHV4DOBJECT sender);
+
+        HV4DT_TYPE_PROCESS(IHV4DOBJECT sender, Guid boxed, Object args);
 
     }
 

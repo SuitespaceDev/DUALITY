@@ -1,4 +1,4 @@
-import "HV4DOBJECT.idl";
+import "IHV4DOBJECT.idl";
 
 namespace HV4D
 {
@@ -6,7 +6,7 @@ namespace HV4D
 	[version(0x10000001)]
 	interface IHV4DTTYPE
 	{
-		IHV4DOBJECT HV4DSender();
+		HV4D.IHV4DOBJECT HV4DSender;
 
 		Guid HV4DTType();
 
@@ -14,11 +14,11 @@ namespace HV4D
 
 		String HV4DTTypeName();
 
-		Guid ExtendedArgsType;
+		Guid HV4DExtendedArgsType;
 
-		Object ExtendedArgs;
+		Object HV4DExtendedArgs;
 
-		String Comments;
+		String HV4DComments;
 
 	};
 
