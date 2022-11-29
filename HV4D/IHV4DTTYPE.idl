@@ -8,7 +8,7 @@ namespace HV4D
 	{
 		HV4D.IHV4DOBJECT HV4DSender;
 
-		Guid HV4DTType();
+		Guid HV4DTTypeUid();
 
 		UInt64 HV4DTTypeID();
 

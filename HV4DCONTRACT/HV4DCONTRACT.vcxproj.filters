@@ -153,12 +153,6 @@
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DDISPATCH.cpp">
-      <Filter>Contracts\Framework\HV4DDISPATCH</Filter>
-    </ClCompile>
-    <ClCompile Include="CHV4DDISPATCH.cpp">
-      <Filter>Contracts\Framework\HV4DDISPATCH</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4DABI.def">

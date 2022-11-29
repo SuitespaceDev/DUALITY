@@ -134,7 +134,7 @@ namespace winrt::HV4D::implementation
 	{
 		HV4DSetUpdatedDateTime();
 
-		return HV4D::HV4DT_TYPE_ITERATOR{ HV4D::IHV4DOBJECT{}, winrt::guid{L"{9B845864-4EAB-4203-A022-414AD4766B9A}"}, nullptr };
+		return HV4D::HV4DT_TYPE_ITERATOR{ nullptr, winrt::guid{L"{9B845864-4EAB-4203-A022-414AD4766B9A}"}, nullptr };
 
 	};
 
@@ -156,7 +156,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DT_TYPE_SERVICE::HV4DTType()
+	winrt::guid HV4DT_TYPE_SERVICE::HV4DTTypeUid()
 	{
 		HV4DSetUpdatedDateTime();
 

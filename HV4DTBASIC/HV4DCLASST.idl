@@ -1,0 +1,33 @@
+namespace HV4DTBASIC
+{
+    struct CLASST {
+        String ns;
+        String	c;
+    };
+
+    runtimeclass HV4DCLASST : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    {
+        HV4DCLASST();
+    
+		HV4D.IHV4DRETURN HV4DFromHstring(String p, String f);
+
+		HV4D.IHV4DRETURN HV4DFromABI(CLASST t);
+
+		HV4D.IHV4DRETURN HV4DFromWinRT(HV4DCLASST t);
+
+		HV4D.IHV4DRETURN HV4DToHstring(out String p, out String f);
+
+		HV4D.IHV4DRETURN HV4DToABI(out CLASST t);
+
+		HV4D.IHV4DRETURN HV4DToWinRT(out HV4DCLASST t);
+
+		HV4D.IHV4DRETURN HV4DIsEqualHstring(String p, String f);
+
+		HV4D.IHV4DRETURN HV4DIsEqualABI(CLASST t);
+
+		HV4D.IHV4DRETURN HV4DIsEqualWinRT(HV4DCLASST t);
+
+
+    }
+
+}

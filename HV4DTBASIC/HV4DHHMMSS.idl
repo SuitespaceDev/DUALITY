@@ -1,0 +1,35 @@
+namespace HV4DTBASIC
+{
+	struct HHMMSS {
+		String hh;
+		String mm;
+		String ss;
+	};
+
+	runtimeclass HV4DHHMMSS : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    {
+        HV4DHHMMSS();
+	
+		HV4D.IHV4DRETURN HV4DFromHstring(String e);
+
+		HV4D.IHV4DRETURN HV4DFromABI(HHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DFromWinRT(HV4DHHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DToHstring(out String e);
+
+		HV4D.IHV4DRETURN HV4DToABI(out HHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DToWinRT(out HV4DHHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DIsEqualHstring(String e);
+
+		HV4D.IHV4DRETURN HV4DIsEqualABI(HHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DIsEqualWinRT(HV4DHHMMSS e);
+
+		HV4D.IHV4DRETURN HV4DSetToCurrentTime();
+
+    }
+
+}

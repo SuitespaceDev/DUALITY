@@ -1,0 +1,40 @@
+import "HV4DNUMERIC.idl";
+
+namespace HV4DTBASIC
+{
+	struct OFFSET {
+		NUMERIC   o;
+		NUMERIC  sz;
+	};
+
+    runtimeclass HV4DOFFSET : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    {
+        HV4DOFFSET();
+    
+		HV4D.IHV4DRETURN HV4DFromHstring(String off, String sz);
+
+		HV4D.IHV4DRETURN HV4DFromUInt64(UInt64 off, UInt64 sz);
+
+		HV4D.IHV4DRETURN HV4DFromABI(OFFSET e);
+
+		HV4D.IHV4DRETURN HV4DFromWinRT(HV4DOFFSET e);
+
+		HV4D.IHV4DRETURN HV4DToUInt64(out UInt64 off, out UInt64 sz);
+
+		HV4D.IHV4DRETURN HV4DToHstring(out String off, out String sz);
+
+		HV4D.IHV4DRETURN HV4DToABI(out OFFSET e);
+
+		HV4D.IHV4DRETURN HV4DToWinRT(out HV4DOFFSET e);
+
+		HV4D.IHV4DRETURN HV4DIsEqualUInt64(UInt64 off, UInt64 sz);
+
+		HV4D.IHV4DRETURN HV4DIsEqualHstring(String off, String sz);
+
+		HV4D.IHV4DRETURN HV4DIsEqualABI(OFFSET e);
+
+		HV4D.IHV4DRETURN HV4DIsEqualWinRT(HV4DOFFSET e);
+
+    }
+
+}

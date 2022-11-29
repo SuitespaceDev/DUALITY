@@ -156,7 +156,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DT_TYPE_INDEX::HV4DTType()
+	winrt::guid HV4DT_TYPE_INDEX::HV4DTTypeUid()
 	{
 		HV4DSetUpdatedDateTime();
 

@@ -63,7 +63,7 @@ namespace winrt::HV4D::implementation
 		HV4D::IHV4DOBJECT owner_handle{};
 
 	public:
-		virtual winrt::guid HV4DTType();
+		virtual winrt::guid HV4DTTypeUid();
 
 		virtual uint64_t HV4DTTypeID();
 

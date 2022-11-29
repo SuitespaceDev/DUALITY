@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DABS.cpp" />
+    <ClCompile Include="HV4DCLASST.cpp" />
+    <ClCompile Include="HV4DHHMMSS.cpp" />
+    <ClCompile Include="HV4DMAXPATH.cpp" />
+    <ClCompile Include="HV4DMMDDYYYY.cpp" />
+    <ClCompile Include="HV4DMMM.cpp" />
+    <ClCompile Include="HV4DNUMERIC.cpp" />
+    <ClCompile Include="HV4DOFFSET.cpp" />
+    <ClCompile Include="HV4DHVID.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DABS.idl" />
+    <Midl Include="HV4DCLASST.idl" />
+    <Midl Include="HV4DHHMMSS.idl" />
+    <Midl Include="HV4DHVID.idl" />
+    <Midl Include="HV4DMAXPATH.idl" />
+    <Midl Include="HV4DMMDDYYYY.idl" />
+    <Midl Include="HV4DMMM.idl" />
+    <Midl Include="HV4DNUMERIC.idl" />
+    <Midl Include="HV4DOFFSET.idl" />
+    <Midl Include="HV4DRTCLASS.idl" />
+    <Midl Include="HV4DCLASST.idl" />
+    <Midl Include="HV4DHHMMSS.idl" />
+    <Midl Include="HV4DMAXPATH.idl" />
+    <Midl Include="HV4DMMDDYYYY.idl" />
+    <Midl Include="HV4DMMM.idl" />
+    <Midl Include="HV4DNUMERIC.idl" />
+    <Midl Include="HV4DOFFSET.idl" />
+    <Midl Include="HV4DRTCLASS.idl" />
+    <Midl Include="HV4DHVID.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DTBASIC.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{80792c3d-7bd8-47ec-988c-5ccc0a2ecc86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DABS.h" />
+    <ClInclude Include="HV4DCLASST.h" />
+    <ClInclude Include="HV4DHHMMSS.h" />
+    <ClInclude Include="HV4DHVID.h" />
+    <ClInclude Include="HV4DMAXPATH.h" />
+    <ClInclude Include="HV4DMMDDYYYY.h" />
+    <ClInclude Include="HV4DMMM.h" />
+    <ClInclude Include="HV4DNUMERIC.h" />
+    <ClInclude Include="HV4DOFFSET.h" />
+    <ClInclude Include="HV4DRTCLASS.h" />
+    <ClInclude Include="HV4DCLASST.h" />
+    <ClInclude Include="HV4DHHMMSS.h" />
+    <ClInclude Include="HV4DMAXPATH.h" />
+    <ClInclude Include="HV4DMMDDYYYY.h" />
+    <ClInclude Include="HV4DMMM.h" />
+    <ClInclude Include="HV4DNUMERIC.h" />
+    <ClInclude Include="HV4DOFFSET.h" />
+    <ClInclude Include="HV4DRTCLASS.h" />
+    <ClInclude Include="HV4DHVID.h" />
+  </ItemGroup>
+</Project>

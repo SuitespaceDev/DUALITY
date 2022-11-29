@@ -126,25 +126,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CHV4DDISPATCH.h">
-      <DependentUpon>CHV4DDISPATCH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DDISPATCH.h">
-      <DependentUpon>HV4DDISPATCH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CHV4DDISPATCH.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DDISPATCH.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
@@ -154,12 +138,6 @@
     <None Include="HV4DABI.def" />
     <None Include="packages.config" />
     <None Include="PropertySheet.props" />
-  </ItemGroup>
-  <ItemGroup>
-    <Midl Include="HV4DDISPATCH.idl">
-      <DependentUpon>HV4DDISPATCH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="HV4DSYSCALL">

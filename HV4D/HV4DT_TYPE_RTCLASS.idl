@@ -1,0 +1,16 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DTTYPE.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4DT_TYPE_RTCLASS : [default] IHV4DOBJECT, IHV4DTTYPE
+    {
+        HV4DT_TYPE_RTCLASS();
+
+        HV4DT_TYPE_RTCLASS(IHV4DOBJECT sender);
+
+        HV4DT_TYPE_RTCLASS(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

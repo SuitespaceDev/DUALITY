@@ -1,11 +1,5 @@
 ﻿#pragma once
 
-#ifdef SYSCALL
-#define __SYSCALL __declspec(dllexport)
-#else
-#define __SYSCALL __declspec(dllimport)
-#endif
-
 #include "winrt/HV4D.h"
 
 #include "HV4DFACTORY.g.h"
@@ -22,7 +16,7 @@ namespace winrt::HV4DSYSCALL::implementation
 		HV4DFACTORY();
 
 	public:
-		__SYSCALL HV4D::IHV4DRETURN HV4DGetActivationFactory(winrt::hstring const&, hstring const&, WF::IInspectable&);
+		HV4D::IHV4DRETURN HV4DGetActivationFactory(winrt::hstring const&, hstring const&, WF::IInspectable&);
 
 	};
 

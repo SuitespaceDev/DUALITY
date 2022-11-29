@@ -123,26 +123,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CHV4DENCRYPT.h">
-      <DependentUpon>CHV4DENCRYPT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DFACTORY.h">
-      <DependentUpon>CHV4DFACTORY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DKEYMAP.h">
-      <DependentUpon>CHV4DKEYMAP.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DSTRING.h">
-      <DependentUpon>CHV4DSTRING.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DTIME.h">
-      <DependentUpon>CHV4DTIME.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="HV4DENCRYPT.h">
       <DependentUpon>HV4DENCRYPT.cpp</DependentUpon>
       <SubType>Code</SubType>
@@ -170,19 +150,6 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CHV4DENCRYPT.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DFACTORY.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DKEYMAP.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DSTRING.cpp">
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DTIME.cpp" />
     <ClCompile Include="HV4DENCRYPT.cpp">
       <SubType>Code</SubType>
     </ClCompile>
