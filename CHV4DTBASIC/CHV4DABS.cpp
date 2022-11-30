@@ -6,9 +6,7 @@ namespace CHV4D::CHV4DTBASIC
 {
 	CHV4DABS::CHV4DABS()
 	{
-		memset(tagPATH, '\0', sizeof(tagPATH));
 
-		memset(tagFILE, '\0', sizeof(tagFILE));
 
 		return;
 
@@ -16,139 +14,45 @@ namespace CHV4D::CHV4DTBASIC
 
 	CHV4DABS::CHV4DABS(std::wstring const& p, std::wstring const& f)
 	{
-		if (p.size() > 256 || f.size() > 256)
+		try
+		{
+			tagPATH = p;
+
+		}
+		catch (std::invalid_argument)
 		{
 			throw std::invalid_argument("");
-
-		}
-
-		for (uint32_t i = 0; i < p.size(); i++)
-		{
-			tagPATH[i] = p[i];
-
-		}
-
-		for (uint32_t i = 0; i < f.size(); i++)
-		{
-			tagFILE[i] = f[i];
 
 		}
 
 		try
 		{
-			HV4DIsValidABS();
+			tagFILE = f;
 
 		}
-		catch (std::domain_error)
+		catch (std::invalid_argument)
 		{
-			memset(tagPATH, '\0', sizeof(tagPATH));
-
-			memset(tagFILE, '\0', sizeof(tagFILE));
-			
 			throw std::invalid_argument("");
 
 		}
 
 		return;
+
+	}
+
+	CHV4DABS::CHV4DABS(CHV4DMAXPATH const& p, CHV4DMAXPATH const& f)
+	{
+		tagPATH = p;
+
+		tagFILE = f;
 
 	}
 
 	CHV4DABS::CHV4DABS(CHV4DABS const& e)
 	{
-		for (uint32_t i = 0; i < 256; i++)
-		{
-			tagPATH[i] = e.tagPATH[i];
+		tagPATH = e.tagPATH;
 
-			tagFILE[i] = e.tagFILE[i];
-
-		}
-
-		try
-		{
-			HV4DIsValidABS();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagPATH, '\0', sizeof(tagPATH));
-
-			memset(tagFILE, '\0', sizeof(tagFILE));
-
-			throw std::invalid_argument("");
-
-		}
-
-		return;
-
-	}
-
-	void CHV4DABS::HV4DIsValidABS() const
-	{
-		if (tagPATH[0] == '\0')
-		{
-			throw std::underflow_error("");
-
-		}
-
-		if (tagFILE[0] == '\0')
-		{
-			throw std::underflow_error("");
-
-		}
-
-		std::vector<wchar_t>::const_iterator citt{};
-
-		for (wchar_t itt : tagPATH)
-		{
-			citt = std::find(SYSCALL::HV4DSymbolW()->begin(), SYSCALL::HV4DSymbolW()->end(), itt);
-
-			if (citt != SYSCALL::HV4DSymbolW()->end())
-			{
-				throw std::domain_error("");
-
-			}
-
-		}
-
-		for (wchar_t itt : tagFILE)
-		{
-			citt = std::find(SYSCALL::HV4DSymbolW()->begin(), SYSCALL::HV4DSymbolW()->end(), itt);
-
-			if (citt != SYSCALL::HV4DSymbolW()->end())
-			{
-				throw std::domain_error("");
-
-			}
-
-		}
-
-		for (uint32_t index = 1; index < 255; index++)
-		{
-			if (tagPATH[index] == '\0') break;
-
-			if (tagPATH[index] == '\u005C' &&
-				(((tagPATH[index - 1] != '\u005C') && (tagPATH[index + 1] != '\u005C')) ||
-					((tagPATH[index - 1] == '\u005C') && (tagPATH[index + 1] == '\u005C'))))
-			{
-				throw std::domain_error("");
-
-			}
-
-		}
-
-		for (uint32_t index = 1; index < 255; index++)
-		{
-			if (tagFILE[index] == '\0') break;
-
-			if (tagFILE[index] == '\u005C' &&
-				(((tagFILE[index - 1] != '\u005C') && (tagFILE[index + 1] != '\u005C')) ||
-					((tagFILE[index - 1] == '\u005C') && (tagFILE[index + 1] == '\u005C'))))
-			{
-				throw std::domain_error("");
-
-			}
-
-		}
+		tagFILE = e.tagFILE;
 
 		return;
 
@@ -156,28 +60,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DABS::operator = (CHV4DABS const& e)
 	{
-		for (uint32_t i = 0; i < 256; i++)
-		{
-			tagPATH[i] = e.tagPATH[i];
+		tagPATH = e.tagPATH;
 
-			tagFILE[i] = e.tagFILE[i];
-
-		}
-
-		try
-		{
-			HV4DIsValidABS();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagPATH, '\0', sizeof(tagPATH));
-
-			memset(tagFILE, '\0', sizeof(tagFILE));
-
-			throw std::invalid_argument("");
-
-		}
+		tagFILE = e.tagFILE;
 
 		return;
 
@@ -185,69 +70,32 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DABS::operator == (CHV4DABS const& e) const
 	{
-		CHV4DABS abs{ e };
-
-		try
-		{
-			abs.HV4DIsValidABS();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		int ret = memcmp(tagPATH, abs.tagPATH, sizeof(tagPATH));
-		
-		if(ret != 0) return false;
-
-		ret = memcmp(tagFILE, abs.tagFILE, sizeof(tagFILE));
-
-		if (ret != 0) return false;
-
-		return true;
+		return tagPATH == e.tagPATH && tagFILE == e.tagFILE;
 
 	}
 
 	bool CHV4DABS::operator != (CHV4DABS const& e) const
 	{
-		CHV4DABS abs{ e };
+		return !(tagPATH == e.tagPATH && tagFILE == e.tagFILE);
 
-		try
-		{
-			abs.HV4DIsValidABS();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return !(*this == abs);
 
 	}
 
 	void CHV4DABS::HV4DGetStringABS(std::wstring& p, std::wstring& f) const
 	{
-		p = std::wstring{ tagPATH };
+		tagPATH.HV4DGetStringMAXPATH(p);
 				   
-		f = std::wstring{ tagFILE };
+		tagFILE.HV4DGetStringMAXPATH(f);
 
 		return;
 
 	}
 
-	void CHV4DABS::HV4DGetArrayABS(wchar_t p[256], wchar_t f[256]) const
+	void CHV4DABS::HV4DGetMaxPathABS(CHV4DMAXPATH& p, CHV4DMAXPATH& f) const
 	{
-		for (uint16_t i = 0; i < 256; i++)
-		{
-			p[i] = tagPATH[i];
+		p = tagPATH;
 
-			f[i] = tagFILE[i];
-
-		}
+		f = tagFILE;
 
 		return;
 

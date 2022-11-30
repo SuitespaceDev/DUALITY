@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Program</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Program</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>b. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="HV4DSERVICE.idl">
+      <Filter>b. Service</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DENCRYPTION.def">
+      <Filter>a. Program</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>a. Program</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Program</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="a. Program">
+      <UniqueIdentifier>{86b88519-9659-4a2b-816b-e47232431609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Service">
+      <UniqueIdentifier>{54a52e88-b773-4c59-9af2-fd7989a52705}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Program</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DSERVICE.h">
+      <Filter>b. Service</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DKEYMAP.h">
+      <Filter>HV4DKEYMAP</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DSTRING.h">
+      <Filter>HV4DSTRING</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DFACTORY.h">
+      <Filter>HV4DFACTORY</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DTIME.h">
+      <Filter>HV4DTIME</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

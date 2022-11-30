@@ -358,13 +358,49 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualUInt64(uint64_t const& o, uint64_t const& sz)
 	{
+		CTBASIC::CHV4DOFFSET Offset{};
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+		try
+		{
+			Offset = { o, sz };
+
+		}
+		catch (std::invalid_argument)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+		
+		if (tagOFFSET == Offset)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
+
+		return HV4D::HV4D_FALSE{};
 
 	}
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualHstring(winrt::hstring const& o, winrt::hstring const& sz)
 	{
+		CTBASIC::CHV4DOFFSET Offset{};
+
+		try
+		{
+			Offset = { o.c_str(), sz.c_str() };
+
+		}
+		catch (std::invalid_argument)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagOFFSET == Offset)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -372,6 +408,24 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualABI(TBASIC::OFFSET const& e)
 	{
+		CTBASIC::CHV4DOFFSET Offset{};
+
+		try
+		{
+			Offset = { e.o.num, e.sz.num };
+
+		}
+		catch (std::invalid_argument)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagOFFSET == Offset)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -379,6 +433,32 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualWinRT(TBASIC::HV4DOFFSET const& e)
 	{
+		uint64_t offset{}, size{};
+
+		if (e.HV4DToUInt64(offset, size) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		CTBASIC::CHV4DOFFSET Offset{};
+
+		try
+		{
+			Offset = { offset, size };
+
+		}
+		catch (std::invalid_argument)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagOFFSET == Offset)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 

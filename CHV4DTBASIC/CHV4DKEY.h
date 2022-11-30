@@ -1,23 +1,15 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
 #include <objbase.h>
 
 #include <vector>
 
 #include <string>
 
-#include <ctime>
-
 #include <stdexcept>
-
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
 
 #include "CHV4DHVID.h"
 #include "CHV4DMAXPATH.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -31,8 +23,6 @@ namespace CHV4D::CHV4DTBASIC
 		CHV4DKEY(GUID const&, std::wstring const&);
 
 		CHV4DKEY(CHV4DKEY const&);
-
-		void HV4DIsValidKEY() const;
 
 	public:
 		void operator = (CHV4DKEY const&);
@@ -48,9 +38,9 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		void HV4DGetStringKEY(std::wstring&, std::wstring&) const;
 
-		void HV4DGetArrayKEY(wchar_t[256], wchar_t[256]) const;
-
 		void HV4DGetNativeKEY(GUID&, std::wstring&) const;
+
+		void HV4DGetStringHV4D(CHV4DHVID&, CHV4DMAXPATH&) const;
 
 	private:
 		CHV4DHVID tagHVID{};

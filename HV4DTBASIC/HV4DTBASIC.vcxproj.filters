@@ -7,15 +7,33 @@
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DABS.cpp" />
-    <ClCompile Include="HV4DCLASST.cpp" />
-    <ClCompile Include="HV4DHHMMSS.cpp" />
-    <ClCompile Include="HV4DMAXPATH.cpp" />
-    <ClCompile Include="HV4DMMDDYYYY.cpp" />
-    <ClCompile Include="HV4DMMM.cpp" />
-    <ClCompile Include="HV4DNUMERIC.cpp" />
-    <ClCompile Include="HV4DOFFSET.cpp" />
-    <ClCompile Include="HV4DHVID.cpp" />
+    <ClCompile Include="HV4DABS.cpp">
+      <Filter>HV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DCLASST.cpp">
+      <Filter>HV4DCLASST</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHHMMSS.cpp">
+      <Filter>HV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHVID.cpp">
+      <Filter>HV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMAXPATH.cpp">
+      <Filter>HV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMMDDYYYY.cpp">
+      <Filter>HV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMMM.cpp">
+      <Filter>HV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DNUMERIC.cpp">
+      <Filter>HV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DOFFSET.cpp">
+      <Filter>HV4DOFFSET</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="HV4DABS.idl" />
@@ -27,7 +45,6 @@
     <Midl Include="HV4DMMM.idl" />
     <Midl Include="HV4DNUMERIC.idl" />
     <Midl Include="HV4DOFFSET.idl" />
-    <Midl Include="HV4DRTCLASS.idl" />
     <Midl Include="HV4DCLASST.idl" />
     <Midl Include="HV4DHHMMSS.idl" />
     <Midl Include="HV4DMAXPATH.idl" />
@@ -53,6 +70,51 @@
     <Filter Include="a. Project">
       <UniqueIdentifier>{80792c3d-7bd8-47ec-988c-5ccc0a2ecc86}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HV4DABS">
+      <UniqueIdentifier>{b49da364-b31c-4391-bfa5-46b0fe244cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DCLASST">
+      <UniqueIdentifier>{34f78868-6f6a-4bfa-acfe-3fea9648f452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DHHMMSS">
+      <UniqueIdentifier>{eba9dacb-6134-4a76-94c5-586b25748a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DHVID">
+      <UniqueIdentifier>{db49e967-e2b1-449a-ac2c-3cd6d02436ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMAXPATH">
+      <UniqueIdentifier>{ebe9012c-0b73-4c2f-abfd-486a76207a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMMDDYYYY">
+      <UniqueIdentifier>{4e1d0ec0-5368-4e32-8300-001725b656fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DMMM">
+      <UniqueIdentifier>{8ef9bc72-0d93-448e-aff8-ed714bd9fe0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DNUMERIC">
+      <UniqueIdentifier>{2c85fbb7-67ed-4c53-baca-5031329e1ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DOFFSET">
+      <UniqueIdentifier>{541f1481-fa15-49d9-824b-29654e7c1a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DALPHANUMERIC">
+      <UniqueIdentifier>{ead8c197-8e31-46b7-afe6-2155b99ff77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DDATETIME">
+      <UniqueIdentifier>{2ea436f2-63e4-434c-86c1-91a1b0708e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DHEX">
+      <UniqueIdentifier>{eb3946f9-177c-49a1-b445-31a6b501957a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DKEY">
+      <UniqueIdentifier>{41f2b264-8e41-44d9-bc94-7377baac1b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DTEXTBLOBA">
+      <UniqueIdentifier>{acf9ec49-9f41-4f43-a863-6793a1a6c06e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HV4DTEXTBLOBW">
+      <UniqueIdentifier>{e817cc86-c01f-494d-a1a1-8ed6538a7535}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -67,7 +129,6 @@
     <ClInclude Include="HV4DMMM.h" />
     <ClInclude Include="HV4DNUMERIC.h" />
     <ClInclude Include="HV4DOFFSET.h" />
-    <ClInclude Include="HV4DRTCLASS.h" />
     <ClInclude Include="HV4DCLASST.h" />
     <ClInclude Include="HV4DHHMMSS.h" />
     <ClInclude Include="HV4DMAXPATH.h" />

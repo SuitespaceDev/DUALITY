@@ -1,7 +1,5 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
 #include <vector>
 
 #include <string>
@@ -9,11 +7,6 @@
 #include <ctime>
 
 #include <stdexcept>
-
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
-#include "..\CHV4DSYSCALL\CHV4DTIME.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -26,7 +19,8 @@ namespace CHV4D::CHV4DTBASIC
 
 		CHV4DHHMMSS(CHV4DHHMMSS const&);
 
-		void HV4DIsValidHHMMSS() const;
+	private:
+		void HV4DIsValidHHMMSS(std::wstring const&) const;
 
 	public:
 		void operator = (std::wstring const&);
@@ -56,10 +50,17 @@ namespace CHV4D::CHV4DTBASIC
 
 		void HV4DGetNumericHHMMSS(uint8_t&, uint8_t&, uint8_t&) const;
 
-		void HV4DGetArrayHHMMSS(wchar_t[6]) const;
+	private:
+		std::wstring tagHHMMSS{};
 
 	private:
-		wchar_t tagHHMMSS[6]{ '\0' };
+		const std::vector<std::wstring> HV4DHourW{ L"00", L"01", L"02", L"03", L"04", L"05", L"06", L"07", L"08", L"09", L"10",
+			L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23" };
+
+		const std::vector<std::wstring> HV4D59W{ L"00", L"01", L"02", L"03", L"04", L"05", L"06", L"07", L"08", L"09", L"10",
+			L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"26", L"27", L"28",
+			L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42", L"43", L"44",
+			L"45", L"46", L"47", L"48", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59" };
 
 	};
 

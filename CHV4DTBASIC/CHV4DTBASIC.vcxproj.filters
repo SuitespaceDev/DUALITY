@@ -4,6 +4,51 @@
     <Filter Include="a. Project">
       <UniqueIdentifier>{b4c99d09-1919-4a38-a7fd-e6c74272f07f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CHV4DABS">
+      <UniqueIdentifier>{995954fd-75f6-46a0-b445-7d9500b6e01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DALPHANUMERIC">
+      <UniqueIdentifier>{26c01824-3877-4b80-8a2a-a0ebc1b8933a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMAXPATH">
+      <UniqueIdentifier>{45d6dae1-f9a1-4a00-81cc-d3436f0831ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DNUMERIC">
+      <UniqueIdentifier>{3f719be5-707f-4d4d-a32d-6ed40b4ef999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DOFFSET">
+      <UniqueIdentifier>{374c0a9b-3d45-4dbd-af56-2ea6e3266911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DTEXTBLOBA">
+      <UniqueIdentifier>{a9e4c712-e3f0-4650-9318-eead946aa10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DTEXTBLOBW">
+      <UniqueIdentifier>{d3e3de27-4449-457b-b1f8-366db4f71bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DHVID">
+      <UniqueIdentifier>{ae2b4e4f-504b-49f3-9b30-988ec561c8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DKEY">
+      <UniqueIdentifier>{5b752207-fc2d-4c64-b8e3-2fe889131097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMMM">
+      <UniqueIdentifier>{3bc7e824-fcf4-4d40-9d0d-7b23ff096cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DHEX">
+      <UniqueIdentifier>{6e0f34e8-5d9e-4d24-97e4-6a7dece0e444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMMDDYYYY">
+      <UniqueIdentifier>{bb82529f-5c54-4b11-8b0a-f6171f9669eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DDATETIME">
+      <UniqueIdentifier>{5f666203-5fae-4be4-874b-b6363617d9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DCLASST">
+      <UniqueIdentifier>{e238fa98-9ced-429e-bfb4-e8771517b822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DHHMMSS">
+      <UniqueIdentifier>{e511c2d8-06b7-4ccb-a071-f2c8516cd590}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -18,22 +63,56 @@
     <ClInclude Include="CHV4DMMM.h" />
     <ClInclude Include="CHV4DNUMERIC.h" />
     <ClInclude Include="CHV4DOFFSET.h" />
-    <ClInclude Include="CHV4DRTCLASS.h" />
     <ClInclude Include="CHV4DKEY.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>a. Project</Filter>
     </ClCompile>
-    <ClCompile Include="CHV4DABS.cpp" />
-    <ClCompile Include="CHV4DCLASST.cpp" />
-    <ClCompile Include="CHV4DHHMMSS.cpp" />
-    <ClCompile Include="CHV4DHVID.cpp" />
-    <ClCompile Include="CHV4DKEY.cpp" />
-    <ClCompile Include="CHV4DMAXPATH.cpp" />
-    <ClCompile Include="CHV4DMMDDYYYY.cpp" />
-    <ClCompile Include="CHV4DMMM.cpp" />
-    <ClCompile Include="CHV4DNUMERIC.cpp" />
-    <ClCompile Include="CHV4DOFFSET.cpp" />
+    <ClCompile Include="CHV4DABS.cpp">
+      <Filter>CHV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DALPHANUMERIC.cpp">
+      <Filter>CHV4DALPHANUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMAXPATH.cpp">
+      <Filter>CHV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DNUMERIC.cpp">
+      <Filter>CHV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DOFFSET.cpp">
+      <Filter>CHV4DOFFSET</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTEXTBLOBA.cpp">
+      <Filter>CHV4DTEXTBLOBA</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTEXTBLOBW.cpp">
+      <Filter>CHV4DTEXTBLOBW</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHVID.cpp">
+      <Filter>CHV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DKEY.cpp">
+      <Filter>CHV4DKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMM.cpp">
+      <Filter>CHV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHEX.cpp">
+      <Filter>CHV4DHEX</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHHMMSS.cpp">
+      <Filter>CHV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMDDYYYY.cpp">
+      <Filter>CHV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDATETIME.cpp">
+      <Filter>CHV4DDATETIME</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DCLASST.cpp">
+      <Filter>CHV4DCLASST</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

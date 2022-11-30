@@ -1,18 +1,10 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
 #include <vector>
 
 #include <string>
 
-#include <ctime>
-
 #include <stdexcept>
-
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -25,7 +17,8 @@ namespace CHV4D::CHV4DTBASIC
 
 		CHV4DMAXPATH(CHV4DMAXPATH const&);
 
-		void HV4DIsValidMAXPATH() const;
+	private:
+		void HV4DIsValidMAXPATH();
 
 	public:
 		void operator = (std::wstring const&);
@@ -36,25 +29,19 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator == (CHV4DMAXPATH const&) const;
 
-		bool operator != (std::wstring const&) const;
-
-		bool operator != (CHV4DMAXPATH const&) const;
-
-		bool operator < (std::wstring const&) const;
-
-		bool operator < (CHV4DMAXPATH const&) const;
-
-		bool operator > (std::wstring const&) const;
-
-		bool operator > (CHV4DMAXPATH const&) const;
-
 	public:
 		void HV4DGetStringMAXPATH(std::wstring&) const;
 
-		void HV4DGetArrayMAXPATH(wchar_t[256]) const;
+		void HV4DSubStr(uint64_t const&, uint64_t const&, CHV4DMAXPATH&);
 
 	private:
-		wchar_t tagMAXPATH[256]{ '\0' };
+		std::wstring tagMAXPATH{ '\0' };
+
+	private:
+		std::vector<wchar_t> HV4DMaxPathW = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+			'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F',
+			'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+			'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '-', ' ', '.', '\u005C' };
 
 	};
 

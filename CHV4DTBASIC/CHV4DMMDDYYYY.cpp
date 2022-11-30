@@ -6,104 +6,80 @@ namespace CHV4D::CHV4DTBASIC
 {
 	CHV4DMMDDYYYY::CHV4DMMDDYYYY()
 	{
-		memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
 
 		return;
 
 	}
 
 	CHV4DMMDDYYYY::CHV4DMMDDYYYY(std::wstring const& s)
-	{
-		if (s.size() != 10)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		if (!(s[2] == '/' && s[5] == '/'))
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		tagMMDDYYYY[0] = s[0];
-		tagMMDDYYYY[1] = s[1];
-		tagMMDDYYYY[2] = s[3];
-		tagMMDDYYYY[3] = s[4];
-		tagMMDDYYYY[4] = s[6];
-		tagMMDDYYYY[5] = s[7];
-		tagMMDDYYYY[6] = s[8];
-		tagMMDDYYYY[7] = s[9];
-
+	{	
 		try
 		{
-			HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
 		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
+			tagMMDDYYYY.clear();
 
 			throw std::invalid_argument("");
 
 		}
 
+		tagMMDDYYYY = s;
+		
 		return;
 
 	}
 
 	CHV4DMMDDYYYY::CHV4DMMDDYYYY(CHV4DMMDDYYYY const& e)
 	{
-		memcpy(tagMMDDYYYY, e.tagMMDDYYYY, sizeof(tagMMDDYYYY));
-
-		try
-		{
-			HV4DIsValidMMDDYYYY();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
-
-			throw std::invalid_argument("");
-
-		}
+		tagMMDDYYYY = e.tagMMDDYYYY;
 
 		return;
 
 	}
 
-	void CHV4DMMDDYYYY::HV4DIsValidMMDDYYYY() const
+	void CHV4DMMDDYYYY::HV4DIsValidMMDDYYYY(std::wstring const& s) const
 	{
-		if (tagMMDDYYYY[0] == '\0')
+		
+		if (s.size() != 10)
 		{
-			throw std::underflow_error("");
+			throw std::domain_error("");
 
 		}
 
-		std::vector<wchar_t>::const_iterator citt{};
-
-		for (wchar_t itt : tagMMDDYYYY)
+		if(s[2] != '/' || s[5] != '/')
 		{
-			citt = std::find(SYSCALL::HV4DNumericW()->begin(), SYSCALL::HV4DNumericW()->end(), itt);
+			throw std::domain_error("");
 
-			if (citt == SYSCALL::HV4DNumericW()->end())
+		}
+		
+		std::vector<wchar_t>::const_iterator nitt{};
+
+		for (uint8_t i = 0; i < 10; i++)
+		{
+			nitt = std::find(HV4DNumericW.begin(), HV4DNumericW.end(), s[i]);
+
+			if (nitt == HV4DNumericW.end())
 			{
 				throw std::domain_error("");
 
 			}
 
+			if (i == 2 || i == 5)
+			{
+				i++;
+
+			}
+
 		}
-
-		std::wstring mm = std::wstring{ tagMMDDYYYY[0] } + tagMMDDYYYY[1];
-		std::wstring dd = std::wstring{ tagMMDDYYYY[2] } + tagMMDDYYYY[3];
-		std::wstring yyyy = std::wstring{ tagMMDDYYYY[4] } + tagMMDDYYYY[5] + tagMMDDYYYY[6] + tagMMDDYYYY[7];
-
-		std::wstring dd_max{};
+		
+		uint64_t dd_max{};
 
 		try
 		{
-			dd_max = SYSCALL::HV4DMMDDW()->at(mm);
+			dd_max = std::wcstoull(HV4DMMDDW.at(std::wstring{s[0], s[1]}).c_str(), NULL, 10);
 
 		}
 		catch (std::out_of_range)
@@ -111,53 +87,55 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::domain_error("");
 
 		}
+		
+		uint64_t mm = std::wcstoull(std::wstring{ s[0], s[1] }.c_str(), NULL, 10);
 
-		std::vector<std::wstring>::const_iterator citt_leap{};
+		uint64_t dd = std::wcstoull(std::wstring{ s[3], s[4] }.c_str(), NULL, 10);
 
-		citt_leap = std::find(SYSCALL::HV4DLeapW()->begin(), SYSCALL::HV4DLeapW()->end(), yyyy);
+		uint64_t yy = std::wcstoull(std::wstring{ &s[6], &s[9] }.c_str(), NULL, 10);
+		
+		std::vector<std::wstring>::const_iterator citt{};
 
-		if (citt_leap != SYSCALL::HV4DLeapW()->end())
+		citt = std::find(HV4DLeapW.begin(), HV4DLeapW.end(), std::wstring{ &s[6], &s[9] });
+		
+		if (citt != HV4DLeapW.end())
 		{
-			dd_max = L"29";
+			dd_max += 1;
 
 		}
 
-		int val_dd{ std::stoi(dd.c_str()) };
-
-		int val_dd_max{ std::stoi(dd_max.c_str()) };
-
-		if (val_dd < 1 || val_dd > val_dd_max)
+		if(dd > dd_max)
 		{
 			throw std::domain_error("");
 
 		}
 
+		if(yy < 2004 || 2096 < yy)
+		{
+			throw std::domain_error("");
+
+		}
+		
 		return;
 
 	}
 
 	void CHV4DMMDDYYYY::operator = (std::wstring const& s)
 	{
-		CHV4DMMDDYYYY mmddyyyy{ s };
-
-		for (size_t i = 0; i < 8; i++)
-		{
-			tagMMDDYYYY[i] = mmddyyyy.tagMMDDYYYY[i];
-
-		}
-
 		try
 		{
-			HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
 		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
+			tagMMDDYYYY.clear();
 
 			throw std::invalid_argument("");
 
 		}
+
+		tagMMDDYYYY = s;
 
 		return;
 
@@ -165,26 +143,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DMMDDYYYY::operator = (CHV4DMMDDYYYY const& e)
 	{
-		CHV4DMMDDYYYY mmddyyyy{ e };
-
-		for (size_t i = 0; i < 8; i++)
-		{
-			tagMMDDYYYY[i] = mmddyyyy.tagMMDDYYYY[i];
-
-		}
-
-		try
-		{
-			HV4DIsValidMMDDYYYY();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
-
-			throw std::invalid_argument("");
-
-		}
+		tagMMDDYYYY = e.tagMMDDYYYY;
 
 		return;
 
@@ -192,11 +151,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMMDDYYYY::operator == (std::wstring const& s) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ s };
-
 		try
 		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
@@ -205,40 +162,21 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		return *this == mmddyyyy;
+		return tagMMDDYYYY.compare(s) == 0;
 
 	}
 
 	bool CHV4DMMDDYYYY::operator == (CHV4DMMDDYYYY const& e) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ e };
-
-		try
-		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		int ret = memcmp(tagMMDDYYYY, mmddyyyy.tagMMDDYYYY, sizeof(tagMMDDYYYY));
-
-		if (ret != 0) return false;
-
-		return true;
+		return tagMMDDYYYY.compare(e.tagMMDDYYYY) == 0;
 
 	}
 
 	bool CHV4DMMDDYYYY::operator != (std::wstring const& s) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ s };
-
 		try
 		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
@@ -247,36 +185,21 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		return (*this == mmddyyyy);
+		return tagMMDDYYYY.compare(s) != 0;
 
 	}
 
 	bool CHV4DMMDDYYYY::operator != (CHV4DMMDDYYYY const& e) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ e };
-
-		try
-		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return (*this == mmddyyyy);
+		return tagMMDDYYYY.compare(e.tagMMDDYYYY) != 0;
 
 	}
 
 	bool CHV4DMMDDYYYY::operator > (std::wstring const& s) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ s };
-
 		try
 		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
@@ -285,33 +208,20 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		return *this > mmddyyyy;
+		return *this > CHV4DMMDDYYYY{ s };
 
 	}
 
 	bool CHV4DMMDDYYYY::operator > (CHV4DMMDDYYYY const& e) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ e };
+		uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), NULL, 10);
+		uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), NULL, 10);
 
-		try
-		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+		uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), NULL, 10);
+		uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), NULL, 10);
 
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		int a_mm = std::stoi(std::wstring{ tagMMDDYYYY[0] } + tagMMDDYYYY[1]);
-		int b_mm = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[0] } + mmddyyyy.tagMMDDYYYY[1]);
-
-		int a_dd = std::stoi(std::wstring{ tagMMDDYYYY[2] } + tagMMDDYYYY[3]);
-		int b_dd = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[2] } + mmddyyyy.tagMMDDYYYY[3]);
-
-		int a_yyyy = std::stoi(std::wstring{ tagMMDDYYYY[4] } + tagMMDDYYYY[5] + tagMMDDYYYY[6] + tagMMDDYYYY[7]);
-		int b_yyyy = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[4] } + mmddyyyy.tagMMDDYYYY[5] + mmddyyyy.tagMMDDYYYY[6] + mmddyyyy.tagMMDDYYYY[7]);
+		uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), NULL, 10);
+		uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), NULL, 10);
 
 		if (a_yyyy > b_yyyy)
 		{
@@ -356,11 +266,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMMDDYYYY::operator < (std::wstring const& s) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ s };
-
 		try
 		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(s);
 
 		}
 		catch (std::domain_error)
@@ -369,33 +277,20 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		return *this < mmddyyyy;
+		return *this < CHV4DMMDDYYYY{ s };
 
 	}
 
 	bool CHV4DMMDDYYYY::operator < (CHV4DMMDDYYYY const& e) const
 	{
-		CHV4DMMDDYYYY mmddyyyy{ e };
+		uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), NULL, 10);
+		uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), NULL, 10);
 
-		try
-		{
-			mmddyyyy.HV4DIsValidMMDDYYYY();
+		uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), NULL, 10);
+		uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), NULL, 10);
 
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		int a_mm = std::stoi(std::wstring{ tagMMDDYYYY[0] } + tagMMDDYYYY[1]);
-		int b_mm = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[0] } + mmddyyyy.tagMMDDYYYY[1]);
-
-		int a_dd = std::stoi(std::wstring{ tagMMDDYYYY[2] } + tagMMDDYYYY[3]);
-		int b_dd = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[2] } + mmddyyyy.tagMMDDYYYY[3]);
-
-		int a_yyyy = std::stoi(std::wstring{ tagMMDDYYYY[4] } + tagMMDDYYYY[5] + tagMMDDYYYY[6] + tagMMDDYYYY[7]);
-		int b_yyyy = std::stoi(std::wstring{ mmddyyyy.tagMMDDYYYY[4] } + mmddyyyy.tagMMDDYYYY[5] + mmddyyyy.tagMMDDYYYY[6] + mmddyyyy.tagMMDDYYYY[7]);
+		uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), NULL, 10);
+		uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), NULL, 10);
 
 		if (a_yyyy < b_yyyy)
 		{
@@ -448,7 +343,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		if (is_valid != NULL)
 		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
+			tagMMDDYYYY.clear();
 
 			throw std::overflow_error("localtime failed.");
 
@@ -460,24 +355,24 @@ namespace CHV4D::CHV4DTBASIC
 
 		if (ret == 0)
 		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
+			tagMMDDYYYY.clear();
 
-			throw std::underflow_error("time format failed.");
+			throw std::overflow_error("localtime failed.");
 
 		}
 
 		std::wstring str{ &buffer[0], &buffer[127] };
 
-		*this = str;
+		tagMMDDYYYY = str;
 
 		try
 		{
-			HV4DIsValidMMDDYYYY();
+			HV4DIsValidMMDDYYYY(tagMMDDYYYY);
 
 		}
 		catch (std::domain_error)
 		{
-			memset(tagMMDDYYYY, '\0', sizeof(tagMMDDYYYY));
+			tagMMDDYYYY.clear();
 
 			throw std::domain_error("");
 
@@ -489,48 +384,19 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DMMDDYYYY::HV4DGetStringMMDDYYYY(std::wstring& o) const
 	{
-		o = o + tagMMDDYYYY[0];
-		o = o + tagMMDDYYYY[1];
-		o = o + L"/";
-		o = o + tagMMDDYYYY[2];
-		o = o + tagMMDDYYYY[3];
-		o = o + L"/";
-		o = o + tagMMDDYYYY[4];
-		o = o + tagMMDDYYYY[5];
-		o = o + tagMMDDYYYY[6];
-		o = o + tagMMDDYYYY[7];
-
-		o = o + L"\0";
+		o = tagMMDDYYYY;
 
 		return;
 
 	}
 
-	void CHV4DMMDDYYYY::HV4DGetNumericMMDDYYYY(uint8_t& mm, uint8_t& dd, uint8_t& yyyy) const
+	void CHV4DMMDDYYYY::HV4DGetNumericMMDDYYYY(long& mm, long& dd, long& yyyy) const
 	{
-		std::wstring str_mm = std::wstring{ tagMMDDYYYY[0] } + tagMMDDYYYY[1];
+		mm = std::wcstoul(tagMMDDYYYY.substr(0,2).c_str(), NULL, 10);
 
-		std::wstring str_dd = std::wstring{ tagMMDDYYYY[2] } + tagMMDDYYYY[3];
+		dd = std::stoi(tagMMDDYYYY.substr(3, 4).c_str(), NULL, 10);
 
-		std::wstring str_yyyy = std::wstring{ tagMMDDYYYY[4] } + tagMMDDYYYY[5] + tagMMDDYYYY[6] + tagMMDDYYYY[7];
-
-		mm = std::stoi(str_mm.c_str());
-
-		dd = std::stoi(str_dd.c_str());
-
-		yyyy = std::stoi(str_yyyy.c_str());
-
-		return;
-
-	}
-
-	void CHV4DMMDDYYYY::HV4DGetArrayMMDDYYYY(wchar_t a[8]) const
-	{
-		for (uint8_t i = 0; i < 8; i++)
-		{
-			a[i] = tagMMDDYYYY[i];
-
-		}
+		yyyy = std::stoi(tagMMDDYYYY.substr(6, 9).c_str(), NULL, 10);
 
 		return;
 

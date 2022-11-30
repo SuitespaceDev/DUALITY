@@ -531,7 +531,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		if (e.HV4DToUInt64(num) != HV4D::HV4D_OPERATION_SUCCEEDED{})
 		{
-			return HV4D::HV4D_OPERATION_FAILED{};
+			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 

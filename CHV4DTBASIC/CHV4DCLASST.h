@@ -1,17 +1,12 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
 #include <vector>
 
 #include <string>
 
 #include <stdexcept>
 
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
-#include "..\CHV4DSYSCALL\CHV4DTIME.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
+#include "CHV4DMAXPATH.h"
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -22,9 +17,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		CHV4DCLASST(std::wstring const&, std::wstring const&);
 
-		CHV4DCLASST(CHV4DCLASST const&);
+		CHV4DCLASST(CHV4DMAXPATH const&, CHV4DMAXPATH const&);
 
-		void HV4DIsValidCLASST() const;
+		CHV4DCLASST(CHV4DCLASST const&);
 
 	public:
 		void operator = (CHV4DCLASST const&);
@@ -36,12 +31,12 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		void HV4DGetStringCLASST(std::wstring&, std::wstring&) const;
 
-		void HV4DGetArrayCLASST(wchar_t[256], wchar_t[256]) const;
+		void HV4DGetHV4DCLASST(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
 
 	private:
-		wchar_t tagNAMESPACE[256]{ '\0' };
+		CHV4DMAXPATH tagNAMESPACE{};
 
-		wchar_t tagWINRTCLASS[256]{ '\0' };
+		CHV4DMAXPATH tagWINRTCLASS{};
 
 	};
 

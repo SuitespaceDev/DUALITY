@@ -1,17 +1,12 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
 #include <vector>
 
 #include <string>
 
 #include <stdexcept>
 
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
-#include "..\CHV4DSYSCALL\CHV4DTIME.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
+#include "CHV4DMAXPATH.h"
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -21,6 +16,8 @@ namespace CHV4D::CHV4DTBASIC
 		CHV4DABS();
 
 		CHV4DABS(std::wstring const&, std::wstring const&);
+
+		CHV4DABS(CHV4DMAXPATH const&, CHV4DMAXPATH const&);
 
 		CHV4DABS(CHV4DABS const&);
 
@@ -36,12 +33,12 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		void HV4DGetStringABS(std::wstring&, std::wstring&) const;
 
-		void HV4DGetArrayABS(wchar_t[256], wchar_t[256]) const;
+		void HV4DGetMaxPathABS(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
 
 	private:
-		wchar_t tagPATH[256]{ '\0' };
+		CHV4DMAXPATH tagPATH{};
 
-		wchar_t tagFILE[256]{ '\0' };
+		CHV4DMAXPATH tagFILE{};
 
 	};
 

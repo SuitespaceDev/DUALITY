@@ -1,20 +1,10 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DSYSCALL.lib")
-
-#include <objbase.h>
-
 #include <vector>
 
 #include <string>
 
-#include <ctime>
-
 #include <stdexcept>
-
-#include "..\CHV4DSYSCALL\CHV4DKEYMAP.h"
-
-namespace SYSCALL = CHV4D::CHV4DSYSCALL;
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -23,40 +13,43 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		CHV4DNUMERIC();
 
+		CHV4DNUMERIC(std::wstring const&);
+
 		CHV4DNUMERIC(uint64_t const&);
 
 		CHV4DNUMERIC(CHV4DNUMERIC const&);
 
-		void HV4DIsValidOffset() const;
+	private:
+		uint64_t HV4DStringToInt(std::wstring const&) const;
 
 	public:
-		void operator = (uint64_t const&);
-
 		void operator = (std::wstring const&);
+
+		void operator = (uint64_t const&);
 
 		void operator = (CHV4DNUMERIC const&);
 
-		bool operator == (uint64_t const&) const;
-
 		bool operator == (std::wstring const&) const;
+
+		bool operator == (uint64_t const&) const;
 
 		bool operator == (CHV4DNUMERIC const&) const;
 
-		bool operator != (uint64_t const&) const;
-
 		bool operator != (std::wstring const&) const;
+
+		bool operator != (uint64_t const&) const;
 
 		bool operator != (CHV4DNUMERIC const&) const;
 
-		bool operator < (uint64_t const&) const;
-
 		bool operator < (std::wstring const&) const;
+
+		bool operator < (uint64_t const&) const;
 
 		bool operator < (CHV4DNUMERIC const&) const;
 
-		bool operator > (uint64_t const&) const;
-
 		bool operator > (std::wstring const&) const;
+
+		bool operator > (uint64_t const&) const;
 
 		bool operator > (CHV4DNUMERIC const&) const;
 
@@ -67,6 +60,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	private:
 		uint64_t tagNUM;
+
+	private:
+		const std::vector<wchar_t> HV4DNumericW{ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
 	};
 

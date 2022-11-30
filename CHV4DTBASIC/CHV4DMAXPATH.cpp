@@ -6,7 +6,6 @@ namespace CHV4D::CHV4DTBASIC
 {
 	CHV4DMAXPATH::CHV4DMAXPATH()
 	{
-		memset(tagMAXPATH, '\0', sizeof(tagMAXPATH));
 
 		return;
 
@@ -14,17 +13,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	CHV4DMAXPATH::CHV4DMAXPATH(std::wstring const& s)
 	{
-		if (s.size() > 256)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		for (uint32_t i = 0; i < s.size(); i++)
-		{
-			tagMAXPATH[i] = s[i];
-
-		}
+		tagMAXPATH = s;
 
 		try
 		{
@@ -33,7 +22,7 @@ namespace CHV4D::CHV4DTBASIC
 		}
 		catch(std::domain_error)
 		{
-			memset(tagMAXPATH, '\0', sizeof(tagMAXPATH));
+			tagMAXPATH.clear();
 
 			throw std::invalid_argument("");
 
@@ -45,58 +34,29 @@ namespace CHV4D::CHV4DTBASIC
 
 	CHV4DMAXPATH::CHV4DMAXPATH(CHV4DMAXPATH const& e)
 	{
-		for (uint32_t i = 0; i < 256; i++)
-		{
-			tagMAXPATH[i] = e.tagMAXPATH[i];
-
-		}
-
-		try
-		{
-			HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagMAXPATH, '\0', sizeof(tagMAXPATH));
-
-			throw std::invalid_argument("");
-
-		}
+		tagMAXPATH = e.tagMAXPATH;
 
 		return;
 
 	}
 
-	void CHV4DMAXPATH::HV4DIsValidMAXPATH() const
+	void CHV4DMAXPATH::HV4DIsValidMAXPATH()
 	{
-		if (tagMAXPATH[0] == '\0')
+		if (tagMAXPATH.size() > 256)
 		{
-			throw std::underflow_error("");
+			throw std::domain_error("");
 
 		}
 
 		std::vector<wchar_t>::const_iterator citt{};
 
-		for (wchar_t itt : tagMAXPATH)
+		for (std::wstring::const_iterator itt = tagMAXPATH.begin(); itt != tagMAXPATH.end(); itt++)
 		{
-			citt = std::find(SYSCALL::HV4DSymbolW()->begin(), SYSCALL::HV4DSymbolW()->end(), itt);
+			uint32_t index{};
 
-			if (citt != SYSCALL::HV4DSymbolW()->end())
-			{
-				throw std::domain_error("");
+			citt = std::find(HV4DMaxPathW.begin(), HV4DMaxPathW.end(), *itt);
 
-			}
-
-		}
-
-		for (uint32_t index = 1; index < 255; index++)
-		{
-			if (tagMAXPATH[index] == '\0') break;
-
-			if (tagMAXPATH[index] == '\u005C' &&
-				(((tagMAXPATH[index - 1] != '\u005C') && (tagMAXPATH[index + 1] != '\u005C')) ||
-					((tagMAXPATH[index - 1] == '\u005C') && (tagMAXPATH[index + 1] == '\u005C'))))
+			if(citt == HV4DMaxPathW.end())
 			{
 				throw std::domain_error("");
 
@@ -110,13 +70,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DMAXPATH::operator = (std::wstring const& s)
 	{
-		CHV4DMAXPATH maxpath{ s };
-
-		for (uint32_t i = 0; i < 256; i++)
-		{
-			tagMAXPATH[i] = maxpath.tagMAXPATH[i];
-
-		}
+		tagMAXPATH = s;
 
 		try
 		{
@@ -125,7 +79,7 @@ namespace CHV4D::CHV4DTBASIC
 		}
 		catch (std::domain_error)
 		{
-			memset(tagMAXPATH, '\0', sizeof(tagMAXPATH));
+			tagMAXPATH.clear();
 
 			throw std::invalid_argument("");
 
@@ -137,24 +91,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DMAXPATH::operator = (CHV4DMAXPATH const& e)
 	{
-		for (uint32_t i = 0; i < 256; i++)
-		{
-			tagMAXPATH[i] = e.tagMAXPATH[i];
-
-		}
-
-		try
-		{
-			HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			memset(tagMAXPATH, '\0', sizeof(tagMAXPATH));
-
-			throw std::invalid_argument("");
-
-		}
+		tagMAXPATH = e.tagMAXPATH;
 
 		return;
 
@@ -162,11 +99,11 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMAXPATH::operator == (std::wstring const& s) const
 	{
-		CHV4DMAXPATH maxpath{ s };
+		CHV4DMAXPATH maxpath{};
 
 		try
 		{
-			maxpath.HV4DIsValidMAXPATH();
+			maxpath = s;
 
 		}
 		catch (std::domain_error)
@@ -181,196 +118,21 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMAXPATH::operator == (CHV4DMAXPATH const& e) const
 	{
-		CHV4DMAXPATH maxpath{ e };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		int ret = memcmp(tagMAXPATH, maxpath.tagMAXPATH, sizeof(tagMAXPATH));
-
-		if (ret != 0) return false;
-
-		return true;
-
-	}
-
-	bool CHV4DMAXPATH::operator != (std::wstring const& s) const
-	{
-		CHV4DMAXPATH maxpath{ s };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return !(*this == maxpath);
-
-	}
-
-	bool CHV4DMAXPATH::operator != (CHV4DMAXPATH const& e) const
-	{
-		CHV4DMAXPATH maxpath{ e };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return !(*this == maxpath);
-
-	}
-
-	bool CHV4DMAXPATH::operator < (std::wstring const& s) const
-	{
-		CHV4DMAXPATH maxpath{ s };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return *this < maxpath;
-
-	}
-
-	bool CHV4DMAXPATH::operator < (CHV4DMAXPATH const& e) const
-	{
-		CHV4DMAXPATH maxpath{ e };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		std::wstring str{ L"\0" };
-
-		HV4DGetStringMAXPATH(str);
-
-		for (uint8_t i = 0; i < str.size(); i++)
-		{
-			if (SYSCALL::HV4DKeyMapW()->at(str[i]) < SYSCALL::HV4DKeyMapW()->at(e.tagMAXPATH[i]))
-			{
-				return true;
-
-			}
-
-			if (SYSCALL::HV4DKeyMapW()->at(str[i]) > SYSCALL::HV4DKeyMapW()->at(e.tagMAXPATH[i]))
-			{
-				return false;
-
-			}
-
-		}
-
-		return false;
-
-	}
-
-	bool CHV4DMAXPATH::operator > (std::wstring const& s) const
-	{
-		CHV4DMAXPATH maxpath{ s };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		return *this > maxpath;
-
-	}
-
-	bool CHV4DMAXPATH::operator > (CHV4DMAXPATH const& e) const
-	{
-		CHV4DMAXPATH maxpath{ e };
-
-		try
-		{
-			maxpath.HV4DIsValidMAXPATH();
-
-		}
-		catch (std::domain_error)
-		{
-			throw std::invalid_argument("");
-
-		}
-
-		std::wstring str{ L"\0" };
-
-		HV4DGetStringMAXPATH(str);
-
-		for (uint8_t i = 0; i < str.size(); i++)
-		{
-			if (SYSCALL::HV4DKeyMapW()->at(str[i]) > SYSCALL::HV4DKeyMapW()->at(e.tagMAXPATH[i]))
-			{
-				return true;
-
-			}
-
-			if (SYSCALL::HV4DKeyMapW()->at(str[i]) < SYSCALL::HV4DKeyMapW()->at(e.tagMAXPATH[i]))
-			{
-				return false;
-
-			}
-
-		}
-
-		return false;
+		return tagMAXPATH.compare(e.tagMAXPATH) == 0;
 
 	}
 
 	void CHV4DMAXPATH::HV4DGetStringMAXPATH(std::wstring& o) const
 	{
-		o = std::wstring{ tagMAXPATH };
+		o = tagMAXPATH;
 
 		return;
 
 	}
 
-	void CHV4DMAXPATH::HV4DGetArrayMAXPATH(wchar_t a[256]) const
+	void CHV4DMAXPATH::HV4DSubStr(uint64_t const& i, uint64_t const& l, CHV4DMAXPATH& o)
 	{
-		for (uint16_t i = 0; i < 256; i++)
-		{
-			a[i] = tagMAXPATH[i];
-
-		}
+		o = tagMAXPATH.substr(i, l);
 
 		return;
 
