@@ -306,7 +306,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagNUMERIC = s.c_str();
+			tagNUMERIC = s.data();
 
 		}
 		catch (std::invalid_argument)

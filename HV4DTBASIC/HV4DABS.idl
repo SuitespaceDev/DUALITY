@@ -1,31 +1,32 @@
+import "HV4DMAXPATH.idl";
+
 namespace HV4DTBASIC
 {
-    struct ABS {
-        String p;
-        String f;
-    };
-
     runtimeclass HV4DABS : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
     {
         HV4DABS();
-    
-		HV4D.IHV4DRETURN HV4DFromHstring(String p, String f);
+ 
+		HV4DABS(HV4D.IHV4DOBJECT sender);
 
-		HV4D.IHV4DRETURN HV4DFromABI(ABS abs);
+		HV4DABS(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
 
-		HV4D.IHV4DRETURN HV4DFromWinRT(HV4DABS abs);
+		HV4D.IHV4DRETURN HV4DABSFromHstring(String p, String f);
 
-		HV4D.IHV4DRETURN HV4DToHstring(out String p, out String f);
+		HV4D.IHV4DRETURN HV4DABSFromMAXPATH(HV4DMAXPATH p, HV4DMAXPATH f);
 
-		HV4D.IHV4DRETURN HV4DToABI(out ABS abs);
+		HV4D.IHV4DRETURN HV4DABSFromProj(HV4DABS e);
 
-		HV4D.IHV4DRETURN HV4DToWinRT(out HV4DABS abs);
+		HV4D.IHV4DRETURN HV4DABSToHstring(out String p, out String f);
 
-		HV4D.IHV4DRETURN HV4DIsEqualHstring(String p, String f);
+		HV4D.IHV4DRETURN HV4DABSToMAXPATH(HV4DMAXPATH p, HV4DMAXPATH f);
 
-		HV4D.IHV4DRETURN HV4DIsEqualABI(ABS abs);
+		HV4D.IHV4DRETURN HV4DABSToProj(out HV4DABS e);
 
-		HV4D.IHV4DRETURN HV4DIsEqualWinRT(HV4DABS abs);
+		HV4D.IHV4DRETURN HV4DABSIsEqualHstring(String p, String f);
+
+		HV4D.IHV4DRETURN HV4DABSIsEqualMAXPATH(HV4DMAXPATH p, HV4DMAXPATH f);
+
+		HV4D.IHV4DRETURN HV4DABSIsEqualProj(HV4DABS e);
 
     }
 

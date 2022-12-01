@@ -44,7 +44,7 @@ namespace CHV4D::CHV4DTBASIC
 		bool operator < (CHV4DHHMMSS const&) const;
 
 	public:
-		void HV4DCurrentHHMMSS();
+		void HV4DSetToCurrentHHMMSS();
 
 		void HV4DGetStringHHMMSS(std::wstring&) const;
 

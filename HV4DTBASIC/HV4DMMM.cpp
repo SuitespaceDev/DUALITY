@@ -238,7 +238,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagMMM = vs.c_str();
+			tagMMM = vs.data();
 
 		}
 		catch (std::invalid_argument)
@@ -280,7 +280,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagMMM = mmm.c_str();
+			tagMMM = mmm.data();
 
 		}
 		catch (std::invalid_argument)
@@ -337,12 +337,12 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DMMM::HV4DIsEqualHstring(winrt::hstring const& e)
 	{
-		if (tagMMM == CTBASIC::CHV4DMMM{ e.c_str() })
+		if (tagMMM == CTBASIC::CHV4DMMM{ e.data() })
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMM > CTBASIC::CHV4DMMM{ e.c_str() })
+		else if (tagMMM > CTBASIC::CHV4DMMM{ e.data() })
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -385,12 +385,12 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		if (tagMMM == CTBASIC::CHV4DMMM{ mmm.c_str() })
+		if (tagMMM == CTBASIC::CHV4DMMM{ mmm.data() })
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMM > CTBASIC::CHV4DMMM{ mmm.c_str() })
+		else if (tagMMM > CTBASIC::CHV4DMMM{ mmm.data() })
 		{
 			return HV4D::HV4D_IS_LESSER{};
 

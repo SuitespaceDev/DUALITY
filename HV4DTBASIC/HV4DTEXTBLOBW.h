@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DTBASIC.lib")
 
@@ -6,9 +6,9 @@
 
 #include <ctime>
 
-#include "../CHV4DTBASIC/CHV4DCLASST.h"
+#include "../CHV4DTBASIC/CHV4DTEXTBLOBW.h"
 
-#include "HV4DCLASST.g.h"
+#include "HV4DTEXTBLOBW.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFC = winrt::Windows::Foundation::Collections;
@@ -18,14 +18,14 @@ namespace CTBASIC = CHV4D::CHV4DTBASIC;
 
 namespace winrt::HV4DTBASIC::implementation
 {
-	struct HV4DCLASST : HV4DCLASSTT<HV4DCLASST>
+	struct HV4DTEXTBLOBW : HV4DTEXTBLOBWT<HV4DTEXTBLOBW>
 	{
 	public:
-		HV4DCLASST();
+		HV4DTEXTBLOBW();
 
-		HV4DCLASST(HV4D::IHV4DOBJECT const&);
+		HV4DTEXTBLOBW(HV4D::IHV4DOBJECT const&);
 
-		HV4DCLASST(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+		HV4DTEXTBLOBW(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
 
 	public:
 		virtual winrt::guid HV4DUuidOfInstance();
@@ -100,26 +100,22 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWFromHstring(winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWFromProj(TBASIC::HV4DTEXTBLOBW const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromProj(TBASIC::HV4DCLASST const&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWToHstring(winrt::hstring&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToHstring(winrt::hstring&, winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWToProj(TBASIC::HV4DTEXTBLOBW&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToHV4DMAXPATH(TBASIC::HV4DMAXPATH&, TBASIC::HV4DMAXPATH&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWIsEqualHstring(winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToProj(TBASIC::HV4DCLASST&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWIsEqualProj(TBASIC::HV4DTEXTBLOBW const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
-
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualHV4DMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
-
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualProj(TBASIC::HV4DCLASST const&);
+		virtual HV4D::IHV4DRETURN HV4DTEXTBLOBWSubStr(uint64_t const&, uint64_t const&, TBASIC::HV4DTEXTBLOBW&);
 
 	private:
-		CTBASIC::CHV4DCLASST tagCLASST{};
+		CTBASIC::CHV4DTEXTBLOBW tagTEXT{};
 
 	};
 
@@ -127,7 +123,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 namespace winrt::HV4DTBASIC::factory_implementation
 {
-	struct HV4DCLASST : HV4DCLASSTT<HV4DCLASST, implementation::HV4DCLASST>
+	struct HV4DTEXTBLOBW : HV4DTEXTBLOBWT<HV4DTEXTBLOBW, implementation::HV4DTEXTBLOBW>
 	{
 
 	};

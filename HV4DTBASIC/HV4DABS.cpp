@@ -234,11 +234,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DFromHstring(winrt::hstring const& p, winrt::hstring const& f)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSFromHstring(winrt::hstring const& p, winrt::hstring const& f)
 	{
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ p.c_str(), f.c_str() };
+			tagABS = CTBASIC::CHV4DABS{ p.data(), f.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -251,11 +251,17 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DFromABI(TBASIC::ABS const& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSFromMAXPATH(TBASIC::HV4DMAXPATH const& p, TBASIC::HV4DMAXPATH const& f)
 	{
+		winrt::hstring path{}, file{};
+
+		p.HV4DMAXPATHToHstring(path);
+
+		f.HV4DMAXPATHToHstring(file);
+
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ e.p.c_str(), e.f.c_str() };
+			tagABS = CTBASIC::CHV4DABS{ path.data(), file.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -268,19 +274,15 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DFromWinRT(TBASIC::HV4DABS const& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSFromProj(TBASIC::HV4DABS const& e)
 	{
-		TBASIC::ABS abs{};
+		winrt::hstring path{}, file{};
 
-		if (e.HV4DToABI(abs) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DABSToHstring(path, file);
 
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ abs.p.c_str(), abs.f.c_str() };
+			tagABS = CTBASIC::CHV4DABS{ path.data(), file.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -293,7 +295,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DToHstring(winrt::hstring& p, winrt::hstring& f)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSToHstring(winrt::hstring& p, winrt::hstring& f)
 	{
 		std::wstring path{}, file{};
 
@@ -307,37 +309,34 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DToABI(ABS& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSToMAXPATH(TBASIC::HV4DMAXPATH& p, TBASIC::HV4DMAXPATH& f)
 	{
 		std::wstring path{}, file{};
 
 		tagABS.HV4DGetStringABS(path, file);
 
-		e.p = path;
+		p.HV4DMAXPATHFromHstring(path);
 
-		e.f = file;
+		f.HV4DMAXPATHFromHstring(file);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DToWinRT(TBASIC::HV4DABS& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSToProj(TBASIC::HV4DABS& e)
 	{
 		std::wstring path{}, file{};
 
 		tagABS.HV4DGetStringABS(path, file);
 
-		if (e.HV4DFromHstring(path, file) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DABSFromHstring(path, file);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DIsEqualHstring(winrt::hstring const& p, winrt::hstring const& f)
+
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSIsEqualHstring(winrt::hstring const& p, winrt::hstring const& f)
 	{
 		std::wstring path{}, file{};
 
@@ -348,18 +347,24 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_TRUE{};
 
 		}
-		
+
 		return HV4D::HV4D_FALSE{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DIsEqualABI(TBASIC::ABS const& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSIsEqualMAXPATH(TBASIC::HV4DMAXPATH const& p, TBASIC::HV4DMAXPATH const& f)
 	{
-		std::wstring path{}, file{};
+		winrt::hstring path{}, file{};
 
-		tagABS.HV4DGetStringABS(path, file);
+		p.HV4DMAXPATHToHstring(path);
 
-		if (path == e.p && file == e.f)
+		f.HV4DMAXPATHToHstring(file);
+
+		std::wstring cpath{}, cfile{};
+
+		tagABS.HV4DGetStringABS(cpath, cfile);
+
+		if (path == cpath && file == cfile)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -369,17 +374,17 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DABS::HV4DIsEqualWinRT(TBASIC::HV4DABS const& e)
+	HV4D::IHV4DRETURN HV4DABS::HV4DABSIsEqualProj(TBASIC::HV4DABS const& e)
 	{
-		std::wstring path{}, file{};
+		winrt::hstring path{}, file{};
 
-		tagABS.HV4DGetStringABS(path, file);
+		e.HV4DABSToHstring(path, file);
 
-		winrt::hstring winrt_path{}, winrt_file{};
+		std::wstring cpath{}, cfile{};
 
-		e.HV4DToHstring(winrt_path, winrt_file);
+		tagABS.HV4DGetStringABS(cpath, cfile);
 
-		if (path == winrt_path && file == winrt_file)
+		if (path == cpath && file == cfile)
 		{
 			return HV4D::HV4D_TRUE{};
 

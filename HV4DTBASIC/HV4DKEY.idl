@@ -1,0 +1,40 @@
+import "HV4DHVID.idl";
+import "HV4DMAXPATH.idl";
+
+namespace HV4DTBASIC
+{
+    runtimeclass HV4DKEY : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DRETURN
+    {
+        HV4DKEY();
+
+        HV4DKEY(HV4D.IHV4DOBJECT sender);
+
+        HV4DKEY(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
+
+        HV4D.IHV4DRETURN HV4DKEYFromHstring(String uid, String n);
+
+        HV4D.IHV4DRETURN HV4DKEYFromGuid(Guid uid, String n);
+
+        HV4D.IHV4DRETURN HV4DKEYFromHV4D(HV4DHVID uid, HV4DMAXPATH n);
+
+        HV4D.IHV4DRETURN HV4DKEYFromProj(HV4DKEY e);
+
+        HV4D.IHV4DRETURN HV4DKEYToHstring(out String uid, out String n);
+
+        HV4D.IHV4DRETURN HV4DKEYToGuid(out Guid uid, out String n);
+
+        HV4D.IHV4DRETURN HV4DKEYToHV4D(out HV4DHVID uid, out HV4DMAXPATH n);
+
+        HV4D.IHV4DRETURN HV4DKEYToProj(out HV4DKEY e);
+
+        HV4D.IHV4DRETURN HV4DKEYIsEqualHstring(String uid, String n);
+
+        HV4D.IHV4DRETURN HV4DKEYIsEqualGuid(Guid uid, String n);
+
+        HV4D.IHV4DRETURN HV4DKEYIsEqualHV4D(HV4DHVID uid, HV4DMAXPATH n);
+
+        HV4D.IHV4DRETURN HV4DKEYIsEqualProj(HV4DKEY e);
+
+    }
+
+}

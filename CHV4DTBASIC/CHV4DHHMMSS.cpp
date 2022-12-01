@@ -205,7 +205,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DHHMMSS::HV4DCurrentHHMMSS()
+	void CHV4DHHMMSS::HV4DSetToCurrentHHMMSS()
 	{
 		std::time_t time = std::time(nullptr);
 

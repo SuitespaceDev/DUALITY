@@ -100,23 +100,23 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		virtual HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DABSFromHstring(winrt::hstring const&, winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DFromABI(winrt::HV4DTBASIC::ABS const&);
+		virtual HV4D::IHV4DRETURN HV4DABSFromMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
 
-		virtual HV4D::IHV4DRETURN HV4DFromWinRT(winrt::HV4DTBASIC::HV4DABS const&);
+		virtual HV4D::IHV4DRETURN HV4DABSFromProj(TBASIC::HV4DABS const&);
 
-		virtual HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&, winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DABSToHstring(winrt::hstring&, winrt::hstring&);
 
-		virtual HV4D::IHV4DRETURN HV4DToABI(winrt::HV4DTBASIC::ABS&);
+		virtual HV4D::IHV4DRETURN HV4DABSToMAXPATH(TBASIC::HV4DMAXPATH&, TBASIC::HV4DMAXPATH&);
 
-		virtual HV4D::IHV4DRETURN HV4DToWinRT(winrt::HV4DTBASIC::HV4DABS&);
+		virtual HV4D::IHV4DRETURN HV4DABSToProj(TBASIC::HV4DABS&);
 
-		virtual HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DABSIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DIsEqualABI(winrt::HV4DTBASIC::ABS const&);
+		virtual HV4D::IHV4DRETURN HV4DABSIsEqualMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
 
-		virtual HV4D::IHV4DRETURN HV4DIsEqualWinRT(winrt::HV4DTBASIC::HV4DABS const&);
+		virtual HV4D::IHV4DRETURN HV4DABSIsEqualProj(TBASIC::HV4DABS const&);
 
 	private:
 		CTBASIC::CHV4DABS tagABS{};

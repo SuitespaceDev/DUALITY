@@ -234,14 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DFromHstring(winrt::hstring const& t)
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSFromHstring(winrt::hstring const& t)
 	{
 		try
 		{
-			tagHHMMSS = t.c_str();
+			tagHHMMSS = t.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -251,14 +251,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DFromABI(TBASIC::HHMMSS const& e)
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSFromProj(TBASIC::HV4DHHMMSS const& e)
 	{
+		winrt::hstring hhmmss{};
+
+		e.HV4DHHMMSSToHstring(hhmmss);
+
 		try
 		{
-			tagHHMMSS = std::wstring{ e.hh + L":" + e.mm + L":" + e.mm};
+			tagHHMMSS = hhmmss.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -268,101 +272,51 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DFromWinRT(TBASIC::HV4DHHMMSS const& e)
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSToHstring(winrt::hstring& t)
 	{
-		winrt::hstring time{};
+		std::wstring hhmmss{};
 
-		if (e.HV4DToHstring(time) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
+		tagHHMMSS.HV4DGetStringHHMMSS(hhmmss);
 
-		}
-		
+		t = hhmmss;
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSToProj(TBASIC::HV4DHHMMSS& e)
+	{
+		std::wstring hhmmss{};
+
+		tagHHMMSS.HV4DGetStringHHMMSS(hhmmss);
+
+		e.HV4DHHMMSSFromHstring(hhmmss);
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSIsEqualHstring(winrt::hstring const& t)
+	{
+		CTBASIC::CHV4DHHMMSS hhmmss{};
+
 		try
 		{
-			tagHHMMSS = time.c_str();
+			hhmmss = t.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DToHstring(winrt::hstring& t)
-	{
-		std::wstring time{};
-
-		tagHHMMSS.HV4DGetStringHHMMSS(time);
-
-		t = time;
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DToABI(TBASIC::HHMMSS& t)
-	{
-		std::wstring time{};
-
-		tagHHMMSS.HV4DGetStringHHMMSS(time);
-
-		t.hh = std::wstring{ &time[0], &time[1] };
-		t.mm = std::wstring{ &time[2], &time[3] };
-		t.ss = std::wstring{ &time[4], &time[5] };
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DToWinRT(TBASIC::HV4DHHMMSS& e)
-	{
-		std::wstring time{};
-
-		tagHHMMSS.HV4DGetStringHHMMSS(time);
-
-		if (e.HV4DFromHstring(time) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DIsEqualHstring(winrt::hstring const& t)
-	{
-		if (tagHHMMSS == CTBASIC::CHV4DHHMMSS{ t.c_str() })
+		if (tagHHMMSS == hhmmss)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagHHMMSS > CTBASIC::CHV4DHHMMSS{ t.c_str() })
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-		
-	}
-
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DIsEqualABI(TBASIC::HHMMSS const& e)
-	{
-		if (tagHHMMSS == CTBASIC::CHV4DHHMMSS{ std::wstring{ e.hh + L":" + e.mm + L":" + e.ss } })
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		else if (tagHHMMSS > CTBASIC::CHV4DHHMMSS{ std::wstring{ e.hh + L":" + e.mm + L":" + e.ss } })
+		else if (tagHHMMSS < hhmmss)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -373,24 +327,35 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
 	}
 
-	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DIsEqualWinRT(TBASIC::HV4DHHMMSS const& e)
+	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSIsEqualProj(TBASIC::HV4DHHMMSS const& e)
 	{
-		winrt::hstring time{};
+		winrt::hstring hhmmss{};
 
-		if (e.HV4DToHstring(time) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		e.HV4DHHMMSSToHstring(hhmmss);
+
+		CTBASIC::CHV4DHHMMSS chhmmss{};
+
+		try
+		{
+			chhmmss = hhmmss.data();
+
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagHHMMSS == CTBASIC::CHV4DHHMMSS{ time.c_str() })
+		if (tagHHMMSS == chhmmss)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagHHMMSS > CTBASIC::CHV4DHHMMSS{ time.c_str() })
+		else if (tagHHMMSS < chhmmss)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -400,6 +365,8 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
@@ -407,7 +374,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagHHMMSS.HV4DCurrentHHMMSS();
+			tagHHMMSS.HV4DSetToCurrentHHMMSS();
 
 		}
 		catch (std::exception)

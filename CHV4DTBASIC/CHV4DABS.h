@@ -33,7 +33,7 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		void HV4DGetStringABS(std::wstring&, std::wstring&) const;
 
-		void HV4DGetMaxPathABS(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
+		void HV4DGetMAXPATH(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
 
 	private:
 		CHV4DMAXPATH tagPATH{};

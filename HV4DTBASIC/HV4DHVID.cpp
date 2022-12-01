@@ -234,14 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DFromHstring(winrt::hstring const& uid)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDFromHstring(winrt::hstring const& uid)
 	{
 		try
 		{
-			tagHVID = uid.c_str();
+			tagHVID = uid.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -251,16 +251,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DFromABI(TBASIC::HVID const& e)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDFromGuid(winrt::guid const& uid)
 	{
-		winrt::guid uid{ L"{" + e.a + L"-" + e.b + L"-" + e.c + L"-" + e.d + L"-" + e.e + L"}" };
-
 		try
 		{
 			tagHVID = uid;
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -270,22 +268,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DFromWinRT(TBASIC::HV4DHVID const& e)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDFromProj(TBASIC::HV4DHVID const& e)
 	{
 		winrt::hstring uid{};
 
-		if (e.HV4DToHstring(uid) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DHVIDToHstring(uid);
 
 		try
 		{
-			tagHVID = uid.c_str();
+			tagHVID = uid.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -295,60 +289,63 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DToHstring(winrt::hstring& uuid)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToHstring(winrt::hstring& uid)
 	{
-		std::wstring uid{};
+		std::wstring clsid{};
 
-		tagHVID.HV4DGetStringHVID(uid);
+		tagHVID.HV4DGetStringHVID(clsid);
 
-		uuid = uid;
+		uid = clsid;
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DToABI(TBASIC::HVID& e)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToGuid(winrt::guid& uid)
 	{
-		std::wstring uid{};
+		GUID clsid{};
 
-		tagHVID.HV4DGetStringHVID(uid);
+		tagHVID.HV4DGetNativeHVID(clsid);
 
-		e.a = std::wstring{ &uid[1],  &uid[8] };
-		e.a = std::wstring{ &uid[10], &uid[13] };
-		e.a = std::wstring{ &uid[15], &uid[18] };
-		e.a = std::wstring{ &uid[20], &uid[23] };
-		e.a = std::wstring{ &uid[25], &uid[36] };
+		uid = clsid;
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DToWinRT(TBASIC::HV4DHVID& e)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToProj(TBASIC::HV4DHVID& e)
 	{
-		std::wstring uid{};
+		GUID clsid{};
 
-		tagHVID.HV4DGetStringHVID(uid);
+		tagHVID.HV4DGetNativeHVID(clsid);
 
-		if (e.HV4DFromHstring(uid) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		e.HV4DHVIDFromGuid(clsid);
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDIsEqualHstring(winrt::hstring const& uid)
+	{
+		CTBASIC::CHV4DHVID clsid{};
+
+		try
+		{
+			clsid = uid.data();
+
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DHVID::HV4DIsEqualHstring(winrt::hstring const& uuid)
-	{
-		winrt::guid uid{ uuid };
-
-		if (tagHVID == uid)
+		if (tagHVID == clsid)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagHVID < uid)
+		else if (tagHVID < clsid)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -359,44 +356,31 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-	}
-
-	HV4D::IHV4DRETURN HV4DHVID::HV4DIsEqualABI(TBASIC::HVID const& e)
-	{
-		if (tagHVID == CTBASIC::CHV4DHVID{ std::wstring{ L"{" + e.a + L"-" + e.b + L"-" + e.c + L"-" + e.d + L"-" + e.e + L"}"} })
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		else if (tagHVID > CTBASIC::CHV4DHVID{ std::wstring{ L"{" + e.a + L"-" + e.b + L"-" + e.c + L"-" + e.d + L"-" + e.e + L"}"} })
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHVID::HV4DIsEqualWinRT(TBASIC::HV4DHVID const& e)
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDIsEqualGuid(winrt::guid const& uid)
 	{
-		winrt::hstring uid{};
+		CTBASIC::CHV4DHVID clsid{};
 
-		if (e.HV4DToHstring(uid) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		try
+		{
+			clsid = uid;
+
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagHVID == CTBASIC::CHV4DHVID{ uid.c_str() })
+		if (tagHVID == clsid)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagHVID > CTBASIC::CHV4DHVID{ uid.c_str() })
+		else if (tagHVID < clsid)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -406,6 +390,47 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DHVID::HV4DHHVIDIsEqualProj(TBASIC::HV4DHVID const& e)
+	{
+		winrt::hstring uuid{};
+
+		e.HV4DHVIDToHstring(uuid);
+
+		CTBASIC::CHV4DHVID clsid{};
+
+		try
+		{
+			clsid = uuid.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagHVID == clsid)
+		{
+			return HV4D::HV4D_IS_EQUAL{};
+
+		}
+		else if (tagHVID < clsid)
+		{
+			return HV4D::HV4D_IS_LESSER{};
+
+		}
+		else
+		{
+			return HV4D::HV4D_IS_GREATER{};
+
+		}
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

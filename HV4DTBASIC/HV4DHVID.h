@@ -100,29 +100,25 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDFromHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DFromABI(winrt::HV4DTBASIC::HVID const&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDFromGuid(winrt::guid const&);
 
-		HV4D::IHV4DRETURN HV4DFromWinRT(winrt::HV4DTBASIC::HV4DHVID const&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDFromProj(TBASIC::HV4DHVID const&);
 
-		HV4D::IHV4DRETURN HV4DFromNative(winrt::guid const&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDToHstring(winrt::hstring&);
 
-		HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDToGuid(winrt::guid&);
 
-		HV4D::IHV4DRETURN HV4DToABI(winrt::HV4DTBASIC::HVID&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDToProj(TBASIC::HV4DHVID&);
 
-		HV4D::IHV4DRETURN HV4DToWinRT(winrt::HV4DTBASIC::HV4DHVID&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDIsEqualHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DToNative(winrt::guid&);
+		virtual HV4D::IHV4DRETURN HV4DHVIDIsEqualGuid(winrt::guid const&);
 
-		HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DHHVIDIsEqualProj(TBASIC::HV4DHVID const&);
 
-		HV4D::IHV4DRETURN HV4DIsEqualABI(winrt::HV4DTBASIC::HVID const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualWinRT(winrt::HV4DTBASIC::HV4DHVID const&);
-
-		HV4D::IHV4DRETURN HV4DSetToRandomHVID();
+		virtual HV4D::IHV4DRETURN HV4DSetToRandomHVID();
 
 	private:
 		CTBASIC::CHV4DHVID tagHVID{};

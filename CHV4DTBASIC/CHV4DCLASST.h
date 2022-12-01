@@ -31,7 +31,7 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		void HV4DGetStringCLASST(std::wstring&, std::wstring&) const;
 
-		void HV4DGetHV4DCLASST(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
+		void HV4DGetMAXPATH(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
 
 	private:
 		CHV4DMAXPATH tagNAMESPACE{};

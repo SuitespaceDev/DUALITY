@@ -148,7 +148,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DKEY::HV4DGetStringHV4D(CHV4DHVID& hvid, CHV4DMAXPATH& mp) const
+	void CHV4DKEY::HV4DGetHVIDMAXPATH(CHV4DHVID& hvid, CHV4DMAXPATH& mp) const
 	{
 		hvid = tagHVID;
 

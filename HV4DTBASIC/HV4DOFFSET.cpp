@@ -255,7 +255,7 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 	{
 		try
 		{
-			tagOFFSET = CTBASIC::CHV4DOFFSET{ o.c_str(), sz.c_str() };
+			tagOFFSET = CTBASIC::CHV4DOFFSET{ o.data(), sz.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -387,7 +387,7 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 		try
 		{
-			Offset = { o.c_str(), sz.c_str() };
+			Offset = { o.data(), sz.data() };
 
 		}
 		catch (std::invalid_argument)

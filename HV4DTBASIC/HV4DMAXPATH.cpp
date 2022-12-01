@@ -238,7 +238,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ mp.c_str() };
+			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ mp.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -255,7 +255,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ e.mp.c_str() };
+			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ e.mp.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -280,7 +280,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ abs.mp.c_str() };
+			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ abs.mp.data() };
 
 		}
 		catch (std::invalid_argument)

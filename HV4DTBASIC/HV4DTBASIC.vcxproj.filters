@@ -34,6 +34,24 @@
     <ClCompile Include="HV4DOFFSET.cpp">
       <Filter>HV4DOFFSET</Filter>
     </ClCompile>
+    <ClCompile Include="HV4DALPHANUMERIC.cpp">
+      <Filter>HV4DALPHANUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DDATETIME.cpp">
+      <Filter>HV4DDATETIME</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DHEX.cpp">
+      <Filter>HV4DHEX</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DKEY.cpp">
+      <Filter>HV4DKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTEXTBLOBA.cpp">
+      <Filter>HV4DTEXTBLOBA</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DTEXTBLOBW.cpp">
+      <Filter>HV4DTEXTBLOBW</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="HV4DABS.idl" />
@@ -52,7 +70,6 @@
     <Midl Include="HV4DMMM.idl" />
     <Midl Include="HV4DNUMERIC.idl" />
     <Midl Include="HV4DOFFSET.idl" />
-    <Midl Include="HV4DRTCLASS.idl" />
     <Midl Include="HV4DHVID.idl" />
   </ItemGroup>
   <ItemGroup>
@@ -136,7 +153,6 @@
     <ClInclude Include="HV4DMMM.h" />
     <ClInclude Include="HV4DNUMERIC.h" />
     <ClInclude Include="HV4DOFFSET.h" />
-    <ClInclude Include="HV4DRTCLASS.h" />
     <ClInclude Include="HV4DHVID.h" />
   </ItemGroup>
 </Project>

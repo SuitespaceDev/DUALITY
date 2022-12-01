@@ -234,11 +234,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DFromHstring(winrt::hstring const& ns, winrt::hstring const& c)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTFromHstring(winrt::hstring const& ns, winrt::hstring const& c)
 	{
 		try
 		{
-			tagCLASST = CTBASIC::CHV4DCLASST{ ns.c_str(), c.c_str() };
+			tagCLASST = CTBASIC::CHV4DCLASST{ ns.data(), c.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -251,11 +251,17 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DFromABI(TBASIC::CLASST const& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTFromMAXPATH(TBASIC::HV4DMAXPATH const& ns, TBASIC::HV4DMAXPATH const& c)
 	{
+		winrt::hstring nmspace{}, coclass{};
+
+		ns.HV4DMAXPATHToHstring(nmspace);
+
+		c.HV4DMAXPATHToHstring(coclass);
+
 		try
 		{
-			tagCLASST = CTBASIC::CHV4DCLASST{ e.ns.c_str(), e.c.c_str() };
+			tagCLASST = CTBASIC::CHV4DCLASST{ nmspace.data(), coclass.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -268,19 +274,15 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DFromWinRT(TBASIC::HV4DCLASST const& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTFromProj(TBASIC::HV4DCLASST const& e)
 	{
-		TBASIC::CLASST abs{};
+		winrt::hstring nmspace{}, coclass{};
 
-		if (e.HV4DToABI(abs) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DCLASSTToHstring(nmspace, coclass);
 
 		try
 		{
-			tagCLASST = CTBASIC::CHV4DCLASST{ abs.ns.c_str(), abs.c.c_str() };
+			tagCLASST = CTBASIC::CHV4DCLASST{ nmspace.data(), coclass.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -293,57 +295,53 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DToHstring(winrt::hstring& ns, winrt::hstring& c)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTToHstring(winrt::hstring& ns, winrt::hstring& c)
 	{
-		std::wstring nmspace{}, clss{};
+		std::wstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		tagCLASST.HV4DGetStringCLASST(nmspace, coclass);
 
 		ns = nmspace;
 
-		c = clss;
+		c = coclass;
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DToABI(CLASST& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTToHV4DMAXPATH(TBASIC::HV4DMAXPATH& ns, TBASIC::HV4DMAXPATH& c)
 	{
-		std::wstring nmspace{}, clss{};
+		std::wstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		tagCLASST.HV4DGetStringCLASST(nmspace, coclass);
 
-		e.ns = nmspace;
+		ns.HV4DMAXPATHFromHstring(nmspace);
 
-		e.c = clss;
+		c.HV4DMAXPATHFromHstring(coclass);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DToWinRT(TBASIC::HV4DCLASST& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTToProj(TBASIC::HV4DCLASST& e)
 	{
-		std::wstring nmspace{}, clss{};
+		std::wstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		tagCLASST.HV4DGetStringCLASST(nmspace, coclass);
 
-		if (e.HV4DFromHstring(nmspace, clss) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DCLASSTFromHstring(nmspace, coclass);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DIsEqualHstring(winrt::hstring const& p, winrt::hstring const& f)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTIsEqualHstring(winrt::hstring const& ns, winrt::hstring const& c)
 	{
-		std::wstring nmspace{}, clss{};
+		std::wstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		tagCLASST.HV4DGetStringCLASST(nmspace, coclass);
 
-		if (nmspace == p && clss == f)
+		if (nmspace == ns && coclass == c)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -353,13 +351,19 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DIsEqualABI(TBASIC::CLASST const& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTIsEqualHV4DMAXPATH(TBASIC::HV4DMAXPATH const& ns, TBASIC::HV4DMAXPATH const& c)
 	{
-		std::wstring nmspace{}, clss{};
+		winrt::hstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		ns.HV4DMAXPATHToHstring(nmspace);
+		
+		c.HV4DMAXPATHToHstring(coclass);
 
-		if (nmspace == e.ns && clss == e.c)
+		std::wstring cnmspace{}, ccoclass{};
+
+		tagCLASST.HV4DGetStringCLASST(cnmspace, ccoclass);
+
+		if (nmspace == cnmspace && coclass == ccoclass)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -369,17 +373,17 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DCLASST::HV4DIsEqualWinRT(TBASIC::HV4DCLASST const& e)
+	HV4D::IHV4DRETURN HV4DCLASST::HV4DCLASSTIsEqualProj(TBASIC::HV4DCLASST const& e)
 	{
-		std::wstring nmspace{}, clss{};
+		winrt::hstring nmspace{}, coclass{};
 
-		tagCLASST.HV4DGetStringCLASST(nmspace, clss);
+		e.HV4DCLASSTToHstring(nmspace, coclass);
 
-		winrt::hstring winrt_path{}, winrt_file{};
+		std::wstring cnmspace{}, ccoclass{};
 
-		e.HV4DToHstring(winrt_path, winrt_file);
+		tagCLASST.HV4DGetStringCLASST(cnmspace, ccoclass);
 
-		if (nmspace == winrt_path && clss == winrt_file)
+		if (nmspace == cnmspace && coclass == ccoclass)
 		{
 			return HV4D::HV4D_TRUE{};
 

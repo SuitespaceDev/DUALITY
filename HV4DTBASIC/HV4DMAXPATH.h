@@ -100,23 +100,19 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHFromHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DFromABI(winrt::HV4DTBASIC::MAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHFromProj(TBASIC::HV4DMAXPATH const&);
 
-		HV4D::IHV4DRETURN HV4DFromWinRT(winrt::HV4DTBASIC::HV4DMAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHToHstring(winrt::hstring&);
 
-		HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHToProj(TBASIC::HV4DMAXPATH&);
 
-		HV4D::IHV4DRETURN HV4DToABI(winrt::HV4DTBASIC::MAXPATH&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHIsEqualHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DToWinRT(winrt::HV4DTBASIC::HV4DMAXPATH&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHIsEqualProj(TBASIC::HV4DMAXPATH const&);
 
-		HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualABI(winrt::HV4DTBASIC::MAXPATH const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualWinRT(winrt::HV4DTBASIC::HV4DMAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DMAXPATHSubStr(uint64_t const&, uint64_t const&, TBASIC::HV4DMAXPATH&);
 
 	private:
 		CTBASIC::CHV4DMAXPATH tagMAXPATH{};

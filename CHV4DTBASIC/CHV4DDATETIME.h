@@ -36,9 +36,11 @@ namespace CHV4D::CHV4DTBASIC
 		bool operator > (CHV4DDATETIME const&) const;
 
 	public:
+		void HV4DSetToCurrentDATETIME();
+
 		void HV4DGetStringDATETIME(std::wstring&, std::wstring&) const;
 
-		void HV4DGetHV4DDATETIME(CHV4DMMDDYYYY&, CHV4DHHMMSS&) const;
+		void HV4DGetDATETIME(CHV4DMMDDYYYY&, CHV4DHHMMSS&) const;
 
 	private:
 		CHV4DMMDDYYYY tagMMDDYYYY{};

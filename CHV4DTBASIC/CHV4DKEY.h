@@ -40,7 +40,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		void HV4DGetNativeKEY(GUID&, std::wstring&) const;
 
-		void HV4DGetStringHV4D(CHV4DHVID&, CHV4DMAXPATH&) const;
+		void HV4DGetHVIDMAXPATH(CHV4DHVID&, CHV4DMAXPATH&) const;
 
 	private:
 		CHV4DHVID tagHVID{};

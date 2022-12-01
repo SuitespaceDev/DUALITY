@@ -91,7 +91,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DABS::HV4DGetMaxPathABS(CHV4DMAXPATH& p, CHV4DMAXPATH& f) const
+	void CHV4DABS::HV4DGetMAXPATH(CHV4DMAXPATH& p, CHV4DMAXPATH& f) const
 	{
 		p = tagPATH;
 

@@ -100,41 +100,23 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		HV4D::IHV4DRETURN HV4DFromUInt8(uint8_t const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICFromNUM(uint64_t const&);
 
-		HV4D::IHV4DRETURN HV4DFromUInt16(uint16_t const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICFromHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DFromUInt32(uint32_t const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICFromProj(TBASIC::HV4DNUMERIC const&);
 
-		HV4D::IHV4DRETURN HV4DFromUInt64(uint64_t const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICToNUM(uint64_t&);
 
-		HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICToHstring(winrt::hstring&);
 
-		HV4D::IHV4DRETURN HV4DFromABI(TBASIC::NUMERIC const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICToProj(TBASIC::HV4DNUMERIC&);
 
-		HV4D::IHV4DRETURN HV4DFromWinRT(TBASIC::HV4DNUMERIC const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICIsEqualNUM(uint64_t const&);
 
-		HV4D::IHV4DRETURN HV4DToUInt64(uint64_t&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICIsEqualHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&);
-
-		HV4D::IHV4DRETURN HV4DToABI(TBASIC::NUMERIC&);
-
-		HV4D::IHV4DRETURN HV4DToWinRT(TBASIC::HV4DNUMERIC&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualUInt8(uint8_t const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualUInt16(uint16_t const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualUInt32(uint32_t const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualUInt64(uint64_t const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualABI(TBASIC::NUMERIC const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualWinRT(TBASIC::HV4DNUMERIC const&);
+		virtual HV4D::IHV4DRETURN HV4DNUMERICIsEqualProj(TBASIC::HV4DNUMERIC const&);
 
 	private:
 		CTBASIC::CHV4DNUMERIC tagNUMERIC{};

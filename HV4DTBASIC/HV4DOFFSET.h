@@ -100,29 +100,23 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		HV4D::IHV4DRETURN HV4DFromUInt64(uint64_t const&, uint64_t const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETFromHstring(winrt::hstring const&, winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETFromNUM(uint64_t const&, uint64_t const&);
 
-		HV4D::IHV4DRETURN HV4DFromABI(winrt::HV4DTBASIC::OFFSET const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETFromProj(HV4DOFFSET const&);
 
-		HV4D::IHV4DRETURN HV4DFromWinRT(winrt::HV4DTBASIC::HV4DOFFSET const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETToNUM(uint64_t&, uint64_t&);
 
-		HV4D::IHV4DRETURN HV4DToUInt64(uint64_t&, uint64_t&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETToHstring(winrt::hstring&, winrt::hstring&);
 
-		HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&, winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETToProj(HV4DOFFSET&);
 
-		HV4D::IHV4DRETURN HV4DToABI(winrt::HV4DTBASIC::OFFSET&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualNUM(uint64_t const&, uint64_t const&);
 
-		HV4D::IHV4DRETURN HV4DToWinRT(winrt::HV4DTBASIC::HV4DOFFSET&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DIsEqualUInt64(uint64_t const&, uint64_t const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualABI(winrt::HV4DTBASIC::OFFSET const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualWinRT(winrt::HV4DTBASIC::HV4DOFFSET const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualProj(HV4DOFFSET const&);
 
 	private:
 		CTBASIC::CHV4DOFFSET tagOFFSET{};

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DTBASIC.lib")
 
@@ -6,9 +6,9 @@
 
 #include <ctime>
 
-#include "../CHV4DTBASIC/CHV4DCLASST.h"
+#include "../CHV4DTBASIC/CHV4DDATETIME.h"
 
-#include "HV4DCLASST.g.h"
+#include "HV4DDATETIME.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFC = winrt::Windows::Foundation::Collections;
@@ -18,14 +18,14 @@ namespace CTBASIC = CHV4D::CHV4DTBASIC;
 
 namespace winrt::HV4DTBASIC::implementation
 {
-	struct HV4DCLASST : HV4DCLASSTT<HV4DCLASST>
+	struct HV4DDATETIME : HV4DDATETIMET<HV4DDATETIME>
 	{
 	public:
-		HV4DCLASST();
+		HV4DDATETIME();
 
-		HV4DCLASST(HV4D::IHV4DOBJECT const&);
+		HV4DDATETIME(HV4D::IHV4DOBJECT const&);
 
-		HV4DCLASST(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+		HV4DDATETIME(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
 
 	public:
 		virtual winrt::guid HV4DUuidOfInstance();
@@ -100,26 +100,28 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEFromHstring(winrt::hstring const&, winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEFromHV4D(TBASIC::HV4DMMDDYYYY const&, TBASIC::HV4DHHMMSS const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTFromProj(TBASIC::HV4DCLASST const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEFromProj(TBASIC::HV4DDATETIME const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToHstring(winrt::hstring&, winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEToHstring(winrt::hstring&, winrt::hstring&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToHV4DMAXPATH(TBASIC::HV4DMAXPATH&, TBASIC::HV4DMAXPATH&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEToHV4D(TBASIC::HV4DMMDDYYYY&, TBASIC::HV4DHHMMSS&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTToProj(TBASIC::HV4DCLASST&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEToProj(TBASIC::HV4DDATETIME&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualHV4DMAXPATH(TBASIC::HV4DMAXPATH const&, TBASIC::HV4DMAXPATH const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEIsEqualHV4D(TBASIC::HV4DMMDDYYYY const&, TBASIC::HV4DHHMMSS const&);
 
-		virtual HV4D::IHV4DRETURN HV4DCLASSTIsEqualProj(TBASIC::HV4DCLASST const&);
+		virtual HV4D::IHV4DRETURN HV4DDATETIMEIsEqualProj(TBASIC::HV4DDATETIME const&);
+
+		virtual HV4D::IHV4DRETURN HV4DSetToCurrentDATETIME();
 
 	private:
-		CTBASIC::CHV4DCLASST tagCLASST{};
+		CTBASIC::CHV4DDATETIME tagDATETIME{};
 
 	};
 
@@ -127,7 +129,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 namespace winrt::HV4DTBASIC::factory_implementation
 {
-	struct HV4DCLASST : HV4DCLASSTT<HV4DCLASST, implementation::HV4DCLASST>
+	struct HV4DDATETIME : HV4DDATETIMET<HV4DDATETIME, implementation::HV4DDATETIME>
 	{
 
 	};

@@ -118,6 +118,40 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	void CHV4DDATETIME::HV4DSetToCurrentDATETIME()
+	{
+		try
+		{
+			tagMMDDYYYY.HV4DSetToCurrentMMDDYYYY();
+
+		}
+		catch (std::exception)
+		{
+			tagMMDDYYYY = CHV4DMMDDYYYY{};
+
+			tagHHMMSS = CHV4DHHMMSS{};
+
+			throw std::domain_error("");
+
+		}
+
+		try
+		{
+			tagHHMMSS.HV4DSetToCurrentHHMMSS();
+
+		}
+		catch (std::exception)
+		{
+			tagMMDDYYYY = CHV4DMMDDYYYY{};
+
+			tagHHMMSS = CHV4DHHMMSS{};
+
+			throw std::domain_error("");
+
+		}
+
+	}
+
 	void CHV4DDATETIME::HV4DGetStringDATETIME(std::wstring& d, std::wstring& t) const
 	{
 		tagMMDDYYYY.HV4DGetStringMMDDYYYY(d);
@@ -128,7 +162,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DDATETIME::HV4DGetHV4DDATETIME(CHV4DMMDDYYYY& d, CHV4DHHMMSS& t) const
+	void CHV4DDATETIME::HV4DGetDATETIME(CHV4DMMDDYYYY& d, CHV4DHHMMSS& t) const
 	{
 		d = tagMMDDYYYY;
 

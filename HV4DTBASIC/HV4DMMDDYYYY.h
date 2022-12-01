@@ -100,25 +100,19 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::hstring comments{};
 
 	public:
-		HV4D::IHV4DRETURN HV4DFromHstring(winrt::hstring const&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYFromHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DFromABI(winrt::HV4DTBASIC::MMDDYYYY const&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYFromProj(TBASIC::HV4DMMDDYYYY const&);
 
-		HV4D::IHV4DRETURN HV4DFromWinRT(winrt::HV4DTBASIC::HV4DMMDDYYYY const&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYToHstring(winrt::hstring&);
 
-		HV4D::IHV4DRETURN HV4DToHstring(winrt::hstring&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYToProj(TBASIC::HV4DMMDDYYYY&);
 
-		HV4D::IHV4DRETURN HV4DToABI(winrt::HV4DTBASIC::MMDDYYYY&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYIsEqualHstring(winrt::hstring const&);
 
-		HV4D::IHV4DRETURN HV4DToWinRT(winrt::HV4DTBASIC::HV4DMMDDYYYY&);
+		virtual HV4D::IHV4DRETURN HV4DMMDDYYYYIsEqualProj(TBASIC::HV4DMMDDYYYY const&);
 
-		HV4D::IHV4DRETURN HV4DIsEqualHstring(winrt::hstring const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualABI(winrt::HV4DTBASIC::MMDDYYYY const&);
-
-		HV4D::IHV4DRETURN HV4DIsEqualWinRT(winrt::HV4DTBASIC::HV4DMMDDYYYY const&);
-
-		HV4D::IHV4DRETURN HV4DSetToCurrentDate();
+		virtual HV4D::IHV4DRETURN HV4DSetToCurrentDate();
 
 	private:
 		CTBASIC::CHV4DMMDDYYYY tagMMDDYYYY{};
