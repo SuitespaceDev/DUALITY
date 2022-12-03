@@ -1,6 +1,6 @@
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DTEXTBLOBA : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DRETURN
+    runtimeclass HV4DTEXTBLOBA : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
     {
         HV4DTEXTBLOBA();
 

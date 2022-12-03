@@ -30,10 +30,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator == (CHV4DTEXTBLOBW const&) const;
 
-	public:
-		void HV4DGetStringTEXTBLOBW(std::wstring&) const;
+		operator std::wstring () const;
 
-		void HV4DSubStr(uint64_t const&, uint64_t const&, CHV4DTEXTBLOBW&);
+		CHV4DTEXTBLOBW operator()(uint64_t const&, uint64_t const&);
 
 		bool HV4DHasSymbols();
 

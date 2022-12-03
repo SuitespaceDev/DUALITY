@@ -134,7 +134,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		HV4DSetUpdatedDateTime();
 
-		return HV4D::HV4DT_TYPE_ITERATOR{ nullptr, winrt::guid{L""}, nullptr };
+		return HV4D::HV4DT_TYPE_PARAMETER{ *this, winrt::guid{L"{DC2DD014-87C4-41A2-A352-777C991C2D09}"}, nullptr };
 
 	};
 
@@ -160,7 +160,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		HV4DSetUpdatedDateTime();
 
-		return winrt::guid{ L"" };
+		return winrt::guid{ L"{33DBC17E-2ECC-4A02-B976-3A89D7EB189C}" };
 
 	}
 
@@ -168,7 +168,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		HV4DSetUpdatedDateTime();
 
-		return 0x;
+		return 0x33DBC17E2ECC4A02;
 
 	}
 
@@ -176,7 +176,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		HV4DSetUpdatedDateTime();
 
-		return L"";
+		return L"HV4DTEXTBLOBA";
 
 	}
 
@@ -231,6 +231,130 @@ namespace winrt::HV4DTBASIC::implementation
 		comments = e;
 
 		return;
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAFromHstring(winrt::hstring const& t)
+	{
+		try
+		{
+			tagTEXT = t.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAFromProj(TBASIC::HV4DTEXTBLOBA const& e)
+	{
+		winrt::hstring str{};
+
+		e.HV4DTEXTBLOBAToHstring(str);
+
+		try
+		{
+			tagTEXT = str.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAToHstring(winrt::hstring& t)
+	{
+		t = tagTEXT.operator std::wstring();
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAToProj(TBASIC::HV4DTEXTBLOBA& e)
+	{
+		e.HV4DTEXTBLOBAFromHstring(tagTEXT.operator std::wstring());
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAIsEqualHstring(winrt::hstring const& t)
+	{
+		CTBASIC::CHV4DTEXTBLOBA text{};
+
+		try
+		{
+			text = t.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagTEXT == text)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
+		else
+		{
+			return HV4D::HV4D_FALSE{};
+
+		}
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBAIsEqualProj(TBASIC::HV4DTEXTBLOBA const& e)
+	{
+		CTBASIC::CHV4DTEXTBLOBA text{};
+
+		winrt::hstring str{};
+
+		e.HV4DTEXTBLOBAToHstring(str);
+
+		try
+		{
+			text = str.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagTEXT == text)
+		{
+			return HV4D::HV4D_TRUE{};
+
+		}
+		else
+		{
+			return HV4D::HV4D_FALSE{};
+
+		}
+
+	}
+
+	HV4D::IHV4DRETURN HV4DTEXTBLOBA::HV4DTEXTBLOBASubStr(uint64_t const& i, uint64_t const& l, TBASIC::HV4DTEXTBLOBA& o)
+	{
+		CTBASIC::CHV4DTEXTBLOBA subtext = tagTEXT(i, l);
+
+		o.HV4DTEXTBLOBAFromHstring(subtext.operator std::wstring());
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

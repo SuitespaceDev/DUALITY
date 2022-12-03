@@ -1,0 +1,14 @@
+namespace HV4DUX
+{
+    [bindable]
+    runtimeclass UserBlock : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserBlock();
+
+        String Label;
+
+        String Value;
+
+    }
+
+}

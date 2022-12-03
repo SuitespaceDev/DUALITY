@@ -30,6 +30,18 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	CHV4DMMM::CHV4DMMM(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
+	{
+		if (mil > 10 || maj > 999 || min > 999)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		tagMMM = std::wstring{ std::to_wstring(mil) + L"." + std::to_wstring(maj) + L"." + std::to_wstring(min) };
+
+	}
+
 	CHV4DMMM::CHV4DMMM(CHV4DMMM const& e)
 	{
 		tagMMM = e.tagMMM;
@@ -67,6 +79,21 @@ namespace CHV4D::CHV4DTBASIC
 		}
 
 		return;
+
+	}
+
+	void CHV4DMMM::operator = (std::tuple<uint32_t, uint32_t, uint32_t> e)
+	{
+		if (std::get<0>(e) > 10 || std::get<1>(e) > 999 || std::get<2>(e) > 999)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		tagMMM = std::wstring{ 
+			std::to_wstring(std::get<0>(e)) + L"." + 
+			std::to_wstring(std::get<1>(e)) + L"." + 
+			std::to_wstring(std::get<2>(e)) };
 
 	}
 
@@ -189,16 +216,16 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DMMM::HV4DGetStringMMM(std::wstring& o) const
+	CHV4DMMM::operator std::wstring () const
 	{
-		o = tagMMM;
-
-		return;
+		return tagMMM;
 
 	}
 
-	void CHV4DMMM::HV4DGetNumericMMM(uint32_t& mil, uint32_t& maj, uint32_t& min) const
+	CHV4DMMM::operator std::tuple<uint32_t, uint32_t, uint32_t>() const
 	{
+		uint32_t mil{}, maj{}, min{};
+
 		std::wstring str_mil{ tagMMM[0] };
 
 		std::wstring str_maj{ &tagMMM[1], &tagMMM[3] };
@@ -211,7 +238,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		min = std::wcstoul(str_min.c_str(), NULL, 10);
 
-		return;
+		return std::tuple{ mil, maj, min };
 
 	}
 

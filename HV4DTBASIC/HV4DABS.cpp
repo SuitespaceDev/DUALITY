@@ -238,7 +238,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ p.data(), f.data() };
+			tagABS = std::tuple{ p.data(), f.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -261,7 +261,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ path.data(), file.data() };
+			tagABS = std::tuple{ path.data(), file.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -282,7 +282,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagABS = CTBASIC::CHV4DABS{ path.data(), file.data() };
+			tagABS = std::tuple{ path.data(), file.data() };
 
 		}
 		catch (std::invalid_argument)
@@ -297,13 +297,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DABS::HV4DABSToHstring(winrt::hstring& p, winrt::hstring& f)
 	{
-		std::wstring path{}, file{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(path, file);
+		p = std::get<0>(abs);
 
-		p = path;
-
-		f = file;
+		f = std::get<1>(abs);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -311,13 +309,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DABS::HV4DABSToMAXPATH(TBASIC::HV4DMAXPATH& p, TBASIC::HV4DMAXPATH& f)
 	{
-		std::wstring path{}, file{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(path, file);
+		p.HV4DMAXPATHFromHstring(std::get<0>(abs));
 
-		p.HV4DMAXPATHFromHstring(path);
-
-		f.HV4DMAXPATHFromHstring(file);
+		f.HV4DMAXPATHFromHstring(std::get<1>(abs));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -325,11 +321,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DABS::HV4DABSToProj(TBASIC::HV4DABS& e)
 	{
-		std::wstring path{}, file{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(path, file);
-
-		e.HV4DABSFromHstring(path, file);
+		e.HV4DABSFromHstring(std::get<0>(abs), std::get<1>(abs));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -338,11 +332,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DABS::HV4DABSIsEqualHstring(winrt::hstring const& p, winrt::hstring const& f)
 	{
-		std::wstring path{}, file{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(path, file);
-
-		if (path == p && file == f)
+		if (std::get<0>(abs) == p && std::get<1>(abs) == f)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -360,11 +352,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 		f.HV4DMAXPATHToHstring(file);
 
-		std::wstring cpath{}, cfile{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(cpath, cfile);
-
-		if (path == cpath && file == cfile)
+		if (std::get<0>(abs) == path && std::get<1>(abs) == file)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -380,11 +370,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 		e.HV4DABSToHstring(path, file);
 
-		std::wstring cpath{}, cfile{};
+		std::tuple<std::wstring, std::wstring> abs = tagABS;
 
-		tagABS.HV4DGetStringABS(cpath, cfile);
-
-		if (path == cpath && file == cfile)
+		if (std::get<0>(abs) == path && std::get<1>(abs) == file)
 		{
 			return HV4D::HV4D_TRUE{};
 

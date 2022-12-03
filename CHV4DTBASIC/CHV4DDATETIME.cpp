@@ -60,6 +60,34 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	void CHV4DDATETIME::operator = (std::tuple<std::wstring const&, std::wstring const&> e)
+	{
+		try
+		{
+			tagMMDDYYYY = std::get<0>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		try
+		{
+			tagHHMMSS = std::get<1>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		return;
+
+	}
+
 	void CHV4DDATETIME::operator = (CHV4DDATETIME const& e)
 	{
 		tagMMDDYYYY = e.tagMMDDYYYY;
@@ -118,11 +146,23 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DDATETIME::HV4DSetToCurrentDATETIME()
+	CHV4DDATETIME::operator std::tuple<std::wstring, std::wstring>() const
+	{
+		return std::tuple{ tagMMDDYYYY, tagHHMMSS };
+
+	}
+
+	CHV4DDATETIME::operator std::tuple<CHV4DMMDDYYYY, CHV4DHHMMSS>() const
+	{
+		return std::tuple{ tagMMDDYYYY, tagHHMMSS };
+
+	}
+
+	void CHV4DDATETIME::operator()()
 	{
 		try
 		{
-			tagMMDDYYYY.HV4DSetToCurrentMMDDYYYY();
+			tagMMDDYYYY();
 
 		}
 		catch (std::exception)
@@ -137,7 +177,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		try
 		{
-			tagHHMMSS.HV4DSetToCurrentHHMMSS();
+			tagHHMMSS();
 
 		}
 		catch (std::exception)
@@ -149,26 +189,6 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::domain_error("");
 
 		}
-
-	}
-
-	void CHV4DDATETIME::HV4DGetStringDATETIME(std::wstring& d, std::wstring& t) const
-	{
-		tagMMDDYYYY.HV4DGetStringMMDDYYYY(d);
-
-		tagHHMMSS.HV4DGetStringHHMMSS(t);
-
-		return;
-
-	}
-
-	void CHV4DDATETIME::HV4DGetDATETIME(CHV4DMMDDYYYY& d, CHV4DHHMMSS& t) const
-	{
-		d = tagMMDDYYYY;
-
-		t = tagHHMMSS;
-
-		return;
 
 	}
 

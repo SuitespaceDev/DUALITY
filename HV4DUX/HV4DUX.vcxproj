@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.props" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.props')" />
+  <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props')" />
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <PropertyGroup Label="Globals">
+    <CppWinRTOptimized>true</CppWinRTOptimized>
+    <CppWinRTRootNamespaceAutoMerge>true</CppWinRTRootNamespaceAutoMerge>
+    <MinimalCoreWin>true</MinimalCoreWin>
+    <ProjectGuid>{f3af785b-4012-49dd-998f-49673e1c7484}</ProjectGuid>
+    <ProjectName>HV4DUX</ProjectName>
+    <RootNamespace>HV4DUX</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <DesktopCompatible>true</DesktopCompatible>
+    <UseWinUI>true</UseWinUI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|arm64">
+      <Configuration>Debug</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|arm64">
+      <Configuration>Release</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '16.0'">v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <GenerateManifest>false</GenerateManifest>
+    <DesktopCompatible>true</DesktopCompatible>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>HV4DUX.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="UserBlock.xaml.h">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserCombo.xaml.h">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserDivider.xaml.h">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserEntry.xaml.h">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFile.xaml.h">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFilter.xaml.h">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFilterNew.xaml.h">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFilterProcessID.xaml.h">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFilterTime.xaml.h">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserFilterType.xaml.h">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserMEventDebug.h">
+      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserMSelectable.h">
+      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserPassword.xaml.h">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMContact.xaml.h">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMContract.xaml.h">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMDebug.xaml.h">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMIterator.xaml.h">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMLog.xaml.h">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMMouse.xaml.h">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMParameter.xaml.h">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMRuntimeClass.xaml.h">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserVMTNode.xaml.h">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="UserBlock.xaml.cpp">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserCombo.xaml.cpp">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserDivider.xaml.cpp">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserEntry.xaml.cpp">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFile.xaml.cpp">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFilter.xaml.cpp">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFilterNew.xaml.cpp">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFilterProcessID.xaml.cpp">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFilterTime.xaml.cpp">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserFilterType.xaml.cpp">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserMEventDebug.cpp" />
+    <ClCompile Include="UserMSelectable.cpp" />
+    <ClCompile Include="UserPassword.xaml.cpp">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMContact.xaml.cpp">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMContract.xaml.cpp">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMDebug.xaml.cpp">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMIterator.xaml.cpp">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMLog.xaml.cpp">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMMouse.xaml.cpp">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMParameter.xaml.cpp">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMRuntimeClass.xaml.cpp">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserVMTNode.xaml.cpp">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DUX.def" />
+    <None Include="packages.config" />
+    <None Include="PropertySheet.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="UserBlock.idl">
+      <DependentUpon>UserBlock.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserCombo.idl">
+      <DependentUpon>UserCombo.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserDivider.idl">
+      <DependentUpon>UserDivider.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserEntry.idl">
+      <DependentUpon>UserEntry.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFile.idl">
+      <DependentUpon>UserFile.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFilter.idl">
+      <DependentUpon>UserFilter.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFilterNew.idl">
+      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFilterProcessID.idl">
+      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFilterTime.idl">
+      <DependentUpon>UserFilterTime.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserFilterType.idl">
+      <DependentUpon>UserFilterType.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserMEventDebug.idl">
+      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
+    </Midl>
+    <Midl Include="UserMSelectable.idl">
+      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+    </Midl>
+    <Midl Include="UserPassword.idl">
+      <DependentUpon>UserPassword.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMContact.idl">
+      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMContract.idl">
+      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMDebug.idl">
+      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMIterator.idl">
+      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMLog.idl">
+      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMMouse.idl">
+      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMParameter.idl">
+      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMRuntimeClass.idl">
+      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserVMTNode.idl">
+      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserBlock.xaml" />
+    <Page Include="UserCombo.xaml" />
+    <Page Include="UserDivider.xaml" />
+    <Page Include="UserEntry.xaml" />
+    <Page Include="UserFile.xaml" />
+    <Page Include="UserFilter.xaml" />
+    <Page Include="UserFilterNew.xaml" />
+    <Page Include="UserFilterProcessID.xaml" />
+    <Page Include="UserFilterTime.xaml" />
+    <Page Include="UserFilterType.xaml" />
+    <Page Include="UserPassword.xaml" />
+    <Page Include="UserVMContact.xaml" />
+    <Page Include="UserVMContract.xaml" />
+    <Page Include="UserVMDebug.xaml" />
+    <Page Include="UserVMIterator.xaml" />
+    <Page Include="UserVMLog.xaml" />
+    <Page Include="UserVMMouse.xaml" />
+    <Page Include="UserVMParameter.xaml" />
+    <Page Include="UserVMRuntimeClass.xaml" />
+    <Page Include="UserVMTNode.xaml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.targets" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.targets')" />
+    <Import Project="..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.targets" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.ImplementationLibrary.1.0.211019.2\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.211019.2\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.SDK.BuildTools.10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.WindowsAppSDK.1.1.5\build\native\Microsoft.WindowsAppSDK.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.ImplementationLibrary.1.0.211019.2\build\native\Microsoft.Windows.ImplementationLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.ImplementationLibrary.1.0.211019.2\build\native\Microsoft.Windows.ImplementationLibrary.targets'))" />
+  </Target>
+</Project>

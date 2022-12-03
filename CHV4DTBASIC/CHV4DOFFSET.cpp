@@ -72,6 +72,56 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	void CHV4DOFFSET::operator = (std::tuple<std::wstring const&, std::wstring const&> e)
+	{
+		try
+		{
+			tagOFFSET = std::get<0>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		try
+		{
+			tagSIZE = std::get<1>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		return;
+
+	}
+
+	void CHV4DOFFSET::operator = (std::tuple<DWORD, DWORD, DWORD, DWORD> e)
+	{
+		DWORD array[4]{ std::get<0>(e), std::get<1>(e), std::get<2>(e), std::get<3>(e) };
+
+		memcpy(&tagOFFSET, &array[0], sizeof(uint64_t));
+
+		memcpy(&tagSIZE, &array[2], sizeof(uint64_t));
+
+		return;
+
+	}
+
+	void CHV4DOFFSET::operator = (std::tuple<uint64_t, uint64_t> e)
+	{
+		tagOFFSET = std::get<0>(e);
+
+		tagSIZE = std::get<1>(e);
+
+		return;
+
+	}
+
 	void CHV4DOFFSET::operator = (CHV4DOFFSET const& e)
 	{
 		tagOFFSET = e.tagOFFSET;
@@ -94,43 +144,31 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DOFFSET::HV4DGetStringOFFSET(std::wstring& o, std::wstring& sz) const
+	CHV4DOFFSET::operator std::tuple<std::wstring, std::wstring>() const
 	{
-		tagOFFSET.HV4DGetStringNUMERIC(o);
-
-		tagSIZE.HV4DGetStringNUMERIC(sz);
-
-		return;
+		return std::tuple{ tagOFFSET, tagSIZE };
 
 	}
 
-	void CHV4DOFFSET::HV4DGetNumericOFFSET(uint64_t& o, uint64_t& sz) const
+	CHV4DOFFSET::operator std::tuple<uint64_t, uint64_t>() const
 	{
-		tagOFFSET.HV4DGetNUMERIC(o);
-
-		tagSIZE.HV4DGetNUMERIC(sz);
-
-		return;
+		return std::tuple{ tagOFFSET, tagSIZE };
 
 	}
 
-	void CHV4DOFFSET::HV4DGetDWORDOFFSET(DWORD& o_bot, DWORD& o_upp, DWORD& sz_bot, DWORD& sz_upp) const
+	CHV4DOFFSET::operator std::tuple<DWORD, DWORD, DWORD, DWORD>() const
 	{
-		uint64_t offset{}, size{};
+		DWORD offset_top{}, offset_bot{}, size_top{}, size_bot{};
 
-		tagOFFSET.HV4DGetNUMERIC(offset);
+		memcpy(&offset_bot, &((DWORD*)&tagOFFSET)[0], sizeof(DWORD));
 
-		tagSIZE.HV4DGetNUMERIC(size);
+		memcpy(&offset_top, &((DWORD*)&tagOFFSET)[1], sizeof(DWORD));
 
-		memcpy(&o_bot, &((DWORD*)&offset)[0], sizeof(DWORD));
+		memcpy(&size_bot, &((DWORD*)&tagSIZE)[0], sizeof(DWORD));
 
-		memcpy(&o_upp, &((DWORD*)&offset)[1], sizeof(DWORD));
+		memcpy(&size_top, &((DWORD*)&tagSIZE)[1], sizeof(DWORD));
 
-		memcpy(&sz_bot, &((DWORD*)&size)[0], sizeof(DWORD));
-
-		memcpy(&sz_upp, &((DWORD*)&size)[1], sizeof(DWORD));
-
-		return;
+		return std::tuple{ offset_bot, offset_top, size_bot, size_top };
 
 	}
 

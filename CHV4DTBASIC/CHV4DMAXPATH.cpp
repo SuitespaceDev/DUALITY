@@ -122,19 +122,16 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DMAXPATH::HV4DGetStringMAXPATH(std::wstring& o) const
+	CHV4DMAXPATH::operator std::wstring() const
 	{
-		o = tagMAXPATH;
-
-		return;
+		return tagMAXPATH;
 
 	}
 
-	void CHV4DMAXPATH::HV4DSubStr(uint64_t const& i, uint64_t const& l, CHV4DMAXPATH& o)
+	std::wstring CHV4DMAXPATH::operator()(uint64_t const& i, uint64_t const& l) const
 	{
-		o = tagMAXPATH.substr(i, l);
 
-		return;
+		return tagMAXPATH.substr(i, l);
 
 	}
 

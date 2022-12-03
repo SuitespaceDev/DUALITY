@@ -58,6 +58,34 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	void CHV4DABS::operator = (std::tuple<std::wstring const&, std::wstring const&> abs)
+	{
+		try
+		{
+			tagPATH = std::get<0>(abs);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		try
+		{
+			tagFILE = std::get<1>(abs);
+
+		}
+		catch (std::invalid_argument)
+		{
+			throw std::invalid_argument("");
+
+		}
+
+		return;
+
+	}
+
 	void CHV4DABS::operator = (CHV4DABS const& e)
 	{
 		tagPATH = e.tagPATH;
@@ -81,23 +109,15 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DABS::HV4DGetStringABS(std::wstring& p, std::wstring& f) const
+	CHV4DABS::operator std::tuple<std::wstring, std::wstring>() const
 	{
-		tagPATH.HV4DGetStringMAXPATH(p);
-				   
-		tagFILE.HV4DGetStringMAXPATH(f);
-
-		return;
+		return std::tuple{ tagPATH, tagFILE };
 
 	}
 
-	void CHV4DABS::HV4DGetMAXPATH(CHV4DMAXPATH& p, CHV4DMAXPATH& f) const
+	CHV4DABS::operator std::tuple<CHV4DMAXPATH, CHV4DMAXPATH>() const
 	{
-		p = tagPATH;
-
-		f = tagFILE;
-
-		return;
+		return std::tuple{ tagPATH, tagFILE };
 
 	}
 

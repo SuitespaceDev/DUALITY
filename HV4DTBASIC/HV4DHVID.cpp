@@ -291,11 +291,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToHstring(winrt::hstring& uid)
 	{
-		std::wstring clsid{};
-
-		tagHVID.HV4DGetStringHVID(clsid);
-
-		uid = clsid;
+		uid = tagHVID.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -303,11 +299,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToGuid(winrt::guid& uid)
 	{
-		GUID clsid{};
-
-		tagHVID.HV4DGetNativeHVID(clsid);
-
-		uid = clsid;
+		uid = tagHVID.operator const GUID&();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -315,11 +307,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToProj(TBASIC::HV4DHVID& e)
 	{
-		GUID clsid{};
-
-		tagHVID.HV4DGetNativeHVID(clsid);
-
-		e.HV4DHVIDFromGuid(clsid);
+		e.HV4DHVIDFromGuid(tagHVID.operator const GUID&());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -356,8 +344,6 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
 	}
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDIsEqualGuid(winrt::guid const& uid)
@@ -390,8 +376,6 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
@@ -430,15 +414,13 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
 	}
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DSetToRandomHVID()
 	{
 		try
 		{
-			tagHVID.HV4DRandomHVID();
+			tagHVID();
 
 		}
 		catch (std::exception)

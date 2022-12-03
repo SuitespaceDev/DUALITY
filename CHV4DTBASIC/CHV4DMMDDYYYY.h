@@ -44,12 +44,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator < (CHV4DMMDDYYYY const&) const;
 
-	public:
-		void HV4DSetToCurrentMMDDYYYY();
+		operator std::wstring() const;
 
-		void HV4DGetStringMMDDYYYY(std::wstring&) const;
+		operator std::tuple<long, long, long>() const;
 
-		void HV4DGetNumericMMDDYYYY(long&, long&, long&) const;
+		void operator()();
 
 	private:
 		std::wstring tagMMDDYYYY{};

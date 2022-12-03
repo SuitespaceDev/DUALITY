@@ -52,6 +52,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	winrt::guid HV4DOFFSET::HV4DUuidOfInstance()
 	{
+		CTBASIC::CHV4DOFFSET off{};
 
 		return uuid_of_instance;
 
@@ -234,31 +235,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DFromUInt64(uint64_t const& o, uint64_t const& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromHstring(winrt::hstring const& o, winrt::hstring const& sz)
 	{
 		try
 		{
-			tagOFFSET = CTBASIC::CHV4DOFFSET{ o, sz };
+			tagOFFSET = std::tuple{ o.data(), sz.data() };
 
 		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DFromHstring(winrt::hstring const& o, winrt::hstring const& sz)
-	{
-		try
-		{
-			tagOFFSET = CTBASIC::CHV4DOFFSET{ o.data(), sz.data() };
-
-		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -268,14 +252,14 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DFromABI(TBASIC::OFFSET const& e)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromNUM(uint64_t const& o, uint64_t const& sz)
 	{
 		try
 		{
-			tagOFFSET = CTBASIC::CHV4DOFFSET{ e.o.num, e.sz.num };
+			tagOFFSET = std::tuple{ o, sz };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -285,22 +269,18 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DFromWinRT(TBASIC::HV4DOFFSET const& e)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromProj(TBASIC::HV4DOFFSET const& e)
 	{
 		uint64_t offset{}, size{};
 
-		if (e.HV4DToUInt64(offset, size) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DOFFSETToNUM(offset, size);
 
 		try
 		{
-			tagOFFSET = CTBASIC::CHV4DOFFSET{ offset, size };
+			tagOFFSET = std::tuple{ offset, size };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -310,157 +290,125 @@ return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DToUInt64(uint64_t& o, uint64_t& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToNUM(uint64_t& o, uint64_t& sz)
 	{
-		tagOFFSET.HV4DGetNumericOFFSET(o, sz);
+		std::tuple<uint64_t, uint64_t> offset = tagOFFSET;
+
+		o = std::get<0>(offset);
+
+		sz = std::get<1>(offset);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DToHstring(winrt::hstring& o, winrt::hstring& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToHstring(winrt::hstring& o, winrt::hstring& sz)
 	{
-		std::wstring offset{}, size{};
+		std::tuple<std::wstring, std::wstring> offset = tagOFFSET;
 
-		tagOFFSET.HV4DGetStringOFFSET(offset, size);
+		o = std::get<0>(offset);
 
-		o = offset;
-
-		sz = size;
+		sz = std::get<1>(offset);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DToABI(TBASIC::OFFSET& o)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToProj(TBASIC::HV4DOFFSET& e)
 	{
-		tagOFFSET.HV4DGetNumericOFFSET(o.o.num, o.sz.num);
+		std::tuple<uint64_t, uint64_t> offset = tagOFFSET;
+
+		e.HV4DOFFSETFromNUM(std::get<0>(offset), std::get<1>(offset));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DToWinRT(winrt::HV4DTBASIC::HV4DOFFSET& o)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETIsEqualNUM(uint64_t const& o, uint64_t const& sz)
 	{
-		uint64_t offset{}, size{};
-
-		tagOFFSET.HV4DGetNumericOFFSET(offset, size);
-
-		if(o.HV4DFromUInt64(offset, size) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_OPERATION_FAILED{};
-		
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualUInt64(uint64_t const& o, uint64_t const& sz)
-	{
-		CTBASIC::CHV4DOFFSET Offset{};
+		CTBASIC::CHV4DOFFSET offset{};
 
 		try
 		{
-			Offset = { o, sz };
+			offset = std::tuple{ o, sz };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
-		
-		if (tagOFFSET == Offset)
+
+		if (tagOFFSET == offset)
 		{
 			return HV4D::HV4D_TRUE{};
 
 		}
+		else
+		{
+			return HV4D::HV4D_FALSE{};
 
-		return HV4D::HV4D_FALSE{};
+		}
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualHstring(winrt::hstring const& o, winrt::hstring const& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETIsEqualHstring(winrt::hstring const& o, winrt::hstring const& sz)
 	{
-		CTBASIC::CHV4DOFFSET Offset{};
+		CTBASIC::CHV4DOFFSET offset{};
 
 		try
 		{
-			Offset = { o.data(), sz.data() };
+			offset = std::tuple{ o.data(), sz.data() };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagOFFSET == Offset)
+		if (tagOFFSET == offset)
 		{
 			return HV4D::HV4D_TRUE{};
 
 		}
+		else
+		{
+			return HV4D::HV4D_FALSE{};
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+		}
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualABI(TBASIC::OFFSET const& e)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETIsEqualProj(TBASIC::HV4DOFFSET const& e)
 	{
-		CTBASIC::CHV4DOFFSET Offset{};
+		CTBASIC::CHV4DOFFSET offset{};
+
+		uint64_t o{}, sz{};
+
+		e.HV4DOFFSETToNUM(o, sz);
 
 		try
 		{
-			Offset = { e.o.num, e.sz.num };
+			offset = std::tuple{ o, sz };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagOFFSET == Offset)
+		if (tagOFFSET == offset)
 		{
 			return HV4D::HV4D_TRUE{};
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DIsEqualWinRT(TBASIC::HV4DOFFSET const& e)
-	{
-		uint64_t offset{}, size{};
-
-		if (e.HV4DToUInt64(offset, size) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		else
 		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
+			return HV4D::HV4D_FALSE{};
 
 		}
-
-		CTBASIC::CHV4DOFFSET Offset{};
-
-		try
-		{
-			Offset = { offset, size };
-
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		if (tagOFFSET == Offset)
-		{
-			return HV4D::HV4D_TRUE{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

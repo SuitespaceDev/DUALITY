@@ -13,9 +13,9 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		CHV4DHEX();
 
-		CHV4DHEX(std::wstring const&);
-
 		CHV4DHEX(uint64_t const&);
+
+		CHV4DHEX(std::wstring const&);
 
 		CHV4DHEX(CHV4DHEX const&);
 
@@ -23,6 +23,8 @@ namespace CHV4D::CHV4DTBASIC
 		void HV4DIsValidHEX(std::wstring const&) const;
 
 	public:
+		void operator = (uint64_t const&);
+
 		void operator = (std::wstring const&);
 
 		void operator = (CHV4DHEX const&);
@@ -31,10 +33,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator == (CHV4DHEX const&) const;
 
-	public:
-		void HV4DGetStringHEX(std::wstring&) const;
+		operator std::wstring() const;
 
-		void HV4DGetNumericHEX(uint64_t&) const;
+		operator uint64_t() const;
 
 	private:
 		std::wstring tagHEX{};

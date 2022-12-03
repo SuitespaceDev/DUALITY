@@ -9,15 +9,21 @@ namespace HV4DTBASIC
 		HV4DMMM(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
 
 		HV4D.IHV4DRETURN HV4DMMMFromHstring(String e);
-	
+
+		HV4D.IHV4DRETURN HV4DMMMFromNumeric(UInt32 mil, UInt32 maj, UInt32 min);
+
 		HV4D.IHV4DRETURN HV4DMMMFromProj(HV4DMMM e);
 	
 		HV4D.IHV4DRETURN HV4DMMMToHstring(out String e);
+
+		HV4D.IHV4DRETURN HV4DMMMToNumeric(out UInt32 mil, out UInt32 maj, out UInt32 min);
 	
 		HV4D.IHV4DRETURN HV4DMMMToProj(out HV4DMMM e);
 	
 		HV4D.IHV4DRETURN HV4DMMMIsEqualHstring(String e);
-	
+
+		HV4D.IHV4DRETURN HV4DMMMIsEqualNumeric(UInt32 mil, UInt32 maj, UInt32 min);
+
 		HV4D.IHV4DRETURN HV4DMMMIsEqualProj(HV4DMMM e);
 	
     }

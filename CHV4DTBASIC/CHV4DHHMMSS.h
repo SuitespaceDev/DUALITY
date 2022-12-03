@@ -43,12 +43,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator < (CHV4DHHMMSS const&) const;
 
-	public:
-		void HV4DSetToCurrentHHMMSS();
+		operator std::wstring() const;
 
-		void HV4DGetStringHHMMSS(std::wstring&) const;
+		operator std::tuple<uint8_t, uint8_t, uint8_t>() const;
 
-		void HV4DGetNumericHHMMSS(uint8_t&, uint8_t&, uint8_t&) const;
+		void operator()();
 
 	private:
 		std::wstring tagHHMMSS{};

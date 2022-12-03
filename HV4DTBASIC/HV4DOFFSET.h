@@ -104,19 +104,19 @@ namespace winrt::HV4DTBASIC::implementation
 
 		virtual HV4D::IHV4DRETURN HV4DOFFSETFromNUM(uint64_t const&, uint64_t const&);
 
-		virtual HV4D::IHV4DRETURN HV4DOFFSETFromProj(HV4DOFFSET const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETFromProj(TBASIC::HV4DOFFSET const&);
 
 		virtual HV4D::IHV4DRETURN HV4DOFFSETToNUM(uint64_t&, uint64_t&);
 
 		virtual HV4D::IHV4DRETURN HV4DOFFSETToHstring(winrt::hstring&, winrt::hstring&);
 
-		virtual HV4D::IHV4DRETURN HV4DOFFSETToProj(HV4DOFFSET&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETToProj(TBASIC::HV4DOFFSET&);
 
 		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualNUM(uint64_t const&, uint64_t const&);
 
 		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualHstring(winrt::hstring const&, winrt::hstring const&);
 
-		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualProj(HV4DOFFSET const&);
+		virtual HV4D::IHV4DRETURN HV4DOFFSETIsEqualProj(TBASIC::HV4DOFFSET const&);
 
 	private:
 		CTBASIC::CHV4DOFFSET tagOFFSET{};

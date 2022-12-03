@@ -1,0 +1,18 @@
+namespace HV4DUX
+{
+    [bindable]
+    runtimeclass UserCombo : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserCombo();
+
+        String Label;
+
+        String Item{ get; };
+        
+        Windows.Foundation.Collections.IObservableVector<String> ItemList;
+
+        Boolean Editable;
+
+    }
+
+}

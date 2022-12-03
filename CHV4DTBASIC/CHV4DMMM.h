@@ -15,12 +15,16 @@ namespace CHV4D::CHV4DTBASIC
 
 		CHV4DMMM(std::wstring const&);
 
+		CHV4DMMM(uint32_t const&, uint32_t const&, uint32_t const&);
+
 		CHV4DMMM(CHV4DMMM const&);
 
 	private:
 		void HV4DIsValidMMM(std::wstring const&) const;
 
 	public:
+		void operator = (std::tuple<uint32_t, uint32_t, uint32_t>);
+
 		void operator = (std::wstring const&);
 
 		void operator = (CHV4DMMM const&);
@@ -41,10 +45,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator < (CHV4DMMM const&) const;
 
-	public:
-		void HV4DGetStringMMM(std::wstring&) const;
+		operator std::wstring() const;
 
-		void HV4DGetNumericMMM(uint32_t&, uint32_t&, uint32_t&) const;
+		operator std::tuple<uint32_t, uint32_t, uint32_t>() const;
 
 	private:
 		std::wstring tagMMM{};

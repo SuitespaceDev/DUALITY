@@ -1,0 +1,11 @@
+namespace HV4DUX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserFilterProcessID : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterProcessID();
+
+    }
+
+}

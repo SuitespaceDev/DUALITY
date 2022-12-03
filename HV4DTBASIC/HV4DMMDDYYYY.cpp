@@ -234,14 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DFromHstring(winrt::hstring const& d)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYFromHstring(winrt::hstring const& d)
 	{
 		try
 		{
 			tagMMDDYYYY = d.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -251,39 +251,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DFromABI(TBASIC::MMDDYYYY const& e)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYFromProj(TBASIC::HV4DMMDDYYYY const& e)
 	{
-		try
-		{
-			tagMMDDYYYY = std::wstring{ e.mm + L"/" + e.dd + L"/" + e.yyyy };
+		winrt::hstring str{};
 
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DFromWinRT(TBASIC::HV4DMMDDYYYY const& e)
-	{
-		winrt::hstring date{};
-
-		if (e.HV4DToHstring(date) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DMMDDYYYYToHstring(str);
 
 		try
 		{
-			tagMMDDYYYY = date.data();
+			tagMMDDYYYY = str.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -293,56 +272,43 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DToHstring(winrt::hstring& d)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYToHstring(winrt::hstring& d)
 	{
-		std::wstring date{};
-
-		tagMMDDYYYY.HV4DGetStringMMDDYYYY(date);
-
-		d = date;
+		d = tagMMDDYYYY.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DToABI(TBASIC::MMDDYYYY& e)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYToProj(TBASIC::HV4DMMDDYYYY& e)
 	{
-		std::wstring date{};
-
-		tagMMDDYYYY.HV4DGetStringMMDDYYYY(date);
-
-		e.mm = std::wstring{ &date[0], &date[1] };
-		e.dd = std::wstring{ &date[2], &date[3] };
-		e.yyyy = std::wstring{ &date[4], &date[7] };
+		e.HV4DMMDDYYYYFromHstring(tagMMDDYYYY.operator std::wstring());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DToWinRT(TBASIC::HV4DMMDDYYYY& e)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYIsEqualHstring(winrt::hstring const& d)
 	{
-		std::wstring date{};
+		CTBASIC::CHV4DMMDDYYYY mmddyyyy{};
 
-		tagMMDDYYYY.HV4DGetStringMMDDYYYY(date);
+		try
+		{
+			mmddyyyy = d.data();
 
-		if (e.HV4DFromHstring(date) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DIsEqualHstring(winrt::hstring const& e)
-	{
-		if (tagMMDDYYYY == CTBASIC::CHV4DMMDDYYYY{ e.data() })
+		if (tagMMDDYYYY == mmddyyyy)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMDDYYYY > CTBASIC::CHV4DMMDDYYYY{ e.data() })
+		else if (tagMMDDYYYY < mmddyyyy)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -355,42 +321,31 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DIsEqualABI(TBASIC::MMDDYYYY const& e)
+	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DMMDDYYYYIsEqualProj(TBASIC::HV4DMMDDYYYY const& e)
 	{
-		if (tagMMDDYYYY == CTBASIC::CHV4DMMDDYYYY{ std::wstring{ e.mm + L"/" + e.dd + L"/" + e.yyyy } })
+		CTBASIC::CHV4DMMDDYYYY mmddyyyy{};
+
+		winrt::hstring str{};
+
+		e.HV4DMMDDYYYYToHstring(str);
+
+		try
 		{
-			return HV4D::HV4D_IS_EQUAL{};
+			mmddyyyy = str.data();
 
 		}
-		else if (tagMMDDYYYY > CTBASIC::CHV4DMMDDYYYY{ std::wstring{ e.mm + L"/" + e.dd + L"/" + e.yyyy } })
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMMDDYYYY::HV4DIsEqualWinRT(TBASIC::HV4DMMDDYYYY const& e)
-	{
-		winrt::hstring date{};
-
-		if (e.HV4DToHstring(date) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagMMDDYYYY == CTBASIC::CHV4DMMDDYYYY{ date.data() })
+		if (tagMMDDYYYY == mmddyyyy)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMDDYYYY > CTBASIC::CHV4DMMDDYYYY{ date.data() })
+		else if (tagMMDDYYYY < mmddyyyy)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -407,7 +362,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagMMDDYYYY.HV4DCurrentMMDDYYYY();
+			tagMMDDYYYY();
 
 		}
 		catch (std::exception)

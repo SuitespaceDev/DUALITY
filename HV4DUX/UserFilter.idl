@@ -1,0 +1,20 @@
+namespace HV4DUX
+{
+    [bindable]
+    runtimeclass UserFilter : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserFilter();
+
+        String Label;
+
+        String Value;
+
+        String FilterGroup;
+
+        Windows.Foundation.Collections.IObservableVector<String> FilterList;
+
+        event Windows.Foundation.EventHandler<String> FilterEvent;
+
+    }
+
+}

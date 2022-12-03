@@ -35,12 +35,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator > (CHV4DKEY const&) const;
 
-	public:
-		void HV4DGetStringKEY(std::wstring&, std::wstring&) const;
+		operator std::tuple<std::wstring, std::wstring>() const;
 
-		void HV4DGetNativeKEY(GUID&, std::wstring&) const;
+		operator std::tuple<GUID, std::wstring>() const;
 
-		void HV4DGetHVIDMAXPATH(CHV4DHVID&, CHV4DMAXPATH&) const;
+		operator std::tuple<CHV4DHVID, CHV4DMAXPATH>() const;
 
 	private:
 		CHV4DHVID tagHVID{};
@@ -51,23 +50,19 @@ namespace CHV4D::CHV4DTBASIC
 
 	struct CHV4DKEYFN
 	{
-		std::size_t operator() (CHV4DKEY const& key) const
+		std::size_t operator() (CHV4DKEY const& k) const
 		{
-			GUID hvid{};
-
-			std::wstring str;
-
-			key.HV4DGetNativeKEY(hvid, str);
+			std::tuple<GUID, std::wstring> key = k;
 
 			std::size_t h1{}, h2{}, h3;
 
-			memcpy(&h1, &hvid, sizeof(long long));
+			memcpy(&h1, &std::get<0>(key), sizeof(long long));
 
-			memcpy(&h2, &hvid.Data4, sizeof(long long));
+			memcpy(&h2, &std::get<0>(key).Data4, sizeof(long long));
 
 			h1 = h1 ^ h2;
 
-			h3 = std::hash<std::wstring>()(str);
+			h3 = std::hash<std::wstring>()(std::get<1>(key));
 
 			return h1 ^ h3;
 

@@ -238,7 +238,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagDATETIME = { d.data(), t.data() };
+			tagDATETIME = std::tuple{ d.data(), t.data() };
 
 		}
 		catch (std::exception)
@@ -261,7 +261,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagDATETIME = { date.data(), time.data() };
+			tagDATETIME = std::tuple{ date.data(), time.data() };
 
 		}
 		catch (std::exception)
@@ -282,7 +282,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		try
 		{
-			tagDATETIME = { date.data(), time.data() };
+			tagDATETIME = std::tuple{ date.data(), time.data() };
 
 		}
 		catch (std::exception)
@@ -297,13 +297,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DDATETIME::HV4DDATETIMEToHstring(winrt::hstring& d, winrt::hstring& t)
 	{
-		std::wstring date{}, time{};
+		std::tuple<std::wstring, std::wstring> datetime = tagDATETIME;
 
-		tagDATETIME.HV4DGetStringDATETIME(date, time);
+		d = std::get<0>(datetime);
 
-		d = date;
-
-		t = time;
+		t = std::get<1>(datetime);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -311,13 +309,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DDATETIME::HV4DDATETIMEToHV4D(TBASIC::HV4DMMDDYYYY& d, TBASIC::HV4DHHMMSS& t)
 	{
-		std::wstring date{}, time{};
+		std::tuple<std::wstring, std::wstring> datetime = tagDATETIME;
 
-		tagDATETIME.HV4DGetStringDATETIME(date, time);
+		d.HV4DMMDDYYYYFromHstring(std::get<0>(datetime));
 
-		d.HV4DMMDDYYYYFromHstring(date);
-
-		t.HV4DHHMMSSFromHstring(time);
+		t.HV4DHHMMSSFromHstring(std::get<1>(datetime));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -325,11 +321,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DDATETIME::HV4DDATETIMEToProj(TBASIC::HV4DDATETIME& e)
 	{
-		std::wstring date{}, time{};
+		std::tuple<std::wstring, std::wstring> datetime = tagDATETIME;
 
-		tagDATETIME.HV4DGetStringDATETIME(date, time);
-
-		e.HV4DDATETIMEFromHstring(date, time);
+		e.HV4DDATETIMEFromHstring(std::get<0>(datetime), std::get<1>(datetime));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -415,7 +409,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		try
 		{
-			tagDATETIME.HV4DSetToCurrentDATETIME();
+			tagDATETIME();
 
 		}
 		catch (std::exception)

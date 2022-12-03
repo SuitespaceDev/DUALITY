@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a. Project">
+      <UniqueIdentifier>{5e46b651-33ef-4571-96ca-9c090cbefcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{c3df7384-9e05-4e24-8aa9-6dc3a9f2ce2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model">
+      <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl">
+      <UniqueIdentifier>{9262fe98-6358-4091-b13f-93be4974388f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserCombo">
+      <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserDivider">
+      <UniqueIdentifier>{f3073de4-47a3-424d-aa90-91364accb335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\UserMEventDebug">
+      <UniqueIdentifier>{842f18b3-6aaf-4693-8fb8-06b4ff2319ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\UserMSelectable">
+      <UniqueIdentifier>{9fbb5ea0-58c4-44f8-8f76-c689ee1f3454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserEntry">
+      <UniqueIdentifier>{ac9fa5cf-836c-4a07-8e44-0cee3ef8039c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFile">
+      <UniqueIdentifier>{a093ec54-e3ab-48b5-9a51-e2d65b62f9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFilter">
+      <UniqueIdentifier>{462a9693-4fa5-437c-9bfb-c25d4c3af13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFilterNew">
+      <UniqueIdentifier>{b348e635-20c7-4891-b6e4-9da9176efafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFilterProcessID">
+      <UniqueIdentifier>{9d571474-ecf1-42f9-bdac-60874633c795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFilterTime">
+      <UniqueIdentifier>{96b05608-7dce-4c2c-a833-b5534e690887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserFilterType">
+      <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserPassword">
+      <UniqueIdentifier>{6f8762dc-8ad4-476c-b7b1-41528fe1d952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleControl\UserBlock">
+      <UniqueIdentifier>{b210b23d-1f7f-4937-b04a-7f8f98cde924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMContact">
+      <UniqueIdentifier>{4cf3d019-578c-4f6d-be1e-05fd3163db8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMContract">
+      <UniqueIdentifier>{c8604a60-daf5-4e05-9f2a-aac93d157b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMDebug">
+      <UniqueIdentifier>{0ddb98f1-b63c-4fe2-b7ac-5accffb6d5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMIterator">
+      <UniqueIdentifier>{1d0304f8-200c-49df-8021-6c6b4062b291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMLog">
+      <UniqueIdentifier>{2116e655-f92e-43fe-a186-82907f09ee03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMMouse">
+      <UniqueIdentifier>{764c8301-f701-4010-af7f-34dfd0cd2d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMParameter">
+      <UniqueIdentifier>{b9e29a9b-2f28-4eca-a997-69ff503fc825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMRuntimeClass">
+      <UniqueIdentifier>{41ce206b-4fc1-42a4-a758-8023c1966dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMTNode">
+      <UniqueIdentifier>{349fa646-e527-43a8-92c0-0f25bf9cfd2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>a. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMEventDebug.cpp">
+      <Filter>Model\UserMEventDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMSelectable.cpp">
+      <Filter>Model\UserMSelectable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="HV4DUX.def">
+      <Filter>a. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>a. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>a. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMEventDebug.h" />
+    <ClInclude Include="UserMSelectable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="UserBlock.idl" />
+    <Midl Include="UserCombo.idl" />
+    <Midl Include="UserDivider.idl" />
+    <Midl Include="UserEntry.idl" />
+    <Midl Include="UserFile.idl" />
+    <Midl Include="UserFilter.idl" />
+    <Midl Include="UserFilterNew.idl" />
+    <Midl Include="UserFilterProcessID.idl" />
+    <Midl Include="UserFilterTime.idl" />
+    <Midl Include="UserFilterType.idl" />
+    <Midl Include="UserMEventDebug.idl" />
+    <Midl Include="UserMSelectable.idl" />
+    <Midl Include="UserPassword.idl" />
+    <Midl Include="UserVMContact.idl" />
+    <Midl Include="UserVMContract.idl" />
+    <Midl Include="UserVMDebug.idl" />
+    <Midl Include="UserVMIterator.idl" />
+    <Midl Include="UserVMLog.idl" />
+    <Midl Include="UserVMMouse.idl" />
+    <Midl Include="UserVMParameter.idl" />
+    <Midl Include="UserVMRuntimeClass.idl" />
+    <Midl Include="UserVMTNode.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserCombo.xaml">
+      <Filter>SimpleControl\UserCombo</Filter>
+    </Page>
+    <Page Include="UserDivider.xaml">
+      <Filter>SimpleControl\UserDivider</Filter>
+    </Page>
+    <Page Include="UserEntry.xaml">
+      <Filter>SimpleControl\UserEntry</Filter>
+    </Page>
+    <Page Include="UserFile.xaml">
+      <Filter>SimpleControl\UserFile</Filter>
+    </Page>
+    <Page Include="UserFilter.xaml">
+      <Filter>SimpleControl\UserFilter</Filter>
+    </Page>
+    <Page Include="UserFilterNew.xaml">
+      <Filter>SimpleControl\UserFilterNew</Filter>
+    </Page>
+    <Page Include="UserFilterProcessID.xaml">
+      <Filter>SimpleControl\UserFilterProcessID</Filter>
+    </Page>
+    <Page Include="UserFilterTime.xaml">
+      <Filter>SimpleControl\UserFilterTime</Filter>
+    </Page>
+    <Page Include="UserFilterType.xaml">
+      <Filter>SimpleControl\UserFilterType</Filter>
+    </Page>
+    <Page Include="UserPassword.xaml">
+      <Filter>SimpleControl\UserPassword</Filter>
+    </Page>
+    <Page Include="UserBlock.xaml">
+      <Filter>SimpleControl\UserBlock</Filter>
+    </Page>
+    <Page Include="UserVMContact.xaml">
+      <Filter>View Model\UserVMContact</Filter>
+    </Page>
+    <Page Include="UserVMContract.xaml">
+      <Filter>View Model\UserVMContract</Filter>
+    </Page>
+    <Page Include="UserVMDebug.xaml">
+      <Filter>View Model\UserVMDebug</Filter>
+    </Page>
+    <Page Include="UserVMIterator.xaml">
+      <Filter>View Model\UserVMIterator</Filter>
+    </Page>
+    <Page Include="UserVMLog.xaml">
+      <Filter>View Model\UserVMLog</Filter>
+    </Page>
+    <Page Include="UserVMMouse.xaml">
+      <Filter>View Model\UserVMMouse</Filter>
+    </Page>
+    <Page Include="UserVMParameter.xaml">
+      <Filter>View Model\UserVMParameter</Filter>
+    </Page>
+    <Page Include="UserVMRuntimeClass.xaml">
+      <Filter>View Model\UserVMRuntimeClass</Filter>
+    </Page>
+    <Page Include="UserVMTNode.xaml">
+      <Filter>View Model\UserVMTNode</Filter>
+    </Page>
+  </ItemGroup>
+</Project>

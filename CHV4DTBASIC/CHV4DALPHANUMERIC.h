@@ -29,8 +29,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator == (CHV4DALPHANUMERIC const&) const;
 
-	public:
-		void HV4DGetStringALPHANUMERIC(std::wstring&) const;
+		operator std::wstring() const;
 
 	private:
 		std::wstring tagTEXT{};

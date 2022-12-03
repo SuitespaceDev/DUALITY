@@ -274,11 +274,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSToHstring(winrt::hstring& t)
 	{
-		std::wstring hhmmss{};
-
-		tagHHMMSS.HV4DGetStringHHMMSS(hhmmss);
-
-		t = hhmmss;
+		t = tagHHMMSS.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -286,11 +282,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DHHMMSSToProj(TBASIC::HV4DHHMMSS& e)
 	{
-		std::wstring hhmmss{};
-
-		tagHHMMSS.HV4DGetStringHHMMSS(hhmmss);
-
-		e.HV4DHHMMSSFromHstring(hhmmss);
+		e.HV4DHHMMSSFromHstring(tagHHMMSS.operator std::wstring());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -326,8 +318,6 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
@@ -366,15 +356,13 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
 	}
 
 	HV4D::IHV4DRETURN HV4DHHMMSS::HV4DSetToCurrentTime()
 	{
 		try
 		{
-			tagHHMMSS.HV4DSetToCurrentHHMMSS();
+			tagHHMMSS();
 
 		}
 		catch (std::exception)

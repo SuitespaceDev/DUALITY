@@ -1,0 +1,16 @@
+namespace HV4DUX
+{
+    [bindable]
+    runtimeclass UserFilterNew : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterNew();
+    
+        String Label;
+
+        String Value;
+
+        event Windows.Foundation.EventHandler<String> FilterChanged;
+
+    }
+
+}

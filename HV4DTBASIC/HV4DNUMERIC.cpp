@@ -234,31 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromUInt8(uint8_t const& n)
-	{
-		try
-		{
-			tagNUMERIC = n;
-		
-		}
-		catch(std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromUInt16(uint16_t const& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromNUM(uint64_t const& n)
 	{
 		try
 		{
 			tagNUMERIC = n;
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -268,14 +251,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromUInt32(uint32_t const& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromHstring(winrt::hstring const& n)
 	{
 		try
 		{
-			tagNUMERIC = n;
+			tagNUMERIC = n.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -285,73 +268,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromUInt64(uint64_t const& n)
-	{
-		try
-		{
-			tagNUMERIC = n;
-
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromHstring(winrt::hstring const& s)
-	{
-		try
-		{
-			tagNUMERIC = s.data();
-
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromABI(TBASIC::NUMERIC const& e)
-	{
-		try
-		{
-			tagNUMERIC = e.num;
-
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DFromWinRT(winrt::HV4DTBASIC::HV4DNUMERIC const& e)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromProj(TBASIC::HV4DNUMERIC const& e)
 	{
 		uint64_t num{};
 
-		if (e.HV4DToUInt64(num) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DNUMERICToNUM(num);
 
 		try
 		{
 			tagNUMERIC = num;
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -361,175 +289,40 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DToUInt64(uint64_t& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICToNUM(uint64_t& n)
 	{
-		tagNUMERIC.HV4DGetNUMERIC(n);
+		n = tagNUMERIC;
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DToHstring(winrt::hstring& s)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICToHstring(winrt::hstring& n)
 	{
-		std::wstring str{};
-
-		tagNUMERIC.HV4DGetStringNUMERIC(str);
-
-		s = str;
+		n = tagNUMERIC.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DToABI(TBASIC::NUMERIC& e)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICToProj(TBASIC::HV4DNUMERIC& e)
 	{
-		tagNUMERIC.HV4DGetNUMERIC(e.num);
+		e.HV4DNUMERICFromHstring(tagNUMERIC.operator std::wstring());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DToWinRT(TBASIC::HV4DNUMERIC& e)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICIsEqualNUM(uint64_t const& n)
 	{
-		std::wstring str{};
+		CTBASIC::CHV4DNUMERIC num{};
 
-		tagNUMERIC.HV4DGetStringNUMERIC(str);
-
-		if (e.HV4DFromHstring(str) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		try
 		{
-			return HV4D::HV4D_OPERATION_FAILED{};
+			num = n;
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualUInt8(uint8_t const& n)
-	{
-		if (tagNUMERIC == n)
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > n)
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualUInt16(uint16_t const& n)
-	{
-		if (tagNUMERIC == n)
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > n)
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualUInt32(uint32_t const& n)
-	{
-		if (tagNUMERIC == n)
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > n)
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualUInt64(uint64_t const& n)
-	{
-		if (tagNUMERIC == n)
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > n)
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualHstring(winrt::hstring const& s)
-	{
-		if (tagNUMERIC == std::wcstoull(&s[0], NULL, 10))
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > std::wcstoull(&s[0], NULL, 10))
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualABI(TBASIC::NUMERIC const& e)
-	{
-		if (tagNUMERIC == e.num)
-		{
-			return HV4D::HV4D_IS_EQUAL{};
-
-		}
-		if (tagNUMERIC > e.num)
-		{
-			return HV4D::HV4D_IS_LESSER{};
-
-		}
-		else
-		{
-			return HV4D::HV4D_IS_GREATER{};
-
-		}
-
-	}
-
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DIsEqualWinRT(TBASIC::HV4DNUMERIC const& e)
-	{
-		uint64_t num{};
-
-		if (e.HV4DToUInt64(num) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -540,7 +333,77 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
+		else if (tagNUMERIC < num)
+		{
+			return HV4D::HV4D_IS_LESSER{};
+
+		}
+		else
+		{
+			return HV4D::HV4D_IS_GREATER{};
+
+		}
+
+	}
+
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICIsEqualHstring(winrt::hstring const& n)
+	{
+		CTBASIC::CHV4DNUMERIC num{};
+
+		try
+		{
+			num = n.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
 		if (tagNUMERIC == num)
+		{
+			return HV4D::HV4D_IS_EQUAL{};
+
+		}
+		else if (tagNUMERIC < num)
+		{
+			return HV4D::HV4D_IS_LESSER{};
+
+		}
+		else
+		{
+			return HV4D::HV4D_IS_GREATER{};
+
+		}
+
+	}
+
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICIsEqualProj(TBASIC::HV4DNUMERIC const& e)
+	{
+		CTBASIC::CHV4DNUMERIC num{};
+
+		uint64_t val{};
+
+		e.HV4DNUMERICToNUM(val);
+
+		try
+		{
+			num = val;
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagNUMERIC == num)
+		{
+			return HV4D::HV4D_IS_EQUAL{};
+
+		}
+		else if (tagNUMERIC < num)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 

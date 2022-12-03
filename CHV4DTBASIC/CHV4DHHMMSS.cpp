@@ -205,7 +205,22 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DHHMMSS::HV4DSetToCurrentHHMMSS()
+	CHV4DHHMMSS::operator std::wstring() const
+	{
+		return std::wstring{ tagHHMMSS[0], tagHHMMSS[1], ':', tagHHMMSS[2], tagHHMMSS[3], ':', tagHHMMSS[4], tagHHMMSS[5] };
+
+	}
+
+	CHV4DHHMMSS::operator std::tuple<uint8_t, uint8_t, uint8_t>() const
+	{
+		return std::tuple{ 
+			(uint8_t)std::stoi(std::wstring{tagHHMMSS[0]} + tagHHMMSS[1]),
+			(uint8_t)std::stoi(std::wstring{ tagHHMMSS[2] } + tagHHMMSS[3]),
+			(uint8_t)std::stoi(std::wstring{ tagHHMMSS[4] } + tagHHMMSS[5]) };
+
+	}
+
+	void CHV4DHHMMSS::operator()()
 	{
 		std::time_t time = std::time(nullptr);
 
@@ -249,26 +264,6 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::domain_error("");
 
 		}
-
-		return;
-
-	}
-
-	void CHV4DHHMMSS::HV4DGetStringHHMMSS(std::wstring& o) const
-	{
-		o = std::wstring{ tagHHMMSS[0], tagHHMMSS[1], ':', tagHHMMSS[2], tagHHMMSS[3], ':', tagHHMMSS[4], tagHHMMSS[5] };
-
-		return;
-
-	}
-
-	void CHV4DHHMMSS::HV4DGetNumericHHMMSS(uint8_t& hh, uint8_t& mm, uint8_t& ss) const
-	{
-		hh = (uint8_t)std::stoi(std::wstring{ tagHHMMSS[0] } + tagHHMMSS[1]);
-
-		mm = (uint8_t)std::stoi(std::wstring{ tagHHMMSS[2] } + tagHHMMSS[3]);
-
-		ss = (uint8_t)std::stoi(std::wstring{ tagHHMMSS[4] } + tagHHMMSS[5]);
 
 		return;
 

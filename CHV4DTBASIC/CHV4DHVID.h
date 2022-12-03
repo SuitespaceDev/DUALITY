@@ -55,12 +55,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator > (CHV4DHVID const&) const;
 
-	public:
-		void HV4DRandomHVID();
+		operator std::wstring() const;
 
-		void HV4DGetStringHVID(std::wstring&) const;
+		operator GUID const&() const;
 
-		void HV4DGetNativeHVID(GUID&) const;
+		void operator()();
 
 	private:
 		void HV4DToString(GUID const&, std::wstring&) const;

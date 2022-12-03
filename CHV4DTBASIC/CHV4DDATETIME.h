@@ -25,6 +25,8 @@ namespace CHV4D::CHV4DTBASIC
 		CHV4DDATETIME(CHV4DDATETIME const&);
 
 	public:
+		void operator = (std::tuple<std::wstring const&, std::wstring const&>);
+
 		void operator = (CHV4DDATETIME const&);
 
 		bool operator == (CHV4DDATETIME const&) const;
@@ -35,12 +37,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator > (CHV4DDATETIME const&) const;
 
-	public:
-		void HV4DSetToCurrentDATETIME();
+		operator std::tuple<std::wstring, std::wstring>() const;
 
-		void HV4DGetStringDATETIME(std::wstring&, std::wstring&) const;
+		operator std::tuple<CHV4DMMDDYYYY, CHV4DHHMMSS>() const;
 
-		void HV4DGetDATETIME(CHV4DMMDDYYYY&, CHV4DHHMMSS&) const;
+		void operator()();
 
 	private:
 		CHV4DMMDDYYYY tagMMDDYYYY{};

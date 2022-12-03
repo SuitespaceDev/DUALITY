@@ -110,11 +110,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DALPHANUMERIC::HV4DGetStringALPHANUMERIC(std::wstring& o) const
+	CHV4DALPHANUMERIC::operator std::wstring() const
 	{
-		o = tagTEXT;
-
-		return;
+		return tagTEXT;
 
 	}
 

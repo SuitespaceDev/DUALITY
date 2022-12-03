@@ -1,3 +1,16 @@
+/**************************************************************************************************************************/
+/**************************************************************************************************************************/
+/*****/
+/*****/  //Entangled Logic Venture Company
+/*****/  //
+/*****/	 //Duality137
+/*****/  //
+/*****/  //Offset Lower Upper; Size Lower Upper
+/*****/
+/*****/
+/**************************************************************************************************************************/
+/**************************************************************************************************************************/
+
 #pragma once
 
 #include <objbase.h>
@@ -26,18 +39,23 @@ namespace CHV4D::CHV4DTBASIC
 		CHV4DOFFSET(CHV4DOFFSET const&);
 
 	public:
+		void operator = (std::tuple<std::wstring const&, std::wstring const&>);
+
+		void operator = (std::tuple<DWORD, DWORD, DWORD, DWORD>);
+
+		void operator = (std::tuple<uint64_t, uint64_t>);
+
 		void operator = (CHV4DOFFSET const&);
 
 		bool operator == (CHV4DOFFSET const&) const;
 
 		bool operator != (CHV4DOFFSET const&) const;
 
-	public:
-		void HV4DGetStringOFFSET(std::wstring&, std::wstring&) const;
+		operator std::tuple<std::wstring, std::wstring>() const;
 
-		void HV4DGetNumericOFFSET(uint64_t&, uint64_t&) const;
+		operator std::tuple<uint64_t, uint64_t>() const;
 
-		void HV4DGetDWORDOFFSET(DWORD&, DWORD&, DWORD&, DWORD&) const;
+		operator std::tuple<DWORD, DWORD, DWORD, DWORD>() const;
 
 	private:
 		CHV4DNUMERIC tagOFFSET{};

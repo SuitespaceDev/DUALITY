@@ -318,13 +318,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYToHstring(winrt::hstring& uid, winrt::hstring& n)
 	{
-		std::wstring clsid{}, name{};
+		std::tuple<std::wstring, std::wstring> key = tagKEY;
 
-		tagKEY.HV4DGetStringKEY(clsid, name);
+		uid = std::get<0>(key);
 
-		uid = clsid;
-
-		n = name;
+		n = std::get<1>(key);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -332,15 +330,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYToGuid(winrt::guid& uid, winrt::hstring& n)
 	{
-		GUID clsid{};
+		std::tuple<GUID, std::wstring> key = tagKEY;
 
-		std::wstring name{};
+		uid = std::get<0>(key);
 
-		tagKEY.HV4DGetNativeKEY(clsid, name);
-
-		uid = clsid;
-
-		n = name;
+		n = std::get<1>(key);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -348,15 +342,11 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYToHV4D(TBASIC::HV4DHVID& uid, TBASIC::HV4DMAXPATH& n)
 	{
-		GUID clsid{};
+		std::tuple<GUID, std::wstring> key = tagKEY;
 
-		std::wstring name{};
+		uid.HV4DHVIDFromGuid(std::get<0>(key));
 
-		tagKEY.HV4DGetNativeKEY(clsid, name);
-
-		uid.HV4DHVIDFromGuid(clsid);
-
-		n.HV4DMAXPATHFromHstring(name);
+		n.HV4DMAXPATHFromHstring(std::get<1>(key));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -364,13 +354,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYToProj(TBASIC::HV4DKEY& e)
 	{
-		GUID clsid{};
+		std::tuple<GUID, std::wstring> key = tagKEY;
 
-		std::wstring name{};
-
-		tagKEY.HV4DGetNativeKEY(clsid, name);
-
-		e.HV4DKEYFromGuid(clsid, name);
+		e.HV4DKEYFromGuid(std::get<0>(key), std::get<1>(key));
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -407,8 +393,6 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
 	}
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYIsEqualGuid(winrt::guid const& uid, winrt::hstring const& n)
@@ -441,8 +425,6 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
@@ -485,8 +467,6 @@ namespace winrt::HV4DTBASIC::implementation
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
 	}
 
 	HV4D::IHV4DRETURN HV4DKEY::HV4DKEYIsEqualProj(TBASIC::HV4DKEY const& e)
@@ -525,8 +505,6 @@ namespace winrt::HV4DTBASIC::implementation
 			return HV4D::HV4D_IS_GREATER{};
 
 		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

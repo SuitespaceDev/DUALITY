@@ -11,11 +11,19 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DHEX::CHV4DHEX(std::wstring const& s)
+	CHV4DHEX::CHV4DHEX(uint64_t const& n)
+	{
+		tagHEX = std::to_wstring(n);
+
+		return;
+
+	}
+
+	CHV4DHEX::CHV4DHEX(std::wstring const& n)
 	{
 		try
 		{
-			HV4DIsValidHEX(s);
+			HV4DIsValidHEX(n);
 
 		}
 		catch (std::domain_error)
@@ -25,6 +33,8 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::invalid_argument("");
 
 		}
+
+		tagHEX = n;
 
 		return;
 
@@ -61,6 +71,14 @@ namespace CHV4D::CHV4DTBASIC
 			}
 
 		}
+
+		return;
+
+	}
+
+	void CHV4DHEX::operator = (uint64_t const& n)
+	{
+		tagHEX = std::to_wstring(n);
 
 		return;
 
@@ -116,19 +134,15 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DHEX::HV4DGetStringHEX(std::wstring& o) const
+	CHV4DHEX::operator std::wstring() const
 	{
-		o = tagHEX;
-
-		return;
+		return tagHEX;
 
 	}
 
-	void CHV4DHEX::HV4DGetNumericHEX(uint64_t& o) const
+	CHV4DHEX::operator uint64_t() const
 	{
-		o = wcstoull(tagHEX.c_str(), NULL, 16);
-
-		return;
+		return wcstoull(tagHEX.c_str(), NULL, 16);
 
 	}
 

@@ -66,6 +66,42 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	void CHV4DCLASST::operator = (std::tuple<std::wstring const&, std::wstring const&> e)
+	{
+		try
+		{
+			tagNAMESPACE = std::get<0>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			tagNAMESPACE = CHV4DMAXPATH{};
+
+			tagWINRTCLASS = CHV4DMAXPATH{};
+
+			throw std::invalid_argument("");
+
+		}
+
+		try
+		{
+			tagWINRTCLASS = std::get<1>(e);
+
+		}
+		catch (std::invalid_argument)
+		{
+			tagNAMESPACE = CHV4DMAXPATH{};
+
+			tagWINRTCLASS = CHV4DMAXPATH{};
+
+			throw std::invalid_argument("");
+
+		}
+
+		return;
+
+	}
+
 	void CHV4DCLASST::operator = (CHV4DCLASST const& e)
 	{
 		tagNAMESPACE = e.tagNAMESPACE;
@@ -89,23 +125,15 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DCLASST::HV4DGetStringCLASST(std::wstring& ns, std::wstring& c) const
+	CHV4DCLASST::operator std::tuple<std::wstring, std::wstring>() const
 	{
-		tagNAMESPACE.HV4DGetStringMAXPATH(ns);
-
-		tagWINRTCLASS.HV4DGetStringMAXPATH(c);
-
-		return;
+		return std::tuple{ tagNAMESPACE, tagWINRTCLASS };
 
 	}
 
-	void CHV4DCLASST::HV4DGetMAXPATH(CHV4DMAXPATH& ns, CHV4DMAXPATH& c) const
+	CHV4DCLASST::operator std::tuple<CHV4DMAXPATH, CHV4DMAXPATH>() const
 	{
-		ns = tagNAMESPACE;
-		
-		c = tagWINRTCLASS;
-
-		return;
+		return std::tuple{ tagNAMESPACE, tagWINRTCLASS };
 
 	}
 

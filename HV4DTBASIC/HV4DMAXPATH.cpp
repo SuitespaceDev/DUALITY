@@ -234,14 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DFromHstring(winrt::hstring const& mp)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHFromHstring(winrt::hstring const& s)
 	{
 		try
 		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ mp.data() };
+			tagMAXPATH = s.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -251,39 +251,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DFromABI(TBASIC::MAXPATH const& e)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHFromProj(TBASIC::HV4DMAXPATH const& e)
 	{
-		try
-		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ e.mp.data() };
+		winrt::hstring str{};
 
-		}
-		catch (std::invalid_argument)
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
-
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DFromWinRT(TBASIC::HV4DMAXPATH const& e)
-	{
-		TBASIC::MAXPATH abs{};
-
-		if (e.HV4DToABI(abs) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DMAXPATHToHstring(str);
 
 		try
 		{
-			tagMAXPATH = CTBASIC::CHV4DMAXPATH{ abs.mp.data() };
+			tagMAXPATH = str.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -293,95 +272,87 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DToHstring(winrt::hstring& mp)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHToHstring(winrt::hstring& s)
 	{
-		std::wstring maxpath;
-
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
-
-		mp = maxpath;
+		s = tagMAXPATH.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DToABI(TBASIC::MAXPATH& e)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHToProj(TBASIC::HV4DMAXPATH& e)
 	{
-		std::wstring maxpath{};
-
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
-
-		e.mp = maxpath;
+		e.HV4DMAXPATHFromHstring(tagMAXPATH.operator std::wstring());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DToWinRT(TBASIC::HV4DMAXPATH& e)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHIsEqualHstring(winrt::hstring const& s)
 	{
-		std::wstring maxpath{};
+		CTBASIC::CHV4DMAXPATH maxpath{};
 
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
+		try
+		{
+			maxpath = s.data();
 
-		if (e.HV4DFromHstring(maxpath) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DIsEqualHstring(winrt::hstring const& mp)
-	{
-		std::wstring maxpath{};
-
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
-
-		if (maxpath == mp)
+		if (tagMAXPATH == maxpath)
 		{
 			return HV4D::HV4D_TRUE{};
 
 		}
+		else
+		{
+			return HV4D::HV4D_FALSE{};
 
-		return HV4D::HV4D_FALSE{};
+		}
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DIsEqualABI(TBASIC::MAXPATH const& e)
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHIsEqualProj(TBASIC::HV4DMAXPATH const& e)
 	{
-		std::wstring maxpath{};
+		winrt::hstring str{};
 
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
+		e.HV4DMAXPATHToHstring(str);
 
-		if (maxpath == e.mp)
+		CTBASIC::CHV4DMAXPATH maxpath{};
+
+		try
+		{
+			maxpath = str.data();
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagMAXPATH == maxpath)
 		{
 			return HV4D::HV4D_TRUE{};
 
 		}
-
-		return HV4D::HV4D_FALSE{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DIsEqualWinRT(TBASIC::HV4DMAXPATH const& e)
-	{
-		std::wstring maxpath{};
-
-		tagMAXPATH.HV4DGetStringMAXPATH(maxpath);
-
-		winrt::hstring winrt_maxpath{};
-
-		e.HV4DToHstring(winrt_maxpath);
-
-		if (maxpath == winrt_maxpath)
+		else
 		{
-			return HV4D::HV4D_TRUE{};
+			return HV4D::HV4D_FALSE{};
 
 		}
 
-		return HV4D::HV4D_FALSE{};
+	}
+
+	HV4D::IHV4DRETURN HV4DMAXPATH::HV4DMAXPATHSubStr(uint64_t const& i, uint64_t const& l, TBASIC::HV4DMAXPATH& o)
+	{
+		o.HV4DMAXPATHFromHstring(tagMAXPATH(i, l));
+
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 

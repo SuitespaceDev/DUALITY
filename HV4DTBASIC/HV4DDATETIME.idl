@@ -3,7 +3,7 @@ import "HV4DHHMMSS.idl";
 
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DDATETIME : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DRETURN
+    runtimeclass HV4DDATETIME : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
     {
 		HV4DDATETIME();
 

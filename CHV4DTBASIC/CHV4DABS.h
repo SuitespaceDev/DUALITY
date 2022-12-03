@@ -10,7 +10,7 @@
 
 namespace CHV4D::CHV4DTBASIC
 {
-	class CHV4DABS
+	class CHV4DABS /* PATH, FILE */
 	{
 	public:
 		CHV4DABS();
@@ -21,19 +21,21 @@ namespace CHV4D::CHV4DTBASIC
 
 		CHV4DABS(CHV4DABS const&);
 
+	private:
 		void HV4DIsValidABS() const;
 
 	public:
+		void operator = (std::tuple<std::wstring const&, std::wstring const&>);
+
 		void operator = (CHV4DABS const&);
 
 		bool operator == (CHV4DABS const&) const;
 
 		bool operator != (CHV4DABS const&) const;
 
-	public:
-		void HV4DGetStringABS(std::wstring&, std::wstring&) const;
+		operator std::tuple<std::wstring, std::wstring>() const;
 
-		void HV4DGetMAXPATH(CHV4DMAXPATH&, CHV4DMAXPATH&) const;
+		operator std::tuple<CHV4DMAXPATH, CHV4DMAXPATH>() const;
 
 	private:
 		CHV4DMAXPATH tagPATH{};

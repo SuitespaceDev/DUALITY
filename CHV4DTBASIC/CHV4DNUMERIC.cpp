@@ -12,6 +12,14 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
+	CHV4DNUMERIC::CHV4DNUMERIC(uint64_t const& n)
+	{
+		tagNUM = n;
+
+		return;
+
+	}
+
 	CHV4DNUMERIC::CHV4DNUMERIC(std::wstring const& s)
 	{
 		try
@@ -24,14 +32,6 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::invalid_argument("");
 
 		}
-
-		return;
-
-	}
-
-	CHV4DNUMERIC::CHV4DNUMERIC(uint64_t const& n)
-	{
-		tagNUM = n;
 
 		return;
 
@@ -242,19 +242,15 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DNUMERIC::HV4DGetStringNUMERIC(std::wstring& o) const
+	CHV4DNUMERIC::operator std::wstring () const
 	{
-		o = std::to_wstring(tagNUM);
-
-		return;
+		return std::to_wstring(tagNUM);
 
 	}
 
-	void CHV4DNUMERIC::HV4DGetNUMERIC(uint64_t& o) const
+	CHV4DNUMERIC::operator uint64_t () const
 	{
-		o = tagNUM;
-
-		return;
+		return tagNUM;
 
 	}
 

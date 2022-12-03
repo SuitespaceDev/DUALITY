@@ -234,14 +234,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DFromHstring(winrt::hstring const& vs)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMFromHstring(winrt::hstring const& v)
 	{
 		try
 		{
-			tagMMM = vs.data();
+			tagMMM = v.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -251,14 +251,14 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DFromABI(TBASIC::MMM const& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMFromNumeric(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
 	{
 		try
 		{
-			tagMMM = std::wstring{ e.mil + L"." + e.maj + L"." + e.min };
+			tagMMM = std::tuple{ mil, maj, min };
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -268,22 +268,18 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DFromWinRT(TBASIC::HV4DMMM const& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMFromProj(TBASIC::HV4DMMM const& e)
 	{
-		winrt::hstring mmm{};
+		winrt::hstring str{};
 
-		if (e.HV4DToHstring(mmm) != HV4D::HV4D_OPERATION_SUCCEEDED{})
-		{
-			return HV4D::HV4D_INVALID_ARGUMENT{};
-
-		}
+		e.HV4DMMMToHstring(str);
 
 		try
 		{
-			tagMMM = mmm.data();
+			tagMMM = str.data();
 
 		}
-		catch (std::invalid_argument)
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
@@ -293,56 +289,57 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DToHstring(winrt::hstring& vs)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMToHstring(winrt::hstring& v)
 	{
-		std::wstring mmm{};
-
-		tagMMM.HV4DGetStringMMM(mmm);
-
-		vs = mmm;
+		v = tagMMM.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DToABI(TBASIC::MMM& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMToNumeric(uint32_t& mil, uint32_t& maj, uint32_t& min)
 	{
-		std::wstring mmm{};
+		std::tuple<uint32_t, uint32_t, uint32_t> mmm = tagMMM;
 
-		tagMMM.HV4DGetStringMMM(mmm);
+		mil = std::get<0>(mmm);
 
-		e.mil = std::wstring{ mmm[0] };
-		e.maj = std::wstring{ &mmm[2], &mmm[4] };
-		e.min = std::wstring{ &mmm[6], &mmm[8] };
+		maj = std::get<1>(mmm);
+
+		min = std::get<2>(mmm);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DToWinRT(TBASIC::HV4DMMM& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMToProj(TBASIC::HV4DMMM& e)
 	{
-		std::wstring mmm{};
+		e.HV4DMMMFromHstring(tagMMM.operator std::wstring());
 
-		tagMMM.HV4DGetStringMMM(mmm);
+		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
-		if (e.HV4DFromHstring(mmm) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+	}
+
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMIsEqualHstring(winrt::hstring const& v)
+	{
+		CTBASIC::CHV4DMMM mmm{};
+
+		try
+		{
+			mmm = v.data();
+
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
-
-	}
-
-	HV4D::IHV4DRETURN HV4DMMM::HV4DIsEqualHstring(winrt::hstring const& e)
-	{
-		if (tagMMM == CTBASIC::CHV4DMMM{ e.data() })
+		if (tagMMM == mmm)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMM > CTBASIC::CHV4DMMM{ e.data() })
+		else if (tagMMM < mmm)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -355,14 +352,27 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DIsEqualABI(TBASIC::MMM const& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMIsEqualNumeric(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
 	{
-		if (tagMMM == CTBASIC::CHV4DMMM{ std::wstring{ e.mil + L"." + e.maj + L"." + e.min } })
+		CTBASIC::CHV4DMMM mmm{};
+
+		try
+		{
+			mmm = CTBASIC::CHV4DMMM{ mil, maj, min };
+
+		}
+		catch (std::exception)
+		{
+			return HV4D::HV4D_INVALID_ARGUMENT{};
+
+		}
+
+		if (tagMMM == mmm)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMM > CTBASIC::CHV4DMMM{ std::wstring{ e.mil + L"." + e.maj + L"." + e.min } })
+		else if (tagMMM < mmm)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 
@@ -375,22 +385,31 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DIsEqualWinRT(TBASIC::HV4DMMM const& e)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMIsEqualProj(TBASIC::HV4DMMM const& e)
 	{
-		winrt::hstring mmm{};
+		CTBASIC::CHV4DMMM mmm{};
 
-		if (e.HV4DToHstring(mmm) != HV4D::HV4D_OPERATION_SUCCEEDED{})
+		winrt::hstring str{};
+
+		e.HV4DMMMToHstring(str);
+
+		try
+		{
+			mmm = str.data();
+
+		}
+		catch (std::exception)
 		{
 			return HV4D::HV4D_INVALID_ARGUMENT{};
 
 		}
 
-		if (tagMMM == CTBASIC::CHV4DMMM{ mmm.data() })
+		if (tagMMM == mmm)
 		{
 			return HV4D::HV4D_IS_EQUAL{};
 
 		}
-		else if (tagMMM > CTBASIC::CHV4DMMM{ mmm.data() })
+		else if (tagMMM < mmm)
 		{
 			return HV4D::HV4D_IS_LESSER{};
 

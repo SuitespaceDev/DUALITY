@@ -102,13 +102,19 @@ namespace winrt::HV4DTBASIC::implementation
 	public:
 		virtual HV4D::IHV4DRETURN HV4DMMMFromHstring(winrt::hstring const&);
 
+		virtual HV4D::IHV4DRETURN HV4DMMMFromNumeric(uint32_t const&, uint32_t const&, uint32_t const&);
+
 		virtual HV4D::IHV4DRETURN HV4DMMMFromProj(TBASIC::HV4DMMM const&);
 
 		virtual HV4D::IHV4DRETURN HV4DMMMToHstring(winrt::hstring&);
 
+		virtual HV4D::IHV4DRETURN HV4DMMMToNumeric(uint32_t&, uint32_t&, uint32_t&);
+
 		virtual HV4D::IHV4DRETURN HV4DMMMToProj(TBASIC::HV4DMMM&);
 
 		virtual HV4D::IHV4DRETURN HV4DMMMIsEqualHstring(winrt::hstring const&);
+
+		virtual HV4D::IHV4DRETURN HV4DMMMIsEqualNumeric(uint32_t const&, uint32_t const&, uint32_t const&);
 
 		virtual HV4D::IHV4DRETURN HV4DMMMIsEqualProj(TBASIC::HV4DMMM const&);
 

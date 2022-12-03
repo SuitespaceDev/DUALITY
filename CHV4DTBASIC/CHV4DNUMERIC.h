@@ -13,9 +13,9 @@ namespace CHV4D::CHV4DTBASIC
 	public:
 		CHV4DNUMERIC();
 
-		CHV4DNUMERIC(std::wstring const&);
-
 		CHV4DNUMERIC(uint64_t const&);
+
+		CHV4DNUMERIC(std::wstring const&);
 
 		CHV4DNUMERIC(CHV4DNUMERIC const&);
 
@@ -53,10 +53,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator > (CHV4DNUMERIC const&) const;
 
-	public:
-		void HV4DGetStringNUMERIC(std::wstring&) const;
+		operator std::wstring() const;
 
-		void HV4DGetNUMERIC(uint64_t&) const;
+		operator uint64_t() const;
 
 	private:
 		uint64_t tagNUM;

@@ -333,7 +333,22 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DMMDDYYYY::HV4DSetToCurrentMMDDYYYY()
+	CHV4DMMDDYYYY::operator std::wstring() const
+	{
+		return tagMMDDYYYY;
+
+	}
+
+	CHV4DMMDDYYYY::operator std::tuple<long, long, long>() const
+	{
+		return std::tuple{
+			std::wcstoul(tagMMDDYYYY.substr(0, 2).c_str(), NULL, 10),
+			std::wcstoul(tagMMDDYYYY.substr(3, 4).c_str(), NULL, 10),
+			std::wcstoul(tagMMDDYYYY.substr(6, 9).c_str(), NULL, 10) };
+
+	}
+
+	void CHV4DMMDDYYYY::operator()()
 	{
 		std::time_t time = std::time(nullptr);
 
@@ -377,26 +392,6 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::domain_error("");
 
 		}
-
-		return;
-
-	}
-
-	void CHV4DMMDDYYYY::HV4DGetStringMMDDYYYY(std::wstring& o) const
-	{
-		o = tagMMDDYYYY;
-
-		return;
-
-	}
-
-	void CHV4DMMDDYYYY::HV4DGetNumericMMDDYYYY(long& mm, long& dd, long& yyyy) const
-	{
-		mm = std::wcstoul(tagMMDDYYYY.substr(0,2).c_str(), NULL, 10);
-
-		dd = std::stoi(tagMMDDYYYY.substr(3, 4).c_str(), NULL, 10);
-
-		yyyy = std::stoi(tagMMDDYYYY.substr(6, 9).c_str(), NULL, 10);
 
 		return;
 

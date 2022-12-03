@@ -3,7 +3,7 @@ import "HV4DMAXPATH.idl";
 
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DKEY : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DRETURN
+    runtimeclass HV4DKEY : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
     {
         HV4DKEY();
 

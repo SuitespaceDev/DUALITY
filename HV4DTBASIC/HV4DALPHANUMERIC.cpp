@@ -274,11 +274,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DALPHANUMERIC::HV4DALPHANUMERICToHstring(winrt::hstring& n)
 	{
-		std::wstring num{};
-
-		tagANUM.HV4DGetStringALPHANUMERIC(num);
-
-		n = num;
+		n = tagANUM.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -286,11 +282,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DALPHANUMERIC::HV4DALPHANUMERICToProj(TBASIC::HV4DALPHANUMERIC& e)
 	{
-		std::wstring num{};
-
-		tagANUM.HV4DGetStringALPHANUMERIC(num);
-
-		e.HV4DALPHANUMERICFromHstring(num);
+		e.HV4DALPHANUMERICFromHstring(tagANUM.operator std::wstring());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -299,11 +291,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DALPHANUMERIC::HV4DALPHANUMERICIsEqualHstring(winrt::hstring const& n)
 	{
-		std::wstring num{};
-
-		tagANUM.HV4DGetStringALPHANUMERIC(num);
-
-		if (num == n)
+		if (tagANUM == n)
 		{
 			return HV4D::HV4D_TRUE{};
 
@@ -319,11 +307,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 		e.HV4DALPHANUMERICToHstring(num);
 
-		std::wstring cnum{};
-
-		tagANUM.HV4DGetStringALPHANUMERIC(cnum);
-
-		if (num == cnum)
+		if (tagANUM == num)
 		{
 			return HV4D::HV4D_TRUE{};
 

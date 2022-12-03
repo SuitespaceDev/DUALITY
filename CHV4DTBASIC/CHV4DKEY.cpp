@@ -128,33 +128,21 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DKEY::HV4DGetStringKEY(std::wstring& hvid, std::wstring& mp) const
+	CHV4DKEY::operator std::tuple<std::wstring, std::wstring>() const
 	{
-		tagHVID.HV4DGetStringHVID(hvid);
-
-		tagMAXPATH.HV4DGetStringMAXPATH(mp);
-
-		return;
+		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
 
-	void CHV4DKEY::HV4DGetNativeKEY(GUID& hvid, std::wstring& mp) const
+	CHV4DKEY::operator std::tuple<GUID, std::wstring>() const
 	{
-		tagHVID.HV4DGetNativeHVID(hvid);
-
-		tagMAXPATH.HV4DGetStringMAXPATH(mp);
-
-		return;
+		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
 
-	void CHV4DKEY::HV4DGetHVIDMAXPATH(CHV4DHVID& hvid, CHV4DMAXPATH& mp) const
+	CHV4DKEY::operator std::tuple<CHV4DHVID, CHV4DMAXPATH>() const
 	{
-		hvid = tagHVID;
-
-		mp = tagMAXPATH;
-
-		return;
+		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
 

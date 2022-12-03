@@ -309,7 +309,23 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DHVID::HV4DRandomHVID()
+	CHV4DHVID::operator std::wstring() const
+	{
+		std::wstring str{};
+
+		HV4DToString(tagHVID, str);
+
+		return str;
+
+	}
+
+	CHV4DHVID::operator GUID const&() const
+	{
+		return tagHVID;
+
+	}
+
+	void CHV4DHVID::operator()()
 	{
 		HRESULT ret = CoCreateGuid(&tagHVID);
 
@@ -318,22 +334,6 @@ namespace CHV4D::CHV4DTBASIC
 			throw std::underflow_error("Guid creation failure.");
 
 		}
-
-		return;
-
-	}
-
-	void CHV4DHVID::HV4DGetStringHVID(std::wstring& o) const
-	{
-		HV4DToString(tagHVID, o);
-
-		return;
-
-	}
-
-	void CHV4DHVID::HV4DGetNativeHVID(GUID& o) const
-	{
-		o = tagHVID;
 
 		return;
 

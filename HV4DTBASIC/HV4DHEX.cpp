@@ -291,11 +291,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXToHstring(winrt::hstring& n)
 	{
-		std::wstring num{};
-
-		tagHEX.HV4DGetStringHEX(num);
-
-		n = num;
+		n = tagHEX.operator std::wstring();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -303,11 +299,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXToNUM(uint64_t& n)
 	{
-		uint64_t num{};
-
-		tagHEX.HV4DGetNumericHEX(num);
-
-		n = num;
+		n = tagHEX;
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -315,11 +307,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXToProj(TBASIC::HV4DHEX& e)
 	{
-		uint64_t num{};
-
-		tagHEX.HV4DGetNumericHEX(num);
-
-		e.HV4DHEXFromNUM(num);
+		e.HV4DHEXFromNUM(tagHEX);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 

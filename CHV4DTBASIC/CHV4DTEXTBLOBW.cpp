@@ -114,19 +114,15 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DTEXTBLOBW::HV4DGetStringTEXTBLOBW(std::wstring& o) const
+	CHV4DTEXTBLOBW::operator std::wstring () const
 	{
-		o = tagTEXTBLOBW;
-
-		return;
+		return tagTEXTBLOBW;
 
 	}
 
-	void CHV4DTEXTBLOBW::HV4DSubStr(uint64_t const& i, uint64_t const& l, CHV4DTEXTBLOBW& o)
+	CHV4DTEXTBLOBW CHV4DTEXTBLOBW::operator()(uint64_t const& i, uint64_t const& l)
 	{
-		o = tagTEXTBLOBW.substr(i, l);
-
-		return;
+		return tagTEXTBLOBW.substr(i, l);
 
 	}
 

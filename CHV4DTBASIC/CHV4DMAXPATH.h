@@ -29,10 +29,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		bool operator == (CHV4DMAXPATH const&) const;
 
-	public:
-		void HV4DGetStringMAXPATH(std::wstring&) const;
+		operator std::wstring () const;
 
-		void HV4DSubStr(uint64_t const&, uint64_t const&, CHV4DMAXPATH&);
+		std::wstring operator()(uint64_t const&, uint64_t const&) const;
 
 	private:
 		std::wstring tagMAXPATH{ '\0' };
