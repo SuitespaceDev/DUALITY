@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass QueryQIFPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        QueryQIFPage();
+
+    }
+
+}

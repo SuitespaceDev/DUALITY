@@ -28,7 +28,6 @@ namespace winrt::Duality137::implementation
 	{
 		PopulateRecent();
 
-
 		return;
 
 	}

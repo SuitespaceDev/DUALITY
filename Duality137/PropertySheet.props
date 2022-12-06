@@ -9,10 +9,13 @@
 		<Reference Include="C:\Users\rebek\source\DUALITY\x64\Debug\HV4D\HV4D.winmd">
 			<IsWinmdFile>true</IsWinmdFile>
 		</Reference>
-		<Reference Include="C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DSYSCALL\HV4DSYSCALL.winmd">
+		<Reference Include="C:\Users\rebek\source\DUALITY\x64\Debug\HV4DUX\HV4DUX.winmd">
 			<IsWinmdFile>true</IsWinmdFile>
 		</Reference>
-		<Reference Include="C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DABI\HV4DABI.winmd">
+		<Reference Include="C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DTBASIC\HV4DTBASIC.winmd">
+			<IsWinmdFile>true</IsWinmdFile>
+		</Reference>
+		<Reference Include="C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DCONTRACT\HV4DCONTRACT.winmd">
 			<IsWinmdFile>true</IsWinmdFile>
 		</Reference>
 	</ItemGroup>

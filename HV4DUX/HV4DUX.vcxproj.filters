@@ -79,6 +79,15 @@
     <Filter Include="View Model\UserVMTNode">
       <UniqueIdentifier>{349fa646-e527-43a8-92c0-0f25bf9cfd2e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="View Model\UserVMBus">
+      <UniqueIdentifier>{225d270c-b64f-4064-90d8-796635eca8c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMMouseHistory">
+      <UniqueIdentifier>{ea412c35-5fef-49f7-b69b-488429f6a578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Model\UserVMKeyboard">
+      <UniqueIdentifier>{196233fb-29f5-470c-8d82-abcc065b4f0f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -197,5 +206,6 @@
     <Page Include="UserVMTNode.xaml">
       <Filter>View Model\UserVMTNode</Filter>
     </Page>
+    <Page Include="HV4DUX.xaml" />
   </ItemGroup>
 </Project>

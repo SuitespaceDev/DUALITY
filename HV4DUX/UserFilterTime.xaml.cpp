@@ -396,6 +396,19 @@ namespace winrt::HV4DUX::implementation
 
 	void UserFilterTime::FilterByTimeAndOp(WF::IInspectable const& sender, hstring const& e)
 	{
+		if (sender.as<HV4DUX::UserFilter>().Name() == L"MMM")
+		{
+			LoadDD();
+
+		}
+
+		if (sender.as<HV4DUX::UserFilter>().Name() == L"YYYY")
+		{
+			LoadMMM();
+
+			LoadDD();
+
+		}
 
 		return;
 

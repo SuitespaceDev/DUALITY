@@ -54,11 +54,9 @@ namespace winrt::Duality137::implementation
 	{
 		AppFrame = RootFrame();
 
-		MUXC::Page page{winrt::make<winrt::Duality137::L>()};
+		bool ret = AppFrame.Navigate(winrt::xaml_typename<winrt::Duality137::Landing>());
 
-		if(!page) MUX::Application().Exit();
-
-		AppFrame.Content(page);
+		if (!ret) MUX::Application().Exit();
 
 		this->Content(AppFrame);
 	

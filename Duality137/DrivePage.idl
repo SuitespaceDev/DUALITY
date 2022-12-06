@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass DrivePage : Microsoft.UI.Xaml.Controls.Page
+    {
+        DrivePage();
+
+    }
+
+}

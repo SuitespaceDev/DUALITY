@@ -4,6 +4,8 @@
 
 #include "winrt/Windows.UI.Popups.h"
 
+#include "winrt/HV4DUX.h"
+
 #include "Landing.g.h"
 
 namespace WF        = winrt::Windows::Foundation;

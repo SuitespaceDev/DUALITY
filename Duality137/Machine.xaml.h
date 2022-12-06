@@ -1,16 +1,16 @@
 ﻿#pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\HV4DABI\\HV4DABI.lib")
+#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DTBASIC.lib")
 
 #include <functional>
 #include <bitset>
 
 #include "winrt/HV4D.h"
-#include "winrt/HV4DABI.h"
+#include "winrt/HV4DTBASIC.h"
 
-#include "../HV4DABI/CHV4DHVID.h"
-#include "../HV4DABI/CHV4DMAXPATH.h"
-#include "../HV4DABI/CHV4DKEY.h"
+#include "../CHV4DTBASIC/CHV4DHVID.h"
+#include "../CHV4DTBASIC/CHV4DMAXPATH.h"
+#include "../CHV4DTBASIC/CHV4DKEY.h"
 
 #include "Machine.g.h"
 
@@ -19,10 +19,8 @@ namespace WFITT     = winrt::Windows::Foundation::Collections;
 namespace MUX       = winrt::Microsoft::UI::Xaml;
 namespace MUXC      = winrt::Microsoft::UI::Xaml::Controls;
 namespace MUXN      = winrt::Microsoft::UI::Xaml::Navigation;
-namespace HV4D      = winrt::HV4D;
-namespace HV4DABI   = winrt::HV4DABI;
 
-using RETURN = HV4D::HV4DRETURN;
+namespace CTBASIC   = CHV4D::CHV4DTBASIC;
 
 namespace winrt::Duality137::implementation
 {
@@ -37,7 +35,7 @@ namespace winrt::Duality137::implementation
     private:
         void InitializeIndex();
 
-        std::unordered_map<HV4DABI::CHV4DKEY, std::function<bool()>, HV4DABI::CHV4DKEYFN>* Pages;
+        std::unordered_map<CTBASIC::CHV4DKEY, std::function<bool()>, CTBASIC::CHV4DKEYFN>* Pages;
 
     public:
         void MetadataPortalLoaded(WF::IInspectable const&, MUX::RoutedEventArgs const&);

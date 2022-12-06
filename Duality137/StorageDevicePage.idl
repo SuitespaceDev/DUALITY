@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass StorageDevicePage : Microsoft.UI.Xaml.Controls.Page
+    {
+        StorageDevicePage();
+
+    }
+
+}

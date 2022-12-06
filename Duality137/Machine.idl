@@ -1,6 +1,5 @@
 namespace Duality137
 {
-    [bindable]
     [default_interface]
     runtimeclass Machine : Microsoft.UI.Xaml.Controls.Page
     {

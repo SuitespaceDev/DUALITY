@@ -399,17 +399,17 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DHVID::HV4DToGUID(std::wstring const& s, GUID& uid) const
 	{
-		uid.Data1 = wcstoul(std::wstring{ &s[1],  &s[8] }.c_str(), NULL, 16);
-		uid.Data2 = (unsigned short)wcstoul(std::wstring{ &s[10], &s[13] }.c_str(), NULL, 16);
-		uid.Data3 = (unsigned short)wcstoul(std::wstring{ &s[15], &s[18] }.c_str(), NULL, 16);
+		uid.Data1 = wcstoul(std::wstring{ &s[1],  &s[9] }.c_str(), NULL, 16);
+		uid.Data2 = (unsigned short)wcstoul(std::wstring{ &s[10], &s[14] }.c_str(), NULL, 16);
+		uid.Data3 = (unsigned short)wcstoul(std::wstring{ &s[15], &s[19] }.c_str(), NULL, 16);
 		uid.Data4[0] = (char)wcstoul(std::wstring{ s[20], s[21] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[22], s[23] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[25], s[26] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[27], s[28] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[29], s[30] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[31], s[32] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[33], s[34] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[35], s[36] }.c_str(), NULL, 16);
+		uid.Data4[1] = (char)wcstoul(std::wstring{ s[22], s[23] }.c_str(), NULL, 16);
+		uid.Data4[2] = (char)wcstoul(std::wstring{ s[25], s[26] }.c_str(), NULL, 16);
+		uid.Data4[3] = (char)wcstoul(std::wstring{ s[27], s[28] }.c_str(), NULL, 16);
+		uid.Data4[4] = (char)wcstoul(std::wstring{ s[29], s[30] }.c_str(), NULL, 16);
+		uid.Data4[5] = (char)wcstoul(std::wstring{ s[31], s[32] }.c_str(), NULL, 16);
+		uid.Data4[6] = (char)wcstoul(std::wstring{ s[33], s[34] }.c_str(), NULL, 16);
+		uid.Data4[7] = (char)wcstoul(std::wstring{ s[35], s[36] }.c_str(), NULL, 16);
 	}
 
 }

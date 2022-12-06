@@ -23,6 +23,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSdkBootstrapInitialize>false</WindowsAppSdkBootstrapInitialize>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <ItemGroup Label="ProjectConfigurations">
@@ -73,6 +74,24 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup>
     <ClCompile>
@@ -101,24 +120,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AppUserPage.xaml.h">
-      <DependentUpon>AppUserPage.xaml</DependentUpon>
+    <ClInclude Include="ApplicationPage.xaml.h">
+      <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="AsyncUserPage.xaml.h">
-      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+    <ClInclude Include="AsyncPage.xaml.h">
+      <DependentUpon>AsyncPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BitmapUserPage.xaml.h">
-      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+    <ClInclude Include="BitmapPage.xaml.h">
+      <DependentUpon>BitmapPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BlankProject.xaml - Copy.h" />
     <ClInclude Include="BlankProject.xaml.h">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BuildAccountUserPage.xaml.h">
-      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+    <ClInclude Include="CacheMemoryPage.xaml.h">
+      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="DebugUserPage.xaml.h">
-      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+    <ClInclude Include="Level1AccountPage.xaml.h">
+      <DependentUpon>Level1AccountPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="DebugPage.xaml.h">
+      <DependentUpon>DebugPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="Diagnostics.xaml.h">
@@ -132,74 +154,87 @@
     <ClInclude Include="Machine.xaml.h">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BuildProfileUserPage.xaml.h">
-      <DependentUpon>BuildProfileUserPage.xaml</DependentUpon>
+    <ClInclude Include="NetworkAdapterPage.xaml.h">
+      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="BusUserPage.xaml.h">
-      <DependentUpon>BusUserPage.xaml</DependentUpon>
+    <ClInclude Include="OutputDevicePage.xaml.h">
+      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ProcessingCorePage.xaml.h">
+      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="RandomMemoryPage.xaml.h">
+      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UseCaseProfilePage.xaml.h">
+      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="InputOutputBusPage.xaml.h">
+      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="CloudProject.xaml.h">
       <DependentUpon>CloudProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ComputeKernelUserPage.xaml.h">
-      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+    <ClInclude Include="ComputeKernelPage.xaml.h">
+      <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ContextMenuUserPage.xaml.h">
-      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+    <ClInclude Include="ContextMenuPage.xaml.h">
+      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ContractUserPage.xaml.h">
-      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+    <ClInclude Include="ContractPage.xaml.h">
+      <DependentUpon>ContractPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ControlUserPage.xaml.h">
-      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+    <ClInclude Include="UserControlPage.xaml.h">
+      <DependentUpon>UserControlPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="CortexUserPage.xaml.h">
-      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+    <ClInclude Include="PreProcessPage.xaml.h">
+      <DependentUpon>PreProcessPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="DatacenterAccountUserPage.xaml.h">
-      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+    <ClInclude Include="Level2AccountPage.xaml.h">
+      <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="DraftSpaceUserPage.xaml.h">
-      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="DriveUserPage.xaml.h">
-      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+    <ClInclude Include="DrivePage.xaml.h">
+      <DependentUpon>DrivePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="Duality.xaml.h">
       <DependentUpon>Duality.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="Duality23UserPage.xaml.h">
-      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+    <ClInclude Include="DigitalTwinPage.xaml.h">
+      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="FunctionalUserPage.xaml.h">
-      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+    <ClInclude Include="FunctionPage.xaml.h">
+      <DependentUpon>FunctionPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="GitProject.xaml.h">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ImageUserPage.xaml.h">
-      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+    <ClInclude Include="ImagePage.xaml.h">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="IteratorUserPage.xaml.h">
-      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+    <ClInclude Include="IteratorPage.xaml.h">
+      <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="KernelUserPage.xaml.h">
-      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+    <ClInclude Include="KernelPage.xaml.h">
+      <DependentUpon>KernelPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="KeyboardUserPage.xaml.h">
-      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+    <ClInclude Include="InputDevicePage.xaml.h">
+      <DependentUpon>InputDevicePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="LanguageUserPage.xaml.h">
-      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+    <ClInclude Include="PostProcessPage.xaml.h">
+      <DependentUpon>PostProcessPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="MassUserPage.xaml.h">
-      <DependentUpon>MassUserPage.xaml</DependentUpon>
+    <ClInclude Include="TopologyPage.xaml.h">
+      <DependentUpon>TopologyPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="MetricUserPage.xaml.h">
-      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+    <ClInclude Include="MetricPage.xaml.h">
+      <DependentUpon>MetricPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="MouseUserPage.xaml.h">
-      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+    <ClInclude Include="StorageDevicePage.xaml.h">
+      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="OpenProject.xaml.h">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -208,60 +243,60 @@
       <DependentUpon>Operational.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="ParameterUserPage.xaml.h">
-      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+    <ClInclude Include="ParameterPage.xaml.h">
+      <DependentUpon>ParameterPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistBinaryUserPage.xaml.h">
-      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistBinaryPage.xaml.h">
+      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistJSONUserPage.xaml.h">
-      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistJSONPage.xaml.h">
+      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistPostgreSQLUserPage.xaml.h">
-      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistPostgreSQLPage.xaml.h">
+      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistQIFUserPage.xaml.h">
-      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistQIFPage.xaml.h">
+      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistXAMLUserPage.xaml.h">
-      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistXAMLPage.xaml.h">
+      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistXMLUserPage.xaml.h">
-      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+    <ClInclude Include="PersistXMLPage.xaml.h">
+      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PipeUserPage.xaml.h">
-      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+    <ClInclude Include="PipePage.xaml.h">
+      <DependentUpon>PipePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PostgreSQLDBAccountUserPage.xaml.h">
-      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+    <ClInclude Include="Level3AccountPage.xaml.h">
+      <DependentUpon>Level3AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ProjectAccountUserPage.xaml.h">
-      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+    <ClInclude Include="Level4AccountPage.xaml.h">
+      <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryBinaryUserPage.xaml.h">
-      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryBinaryPage.xaml.h">
+      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryJSONUserPage.xaml.h">
-      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryJSONPage.xaml.h">
+      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryPostgreSQLUserPage.xaml.h">
-      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryPostgreSQLPage.xaml.h">
+      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryQIFUserPage.xaml.h">
-      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryQIFPage.xaml.h">
+      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryXAMLUserPage.xaml.h">
-      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryXAMLPage.xaml.h">
+      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryXMLUserPage.xaml.h">
-      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+    <ClInclude Include="QueryXMLPage.xaml.h">
+      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="RootUI.xaml.h">
       <DependentUpon>RootUI.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="RPCUserPage.xaml.h">
-      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+    <ClInclude Include="RPCPage.xaml.h">
+      <DependentUpon>RPCPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="SaveToCloud.xaml.h">
       <DependentUpon>SaveToCloud.xaml</DependentUpon>
@@ -272,118 +307,56 @@
     <ClInclude Include="SaveToPC.xaml.h">
       <DependentUpon>SaveToPC.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="SharedMemUserPage.xaml.h">
-      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+    <ClInclude Include="SharedMemoryPage.xaml.h">
+      <DependentUpon>SharedMemoryPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ShellUserPage.xaml.h">
-      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+    <ClInclude Include="ShellPage.xaml.h">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="TemplateProject.xaml.h">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ThemeUserPage.xaml.h">
-      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+    <ClInclude Include="ResourcePage.xaml.h">
+      <DependentUpon>ResourcePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ToolBarUserPage.xaml.h">
-      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+    <ClInclude Include="ToolBarPage.xaml.h">
+      <DependentUpon>ToolBarPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="USBUserPage.xaml.h">
-      <DependentUpon>USBUserPage.xaml</DependentUpon>
+    <ClInclude Include="AcceleratorPage.xaml.h">
+      <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserBlock.xaml.h">
-      <DependentUpon>UserBlock.xaml</DependentUpon>
+    <ClInclude Include="WidgetPage.xaml.h">
+      <DependentUpon>WidgetPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserCombo.xaml.h">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <ClInclude Include="WindowPage.xaml.h">
+      <DependentUpon>WindowPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserDivider.xaml.h">
-      <DependentUpon>UserDivider.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserEntry.xaml.h">
-      <DependentUpon>UserEntry.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFile.xaml.h">
-      <DependentUpon>UserFile.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilter.xaml.h">
-      <DependentUpon>UserFilter.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilterNew.xaml.h">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilterProcessID.xaml.h">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilterTime.xaml.h">
-      <DependentUpon>UserFilterTime.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilterType.xaml.h">
-      <DependentUpon>UserFilterType.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserMEventDebug.h">
-      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserMSelectable.h">
-      <DependentUpon>UserMSelectable.cpp</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserPassword.xaml.h">
-      <DependentUpon>UserPassword.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMContact.xaml.h">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMContract.xaml.h">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMDebug.xaml.h">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMIterator.xaml.h">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMLog.xaml.h">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMMouse.xaml.h">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMParameter.xaml.h">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMRuntimeClass.xaml.h">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserVMTNode.xaml.h">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="WidgetUserPage.xaml.h">
-      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="WindowUserPage.xaml.h">
-      <DependentUpon>WindowUserPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="XAMLPgUserPage.xaml.h">
-      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+    <ClInclude Include="XamlPgPage.xaml.h">
+      <DependentUpon>XamlPgPage.xaml</DependentUpon>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AppUserPage.xaml.cpp">
-      <DependentUpon>AppUserPage.xaml</DependentUpon>
+    <ClCompile Include="ApplicationPage.xaml.cpp">
+      <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="AsyncUserPage.xaml.cpp">
-      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+    <ClCompile Include="AsyncPage.xaml.cpp">
+      <DependentUpon>AsyncPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BitmapUserPage.xaml.cpp">
-      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+    <ClCompile Include="BitmapPage.xaml.cpp">
+      <DependentUpon>BitmapPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="BlankProject.xaml.cpp">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BuildAccountUserPage.xaml.cpp">
-      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+    <ClCompile Include="CacheMemoryPage.xaml.cpp">
+      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="DebugUserPage.xaml.cpp">
-      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+    <ClCompile Include="Level1AccountPage.xaml.cpp">
+      <DependentUpon>Level1AccountPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="DebugPage.xaml.cpp">
+      <DependentUpon>DebugPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="Diagnostics.xaml.cpp">
@@ -397,74 +370,87 @@
     <ClCompile Include="Machine.xaml.cpp">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BuildProfileUserPage.xaml.cpp">
-      <DependentUpon>BuildProfileUserPage.xaml</DependentUpon>
+    <ClCompile Include="NetworkAdapterPage.xaml.cpp">
+      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="BusUserPage.xaml.cpp">
-      <DependentUpon>BusUserPage.xaml</DependentUpon>
+    <ClCompile Include="OutputDevicePage.xaml.cpp">
+      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ProcessingCorePage.xaml.cpp">
+      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="RandomMemoryPage.xaml.cpp">
+      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UseCaseProfilePage.xaml.cpp">
+      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="InputOutputBusPage.xaml.cpp">
+      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="CloudProject.xaml.cpp">
       <DependentUpon>CloudProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ComputeKernelUserPage.xaml.cpp">
-      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+    <ClCompile Include="ComputeKernelPage.xaml.cpp">
+      <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ContextMenuUserPage.xaml.cpp">
-      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+    <ClCompile Include="ContextMenuPage.xaml.cpp">
+      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ContractUserPage.xaml.cpp">
-      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+    <ClCompile Include="ContractPage.xaml.cpp">
+      <DependentUpon>ContractPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ControlUserPage.xaml.cpp">
-      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+    <ClCompile Include="UserControlPage.xaml.cpp">
+      <DependentUpon>UserControlPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="CortexUserPage.xaml.cpp">
-      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+    <ClCompile Include="PreProcessPage.xaml.cpp">
+      <DependentUpon>PreProcessPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="DatacenterAccountUserPage.xaml.cpp">
-      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+    <ClCompile Include="Level2AccountPage.xaml.cpp">
+      <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="DraftSpaceUserPage.xaml.cpp">
-      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="DriveUserPage.xaml.cpp">
-      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+    <ClCompile Include="DrivePage.xaml.cpp">
+      <DependentUpon>DrivePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Duality.xaml.cpp">
       <DependentUpon>Duality.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="Duality23UserPage.xaml.cpp">
-      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+    <ClCompile Include="DigitalTwinPage.xaml.cpp">
+      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="FunctionalUserPage.xaml.cpp">
-      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+    <ClCompile Include="FunctionPage.xaml.cpp">
+      <DependentUpon>FunctionPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="GitProject.xaml.cpp">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ImageUserPage.xaml.cpp">
-      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+    <ClCompile Include="ImagePage.xaml.cpp">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="IteratorUserPage.xaml.cpp">
-      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+    <ClCompile Include="IteratorPage.xaml.cpp">
+      <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="KernelUserPage.xaml.cpp">
-      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+    <ClCompile Include="KernelPage.xaml.cpp">
+      <DependentUpon>KernelPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="KeyboardUserPage.xaml.cpp">
-      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+    <ClCompile Include="InputDevicePage.xaml.cpp">
+      <DependentUpon>InputDevicePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="LanguageUserPage.xaml.cpp">
-      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+    <ClCompile Include="PostProcessPage.xaml.cpp">
+      <DependentUpon>PostProcessPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="MassUserPage.xaml.cpp">
-      <DependentUpon>MassUserPage.xaml</DependentUpon>
+    <ClCompile Include="TopologyPage.xaml.cpp">
+      <DependentUpon>TopologyPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="MetricUserPage.xaml.cpp">
-      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+    <ClCompile Include="MetricPage.xaml.cpp">
+      <DependentUpon>MetricPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="MouseUserPage.xaml.cpp">
-      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+    <ClCompile Include="StorageDevicePage.xaml.cpp">
+      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="OpenProject.xaml.cpp">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -473,53 +459,53 @@
       <DependentUpon>Operational.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="ParameterUserPage.xaml.cpp">
-      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+    <ClCompile Include="ParameterPage.xaml.cpp">
+      <DependentUpon>ParameterPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistBinaryUserPage.xaml.cpp">
-      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistBinaryPage.xaml.cpp">
+      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistJSONUserPage.xaml.cpp">
-      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistJSONPage.xaml.cpp">
+      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistPostgreSQLUserPage.xaml.cpp">
-      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistPostgreSQLPage.xaml.cpp">
+      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistQIFUserPage.xaml.cpp">
-      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistQIFPage.xaml.cpp">
+      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistXAMLUserPage.xaml.cpp">
-      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistXAMLPage.xaml.cpp">
+      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistXMLUserPage.xaml.cpp">
-      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+    <ClCompile Include="PersistXMLPage.xaml.cpp">
+      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PipeUserPage.xaml.cpp">
-      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+    <ClCompile Include="PipePage.xaml.cpp">
+      <DependentUpon>PipePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PostgreSQLDBAccountUserPage.xaml.cpp">
-      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+    <ClCompile Include="Level3AccountPage.xaml.cpp">
+      <DependentUpon>Level3AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ProjectAccountUserPage.xaml.cpp">
-      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+    <ClCompile Include="Level4AccountPage.xaml.cpp">
+      <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryBinaryUserPage.xaml.cpp">
-      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryBinaryPage.xaml.cpp">
+      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryJSONUserPage.xaml.cpp">
-      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryJSONPage.xaml.cpp">
+      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryPostgreSQLUserPage.xaml.cpp">
-      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryPostgreSQLPage.xaml.cpp">
+      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryQIFUserPage.xaml.cpp">
-      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryQIFPage.xaml.cpp">
+      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryXAMLUserPage.xaml.cpp">
-      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryXAMLPage.xaml.cpp">
+      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryXMLUserPage.xaml.cpp">
-      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+    <ClCompile Include="QueryXMLPage.xaml.cpp">
+      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="RootUI.xaml.cpp">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -528,8 +514,8 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
-    <ClCompile Include="RPCUserPage.xaml.cpp">
-      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+    <ClCompile Include="RPCPage.xaml.cpp">
+      <DependentUpon>RPCPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="SaveToCloud.xaml.cpp">
       <DependentUpon>SaveToCloud.xaml</DependentUpon>
@@ -540,94 +526,32 @@
     <ClCompile Include="SaveToPC.xaml.cpp">
       <DependentUpon>SaveToPC.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="SharedMemUserPage.xaml.cpp">
-      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+    <ClCompile Include="SharedMemoryPage.xaml.cpp">
+      <DependentUpon>SharedMemoryPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ShellUserPage.xaml.cpp">
-      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+    <ClCompile Include="ShellPage.xaml.cpp">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="TemplateProject.xaml.cpp">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ThemeUserPage.xaml.cpp">
-      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+    <ClCompile Include="ResourcePage.xaml.cpp">
+      <DependentUpon>ResourcePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ToolBarUserPage.xaml.cpp">
-      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+    <ClCompile Include="ToolBarPage.xaml.cpp">
+      <DependentUpon>ToolBarPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="USBUserPage.xaml.cpp">
-      <DependentUpon>USBUserPage.xaml</DependentUpon>
+    <ClCompile Include="AcceleratorPage.xaml.cpp">
+      <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserBlock.xaml.cpp">
-      <DependentUpon>UserBlock.xaml</DependentUpon>
+    <ClCompile Include="WidgetPage.xaml.cpp">
+      <DependentUpon>WidgetPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserCombo.xaml.cpp">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <ClCompile Include="WindowPage.xaml.cpp">
+      <DependentUpon>WindowPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserDivider.xaml.cpp">
-      <DependentUpon>UserDivider.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserEntry.xaml.cpp">
-      <DependentUpon>UserEntry.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFile.xaml.cpp">
-      <DependentUpon>UserFile.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilter.xaml.cpp">
-      <DependentUpon>UserFilter.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilterNew.xaml.cpp">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilterProcessID.xaml.cpp">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilterTime.xaml.cpp">
-      <DependentUpon>UserFilterTime.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilterType.xaml.cpp">
-      <DependentUpon>UserFilterType.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserMEventDebug.cpp" />
-    <ClCompile Include="UserMSelectable.cpp" />
-    <ClCompile Include="UserPassword.xaml.cpp">
-      <DependentUpon>UserPassword.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMContact.xaml.cpp">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMContract.xaml.cpp">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMDebug.xaml.cpp">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMIterator.xaml.cpp">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMLog.xaml.cpp">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMMouse.xaml.cpp">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMParameter.xaml.cpp">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMRuntimeClass.xaml.cpp">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserVMTNode.xaml.cpp">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="WidgetUserPage.xaml.cpp">
-      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="WindowUserPage.xaml.cpp">
-      <DependentUpon>WindowUserPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="XAMLPgUserPage.xaml.cpp">
-      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+    <ClCompile Include="XamlPgPage.xaml.cpp">
+      <DependentUpon>XamlPgPage.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
   <!-- 
@@ -643,23 +567,27 @@
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="AppUserPage.idl">
-      <DependentUpon>AppUserPage.xaml</DependentUpon>
+    <Midl Include="ApplicationPage.idl">
+      <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="AsyncUserPage.idl">
-      <DependentUpon>AsyncUserPage.xaml</DependentUpon>
+    <Midl Include="AsyncPage.idl">
+      <DependentUpon>AsyncPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BitmapUserPage.idl">
-      <DependentUpon>BitmapUserPage.xaml</DependentUpon>
+    <Midl Include="BitmapPage.idl">
+      <DependentUpon>BitmapPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="BlankProject.idl">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BuildAccountUserPage.idl">
-      <DependentUpon>BuildAccountUserPage.xaml</DependentUpon>
+    <Midl Include="CacheMemoryPage.idl">
+      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
-    <Midl Include="DebugUserPage.idl">
-      <DependentUpon>DebugUserPage.xaml</DependentUpon>
+    <Midl Include="Level1AccountPage.idl">
+      <DependentUpon>Level1AccountPage.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="DebugPage.idl">
+      <DependentUpon>DebugPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="Diagnostics.idl">
@@ -673,74 +601,87 @@
     <Midl Include="Machine.idl">
       <DependentUpon>Machine.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BuildProfileUserPage.idl">
-      <DependentUpon>BuildProfileUserPage.xaml</DependentUpon>
+    <Midl Include="NetworkAdapterPage.idl">
+      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
-    <Midl Include="BusUserPage.idl">
-      <DependentUpon>BusUserPage.xaml</DependentUpon>
+    <Midl Include="OutputDevicePage.idl">
+      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ProcessingCorePage.idl">
+      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="RandomMemoryPage.idl">
+      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UseCaseProfilePage.idl">
+      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="InputOutputBusPage.idl">
+      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="CloudProject.idl">
       <DependentUpon>CloudProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ComputeKernelUserPage.idl">
-      <DependentUpon>ComputeKernelUserPage.xaml</DependentUpon>
+    <Midl Include="ComputeKernelPage.idl">
+      <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ContextMenuUserPage.idl">
-      <DependentUpon>ContextMenuUserPage.xaml</DependentUpon>
+    <Midl Include="ContextMenuPage.idl">
+      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ContractUserPage.idl">
-      <DependentUpon>ContractUserPage.xaml</DependentUpon>
+    <Midl Include="ContractPage.idl">
+      <DependentUpon>ContractPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ControlUserPage.idl">
-      <DependentUpon>ControlUserPage.xaml</DependentUpon>
+    <Midl Include="UserControlPage.idl">
+      <DependentUpon>UserControlPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="CortexUserPage.idl">
-      <DependentUpon>CortexUserPage.xaml</DependentUpon>
+    <Midl Include="PreProcessPage.idl">
+      <DependentUpon>PreProcessPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="DatacenterAccountUserPage.idl">
-      <DependentUpon>DatacenterAccountUserPage.xaml</DependentUpon>
+    <Midl Include="Level2AccountPage.idl">
+      <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="DraftSpaceUserPage.idl">
-      <DependentUpon>DraftSpaceUserPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="DriveUserPage.idl">
-      <DependentUpon>DriveUserPage.xaml</DependentUpon>
+    <Midl Include="DrivePage.idl">
+      <DependentUpon>DrivePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="Duality.idl">
       <DependentUpon>Duality.xaml</DependentUpon>
     </Midl>
-    <Midl Include="Duality23UserPage.idl">
-      <DependentUpon>Duality23UserPage.xaml</DependentUpon>
+    <Midl Include="DigitalTwinPage.idl">
+      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="FunctionalUserPage.idl">
-      <DependentUpon>FunctionalUserPage.xaml</DependentUpon>
+    <Midl Include="FunctionPage.idl">
+      <DependentUpon>FunctionPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="GitProject.idl">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ImageUserPage.idl">
-      <DependentUpon>ImageUserPage.xaml</DependentUpon>
+    <Midl Include="ImagePage.idl">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="IteratorUserPage.idl">
-      <DependentUpon>IteratorUserPage.xaml</DependentUpon>
+    <Midl Include="IteratorPage.idl">
+      <DependentUpon>IteratorPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="KernelUserPage.idl">
-      <DependentUpon>KernelUserPage.xaml</DependentUpon>
+    <Midl Include="KernelPage.idl">
+      <DependentUpon>KernelPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="KeyboardUserPage.idl">
-      <DependentUpon>KeyboardUserPage.xaml</DependentUpon>
+    <Midl Include="InputDevicePage.idl">
+      <DependentUpon>InputDevicePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="LanguageUserPage.idl">
-      <DependentUpon>LanguageUserPage.xaml</DependentUpon>
+    <Midl Include="PostProcessPage.idl">
+      <DependentUpon>PostProcessPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="MassUserPage.idl">
-      <DependentUpon>MassUserPage.xaml</DependentUpon>
+    <Midl Include="TopologyPage.idl">
+      <DependentUpon>TopologyPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="MetricUserPage.idl">
-      <DependentUpon>MetricUserPage.xaml</DependentUpon>
+    <Midl Include="MetricPage.idl">
+      <DependentUpon>MetricPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="MouseUserPage.idl">
-      <DependentUpon>MouseUserPage.xaml</DependentUpon>
+    <Midl Include="StorageDevicePage.idl">
+      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="OpenProject.idl">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -749,59 +690,59 @@
       <DependentUpon>Operational.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="ParameterUserPage.idl">
-      <DependentUpon>ParameterUserPage.xaml</DependentUpon>
+    <Midl Include="ParameterPage.idl">
+      <DependentUpon>ParameterPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistBinaryUserPage.idl">
-      <DependentUpon>PersistBinaryUserPage.xaml</DependentUpon>
+    <Midl Include="PersistBinaryPage.idl">
+      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistJSONUserPage.idl">
-      <DependentUpon>PersistJSONUserPage.xaml</DependentUpon>
+    <Midl Include="PersistJSONPage.idl">
+      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistPostgreSQLUserPage.idl">
-      <DependentUpon>PersistPostgreSQLUserPage.xaml</DependentUpon>
+    <Midl Include="PersistPostgreSQLPage.idl">
+      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistQIFUserPage.idl">
-      <DependentUpon>PersistQIFUserPage.xaml</DependentUpon>
+    <Midl Include="PersistQIFPage.idl">
+      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistXAMLUserPage.idl">
-      <DependentUpon>PersistXAMLUserPage.xaml</DependentUpon>
+    <Midl Include="PersistXAMLPage.idl">
+      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistXMLUserPage.idl">
-      <DependentUpon>PersistXMLUserPage.xaml</DependentUpon>
+    <Midl Include="PersistXMLPage.idl">
+      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PipeUserPage.idl">
-      <DependentUpon>PipeUserPage.xaml</DependentUpon>
+    <Midl Include="PipePage.idl">
+      <DependentUpon>PipePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PostgreSQLDBAccountUserPage.idl">
-      <DependentUpon>PostgreSQLDBAccountUserPage.xaml</DependentUpon>
+    <Midl Include="Level3AccountPage.idl">
+      <DependentUpon>Level3AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ProjectAccountUserPage.idl">
-      <DependentUpon>ProjectAccountUserPage.xaml</DependentUpon>
+    <Midl Include="Level4AccountPage.idl">
+      <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryBinaryUserPage.idl">
-      <DependentUpon>QueryBinaryUserPage.xaml</DependentUpon>
+    <Midl Include="QueryBinaryPage.idl">
+      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryJSONUserPage.idl">
-      <DependentUpon>QueryJSONUserPage.xaml</DependentUpon>
+    <Midl Include="QueryJSONPage.idl">
+      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryPostgreSQLUserPage.idl">
-      <DependentUpon>QueryPostgreSQLUserPage.xaml</DependentUpon>
+    <Midl Include="QueryPostgreSQLPage.idl">
+      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryQIFUserPage.idl">
-      <DependentUpon>QueryQIFUserPage.xaml</DependentUpon>
+    <Midl Include="QueryQIFPage.idl">
+      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryXAMLUserPage.idl">
-      <DependentUpon>QueryXAMLUserPage.xaml</DependentUpon>
+    <Midl Include="QueryXAMLPage.idl">
+      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryXMLUserPage.idl">
-      <DependentUpon>QueryXMLUserPage.xaml</DependentUpon>
+    <Midl Include="QueryXMLPage.idl">
+      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="RootUI.idl">
       <DependentUpon>RootUI.xaml</DependentUpon>
     </Midl>
-    <Midl Include="RPCUserPage.idl">
-      <DependentUpon>RPCUserPage.xaml</DependentUpon>
+    <Midl Include="RPCPage.idl">
+      <DependentUpon>RPCPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="SaveToCloud.idl">
       <DependentUpon>SaveToCloud.xaml</DependentUpon>
@@ -812,108 +753,45 @@
     <Midl Include="SaveToPC.idl">
       <DependentUpon>SaveToPC.xaml</DependentUpon>
     </Midl>
-    <Midl Include="SharedMemUserPage.idl">
-      <DependentUpon>SharedMemUserPage.xaml</DependentUpon>
+    <Midl Include="SharedMemoryPage.idl">
+      <DependentUpon>SharedMemoryPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ShellUserPage.idl">
-      <DependentUpon>ShellUserPage.xaml</DependentUpon>
+    <Midl Include="ShellPage.idl">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="TemplateProject.idl">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ThemeUserPage.idl">
-      <DependentUpon>ThemeUserPage.xaml</DependentUpon>
+    <Midl Include="ResourcePage.idl">
+      <DependentUpon>ResourcePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ToolBarUserPage.idl">
-      <DependentUpon>ToolBarUserPage.xaml</DependentUpon>
+    <Midl Include="ToolBarPage.idl">
+      <DependentUpon>ToolBarPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="USBUserPage.idl">
-      <DependentUpon>USBUserPage.xaml</DependentUpon>
+    <Midl Include="AcceleratorPage.idl">
+      <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserBlock.idl">
-      <DependentUpon>UserBlock.xaml</DependentUpon>
+    <Midl Include="WidgetPage.idl">
+      <DependentUpon>WidgetPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserCombo.idl">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <Midl Include="WindowPage.idl">
+      <DependentUpon>WindowPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserDivider.idl">
-      <DependentUpon>UserDivider.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserEntry.idl">
-      <DependentUpon>UserEntry.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFile.idl">
-      <DependentUpon>UserFile.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilter.idl">
-      <DependentUpon>UserFilter.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilterNew.idl">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilterProcessID.idl">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilterTime.idl">
-      <DependentUpon>UserFilterTime.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilterType.idl">
-      <DependentUpon>UserFilterType.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserMEventDebug.idl">
-      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
-    </Midl>
-    <Midl Include="UserMSelectable.idl">
-      <DependentUpon>UserMSelectable.cpp</DependentUpon>
-    </Midl>
-    <Midl Include="UserPassword.idl">
-      <DependentUpon>UserPassword.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMContact.idl">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMContract.idl">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMDebug.idl">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMIterator.idl">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMLog.idl">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMMouse.idl">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMParameter.idl">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMRuntimeClass.idl">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserVMTNode.idl">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="WidgetUserPage.idl">
-      <DependentUpon>WidgetUserPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="WindowUserPage.idl">
-      <DependentUpon>WindowUserPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="XAMLPgUserPage.idl">
-      <DependentUpon>XAMLPgUserPage.xaml</DependentUpon>
+    <Midl Include="XamlPgPage.idl">
+      <DependentUpon>XamlPgPage.xaml</DependentUpon>
     </Midl>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="Duality.xaml" />
-    <Page Include="AppUserPage.xaml" />
-    <Page Include="AsyncUserPage.xaml" />
-    <Page Include="BitmapUserPage.xaml" />
+    <Page Include="ApplicationPage.xaml" />
+    <Page Include="AsyncPage.xaml" />
+    <Page Include="BitmapPage.xaml" />
     <Page Include="BlankProject.xaml" />
-    <Page Include="BuildAccountUserPage.xaml" />
-    <Page Include="DebugUserPage.xaml">
+    <Page Include="CacheMemoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Level1AccountPage.xaml" />
+    <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Diagnostics.xaml">
@@ -923,84 +801,74 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Machine.xaml" />
-    <Page Include="BuildProfileUserPage.xaml" />
-    <Page Include="BusUserPage.xaml" />
+    <Page Include="NetworkAdapterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OutputDevicePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProcessingCorePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RandomMemoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UseCaseProfilePage.xaml" />
+    <Page Include="InputOutputBusPage.xaml" />
     <Page Include="CloudProject.xaml" />
-    <Page Include="ComputeKernelUserPage.xaml" />
-    <Page Include="ContextMenuUserPage.xaml" />
-    <Page Include="ContractUserPage.xaml" />
-    <Page Include="ControlUserPage.xaml" />
-    <Page Include="CortexUserPage.xaml" />
-    <Page Include="DatacenterAccountUserPage.xaml" />
-    <Page Include="DraftSpaceUserPage.xaml" />
-    <Page Include="DriveUserPage.xaml" />
+    <Page Include="ComputeKernelPage.xaml" />
+    <Page Include="ContextMenuPage.xaml" />
+    <Page Include="ContractPage.xaml" />
+    <Page Include="UserControlPage.xaml" />
+    <Page Include="PreProcessPage.xaml" />
+    <Page Include="Level2AccountPage.xaml" />
+    <Page Include="DrivePage.xaml" />
     <Page Include="Duality137Buttons.xaml" />
-    <Page Include="Duality137Theme.xaml" />
-    <Page Include="Duality23UserPage.xaml" />
-    <Page Include="FunctionalUserPage.xaml" />
+    <Page Include="DigitalTwinPage.xaml" />
+    <Page Include="FunctionPage.xaml" />
     <Page Include="GitProject.xaml" />
-    <Page Include="ImageUserPage.xaml" />
-    <Page Include="IteratorUserPage.xaml" />
-    <Page Include="KernelUserPage.xaml" />
-    <Page Include="KeyboardUserPage.xaml" />
-    <Page Include="LanguageUserPage.xaml" />
-    <Page Include="MassUserPage.xaml" />
-    <Page Include="MetricUserPage.xaml" />
-    <Page Include="MouseUserPage.xaml" />
+    <Page Include="ImagePage.xaml" />
+    <Page Include="IteratorPage.xaml" />
+    <Page Include="KernelPage.xaml" />
+    <Page Include="InputDevicePage.xaml" />
+    <Page Include="PostProcessPage.xaml" />
+    <Page Include="TopologyPage.xaml" />
+    <Page Include="MetricPage.xaml" />
+    <Page Include="StorageDevicePage.xaml" />
     <Page Include="OpenProject.xaml" />
     <Page Include="Operational.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ParameterUserPage.xaml" />
-    <Page Include="PersistBinaryUserPage.xaml" />
-    <Page Include="PersistJSONUserPage.xaml" />
-    <Page Include="PersistPostgreSQLUserPage.xaml" />
-    <Page Include="PersistQIFUserPage.xaml" />
-    <Page Include="PersistXAMLUserPage.xaml" />
-    <Page Include="PersistXMLUserPage.xaml" />
-    <Page Include="PipeUserPage.xaml" />
-    <Page Include="PostgreSQLDBAccountUserPage.xaml" />
-    <Page Include="ProjectAccountUserPage.xaml" />
-    <Page Include="QueryBinaryUserPage.xaml" />
-    <Page Include="QueryJSONUserPage.xaml" />
-    <Page Include="QueryPostgreSQLUserPage.xaml" />
-    <Page Include="QueryQIFUserPage.xaml" />
-    <Page Include="QueryXAMLUserPage.xaml" />
-    <Page Include="QueryXMLUserPage.xaml" />
+    <Page Include="ParameterPage.xaml" />
+    <Page Include="PersistBinaryPage.xaml" />
+    <Page Include="PersistJSONPage.xaml" />
+    <Page Include="PersistPostgreSQLPage.xaml" />
+    <Page Include="PersistQIFPage.xaml" />
+    <Page Include="PersistXAMLPage.xaml" />
+    <Page Include="PersistXMLPage.xaml" />
+    <Page Include="PipePage.xaml" />
+    <Page Include="Level3AccountPage.xaml" />
+    <Page Include="Level4AccountPage.xaml" />
+    <Page Include="QueryBinaryPage.xaml" />
+    <Page Include="QueryJSONPage.xaml" />
+    <Page Include="QueryPostgreSQLPage.xaml" />
+    <Page Include="QueryQIFPage.xaml" />
+    <Page Include="QueryXAMLPage.xaml" />
+    <Page Include="QueryXMLPage.xaml" />
     <Page Include="RootUI.xaml" />
-    <Page Include="RPCUserPage.xaml" />
+    <Page Include="RPCPage.xaml" />
     <Page Include="SaveToCloud.xaml" />
     <Page Include="SaveToGit.xaml" />
     <Page Include="SaveToPC.xaml" />
-    <Page Include="SharedMemUserPage.xaml" />
-    <Page Include="ShellUserPage.xaml" />
+    <Page Include="SharedMemoryPage.xaml" />
+    <Page Include="ShellPage.xaml" />
     <Page Include="TemplateProject.xaml" />
-    <Page Include="ThemeUserPage.xaml" />
-    <Page Include="ToolBarUserPage.xaml" />
-    <Page Include="USBUserPage.xaml" />
-    <Page Include="UserBlock.xaml" />
-    <Page Include="UserCombo.xaml" />
-    <Page Include="UserDivider.xaml" />
-    <Page Include="UserEntry.xaml" />
-    <Page Include="UserFile.xaml" />
-    <Page Include="UserFilter.xaml" />
-    <Page Include="UserFilterNew.xaml" />
-    <Page Include="UserFilterProcessID.xaml" />
-    <Page Include="UserFilterTime.xaml" />
-    <Page Include="UserFilterType.xaml" />
-    <Page Include="UserPassword.xaml" />
-    <Page Include="UserVMContact.xaml" />
-    <Page Include="UserVMContract.xaml" />
-    <Page Include="UserVMDebug.xaml" />
-    <Page Include="UserVMIterator.xaml" />
-    <Page Include="UserVMLog.xaml" />
-    <Page Include="UserVMMouse.xaml" />
-    <Page Include="UserVMParameter.xaml" />
-    <Page Include="UserVMRuntimeClass.xaml" />
-    <Page Include="UserVMTNode.xaml" />
-    <Page Include="WidgetUserPage.xaml" />
-    <Page Include="WindowUserPage.xaml" />
-    <Page Include="XAMLPgUserPage.xaml" />
+    <Page Include="ResourcePage.xaml" />
+    <Page Include="ToolBarPage.xaml" />
+    <Page Include="AcceleratorPage.xaml" />
+    <Page Include="WidgetPage.xaml" />
+    <Page Include="WindowPage.xaml" />
+    <Page Include="XamlPgPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CreateProcess.txt" />

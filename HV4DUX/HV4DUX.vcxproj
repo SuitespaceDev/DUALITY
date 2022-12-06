@@ -112,6 +112,11 @@
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\HV4DUX.xaml" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"
+xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
     <ClCompile>
@@ -333,6 +338,7 @@
     </Midl>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="HV4DUX.xaml" />
     <Page Include="UserBlock.xaml" />
     <Page Include="UserCombo.xaml" />
     <Page Include="UserDivider.xaml" />

@@ -7,6 +7,10 @@
 
 #include "Landing.xaml.h"
 
+#include "winrt/HV4D.h"
+#include "winrt/HV4DTBASIC.h"
+#include "winrt/HV4DUX.h"
+
 #include "RootUI.g.h"
 
 namespace WF        = winrt::Windows::Foundation;

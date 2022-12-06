@@ -10,7 +10,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUXTheme.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -25,7 +25,6 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="5"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
@@ -33,7 +32,8 @@
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="1"
                 Grid.Column="0" Grid.ColumnSpan="1"
-                Grid.Row="0" Grid.RowSpan="1">
+                Grid.Row="0" Grid.RowSpan="1"
+                Margin="2,2,2,2">
 
                 <TextBlock 
                     Foreground="Black" 
@@ -48,7 +48,8 @@
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="1"
                 Grid.Column="1" Grid.ColumnSpan="1"
-                Grid.Row="0" Grid.RowSpan="1">
+                Grid.Row="0" Grid.RowSpan="1"
+                Margin="2,2,2,2">
 
                 <TextBlock 
                     Foreground="Black"
@@ -62,9 +63,9 @@
             <Border 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="1"
-                Grid.Column="3" Grid.ColumnSpan="1"
+                Grid.Column="2" Grid.ColumnSpan="1"
                 Grid.Row="0" Grid.RowSpan="1"
-                Padding="3,3,3,3">
+                Margin="2,2,2,2">
 
                 <ComboBox 
                     x:Name="FilterListView"

@@ -14,18 +14,18 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///Duality137Theme.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
                 <ResourceDictionary Source="ms-appx:///Duality137Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <ImageBrush x:Key="Landings" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Landings.png"/>
+            <ImageBrush x:Key="RecentProjects" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\RecentProjects.png"/>
             <ImageBrush x:Key="OpenProject" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\OpenProject.png"/>
 
         </ResourceDictionary>
 
     </Page.Resources>
 
-    <Grid x:Name="Root" Background="{StaticResource SplashDuality137}">
+    <Grid x:Name="LandingRoot" Background="{StaticResource SplashDuality137}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -140,7 +140,7 @@
                    Grid.Row="2" Grid.RowSpan="4"/>
 
         <Rectangle x:Name="TitleLandings" 
-                   Fill="{StaticResource Landings}"
+                   Fill="{StaticResource RecentProjects}"
                    Grid.Column="1" Grid.ColumnSpan="6" 
                    Grid.Row="13" Grid.RowSpan="4"/>
 

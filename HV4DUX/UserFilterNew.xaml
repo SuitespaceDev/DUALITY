@@ -10,7 +10,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUXTheme.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -130,7 +130,7 @@
                         VerticalAlignment="Stretch"
                         Padding="3,3,3,3">
                         <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\HV4DUX\Assets\Up.png"/>
+                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Up.png"/>
                         </Button.Background>
                     </Button>
 
@@ -149,7 +149,7 @@
                         VerticalAlignment="Stretch"
                         Padding="3,3,3,3">
                         <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\HV4DUX\Assets\Down.png"/>
+                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Down.png"/>
                         </Button.Background>
                     </Button>
 

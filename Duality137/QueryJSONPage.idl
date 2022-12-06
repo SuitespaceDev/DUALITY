@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass QueryJSONPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        QueryJSONPage();
+
+    }
+
+}

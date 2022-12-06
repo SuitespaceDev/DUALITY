@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass FunctionPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        FunctionPage();
+
+    }
+
+}
