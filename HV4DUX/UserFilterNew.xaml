@@ -23,139 +23,132 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="6*"/>
-                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="262"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="16"/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
             <Border 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="1"
                 Grid.Column="0" Grid.ColumnSpan="1"
-                Grid.Row="0" Grid.RowSpan="1"
+                Grid.Row="0" Grid.RowSpan="2"
                 Margin="2,2,2,2">
 
                 <TextBlock 
                     Foreground="Black" 
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
-                    FontSize="14"
+                    FontSize="12"
                     Text="{x:Bind Label}"/>
 
             </Border>
 
-            <Grid Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="32"/>
-                    <ColumnDefinition Width="32"/>
-                    <ColumnDefinition Width="20"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="1" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="2"
+                Margin="2,2,2,2">
 
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="1"
-                    Grid.Column="0" Grid.ColumnSpan="1"
-                    Grid.Row="0" Grid.RowSpan="2"
-                    Margin="2,2,2,2">
+                <TextBlock 
+                    Foreground="Black"
+                    Padding="3,3,3,3"                           
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Text="{x:Bind Value}"/>
 
-                    <TextBlock 
-                        Foreground="Black"
-                        Padding="3,3,3,3"                           
-                        FontWeight="Medium"
-                        FontSize="14"
-                        Text="{x:Bind Value}"/>
+            </Border>
 
-                </Border>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="2" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="2"
+                Margin="2,2,2,2">
 
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="1"
-                    Grid.Column="1" Grid.ColumnSpan="1"
-                    Grid.Row="0" Grid.RowSpan="2"
-                    Margin="2,2,2,2">
+                <Button 
+                    Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"  
+                    Padding="3,3,3,3"                
+                    FontFamily="Segoe MDL2 Assets" >
 
-                    <Button 
-                        Foreground="Black"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"  
-                        Padding="3,3,3,3"                
-                        FontFamily="Segoe MDL2 Assets" >
+                    <FontIcon
+                        FontSize="12"
+                        FontFamily="Segoe MDL2 Assets" 
+                        Glyph="&#xE7C3;"/>
 
-                        <FontIcon 
-                            FontSize="12"
-                            FontFamily="Segoe MDL2 Assets" 
-                            Glyph="&#xE7C3;"/>
+                </Button>
 
-                    </Button>
+            </Border>
 
-                </Border>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="3" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="2"
+                Margin="2,2,2,2">
 
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="1"
-                    Grid.Column="2" Grid.ColumnSpan="1"
-                    Grid.Row="0" Grid.RowSpan="2"
-                    Margin="2,2,2,2">
+                <Button 
+                    Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Padding="3,3,3,3"        
+                    FontFamily="Segoe MDL2 Assets" >
 
-                    <Button 
-                        Foreground="Black"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Padding="3,3,3,3"        
-                        FontFamily="Segoe MDL2 Assets" >
+                    <FontIcon 
+                        FontSize="12"
+                        FontFamily="Segoe MDL2 Assets" 
+                        Glyph="&#xE74D;"/>
 
-                        <FontIcon 
-                            FontSize="12"
-                            FontFamily="Segoe MDL2 Assets" 
-                            Glyph="&#xE74D;"/>
+                </Button>
 
-                    </Button>
+            </Border>
 
-                </Border>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="4" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1"
+                Margin="2,2,2,2">
 
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="1"
-                    Grid.Column="3" Grid.ColumnSpan="1"
-                    Grid.Row="0" Grid.RowSpan="1"
-                    Margin="2,2,2,2">
+                <Button 
+                    Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Padding="3,3,3,3">
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Up.png"/>
+                    </Button.Background>
+                </Button>
 
-                    <Button 
-                        Foreground="Black"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Padding="3,3,3,3">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Up.png"/>
-                        </Button.Background>
-                    </Button>
+            </Border>
 
-                </Border>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="4" Grid.ColumnSpan="1"
+                Grid.Row="1" Grid.RowSpan="1"
+                Margin="2,2,2,2">
 
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="1"
-                    Grid.Column="3" Grid.ColumnSpan="1"
-                    Grid.Row="1" Grid.RowSpan="1"
-                    Margin="2,2,2,2">
+                <Button 
+                    Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Padding="3,3,3,3">
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Down.png"/>
+                    </Button.Background>
+                </Button>
 
-                    <Button 
-                        Foreground="Black"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Padding="3,3,3,3">
-                        <Button.Background>
-                            <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Down.png"/>
-                        </Button.Background>
-                    </Button>
-
-                </Border>
-
-            </Grid>
+            </Border>
 
         </Grid>
 

@@ -1,0 +1,10 @@
+namespace HV4DUX
+{
+    [default_interface]
+    runtimeclass TableProfile : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableProfile();
+
+    }
+
+}

@@ -23,7 +23,7 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="IMAGE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="IMAGE NAME"/>
+            <HV4DUX:UserIterableList Label="IMAGE NAME"/>
             <HV4DUX:UserBlock Label="IMAGE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="IMAGE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="IMAGE SAVED DATE" Value="11/11/2022"/>

@@ -23,8 +23,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="BUILD HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="BUILD MMM" Editable="True"/>
-            <HV4DUX:UserCombo Label="BUILD NAME" Editable="True"/>
+            <HV4DUX:UserIterableList Label="BUILD MMM" Editable="True"/>
+            <HV4DUX:UserIterableList Label="BUILD NAME" Editable="True"/>
             <HV4DUX:UserBlock Label="BUILD CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="BUILD CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="BUILD SAVED DATE" Value="11/11/2022"/>
@@ -35,8 +35,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserFilterNew Label="PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="PROFILE MMM" Editable="True"/>
-            <HV4DUX:UserCombo Label="PROFILE NAME" Editable="True"/>
+            <HV4DUX:UserIterableList Label="PROFILE MMM" Editable="True"/>
+            <HV4DUX:UserIterableList Label="PROFILE NAME" Editable="True"/>
             <HV4DUX:UserBlock Label="PROFILE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="PROFILE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="PROFILE SAVED DATE" Value="11/11/2022"/>

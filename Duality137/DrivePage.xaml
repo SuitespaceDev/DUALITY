@@ -23,7 +23,7 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="PARTITION HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="PARTITION NAME"/>
+            <HV4DUX:UserIterableList Label="PARTITION NAME"/>
             <HV4DUX:UserBlock Label="PARTITION CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="PARTITION CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="PARTITION SAVED DATE" Value="11/11/2022"/>

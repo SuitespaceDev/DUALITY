@@ -23,8 +23,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="DEBUG PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="DEBUG PROFILE MMM"/>
-            <HV4DUX:UserCombo Label="DEBUG PROFILE NAME"/>
+            <HV4DUX:UserIterableList Label="DEBUG PROFILE MMM"/>
+            <HV4DUX:UserIterableList Label="DEBUG PROFILE NAME"/>
             <HV4DUX:UserBlock Label="DEBUG PROFILE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="DEBUG PROFILE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="DEBUG PROFILE SAVED DATE" Value="11/11/2022"/>
@@ -34,7 +34,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMDebug/>
+            <HV4DUX:TableDebug/>
 
             <HV4DUX:UserDivider/>
 

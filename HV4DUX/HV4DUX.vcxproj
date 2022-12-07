@@ -129,11 +129,15 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="TableProfile.xaml.h">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
       <DependentUpon>UserBlock.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserCombo.xaml.h">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <ClInclude Include="UserIterableList.xaml.h">
+      <DependentUpon>UserIterableList.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="UserDivider.xaml.h">
       <DependentUpon>UserDivider.xaml</DependentUpon>
@@ -162,38 +166,42 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     <ClInclude Include="UserMEventDebug.h">
       <DependentUpon>UserMEventDebug.cpp</DependentUpon>
     </ClInclude>
+    <ClInclude Include="UserMMM.xaml.h">
+      <DependentUpon>UserMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserMSelectable.h">
       <DependentUpon>UserMSelectable.cpp</DependentUpon>
     </ClInclude>
     <ClInclude Include="UserPassword.xaml.h">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMContact.xaml.h">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    <ClInclude Include="TableContact.xaml.h">
+      <DependentUpon>TableContact.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMContract.xaml.h">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    <ClInclude Include="TableContract.xaml.h">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMDebug.xaml.h">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    <ClInclude Include="TableDebug.xaml.h">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMIterator.xaml.h">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    <ClInclude Include="TableIterator.xaml.h">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMLog.xaml.h">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    <ClInclude Include="TableLog.xaml.h">
+      <DependentUpon>TableLog.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMMouse.xaml.h">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    <ClInclude Include="TableMouse.xaml.h">
+      <DependentUpon>TableMouse.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMParameter.xaml.h">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    <ClInclude Include="TableParameter.xaml.h">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMRuntimeClass.xaml.h">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    <ClInclude Include="TableRuntimeClass.xaml.h">
+      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserVMTNode.xaml.h">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    <ClInclude Include="TableTNode.xaml.h">
+      <DependentUpon>TableTNode.xaml</DependentUpon>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -201,11 +209,15 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="TableProfile.xaml.cpp">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
       <DependentUpon>UserBlock.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserCombo.xaml.cpp">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <ClCompile Include="UserIterableList.xaml.cpp">
+      <DependentUpon>UserIterableList.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="UserDivider.xaml.cpp">
       <DependentUpon>UserDivider.xaml</DependentUpon>
@@ -232,36 +244,40 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="UserMEventDebug.cpp" />
+    <ClCompile Include="UserMMM.xaml.cpp">
+      <DependentUpon>UserMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserMSelectable.cpp" />
     <ClCompile Include="UserPassword.xaml.cpp">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMContact.xaml.cpp">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    <ClCompile Include="TableContact.xaml.cpp">
+      <DependentUpon>TableContact.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMContract.xaml.cpp">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    <ClCompile Include="TableContract.xaml.cpp">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMDebug.xaml.cpp">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    <ClCompile Include="TableDebug.xaml.cpp">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMIterator.xaml.cpp">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    <ClCompile Include="TableIterator.xaml.cpp">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMLog.xaml.cpp">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    <ClCompile Include="TableLog.xaml.cpp">
+      <DependentUpon>TableLog.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMMouse.xaml.cpp">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    <ClCompile Include="TableMouse.xaml.cpp">
+      <DependentUpon>TableMouse.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMParameter.xaml.cpp">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    <ClCompile Include="TableParameter.xaml.cpp">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMRuntimeClass.xaml.cpp">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    <ClCompile Include="TableRuntimeClass.xaml.cpp">
+      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserVMTNode.xaml.cpp">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    <ClCompile Include="TableTNode.xaml.cpp">
+      <DependentUpon>TableTNode.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -270,11 +286,15 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="TableProfile.idl">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserBlock.idl">
       <DependentUpon>UserBlock.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserCombo.idl">
-      <DependentUpon>UserCombo.xaml</DependentUpon>
+    <Midl Include="UserIterableList.idl">
+      <DependentUpon>UserIterableList.xaml</DependentUpon>
     </Midl>
     <Midl Include="UserDivider.idl">
       <DependentUpon>UserDivider.xaml</DependentUpon>
@@ -303,44 +323,51 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     <Midl Include="UserMEventDebug.idl">
       <DependentUpon>UserMEventDebug.cpp</DependentUpon>
     </Midl>
+    <Midl Include="UserMMM.idl">
+      <DependentUpon>UserMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserMSelectable.idl">
       <DependentUpon>UserMSelectable.cpp</DependentUpon>
     </Midl>
     <Midl Include="UserPassword.idl">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMContact.idl">
-      <DependentUpon>UserVMContact.xaml</DependentUpon>
+    <Midl Include="TableContact.idl">
+      <DependentUpon>TableContact.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMContract.idl">
-      <DependentUpon>UserVMContract.xaml</DependentUpon>
+    <Midl Include="TableContract.idl">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMDebug.idl">
-      <DependentUpon>UserVMDebug.xaml</DependentUpon>
+    <Midl Include="TableDebug.idl">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMIterator.idl">
-      <DependentUpon>UserVMIterator.xaml</DependentUpon>
+    <Midl Include="TableIterator.idl">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMLog.idl">
-      <DependentUpon>UserVMLog.xaml</DependentUpon>
+    <Midl Include="TableLog.idl">
+      <DependentUpon>TableLog.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMMouse.idl">
-      <DependentUpon>UserVMMouse.xaml</DependentUpon>
+    <Midl Include="TableMouse.idl">
+      <DependentUpon>TableMouse.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMParameter.idl">
-      <DependentUpon>UserVMParameter.xaml</DependentUpon>
+    <Midl Include="TableParameter.idl">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMRuntimeClass.idl">
-      <DependentUpon>UserVMRuntimeClass.xaml</DependentUpon>
+    <Midl Include="TableRuntimeClass.idl">
+      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserVMTNode.idl">
-      <DependentUpon>UserVMTNode.xaml</DependentUpon>
+    <Midl Include="TableTNode.idl">
+      <DependentUpon>TableTNode.xaml</DependentUpon>
     </Midl>
   </ItemGroup>
   <ItemGroup>
     <Page Include="HV4DUX.xaml" />
+    <Page Include="TableProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserBlock.xaml" />
-    <Page Include="UserCombo.xaml" />
+    <Page Include="UserIterableList.xaml" />
     <Page Include="UserDivider.xaml" />
     <Page Include="UserEntry.xaml" />
     <Page Include="UserFile.xaml" />
@@ -349,16 +376,19 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     <Page Include="UserFilterProcessID.xaml" />
     <Page Include="UserFilterTime.xaml" />
     <Page Include="UserFilterType.xaml" />
+    <Page Include="UserMMM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserPassword.xaml" />
-    <Page Include="UserVMContact.xaml" />
-    <Page Include="UserVMContract.xaml" />
-    <Page Include="UserVMDebug.xaml" />
-    <Page Include="UserVMIterator.xaml" />
-    <Page Include="UserVMLog.xaml" />
-    <Page Include="UserVMMouse.xaml" />
-    <Page Include="UserVMParameter.xaml" />
-    <Page Include="UserVMRuntimeClass.xaml" />
-    <Page Include="UserVMTNode.xaml" />
+    <Page Include="TableContact.xaml" />
+    <Page Include="TableContract.xaml" />
+    <Page Include="TableDebug.xaml" />
+    <Page Include="TableIterator.xaml" />
+    <Page Include="TableLog.xaml" />
+    <Page Include="TableMouse.xaml" />
+    <Page Include="TableParameter.xaml" />
+    <Page Include="TableRuntimeClass.xaml" />
+    <Page Include="TableTNode.xaml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -148,7 +148,7 @@ namespace winrt::Duality137::implementation
 			{ {winrt::guid{0x1FB6C794, 0xC781, 0x436A, {0x8B, 0xD6, 0xC7, 0xE3, 0x04, 0x9C, 0x44, 0x91}}   ,L"OutputDevicePage"         }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::OutputDevicePage>()); } } },
 			{ {winrt::guid{0x19E262AB, 0xC56E, 0x47A7, {0xAA, 0xE9, 0xA9, 0x45, 0x9F, 0x47, 0x26, 0xBF}}   ,L"RandomMemoryPage"         }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::RandomMemoryPage>()); } } },
 			{ {winrt::guid{0x7242F8AA, 0xCA51, 0x4BE4, {0xA6, 0xA9, 0x08, 0x79, 0xDC, 0x5A, 0x3A, 0x80}}   ,L"CacheMemoryPage"          }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::CacheMemoryPage>()); } } },
-			{ {winrt::guid{0x36E17529, 0x39A7, 0x4AEC, {0x9E, 0xF9, 0x1C, 0xAF, 0x31, 0x88, 0xB5, 0x6A}}   ,L"ProcessingCorePage"       }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ProcessingCorePage>()); } } },
+			{ {winrt::guid{0x36E17529, 0x39A7, 0x4AEC, {0x9E, 0xF9, 0x1C, 0xAF, 0x31, 0x88, 0xB5, 0x6A}}   ,L"ProcessorCorePage"       }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ProcessingCorePage>()); } } },
 			{ {winrt::guid{0x1106C674, 0xFBBE, 0x4342, {0x82, 0xBB, 0x18, 0xC0, 0xDD, 0x5C, 0xC2, 0x1D}}   ,L"LibraryPage"              }, std::function<bool()>{ [this]() { return true; } } },
 			{ {winrt::guid{0x10F0039B, 0x38CC, 0x4E11, {0xAF, 0x68, 0xC6, 0xCD, 0x8B, 0x23, 0xF8, 0x96}}   ,L"ParameterPage"            }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ParameterPage>()); } } },
 			{ {winrt::guid{0x2729C26F, 0x3A03, 0x477A, {0x82, 0x56, 0x89, 0xDF, 0x65, 0x5F, 0x69, 0x5A}}   ,L"IteratorPage"             }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::IteratorPage>()); } } },
@@ -172,7 +172,7 @@ namespace winrt::Duality137::implementation
 			{ {winrt::guid{0x41BB9503, 0x037B, 0x404B, {0x86, 0xBF, 0xF5, 0x21, 0x77, 0x33, 0x43, 0xAA}}   ,L"AsyncPage"                }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::AsyncPage>()); } } },
 			{ {winrt::guid{0xDF0AF07C, 0xF15B, 0x4574, {0xAF, 0x66, 0x8B, 0x0D, 0xD6, 0xC8, 0x89, 0x1A}}   ,L"RPCPage"                  }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::RPCPage>()); } } },
 			{ {winrt::guid{0xB34BD3DB, 0x6250, 0x487A, {0xA1, 0x1B, 0x16, 0x0F, 0xA5, 0xB0, 0x9F, 0xA3}}   ,L"PipePage"                 }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::PipePage>()); } } },
-			{ {winrt::guid{0xAD99D754, 0x4A6C, 0x422D, {0xB4, 0xFC, 0x71, 0x64, 0x91, 0x6C, 0xE3, 0xED}}   ,L"SharedMemoryPage"         }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::SharedMemoryPage>()); } } } };
+			{ {winrt::guid{0xAD99D754, 0x4A6C, 0x422D, {0xB4, 0xFC, 0x71, 0x64, 0x91, 0x6C, 0xE3, 0xED}}   ,L"SharedMemPage"         }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::SharedMemoryPage>()); } } } };
 
 	}
 

@@ -23,8 +23,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="QUERY MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="QUERY MODULE MMM"/>
-            <HV4DUX:UserCombo Label="QUERY MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="QUERY MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="QUERY MODULE NAME"/>
             <HV4DUX:UserBlock Label="QUERY MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="QUERY MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="QUERY MODULE SAVED DATE" Value="11/11/2022"/>
@@ -35,8 +35,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="BIND MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="BIND MODULE MMM"/>
-            <HV4DUX:UserCombo Label="BIND MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="BIND MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="BIND MODULE NAME"/>
             <HV4DUX:UserBlock Label="BIND MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="BIND MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="BIND MODULE SAVED DATE" Value="11/11/2022"/>
@@ -47,8 +47,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="TREE MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="TREE MODULE MMM"/>
-            <HV4DUX:UserCombo Label="TREE MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="TREE MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="TREE MODULE NAME"/>
             <HV4DUX:UserBlock Label="TREE MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="TREE MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="TREE MODULE SAVED DATE" Value="11/11/2022"/>
@@ -59,8 +59,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="STREAM MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="STREAM MODULE MMM"/>
-            <HV4DUX:UserCombo Label="STREAM MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="STREAM MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="STREAM MODULE NAME"/>
             <HV4DUX:UserBlock Label="STREAM MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="STREAM MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="STREAM MODULE SAVED DATE" Value="11/11/2022"/>
@@ -71,8 +71,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="DEBUG MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="DEBUG MODULE MMM"/>
-            <HV4DUX:UserCombo Label="DEBUG MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="DEBUG MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="DEBUG MODULE NAME"/>
             <HV4DUX:UserBlock Label="DEBUG MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="DEBUG MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="DEBUG MODULE SAVED DATE" Value="11/11/2022"/>
@@ -83,8 +83,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="METRIC MODULE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="METRIC MODULE MMM"/>
-            <HV4DUX:UserCombo Label="METRIC MODULE NAME"/>
+            <HV4DUX:UserIterableList Label="METRIC MODULE MMM"/>
+            <HV4DUX:UserIterableList Label="METRIC MODULE NAME"/>
             <HV4DUX:UserBlock Label="METRIC MODULE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="METRIC MODULE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="METRIC MODULE SAVED DATE" Value="11/11/2022"/>

@@ -22,7 +22,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMTNode 
+            <HV4DUX:TableTNode 
                 LabelHVID="LEVEL 1 ACCOUNT HVID"
                 LabelMMM="LEVEL 1 ACCOUNT MMM"
                 LabelName="LEVEL 1 ACCOUNT NAME" 
@@ -40,7 +40,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMContact
+            <HV4DUX:TableContact
                 LabelUserName="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 

@@ -22,18 +22,18 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserCombo Label="Full Screen"/>
-            <HV4DUX:UserCombo Label="Resolution"/>
-            <HV4DUX:UserCombo Label="Refresh Rate"/>
-            <HV4DUX:UserCombo Label="UI Scale (%)"/>
-            <HV4DUX:UserCombo Label="Anti Aliasing"/>
+            <HV4DUX:UserIterableList Label="Full Screen"/>
+            <HV4DUX:UserIterableList Label="Resolution"/>
+            <HV4DUX:UserIterableList Label="Refresh Rate"/>
+            <HV4DUX:UserIterableList Label="UI Scale (%)"/>
+            <HV4DUX:UserIterableList Label="Anti Aliasing"/>
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserCombo Label="Theme"/>
-            <HV4DUX:UserCombo Label="Font"/>
-            <HV4DUX:UserCombo Label="Font Size"/>
-            <HV4DUX:UserCombo Label="Font Weight"/>
+            <HV4DUX:UserIterableList Label="Theme"/>
+            <HV4DUX:UserIterableList Label="Font"/>
+            <HV4DUX:UserIterableList Label="Font Size"/>
+            <HV4DUX:UserIterableList Label="Font Weight"/>
 
             <HV4DUX:UserDivider/>
 

@@ -22,7 +22,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMTNode 
+            <HV4DUX:TableTNode 
                 LabelHVID="APPLICATION HVID"
                 LabelMMM="APPLICATION MMM"
                 LabelName="APPLICATION NAME" 
@@ -36,17 +36,7 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="COMPANY" Value=". . ."/>
-            <HV4DUX:UserVMContact
-                LabelUserName="CHIEF PROJECT MANAGER"
-                LabelAddressOne="ADDRESS ONE"
-                LabelAddressTwo="ADDRESS TWO" 
-                LabelCity="CITY"
-                LabelRegion="REGION"
-                LabelEMail="EMAIL"
-                LabelPrimaryPhone="PRIMARY NUMBER"
-                LabelSecondaryPhone="SECONDARY NUMBER"/>
-
-
+            
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="Executable Path" Value=". . ."/>

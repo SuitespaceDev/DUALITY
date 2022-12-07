@@ -22,7 +22,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMTNode 
+            <HV4DUX:TableTNode 
                 LabelHVID="DATACENTER ACCOUNT HVID"
                 LabelMMM="DATACENTER ACCOUNT MMM"
                 LabelName="DATACENTER ACCOUNT NAME" 
@@ -44,7 +44,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMContact
+            <HV4DUX:TableContact
                 LabelUserName="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 

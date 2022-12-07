@@ -1,0 +1,11 @@
+namespace HV4DUX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableContract : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableContract();
+
+    }
+
+}

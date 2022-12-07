@@ -22,7 +22,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMTNode 
+            <HV4DUX:TableTNode 
                 LabelHVID="DB ADMINISTRATOR ACCOUNT HVID"
                 LabelMMM="DB ADMINISTRATOR ACCOUNT MMM"
                 LabelName="DB ADMINISTRATOR ACCOUNT NAME" 
@@ -48,7 +48,7 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserVMContact
+            <HV4DUX:TableContact
                 LabelUserName="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 

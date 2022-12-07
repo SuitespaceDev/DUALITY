@@ -23,8 +23,8 @@
             <HV4DUX:UserDivider/>
 
             <HV4DUX:UserBlock Label="METRIC PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserCombo Label="METRIC PROFILE MMM"/>
-            <HV4DUX:UserCombo Label="METRIC PROFILE NAME"/>
+            <HV4DUX:UserIterableList Label="METRIC PROFILE MMM"/>
+            <HV4DUX:UserIterableList Label="METRIC PROFILE NAME"/>
             <HV4DUX:UserBlock Label="METRIC PROFILE CREATED DATE" Value="11/11/2022"/>
             <HV4DUX:UserBlock Label="METRIC PROFILE CREATED TIME" Value="17:04"/>
             <HV4DUX:UserBlock Label="METRIC PROFILE SAVED DATE" Value="11/11/2022"/>

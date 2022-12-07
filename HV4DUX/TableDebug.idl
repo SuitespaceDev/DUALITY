@@ -1,0 +1,18 @@
+namespace HV4DUX
+{
+    [bindable]
+    runtimeclass TableDebug : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableDebug();
+
+        String LabelHVID;
+
+        String ValueHVID;
+
+        String LabelType;
+
+        String ValueType;
+
+    }
+
+}
