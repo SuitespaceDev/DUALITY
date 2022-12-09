@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="HV4DUX.TableAccountHPC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DUX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserBlock
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="HOST/ADDRESS" 
+            Value=". . ."/>
+
+        <local:UserBlock
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="ROLE" 
+            Value=". . ."/>
+
+        <local:UserBlock
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="PORT" 
+            Value=". . ."/>
+
+        <local:UserBlock
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="SERVICE" 
+            Value=". . ."/>
+
+        <local:UserBlock
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="SSL MODE" 
+            Value=". . ."/>
+
+        <local:UserFile
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="SSL CLIENT CERTIFICATE" 
+            Value=". . ."/>
+
+        <local:UserFile
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="SSL CLIENT KEY" 
+            Value=". . ."/>
+
+        <local:UserFile
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="SSL ROOT CERTIFICATE" 
+            Value=". . ."/>
+
+    </Grid>
+
+</Page>

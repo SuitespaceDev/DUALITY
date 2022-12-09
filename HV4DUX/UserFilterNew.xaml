@@ -23,10 +23,10 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="262"/>
-                <ColumnDefinition Width="40"/>
-                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="32"/>
+                <ColumnDefinition Width="32"/>
                 <ColumnDefinition Width="16"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>

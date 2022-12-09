@@ -129,12 +129,36 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="TableProfile.xaml.h">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <ClInclude Include="TableAccount.xaml.h">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableAccountDB.xaml.h">
+      <DependentUpon>TableAccountDB.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableAccountDC.xaml.h">
+      <DependentUpon>TableAccountDC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableAccountHPC.xaml.h">
+      <DependentUpon>TableAccountHPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableIndex.xaml.h">
+      <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserIPv4.xaml.h">
+      <DependentUpon>UserIPv4.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserIPv6.xaml.h">
+      <DependentUpon>UserIPv6.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserIterableList.xaml.h">
       <DependentUpon>UserIterableList.xaml</DependentUpon>
@@ -153,9 +177,6 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     </ClInclude>
     <ClInclude Include="UserFilterNew.xaml.h">
       <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="UserFilterProcessID.xaml.h">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="UserFilterTime.xaml.h">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -209,12 +230,36 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
-    <ClCompile Include="TableProfile.xaml.cpp">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <ClCompile Include="TableAccount.xaml.cpp">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableAccountDB.xaml.cpp">
+      <DependentUpon>TableAccountDB.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableAccountDC.xaml.cpp">
+      <DependentUpon>TableAccountDC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableAccountHPC.xaml.cpp">
+      <DependentUpon>TableAccountHPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableIndex.xaml.cpp">
+      <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserIPv4.xaml.cpp">
+      <DependentUpon>UserIPv4.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserIPv6.xaml.cpp">
+      <DependentUpon>UserIPv6.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserIterableList.xaml.cpp">
       <DependentUpon>UserIterableList.xaml</DependentUpon>
@@ -233,9 +278,6 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     </ClCompile>
     <ClCompile Include="UserFilterNew.xaml.cpp">
       <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="UserFilterProcessID.xaml.cpp">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="UserFilterTime.xaml.cpp">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -286,12 +328,36 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="TableProfile.idl">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <Midl Include="TableAccount.idl">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableAccountDB.idl">
+      <DependentUpon>TableAccountDB.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableAccountDC.idl">
+      <DependentUpon>TableAccountDC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableAccountHPC.idl">
+      <DependentUpon>TableAccountHPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableIndex.idl">
+      <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserBlock.idl">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserIPv4.idl">
+      <DependentUpon>UserIPv4.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserIPv6.idl">
+      <DependentUpon>UserIPv6.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserIterableList.idl">
       <DependentUpon>UserIterableList.xaml</DependentUpon>
@@ -310,9 +376,6 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
     </Midl>
     <Midl Include="UserFilterNew.idl">
       <DependentUpon>UserFilterNew.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="UserFilterProcessID.idl">
-      <DependentUpon>UserFilterProcessID.xaml</DependentUpon>
     </Midl>
     <Midl Include="UserFilterTime.idl">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -363,17 +426,34 @@ xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DUX\HV4DUX\*.xbf" "C:\Users
   </ItemGroup>
   <ItemGroup>
     <Page Include="HV4DUX.xaml" />
-    <Page Include="TableProfile.xaml">
+    <Page Include="TableAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableAccountDB.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableAccountDC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableAccountHPC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableIndex.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserBlock.xaml" />
+    <Page Include="UserIPv4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserIPv6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserIterableList.xaml" />
     <Page Include="UserDivider.xaml" />
     <Page Include="UserEntry.xaml" />
     <Page Include="UserFile.xaml" />
     <Page Include="UserFilter.xaml" />
     <Page Include="UserFilterNew.xaml" />
-    <Page Include="UserFilterProcessID.xaml" />
     <Page Include="UserFilterTime.xaml" />
     <Page Include="UserFilterType.xaml" />
     <Page Include="UserMMM.xaml">

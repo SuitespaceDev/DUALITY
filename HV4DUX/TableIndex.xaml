@@ -1,5 +1,5 @@
 ﻿<UserControl
-    x:Class="HV4DUX.TableProfile"
+    x:Class="HV4DUX.TableIndex"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HV4DUX"
@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="6,6,6,6">
+    <Grid 
+        Margin="6,6,6,6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -16,29 +17,44 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserFilterNew
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="USE CASE PROFILE HVID" 
-            Value="{}{B141BBB2-64F4-4BB0-BB3F-78BC91A32CF8}"/>
+            Label="{x:Bind LabelIndexHVID}"
+            Value="{x:Bind ValueIndexHVID}"/>
 
         <local:UserMMM
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="USE CASE PROFILE MMM"
-            ValueMIL="1"
-            ValueMAJ="000"
-            ValueMIN="001"/>
+            Label="{x:Bind LabelIndexMMM}"
+            ValueMIL="{x:Bind ValueIndexMIL}"
+            ValueMAJ="{x:Bind ValueIndexMAJ}"
+            ValueMIN="{x:Bind ValueIndexMIN}"/>
 
         <local:UserIterableList
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="USE CASE PROFILE"/>
+            Label="{x:Bind LabelIndexMaxPath}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="{x:Bind LabelIndexCreated}"
+            Value="{x:Bind ValueIndexCreated}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="{x:Bind LabelIndexSaved}"
+            Value="{x:Bind ValueIndexSaved}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="{x:Bind LabelIndexOpened}"
+            Value="{x:Bind ValueIndexOpened}"/>
 
     </Grid>
     

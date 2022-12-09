@@ -1,0 +1,10 @@
+namespace HV4DUX
+{
+    [default_interface]
+    runtimeclass TableAccountHPC : Microsoft.UI.Xaml.Controls.Page
+    {
+        TableAccountHPC();
+
+    }
+
+}

@@ -1,0 +1,24 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137">
+
+    <x:String x:Key="xValueIndexHVID">{8AB4FA7F-9991-4426-82C5-E46D11230D04}</x:String>
+    <x:String x:Key="xValueIndexMIL">1</x:String>
+    <x:String x:Key="xValueIndexMAJ">000</x:String>
+    <x:String x:Key="xValueIndexMIN">001</x:String>
+    <x:String x:Key="xValueIndexMaxPath">Duality135</x:String>
+    <x:String x:Key="xValueIndexCreated">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueIndexSaved">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueIndexOpened">01/01/2023 00:00:00</x:String>
+
+    <x:String x:Key="xValueAccount">Entangled Logic Venture Compnay</x:String>
+    <x:String x:Key="xValueAddressOne">202 1655 Barclay St.</x:String>
+    <x:String x:Key="xValueAddressTwo"></x:String>
+    <x:String x:Key="xValueCity">Vancouver</x:String>
+    <x:String x:Key="xValueRegion">BC</x:String>
+    <x:String x:Key="xValuePrimaryPhone">604.910.6401</x:String>
+    <x:String x:Key="xValueSecondaryPhone"></x:String>
+    <x:String x:Key="xValueEMail">rebekafox@entangledlogic.com</x:String>
+
+</ResourceDictionary>

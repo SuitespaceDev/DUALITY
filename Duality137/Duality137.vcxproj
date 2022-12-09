@@ -790,6 +790,9 @@
     <Page Include="CacheMemoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="DHV4DADMINDB.xaml" />
+    <Page Include="DHV4DADMIN.xaml" />
+    <Page Include="DHV4DENTERPRISE.xaml" />
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>

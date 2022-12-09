@@ -12,43 +12,50 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DENTERPRISE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMIN.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMINDB.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
 
-    <ScrollViewer Padding="24,24,24,24">
+    <ScrollViewer>
 
         <StackPanel>
 
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:TableTNode 
-                LabelHVID="LEVEL 1 ACCOUNT HVID"
-                LabelMMM="LEVEL 1 ACCOUNT MMM"
-                LabelName="LEVEL 1 ACCOUNT NAME" 
-                LabelCreatedDate="LEVEL 1 ACCOUNT CREATED DATE"
-                LabelCreatedTime="LEVEL 1 ACCOUNT CREATED TIME"
-                LabelSavedDate="LEVEL 1 ACCOUNT SAVED DATE"
-                LabelSavedTime="LEVEL 1 ACCOUNT SAVED TIME"
-                LabelOpenedDate="LEVEL 1 ACCOUNT OPENED DATE"
-                LabelOpenedTime="LEVEL 1 ACCOUNT OPENED TIME"/>
-
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:UserBlock Label="ADMINISTRATOR ID" Value=". . ."/>
-            <HV4DUX:UserFilterNew Label="ADMINISTRATOR PASSWORD" Value="********"/>
+            <HV4DUX:TableAccount
+                LabelAccountHVID="ACCOUNT HVID"
+                ValueAccountHVID="{StaticResource xValueAccountHVID}"
+                LabelAccountID="ACCOUNT ID"
+                ValueAccountID="{StaticResource xValueAccountID}"
+                LabelAccountMaxPath="ACCOUNT"
+                ValueAccountMaxPath="{StaticResource xValueAccountMaxPath}"
+                LabelAccountCreated="ACCOUNT CREATED"
+                ValueAccountCreated="{StaticResource xValueAccountCreated}"
+                LabelAccountUpdated="ACCOUNT UPDATED"
+                ValueAccountUpdated="{StaticResource xValueAccountUpdated}"
+                LabelAccountPassword="ACCOUNT PASSWORD"
+                ValueAccountPassword="{StaticResource xValueAccountPassword}"/>
 
             <HV4DUX:UserDivider/>
 
             <HV4DUX:TableContact
-                LabelUserName="USER NAME"
+                LabelAccount="USER NAME"
+                ValueAccount="Administrator"
                 LabelAddressOne="ADDRESS ONE"
+                ValueAddressOne="{StaticResource xValueAddressOne}"
                 LabelAddressTwo="ADDRESS TWO" 
+                ValueAddressTwo="{StaticResource xValueAddressTwo}"
                 LabelCity="CITY"
+                ValueCity="{StaticResource xValueCity}"
                 LabelRegion="REGION"
+                ValueRegion="{StaticResource xValueRegion}"
                 LabelEMail="EMAIL"
+                ValueEMail="{StaticResource xValueEMail}"
                 LabelPrimaryPhone="PRIMARY NUMBER"
-                LabelSecondaryPhone="SECONDARY NUMBER"/>
+                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
+                LabelSecondaryPhone="SECONDARY NUMBER"
+                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"/>
 
             <HV4DUX:UserDivider/>
 
@@ -62,59 +69,20 @@
                 Margin="3,3,3,3"
                 Padding="0,0,0,0">
 
-                <TextBox Foreground="Black"
-                         AcceptsReturn="True" 
-                         TextWrapping="Wrap"
-                         HorizontalAlignment="Stretch"  
-                         VerticalAlignment="Stretch"
-                         FontWeight="Medium"
-                         FontSize="14"
-                         Height="500"
-                         Padding="3,3,3,3"
-                         PlaceholderText="Add description here ..."
-                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True" 
+                    TextWrapping="Wrap"
+                    HorizontalAlignment="Stretch"  
+                    VerticalAlignment="Stretch"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Height="500"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
             </Border>
-
-            <Grid Height="60"
-                  Grid.Column="0" Grid.ColumnSpan="2"
-                  Grid.Row="14" VariableSizedWrapGrid.RowSpan="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content=""
-                Grid.Column="0" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="1" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="2" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="3" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-            </Grid>
 
         </StackPanel>
 

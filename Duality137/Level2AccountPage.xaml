@@ -12,47 +12,68 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DENTERPRISE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMIN.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMINDB.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
 
-    <ScrollViewer Padding="24,24,24,24">
+    <ScrollViewer>
 
         <StackPanel>
 
+            <HV4DUX:TableAccount
+                LabelAccountHVID="ACCOUNT HVID"
+                ValueAccountHVID="{StaticResource xValueAccountHVID}"
+                LabelAccountID="ACCOUNT ID"
+                ValueAccountID="{StaticResource xValueAccountID}"
+                LabelAccountMaxPath="ACCOUNT"
+                ValueAccountMaxPath="{StaticResource xValueAccountMaxPath}"
+                LabelAccountCreated="ACCOUNT CREATED"
+                ValueAccountCreated="{StaticResource xValueAccountCreated}"
+                LabelAccountUpdated="ACCOUNT UPDATED"
+                ValueAccountUpdated="{StaticResource xValueAccountUpdated}"
+                LabelAccountPassword="ACCOUNT PASSWORD"
+                ValueAccountPassword="{StaticResource xValueAccountPassword}"/>
+
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:TableTNode 
-                LabelHVID="DATACENTER ACCOUNT HVID"
-                LabelMMM="DATACENTER ACCOUNT MMM"
-                LabelName="DATACENTER ACCOUNT NAME" 
-                LabelCreatedDate="DATACENTER ACCOUNT CREATED DATE"
-                LabelCreatedTime="DATACENTER ACCOUNT CREATED TIME"
-                LabelSavedDate="DATACENTER ACCOUNT SAVED DATE"
-                LabelSavedTime="DATACENTER ACCOUNT SAVED TIME"
-                LabelOpenedDate="DATACENTER ACCOUNT OPENED DATE"
-                LabelOpenedTime="DATACENTER ACCOUNT OPENED TIME"/>
-
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:UserBlock Label="ADMINISTRATOR ID" Value=". . ."/>
-            <HV4DUX:UserFilterNew Label="ADMINISTRATOR PASSWORD" Value="********"/>
-            <HV4DUX:UserBlock Label="DNS" Value=". . ."/>
-            <HV4DUX:UserBlock Label="IP ADDRESS" Value=". . ."/>
-            <HV4DUX:UserBlock Label="PROTOCOL" Value=". . ."/>
-            <HV4DUX:UserBlock Label="PORT" Value=". . ."/>
+            <HV4DUX:TableAccountDB
+                LabelAccountDBHost="DATABASE HOST"
+                ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                LabelAccountDBRole="ACCOUNT ROLE"
+                ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                LabelAccountDBPort="DATABASE PORT"
+                ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                LabelAccountDBSSLMode="DATABASE SSL MODE"
+                ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
 
             <HV4DUX:UserDivider/>
 
             <HV4DUX:TableContact
-                LabelUserName="USER NAME"
+                LabelAccount="USER NAME"
+                ValueAccount="Administrator"
                 LabelAddressOne="ADDRESS ONE"
+                ValueAddressOne="{StaticResource xValueAddressOne}"
                 LabelAddressTwo="ADDRESS TWO" 
+                ValueAddressTwo="{StaticResource xValueAddressTwo}"
                 LabelCity="CITY"
+                ValueCity="{StaticResource xValueCity}"
                 LabelRegion="REGION"
+                ValueRegion="{StaticResource xValueRegion}"
                 LabelEMail="EMAIL"
+                ValueEMail="{StaticResource xValueEMail}"
                 LabelPrimaryPhone="PRIMARY NUMBER"
-                LabelSecondaryPhone="SECONDARY NUMBER"/>
+                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
+                LabelSecondaryPhone="SECONDARY NUMBER"
+                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"/>
 
             <HV4DUX:UserDivider/>
 
@@ -72,7 +93,7 @@
                          HorizontalAlignment="Stretch"  
                          VerticalAlignment="Stretch"
                          FontWeight="Medium"
-                         FontSize="14"
+                         FontSize="12"
                          Height="500"
                          Padding="3,3,3,3"
                          PlaceholderText="Add description here ..."

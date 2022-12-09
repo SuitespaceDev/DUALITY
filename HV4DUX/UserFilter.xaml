@@ -23,9 +23,9 @@
 
         <Grid >
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="16"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -41,10 +41,11 @@
 
                 <TextBlock 
                     Foreground="Black" 
+                    HorizontalAlignment="Center"
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
-                    FontSize="14"
-                    Text="{x:Bind Label, Mode=OneTime}"/>
+                    FontSize="12"
+                    Text="{x:Bind Label}"/>
 
             </Border>
 
@@ -57,11 +58,12 @@
 
                 <TextBlock 
                     Foreground="Black"  
-                    Padding="0,3,10,3"                    
+                    HorizontalAlignment="Left"
+                    Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind Value, Mode=OneWay}"/>
+                    Text="{x:Bind Value}"/>
                 
             </Border>
 

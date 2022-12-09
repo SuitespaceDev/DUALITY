@@ -23,8 +23,8 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="6*"/>
-                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Border 
@@ -38,8 +38,8 @@
                     Foreground="Black" 
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
-                    FontSize="14"
-                    Text="{x:Bind Label, Mode=OneTime}"/>
+                    FontSize="12"
+                    Text="{x:Bind Label}"/>
 
             </Border>
 
@@ -54,8 +54,8 @@
                     Foreground="Black"
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
-                    FontSize="14"
-                    Text="{x:Bind Value, Mode=TwoWay}"/>
+                    FontSize="12"
+                    Text="{x:Bind Value}"/>
 
             </Border>
 

@@ -13,52 +13,59 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DENTERPRISE.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
+    
+    <ScrollViewer>
 
-    <StackPanel>
+        <StackPanel>
 
-        <HV4DUX:UserDivider/>
+            <HV4DUX:TableContact
+                LabelAccount="ENTERPRISE"
+                ValueAccount="{StaticResource xValueAccount}"
+                LabelAddressOne="ADDRESS ONE"
+                ValueAddressOne="{StaticResource xValueAddressOne}"
+                LabelAddressTwo="ADDRESS TWO"
+                ValueAddressTwo="{StaticResource xValueAddressTwo}"
+                LabelCity="CITY"
+                ValueCity="{StaticResource xValueCity}"
+                LabelRegion="REGION"
+                ValueRegion="{StaticResource xValueRegion}"
+                LabelPrimaryPhone="PRIMARY NUMBER"
+                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
+                LabelSecondaryPhone="SECONDARY NUMBER"
+                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"
+                LabelEMail="EMAIL ADDRESS"
+                ValueEMail="{StaticResource xValueEMail}"/>
 
-        <HV4DUX:TableProfile/>
+            <HV4DUX:UserDivider/>
 
-        <HV4DUX:UserDivider/>
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="2"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Height="500"
+                Margin="3,3,3,3">
 
-        <ScrollViewer>
-
-            <StackPanel>
-
-                <HV4DUX:UserDivider/>
-
-                <HV4DUX:UserDivider/>
-
-                <Border 
-                    BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                    BorderThickness="2"
-                    HorizontalAlignment="Stretch"
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    HorizontalAlignment="Stretch"  
                     VerticalAlignment="Stretch"
-                    Margin="3,3,3,3">
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
-                    <TextBox 
-                        Foreground="Black"
-                        AcceptsReturn="True"
-                        TextWrapping="Wrap"
-                        HorizontalAlignment="Stretch"  
-                        VerticalAlignment="Stretch"
-                        FontWeight="Medium"
-                        FontSize="14"
-                        Height="500"
-                        Padding="3,3,3,3"
-                        PlaceholderText="Add description here ..."
-                        ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+            </Border>
 
-                </Border>
+        </StackPanel>
 
-            </StackPanel>
-
-        </ScrollViewer>
-
-    </StackPanel>
-
+    </ScrollViewer>
+        
 </Page>

@@ -28,9 +28,6 @@
     <Filter Include="Tables\TableIOBus">
       <UniqueIdentifier>{225d270c-b64f-4064-90d8-796635eca8c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tables\TableProfile">
-      <UniqueIdentifier>{a04c8df1-e46b-41de-bbe3-8a9ae4a35375}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Tables\TableContact">
       <UniqueIdentifier>{4cf3d019-578c-4f6d-be1e-05fd3163db8f}</UniqueIdentifier>
     </Filter>
@@ -70,32 +67,50 @@
     <Filter Include="temp">
       <UniqueIdentifier>{0cdf24b5-5726-435b-b6f1-c5cf133f6b44}</UniqueIdentifier>
     </Filter>
-    <Filter Include="temp\UserBlock">
-      <UniqueIdentifier>{b210b23d-1f7f-4937-b04a-7f8f98cde924}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="temp\UserEntry">
-      <UniqueIdentifier>{ac9fa5cf-836c-4a07-8e44-0cee3ef8039c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="temp\UserFile">
-      <UniqueIdentifier>{a093ec54-e3ab-48b5-9a51-e2d65b62f9bd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="temp\UserPassword">
-      <UniqueIdentifier>{6f8762dc-8ad4-476c-b7b1-41528fe1d952}</UniqueIdentifier>
-    </Filter>
     <Filter Include="temp\UserFilterType">
       <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
     </Filter>
     <Filter Include="temp\UserFilterTime">
       <UniqueIdentifier>{96b05608-7dce-4c2c-a833-b5534e690887}</UniqueIdentifier>
     </Filter>
-    <Filter Include="temp\UserFilterProcessID">
-      <UniqueIdentifier>{9d571474-ecf1-42f9-bdac-60874633c795}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="temp\UserFilter">
-      <UniqueIdentifier>{462a9693-4fa5-437c-9bfb-c25d4c3af13b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UserControls\UserIterableList">
       <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserBlock">
+      <UniqueIdentifier>{b210b23d-1f7f-4937-b04a-7f8f98cde924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIndex">
+      <UniqueIdentifier>{a04c8df1-e46b-41de-bbe3-8a9ae4a35375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserEntry">
+      <UniqueIdentifier>{ac9fa5cf-836c-4a07-8e44-0cee3ef8039c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableAccount">
+      <UniqueIdentifier>{d76ab767-dcb6-411d-aa12-f5c70fc5cabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserPassword">
+      <UniqueIdentifier>{6f8762dc-8ad4-476c-b7b1-41528fe1d952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserFile">
+      <UniqueIdentifier>{a093ec54-e3ab-48b5-9a51-e2d65b62f9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserFilter">
+      <UniqueIdentifier>{462a9693-4fa5-437c-9bfb-c25d4c3af13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableAccountDB">
+      <UniqueIdentifier>{bba99356-8fe7-4191-8525-41b0b18aede5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableAccountDC">
+      <UniqueIdentifier>{afb9c58f-fc03-4240-83da-6078d0ea3277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableAccountHPC">
+      <UniqueIdentifier>{abb30e14-89fe-4b86-9cef-2fa74518d543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserIPv4">
+      <UniqueIdentifier>{62be1f72-dd29-4933-81b3-d8819fc4dbd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UserIPv6">
+      <UniqueIdentifier>{57f21a05-42ba-454f-b8a9-33c5152f958e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -132,13 +147,11 @@
   </ItemGroup>
   <ItemGroup>
     <Midl Include="UserBlock.idl" />
-    <Midl Include="UserCombo.idl" />
     <Midl Include="UserDivider.idl" />
     <Midl Include="UserEntry.idl" />
     <Midl Include="UserFile.idl" />
     <Midl Include="UserFilter.idl" />
     <Midl Include="UserFilterNew.idl" />
-    <Midl Include="UserFilterProcessID.idl" />
     <Midl Include="UserFilterTime.idl" />
     <Midl Include="UserFilterType.idl" />
     <Midl Include="UserMEventDebug.idl" />
@@ -153,19 +166,16 @@
       <Filter>UserControls\UserDivider</Filter>
     </Page>
     <Page Include="UserEntry.xaml">
-      <Filter>temp\UserEntry</Filter>
+      <Filter>UserControls\UserEntry</Filter>
     </Page>
     <Page Include="UserFile.xaml">
-      <Filter>temp\UserFile</Filter>
+      <Filter>UserControls\UserFile</Filter>
     </Page>
     <Page Include="UserFilter.xaml">
-      <Filter>temp\UserFilter</Filter>
+      <Filter>UserControls\UserFilter</Filter>
     </Page>
     <Page Include="UserFilterNew.xaml">
       <Filter>UserControls\UserFilterNew</Filter>
-    </Page>
-    <Page Include="UserFilterProcessID.xaml">
-      <Filter>temp\UserFilterProcessID</Filter>
     </Page>
     <Page Include="UserFilterTime.xaml">
       <Filter>temp\UserFilterTime</Filter>
@@ -174,10 +184,10 @@
       <Filter>temp\UserFilterType</Filter>
     </Page>
     <Page Include="UserPassword.xaml">
-      <Filter>temp\UserPassword</Filter>
+      <Filter>UserControls\UserPassword</Filter>
     </Page>
     <Page Include="UserBlock.xaml">
-      <Filter>temp\UserBlock</Filter>
+      <Filter>UserControls\UserBlock</Filter>
     </Page>
     <Page Include="HV4DUX.xaml" />
     <Page Include="TableContact.xaml">
@@ -207,11 +217,29 @@
     <Page Include="TableParameter.xaml">
       <Filter>Tables\TableParameter</Filter>
     </Page>
-    <Page Include="TableProfile.xaml">
-      <Filter>Tables\TableProfile</Filter>
+    <Page Include="TableIndex.xaml">
+      <Filter>Tables\TableIndex</Filter>
     </Page>
     <Page Include="UserMMM.xaml">
       <Filter>UserControls\UserMMM</Filter>
+    </Page>
+    <Page Include="TableAccount.xaml">
+      <Filter>Tables\TableAccount</Filter>
+    </Page>
+    <Page Include="TableAccountDB.xaml">
+      <Filter>Tables\TableAccountDB</Filter>
+    </Page>
+    <Page Include="TableAccountDC.xaml">
+      <Filter>Tables\TableAccountDC</Filter>
+    </Page>
+    <Page Include="TableAccountHPC.xaml">
+      <Filter>Tables\TableAccountHPC</Filter>
+    </Page>
+    <Page Include="UserIPv4.xaml">
+      <Filter>UserControls\UserIPv4</Filter>
+    </Page>
+    <Page Include="UserIPv6.xaml">
+      <Filter>UserControls\UserIPv6</Filter>
     </Page>
   </ItemGroup>
 </Project>

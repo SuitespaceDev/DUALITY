@@ -1,0 +1,13 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137">
+
+    <x:String x:Key="xValueAccountHVID">{621ED0DA-F28F-42A2-8904-167B3A02CEB2}</x:String>
+    <x:String x:Key="xValueAccountID">000000</x:String>
+    <x:String x:Key="xValueAccountMaxPath">Administrator</x:String>
+    <x:String x:Key="xValueAccountCreated">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueAccountUpdated">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueAccountPassword">CxF67mMY3p</x:String>
+       
+</ResourceDictionary>

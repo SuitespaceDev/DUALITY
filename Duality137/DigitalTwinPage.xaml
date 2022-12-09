@@ -16,7 +16,7 @@
         </ResourceDictionary>
     </Page.Resources>
 
-    <ScrollViewer Padding="24,24,24,24">
+    <ScrollViewer>
 
         <StackPanel>
 
@@ -60,7 +60,7 @@
                          HorizontalAlignment="Stretch"  
                          VerticalAlignment="Stretch"
                          FontWeight="Medium"
-                         FontSize="14"
+                         FontSize="12"
                          Height="500"
                          Padding="3,3,3,3"
                          PlaceholderText="Add description here ..."

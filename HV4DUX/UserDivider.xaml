@@ -9,11 +9,11 @@
 
     <Canvas 
         x:Name="Divider"
-        Height="25" Width="500" 
+        Height="32" Width="500" 
         HorizontalAlignment="Center">
         <Line 
             X1="0" X2="{Binding ElementName=Divider, Path=Width}" 
-            Y1="12.5" Y2="12.5" 
+            Y1="16" Y2="16" 
             Stroke="Black" 
             StrokeThickness="1"/>
     </Canvas>

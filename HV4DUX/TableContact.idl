@@ -5,9 +5,9 @@ namespace HV4DUX
 	{
 		TableContact();
 
-	    String LabelUserName;
+	    String LabelAccount;
 
-	    String ValueUserName;
+	    String ValueAccount;
 
 	    String LabelAddressOne;
 

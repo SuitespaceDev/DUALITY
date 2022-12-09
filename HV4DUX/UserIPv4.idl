@@ -1,0 +1,18 @@
+namespace HV4DUX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserIPv4 : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserIPv4();
+    
+        String Label;
+
+        String Value;
+        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
+
+        String Placeholder;
+        
+    }
+
+}

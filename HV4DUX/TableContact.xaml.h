@@ -10,17 +10,17 @@ namespace winrt::HV4DUX::implementation
 		TableContact();
 
 	public:
-		hstring LabelUserName();
+		hstring LabelAccount();
 
-		void LabelUserName(winrt::hstring const&);
+		void LabelAccount(winrt::hstring const&);
 
 	private:
 		hstring label_user_name{ L"" };
 
 	public:
-		hstring ValueUserName();
+		hstring ValueAccount();
 
-		void ValueUserName(winrt::hstring const&);
+		void ValueAccount(winrt::hstring const&);
 
 	private:
 		hstring value_user_name{ L". . ." };

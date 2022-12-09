@@ -4,134 +4,20 @@
     <Midl Include="Duality.idl">
       <Filter>2. Application\a. Main</Filter>
     </Midl>
-    <Midl Include="AppUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="AsyncUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="BitmapUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
     <Midl Include="BlankProject.idl">
       <Filter>8. Pages\Pickers</Filter>
-    </Midl>
-    <Midl Include="BuildAccountUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
     </Midl>
     <Midl Include="Machine.idl">
       <Filter>2. Application\d. Machine</Filter>
     </Midl>
-    <Midl Include="BusUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
     <Midl Include="CloudProject.idl">
       <Filter>8. Pages\Pickers</Filter>
-    </Midl>
-    <Midl Include="ComputeKernelUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ContextMenuUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ContractUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ControlUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="CortexUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="DatacenterAccountUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="DraftSpaceUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="DriveUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
     </Midl>
     <Midl Include="GitProject.idl">
       <Filter>8. Pages\Pickers</Filter>
     </Midl>
-    <Midl Include="FunctionalUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ImageUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="IteratorUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="KernelUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="KeyboardUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="LanguageUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="MassUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="MetricUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="MouseUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
     <Midl Include="OpenProject.idl">
       <Filter>8. Pages\Pickers</Filter>
-    </Midl>
-    <Midl Include="ParameterUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistBinaryUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistJSONUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistPostgreSQLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistQIFUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistXAMLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PersistXMLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PipeUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="PostgreSQLDBAccountUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ProjectAccountUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryBinaryUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryJSONUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryPostgreSQLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryQIFUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryXAMLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="QueryXMLUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
     </Midl>
     <Midl Include="SaveToCloud.idl">
       <Filter>8. Pages\Serialize</Filter>
@@ -142,37 +28,7 @@
     <Midl Include="SaveToPC.idl">
       <Filter>8. Pages\Serialize</Filter>
     </Midl>
-    <Midl Include="RPCUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="SharedMemUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ShellUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
     <Midl Include="TemplateProject.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ThemeUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="ToolBarUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="USBUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="WidgetUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="WindowUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="XAMLPgUserPage.idl">
-      <Filter>8. Pages\Property Pages</Filter>
-    </Midl>
-    <Midl Include="BuildProfileUserPage.idl">
       <Filter>8. Pages\Property Pages</Filter>
     </Midl>
   </ItemGroup>
@@ -230,9 +86,6 @@
     <Filter Include="10. Diagnostics">
       <UniqueIdentifier>{83b1219a-9d96-4fc1-a394-07d5cf7308d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="11. Text">
-      <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
-    </Filter>
     <Filter Include="xResources">
       <UniqueIdentifier>{560551db-e3dd-495a-9240-ce0d5cfd5013}</UniqueIdentifier>
     </Filter>
@@ -247,6 +100,12 @@
     </Filter>
     <Filter Include="2. Property Pages\DataBinding\Persist">
       <UniqueIdentifier>{eff71e40-96c6-467b-a5f8-2894ac0afebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11. Default">
+      <UniqueIdentifier>{3db65e28-7790-4be9-b6f7-648fa80d3247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="12. Text">
+      <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -472,6 +331,15 @@
     <Page Include="XamlPgPage.xaml">
       <Filter>2. Property Pages\Library</Filter>
     </Page>
+    <Page Include="DHV4DENTERPRISE.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="DHV4DADMIN.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="DHV4DADMINDB.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
@@ -480,19 +348,19 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CreateProcess.txt">
-      <Filter>11. Text</Filter>
+      <Filter>12. Text</Filter>
     </Text>
     <Text Include="GUID.txt">
-      <Filter>11. Text</Filter>
+      <Filter>12. Text</Filter>
     </Text>
     <Text Include="LoadDll.txt">
-      <Filter>11. Text</Filter>
+      <Filter>12. Text</Filter>
     </Text>
     <Text Include="PopulateRecent.txt">
-      <Filter>11. Text</Filter>
+      <Filter>12. Text</Filter>
     </Text>
     <Text Include="LoaderSettings.txt">
-      <Filter>11. Text</Filter>
+      <Filter>12. Text</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -16,7 +16,7 @@
         </ResourceDictionary>
     </Page.Resources>
 
-    <ScrollViewer Padding="24,24,24,24">
+    <ScrollViewer>
 
         <StackPanel>
 
@@ -35,21 +35,10 @@
 
             <HV4DUX:UserDivider/>
 
-            <HV4DUX:UserBlock Label="ADMINISTRATOR ID" Value=". . ."/>
-            <HV4DUX:UserFilterNew Label="ADMINISTRATOR PASSWORD" Value="********"/>
-            <HV4DUX:UserBlock Label="HOST/ADDRESS" Value=". . ."/>
-            <HV4DUX:UserBlock Label="PORT" Value=". . ."/>
-            <HV4DUX:UserBlock Label="ROLE" Value=". . ."/>
-            <HV4DUX:UserBlock Label="SERVICE" Value=". . ."/>
-            <HV4DUX:UserBlock Label="SSL MODE" Value=". . ."/>
-            <HV4DUX:UserFile Label="SSL CLIENT CERTIFICATE" Value=". . ."/>
-            <HV4DUX:UserFile Label="SSL CLIENT KEY" Value=". . ."/>
-            <HV4DUX:UserFile Label="SSL ROOT CERTIFICATE" Value=". . ."/>
-
             <HV4DUX:UserDivider/>
 
             <HV4DUX:TableContact
-                LabelUserName="USER NAME"
+                LabelAccount="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 
                 LabelCity="CITY"
@@ -76,7 +65,7 @@
                          HorizontalAlignment="Stretch"  
                          VerticalAlignment="Stretch"
                          FontWeight="Medium"
-                         FontSize="14"
+                         FontSize="12"
                          Height="500"
                          Padding="3,3,3,3"
                          PlaceholderText="Add description here ..."

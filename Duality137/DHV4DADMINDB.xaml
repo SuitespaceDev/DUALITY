@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137">
+
+    <x:String x:Key="xValueAccountDBHost"></x:String>
+    <x:String x:Key="xValueAccountDBRole"></x:String>
+    <x:String x:Key="xValueAccountDBPort"></x:String>
+    <x:String x:Key="xValueAccountDBSSLMode"></x:String>
+    <x:String x:Key="xValueAccountDBSSLClientCert"></x:String>
+    <x:String x:Key="xValueAccountDBSSLClientKey"></x:String>
+    <x:String x:Key="xValueAccountDBSSLRootCert"></x:String>
+
+</ResourceDictionary>

@@ -14,14 +14,14 @@ namespace winrt::HV4DUX::implementation
 
     }
 
-	hstring TableContact::LabelUserName() 
+	hstring TableContact::LabelAccount() 
 	{ 
 		
 		return label_user_name; 
 	
 	}
 
-	void TableContact::LabelUserName(winrt::hstring const& e) 
+	void TableContact::LabelAccount(winrt::hstring const& e) 
 	{ 
 		label_user_name = e; 
 	
@@ -29,14 +29,14 @@ namespace winrt::HV4DUX::implementation
 	
 	}
 
-	hstring TableContact::ValueUserName()
+	hstring TableContact::ValueAccount()
 	{ 
 		
 		return value_user_name; 
 	
 	}
 
-	void TableContact::ValueUserName(winrt::hstring const& e) 
+	void TableContact::ValueAccount(winrt::hstring const& e) 
 	{ 
 		value_user_name = e; 
 	

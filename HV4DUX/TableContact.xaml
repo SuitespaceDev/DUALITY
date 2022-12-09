@@ -16,20 +16,21 @@
     </UserControl.Resources>
 
     <Border 
+        Margin="6,6,6,6"
         BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
         BorderThickness="0"
         Height="256">
         
         <StackPanel>
             
-            <local:UserEntry Label="{x:Bind LabelUserName, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelAddressOne, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelAddressTwo, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelCity, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelRegion, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelEMail, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelPrimaryPhone, Mode=OneTime}"/>
-            <local:UserEntry Label="{x:Bind LabelSecondaryPhone, Mode=OneTime}"/>
+            <local:UserEntry Label="{x:Bind LabelAccount}" Value="{x:Bind ValueAccount}"/>
+            <local:UserEntry Label="{x:Bind LabelAddressOne}" Value="{x:Bind ValueAddressOne}"/>
+            <local:UserEntry Label="{x:Bind LabelAddressTwo}" Value="{x:Bind ValueAddressTwo}"/>
+            <local:UserEntry Label="{x:Bind LabelCity}" Value="{x:Bind ValueCity}"/>
+            <local:UserEntry Label="{x:Bind LabelRegion}" Value="{x:Bind ValueRegion}"/>
+            <local:UserEntry Label="{x:Bind LabelEMail}" Value="{x:Bind ValueEMail}"/>
+            <local:UserEntry Label="{x:Bind LabelPrimaryPhone}" Value="{x:Bind ValuePrimaryPhone}"/>
+            <local:UserEntry Label="{x:Bind LabelSecondaryPhone}" Value="{x:Bind ValueSecondaryPhone}"/>
 
         </StackPanel>
 

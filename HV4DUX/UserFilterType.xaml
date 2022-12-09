@@ -39,7 +39,7 @@
                     Foreground="Black" 
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
-                    FontSize="14"
+                    FontSize="12"
                     Text="{x:Bind Label}"/>
 
             </Border>
@@ -55,7 +55,7 @@
                     Foreground="Black"
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
-                    FontSize="14"
+                    FontSize="12"
                     Text="{x:Bind Value}"/>
 
             </Border>
@@ -74,7 +74,7 @@
                     VerticalAlignment="Stretch"
                     Padding="3,3,3,3"      
                     FontWeight="Medium"
-                    FontSize="14"
+                    FontSize="12"
                     ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
                     SelectedItem="{x:Bind MultiFilterState, Mode=TwoWay}">
                     <ItemsControl.ItemTemplate>
