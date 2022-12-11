@@ -166,12 +166,16 @@
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="PromptPage.xaml.h">
+      <DependentUpon>PromptPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="RandomMemoryPage.xaml.h">
       <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="UseCaseProfilePage.xaml.h">
-      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    <ClInclude Include="ProfilePage.xaml.h">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="InputOutputBusPage.xaml.h">
       <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
@@ -217,9 +221,6 @@
     </ClInclude>
     <ClInclude Include="IteratorPage.xaml.h">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="KernelPage.xaml.h">
-      <DependentUpon>KernelPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="InputDevicePage.xaml.h">
       <DependentUpon>InputDevicePage.xaml</DependentUpon>
@@ -382,12 +383,16 @@
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="PromptPage.xaml.cpp">
+      <DependentUpon>PromptPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="RandomMemoryPage.xaml.cpp">
       <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="UseCaseProfilePage.xaml.cpp">
-      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    <ClCompile Include="ProfilePage.xaml.cpp">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="InputOutputBusPage.xaml.cpp">
       <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
@@ -433,9 +438,6 @@
     </ClCompile>
     <ClCompile Include="IteratorPage.xaml.cpp">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="KernelPage.xaml.cpp">
-      <DependentUpon>KernelPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="InputDevicePage.xaml.cpp">
       <DependentUpon>InputDevicePage.xaml</DependentUpon>
@@ -613,12 +615,16 @@
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="PromptPage.idl">
+      <DependentUpon>PromptPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="RandomMemoryPage.idl">
       <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="UseCaseProfilePage.idl">
-      <DependentUpon>UseCaseProfilePage.xaml</DependentUpon>
+    <Midl Include="ProfilePage.idl">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="InputOutputBusPage.idl">
       <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
@@ -664,9 +670,6 @@
     </Midl>
     <Midl Include="IteratorPage.idl">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="KernelPage.idl">
-      <DependentUpon>KernelPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="InputDevicePage.idl">
       <DependentUpon>InputDevicePage.xaml</DependentUpon>
@@ -791,8 +794,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="DHV4DADMINDB.xaml" />
-    <Page Include="DHV4DADMIN.xaml" />
+    <Page Include="DHV4DADMINACCNT.xaml" />
     <Page Include="DHV4DENTERPRISE.xaml" />
+    <Page Include="DHV4DADMINPROFILE.xaml" />
+    <Page Include="DHV4DIMAGE.xaml" />
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>
@@ -813,10 +818,13 @@
     <Page Include="ProcessingCorePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PromptPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="RandomMemoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UseCaseProfilePage.xaml" />
+    <Page Include="ProfilePage.xaml" />
     <Page Include="InputOutputBusPage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
@@ -832,7 +840,6 @@
     <Page Include="GitProject.xaml" />
     <Page Include="ImagePage.xaml" />
     <Page Include="IteratorPage.xaml" />
-    <Page Include="KernelPage.xaml" />
     <Page Include="InputDevicePage.xaml" />
     <Page Include="PostProcessPage.xaml" />
     <Page Include="TopologyPage.xaml" />

@@ -1,0 +1,18 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserIPv6 : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserIPv6();
+
+        String Label;
+
+        String Value;
+        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
+
+        String Placeholder;
+
+    }
+
+}

@@ -1,0 +1,16 @@
+namespace HV4DX
+{
+    [bindable]
+    runtimeclass UserFile : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFile();
+
+        String Label;
+
+        String Value;
+
+        String Placeholder;
+
+    }
+
+}

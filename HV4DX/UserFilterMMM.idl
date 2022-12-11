@@ -1,0 +1,18 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserFilterMMM : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterMMM();
+
+        String Label;
+    
+        String ValueMIL;
+
+        String ValueMAJ;
+
+        String ValueMIN;
+
+    }
+
+}

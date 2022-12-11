@@ -1,0 +1,22 @@
+import "UserMSelectable.idl";
+
+namespace HV4DX
+{
+    [bindable]
+    runtimeclass UserFilterType : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserFilterType();
+
+        String Label;
+
+        String Value;
+
+        Windows.Foundation.Collections.IObservableVector<UserMSelectable> FilterList;
+
+        UserMSelectable MultiFilterState;
+
+        event Windows.Foundation.EventHandler<String> FilterUpdate;
+
+    }
+
+}

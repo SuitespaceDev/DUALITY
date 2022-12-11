@@ -1,0 +1,46 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableDigitalTwin : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableDigitalTwin();
+
+        String LabelEnterpriseName;
+        String ValueEnterpriseName;
+
+        String LabelEnterpriseID;
+        String ValueEnterpriseID;
+
+        String LabelBuildName;
+        String ValueBuildName;
+
+        String LabelBuildID;
+        String ValueBuildID;
+
+        String LabelBuildMMM;
+        String ValueBuildMMM;
+
+        String LabelBuildDate;
+        String ValueBuildDate;
+
+        String LabelLocalization;
+
+        String LabelTimeZone;
+
+        String LabelKeyboard;
+
+        String LabelWindowsTarget;
+
+        String LabelExecutableDir;
+        String ValueExecutableDir;
+
+        String LabelAssetsDir;
+        String ValueAssetsDir;
+
+        String LabelXamlDir;
+        String ValueXamlDir;
+
+    }
+
+}

@@ -1,0 +1,11 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableParameter : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableParameter();
+
+    }
+
+}

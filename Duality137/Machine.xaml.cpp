@@ -110,7 +110,7 @@ namespace winrt::Duality137::implementation
 	void Machine::InitializeIndex()
 	{
 		Pages = new std::unordered_map<CTBASIC::CHV4DKEY, std::function<bool()>, CTBASIC::CHV4DKEYFN>{
-			{ {winrt::guid{0x2F385E17, 0x4F57, 0x4A6B, {0xA3, 0xD6, 0x9C, 0x63, 0xA9, 0x7D, 0x77, 0xE5}}   ,L"UseCaseProfilePage"       }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::UseCaseProfilePage>()); } } },
+			{ {winrt::guid{0x2F385E17, 0x4F57, 0x4A6B, {0xA3, 0xD6, 0x9C, 0x63, 0xA9, 0x7D, 0x77, 0xE5}}   ,L"ProfilePage"       }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ProfilePage>()); } } },
 			{ {winrt::guid{0x859710B0, 0xBC7E, 0x47FB, {0x99, 0x07, 0x2D, 0xE9, 0xDF, 0x5E, 0x17, 0x98}}   ,L"UserAccountsPage"         }, std::function<bool()>{ [this]() { return true; } } },
 			{ {winrt::guid{0x14EE711B, 0x158A, 0x4113, {0xAC, 0x93, 0xBE, 0xA9, 0xD9, 0x97, 0x00, 0xDF}}   ,L"Level1AccountPage"		}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::Level1AccountPage>()); } } },
 			{ {winrt::guid{0xE0AF95F9, 0x8AA2, 0x41B2, {0x92, 0x38, 0xFA, 0x79, 0x84, 0xF2, 0x83, 0xA5}}   ,L"Level2AccountPage"		}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::Level2AccountPage>()); } } },
@@ -119,9 +119,9 @@ namespace winrt::Duality137::implementation
 			{ {winrt::guid{0x02C3E566, 0x4174, 0x4D42, {0xBC, 0x66, 0xA0, 0x1C, 0x7D, 0xC8, 0xD5, 0x33}}   ,L"RuntimePage"              }, std::function<bool()>{ [this]() { return true; } } },
 			{ {winrt::guid{0x9126C512, 0x05D3, 0x4CFE, {0xBF, 0xC0, 0x6E, 0xBC, 0x18, 0x97, 0xDE, 0x0F}}   ,L"DigitalTwinPage"          }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::DigitalTwinPage>()); } } },
 			{ {winrt::guid{0xEB6EDAF6, 0x5FB5, 0x4F6F, {0x9E, 0xC7, 0x77, 0x02, 0xE1, 0xE9, 0xFF, 0xAD}}   ,L"WindowPage"               }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::WindowPage>()); } } },
-			{ {winrt::guid{0x31EABFEA, 0x8F60, 0x48FE, {0xA7, 0x47, 0x8C, 0x24, 0x36, 0x8E, 0x98, 0x97}}   ,L"KernelPage"               }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::KernelPage>()); } } },
 			{ {winrt::guid{0x2612BFF3, 0xC034, 0x413E, {0xA0, 0x1E, 0x08, 0x48, 0xA4, 0x5F, 0x99, 0x17}}   ,L"DrivePage"                }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::DrivePage>()); } } },
 			{ {winrt::guid{0xB7EB7843, 0x92A7, 0x4F79, {0xB6, 0x26, 0xCF, 0x20, 0x97, 0x8A, 0xB4, 0xA8}}   ,L"ImagePage"                }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ImagePage>()); } } },
+			{ {winrt::guid{0x31EABFEA, 0x8F60, 0x48FE, {0xA7, 0x47, 0x8C, 0x24, 0x36, 0x8E, 0x98, 0x97}}   ,L"PromptPage"               }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::PromptPage>()); } } },
 			{ {winrt::guid{0x55AFB022, 0xE642, 0x4CC2, {0x82, 0x8E, 0xD3, 0x97, 0x9E, 0xC2, 0x72, 0xEC}}   ,L"DebugPage"                }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::DebugPage>()); } } },
 			{ {winrt::guid{0x1B3D1454, 0x1FD9, 0x454A, {0x81, 0x2C, 0x7F, 0xC1, 0x6B, 0x2F, 0x9B, 0x51}}   ,L"MetricPage"				}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::MetricPage>()); } }},
 			{ {winrt::guid{0xE1F8583C, 0x67B8, 0x4D9A, {0xBD, 0x15, 0x25, 0x6B, 0x3C, 0x0E, 0x06, 0x98}}   ,L"DataBindingPage"          }, std::function<bool()>{ [this]() { return true; } } },

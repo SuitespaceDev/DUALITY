@@ -1,0 +1,103 @@
+﻿<UserControl
+    x:Class="HV4DX.TableDigitalTwin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        
+        <local:UserEntry
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="{x:Bind LabelEnterpriseName}"
+            Value="{x:Bind ValueEnterpriseName}"/>
+
+        <local:UserEntry
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="{x:Bind LabelEnterpriseID}"
+            Value="{x:Bind ValueEnterpriseID}"/>
+
+        <local:UserEntry
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="{x:Bind LabelBuildName}"
+            Value="{x:Bind ValueBuildName}"/>
+
+        <local:UserEntry
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="{x:Bind LabelBuildID}"
+            Value="{x:Bind ValueBuildID}"/>
+
+        <local:UserMMM
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="{x:Bind LabelBuildMMM}"
+            Value="{x:Bind ValueBuildMMM}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="{x:Bind LabelBuildDate}"
+            Value="{x:Bind ValueBuildDate}"/>
+
+        <local:UserFilterItem
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="{x:Bind LabelLocalization}"/>
+
+        <local:UserFilterItem
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="{x:Bind LabelTimeZone}"/>
+
+        <local:UserFilterItem
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="{x:Bind LabelKeyboard}"/>
+
+        <local:UserFilterItem
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="{x:Bind LabelWindowsTarget}"/>
+
+        <local:UserFile
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="{x:Bind LabelExecutableDir}"
+            Value="{x:Bind ValueExecutableDir}"/>
+
+        <local:UserFile 
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="{x:Bind LabelAssetsDir}"
+            Value="{x:Bind ValueAssetsDir}"/>
+
+        <local:UserFile
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="7" Grid.RowSpan="1"
+            Label="{x:Bind LabelXamlDir}"
+            Value="{x:Bind ValueXamlDir}"/>
+
+    </Grid>
+
+</UserControl>

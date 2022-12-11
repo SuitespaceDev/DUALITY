@@ -1,0 +1,18 @@
+namespace HV4DX
+{
+    [bindable]
+    runtimeclass UserFilterItem : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserFilterItem();
+
+        String Label;
+
+        String Item{ get; };
+        
+        Windows.Foundation.Collections.IObservableVector<String> ItemList;
+
+        Boolean Editable;
+
+    }
+
+}

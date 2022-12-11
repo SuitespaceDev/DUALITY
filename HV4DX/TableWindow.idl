@@ -1,0 +1,21 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableWindow : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableWindow();
+    
+        String LabelBuildTheme;
+        String LabelBuildUIScale;
+        String LabelBuildAntiAliasing;
+        String LabelBuildFullScreen;
+        String LabelBuildResolution;
+        String LabelBuildRefreshRate;
+        String LabelBuildFont;
+        String LabelBuildFontSize;
+        String LabelBuildFontWeight;
+
+    }
+
+}

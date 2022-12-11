@@ -1,0 +1,40 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableImage : Microsoft.UI.Xaml.Controls.Page
+    {
+        TableImage();
+        
+        String LabelImageHVID;
+        String ValueImageHVID;
+        String LabelImageName;
+        String LabelImageType;
+        String LabelImageCreatedDATETIME;
+        String ValueImageCreatedDATETIME;
+        String LabelImageSavedDATETIME;
+        String ValueImageSavedDATETIME;
+        String LabelImageOpenedDATETIME;
+        String ValueImageOpenedDATETIME;
+        String LabelHV4DVOLOFF;
+        String ValueHV4DVOLOFF;
+        String LabelHV4DVOLSZ;
+        String ValueHV4DVOLSZ;
+        String LabelHV4DSFTOFF;
+        String ValueHV4DSFTOFF;
+        String LabelHV4DSFTSZ;
+        String ValueHV4DSFTSZ;
+        String LabelHV4DMIROFF;
+        String ValueHV4DMIROFF;
+        String LabelHV4DMIRSZ;
+        String ValueHV4DMIRSZ;
+        String LabelHV4DATTOFF;
+        String ValueHV4DATTOFF;
+        String LabelHV4DATTSZ;
+        String ValueHV4DATTSZ;
+        String LabelHV4DBMPOFF;
+        String ValueHV4DBMPOFF;
+        String LabelHV4DBMPSZ;
+        String ValueHV4DBMPSZ;
+
+    }
+}

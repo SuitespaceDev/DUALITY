@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137">
+
+    <x:String x:Key="xValueImageHVID">{612D6A35-8ACE-4667-97F2-DBEB84EDFA56}</x:String>
+    <x:String x:Key="xValueImageCreatedDATETIME">01/01/2022 00:00:00</x:String>
+    <x:String x:Key="xValueImageSavedDATETIME">01/01/2022 00:00:00</x:String>
+    <x:String x:Key="xValueImageOpenedDATETIME">01/01/2022 00:00:00</x:String>
+    <x:String x:Key="xValueHV4DVOLOFF">1024</x:String>
+    <x:String x:Key="xValueHV4DVOLSZ">8</x:String>
+    <x:String x:Key="xValueHV4DSFTOFF">2048</x:String>
+    <x:String x:Key="xValueHV4DSFTSZ">8</x:String>
+    <x:String x:Key="xValueHV4DMIROFF">3072</x:String>
+    <x:String x:Key="xValueHV4DMIRSZ">8</x:String>
+    <x:String x:Key="xValueHV4DATTOFF">4096</x:String>
+    <x:String x:Key="xValueHV4DATTSZ">8</x:String>
+    <x:String x:Key="xValueHV4DBMPOFF">6120</x:String>
+    <x:String x:Key="xValueHV4DBMPSZ">8</x:String>
+
+</ResourceDictionary>

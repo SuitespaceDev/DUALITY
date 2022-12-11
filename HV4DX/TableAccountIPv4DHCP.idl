@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableAccountIPv4DHCP : Microsoft.UI.Xaml.Controls.Page
+    {
+        TableAccountIPv4DHCP();
+
+    }
+
+}

@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
-    xmlns:HV4DUX="using:HV4DUX"
+    xmlns:HV4DX="using:HV4DX"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -11,7 +11,8 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DIMAGE.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,27 +21,39 @@
 
         <StackPanel>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:TableImage
+                LabelImageHVID="IMAGE HVID"
+                ValueImageHVID="{StaticResource xValueImageHVID}"
+                LabelImageName="IMAGE NAME"
+                LabelImageType="IMAGE TYPE"
+                LabelImageCreatedDATETIME="IMAGE CREATED DATETIME"
+                ValueImageCreatedDATETIME="{StaticResource xValueImageCreatedDATETIME}"
+                LabelImageSavedDATETIME="IMAGE SAVED DATETIME"
+                ValueImageSavedDATETIME="{StaticResource xValueImageSavedDATETIME}"
+                LabelImageOpenedDATETIME="IMAGE OPENED DATETIME"
+                ValueImageOpenedDATETIME="{StaticResource xValueImageOpenedDATETIME}"
+                LabelHV4DVOLOFF="$HV4D VOLUME OFFSET"
+                ValueHV4DVOLOFF="{StaticResource xValueHV4DVOLOFF}"
+                LabelHV4DVOLSZ="$HV4D VOLUME SIZE"
+                ValueHV4DVOLSZ="{StaticResource xValueHV4DVOLSZ}"
+                LabelHV4DSFTOFF="$HV4D FILE TABLE OFFSET"
+                ValueHV4DSFTOFF="{StaticResource xValueHV4DSFTOFF}"
+                LabelHV4DSFTSZ="$HV4D FILE TABLE SIZE"
+                ValueHV4DSFTSZ="{StaticResource xValueHV4DSFTSZ}"
+                LabelHV4DMIROFF="$HV4D MIRROR OFFSET"
+                ValueHV4DMIROFF="{StaticResource xValueHV4DMIROFF}"
+                LabelHV4DMIRSZ="$HV4D MIRROR SIZE"
+                ValueHV4DMIRSZ="{StaticResource xValueHV4DMIRSZ}"
+                LabelHV4DATTOFF="$HV4D ATTRIBUTE OFFSET"
+                ValueHV4DATTOFF="{StaticResource xValueHV4DATTOFF}"
+                LabelHV4DATTSZ="$HV4D ATTRIBUTE SIZE"
+                ValueHV4DATTSZ="{StaticResource xValueHV4DATTSZ}"
+                LabelHV4DBMPOFF="$HV4D BITMAP OFFSET"
+                ValueHV4DBMPOFF="{StaticResource xValueHV4DBMPOFF}"
+                LabelHV4DBMPSZ="$HV4D BITMAP SIZE"
+                ValueHV4DBMPSZ="{StaticResource xValueHV4DBMPSZ}"/>
 
-            <HV4DUX:UserBlock Label="IMAGE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DUX:UserIterableList Label="IMAGE NAME"/>
-            <HV4DUX:UserBlock Label="IMAGE CREATED DATE" Value="11/11/2022"/>
-            <HV4DUX:UserBlock Label="IMAGE CREATED TIME" Value="17:04"/>
-            <HV4DUX:UserBlock Label="IMAGE SAVED DATE" Value="11/11/2022"/>
-            <HV4DUX:UserBlock Label="IMAGE SAVED TIME" Value="17:04"/>
-            <HV4DUX:UserBlock Label="IMAGE OPENED DATE" Value="11/11/2022"/>
-            <HV4DUX:UserBlock Label="IMAGE OPENED TIME" Value="17:04"/>
-
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:UserBlock Label="$HV4DVOL Offset (kB)" Value=". . ."/>
-            <HV4DUX:UserBlock Label="$HV4DSFT Offset (kB)" Value=". . ."/>
-            <HV4DUX:UserBlock Label="$HV4DMIR Offset (kB)" Value=". . ."/>
-            <HV4DUX:UserBlock Label="$HV4DATT Offset (kB)" Value=". . ."/>
-            <HV4DUX:UserBlock Label="$HV4DBMP Offset (kB)" Value=". . ."/>
-            <HV4DUX:UserBlock Label="$HV4DMEM Offset (kB)" Value=". . ."/>
-
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
             <Border x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -65,46 +78,6 @@
                          ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
             </Border>
-
-            <Grid Height="60"
-                  Grid.Column="0" Grid.ColumnSpan="2"
-                  Grid.Row="14" VariableSizedWrapGrid.RowSpan="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content=""
-                Grid.Column="0" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="1" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="2" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="3" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
-
-            </Grid>
 
         </StackPanel>
 

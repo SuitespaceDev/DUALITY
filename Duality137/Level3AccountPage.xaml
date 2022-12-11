@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
-    xmlns:HV4DUX="using:HV4DUX"
+    xmlns:HV4DX="using:HV4DX"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -11,7 +11,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,24 +20,13 @@
 
         <StackPanel>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:TableTNode 
-                LabelHVID="DB ADMINISTRATOR ACCOUNT HVID"
-                LabelMMM="DB ADMINISTRATOR ACCOUNT MMM"
-                LabelName="DB ADMINISTRATOR ACCOUNT NAME" 
-                LabelCreatedDate="DB ADMINISTRATOR ACCOUNT CREATED DATE"
-                LabelCreatedTime="DB ADMINISTRATOR ACCOUNT CREATED TIME"
-                LabelSavedDate="DB ADMINISTRATOR ACCOUNT SAVED DATE"
-                LabelSavedTime="DB ADMINISTRATOR ACCOUNT SAVED TIME"
-                LabelOpenedDate="DB ADMINISTRATOR ACCOUNT OPENED DATE"
-                LabelOpenedTime="DB ADMINISTRATOR ACCOUNT OPENED TIME"/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:TableContact
+            <HV4DX:TableContact
                 LabelAccount="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 
@@ -47,7 +36,7 @@
                 LabelPrimaryPhone="PRIMARY NUMBER"
                 LabelSecondaryPhone="SECONDARY NUMBER"/>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
             <Border x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"

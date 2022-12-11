@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
-    xmlns:HV4DUX="using:HV4DUX"
+    xmlns:HV4DX="using:HV4DX"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -11,9 +11,9 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DENTERPRISE.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMIN.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMINPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMINACCNT.xaml"/>
                 <ResourceDictionary Source="ms-appx:///DHV4DADMINDB.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
@@ -23,7 +23,7 @@
 
         <StackPanel>
 
-            <HV4DUX:TableAccount
+            <HV4DX:TableAccount
                 LabelAccountHVID="ACCOUNT HVID"
                 ValueAccountHVID="{StaticResource xValueAccountHVID}"
                 LabelAccountID="ACCOUNT ID"
@@ -37,109 +37,335 @@
                 LabelAccountPassword="ACCOUNT PASSWORD"
                 ValueAccountPassword="{StaticResource xValueAccountPassword}"/>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:TableAccountDB
-                LabelAccountDBHost="DATABASE HOST"
-                ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
-                LabelAccountDBRole="ACCOUNT ROLE"
-                ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
-                LabelAccountDBPort="DATABASE PORT"
-                ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
-                LabelAccountDBSSLMode="DATABASE SSL MODE"
-                ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
-                LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
-                LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
-                LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
+            <TabView>
 
-            <HV4DUX:UserDivider/>
+                <TabViewItem
+                    Header="SMTP IPv4"
+                    IsClosable="False">
 
-            <HV4DUX:TableContact
-                LabelAccount="USER NAME"
-                ValueAccount="Administrator"
-                LabelAddressOne="ADDRESS ONE"
-                ValueAddressOne="{StaticResource xValueAddressOne}"
-                LabelAddressTwo="ADDRESS TWO" 
-                ValueAddressTwo="{StaticResource xValueAddressTwo}"
-                LabelCity="CITY"
-                ValueCity="{StaticResource xValueCity}"
-                LabelRegion="REGION"
-                ValueRegion="{StaticResource xValueRegion}"
-                LabelEMail="EMAIL"
-                ValueEMail="{StaticResource xValueEMail}"
-                LabelPrimaryPhone="PRIMARY NUMBER"
-                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
-                LabelSecondaryPhone="SECONDARY NUMBER"
-                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"/>
+                    <StackPanel>
 
-            <HV4DUX:UserDivider/>
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
 
-            <Border x:Name="ProfileDescription"
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
-                Grid.Column="0" Grid.ColumnSpan="4" 
-                Grid.Row="9" Grid.RowSpan="5"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Margin="3,3,3,3"
-                Padding="0,0,0,0">
+                        <HV4DX:UserDivider/>
 
-                <TextBox Foreground="Black"
-                         AcceptsReturn="True" 
-                         TextWrapping="Wrap"
-                         HorizontalAlignment="Stretch"  
-                         VerticalAlignment="Stretch"
-                         FontWeight="Medium"
-                         FontSize="12"
-                         Height="500"
-                         Padding="3,3,3,3"
-                         PlaceholderText="Add description here ..."
-                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                        <Border 
+                            x:Name="ProfileDescriptionSMTPIPv4"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
 
-            </Border>
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
-            <Grid Height="60"
-                  Grid.Column="0" Grid.ColumnSpan="2"
-                  Grid.Row="14" VariableSizedWrapGrid.RowSpan="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+                        </Border>
+                    
+                    </StackPanel>
+                    
+                </TabViewItem>
 
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content=""
-                Grid.Column="0" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
+                <TabViewItem
+                    Header="SMTP IPv6"
+                    IsClosable="False">
 
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="1" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
+                    <StackPanel>
 
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="2" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
 
-                <Button Background="{StaticResource HV4DPropertyPageGrey}"
-                Content="" 
-                Grid.Column="3" Grid.ColumnSpan="1"
-                Margin="3,3,3,3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"/>
+                        <HV4DX:UserDivider/>
 
-            </Grid>
+                        <Border 
+                            x:Name="ProfileDescriptionSMTPIPv6"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
+
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="FTP IPv4"
+                    IsClosable="False">
+
+                    <StackPanel>
+
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
+
+                        <HV4DX:UserDivider/>
+
+                        <Border 
+                            x:Name="ProfileDescriptionFTPIPv4"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
+
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="FTP IPv6"
+                    IsClosable="False">
+
+                    <StackPanel>
+
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
+
+                        <HV4DX:UserDivider/>
+
+                        <Border 
+                            x:Name="ProfileDescriptionFTPIPv6"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
+
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="SFTP IPv4"
+                    IsClosable="False">
+
+                    <StackPanel>
+
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
+
+                        <HV4DX:UserDivider/>
+
+                        <Border 
+                            x:Name="ProfileDescriptionSFTPIPv4"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
+
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="SFTP IPv6"
+                    IsClosable="False">
+
+                    <StackPanel>
+
+                        <HV4DX:TableAccountPostgreSQL
+                            LabelAccountDBHost="DATABASE HOST"
+                            ValueAccountDBHost="{StaticResource xValueAccountDBHost}"
+                            LabelAccountDBRole="ACCOUNT ROLE"
+                            ValueAccountDBRole="{StaticResource xValueAccountDBRole}"
+                            LabelAccountDBPort="DATABASE PORT"
+                            ValueAccountDBPort="{StaticResource xValueAccountDBPort}"
+                            LabelAccountDBSSLMode="DATABASE SSL MODE"
+                            ValueAccountDBSSLMode="{StaticResource xValueAccountDBSSLMode}"
+                            LabelAccountDBSSLClientCert="SSL CLIENT CERT"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueAccountDBSSLClientCert}"
+                            LabelAccountDBSSLClientKey="SSL CLIENT KEY"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueAccountDBSSLClientKey}"
+                            LabelAccountDBSSLRootCert="SSL ROOT CERT"
+                            ValueAccountDBSSLRootCert="{StaticResource xValueAccountDBSSLRootCert}"/>
+
+                        <HV4DX:UserDivider/>
+
+                        <Border 
+                            x:Name="ProfileDescriptionSFTPIPv6"
+                            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                            BorderThickness="2"
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                            Grid.Row="9" Grid.RowSpan="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Margin="3,3,3,3"
+                            Padding="0,0,0,0">
+
+                            <TextBox 
+                                Foreground="Black"
+                                AcceptsReturn="True" 
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Stretch"  
+                                VerticalAlignment="Stretch"
+                                FontWeight="Medium"
+                                FontSize="12"
+                                Height="500"
+                                Padding="3,3,3,3"
+                                PlaceholderText="Add description here ..."
+                                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </TabViewItem>
+
+            </TabView>
 
         </StackPanel>
 

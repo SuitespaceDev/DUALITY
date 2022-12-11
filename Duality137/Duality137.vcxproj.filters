@@ -107,6 +107,27 @@
     <Filter Include="12. Text">
       <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2. Property Pages\Runtime\DigitalTwinPage">
+      <UniqueIdentifier>{d4ad94e5-cf76-4d24-a6c2-3f73976a6b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\DebugPage">
+      <UniqueIdentifier>{0e06fd61-72f1-4b81-85f8-eda3ae2cfae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\DrivePage">
+      <UniqueIdentifier>{9ace3084-cf77-4d46-8f5a-5ef8c0d5c57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\ImagePage">
+      <UniqueIdentifier>{24329ef0-f27e-4626-9606-c01fafbfec8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\MetricPage">
+      <UniqueIdentifier>{5874f8d2-0a81-428a-a6de-604fc65a61ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\WindowPage">
+      <UniqueIdentifier>{13080643-479b-4933-8dad-4b5427425727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\Runtime\PromptPage">
+      <UniqueIdentifier>{0e84d148-cdb4-4948-bf17-6458d38ca028}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -157,7 +178,7 @@
     <Page Include="SaveToPC.xaml">
       <Filter>8. Serialize</Filter>
     </Page>
-    <Page Include="UseCaseProfilePage.xaml">
+    <Page Include="ProfilePage.xaml">
       <Filter>2. Property Pages</Filter>
     </Page>
     <Page Include="Landing.xaml">
@@ -168,18 +189,6 @@
     </Page>
     <Page Include="Level2AccountPage.xaml">
       <Filter>2. Property Pages\Accounts</Filter>
-    </Page>
-    <Page Include="WindowPage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
-    </Page>
-    <Page Include="DrivePage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
-    </Page>
-    <Page Include="ImagePage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
-    </Page>
-    <Page Include="KernelPage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
     </Page>
     <Page Include="QueryBinaryPage.xaml">
       <Filter>2. Property Pages\DataBinding\Query</Filter>
@@ -274,9 +283,6 @@
     <Page Include="SharedMemoryPage.xaml">
       <Filter>2. Property Pages\Process</Filter>
     </Page>
-    <Page Include="DigitalTwinPage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
-    </Page>
     <Page Include="Level3AccountPage.xaml">
       <Filter>2. Property Pages\Accounts</Filter>
     </Page>
@@ -291,12 +297,6 @@
     </Page>
     <Page Include="Diagnostics.xaml">
       <Filter>10. Diagnostics</Filter>
-    </Page>
-    <Page Include="DebugPage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
-    </Page>
-    <Page Include="MetricPage.xaml">
-      <Filter>2. Property Pages\Runtime</Filter>
     </Page>
     <Page Include="OutputDevicePage.xaml">
       <Filter>2. Property Pages\IO</Filter>
@@ -331,13 +331,40 @@
     <Page Include="XamlPgPage.xaml">
       <Filter>2. Property Pages\Library</Filter>
     </Page>
-    <Page Include="DHV4DENTERPRISE.xaml">
+    <Page Include="DHV4DADMINPROFILE.xaml">
       <Filter>11. Default</Filter>
     </Page>
-    <Page Include="DHV4DADMIN.xaml">
+    <Page Include="DHV4DADMINACCNT.xaml">
       <Filter>11. Default</Filter>
     </Page>
     <Page Include="DHV4DADMINDB.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="DigitalTwinPage.xaml">
+      <Filter>2. Property Pages\Runtime\DigitalTwinPage</Filter>
+    </Page>
+    <Page Include="DebugPage.xaml">
+      <Filter>2. Property Pages\Runtime\DebugPage</Filter>
+    </Page>
+    <Page Include="DrivePage.xaml">
+      <Filter>2. Property Pages\Runtime\DrivePage</Filter>
+    </Page>
+    <Page Include="ImagePage.xaml">
+      <Filter>2. Property Pages\Runtime\ImagePage</Filter>
+    </Page>
+    <Page Include="MetricPage.xaml">
+      <Filter>2. Property Pages\Runtime\MetricPage</Filter>
+    </Page>
+    <Page Include="WindowPage.xaml">
+      <Filter>2. Property Pages\Runtime\WindowPage</Filter>
+    </Page>
+    <Page Include="DHV4DENTERPRISE.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="PromptPage.xaml">
+      <Filter>2. Property Pages\Runtime\PromptPage</Filter>
+    </Page>
+    <Page Include="DHV4DIMAGE.xaml">
       <Filter>11. Default</Filter>
     </Page>
   </ItemGroup>

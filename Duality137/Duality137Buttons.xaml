@@ -4,7 +4,7 @@
     xmlns:local="using:Duality137">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+        <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="RightMenuButton" TargetType="Button">

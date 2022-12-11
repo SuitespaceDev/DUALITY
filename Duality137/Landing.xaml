@@ -14,7 +14,7 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
                 <ResourceDictionary Source="ms-appx:///Duality137Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 

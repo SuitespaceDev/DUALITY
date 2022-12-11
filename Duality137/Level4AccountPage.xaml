@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
-    xmlns:HV4DUX="using:HV4DUX"
+    xmlns:HV4DX="using:HV4DX"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -11,7 +11,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DUX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,27 +20,16 @@
 
         <StackPanel>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:TableTNode 
-                LabelHVID="PROJECT ACCOUNT HVID"
-                LabelMMM="PROJECT ACCOUNT MMM"
-                LabelName="PROJECT ACCOUNT NAME" 
-                LabelCreatedDate="PROJECT ACCOUNT CREATED DATE"
-                LabelCreatedTime="PROJECT ACCOUNT CREATED TIME"
-                LabelSavedDate="PROJECT ACCOUNT SAVED DATE"
-                LabelSavedTime="PROJECT ACCOUNT SAVED TIME"
-                LabelOpenedDate="PROJECT ACCOUNT OPENED DATE"
-                LabelOpenedTime="PROJECT ACCOUNT OPENED TIME"/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserBlock Label="USER ID" Value=". . ."/>
+            <HV4DX:UserFilterNew Label="USER PASSWORD" Value="********"/>
 
-            <HV4DUX:UserBlock Label="USER ID" Value=". . ."/>
-            <HV4DUX:UserFilterNew Label="USER PASSWORD" Value="********"/>
+            <HV4DX:UserDivider/>
 
-            <HV4DUX:UserDivider/>
-
-            <HV4DUX:TableContact
+            <HV4DX:TableContact
                 LabelAccount="USER NAME"
                 LabelAddressOne="ADDRESS ONE"
                 LabelAddressTwo="ADDRESS TWO" 
@@ -50,7 +39,7 @@
                 LabelPrimaryPhone="PRIMARY NUMBER"
                 LabelSecondaryPhone="SECONDARY NUMBER"/>
 
-            <HV4DUX:UserDivider/>
+            <HV4DX:UserDivider/>
 
             <Border x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
