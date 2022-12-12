@@ -13,7 +13,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMINPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DDEFAULTPROFILE.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -21,7 +21,7 @@
     <ScrollViewer>
 
         <StackPanel>
-
+            
             <HV4DX:TableContact
                 LabelAccount="PROJECT MANAGER"
                 ValueAccount="{StaticResource xValueAccount}"
@@ -64,8 +64,8 @@
 
             </Border>
 
-        </StackPanel>
+    </StackPanel>
 
     </ScrollViewer>
-        
+    
 </Page>

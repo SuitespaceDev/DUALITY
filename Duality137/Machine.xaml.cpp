@@ -110,7 +110,7 @@ namespace winrt::Duality137::implementation
 	void Machine::InitializeIndex()
 	{
 		Pages = new std::unordered_map<CTBASIC::CHV4DKEY, std::function<bool()>, CTBASIC::CHV4DKEYFN>{
-			{ {winrt::guid{0x2F385E17, 0x4F57, 0x4A6B, {0xA3, 0xD6, 0x9C, 0x63, 0xA9, 0x7D, 0x77, 0xE5}}   ,L"ProfilePage"       }, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ProfilePage>()); } } },
+			{ {winrt::guid{0x2F385E17, 0x4F57, 0x4A6B, {0xA3, 0xD6, 0x9C, 0x63, 0xA9, 0x7D, 0x77, 0xE5}}   ,L"ProfilePage"				}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::ProfilePage>()); } } },
 			{ {winrt::guid{0x859710B0, 0xBC7E, 0x47FB, {0x99, 0x07, 0x2D, 0xE9, 0xDF, 0x5E, 0x17, 0x98}}   ,L"UserAccountsPage"         }, std::function<bool()>{ [this]() { return true; } } },
 			{ {winrt::guid{0x14EE711B, 0x158A, 0x4113, {0xAC, 0x93, 0xBE, 0xA9, 0xD9, 0x97, 0x00, 0xDF}}   ,L"Level1AccountPage"		}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::Level1AccountPage>()); } } },
 			{ {winrt::guid{0xE0AF95F9, 0x8AA2, 0x41B2, {0x92, 0x38, 0xFA, 0x79, 0x84, 0xF2, 0x83, 0xA5}}   ,L"Level2AccountPage"		}, std::function<bool()>{ [this]() { return PropertyPane().Navigate(winrt::xaml_typename<Duality137::Level2AccountPage>()); } } },

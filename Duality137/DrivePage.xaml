@@ -12,6 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DPARTITION.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,25 +21,29 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider/>
-
-            <HV4DX:UserBlock Label="PARTITION HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="PARTITION NAME"/>
-            <HV4DX:UserBlock Label="PARTITION CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PARTITION CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PARTITION SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PARTITION SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PARTITION OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PARTITION OPENED TIME" Value="17:04"/>
-
-            <HV4DX:UserDivider/>
-
-            <HV4DX:UserBlock Label="Volume Reserved (kB)" Value="reserved memmory kB"/>
-            <HV4DX:UserBlock Label="Volume Allocated (kB)" Value="allocated memmory kB"/>
-            <HV4DX:UserBlock Label="Cluster Size (kB)" Value="size kB"/>
-            <HV4DX:UserBlock Label="Attribute Size (kB)" Value="size kB"/>
-            <HV4DX:UserBlock Label="Page Size (kB)" Value="size kB"/>
-            <HV4DX:UserBlock Label="Index Buffer Size (kB)" Value="size kB"/>
+            <HV4DX:TableDrive
+                LabelPartitionHVID="PARTITION HVID"
+                ValuePartitionHVID="{StaticResource xValuePartitionHVID}"
+                LabelPartitionName="PARTITION NAME"
+                LabelPartitionType="PARTITION TYPE"
+                LabelPartitionCreatedDATETIME="PARTITION CREATED DATETIME"
+                ValuePartitionCreatedDATETIME="{StaticResource xValuePartitionCreatedDATETIME}"
+                LabelPartitionSavedDATETIME="PARTITION SAVED DATETIME"
+                ValuePartitionSavedDATETIME="{StaticResource xValuePartitionSavedDATETIME}"
+                LabelPartitionOpenedDATETIME="PARTITION OPENED DATETIME"
+                ValuePartitionOpenedDATETIME="{StaticResource xValuePartitionOpenedDATETIME}"
+                LabelReserved="RESERVED (kB)"
+                ValueReserved="{StaticResource xValueReserved}"
+                LabelAllocated="ALLOCATED (kB)"
+                ValueAllocated="{StaticResource xValueAllocated}"
+                LabelClusterSize="CLUSTER SIZE (kB)"
+                ValueClusterSize="{StaticResource xValueClusterSize}"
+                LabelPageSize="PAGE SIZE (kB)"
+                ValuePageSize="{StaticResource xValuePageSize}"
+                LabelAttSize="ATTRIBUTE SIZE (kB)"
+                ValueAttSize="{StaticResource xValueAttributeSize}"
+                LabelIndexBufferSize="INDEX BUFFER SIZE (kB)"
+                ValueIndexBufferSize="{StaticResource xValueIndexBufferSize}"/>
 
             <HV4DX:UserDivider/>
 

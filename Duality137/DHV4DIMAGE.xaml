@@ -8,14 +8,14 @@
     <x:String x:Key="xValueImageSavedDATETIME">01/01/2022 00:00:00</x:String>
     <x:String x:Key="xValueImageOpenedDATETIME">01/01/2022 00:00:00</x:String>
     <x:String x:Key="xValueHV4DVOLOFF">1024</x:String>
-    <x:String x:Key="xValueHV4DVOLSZ">8</x:String>
+    <x:String x:Key="xValueHV4DVOLSZ">1024</x:String>
     <x:String x:Key="xValueHV4DSFTOFF">2048</x:String>
-    <x:String x:Key="xValueHV4DSFTSZ">8</x:String>
+    <x:String x:Key="xValueHV4DSFTSZ">1024</x:String>
     <x:String x:Key="xValueHV4DMIROFF">3072</x:String>
-    <x:String x:Key="xValueHV4DMIRSZ">8</x:String>
+    <x:String x:Key="xValueHV4DMIRSZ">1024</x:String>
     <x:String x:Key="xValueHV4DATTOFF">4096</x:String>
-    <x:String x:Key="xValueHV4DATTSZ">8</x:String>
+    <x:String x:Key="xValueHV4DATTSZ">1024</x:String>
     <x:String x:Key="xValueHV4DBMPOFF">6120</x:String>
-    <x:String x:Key="xValueHV4DBMPSZ">8</x:String>
+    <x:String x:Key="xValueHV4DBMPSZ">1024</x:String>
 
 </ResourceDictionary>

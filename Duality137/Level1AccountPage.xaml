@@ -12,7 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMINPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DDEFAULTPROFILE.xaml"/>
                 <ResourceDictionary Source="ms-appx:///DHV4DADMINACCNT.xaml"/>
                 <ResourceDictionary Source="ms-appx:///DHV4DADMINDB.xaml"/>
             </ResourceDictionary.MergedDictionaries>

@@ -11,9 +11,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMINPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DDEFAULTPROFILE.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <ImageBrush x:Key="Machine" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Build Metadata.png"/>
         </ResourceDictionary>
     </Page.Resources>
 

@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="HV4DX.TableDrive"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterNew 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionHVID}" 
+            Value="{x:Bind ValuePartitionHVID}"/>
+
+        <local:UserFilterItem 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionName}"/>
+
+        <local:UserFilterItem 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionType}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionCreatedDATETIME}"
+            Value="{x:Bind ValuePartitionCreatedDATETIME}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionSavedDATETIME}"
+            Value="{x:Bind ValuePartitionSavedDATETIME}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPartitionOpenedDATETIME}" 
+            Value="{x:Bind ValuePartitionOpenedDATETIME}"/>
+
+        <local:UserEntry 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="{x:Bind LabelReserved}" 
+            Value="{x:Bind ValueReserved}"/>
+
+        <local:UserEntry 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="{x:Bind LabelAllocated}" 
+            Value="{x:Bind ValueAllocated}"/>
+
+        <local:UserEntry 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="{x:Bind LabelClusterSize}" 
+            Value="{x:Bind ValueClusterSize}"/>
+
+        <local:UserEntry 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPageSize}" 
+            Value="{x:Bind ValuePageSize}"/>
+
+        <local:UserEntry 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="{x:Bind LabelAttSize}" 
+            Value="{x:Bind ValueAttSize}"/>
+
+        <local:UserEntry 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="{x:Bind LabelIndexBufferSize}" 
+            Value="{x:Bind ValueIndexBufferSize}"/>
+
+    </Grid>
+
+</Page>

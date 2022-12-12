@@ -14,7 +14,6 @@ namespace winrt::HV4DX::implementation
 
     }
 
-
     winrt::hstring TableImage::LabelImageHVID()
     {
         return label_image_hvid;

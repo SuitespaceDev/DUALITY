@@ -22,25 +22,6 @@
 
             <HV4DX:UserDivider/>
 
-            <HV4DX:UserDivider/>
-
-            <HV4DX:UserBlock Label="USER ID" Value=". . ."/>
-            <HV4DX:UserFilterNew Label="USER PASSWORD" Value="********"/>
-
-            <HV4DX:UserDivider/>
-
-            <HV4DX:TableContact
-                LabelAccount="USER NAME"
-                LabelAddressOne="ADDRESS ONE"
-                LabelAddressTwo="ADDRESS TWO" 
-                LabelCity="CITY"
-                LabelRegion="REGION"
-                LabelEMail="EMAIL"
-                LabelPrimaryPhone="PRIMARY NUMBER"
-                LabelSecondaryPhone="SECONDARY NUMBER"/>
-
-            <HV4DX:UserDivider/>
-
             <Border x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"

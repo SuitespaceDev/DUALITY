@@ -795,8 +795,9 @@
     </Page>
     <Page Include="DHV4DADMINDB.xaml" />
     <Page Include="DHV4DADMINACCNT.xaml" />
+    <Page Include="DHV4DPARTITION.xaml" />
     <Page Include="DHV4DENTERPRISE.xaml" />
-    <Page Include="DHV4DADMINPROFILE.xaml" />
+    <Page Include="DHV4DDEFAULTPROFILE.xaml" />
     <Page Include="DHV4DIMAGE.xaml" />
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">

@@ -331,7 +331,7 @@
     <Page Include="XamlPgPage.xaml">
       <Filter>2. Property Pages\Library</Filter>
     </Page>
-    <Page Include="DHV4DADMINPROFILE.xaml">
+    <Page Include="DHV4DDEFAULTPROFILE.xaml">
       <Filter>11. Default</Filter>
     </Page>
     <Page Include="DHV4DADMINACCNT.xaml">
@@ -365,6 +365,9 @@
       <Filter>2. Property Pages\Runtime\PromptPage</Filter>
     </Page>
     <Page Include="DHV4DIMAGE.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="DHV4DPARTITION.xaml">
       <Filter>11. Default</Filter>
     </Page>
   </ItemGroup>

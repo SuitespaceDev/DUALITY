@@ -150,6 +150,10 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableDrive.xaml.h">
+      <DependentUpon>TableDrive.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableImage.xaml.h">
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -261,6 +265,10 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableDrive.xaml.cpp">
+      <DependentUpon>TableDrive.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableImage.xaml.cpp">
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -369,6 +377,10 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableDrive.idl">
+      <DependentUpon>TableDrive.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableImage.idl">
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -457,6 +469,7 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="HV4DX.xaml" />
+    <Page Include="HV4DXDIM.xaml" />
     <Page Include="TableAccount.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -470,6 +483,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableDigitalTwin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableDrive.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableImage.xaml">

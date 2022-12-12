@@ -259,6 +259,9 @@
     <Filter Include="UserControls\UserString\UserMMM">
       <UniqueIdentifier>{3819cdcf-0738-4594-97be-c164bb369b03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UserControls\UserString\UserNumeric">
+      <UniqueIdentifier>{1151e466-e5e7-45a2-8df5-a9862df558d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -395,6 +398,12 @@
     </Page>
     <Page Include="TableImage.xaml">
       <Filter>Tables\TableRuntime\TableImage</Filter>
+    </Page>
+    <Page Include="TableDrive.xaml">
+      <Filter>Tables\TableRuntime\TableDrive</Filter>
+    </Page>
+    <Page Include="HV4DXDIM.xaml">
+      <Filter>Resource Dictionary</Filter>
     </Page>
   </ItemGroup>
 </Project>
