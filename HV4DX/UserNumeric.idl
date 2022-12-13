@@ -1,0 +1,16 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserNumeric : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserNumeric();
+        String Label;
+
+        String Value;
+        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
+
+        String Placeholder;
+
+    }
+
+}

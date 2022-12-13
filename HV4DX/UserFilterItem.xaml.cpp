@@ -29,6 +29,20 @@ namespace winrt::HV4DX::implementation
 
     }
 
+    hstring UserFilterItem::Value()
+    {
+        return value;
+
+    }
+
+    void UserFilterItem::Value(winrt::hstring const& e)
+    {
+        value = e;
+
+        return;
+
+    }
+
     winrt::hstring UserFilterItem::Item()
     { 
         

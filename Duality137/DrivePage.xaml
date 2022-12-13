@@ -33,17 +33,17 @@
                 LabelPartitionOpenedDATETIME="PARTITION OPENED DATETIME"
                 ValuePartitionOpenedDATETIME="{StaticResource xValuePartitionOpenedDATETIME}"
                 LabelReserved="RESERVED (kB)"
-                ValueReserved="{StaticResource xValueReserved}"
+                ValueReserved="{StaticResource xValuePartitionReserved}"
                 LabelAllocated="ALLOCATED (kB)"
-                ValueAllocated="{StaticResource xValueAllocated}"
+                ValueAllocated="{StaticResource xValuePartitionAllocated}"
                 LabelClusterSize="CLUSTER SIZE (kB)"
-                ValueClusterSize="{StaticResource xValueClusterSize}"
+                ValueClusterSize="{StaticResource xValuePartitionClusterSize}"
                 LabelPageSize="PAGE SIZE (kB)"
-                ValuePageSize="{StaticResource xValuePageSize}"
+                ValuePageSize="{StaticResource xValuePartitionPageSize}"
                 LabelAttSize="ATTRIBUTE SIZE (kB)"
-                ValueAttSize="{StaticResource xValueAttributeSize}"
-                LabelIndexBufferSize="INDEX BUFFER SIZE (kB)"
-                ValueIndexBufferSize="{StaticResource xValueIndexBufferSize}"/>
+                ValueAttSize="{StaticResource xValuePartitionAttributeSize}"
+                LabelWhitespaceEncryption="WHITESPACE ENCRYPTION"
+                ValueWhitespaceEncryption="{StaticResource xValueWhitespaceEncryption}"/>
 
             <HV4DX:UserDivider/>
 

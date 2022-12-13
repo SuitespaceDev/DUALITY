@@ -134,6 +134,10 @@
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableAccountNew.xaml.h">
+      <DependentUpon>TableAccountNew.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableAccountPostgreSQL.xaml.h">
       <DependentUpon>TableAccountPostgreSQL.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -162,12 +166,28 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableIndexNav.xaml.h">
+      <DependentUpon>TableIndexNav.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableProfile.xaml.h">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableWindow.xaml.h">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="UserDate.xaml.h">
+      <DependentUpon>UserDate.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserDateTime.xaml.h">
+      <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserIPv4.xaml.h">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
@@ -215,11 +235,12 @@
     <ClInclude Include="UserMSelectable.h">
       <DependentUpon>UserMSelectable.cpp</DependentUpon>
     </ClInclude>
+    <ClInclude Include="UserNumeric.xaml.h">
+      <DependentUpon>UserNumeric.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserPassword.xaml.h">
       <DependentUpon>UserPassword.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="TableContact.xaml.h">
-      <DependentUpon>TableContact.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="TableContract.xaml.h">
       <DependentUpon>TableContract.xaml</DependentUpon>
@@ -239,6 +260,10 @@
     <ClInclude Include="TableRuntimeClass.xaml.h">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="UserTime.xaml.h">
+      <DependentUpon>UserTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -247,6 +272,10 @@
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
     <ClCompile Include="TableAccount.xaml.cpp">
       <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableAccountNew.xaml.cpp">
+      <DependentUpon>TableAccountNew.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableAccountPostgreSQL.xaml.cpp">
@@ -277,12 +306,28 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableIndexNav.xaml.cpp">
+      <DependentUpon>TableIndexNav.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableProfile.xaml.cpp">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableWindow.xaml.cpp">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UserDate.xaml.cpp">
+      <DependentUpon>UserDate.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserDateTime.xaml.cpp">
+      <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserIPv4.xaml.cpp">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
@@ -326,11 +371,12 @@
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserMSelectable.cpp" />
+    <ClCompile Include="UserNumeric.xaml.cpp">
+      <DependentUpon>UserNumeric.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserPassword.xaml.cpp">
       <DependentUpon>UserPassword.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="TableContact.xaml.cpp">
-      <DependentUpon>TableContact.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="TableContract.xaml.cpp">
       <DependentUpon>TableContract.xaml</DependentUpon>
@@ -350,6 +396,10 @@
     <ClCompile Include="TableRuntimeClass.xaml.cpp">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="UserTime.xaml.cpp">
+      <DependentUpon>UserTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4DX.def" />
@@ -359,6 +409,10 @@
   <ItemGroup>
     <Midl Include="TableAccount.idl">
       <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableAccountNew.idl">
+      <DependentUpon>TableAccountNew.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableAccountPostgreSQL.idl">
@@ -389,12 +443,28 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableIndexNav.idl">
+      <DependentUpon>TableIndexNav.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableProfile.idl">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableWindow.idl">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserBlock.idl">
       <DependentUpon>UserBlock.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="UserDate.idl">
+      <DependentUpon>UserDate.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserDateTime.idl">
+      <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserIPv4.idl">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
@@ -442,11 +512,12 @@
     <Midl Include="UserMSelectable.idl">
       <DependentUpon>UserMSelectable.cpp</DependentUpon>
     </Midl>
+    <Midl Include="UserNumeric.idl">
+      <DependentUpon>UserNumeric.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserPassword.idl">
       <DependentUpon>UserPassword.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="TableContact.idl">
-      <DependentUpon>TableContact.xaml</DependentUpon>
     </Midl>
     <Midl Include="TableContract.idl">
       <DependentUpon>TableContract.xaml</DependentUpon>
@@ -466,11 +537,18 @@
     <Midl Include="TableRuntimeClass.idl">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </Midl>
+    <Midl Include="UserTime.idl">
+      <DependentUpon>UserTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <Page Include="HV4DX.xaml" />
     <Page Include="HV4DXDIM.xaml" />
     <Page Include="TableAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableAccountNew.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableAccountPostgreSQL.xaml">
@@ -494,10 +572,22 @@
     <Page Include="TableIndex.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableIndexNav.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserBlock.xaml" />
+    <Page Include="UserDate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserDateTime.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserIPv4.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -518,14 +608,19 @@
     <Page Include="UserMMM.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UserNumeric.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserPassword.xaml" />
-    <Page Include="TableContact.xaml" />
     <Page Include="TableContract.xaml" />
     <Page Include="TableDebug.xaml" />
     <Page Include="TableIterator.xaml" />
     <Page Include="TableMouse.xaml" />
     <Page Include="TableParameter.xaml" />
     <Page Include="TableRuntimeClass.xaml" />
+    <Page Include="UserTime.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

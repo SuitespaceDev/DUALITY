@@ -370,6 +370,12 @@
     <Page Include="DHV4DPARTITION.xaml">
       <Filter>11. Default</Filter>
     </Page>
+    <Page Include="DHV4DKERNEL.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
+    <Page Include="RuntimeClassPage.xaml">
+      <Filter>2. Property Pages\Process</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">

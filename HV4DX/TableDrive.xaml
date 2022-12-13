@@ -89,8 +89,8 @@
         <local:UserEntry 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="{x:Bind LabelIndexBufferSize}" 
-            Value="{x:Bind ValueIndexBufferSize}"/>
+            Label="{x:Bind LabelWhitespaceEncryption}" 
+            Value="{x:Bind ValueWhitespaceEncryption}"/>
 
     </Grid>
 

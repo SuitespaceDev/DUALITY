@@ -192,6 +192,10 @@
     <ClInclude Include="ContractPage.xaml.h">
       <DependentUpon>ContractPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="RuntimeClassPage.xaml.h">
+      <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserControlPage.xaml.h">
       <DependentUpon>UserControlPage.xaml</DependentUpon>
     </ClInclude>
@@ -408,6 +412,10 @@
     </ClCompile>
     <ClCompile Include="ContractPage.xaml.cpp">
       <DependentUpon>ContractPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="RuntimeClassPage.xaml.cpp">
+      <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserControlPage.xaml.cpp">
       <DependentUpon>UserControlPage.xaml</DependentUpon>
@@ -641,6 +649,10 @@
     <Midl Include="ContractPage.idl">
       <DependentUpon>ContractPage.xaml</DependentUpon>
     </Midl>
+    <Midl Include="RuntimeClassPage.idl">
+      <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserControlPage.idl">
       <DependentUpon>UserControlPage.xaml</DependentUpon>
     </Midl>
@@ -795,6 +807,7 @@
     </Page>
     <Page Include="DHV4DADMINDB.xaml" />
     <Page Include="DHV4DADMINACCNT.xaml" />
+    <Page Include="DHV4DKERNEL.xaml" />
     <Page Include="DHV4DPARTITION.xaml" />
     <Page Include="DHV4DENTERPRISE.xaml" />
     <Page Include="DHV4DDEFAULTPROFILE.xaml" />
@@ -831,6 +844,9 @@
     <Page Include="ComputeKernelPage.xaml" />
     <Page Include="ContextMenuPage.xaml" />
     <Page Include="ContractPage.xaml" />
+    <Page Include="RuntimeClassPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControlPage.xaml" />
     <Page Include="PreProcessPage.xaml" />
     <Page Include="Level2AccountPage.xaml" />

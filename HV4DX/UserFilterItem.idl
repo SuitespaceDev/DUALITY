@@ -7,6 +7,8 @@ namespace HV4DX
 
         String Label;
 
+        String Value;
+
         String Item{ get; };
         
         Windows.Foundation.Collections.IObservableVector<String> ItemList;

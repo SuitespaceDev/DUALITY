@@ -3,15 +3,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137">
 
-    <x:String x:Key="xValuePartitionHVID">{612D6A35-8ACE-4667-97F2-DBEB84EDFA56}</x:String>
+    <x:String x:Key="xValuePartitionHVID">{DF4728B7-DBD1-42E0-8F23-771B350E6151}</x:String>
     <x:String x:Key="xValuePartitionCreatedDATETIME">01/01/2022 00:00:00</x:String>
     <x:String x:Key="xValuePartitionSavedDATETIME">01/01/2022 00:00:00</x:String>
     <x:String x:Key="xValuePartitionOpenedDATETIME">01/01/2022 00:00:00</x:String>
-    <x:String x:Key="xValueReserved">1048576</x:String>
-    <x:String x:Key="xValueAllocated">262144</x:String>
-    <x:String x:Key="xValueClusterSize">4</x:String>
-    <x:String x:Key="xValuePageSize">64</x:String>
-    <x:String x:Key="xValueAttributeSize">4</x:String>
-    <x:String x:Key="xValueIndexBufferSize">1024</x:String>
+    <x:String x:Key="xValuePartitionReserved">1048576</x:String>
+    <x:String x:Key="xValuePartitionAllocated">262144</x:String>
+    <x:String x:Key="xValuePartitionClusterSize">4</x:String>
+    <x:String x:Key="xValuePartitionPageSize">64</x:String>
+    <x:String x:Key="xValuePartitionAttributeSize">4</x:String>
+    <x:String x:Key="xValueWhitespaceEncryption">Deceptive</x:String>
     
 </ResourceDictionary>

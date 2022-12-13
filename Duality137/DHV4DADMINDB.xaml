@@ -3,12 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137">
 
-    <x:String x:Key="xValueAccountDBHost"></x:String>
-    <x:String x:Key="xValueAccountDBRole"></x:String>
-    <x:String x:Key="xValueAccountDBPort"></x:String>
-    <x:String x:Key="xValueAccountDBSSLMode"></x:String>
-    <x:String x:Key="xValueAccountDBSSLClientCert"></x:String>
-    <x:String x:Key="xValueAccountDBSSLClientKey"></x:String>
-    <x:String x:Key="xValueAccountDBSSLRootCert"></x:String>
+    <x:String x:Key="xValueAccntAdminDBHost"></x:String>
+    <x:String x:Key="xValueAccntAdminDBRole"></x:String>
+    <x:String x:Key="xValueAccntAdminDBPort"></x:String>
+    <x:String x:Key="xValueAccntAdminDBSSLMode"></x:String>
+    <x:String x:Key="xValueAccntAdminDBSSLClientCert"></x:String>
+    <x:String x:Key="xValueAccntAdminDBSSLClientKey"></x:String>
+    <x:String x:Key="xValueAccntAdminDBSSLRootCert"></x:String>
 
 </ResourceDictionary>

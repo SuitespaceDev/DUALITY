@@ -182,4 +182,259 @@ namespace winrt::HV4DX::implementation
 
     }
 
+	winrt::hstring TableAccount::LabelAccount()
+	{
+
+		return label_account;
+
+	}
+
+	void TableAccount::LabelAccount(winrt::hstring const& e)
+	{
+		label_account = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccount()
+	{
+
+		return value_account;
+
+	}
+
+	void TableAccount::ValueAccount(winrt::hstring const& e)
+	{
+		value_account = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountAddressOne()
+	{
+
+		return label_account_address_one;
+
+	}
+
+	void TableAccount::LabelAccountAddressOne(winrt::hstring const& e)
+	{
+		label_account_address_one = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountAddressOne()
+	{
+
+		return value_account_address_one;
+
+	}
+
+	void TableAccount::ValueAccountAddressOne(winrt::hstring const& e)
+	{
+		value_account_address_one = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountAddressTwo()
+	{
+
+		return label_account_address_two;
+
+	}
+
+	void TableAccount::LabelAccountAddressTwo(winrt::hstring const& e)
+	{
+		label_account_address_two = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountAddressTwo()
+	{
+
+		return value_account_address_two;
+
+	}
+
+	void TableAccount::ValueAccountAddressTwo(winrt::hstring const& e)
+	{
+		value_account_address_two = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountCity()
+	{
+
+		return label_account_city;
+
+	}
+
+	void TableAccount::LabelAccountCity(winrt::hstring const& e)
+	{
+		label_account_city = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountCity()
+	{
+
+		return value_account_city;
+
+	}
+
+	void TableAccount::ValueAccountCity(winrt::hstring const& e)
+	{
+		value_account_city = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountRegion()
+	{
+
+		return label_account_region;
+
+	}
+
+	void TableAccount::LabelAccountRegion(winrt::hstring const& e)
+	{
+		label_account_region = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountRegion()
+	{
+
+		return value_account_region;
+
+	}
+
+	void TableAccount::ValueAccountRegion(winrt::hstring const& e)
+	{
+		value_account_region = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountEMail()
+	{
+
+		return label_account_email;
+
+	}
+
+	void TableAccount::LabelAccountEMail(winrt::hstring const& e)
+	{
+		label_account_email = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountEMail()
+	{
+
+		return value_account_email;
+
+	}
+
+	void TableAccount::ValueAccountEMail(winrt::hstring const& e)
+	{
+		value_account_email = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountPrimaryPhone()
+	{
+
+		return label_account_primary_phone;
+
+	}
+
+	void TableAccount::LabelAccountPrimaryPhone(winrt::hstring const& e)
+	{
+		label_account_primary_phone = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountPrimaryPhone()
+	{
+
+		return value_account_primary_phone;
+
+	}
+
+	void TableAccount::ValueAccountPrimaryPhone(winrt::hstring const& e)
+	{
+		value_account_primary_phone = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::LabelAccountSecondaryPhone()
+	{
+
+		return label_account_secondary_phone;
+
+	}
+
+	void TableAccount::LabelAccountSecondaryPhone(winrt::hstring const& e)
+	{
+		label_account_secondary_phone = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccount::ValueAccountSecondaryPhone()
+	{
+
+		return value_account_secondary_phone;
+
+	}
+
+	void TableAccount::ValueAccountSecondaryPhone(winrt::hstring const& e)
+	{
+		value_account_secondary_phone = e;
+
+		return;
+
+	}
+
+	bool TableAccount::AccountIsEditable()
+	{
+
+		return account_is_editable;
+
+	}
+
+	void TableAccount::AccountIsEditable(bool const& e)
+	{
+		account_is_editable = e;
+
+		return;
+
+	}
+
 }

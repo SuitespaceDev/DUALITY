@@ -74,12 +74,12 @@
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
                     Padding="3,3,3,3"
-                    FontFamily="Segoe MDL2 Assets" >
+                    FontFamily="Segoe" >
 
                     <FontIcon 
-                        FontFamily="Segoe MDL2 Assets" 
+                        FontFamily="Segoe" 
                         FontSize="12"
-                        Glyph="&#xE8E5;"/>
+                        Glyph="&#x2026;"/>
 
                 </Button>
 

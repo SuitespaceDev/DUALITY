@@ -5,12 +5,12 @@
 
     <x:String x:Key="xValueEnterpriseName">Entangled Logic Venture Company</x:String>
     <x:String x:Key="xValueEnterpriseID">{4197BE57-6929-424E-B710-33E1E6F7C123}</x:String>
-    <x:String x:Key="xValueBuildName">Duality137</x:String>
-    <x:String x:Key="xValueBuildID">{2C2AE482-1DA8-4B58-8210-8F5279DED5C3}</x:String>
-    <x:String x:Key="xValueBuildMMM">1.000.001</x:String>
-    <x:String x:Key="xValueBuildDate">01/01/2023 00:00:00</x:String>
-    <x:String x:Key="xValueExecutableDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137</x:String>
-    <x:String x:Key="xValueAssetsDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\Assets</x:String>
-    <x:String x:Key="xValueXamlDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\Xaml</x:String>
+    <x:String x:Key="xValueEnterpriseBuildName">Duality137</x:String>
+    <x:String x:Key="xValueEnterpriseBuildID">{2C2AE482-1DA8-4B58-8210-8F5279DED5C3}</x:String>
+    <x:String x:Key="xValueEnterpriseBuildMMM">1.000.001</x:String>
+    <x:String x:Key="xValueEnterpriseBuildDate">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueEnterpriseBuildExecutableDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137</x:String>
+    <x:String x:Key="xValueEnterpriseBuildAssetsDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\Assets</x:String>
+    <x:String x:Key="xValueEnterpriseBuildXamlDir">C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\Xaml</x:String>
 
 </ResourceDictionary>

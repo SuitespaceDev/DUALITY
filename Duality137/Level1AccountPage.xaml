@@ -25,41 +25,38 @@
 
             <HV4DX:TableAccount
                 LabelAccountHVID="ACCOUNT HVID"
-                ValueAccountHVID="{StaticResource xValueAccountHVID}"
+                ValueAccountHVID="{StaticResource xValueAdminAccountHVID}"
                 LabelAccountID="ACCOUNT ID"
-                ValueAccountID="{StaticResource xValueAccountID}"
+                ValueAccountID="{StaticResource xValueAdminAccountID}"
                 LabelAccountMaxPath="ACCOUNT"
-                ValueAccountMaxPath="{StaticResource xValueAccountMaxPath}"
+                ValueAccountMaxPath="{StaticResource xValueAdminAccountMaxPath}"
                 LabelAccountCreated="ACCOUNT CREATED"
-                ValueAccountCreated="{StaticResource xValueAccountCreated}"
+                ValueAccountCreated="{StaticResource xValueAdminAccountCreated}"
                 LabelAccountUpdated="ACCOUNT UPDATED"
-                ValueAccountUpdated="{StaticResource xValueAccountUpdated}"
+                ValueAccountUpdated="{StaticResource xValueAdminAccountUpdated}"
                 LabelAccountPassword="ACCOUNT PASSWORD"
-                ValueAccountPassword="{StaticResource xValueAccountPassword}"/>
+                ValueAccountPassword="{StaticResource xValueAdminAccountPassword}"
+                LabelAccount="PROJECT MANAGER"
+                ValueAccount="{StaticResource xValueAdminAccount}"
+                LabelAccountAddressOne="ADDRESS ONE"
+                ValueAccountAddressOne="{StaticResource xValueAdminAccountAddressOne}"
+                LabelAccountAddressTwo="ADDRESS TWO"
+                ValueAccountAddressTwo="{StaticResource xValueAdminAccountAddressTwo}"
+                LabelAccountCity="CITY"
+                ValueAccountCity="{StaticResource xValueAdminAccountCity}"
+                LabelAccountRegion="REGION"
+                ValueAccountRegion="{StaticResource xValueAdminAccountRegion}"
+                LabelAccountPrimaryPhone="PRIMARY NUMBER"
+                ValueAccountPrimaryPhone="{StaticResource xValueAdminAccountPrimaryPhone}"
+                LabelAccountSecondaryPhone="SECONDARY NUMBER"
+                ValueAccountSecondaryPhone="{StaticResource xValueAdminAccountSecondaryPhone}"
+                LabelAccountEMail="EMAIL ADDRESS"
+                ValueAccountEMail="{StaticResource xValueAdminAccountEMail}"/>
 
             <HV4DX:UserDivider/>
 
-            <HV4DX:TableContact
-                LabelAccount="USER NAME"
-                ValueAccount="Administrator"
-                LabelAddressOne="ADDRESS ONE"
-                ValueAddressOne="{StaticResource xValueAddressOne}"
-                LabelAddressTwo="ADDRESS TWO" 
-                ValueAddressTwo="{StaticResource xValueAddressTwo}"
-                LabelCity="CITY"
-                ValueCity="{StaticResource xValueCity}"
-                LabelRegion="REGION"
-                ValueRegion="{StaticResource xValueRegion}"
-                LabelEMail="EMAIL"
-                ValueEMail="{StaticResource xValueEMail}"
-                LabelPrimaryPhone="PRIMARY NUMBER"
-                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
-                LabelSecondaryPhone="SECONDARY NUMBER"
-                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"/>
-
-            <HV4DX:UserDivider/>
-
-            <Border x:Name="ProfileDescription"
+            <Border 
+                x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"
                 Grid.Column="0" Grid.ColumnSpan="4" 

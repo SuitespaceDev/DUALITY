@@ -36,21 +36,22 @@
         <local:UserFilterItem
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelIndexMaxPath}"/>
+            Label="{x:Bind LabelIndexMaxPath}"
+            Value="{x:Bind ValueIndexMaxPath}"/>
 
-        <local:UserBlock 
+        <local:UserDateTime 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
             Label="{x:Bind LabelIndexCreated}"
             Value="{x:Bind ValueIndexCreated}"/>
 
-        <local:UserBlock 
+        <local:UserDateTime 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="{x:Bind LabelIndexSaved}"
             Value="{x:Bind ValueIndexSaved}"/>
 
-        <local:UserBlock 
+        <local:UserDateTime 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
             Label="{x:Bind LabelIndexOpened}"

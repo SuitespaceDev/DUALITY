@@ -291,29 +291,29 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableDrive::LabelIndexBufferSize()
+    winrt::hstring TableDrive::LabelWhitespaceEncryption()
     {
-        return label_index_buffer_size;
+        return label_whitespace_encryption;
 
     }
 
-    void TableDrive::LabelIndexBufferSize(winrt::hstring const& e)
+    void TableDrive::LabelWhitespaceEncryption(winrt::hstring const& e)
     {
-        label_index_buffer_size = e;
+        label_whitespace_encryption = e;
 
         return;
 
     }
 
-    winrt::hstring TableDrive::ValueIndexBufferSize()
+    winrt::hstring TableDrive::ValueWhitespaceEncryption()
     {
-        return value_index_buffer_size;
+        return value_whitespace_encryption;
 
     }
 
-    void TableDrive::ValueIndexBufferSize(winrt::hstring const& e)
+    void TableDrive::ValueWhitespaceEncryption(winrt::hstring const& e)
     {
-        value_index_buffer_size = e;
+        value_whitespace_encryption = e;
 
         return;
 

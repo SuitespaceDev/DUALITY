@@ -173,20 +173,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_attribute_size{};
 
     public:
-        winrt::hstring LabelIndexBufferSize();
+        winrt::hstring LabelWhitespaceEncryption();
 
-        void LabelIndexBufferSize(winrt::hstring const&);
+        void LabelWhitespaceEncryption(winrt::hstring const&);
 
     private:
-        winrt::hstring label_index_buffer_size{};
+        winrt::hstring label_whitespace_encryption{};
 
     public:
-        winrt::hstring ValueIndexBufferSize();
+        winrt::hstring ValueWhitespaceEncryption();
 
-        void ValueIndexBufferSize(winrt::hstring const&);
+        void ValueWhitespaceEncryption(winrt::hstring const&);
 
     private:
-        winrt::hstring value_index_buffer_size{};
+        winrt::hstring value_whitespace_encryption{};
 
     };
 

@@ -7,21 +7,35 @@ namespace HV4DX
 
         String LabelAccountHVID;
         String ValueAccountHVID;
-
         String LabelAccountID;
         String ValueAccountID;
-
         String LabelAccountMaxPath;
         String ValueAccountMaxPath;
-
         String LabelAccountCreated;
         String ValueAccountCreated;
-
         String LabelAccountUpdated;
         String ValueAccountUpdated;
-
         String LabelAccountPassword;
         String ValueAccountPassword;
+
+		String LabelAccount;
+		String ValueAccount;
+		String LabelAccountAddressOne;
+		String ValueAccountAddressOne;
+		String LabelAccountAddressTwo;
+		String ValueAccountAddressTwo;
+		String LabelAccountCity;
+		String ValueAccountCity;
+		String LabelAccountRegion;
+		String ValueAccountRegion;
+		String LabelAccountEMail;
+		String ValueAccountEMail;
+		String LabelAccountPrimaryPhone;
+		String ValueAccountPrimaryPhone;
+		String LabelAccountSecondaryPhone;
+		String ValueAccountSecondaryPhone;
+
+		Boolean AccountIsEditable;
 
     }
 

@@ -57,7 +57,7 @@
                 Grid.Column="1" Grid.ColumnSpan="1" 
                 Grid.Row="0" Grid.RowSpan="2"
                 Margin="2,2,2,2">
-
+<!--
                 <ComboBox 
                     Foreground="Black"
                     HorizontalAlignment="Stretch"
@@ -67,6 +67,18 @@
                     SelectedItem="{x:Bind Item, Mode=OneWay}"              
                     ItemsSource="{x:Bind ItemList, Mode=OneWay}"
                     IsEditable="{x:Bind Editable, Mode=OneTime}"/>
+-->
+
+                <ComboBox 
+                    Foreground="Black"  
+                    HorizontalAlignment="Stretch"
+                    Padding="3,3,3,3"                  
+                    FontWeight="Medium"
+                    FontSize="12"
+                    SelectedIndex="0">
+                    <TextBlock Text="{x:Bind Value}"/>                    
+                </ComboBox>
+
 
             </Border>
 

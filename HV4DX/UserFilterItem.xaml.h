@@ -25,6 +25,14 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label{};
 
     public:
+        hstring Value();
+
+        void Value(winrt::hstring const&);
+
+    private:
+        winrt::hstring value{};
+
+    public:
         winrt::hstring Item();
 
     private:

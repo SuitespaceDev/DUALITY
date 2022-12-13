@@ -27,23 +27,23 @@
                 LabelEnterpriseID="ENTERPRISE ID"
                 ValueEnterpriseID="{StaticResource xValueEnterpriseID}"
                 LabelBuildName="BUILD"
-                ValueBuildName="{StaticResource xValueBuildName}"
+                ValueBuildName="{StaticResource xValueEnterpriseBuildName}"
                 LabelBuildID="BUILD ID"
-                ValueBuildID="{StaticResource xValueBuildID}"
+                ValueBuildID="{StaticResource xValueEnterpriseBuildID}"
                 LabelBuildMMM="BUILD VERSION"
-                ValueBuildMMM="{StaticResource xValueBuildMMM}"
+                ValueBuildMMM="{StaticResource xValueEnterpriseBuildMMM}"
                 LabelBuildDate="BUILD DATETIME"
-                ValueBuildDate="{StaticResource xValueBuildDate}"
+                ValueBuildDate="{StaticResource xValueEnterpriseBuildDate}"
                 LabelLocalization="LOCALIZATION"
                 LabelTimeZone="TIMEZONE"
                 LabelKeyboard="KEYBOARD LAYOUT"
                 LabelWindowsTarget="WINDOWS TARGET"
                 LabelExecutableDir="EXECUTABLE DIRECTORY"
-                ValueExecutableDir="{StaticResource xValueExecutableDir}"
+                ValueExecutableDir="{StaticResource xValueEnterpriseBuildExecutableDir}"
                 LabelAssetsDir="ASSETS DIRECTORY"
-                ValueAssetsDir="{StaticResource xValueAssetsDir}"
+                ValueAssetsDir="{StaticResource xValueEnterpriseBuildAssetsDir}"
                 LabelXamlDir="XAML DIRECTORY"
-                ValueXamlDir="{StaticResource xValueXamlDir}"/>
+                ValueXamlDir="{StaticResource xValueEnterpriseBuildXamlDir}"/>
 
             <HV4DX:UserDivider/>
 

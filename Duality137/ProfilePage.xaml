@@ -13,7 +13,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DDEFAULTPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DADMINACCNT.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -21,24 +21,36 @@
     <ScrollViewer>
 
         <StackPanel>
-            
-            <HV4DX:TableContact
+
+            <HV4DX:TableAccount
+                LabelAccountHVID="ACCOUNT HVID"
+                ValueAccountHVID="{StaticResource xValueAdminAccountHVID}"
+                LabelAccountID="ACCOUNT ID"
+                ValueAccountID="{StaticResource xValueAdminAccountID}"
+                LabelAccountMaxPath="ACCOUNT"
+                ValueAccountMaxPath="{StaticResource xValueAdminAccountMaxPath}"
+                LabelAccountCreated="ACCOUNT CREATED"
+                ValueAccountCreated="{StaticResource xValueAdminAccountCreated}"
+                LabelAccountUpdated="ACCOUNT UPDATED"
+                ValueAccountUpdated="{StaticResource xValueAdminAccountUpdated}"
+                LabelAccountPassword="ACCOUNT PASSWORD"
+                ValueAccountPassword="{StaticResource xValueAdminAccountPassword}"
                 LabelAccount="PROJECT MANAGER"
-                ValueAccount="{StaticResource xValueAccount}"
-                LabelAddressOne="ADDRESS ONE"
-                ValueAddressOne="{StaticResource xValueAddressOne}"
-                LabelAddressTwo="ADDRESS TWO"
-                ValueAddressTwo="{StaticResource xValueAddressTwo}"
-                LabelCity="CITY"
-                ValueCity="{StaticResource xValueCity}"
-                LabelRegion="REGION"
-                ValueRegion="{StaticResource xValueRegion}"
-                LabelPrimaryPhone="PRIMARY NUMBER"
-                ValuePrimaryPhone="{StaticResource xValuePrimaryPhone}"
-                LabelSecondaryPhone="SECONDARY NUMBER"
-                ValueSecondaryPhone="{StaticResource xValueSecondaryPhone}"
-                LabelEMail="EMAIL ADDRESS"
-                ValueEMail="{StaticResource xValueEMail}"/>
+                ValueAccount="{StaticResource xValueAdminAccount}"
+                LabelAccountAddressOne="ADDRESS ONE"
+                ValueAccountAddressOne="{StaticResource xValueAdminAccountAddressOne}"
+                LabelAccountAddressTwo="ADDRESS TWO"
+                ValueAccountAddressTwo="{StaticResource xValueAdminAccountAddressTwo}"
+                LabelAccountCity="CITY"
+                ValueAccountCity="{StaticResource xValueAdminAccountCity}"
+                LabelAccountRegion="REGION"
+                ValueAccountRegion="{StaticResource xValueAdminAccountRegion}"
+                LabelAccountPrimaryPhone="PRIMARY NUMBER"
+                ValueAccountPrimaryPhone="{StaticResource xValueAdminAccountPrimaryPhone}"
+                LabelAccountSecondaryPhone="SECONDARY NUMBER"
+                ValueAccountSecondaryPhone="{StaticResource xValueAdminAccountSecondaryPhone}"
+                LabelAccountEMail="EMAIL ADDRESS"
+                ValueAccountEMail="{StaticResource xValueAdminAccountEMail}"/>
 
             <HV4DX:UserDivider/>
 
