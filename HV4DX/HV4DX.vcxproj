@@ -166,10 +166,6 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableIndexNav.xaml.h">
-      <DependentUpon>TableIndexNav.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableProfile.xaml.h">
       <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -306,10 +302,6 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableIndexNav.xaml.cpp">
-      <DependentUpon>TableIndexNav.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TableProfile.xaml.cpp">
       <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -443,10 +435,6 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableIndexNav.idl">
-      <DependentUpon>TableIndexNav.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableProfile.idl">
       <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -570,9 +558,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableIndex.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableIndexNav.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableProfile.xaml">

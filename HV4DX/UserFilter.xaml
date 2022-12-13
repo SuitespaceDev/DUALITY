@@ -57,14 +57,15 @@
                 Grid.Row="0" Grid.RowSpan="2"
                 Margin="2,2,2,2">
 
-                <TextBlock 
+                <TextBox
                     Foreground="Black"  
                     HorizontalAlignment="Left"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind Value}"/>
+                    Text="{x:Bind Value}"
+                    IsReadOnly="True"/>
                 
             </Border>
 

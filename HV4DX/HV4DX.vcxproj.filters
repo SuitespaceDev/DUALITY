@@ -402,9 +402,6 @@
     <Page Include="HV4DXDIM.xaml">
       <Filter>b. Resource Dictionary</Filter>
     </Page>
-    <Page Include="TableIndexNav.xaml">
-      <Filter>e. Tables\Table\TableIndex</Filter>
-    </Page>
     <Page Include="TableProfile.xaml">
       <Filter>e. Tables</Filter>
     </Page>
