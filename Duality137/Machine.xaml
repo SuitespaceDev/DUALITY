@@ -72,26 +72,12 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{E1F8583C-67B8-4D9A-BD15-256B3C0E0698}" x:Name="DataBindingPage" Content="Data Binding">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem SelectsOnInvoked="False" Tag="{}{22347BEE-8DF3-4F4B-8963-02B803AD3EC4}" x:Name="QueryPage" Content="Query">
-                            <NavigationViewItem.MenuItems>
-                                <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="QueryBinaryPage" Content="Query Binary"/>
-                                <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="QueryJSONPage" Content="Query JSON"/>
-                                <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="QueryXMLPage" Content="Query XML"/>
-                                <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="QueryXAMLPage" Content="Query XAML"/>
-                                <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="QueryQIFPage" Content="Query QIF"/>
-                                <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="QueryPostgreSQLPage" Content="Query PostgreSQL"/>
-                            </NavigationViewItem.MenuItems>
-                        </NavigationViewItem>
-                        <NavigationViewItem SelectsOnInvoked="False" Tag="{}{9AAD1622-429A-4CE2-AD1E-A675F09D6132}" x:Name="ValueBinding" Content="Value Binding">
-                            <NavigationViewItem.MenuItems>
-                                <NavigationViewItem Tag="{}{5DFBAC3D-4A39-4369-B455-F77D0F44F68E}" x:Name="PersistBinaryPage" Content="Persist Binary"/>
-                                <NavigationViewItem Tag="{}{129CA93C-42CF-4F01-BF57-9D678B54DC09}" x:Name="PersistJSONPage" Content="Persist JSON"/>
-                                <NavigationViewItem Tag="{}{ECCEA271-CCA0-4C5B-90FD-4EB474E3E8A0}" x:Name="PersistXMLPage" Content="Persist XML"/>
-                                <NavigationViewItem Tag="{}{2EAB2606-106E-4081-9A26-BAE6DC52A31B}" x:Name="PersistXAMLPage" Content="Persist XAML"/>
-                                <NavigationViewItem Tag="{}{C0698168-0C1E-4511-9EE4-413C3694EFAD}" x:Name="PersistQIFPage" Content="Persist QIF"/>
-                                <NavigationViewItem Tag="{}{35BA0B78-E70D-42FD-A05A-C8499E20FBC2}" x:Name="PersistPostgreSQLPage" Content="Persist PostgreSQL"/>
-                            </NavigationViewItem.MenuItems>
-                        </NavigationViewItem>
+                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="QueryBinaryPage" Content="Query Binary"/>
+                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="QueryJSONPage" Content="Query JSON"/>
+                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="QueryXMLPage" Content="Query XML"/>
+                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="QueryXAMLPage" Content="Query XAML"/>
+                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="QueryQIFPage" Content="Query QIF"/>
+                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="QueryPostgreSQLPage" Content="Query PostgreSQL"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
@@ -103,7 +89,6 @@
                         <NavigationViewItem Tag="{}{AEB4D9F3-E14E-4F60-9315-93386C608B28}" x:Name="AcceleratorPage" Content="Accelerator"/>
                         <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="OutputDevicePage" Content="Output Device"/>
                         <NavigationViewItem Tag="{}{19E262AB-C56E-47A7-AAE9-A9459F4726BF}" x:Name="RandomMemoryPage" Content="Random Memory"/>
-                        <NavigationViewItem Tag="{}{7242F8AA-CA51-4BE4-A6A9-0879DC5A3A80}" x:Name="CacheMemoryPage" Content="Cache Memory"/>
                         <NavigationViewItem Tag="{}{36E17529-39A7-4AEC-9EF9-1CAF3188B56A}" x:Name="ProcessorCorePage" Content="Processor Cores"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
@@ -152,6 +137,7 @@
                     <RowDefinition Height="108"/>
                     <RowDefinition Height="32"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="32"/>
                 </Grid.RowDefinitions>
 
                 <HV4DX:UserDivider
@@ -185,9 +171,13 @@
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="3" Grid.RowSpan="1"
                     NavigationFailed="MetadataPortalNavFailed"/>
-            
+
+                <HV4DX:UserDivider
+                    Grid.Column="0" Grid.ColumnSpan="1"
+                    Grid.Row="4" Grid.RowSpan="1"/>
+
             </Grid>
-            
+
         </NavigationView>
 
         <Grid Grid.Column="1" Grid.ColumnSpan="1"

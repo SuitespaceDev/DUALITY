@@ -19,7 +19,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildTheme(winrt::hstring const&);
 
     private:
-        winrt::hstring theme{};
+        winrt::hstring label_theme{};
+
+    public:
+        winrt::hstring ValueBuildTheme();
+
+        void ValueBuildTheme(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_theme{};
 
     public:
         winrt::hstring LabelBuildUIScale();
@@ -27,7 +35,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildUIScale(winrt::hstring const&);
 
     private:
-        winrt::hstring ui_scale{};
+        winrt::hstring label_ui_scale{};
+
+    public:
+        winrt::hstring ValueBuildUIScale();
+
+        void ValueBuildUIScale(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_ui_scale{};
 
     public:
         winrt::hstring LabelBuildAntiAliasing();
@@ -35,7 +51,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildAntiAliasing(winrt::hstring const&);
 
     private:
-        winrt::hstring anti_aliasing{};
+        winrt::hstring label_anti_aliasing{};
+
+    public:
+        winrt::hstring ValueBuildAntiAliasing();
+
+        void ValueBuildAntiAliasing(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_anti_aliasing{};
 
     public:
         winrt::hstring LabelBuildFullScreen();
@@ -43,7 +67,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildFullScreen(winrt::hstring const&);
 
     private:
-        winrt::hstring full_screen{};
+        winrt::hstring label_full_screen{};
+
+    public:
+        winrt::hstring ValueBuildFullScreen();
+
+        void ValueBuildFullScreen(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_full_screen{};
 
     public:
         winrt::hstring LabelBuildResolution();
@@ -51,7 +83,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildResolution(winrt::hstring const&);
 
     private:
-        winrt::hstring resolution{};
+        winrt::hstring label_resolution{};
+
+    public:
+        winrt::hstring ValueBuildResolution();
+
+        void ValueBuildResolution(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_resolution{};
 
     public:
         winrt::hstring LabelBuildRefreshRate();
@@ -59,7 +99,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildRefreshRate(winrt::hstring const&);
 
     private:
-        winrt::hstring refresh_rate{};
+        winrt::hstring label_refresh_rate{};
+
+    public:
+        winrt::hstring ValueBuildRefreshRate();
+
+        void ValueBuildRefreshRate(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_refresh_rate{};
 
     public:
         winrt::hstring LabelBuildFont();
@@ -67,7 +115,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildFont(winrt::hstring const&);
 
     private:
-        winrt::hstring font{};
+        winrt::hstring label_font{};
+
+    public:
+        winrt::hstring ValueBuildFont();
+
+        void ValueBuildFont(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_font{};
 
     public:
         winrt::hstring LabelBuildFontSize();
@@ -75,7 +131,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildFontSize(winrt::hstring const&);
 
     private:
-        winrt::hstring font_size{};
+        winrt::hstring label_font_size{};
+
+    public:
+        winrt::hstring ValueBuildFontSize();
+
+        void ValueBuildFontSize(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_font_size{};
 
     public:
         winrt::hstring LabelBuildFontWeight();
@@ -83,7 +147,15 @@ namespace winrt::HV4DX::implementation
         void LabelBuildFontWeight(winrt::hstring const&);
 
     private:
-        winrt::hstring font_weight{};
+        winrt::hstring label_font_weight{};
+
+    public:
+        winrt::hstring ValueBuildFontWeight();
+
+        void ValueBuildFontWeight(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_font_weight{};
 
     };
 

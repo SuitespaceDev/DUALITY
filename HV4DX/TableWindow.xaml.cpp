@@ -16,13 +16,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildTheme()
     {
-        return theme;
+        return label_theme;
 
     }
 
     void TableWindow::LabelBuildTheme(winrt::hstring const& e)
     {
-        theme = e;
+        label_theme = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildTheme()
+    {
+        return value_theme;
+
+    }
+
+    void TableWindow::ValueBuildTheme(winrt::hstring const& e)
+    {
+        value_theme = e;
 
         return;
 
@@ -30,13 +44,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildUIScale()
     {
-        return ui_scale;
+        return label_ui_scale;
 
     }
 
     void TableWindow::LabelBuildUIScale(winrt::hstring const& e)
     {
-        ui_scale = e;
+        label_ui_scale = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildUIScale()
+    {
+        return value_ui_scale;
+
+    }
+
+    void TableWindow::ValueBuildUIScale(winrt::hstring const& e)
+    {
+        value_ui_scale = e;
 
         return;
 
@@ -44,13 +72,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildAntiAliasing()
     {
-        return anti_aliasing;
+        return label_anti_aliasing;
 
     }
 
     void TableWindow::LabelBuildAntiAliasing(winrt::hstring const& e)
     {
-        anti_aliasing = e;
+        label_anti_aliasing = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildAntiAliasing()
+    {
+        return value_anti_aliasing;
+
+    }
+
+    void TableWindow::ValueBuildAntiAliasing(winrt::hstring const& e)
+    {
+        value_anti_aliasing = e;
 
         return;
 
@@ -58,13 +100,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildFullScreen()
     {
-        return full_screen;
+        return label_full_screen;
 
     }
 
     void TableWindow::LabelBuildFullScreen(winrt::hstring const& e)
     {
-        full_screen = e;
+        label_full_screen = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildFullScreen()
+    {
+        return value_full_screen;
+
+    }
+
+    void TableWindow::ValueBuildFullScreen(winrt::hstring const& e)
+    {
+        value_full_screen = e;
 
         return;
 
@@ -72,13 +128,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildResolution()
     {
-        return resolution;
+        return label_resolution;
 
     }
 
     void TableWindow::LabelBuildResolution(winrt::hstring const& e)
     {
-        resolution = e;
+        label_resolution = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildResolution()
+    {
+        return value_resolution;
+
+    }
+
+    void TableWindow::ValueBuildResolution(winrt::hstring const& e)
+    {
+        value_resolution = e;
 
         return;
 
@@ -86,13 +156,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildRefreshRate()
     {
-        return refresh_rate;
+        return label_refresh_rate;
 
     }
 
     void TableWindow::LabelBuildRefreshRate(winrt::hstring const& e)
     {
-        refresh_rate = e;
+        label_refresh_rate = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildRefreshRate()
+    {
+        return value_refresh_rate;
+
+    }
+
+    void TableWindow::ValueBuildRefreshRate(winrt::hstring const& e)
+    {
+        value_refresh_rate = e;
 
         return;
 
@@ -100,13 +184,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildFont()
     {
-        return font;
+        return label_font;
 
     }
 
     void TableWindow::LabelBuildFont(winrt::hstring const& e)
     {
-        font = e;
+        label_font = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildFont()
+    {
+        return value_font;
+
+    }
+
+    void TableWindow::ValueBuildFont(winrt::hstring const& e)
+    {
+        value_font = e;
 
         return;
 
@@ -114,13 +212,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildFontSize()
     {
-        return font_size;
+        return label_font_size;
 
     }
 
     void TableWindow::LabelBuildFontSize(winrt::hstring const& e)
     {
-        font_size = e;
+        label_font_size = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildFontSize()
+    {
+        return value_font_size;
+
+    }
+
+    void TableWindow::ValueBuildFontSize(winrt::hstring const& e)
+    {
+        value_font_size = e;
 
         return;
 
@@ -128,13 +240,27 @@ namespace winrt::HV4DX::implementation
 
     winrt::hstring TableWindow::LabelBuildFontWeight()
     {
-        return font_weight;
+        return label_font_weight;
 
     }
 
     void TableWindow::LabelBuildFontWeight(winrt::hstring const& e)
     {
-        font_weight = e;
+        label_font_weight = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableWindow::ValueBuildFontWeight()
+    {
+        return value_font_weight;
+
+    }
+
+    void TableWindow::ValueBuildFontWeight(winrt::hstring const& e)
+    {
+        value_font_weight = e;
 
         return;
 

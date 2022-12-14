@@ -170,6 +170,10 @@
       <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableStorage.xaml.h">
+      <DependentUpon>TableStorage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableWindow.xaml.h">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -241,9 +245,6 @@
     <ClInclude Include="TableContract.xaml.h">
       <DependentUpon>TableContract.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="TableDebug.xaml.h">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="TableIterator.xaml.h">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClInclude>
@@ -304,6 +305,10 @@
     </ClCompile>
     <ClCompile Include="TableProfile.xaml.cpp">
       <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableStorage.xaml.cpp">
+      <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableWindow.xaml.cpp">
@@ -373,9 +378,6 @@
     <ClCompile Include="TableContract.xaml.cpp">
       <DependentUpon>TableContract.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="TableDebug.xaml.cpp">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-    </ClCompile>
     <ClCompile Include="TableIterator.xaml.cpp">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClCompile>
@@ -437,6 +439,10 @@
     </Midl>
     <Midl Include="TableProfile.idl">
       <DependentUpon>TableProfile.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableStorage.idl">
+      <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableWindow.idl">
@@ -510,9 +516,6 @@
     <Midl Include="TableContract.idl">
       <DependentUpon>TableContract.xaml</DependentUpon>
     </Midl>
-    <Midl Include="TableDebug.idl">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-    </Midl>
     <Midl Include="TableIterator.idl">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </Midl>
@@ -563,6 +566,9 @@
     <Page Include="TableProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableStorage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -598,7 +604,6 @@
     </Page>
     <Page Include="UserPassword.xaml" />
     <Page Include="TableContract.xaml" />
-    <Page Include="TableDebug.xaml" />
     <Page Include="TableIterator.xaml" />
     <Page Include="TableMouse.xaml" />
     <Page Include="TableParameter.xaml" />

@@ -20,13 +20,70 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:TableRuntimeClass
+                LabelRTCHVID="MODULE HVID"
+                ValueRTCHVID=""
+                LabelRTCMMM="MODULE MMM"
+                ValueRTCMIL=""
+                ValueRTCMAJ=""
+                ValueRTCMIN=""
+                LabelRTCMaxPath="MODULE NAME"
+                ValueRTCMaxPath=""
+                LabelRTCNamespace="RUNTIME NAMESPACE"
+                ValueRTCNamespace=""
+                LabelRTC="RUNTIME CLASS"
+                ValueRTC=""
+                LabelRTCCompiled="MODULE COMPILE DATE"
+                ValueRTCCompiled=""
+                LabelRTCDLL="MODULE DLL"
+                ValueRTCDLL=""/>
 
             <HV4DX:UserDivider/>
 
+            <TabView>
+
+                <TabViewItem
+                    Header="BINARY"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="XML"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="JSON"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="XAML"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="QIF"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="PostgreSQL"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+            </TabView>
+
             <HV4DX:UserDivider/>
 
-            <Border x:Name="ProfileDescription"
+            <Border 
+                x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"
                 Grid.Column="0" Grid.ColumnSpan="4" 
@@ -36,17 +93,18 @@
                 Margin="3,3,3,3"
                 Padding="0,0,0,0">
 
-                <TextBox Foreground="Black"
-                         AcceptsReturn="True" 
-                         TextWrapping="Wrap"
-                         HorizontalAlignment="Stretch"  
-                         VerticalAlignment="Stretch"
-                         FontWeight="Medium"
-                         FontSize="12"
-                         Height="500"
-                         Padding="3,3,3,3"
-                         PlaceholderText="Add description here ..."
-                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True" 
+                    TextWrapping="Wrap"
+                    HorizontalAlignment="Stretch"  
+                    VerticalAlignment="Stretch"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Height="500"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
             </Border>
 

@@ -52,20 +52,20 @@
 
             <Border 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                Background="{ThemeResource HV4DPropertyPageGrey}"
                 BorderThickness="1"
                 Grid.Column="1" Grid.ColumnSpan="1"
                 Grid.Row="0" Grid.RowSpan="2"
                 Margin="2,2,2,2">
 
-                <TextBox
+                <TextBlock
                     Foreground="Black"  
                     HorizontalAlignment="Left"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind Value}"
-                    IsReadOnly="True"/>
+                    Text="{x:Bind Value}"/>
                 
             </Border>
 

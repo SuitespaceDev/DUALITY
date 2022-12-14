@@ -169,12 +169,6 @@
     <Filter Include="e. Tables\TableDataBinding">
       <UniqueIdentifier>{d98a3cd2-a3ed-4f85-86b4-33149c4e2005}</UniqueIdentifier>
     </Filter>
-    <Filter Include="e. Tables\TableDataBinding\Query">
-      <UniqueIdentifier>{a7617267-d0f0-40f1-b765-9849184d01c8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="e. Tables\TableDataBinding\Persist">
-      <UniqueIdentifier>{90b54fad-863b-471a-a4e8-e1545520e4f1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="e. Tables\TableIO">
       <UniqueIdentifier>{c96bb157-a7c7-4d8e-ab07-f17321d0df62}</UniqueIdentifier>
     </Filter>
@@ -186,9 +180,6 @@
     </Filter>
     <Filter Include="e. Tables\TableIO\TableAccelerator">
       <UniqueIdentifier>{fd6f14d9-cc00-472e-8e1a-78750d16d160}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="e. Tables\TableIO\TableCacheMemory">
-      <UniqueIdentifier>{a39fb0ae-1dd8-4c46-9de2-58d4850eb5e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="e. Tables\TableIO\TableInputDevice">
       <UniqueIdentifier>{5644339d-e10e-4d58-a5f9-6c366134ed5b}</UniqueIdentifier>
@@ -261,6 +252,9 @@
     </Filter>
     <Filter Include="e. Tables\Table\TableIndex">
       <UniqueIdentifier>{a04c8df1-e46b-41de-bbe3-8a9ae4a35375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="e. Tables\TableDataBinding\QueryXaml">
+      <UniqueIdentifier>{6a039575-81be-4404-ac0a-643265d9ab17}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -378,9 +372,6 @@
     <Page Include="UserIPv6.xaml">
       <Filter>d. UserControls\UserString\UserIPv6</Filter>
     </Page>
-    <Page Include="TableDebug.xaml">
-      <Filter>e. Tables\TableRuntime\TableDebug</Filter>
-    </Page>
     <Page Include="HV4DX.xaml">
       <Filter>b. Resource Dictionary</Filter>
     </Page>
@@ -419,6 +410,9 @@
     </Page>
     <Page Include="UserTime.xaml">
       <Filter>d. UserControls\UserString\UserTime</Filter>
+    </Page>
+    <Page Include="TableStorage.xaml">
+      <Filter>e. Tables\TableIO\TableStorage</Filter>
     </Page>
   </ItemGroup>
 </Project>

@@ -20,29 +20,45 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider/>
+            <TabView>
 
-            <HV4DX:UserBlock Label="BUILD HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="BUILD MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="BUILD NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="BUILD CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD OPENED TIME" Value="17:04"/>
+                <TabViewItem
+                    Header="MOUSE"
+                    IsClosable="False">
 
-            <HV4DX:UserDivider/>
+                </TabViewItem>
 
-            <HV4DX:UserFilterNew Label="PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="PROFILE MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="PROFILE NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED TIME" Value="17:04"/>
+                <TabViewItem
+                    Header="KEYBOARD"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="TABLET"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="MAPPED"   
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="MIDI"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="ANALOGUE"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+            </TabView>
 
             <HV4DX:UserDivider/>
 

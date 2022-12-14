@@ -12,6 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DPRESENTER.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -22,14 +23,23 @@
 
             <HV4DX:TableWindow
                 LabelBuildTheme="THEME"
+                ValueBuildTheme="{StaticResource xValueBuildTheme}"
                 LabelBuildUIScale="UI SCALE"
+                ValueBuildUIScale="{StaticResource xValueBuildUIScale}"
                 LabelBuildAntiAliasing="ANTI-ALIASING"
+                ValueBuildAntiAliasing="{StaticResource xValueBuildAntiAliasing}"
                 LabelBuildFullScreen="FULLSCREEN"
+                ValueBuildFullScreen="{StaticResource xValueBuildFullScreen}"
                 LabelBuildResolution="RESOLUTION"
+                ValueBuildResolution="{StaticResource xValueBuildResolution}"
                 LabelBuildRefreshRate="REFRESH RATE"
+                ValueBuildRefreshRate="{StaticResource xValueBuildRefreshRate}"
                 LabelBuildFont="FONT"
+                ValueBuildFont="{StaticResource xValueBuildFont}"
                 LabelBuildFontSize="FONT SIZE"
-                LabelBuildFontWeight="FONT WEIGHT"/>
+                ValueBuildFontSize="{StaticResource xValueBuildFontSize}"
+                LabelBuildFontWeight="FONT WEIGHT"
+                ValueBuildFontWeight="{StaticResource xValueBuildFontWeight}"/>
 
             <HV4DX:UserDivider/>
 

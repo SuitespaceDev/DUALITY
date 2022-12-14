@@ -20,29 +20,81 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider/>
+            <TabView>
 
-            <HV4DX:UserBlock Label="BUILD HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="BUILD MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="BUILD NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="BUILD CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD OPENED TIME" Value="17:04"/>
+                <TabViewItem
+                    Header="RS-232"
+                    IsClosable="False">
 
-            <HV4DX:UserDivider/>
+                </TabViewItem>
 
-            <HV4DX:UserFilterNew Label="PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="PROFILE MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="PROFILE NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED TIME" Value="17:04"/>
+                <TabViewItem
+                    Header="DB-25"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="USB"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="IEEE 1394"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="LAN"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="WIFI"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="eSATA"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="SCSI"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="NVMe"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="PCIe"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="HDMI"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="DP"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+            </TabView>
 
             <HV4DX:UserDivider/>
 

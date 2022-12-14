@@ -12,6 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DKERNEL.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,33 +21,70 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider/>
-
-            <HV4DX:UserBlock Label="BUILD HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="BUILD MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="BUILD NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="BUILD CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="BUILD OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="BUILD OPENED TIME" Value="17:04"/>
-
-            <HV4DX:UserDivider/>
-
-            <HV4DX:UserFilterNew Label="PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="PROFILE MMM" Editable="True"/>
-            <HV4DX:UserFilterItem Label="PROFILE NAME" Editable="True"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="PROFILE OPENED TIME" Value="17:04"/>
+            <HV4DX:TableRuntimeClass
+                LabelRTCHVID="MODULE HVID"
+                ValueRTCHVID="{StaticResource xValueQueryXamlRTCHVID}"
+                LabelRTCMMM="MODULE MMM"
+                ValueRTCMIL="{StaticResource xValueQueryXamlRTCMIL}"
+                ValueRTCMAJ="{StaticResource xValueQueryXamlRTCMAJ}"
+                ValueRTCMIN="{StaticResource xValueQueryXamlRTCMIN}"
+                LabelRTCMaxPath="MODULE NAME"
+                ValueRTCMaxPath="{StaticResource xValueQueryXamlRTCMaxPath}"
+                LabelRTCNamespace="RUNTIME NAMESPACE"
+                ValueRTCNamespace="{StaticResource xValueQueryXamlRTCNamespace}"
+                LabelRTC="RUNTIME CLASS"
+                ValueRTC="{StaticResource xValueQueryXamlRTC}"
+                LabelRTCCompiled="MODULE COMPILE DATE"
+                ValueRTCCompiled="{StaticResource xValueQueryXamlRTCCompiled}"
+                LabelRTCDLL="MODULE DLL"
+                ValueRTCDLL="{StaticResource xValueQueryXamlRTCDLL}"/>
 
             <HV4DX:UserDivider/>
 
-            <Border x:Name="ProfileDescription"
+            <TabView>
+
+                <TabViewItem
+                    Header="BINARY"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="XML"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="JSON"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="XAML"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="QIF"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+                <TabViewItem
+                    Header="PostgreSQL"
+                    IsClosable="False">
+
+                </TabViewItem>
+
+            </TabView>
+
+            <HV4DX:UserDivider/>
+
+            <Border 
+                x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"
                 Grid.Column="0" Grid.ColumnSpan="4" 
@@ -56,17 +94,18 @@
                 Margin="3,3,3,3"
                 Padding="0,0,0,0">
 
-                <TextBox Foreground="Black"
-                         AcceptsReturn="True" 
-                         TextWrapping="Wrap"
-                         HorizontalAlignment="Stretch"  
-                         VerticalAlignment="Stretch"
-                         FontWeight="Medium"
-                         FontSize="12"
-                         Height="500"
-                         Padding="3,3,3,3"
-                         PlaceholderText="Add description here ..."
-                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True" 
+                    TextWrapping="Wrap"
+                    HorizontalAlignment="Stretch"  
+                    VerticalAlignment="Stretch"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Height="500"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
             </Border>
 

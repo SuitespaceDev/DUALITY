@@ -132,10 +132,6 @@
     <ClInclude Include="BlankProject.xaml.h">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="CacheMemoryPage.xaml.h">
-      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="Level1AccountPage.xaml.h">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
     </ClInclude>
@@ -251,24 +247,6 @@
     <ClInclude Include="ParameterPage.xaml.h">
       <DependentUpon>ParameterPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PersistBinaryPage.xaml.h">
-      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="PersistJSONPage.xaml.h">
-      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="PersistPostgreSQLPage.xaml.h">
-      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="PersistQIFPage.xaml.h">
-      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="PersistXAMLPage.xaml.h">
-      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="PersistXMLPage.xaml.h">
-      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="PipePage.xaml.h">
       <DependentUpon>PipePage.xaml</DependentUpon>
     </ClInclude>
@@ -352,10 +330,6 @@
     </ClCompile>
     <ClCompile Include="BlankProject.xaml.cpp">
       <DependentUpon>BlankProject.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="CacheMemoryPage.xaml.cpp">
-      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="Level1AccountPage.xaml.cpp">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
@@ -472,24 +446,6 @@
     <ClCompile Include="ParameterPage.xaml.cpp">
       <DependentUpon>ParameterPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PersistBinaryPage.xaml.cpp">
-      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="PersistJSONPage.xaml.cpp">
-      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="PersistPostgreSQLPage.xaml.cpp">
-      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="PersistQIFPage.xaml.cpp">
-      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="PersistXAMLPage.xaml.cpp">
-      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="PersistXMLPage.xaml.cpp">
-      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
-    </ClCompile>
     <ClCompile Include="PipePage.xaml.cpp">
       <DependentUpon>PipePage.xaml</DependentUpon>
     </ClCompile>
@@ -588,10 +544,6 @@
     </Midl>
     <Midl Include="BlankProject.idl">
       <DependentUpon>BlankProject.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="CacheMemoryPage.idl">
-      <DependentUpon>CacheMemoryPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Midl>
     <Midl Include="Level1AccountPage.idl">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
@@ -708,24 +660,6 @@
     <Midl Include="ParameterPage.idl">
       <DependentUpon>ParameterPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PersistBinaryPage.idl">
-      <DependentUpon>PersistBinaryPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="PersistJSONPage.idl">
-      <DependentUpon>PersistJSONPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="PersistPostgreSQLPage.idl">
-      <DependentUpon>PersistPostgreSQLPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="PersistQIFPage.idl">
-      <DependentUpon>PersistQIFPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="PersistXAMLPage.idl">
-      <DependentUpon>PersistXAMLPage.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="PersistXMLPage.idl">
-      <DependentUpon>PersistXMLPage.xaml</DependentUpon>
-    </Midl>
     <Midl Include="PipePage.idl">
       <DependentUpon>PipePage.xaml</DependentUpon>
     </Midl>
@@ -802,9 +736,6 @@
     <Page Include="AsyncPage.xaml" />
     <Page Include="BitmapPage.xaml" />
     <Page Include="BlankProject.xaml" />
-    <Page Include="CacheMemoryPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="DHV4DADMINDB.xaml" />
     <Page Include="DHV4DADMINACCNT.xaml" />
     <Page Include="DHV4DKERNEL.xaml" />
@@ -812,6 +743,7 @@
     <Page Include="DHV4DENTERPRISE.xaml" />
     <Page Include="DHV4DDEFAULTPROFILE.xaml" />
     <Page Include="DHV4DIMAGE.xaml" />
+    <Page Include="DHV4DPRESENTER.xaml" />
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>
@@ -867,12 +799,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ParameterPage.xaml" />
-    <Page Include="PersistBinaryPage.xaml" />
-    <Page Include="PersistJSONPage.xaml" />
-    <Page Include="PersistPostgreSQLPage.xaml" />
-    <Page Include="PersistQIFPage.xaml" />
-    <Page Include="PersistXAMLPage.xaml" />
-    <Page Include="PersistXMLPage.xaml" />
     <Page Include="PipePage.xaml" />
     <Page Include="Level3AccountPage.xaml" />
     <Page Include="Level4AccountPage.xaml" />

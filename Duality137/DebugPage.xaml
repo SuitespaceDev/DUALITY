@@ -12,6 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DKERNEL.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,25 +21,28 @@
 
         <StackPanel>
 
+            <HV4DX:TableRuntimeClass
+                LabelRTCHVID="MODULE HVID"
+                ValueRTCHVID="{StaticResource xValueDebugRTCHVID}"
+                LabelRTCMMM="MODULE MMM"
+                ValueRTCMIL="{StaticResource xValueDebugRTCMIL}"
+                ValueRTCMAJ="{StaticResource xValueDebugRTCMAJ}"
+                ValueRTCMIN="{StaticResource xValueDebugRTCMIN}"
+                LabelRTCMaxPath="MODULE NAME"
+                ValueRTCMaxPath="{StaticResource xValueDebugRTCMaxPath}"
+                LabelRTCNamespace="RUNTIME NAMESPACE"
+                ValueRTCNamespace="{StaticResource xValueDebugRTCNamespace}"
+                LabelRTC="RUNTIME CLASS"
+                ValueRTC="{StaticResource xValueDebugRTC}"
+                LabelRTCCompiled="MODULE COMPILE DATE"
+                ValueRTCCompiled="{StaticResource xValueDebugRTCCompiled}"
+                LabelRTCDLL="MODULE DLL"
+                ValueRTCDLL="{StaticResource xValueDebugRTCDLL}"/>
+
             <HV4DX:UserDivider/>
 
-            <HV4DX:UserBlock Label="DEBUG PROFILE HVID" Value="{}{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"/>
-            <HV4DX:UserFilterItem Label="DEBUG PROFILE MMM"/>
-            <HV4DX:UserFilterItem Label="DEBUG PROFILE NAME"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE CREATED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE CREATED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE SAVED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE SAVED TIME" Value="17:04"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE OPENED DATE" Value="11/11/2022"/>
-            <HV4DX:UserBlock Label="DEBUG PROFILE OPENED TIME" Value="17:04"/>
-
-            <HV4DX:UserDivider/>
-
-            <HV4DX:TableDebug/>
-
-            <HV4DX:UserDivider/>
-
-            <Border x:Name="ProfileDescription"
+            <Border 
+                x:Name="ProfileDescription"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"
                 Grid.Column="0" Grid.ColumnSpan="4" 
@@ -48,17 +52,18 @@
                 Margin="3,3,3,3"
                 Padding="0,0,0,0">
 
-                <TextBox Foreground="Black"
-                         AcceptsReturn="True" 
-                         TextWrapping="Wrap"
-                         HorizontalAlignment="Stretch"  
-                         VerticalAlignment="Stretch"
-                         FontWeight="Medium"
-                         FontSize="12"
-                         Height="500"
-                         Padding="3,3,3,3"
-                         PlaceholderText="Add description here ..."
-                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True" 
+                    TextWrapping="Wrap"
+                    HorizontalAlignment="Stretch"  
+                    VerticalAlignment="Stretch"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Height="500"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
             </Border>
 

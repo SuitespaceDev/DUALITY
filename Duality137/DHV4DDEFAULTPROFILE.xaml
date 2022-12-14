@@ -11,5 +11,6 @@
     <x:String x:Key="xValueDefaultProfileAdminCreated">01/01/2023 00:00:00</x:String>
     <x:String x:Key="xValueDefaultProfileAdminSaved">01/01/2023 00:00:00</x:String>
     <x:String x:Key="xValueDefaultProfileAdminOpened">01/01/2023 00:00:00</x:String>
+    <x:String x:Key="xValueDefaultProfileAdminCurrent"></x:String>
 
 </ResourceDictionary>
