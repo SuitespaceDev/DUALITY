@@ -221,9 +221,6 @@
     <ClInclude Include="UserFilterType.xaml.h">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserMEventDebug.h">
-      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
-    </ClInclude>
     <ClInclude Include="UserFilterMMM.xaml.h">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -232,8 +229,13 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="UserMSelectable.h">
-      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+    <ClInclude Include="UserPartition.xaml.h">
+      <DependentUpon>UserPartition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserSelectable.xaml.h">
+      <DependentUpon>UserSelectable.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserNumeric.xaml.h">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
@@ -358,7 +360,6 @@
     <ClCompile Include="UserFilterType.xaml.cpp">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserMEventDebug.cpp" />
     <ClCompile Include="UserFilterMMM.xaml.cpp">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -367,7 +368,14 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="UserMSelectable.cpp" />
+    <ClCompile Include="UserPartition.xaml.cpp">
+      <DependentUpon>UserPartition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserSelectable.xaml.cpp">
+      <DependentUpon>UserSelectable.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserNumeric.xaml.cpp">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -492,9 +500,6 @@
     <Midl Include="UserFilterType.idl">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserMEventDebug.idl">
-      <DependentUpon>UserMEventDebug.cpp</DependentUpon>
-    </Midl>
     <Midl Include="UserFilterMMM.idl">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -503,8 +508,13 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="UserMSelectable.idl">
-      <DependentUpon>UserMSelectable.cpp</DependentUpon>
+    <Midl Include="UserPartition.idl">
+      <DependentUpon>UserPartition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserSelectable.idl">
+      <DependentUpon>UserSelectable.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserNumeric.idl">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
@@ -602,12 +612,18 @@
     <Page Include="UserNumeric.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UserPartition.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserPassword.xaml" />
     <Page Include="TableContract.xaml" />
     <Page Include="TableIterator.xaml" />
     <Page Include="TableMouse.xaml" />
     <Page Include="TableParameter.xaml" />
     <Page Include="TableRuntimeClass.xaml" />
+    <Page Include="UserSelectable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserTime.xaml">
       <SubType>Designer</SubType>
     </Page>

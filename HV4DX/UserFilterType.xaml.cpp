@@ -10,7 +10,7 @@ namespace winrt::HV4DX::implementation
 	{
 		InitializeComponent();
 
-		filter_list = winrt::single_threaded_observable_vector<HV4DX::UserMSelectable>();
+		filter_list = winrt::single_threaded_observable_vector<HV4DX::UserSelectable>();
 
 		return;
 
@@ -46,17 +46,17 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	WFITT::IObservableVector<HV4DX::UserMSelectable> UserFilterType::FilterList()
+	WFITT::IObservableVector<HV4DX::UserSelectable> UserFilterType::FilterList()
 	{
 		return filter_list;
 
 	}
 
-	void UserFilterType::FilterList(WFITT::IObservableVector<HV4DX::UserMSelectable> const& e)
+	void UserFilterType::FilterList(WFITT::IObservableVector<HV4DX::UserSelectable> const& e)
 	{
 		filter_list.Clear();
 
-		for (HV4DX::UserMSelectable itt : e)
+		for (HV4DX::UserSelectable itt : e)
 		{
 			filter_list.Append(itt);
 
@@ -64,14 +64,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	HV4DX::UserMSelectable UserFilterType::MultiFilterState() 
+	HV4DX::UserSelectable UserFilterType::MultiFilterState() 
 	{ 
 		
 		return multi_filter_state; 
 	
 	}
 
-	void UserFilterType::MultiFilterState(HV4DX::UserMSelectable const& e)
+	void UserFilterType::MultiFilterState(HV4DX::UserSelectable const& e)
 	{ 
 		multi_filter_state = e; 
 

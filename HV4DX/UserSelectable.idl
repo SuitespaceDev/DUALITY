@@ -1,0 +1,14 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserSelectable : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserSelectable();
+
+        String Selectable;
+
+        Boolean Selected;
+
+    }
+
+}

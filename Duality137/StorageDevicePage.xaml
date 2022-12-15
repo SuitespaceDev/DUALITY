@@ -11,48 +11,46 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
 
-    <ScrollViewer>
+    <StackPanel>
 
-        <StackPanel>
+        <HV4DX:TableStorage
+            
+            LabelDriveManufacturer="DRIVE MANUFACTURER"
+            ValueDriveManufacturer="Samsung"
+            LabelDriveHVID="DRIVE HVID"
+            ValueDriveHVID="{}{D8FEFE37-E148-4AC5-89B7-5D6D27AFFF99}"
+            LabelDriveType="DRIVE TYPE"
+            ValueDriveType="NVMe SSD"
+            LabelDriveSize="DRIVE SIZE (kB)"
+            ValueDriveSize="536870912"
+            LabelDriveUsed="DRIVE USED"
+            ValueDriveUsed="134217728"/>
 
-            <HV4DX:TableIndex/>
+        <HV4DX:UserDivider/>
 
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="2"
+            Height="500"
+            Margin="3,3,3,3">
 
-            <HV4DX:UserDivider/>
+            <TextBox 
+                Foreground="Black"
+                AcceptsReturn="True"
+                TextWrapping="Wrap"
+                FontWeight="Medium"
+                FontSize="12"
+                Padding="3,3,3,3"
+                PlaceholderText="Add description here ..."
+                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
-            <Border 
-                x:Name="ProfileDescription"
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
-                Grid.Column="0" Grid.ColumnSpan="4" 
-                Grid.Row="9" Grid.RowSpan="5"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Margin="3,3,3,3"
-                Padding="0,0,0,0">
+        </Border>
 
-                <TextBox 
-                    Foreground="Black"
-                    AcceptsReturn="True" 
-                    TextWrapping="Wrap"
-                    HorizontalAlignment="Stretch"  
-                    VerticalAlignment="Stretch"
-                    FontWeight="Medium"
-                    FontSize="12"
-                    Height="500"
-                    Padding="3,3,3,3"
-                    PlaceholderText="Add description here ..."
-                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-
-            </Border>
-
-        </StackPanel>
-
-    </ScrollViewer>
+    </StackPanel>
 
 </Page>

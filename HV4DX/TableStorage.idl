@@ -2,9 +2,22 @@ namespace HV4DX
 {
     [bindable]
     [default_interface]
-    runtimeclass TableStorage : Microsoft.UI.Xaml.Controls.UserControl
+    runtimeclass TableStorage : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         TableStorage();
+
+        String LabelDriveManufacturer;
+        String ValueDriveManufacturer;
+        String LabelDriveHVID;
+        String ValueDriveHVID;
+        String LabelDriveType;
+        String ValueDriveType;
+        String LabelDriveSize;
+        String ValueDriveSize; 
+        String LabelDriveUsed;
+        String ValueDriveUsed;
+
+        Windows.Foundation.Collections.IObservableVector<String> ItemList;
 
     }
 

@@ -1,4 +1,4 @@
-import "UserMSelectable.idl";
+import "UserSelectable.idl";
 
 namespace HV4DX
 {
@@ -11,9 +11,9 @@ namespace HV4DX
 
         String Value;
 
-        Windows.Foundation.Collections.IObservableVector<UserMSelectable> FilterList;
+        Windows.Foundation.Collections.IObservableVector<UserSelectable> FilterList;
 
-        UserMSelectable MultiFilterState;
+        UserSelectable MultiFilterState;
 
         event Windows.Foundation.EventHandler<String> FilterUpdate;
 

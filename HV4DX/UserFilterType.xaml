@@ -80,14 +80,8 @@
                     ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
                     SelectedItem="{x:Bind MultiFilterState, Mode=TwoWay}">
                     <ItemsControl.ItemTemplate>
-                        <DataTemplate 
-                            x:DataType="local:UserMSelectable">
-                            <ToggleButton 
-                                HorizontalAlignment="Stretch">
-                                <TextBlock 
-                                    Text="{x:Bind Selectable, Mode=OneWay}"
-                                    TextAlignment="Left"/>
-                            </ToggleButton> 
+                        <DataTemplate x:DataType="local:UserSelectable">
+                            <local:UserSelectable/>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ComboBox>

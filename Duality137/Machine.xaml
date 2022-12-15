@@ -34,8 +34,6 @@
             Tag="PropertyPages" 
             Background="{ThemeResource HV4DTreeViewGrey}"
             PaneDisplayMode="Left"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
             Grid.Column="1" Grid.ColumnSpan="1"
             Grid.Row="1" Grid.RowSpan="1"
             IsSettingsVisible="False"

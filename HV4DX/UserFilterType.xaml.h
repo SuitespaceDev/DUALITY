@@ -31,20 +31,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value{};
 
     public:
-        WFITT::IObservableVector<HV4DX::UserMSelectable> FilterList();
+        WFITT::IObservableVector<HV4DX::UserSelectable> FilterList();
 
-        void FilterList(WFITT::IObservableVector<HV4DX::UserMSelectable> const&);
+        void FilterList(WFITT::IObservableVector<HV4DX::UserSelectable> const&);
 
     private:
-        WFITT::IObservableVector<HV4DX::UserMSelectable> filter_list{};
+        WFITT::IObservableVector<HV4DX::UserSelectable> filter_list{};
 
     public:
-        HV4DX::UserMSelectable MultiFilterState();
+        HV4DX::UserSelectable MultiFilterState();
 
-        void MultiFilterState(HV4DX::UserMSelectable const&);
+        void MultiFilterState(HV4DX::UserSelectable const&);
 
     private:
-        HV4DX::UserMSelectable multi_filter_state{ L"All" };
+        HV4DX::UserSelectable multi_filter_state{};
 
     public:
         winrt::event_token FilterUpdate(WF::EventHandler<hstring> const&);

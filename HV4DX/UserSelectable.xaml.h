@@ -1,23 +1,21 @@
-#pragma once
+﻿#pragma once
+
+#include "UserSelectable.g.h"
 
 namespace WF	= winrt::Windows::Foundation;
 namespace MUX	= winrt::Microsoft::UI::Xaml;
 namespace MUXD	= winrt::Microsoft::UI::Xaml::Data;
 
-#include "UserMSelectable.g.h"
-
 namespace winrt::HV4DX::implementation
 {
-	struct UserMSelectable : UserMSelectableT<UserMSelectable>
-	{
-	public:
-		UserMSelectable() = delete;
+    struct UserSelectable : UserSelectableT<UserSelectable>
+    {
+    public:
+		UserSelectable();
 
-		UserMSelectable(winrt::hstring const&);
-		
 	public:
 		winrt::hstring Selectable();
-		
+
 		void Selectable(winrt::hstring const&);
 
 	private:
@@ -37,17 +35,14 @@ namespace winrt::HV4DX::implementation
 		void PropertyChanged(winrt::event_token const&) noexcept;
 
 	private:
-		winrt::event<MUXD::PropertyChangedEventHandler> property_changed{};
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed {};
 
-	};
-
+    };
 }
 
 namespace winrt::HV4DX::factory_implementation
 {
-	struct UserMSelectable : UserMSelectableT<UserMSelectable, implementation::UserMSelectable>
-	{
-
-	};
-
+    struct UserSelectable : UserSelectableT<UserSelectable, implementation::UserSelectable>
+    {
+    };
 }
