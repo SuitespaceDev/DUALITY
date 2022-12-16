@@ -1,3 +1,5 @@
+import "UserPartition.idl";
+
 namespace HV4DX
 {
     [bindable]
@@ -17,7 +19,7 @@ namespace HV4DX
         String LabelDriveUsed;
         String ValueDriveUsed;
 
-        Windows.Foundation.Collections.IObservableVector<String> ItemList;
+        Windows.Foundation.Collections.IObservableVector<UserPartition> ItemList;
 
     }
 

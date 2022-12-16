@@ -97,12 +97,12 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_drive_used{};
 
     public:
-        WFITT::IObservableVector<winrt::hstring> ItemList();
+        WFITT::IObservableVector<HV4DX::UserPartition> ItemList();
 
-        void ItemList(WFITT::IObservableVector<winrt::hstring> const&);
+        void ItemList(WFITT::IObservableVector<HV4DX::UserPartition> const&);
 
     private:
-        WFITT::IObservableVector<winrt::hstring> item_list{ winrt::single_threaded_observable_vector<hstring>() };
+        WFITT::IObservableVector<HV4DX::UserPartition> item_list{ winrt::single_threaded_observable_vector<HV4DX::UserPartition>() };
 
     public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);

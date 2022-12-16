@@ -59,6 +59,10 @@
 
             </Border>
 
+            <HV4DX:UserDivider
+                    Grid.Column="0" Grid.ColumnSpan="1"
+                    Grid.Row="4" Grid.RowSpan="1"/>
+
         </StackPanel>
 
     </ScrollViewer>

@@ -11,46 +11,67 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
 
-    <StackPanel>
+    <ScrollViewer
+        VerticalScrollBarVisibility="Visible">
 
-        <HV4DX:TableStorage
-            
-            LabelDriveManufacturer="DRIVE MANUFACTURER"
-            ValueDriveManufacturer="Samsung"
-            LabelDriveHVID="DRIVE HVID"
-            ValueDriveHVID="{}{D8FEFE37-E148-4AC5-89B7-5D6D27AFFF99}"
-            LabelDriveType="DRIVE TYPE"
-            ValueDriveType="NVMe SSD"
-            LabelDriveSize="DRIVE SIZE (kB)"
-            ValueDriveSize="536870912"
-            LabelDriveUsed="DRIVE USED"
-            ValueDriveUsed="134217728"/>
+        <StackPanel>
 
-        <HV4DX:UserDivider/>
+            <HV4DX:TableStorage            
+                LabelDriveManufacturer="DRIVE MANUFACTURER"
+                ValueDriveManufacturer="Samsung"
+                LabelDriveHVID="DRIVE HVID"
+                ValueDriveHVID="{}{D8FEFE37-E148-4AC5-89B7-5D6D27AFFF99}"
+                LabelDriveType="DRIVE TYPE"
+                ValueDriveType="NVMe SSD"
+                LabelDriveSize="DRIVE SIZE (kB)"
+                ValueDriveSize="536870912"
+                LabelDriveUsed="DRIVE USED"
+                ValueDriveUsed="134217728">
+                <HV4DX:TableStorage.ItemList>
+                    <HV4DX:UserPartition
+                        LabelPartitionHVID="PARTITION HVID"
+                        ValuePartitionHVID="{}{B2EBB469-797F-4CC7-BADF-83DF88C34F20}"/>
+                    <HV4DX:UserPartition
+                        LabelPartitionHVID="PARTITION HVID"
+                        ValuePartitionHVID="{}{3F901866-6679-4770-8A25-861688E92C7B}"/>
+                    <HV4DX:UserPartition
+                        LabelPartitionHVID="PARTITION HVID"
+                        ValuePartitionHVID="{}{C274BF98-8C0F-464A-9561-F6E62BA85896}"/>
+                    <HV4DX:UserPartition
+                        LabelPartitionHVID="PARTITION HVID"
+                        ValuePartitionHVID="{}{103AAD3E-EA41-4F47-81B2-E0CBFB897EB0}"/>
+                </HV4DX:TableStorage.ItemList>                
+            </HV4DX:TableStorage>
 
-        <Border 
-            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-            BorderThickness="2"
-            Height="500"
-            Margin="3,3,3,3">
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="2"
+                Height="500"
+                Margin="3,3,3,3">
 
-            <TextBox 
-                Foreground="Black"
-                AcceptsReturn="True"
-                TextWrapping="Wrap"
-                FontWeight="Medium"
-                FontSize="12"
-                Padding="3,3,3,3"
-                PlaceholderText="Add description here ..."
-                ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <TextBox 
+                    Foreground="Black"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Padding="3,3,3,3"
+                    PlaceholderText="Add description here ..."
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 
-        </Border>
+            </Border>
 
-    </StackPanel>
+            <HV4DX:UserDivider
+                    Grid.Column="0" Grid.ColumnSpan="1"
+                    Grid.Row="4" Grid.RowSpan="1"/>
+
+        </StackPanel>
+
+    </ScrollViewer>
 
 </Page>
