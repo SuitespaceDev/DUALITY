@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Duality137">
+
+    <x:String x:Key="xValueLvl1NICManufacturer">TP Link</x:String>
+    <x:String x:Key="xValueLvl1NICModel">AC 1300</x:String>
+    <x:String x:Key="xValueLvl1NICHVID">{24799C3E-BEB7-45CA-8D82-0C42DB95D4CF}</x:String>
+    <x:String x:Key="xValueLvl1NICID">Gateway 001</x:String>
+    <x:String x:Key="xValueLvl1NICInputOutputBus">{C553053D-7EF4-4798-BF16-CCD10A3BDFF3}</x:String>
+    <x:String x:Key="xValueLvl1NICDuplex">FD</x:String>
+    <x:String x:Key="xValueLvl1NICMTU">9000</x:String>
+    <x:String x:Key="xValueLvl1NICSpeed">16,777,216</x:String>
+
+</ResourceDictionary>

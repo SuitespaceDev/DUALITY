@@ -106,7 +106,7 @@ namespace winrt::HV4DX::implementation
 
     void UserPartition::LabelPartitionType(winrt::hstring const& e)
     {
-        label_partition_type;
+        label_partition_type = e;
 
         return;
 

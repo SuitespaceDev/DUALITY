@@ -406,6 +406,9 @@
     <Page Include="DHV4DPRESENTER.xaml">
       <Filter>11. Default</Filter>
     </Page>
+    <Page Include="DHV4DLVL1NIC.xaml">
+      <Filter>11. Default</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">

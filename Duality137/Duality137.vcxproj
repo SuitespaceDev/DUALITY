@@ -739,6 +739,7 @@
     <Page Include="DHV4DADMINDB.xaml" />
     <Page Include="DHV4DADMINACCNT.xaml" />
     <Page Include="DHV4DKERNEL.xaml" />
+    <Page Include="DHV4DLVL1NIC.xaml" />
     <Page Include="DHV4DPARTITION.xaml" />
     <Page Include="DHV4DENTERPRISE.xaml" />
     <Page Include="DHV4DDEFAULTPROFILE.xaml" />

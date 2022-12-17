@@ -1,5 +1,5 @@
 ﻿<UserControl
-    x:Class="HV4DX.UserPartition"
+    x:Class="HV4DX.TableNetworkAdapter"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HV4DX"
@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="-14,0,-10,0">
+    <Grid 
+        Margin="6,6,6,6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -17,62 +18,55 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
+
+        <local:UserFilterItem 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelNICManufacturer}"
+            Value="{x:Bind ValueNICManufacturer}"/>
+
+        <local:UserFilterItem 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="{x:Bind LabelNICModel}"
+            Value="{x:Bind ValueNICModel}"/>
 
         <local:UserFilterNew 
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionHVID}" 
-            Value="{x:Bind ValuePartitionHVID}"/>
-
-        <local:UserFilterItem 
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionID}" 
-            Value="{x:Bind ValuePartitionID}"/>
-
-        <local:UserFilterItem 
-            Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionName}" 
-            Value="{x:Bind ValuePartitionName}"/>
+            Label="{x:Bind LabelNICHVID}" 
+            Value="{x:Bind ValueNICHVID}"/>
 
-        <local:UserFilterItem 
+        <local:UserFilterNew 
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionType}"
-            Value="{x:Bind ValuePartitionType}"/>
+            Label="{x:Bind LabelNICID}" 
+            Value="{x:Bind ValueNICID}"/>
+
+        <local:UserFilterNew 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelNICInputOutputBus}" 
+            Value="{x:Bind ValueNICInputOutputBus}"/>
 
         <local:UserFilterItem 
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionAccessLvl}" 
-            Value="{x:Bind ValuePartitionAccessLvl}"/>
-
-        <local:UserBlock 
-            Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionSize}" 
-            Value="{x:Bind ValuePartitionSize}"/>
+            Label="{x:Bind LabelNICDuplex}"
+            Value="{x:Bind ValueNICDuplex}"/>
 
-        <local:UserBlock 
+        <local:UserFilterItem 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionUsed}" 
-            Value="{x:Bind ValuePartitionUsed}"/>
+            Label="{x:Bind LabelNICMTU}"
+            Value="{x:Bind ValueNICMTU}"/>
 
-        <local:UserBlock 
+        <local:UserFilterItem 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionFormattedDATETIME}"
-            Value="{x:Bind ValuePartitionFormattedDATETIME}"/>
-
-        <local:UserBlock 
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionOpenedDATETIME}" 
-            Value="{x:Bind ValuePartitionOpenedDATETIME}"/>
+            Label="{x:Bind LabelNICSpeed}"
+            Value="{x:Bind ValueNICSpeed}"/>
 
     </Grid>
 

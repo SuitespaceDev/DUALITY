@@ -59,7 +59,7 @@
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="2"
                 Height="500"
-                Margin="3,3,3,3">
+                Margin="6,6,6,6">
 
                 <TextBox 
                     Foreground="Black"

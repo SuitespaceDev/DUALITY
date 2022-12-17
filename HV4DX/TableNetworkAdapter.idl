@@ -1,0 +1,27 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableNetworkAdapter : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableNetworkAdapter();
+    
+        String LabelNICManufacturer;
+        String ValueNICManufacturer; 
+        String LabelNICModel;
+        String ValueNICModel;
+        String LabelNICHVID;
+        String ValueNICHVID;
+        String LabelNICID;
+        String ValueNICID; 
+        String LabelNICInputOutputBus;
+        String ValueNICInputOutputBus;
+        String LabelNICDuplex;
+        String ValueNICDuplex;
+        String LabelNICMTU;
+        String ValueNICMTU;
+        String LabelNICSpeed;
+        String ValueNICSpeed;
+
+    }
+
+}

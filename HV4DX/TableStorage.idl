@@ -12,6 +12,8 @@ namespace HV4DX
         String ValueDriveManufacturer;
         String LabelDriveHVID;
         String ValueDriveHVID;
+        String LabelDriveMaxPath;
+        String ValueDriveMaxPath;
         String LabelDriveType;
         String ValueDriveType;
         String LabelDriveSize;

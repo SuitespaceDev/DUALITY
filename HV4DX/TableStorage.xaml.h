@@ -49,6 +49,22 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_drive_hvid{};
 
     public:
+        winrt::hstring LabelDriveMaxPath();
+
+        void LabelDriveMaxPath(winrt::hstring const&);
+
+    private:
+        winrt::hstring label_drive_maxpath{};
+
+    public:
+        winrt::hstring ValueDriveMaxPath();
+
+        void ValueDriveMaxPath(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_drive_maxpath{};
+
+    public:
         winrt::hstring LabelDriveType();
 
         void LabelDriveType(winrt::hstring const&);

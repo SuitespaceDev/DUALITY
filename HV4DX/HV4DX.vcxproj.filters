@@ -178,12 +178,6 @@
     <Filter Include="Tables\TableIO">
       <UniqueIdentifier>{c96bb157-a7c7-4d8e-ab07-f17321d0df62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tables\TableIO\TableKeyboard">
-      <UniqueIdentifier>{196233fb-29f5-470c-8d82-abcc065b4f0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tables\TableIO\TableMouse">
-      <UniqueIdentifier>{764c8301-f701-4010-af7f-34dfd0cd2d8b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Tables\TableIO\TableAccelerator">
       <UniqueIdentifier>{fd6f14d9-cc00-472e-8e1a-78750d16d160}</UniqueIdentifier>
     </Filter>
@@ -259,6 +253,75 @@
     <Filter Include="Tables\TableEvents">
       <UniqueIdentifier>{36bfecba-9f97-420f-9ecc-4264fea3ba6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableKeyboard">
+      <UniqueIdentifier>{196233fb-29f5-470c-8d82-abcc065b4f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableMouse">
+      <UniqueIdentifier>{764c8301-f701-4010-af7f-34dfd0cd2d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableTablet">
+      <UniqueIdentifier>{5286fb4a-ce6a-4f9f-9c49-d3d5b98a12b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableMIDI">
+      <UniqueIdentifier>{40128dd5-f3dd-4520-98cd-08f355018c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableRS232">
+      <UniqueIdentifier>{398b84ca-5bb3-4ab7-94dd-093e02cbe5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableDB25">
+      <UniqueIdentifier>{31fb0cf1-0c4d-4076-b59b-105046402a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableUSB">
+      <UniqueIdentifier>{4c8477b5-9fff-4c0f-8779-5dc0aa8c748f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableIEE1394">
+      <UniqueIdentifier>{a3d73169-da42-4b78-b7da-865996e252c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableLAN">
+      <UniqueIdentifier>{e32e58be-0f8e-40d1-96ab-bee08d30d010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableWIFI">
+      <UniqueIdentifier>{15f2874a-d62f-4995-8d0c-4d047b3e412c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableESATA">
+      <UniqueIdentifier>{19aa476a-329c-4760-8070-50a2450ac20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableSCSI">
+      <UniqueIdentifier>{9dcb0337-b4fd-404b-8519-d4a6ee6c36aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableNVMe">
+      <UniqueIdentifier>{b90b69cd-74b8-4676-9f4c-a363b9d3c51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TablePCIe">
+      <UniqueIdentifier>{d9e6c31b-7feb-4606-b6ae-44387ec8243e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableHDMI">
+      <UniqueIdentifier>{fddcf3ab-ac13-4275-8608-08de21490590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputOutputBus\TableDP">
+      <UniqueIdentifier>{3b31d854-08e8-4fb7-8c6b-b0eb1b020523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableOutputDevice\TableMonitor">
+      <UniqueIdentifier>{6cd30b67-6d29-4c6c-9dca-aa76a509dfe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableOutputDevice\TableVR">
+      <UniqueIdentifier>{623dabfc-63f2-4514-b172-b94556f42ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableOutputDevice\TableAudio">
+      <UniqueIdentifier>{a904d52f-f309-436d-92cb-f785f8f0f312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableOutputDevice\TableMapOutAnlg">
+      <UniqueIdentifier>{1565dcaf-328b-45d9-b4e3-dd3177bac95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableOutputDevice\TableMapOutDgtl">
+      <UniqueIdentifier>{2c4fc664-0bcb-4b04-87a6-83c6c5aa8878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableMapInDgtl">
+      <UniqueIdentifier>{6f9c946a-b99c-42ce-b686-f26f20830bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tables\TableIO\TableInputDevice\TableMapInAnlg">
+      <UniqueIdentifier>{b18891ca-65b2-47e9-a40d-844ad74c6921}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -283,8 +346,6 @@
     <ClInclude Include="pch.h">
       <Filter>a. Project</Filter>
     </ClInclude>
-    <ClInclude Include="UserMEventDebug.h" />
-    <ClInclude Include="UserMSelectable.h" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="UserBlock.idl" />
@@ -295,8 +356,6 @@
     <Midl Include="UserFilterNew.idl" />
     <Midl Include="UserFilterTime.idl" />
     <Midl Include="UserFilterType.idl" />
-    <Midl Include="UserMEventDebug.idl" />
-    <Midl Include="UserMSelectable.idl" />
     <Midl Include="UserPassword.idl" />
   </ItemGroup>
   <ItemGroup>
@@ -335,9 +394,6 @@
     </Page>
     <Page Include="TableIterator.xaml">
       <Filter>Tables\TableLibrary\TableIterator</Filter>
-    </Page>
-    <Page Include="TableMouse.xaml">
-      <Filter>Tables\TableIO\TableMouse</Filter>
     </Page>
     <Page Include="TableRuntimeClass.xaml">
       <Filter>Tables\TableProcess\TableRuntimeClass</Filter>
@@ -416,6 +472,9 @@
     </Page>
     <Page Include="UserSelectable.xaml">
       <Filter>UserItem\UserSelectable</Filter>
+    </Page>
+    <Page Include="TableNetworkAdapter.xaml">
+      <Filter>Tables\TableIO\TableNetworkAdapter</Filter>
     </Page>
   </ItemGroup>
 </Project>

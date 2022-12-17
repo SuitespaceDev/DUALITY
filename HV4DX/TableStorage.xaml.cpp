@@ -31,7 +31,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::ValueDriveManufacturer()
     {
 
-        return label_drive_manufacturer;
+        return value_drive_manufacturer;
 
     }
 
@@ -46,7 +46,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::LabelDriveHVID()
     {
 
-        return value_drive_manufacturer;
+        return label_drive_hvid;
 
     }
 
@@ -61,7 +61,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::ValueDriveHVID()
     {
 
-        return label_drive_hvid;
+        return value_drive_hvid;
 
     }
 
@@ -73,10 +73,40 @@ namespace winrt::HV4DX::implementation
 
     }
 
+    winrt::hstring TableStorage::LabelDriveMaxPath()
+    {
+
+        return label_drive_maxpath;
+
+    }
+
+    void TableStorage::LabelDriveMaxPath(winrt::hstring const& e)
+    {
+        label_drive_maxpath = e;
+
+        return;
+
+    }
+
+    winrt::hstring TableStorage::ValueDriveMaxPath()
+    {
+
+        return value_drive_maxpath;
+
+    }
+
+    void TableStorage::ValueDriveMaxPath(winrt::hstring const& e)
+    {
+        value_drive_maxpath = e;
+
+        return;
+
+    }
+
     winrt::hstring TableStorage::LabelDriveType()
     {
 
-        return value_drive_hvid;
+        return label_drive_type;
 
     }
 
@@ -91,7 +121,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::ValueDriveType()
     {
 
-        return label_drive_type;
+        return value_drive_type;
 
     }
 
@@ -106,7 +136,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::LabelDriveSize()
     {
 
-        return value_drive_type;
+        return label_drive_size;
 
     }
 
@@ -121,7 +151,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::ValueDriveSize()
     {
 
-        return label_drive_size;
+        return value_drive_size;
 
     }
 
@@ -136,7 +166,7 @@ namespace winrt::HV4DX::implementation
     winrt::hstring TableStorage::LabelDriveUsed()
     {
 
-        return value_drive_size;
+        return label_drive_used;
 
     }
 

@@ -166,6 +166,10 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableNetworkAdapter.xaml.h">
+      <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableProfile.xaml.h">
       <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -250,9 +254,6 @@
     <ClInclude Include="TableIterator.xaml.h">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="TableMouse.xaml.h">
-      <DependentUpon>TableMouse.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="TableParameter.xaml.h">
       <DependentUpon>TableParameter.xaml</DependentUpon>
     </ClInclude>
@@ -303,6 +304,10 @@
     </ClCompile>
     <ClCompile Include="TableIndex.xaml.cpp">
       <DependentUpon>TableIndex.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableNetworkAdapter.xaml.cpp">
+      <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableProfile.xaml.cpp">
@@ -389,9 +394,6 @@
     <ClCompile Include="TableIterator.xaml.cpp">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="TableMouse.xaml.cpp">
-      <DependentUpon>TableMouse.xaml</DependentUpon>
-    </ClCompile>
     <ClCompile Include="TableParameter.xaml.cpp">
       <DependentUpon>TableParameter.xaml</DependentUpon>
     </ClCompile>
@@ -443,6 +445,10 @@
     </Midl>
     <Midl Include="TableIndex.idl">
       <DependentUpon>TableIndex.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableNetworkAdapter.idl">
+      <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableProfile.idl">
@@ -529,9 +535,6 @@
     <Midl Include="TableIterator.idl">
       <DependentUpon>TableIterator.xaml</DependentUpon>
     </Midl>
-    <Midl Include="TableMouse.idl">
-      <DependentUpon>TableMouse.xaml</DependentUpon>
-    </Midl>
     <Midl Include="TableParameter.idl">
       <DependentUpon>TableParameter.xaml</DependentUpon>
     </Midl>
@@ -571,6 +574,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableIndex.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableNetworkAdapter.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableProfile.xaml">
@@ -618,7 +624,6 @@
     <Page Include="UserPassword.xaml" />
     <Page Include="TableContract.xaml" />
     <Page Include="TableIterator.xaml" />
-    <Page Include="TableMouse.xaml" />
     <Page Include="TableParameter.xaml" />
     <Page Include="TableRuntimeClass.xaml" />
     <Page Include="UserSelectable.xaml">
