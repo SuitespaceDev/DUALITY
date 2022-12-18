@@ -24,9 +24,9 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
             </Grid.ColumnDefinitions>
 
             <Border 
@@ -70,7 +70,6 @@
                 Margin="2,2,2,2">
 
                 <ComboBox 
-                    x:Name="FilterListView"
                     Foreground="Black" 
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
@@ -78,13 +77,7 @@
                     FontWeight="Medium"
                     FontSize="12"
                     ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
-                    SelectedItem="{x:Bind MultiFilterState, Mode=TwoWay}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate x:DataType="local:UserSelectable">
-                            <local:UserSelectable/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ComboBox>
+                    SelectedItem="{x:Bind FilterType, Mode=TwoWay}"/>
 
             </Border>
 

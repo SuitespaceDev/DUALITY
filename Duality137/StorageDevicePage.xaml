@@ -34,7 +34,7 @@
                 LabelDriveUsed="DRIVE USED"
                 ValueDriveUsed="134217728">
                 <HV4DX:TableStorage.ItemList>
-                    <HV4DX:UserPartition
+                    <HV4DX:TablePartition
                         LabelPartitionHVID="PARTITION HVID"
                         ValuePartitionHVID="{}{B2EBB469-797F-4CC7-BADF-83DF88C34F20}"
                         LabelPartitionID="PARTITION ID"

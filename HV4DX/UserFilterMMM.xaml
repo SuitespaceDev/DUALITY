@@ -24,7 +24,7 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
                 <ColumnDefinition Width="54"/>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="16"/>

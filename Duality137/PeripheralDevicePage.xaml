@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Duality137.InputOutputBusPage"
+    x:Class="Duality137.PeripheralDevicePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
@@ -27,73 +27,37 @@
                 Margin="6,6,6,6">
 
                 <TabViewItem
-                    Header="RS-232"
+                    Header="MOUSE"
                     IsClosable="False">
 
                 </TabViewItem>
 
                 <TabViewItem
-                    Header="DB-25"
+                    Header="KEYBOARD"
                     IsClosable="False">
 
                 </TabViewItem>
 
                 <TabViewItem
-                    Header="USB"
+                    Header="TABLET"
                     IsClosable="False">
 
                 </TabViewItem>
 
                 <TabViewItem
-                    Header="IEEE 1394"
+                    Header="MAPPED"   
                     IsClosable="False">
 
                 </TabViewItem>
 
                 <TabViewItem
-                    Header="LAN"
+                    Header="MIDI"
                     IsClosable="False">
 
                 </TabViewItem>
 
                 <TabViewItem
-                    Header="WIFI"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="eSATA"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="SCSI"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="NVMe"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="PCIe"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="HDMI"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="DP"
+                    Header="ANALOGUE"
                     IsClosable="False">
 
                 </TabViewItem>

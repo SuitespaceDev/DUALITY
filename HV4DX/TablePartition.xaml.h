@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "UserPartition.g.h"
+#include "TablePartition.g.h"
 
 namespace WF        = winrt::Windows::Foundation;
 namespace WFITT     = winrt::Windows::Foundation::Collections;
@@ -10,10 +10,10 @@ namespace MUXD      = winrt::Microsoft::UI::Xaml::Data;
 
 namespace winrt::HV4DX::implementation
 {
-    struct UserPartition : UserPartitionT<UserPartition>
+    struct TablePartition : TablePartitionT<TablePartition>
     {
     public:
-        UserPartition();
+        TablePartition();
 
     public:
         winrt::hstring LabelPartitionHVID();
@@ -172,7 +172,7 @@ namespace winrt::HV4DX::implementation
 
 namespace winrt::HV4DX::factory_implementation
 {
-    struct UserPartition : UserPartitionT<UserPartition, implementation::UserPartition>
+    struct TablePartition : TablePartitionT<TablePartition, implementation::TablePartition>
     {
     };
 }

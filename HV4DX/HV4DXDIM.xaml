@@ -3,6 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HV4DX">
 
-    <x:Double x:Key="HV4DStandardG0">190</x:Double>
+    <GridLength x:Key="HV4DStandardG0">190</GridLength>
 
 </ResourceDictionary>

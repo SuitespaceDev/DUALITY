@@ -10,8 +10,6 @@ namespace winrt::HV4DX::implementation
 	{
 		InitializeComponent();
 
-		filter_list = winrt::single_threaded_observable_vector<HV4DX::UserSelectable>();
-
 		return;
 
 	}
@@ -46,17 +44,17 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	WFITT::IObservableVector<HV4DX::UserSelectable> UserFilterType::FilterList()
+	WFITT::IObservableVector<MUXC::TextBlock> UserFilterType::FilterList()
 	{
 		return filter_list;
 
 	}
 
-	void UserFilterType::FilterList(WFITT::IObservableVector<HV4DX::UserSelectable> const& e)
+	void UserFilterType::FilterList(WFITT::IObservableVector<MUXC::TextBlock> const& e)
 	{
 		filter_list.Clear();
 
-		for (HV4DX::UserSelectable itt : e)
+		for (MUXC::TextBlock itt : e)
 		{
 			filter_list.Append(itt);
 
@@ -64,30 +62,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	HV4DX::UserSelectable UserFilterType::MultiFilterState() 
+	MUXC::TextBlock UserFilterType::FilterType()
 	{ 
 		
-		return multi_filter_state; 
+		return filter_type; 
 	
 	}
 
-	void UserFilterType::MultiFilterState(HV4DX::UserSelectable const& e)
+	void UserFilterType::FilterType(MUXC::TextBlock const& e)
 	{ 
-		multi_filter_state = e; 
-
-		return;
-
-	}
-
-	winrt::event_token UserFilterType::FilterUpdate(WF::EventHandler<hstring> const& handler)
-	{
-		return filter_update.add(handler);
-
-	}
-
-	void UserFilterType::FilterUpdate(event_token const& token) noexcept
-	{
-		filter_update.remove(token);
+		filter_type = e; 
 
 		return;
 

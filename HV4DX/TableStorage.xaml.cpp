@@ -193,14 +193,14 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    WFITT::IObservableVector<HV4DX::UserPartition> TableStorage::ItemList()
+    WFITT::IObservableVector<HV4DX::TablePartition> TableStorage::ItemList()
     {
 
         return item_list;
 
     }
 
-    void TableStorage::ItemList(WFITT::IObservableVector<HV4DX::UserPartition> const& e)
+    void TableStorage::ItemList(WFITT::IObservableVector<HV4DX::TablePartition> const& e)
     {
         if (e.Size() > 0)
         {

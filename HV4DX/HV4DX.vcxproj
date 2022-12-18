@@ -130,6 +130,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="TableAccelerator.xaml.h">
+      <DependentUpon>TableAccelerator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableAcceleratorBus.xaml.h">
+      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableAccount.xaml.h">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -166,9 +174,16 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableInterfacePort.xaml.h">
+      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableNetworkAdapter.xaml.h">
       <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TablePartition.xaml.h">
+      <DependentUpon>TablePartition.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="TableProfile.xaml.h">
       <DependentUpon>TableProfile.xaml</DependentUpon>
@@ -233,14 +248,6 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="UserPartition.xaml.h">
-      <DependentUpon>UserPartition.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="UserSelectable.xaml.h">
-      <DependentUpon>UserSelectable.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="UserNumeric.xaml.h">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -270,6 +277,14 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="TableAccelerator.xaml.cpp">
+      <DependentUpon>TableAccelerator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableAcceleratorBus.xaml.cpp">
+      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableAccount.xaml.cpp">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -306,9 +321,16 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableInterfacePort.xaml.cpp">
+      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableNetworkAdapter.xaml.cpp">
       <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TablePartition.xaml.cpp">
+      <DependentUpon>TablePartition.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="TableProfile.xaml.cpp">
       <DependentUpon>TableProfile.xaml</DependentUpon>
@@ -373,14 +395,6 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="UserPartition.xaml.cpp">
-      <DependentUpon>UserPartition.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="UserSelectable.xaml.cpp">
-      <DependentUpon>UserSelectable.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="UserNumeric.xaml.cpp">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -411,6 +425,14 @@
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="TableAccelerator.idl">
+      <DependentUpon>TableAccelerator.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableAcceleratorBus.idl">
+      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableAccount.idl">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -447,8 +469,16 @@
       <DependentUpon>TableIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableInterfacePort.idl">
+      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableNetworkAdapter.idl">
       <DependentUpon>TableNetworkAdapter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TablePartition.idl">
+      <DependentUpon>TablePartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableProfile.idl">
@@ -514,14 +544,6 @@
       <DependentUpon>UserMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="UserPartition.idl">
-      <DependentUpon>UserPartition.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="UserSelectable.idl">
-      <DependentUpon>UserSelectable.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="UserNumeric.idl">
       <DependentUpon>UserNumeric.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -549,6 +571,12 @@
   <ItemGroup>
     <Page Include="HV4DX.xaml" />
     <Page Include="HV4DXDIM.xaml" />
+    <Page Include="TableAccelerator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableAcceleratorBus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableAccount.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -576,7 +604,13 @@
     <Page Include="TableIndex.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableInterfacePort.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableNetworkAdapter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablePartition.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableProfile.xaml">
@@ -618,17 +652,11 @@
     <Page Include="UserNumeric.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserPartition.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserPassword.xaml" />
     <Page Include="TableContract.xaml" />
     <Page Include="TableIterator.xaml" />
     <Page Include="TableParameter.xaml" />
     <Page Include="TableRuntimeClass.xaml" />
-    <Page Include="UserSelectable.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserTime.xaml">
       <SubType>Designer</SubType>
     </Page>

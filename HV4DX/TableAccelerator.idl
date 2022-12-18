@@ -1,0 +1,31 @@
+import "TableAcceleratorBus.idl";
+
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableAccelerator : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        TableAccelerator();
+    
+        String LabelAcceleratorManufacturer;
+        String ValueAcceleratorManufacturer; 
+        String LabelAcceleratorModel;
+        String ValueAcceleratorModel;
+        String LabelAcceleratorHVID;
+        String ValueAcceleratorHVID;
+        String LabelAcceleratorID;
+        String ValueAcceleratorID;
+        String LabelAcceleratorMemory;
+        String ValueAcceleratorMemory;
+        String LabelAcceleratorCoreClock;
+        String ValueAcceleratorCoreClock;
+        String LabelAcceleratorMemoryClock;
+        String ValueAcceleratorMemoryClock;
+        String LabelAcceleratorMemorySize;
+        String ValueAcceleratorMemorySize;
+
+        Windows.Foundation.Collections.IObservableVector<TableAcceleratorBus> ItemIOBusConnections;
+
+    }
+
+}

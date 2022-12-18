@@ -11,7 +11,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DDEFAULTPROFILE.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DLVL1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -80,12 +80,10 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{176C375B-B220-4A32-B965-18F229C819A5}" x:Name="InputOutputBusPage" Content="IO Bus"/>
-                        <NavigationViewItem Tag="{}{6C6CCDEC-2A56-4180-BF64-AD160826BB79}" x:Name="InputDevicePage" Content="Input Device"/>
-                        <NavigationViewItem Tag="{}{AFB7FB2D-4C2D-4A47-850A-05CE3FB1CA1B}" x:Name="StorageDevicePage" Content="Storage Device"/>
-                        <NavigationViewItem Tag="{}{82255FC0-0B58-4E9F-B92C-75955D2DC40B}" x:Name="NetworkAdapterPage" Content="Network Adapter"/>
+                        <NavigationViewItem Tag="{}{176C375B-B220-4A32-B965-18F229C819A5}" x:Name="InterfacePortPage" Content="Interface Port"/>
                         <NavigationViewItem Tag="{}{AEB4D9F3-E14E-4F60-9315-93386C608B28}" x:Name="AcceleratorPage" Content="Accelerator"/>
-                        <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="OutputDevicePage" Content="Output Device"/>
+                        <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="PeripheralDevicePage" Content="Peripheral Device"/>
+                        <NavigationViewItem Tag="{}{AFB7FB2D-4C2D-4A47-850A-05CE3FB1CA1B}" x:Name="StorageDevicePage" Content="Storage Device"/>
                         <NavigationViewItem Tag="{}{19E262AB-C56E-47A7-AAE9-A9459F4726BF}" x:Name="RandomMemoryPage" Content="Random Memory"/>
                         <NavigationViewItem Tag="{}{36E17529-39A7-4AEC-9EF9-1CAF3188B56A}" x:Name="ProcessorCorePage" Content="Processor Cores"/>
                     </NavigationViewItem.MenuItems>
@@ -146,19 +144,19 @@
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="1" Grid.RowSpan="1"
                     LabelIndexHVID="PROFILE HVID"
-                    ValueIndexHVID="{StaticResource xValueDefaultProfileAdminHVID}"
+                    ValueIndexHVID="{StaticResource xValueLvl1ProfileHVID}"
                     LabelIndexMMM="PROFILE MMM"
-                    ValueIndexMIL="{StaticResource xValueDefaultProfileAdminMIL}"
-                    ValueIndexMAJ="{StaticResource xValueDefaultProfileAdminMAJ}"
-                    ValueIndexMIN="{StaticResource xValueDefaultProfileAdminMIN}"
+                    ValueIndexMIL="{StaticResource xValueLvl1ProfileMIL}"
+                    ValueIndexMAJ="{StaticResource xValueLvl1ProfileMAJ}"
+                    ValueIndexMIN="{StaticResource xValueLvl1ProfileMIN}"
                     LabelIndexMaxPath="PROFILE"
-                    ValueIndexMaxPath="{StaticResource xValueDefaultProfileAdminMaxPath}"
+                    ValueIndexMaxPath="{StaticResource xValueLvl1ProfileMaxPath}"
                     LabelIndexCreated="PROFILE CREATED"
-                    ValueIndexCreated="{StaticResource xValueDefaultProfileAdminCreated}"
+                    ValueIndexCreated="{StaticResource xValueLvl1ProfileCreated}"
                     LabelIndexSaved="PROFILE SAVED"
-                    ValueIndexSaved="{StaticResource xValueDefaultProfileAdminSaved}"
+                    ValueIndexSaved="{StaticResource xValueLvl1ProfileSaved}"
                     LabelIndexOpened="PROFILE OPENED"
-                    ValueIndexOpened="{StaticResource xValueDefaultProfileAdminOpened}"/>
+                    ValueIndexOpened="{StaticResource xValueLvl1ProfileOpened}"/>
 
                 <HV4DX:UserDivider
                     Grid.Column="0" Grid.ColumnSpan="1"

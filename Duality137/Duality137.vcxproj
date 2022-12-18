@@ -150,14 +150,6 @@
     <ClInclude Include="Machine.xaml.h">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="NetworkAdapterPage.xaml.h">
-      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="OutputDevicePage.xaml.h">
-      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="ProcessingCorePage.xaml.h">
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -173,8 +165,8 @@
     <ClInclude Include="ProfilePage.xaml.h">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="InputOutputBusPage.xaml.h">
-      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
+    <ClInclude Include="InterfacePortPage.xaml.h">
+      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="CloudProject.xaml.h">
       <DependentUpon>CloudProject.xaml</DependentUpon>
@@ -222,8 +214,8 @@
     <ClInclude Include="IteratorPage.xaml.h">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="InputDevicePage.xaml.h">
-      <DependentUpon>InputDevicePage.xaml</DependentUpon>
+    <ClInclude Include="PeripheralDevicePage.xaml.h">
+      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="PostProcessPage.xaml.h">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -349,14 +341,6 @@
     <ClCompile Include="Machine.xaml.cpp">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="NetworkAdapterPage.xaml.cpp">
-      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="OutputDevicePage.xaml.cpp">
-      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="ProcessingCorePage.xaml.cpp">
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -372,8 +356,8 @@
     <ClCompile Include="ProfilePage.xaml.cpp">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="InputOutputBusPage.xaml.cpp">
-      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
+    <ClCompile Include="InterfacePortPage.xaml.cpp">
+      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="CloudProject.xaml.cpp">
       <DependentUpon>CloudProject.xaml</DependentUpon>
@@ -421,8 +405,8 @@
     <ClCompile Include="IteratorPage.xaml.cpp">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="InputDevicePage.xaml.cpp">
-      <DependentUpon>InputDevicePage.xaml</DependentUpon>
+    <ClCompile Include="PeripheralDevicePage.xaml.cpp">
+      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="PostProcessPage.xaml.cpp">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -563,14 +547,6 @@
     <Midl Include="Machine.idl">
       <DependentUpon>Machine.xaml</DependentUpon>
     </Midl>
-    <Midl Include="NetworkAdapterPage.idl">
-      <DependentUpon>NetworkAdapterPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="OutputDevicePage.idl">
-      <DependentUpon>OutputDevicePage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="ProcessingCorePage.idl">
       <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -586,8 +562,8 @@
     <Midl Include="ProfilePage.idl">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="InputOutputBusPage.idl">
-      <DependentUpon>InputOutputBusPage.xaml</DependentUpon>
+    <Midl Include="InterfacePortPage.idl">
+      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="CloudProject.idl">
       <DependentUpon>CloudProject.xaml</DependentUpon>
@@ -635,8 +611,8 @@
     <Midl Include="IteratorPage.idl">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="InputDevicePage.idl">
-      <DependentUpon>InputDevicePage.xaml</DependentUpon>
+    <Midl Include="PeripheralDevicePage.idl">
+      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="PostProcessPage.idl">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -736,15 +712,10 @@
     <Page Include="AsyncPage.xaml" />
     <Page Include="BitmapPage.xaml" />
     <Page Include="BlankProject.xaml" />
-    <Page Include="DHV4DADMINDB.xaml" />
-    <Page Include="DHV4DADMINACCNT.xaml" />
+    <Page Include="DHV4DLVL1.xaml" />
     <Page Include="DHV4DKERNEL.xaml" />
-    <Page Include="DHV4DLVL1NIC.xaml" />
     <Page Include="DHV4DPARTITION.xaml" />
-    <Page Include="DHV4DENTERPRISE.xaml" />
-    <Page Include="DHV4DDEFAULTPROFILE.xaml" />
     <Page Include="DHV4DIMAGE.xaml" />
-    <Page Include="DHV4DPRESENTER.xaml" />
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>
@@ -756,12 +727,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Machine.xaml" />
-    <Page Include="NetworkAdapterPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="OutputDevicePage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="ProcessingCorePage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -772,7 +737,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ProfilePage.xaml" />
-    <Page Include="InputOutputBusPage.xaml" />
+    <Page Include="InterfacePortPage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
     <Page Include="ContextMenuPage.xaml" />
@@ -790,7 +755,7 @@
     <Page Include="GitProject.xaml" />
     <Page Include="ImagePage.xaml" />
     <Page Include="IteratorPage.xaml" />
-    <Page Include="InputDevicePage.xaml" />
+    <Page Include="PeripheralDevicePage.xaml" />
     <Page Include="PostProcessPage.xaml" />
     <Page Include="TopologyPage.xaml" />
     <Page Include="MetricPage.xaml" />

@@ -1,5 +1,3 @@
-import "UserSelectable.idl";
-
 namespace HV4DX
 {
     [bindable]
@@ -11,11 +9,9 @@ namespace HV4DX
 
         String Value;
 
-        Windows.Foundation.Collections.IObservableVector<UserSelectable> FilterList;
+        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> FilterList;
 
-        UserSelectable MultiFilterState;
-
-        event Windows.Foundation.EventHandler<String> FilterUpdate;
+        Microsoft.UI.Xaml.Controls.TextBlock FilterType;
 
     }
 

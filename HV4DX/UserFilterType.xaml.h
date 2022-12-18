@@ -31,28 +31,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value{};
 
     public:
-        WFITT::IObservableVector<HV4DX::UserSelectable> FilterList();
+        WFITT::IObservableVector<MUXC::TextBlock> FilterList();
 
-        void FilterList(WFITT::IObservableVector<HV4DX::UserSelectable> const&);
+        void FilterList(WFITT::IObservableVector<MUXC::TextBlock> const&);
 
     private:
-        WFITT::IObservableVector<HV4DX::UserSelectable> filter_list{};
+        WFITT::IObservableVector<MUXC::TextBlock> filter_list{ winrt::single_threaded_observable_vector<MUXC::TextBlock>() };
 
     public:
-        HV4DX::UserSelectable MultiFilterState();
+        MUXC::TextBlock FilterType();
 
-        void MultiFilterState(HV4DX::UserSelectable const&);
-
-    private:
-        HV4DX::UserSelectable multi_filter_state{};
-
-    public:
-        winrt::event_token FilterUpdate(WF::EventHandler<hstring> const&);
-
-        void FilterUpdate(winrt::event_token const&) noexcept;
+        void FilterType(MUXC::TextBlock const&);
 
     private:
-        winrt::event<WF::EventHandler<hstring>> filter_update;
+        MUXC::TextBlock filter_type{};
 
     };
 

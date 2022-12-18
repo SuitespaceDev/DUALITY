@@ -1,9 +1,9 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass UserPartition : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass TablePartition : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
-        UserPartition();
+        TablePartition();
 
         String LabelPartitionHVID;
         String ValuePartitionHVID;

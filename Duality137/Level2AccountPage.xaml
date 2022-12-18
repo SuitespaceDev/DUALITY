@@ -12,8 +12,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMINACCNT.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DADMINDB.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DHV4DLVL1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -24,33 +23,33 @@
 
             <HV4DX:TableAccount
                 LabelAccountHVID="ACCOUNT HVID"
-                ValueAccountHVID="{StaticResource xValueAdminAccountHVID}"
+                ValueAccountHVID="{StaticResource xValueLvl1AccountHVID}"
                 LabelAccountID="ACCOUNT ID"
-                ValueAccountID="{StaticResource xValueAdminAccountID}"
+                ValueAccountID="{StaticResource xValueLvl1AccountID}"
                 LabelAccountMaxPath="ACCOUNT"
-                ValueAccountMaxPath="{StaticResource xValueAdminAccountMaxPath}"
+                ValueAccountMaxPath="{StaticResource xValueLvl1AccountMaxPath}"
                 LabelAccountCreated="ACCOUNT CREATED"
-                ValueAccountCreated="{StaticResource xValueAdminAccountCreated}"
+                ValueAccountCreated="{StaticResource xValueLvl1AccountCreated}"
                 LabelAccountUpdated="ACCOUNT UPDATED"
-                ValueAccountUpdated="{StaticResource xValueAdminAccountUpdated}"
+                ValueAccountUpdated="{StaticResource xValueLvl1AccountUpdated}"
                 LabelAccountPassword="ACCOUNT PASSWORD"
-                ValueAccountPassword="{StaticResource xValueAdminAccountPassword}"
+                ValueAccountPassword="{StaticResource xValueLvl1AccountPassword}"
                 LabelAccount="PROJECT MANAGER"
-                ValueAccount="{StaticResource xValueAdminAccount}"
+                ValueAccount="{StaticResource xValueLvl1Account}"
                 LabelAccountAddressOne="ADDRESS ONE"
-                ValueAccountAddressOne="{StaticResource xValueAdminAccountAddressOne}"
+                ValueAccountAddressOne="{StaticResource xValueLvl1AccountAddressOne}"
                 LabelAccountAddressTwo="ADDRESS TWO"
-                ValueAccountAddressTwo="{StaticResource xValueAdminAccountAddressTwo}"
+                ValueAccountAddressTwo="{StaticResource xValueLvl1AccountAddressTwo}"
                 LabelAccountCity="CITY"
-                ValueAccountCity="{StaticResource xValueAdminAccountCity}"
+                ValueAccountCity="{StaticResource xValueLvl1AccountCity}"
                 LabelAccountRegion="REGION"
-                ValueAccountRegion="{StaticResource xValueAdminAccountRegion}"
+                ValueAccountRegion="{StaticResource xValueLvl1AccountRegion}"
                 LabelAccountPrimaryPhone="PRIMARY NUMBER"
-                ValueAccountPrimaryPhone="{StaticResource xValueAdminAccountPrimaryPhone}"
+                ValueAccountPrimaryPhone="{StaticResource xValueLvl1AccountPrimaryPhone}"
                 LabelAccountSecondaryPhone="SECONDARY NUMBER"
-                ValueAccountSecondaryPhone="{StaticResource xValueAdminAccountSecondaryPhone}"
+                ValueAccountSecondaryPhone="{StaticResource xValueLvl1AccountSecondaryPhone}"
                 LabelAccountEMail="EMAIL ADDRESS"
-                ValueAccountEMail="{StaticResource xValueAdminAccountEMail}"/>
+                ValueAccountEMail="{StaticResource xValueLvl1AccountEMail}"/>
 
             <HV4DX:UserDivider/>
 
@@ -64,19 +63,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 
@@ -118,19 +117,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 
@@ -172,19 +171,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 
@@ -226,19 +225,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 
@@ -280,19 +279,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 
@@ -334,19 +333,19 @@
 
                         <HV4DX:TableAccountPostgreSQL
                             LabelAccountDBHost="DATABASE HOST"
-                            ValueAccountDBHost="{StaticResource xValueAccntAdminDBHost}"
+                            ValueAccountDBHost="{StaticResource xValueLvl1DatabaseDBHost}"
                             LabelAccountDBRole="ACCOUNT ROLE"
-                            ValueAccountDBRole="{StaticResource xValueAccntAdminDBRole}"
+                            ValueAccountDBRole="{StaticResource xValueLvl1DatabaseDBRole}"
                             LabelAccountDBPort="DATABASE PORT"
-                            ValueAccountDBPort="{StaticResource xValueAccntAdminDBPort}"
+                            ValueAccountDBPort="{StaticResource xValueLvl1DatabaseDBPort}"
                             LabelAccountDBSSLMode="DATABASE SSL MODE"
-                            ValueAccountDBSSLMode="{StaticResource xValueAccntAdminDBSSLMode}"
+                            ValueAccountDBSSLMode="{StaticResource xValueLvl1DatabaseDBSSLMode}"
                             LabelAccountDBSSLClientCert="SSL CLIENT CERT"
-                            ValueAccountDBSSLClientCert="{StaticResource xValueAccntAdminDBSSLClientCert}"
+                            ValueAccountDBSSLClientCert="{StaticResource xValueLvl1DatabaseDBSSLClientCert}"
                             LabelAccountDBSSLClientKey="SSL CLIENT KEY"
-                            ValueAccountDBSSLClientKey="{StaticResource xValueAccntAdminDBSSLClientKey}"
+                            ValueAccountDBSSLClientKey="{StaticResource xValueLvl1DatabaseDBSSLClientKey}"
                             LabelAccountDBSSLRootCert="SSL ROOT CERT"
-                            ValueAccountDBSSLRootCert="{StaticResource xValueAccntAdminDBSSLRootCert}"/>
+                            ValueAccountDBSSLRootCert="{StaticResource xValueLvl1DatabaseDBSSLRootCert}"/>
 
                         <HV4DX:UserDivider/>
 

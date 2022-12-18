@@ -20,13 +20,13 @@
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterItem 
+        <local:UserBlock 
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelNICManufacturer}"
             Value="{x:Bind ValueNICManufacturer}"/>
 
-        <local:UserFilterItem 
+        <local:UserBlock 
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelNICModel}"
@@ -38,13 +38,13 @@
             Label="{x:Bind LabelNICHVID}" 
             Value="{x:Bind ValueNICHVID}"/>
 
-        <local:UserFilterNew 
+        <local:UserFilterItem 
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="{x:Bind LabelNICID}" 
             Value="{x:Bind ValueNICID}"/>
 
-        <local:UserFilterNew 
+        <local:UserBlock 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelNICInputOutputBus}" 
