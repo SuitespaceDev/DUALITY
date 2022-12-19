@@ -75,9 +75,9 @@
                     VerticalAlignment="Stretch"
                     Padding="3,3,3,3"      
                     FontWeight="Medium"
-                    FontSize="12"
-                    ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
-                    SelectedItem="{x:Bind FilterType, Mode=TwoWay}"/>
+                    SelectedIndex="0"
+                    SelectedItem="{x:Bind FilterType, Mode=TwoWay}"
+                    ItemsSource="{x:Bind FilterList, Mode=TwoWay}"/>
 
             </Border>
 

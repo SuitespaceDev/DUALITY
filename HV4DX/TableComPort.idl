@@ -1,0 +1,22 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableComPort : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableComPort();
+
+        String LabelComPortNodeHVID;
+        String ValueComPortNodeHVID;
+        String LabelComPortNodeID;
+        String ValueComPortNodeID;
+        String LabelComPortNodeTemp;
+        String ValueComPortNodeTemp;
+
+        String LabelAcceleratorHVID;
+        String ValueAcceleratorHVID;
+        Microsoft.UI.Xaml.Controls.TextBlock ListComPortSelectedProtocol;
+        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> ListComPortProtocol;
+        
+    }
+
+}

@@ -1,4 +1,4 @@
-﻿<Page
+﻿<UserControl
     x:Class="HV4DX.TableProfile"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -7,4 +7,56 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-</Page>
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterNew
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileHVID}"
+            Value="{x:Bind ValueProfileHVID}"/>
+
+        <local:UserFilterMMM
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileMMM}"
+            ValueMIL="{x:Bind ValueProfileMIL}"
+            ValueMAJ="{x:Bind ValueProfileMAJ}"
+            ValueMIN="{x:Bind ValueProfileMIN}"/>
+
+        <local:UserFilterItem
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileMaxPath}"
+            Value="{x:Bind ValueProfileMaxPath}"/>
+
+        <local:UserDateTime 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileCreated}"
+            Value="{x:Bind ValueProfileCreated}"/>
+
+        <local:UserDateTime 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileSaved}"
+            Value="{x:Bind ValueProfileSaved}"/>
+
+        <local:UserDateTime 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="{x:Bind LabelProfileOpened}"
+            Value="{x:Bind ValueProfileOpened}"/>
+
+    </Grid>
+    
+</UserControl>

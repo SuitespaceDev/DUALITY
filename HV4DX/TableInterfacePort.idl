@@ -1,9 +1,0 @@
-namespace HV4DX
-{
-    [default_interface]
-    runtimeclass TableInterfacePort : Microsoft.UI.Xaml.Controls.UserControl
-    {
-        TableInterfacePort();
-        Int32 MyProperty;
-    }
-}

@@ -134,10 +134,6 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableAcceleratorBus.xaml.h">
-      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableAccount.xaml.h">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -170,12 +166,12 @@
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableIndex.xaml.h">
-      <DependentUpon>TableIndex.xaml</DependentUpon>
+    <ClInclude Include="TableProfile.xaml.h">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableInterfacePort.xaml.h">
-      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+    <ClInclude Include="TableComPort.xaml.h">
+      <DependentUpon>TableComPort.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableNetworkAdapter.xaml.h">
@@ -184,10 +180,6 @@
     </ClInclude>
     <ClInclude Include="TablePartition.xaml.h">
       <DependentUpon>TablePartition.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="TableProfile.xaml.h">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableStorage.xaml.h">
       <DependentUpon>TableStorage.xaml</DependentUpon>
@@ -281,10 +273,6 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableAcceleratorBus.xaml.cpp">
-      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TableAccount.xaml.cpp">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -317,12 +305,12 @@
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableIndex.xaml.cpp">
-      <DependentUpon>TableIndex.xaml</DependentUpon>
+    <ClCompile Include="TableProfile.xaml.cpp">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableInterfacePort.xaml.cpp">
-      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+    <ClCompile Include="TableComPort.xaml.cpp">
+      <DependentUpon>TableComPort.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableNetworkAdapter.xaml.cpp">
@@ -331,10 +319,6 @@
     </ClCompile>
     <ClCompile Include="TablePartition.xaml.cpp">
       <DependentUpon>TablePartition.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="TableProfile.xaml.cpp">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableStorage.xaml.cpp">
       <DependentUpon>TableStorage.xaml</DependentUpon>
@@ -429,10 +413,6 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableAcceleratorBus.idl">
-      <DependentUpon>TableAcceleratorBus.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableAccount.idl">
       <DependentUpon>TableAccount.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -465,12 +445,12 @@
       <DependentUpon>TableImage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableIndex.idl">
-      <DependentUpon>TableIndex.xaml</DependentUpon>
+    <Midl Include="TableProfile.idl">
+      <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableInterfacePort.idl">
-      <DependentUpon>TableInterfacePort.xaml</DependentUpon>
+    <Midl Include="TableComPort.idl">
+      <DependentUpon>TableComPort.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableNetworkAdapter.idl">
@@ -479,10 +459,6 @@
     </Midl>
     <Midl Include="TablePartition.idl">
       <DependentUpon>TablePartition.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableProfile.idl">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableStorage.idl">
@@ -574,9 +550,6 @@
     <Page Include="TableAccelerator.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableAcceleratorBus.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="TableAccount.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -601,19 +574,16 @@
     <Page Include="TableImage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableIndex.xaml">
+    <Page Include="TableProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableInterfacePort.xaml">
+    <Page Include="TableComPort.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableNetworkAdapter.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePartition.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableStorage.xaml">

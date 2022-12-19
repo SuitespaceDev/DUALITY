@@ -6,13 +6,13 @@
 
 namespace winrt::HV4DX::implementation
 {
-    TableAccelerator::TableAccelerator()
-    {
-        InitializeComponent();
+	TableAccelerator::TableAccelerator()
+	{
+		InitializeComponent();
 
-        return;
+		return;
 
-    }
+	}
 
 	winrt::hstring TableAccelerator::LabelAcceleratorManufacturer()
 	{
@@ -254,24 +254,31 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	WFITT::IObservableVector<HV4DX::TableAcceleratorBus> TableAccelerator::ItemIOBusConnections()
+	MUXC::TextBlock TableAccelerator::ListComPortSelectedProtocol()
 	{
 
-		return item_io_bus_connections;
+		return list_com_port_selected_protocol;
 
 	}
 
-	void TableAccelerator::ItemIOBusConnections(WFITT::IObservableVector<HV4DX::TableAcceleratorBus> const& e)
+	void TableAccelerator::ListComPortSelectedProtocol(MUXC::TextBlock const& e)
 	{
-		if (e.Size() > 0)
-		{
-			item_io_bus_connections.Clear();
+		list_com_port_selected_protocol = e;
 
-			item_io_bus_connections = e;
+		return;
 
-			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"TableAcceleratorBus" });
+	}
 
-		}
+	WFITT::IObservableVector<MUXC::TextBlock> TableAccelerator::ListComPortProtocol()
+	{
+		
+		return list_com_port_protocol;
+
+	}
+
+	void TableAccelerator::ListComPortProtocol(WFITT::IObservableVector<MUXC::TextBlock> const& e)
+	{
+		list_com_port_protocol = e;
 
 		return;
 

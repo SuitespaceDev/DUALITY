@@ -80,7 +80,6 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{176C375B-B220-4A32-B965-18F229C819A5}" x:Name="InterfacePortPage" Content="Interface Port"/>
                         <NavigationViewItem Tag="{}{AEB4D9F3-E14E-4F60-9315-93386C608B28}" x:Name="AcceleratorPage" Content="Accelerator"/>
                         <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="PeripheralDevicePage" Content="Peripheral Device"/>
                         <NavigationViewItem Tag="{}{AFB7FB2D-4C2D-4A47-850A-05CE3FB1CA1B}" x:Name="StorageDevicePage" Content="Storage Device"/>
@@ -94,6 +93,10 @@
                         <NavigationViewItem Tag="{}{2729C26F-3A03-477A-8256-89DF655F695A}" x:Name="IteratorPage" Content="Iterator"/>
                         <NavigationViewItem Tag="{}{B75B0EEF-136B-4BCE-8731-638818E8460D}" x:Name="FunctionPage" Content="Function"/>
                         <NavigationViewItem Tag="{}{63EDE647-2895-4E83-9332-553F6CA558C4}" x:Name="ContractPage" Content="Contract"/>
+                    </NavigationViewItem.MenuItems>
+                </NavigationViewItem>
+                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{F8A96E30-710E-4C6E-A158-B8390CDF61BF}" x:Name="UXPage" Content="UX">
+                    <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{0DB7C610-447E-423F-85C3-44E81D7F16B3}" x:Name="ResourcePage" Content="Resource"/>
                         <NavigationViewItem Tag="{}{ECFE799D-62A4-498A-A398-20E6E4AD2A9C}" x:Name="UserControlPage" Content="UserControl"/>
                         <NavigationViewItem Tag="{}{853BC787-D7FD-4618-A18E-DD5A53E4AF44}" x:Name="XamlPgPage" Content="Xaml Page"/>
@@ -140,23 +143,23 @@
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="0" Grid.RowSpan="1"/>
 
-                <HV4DX:TableIndex
+                <HV4DX:TableProfile
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="1" Grid.RowSpan="1"
-                    LabelIndexHVID="PROFILE HVID"
-                    ValueIndexHVID="{StaticResource xValueLvl1ProfileHVID}"
-                    LabelIndexMMM="PROFILE MMM"
-                    ValueIndexMIL="{StaticResource xValueLvl1ProfileMIL}"
-                    ValueIndexMAJ="{StaticResource xValueLvl1ProfileMAJ}"
-                    ValueIndexMIN="{StaticResource xValueLvl1ProfileMIN}"
-                    LabelIndexMaxPath="PROFILE"
-                    ValueIndexMaxPath="{StaticResource xValueLvl1ProfileMaxPath}"
-                    LabelIndexCreated="PROFILE CREATED"
-                    ValueIndexCreated="{StaticResource xValueLvl1ProfileCreated}"
-                    LabelIndexSaved="PROFILE SAVED"
-                    ValueIndexSaved="{StaticResource xValueLvl1ProfileSaved}"
-                    LabelIndexOpened="PROFILE OPENED"
-                    ValueIndexOpened="{StaticResource xValueLvl1ProfileOpened}"/>
+                    LabelProfileHVID="PROFILE HVID"
+                    ValueProfileHVID="{StaticResource xValueLvl1ProfileHVID}"
+                    LabelProfileMMM="PROFILE MMM"
+                    ValueProfileMIL="{StaticResource xValueLvl1ProfileMIL}"
+                    ValueProfileMAJ="{StaticResource xValueLvl1ProfileMAJ}"
+                    ValueProfileMIN="{StaticResource xValueLvl1ProfileMIN}"
+                    LabelProfileMaxPath="PROFILE"
+                    ValueProfileMaxPath="{StaticResource xValueLvl1ProfileMaxPath}"
+                    LabelProfileCreated="PROFILE CREATED"
+                    ValueProfileCreated="{StaticResource xValueLvl1ProfileCreated}"
+                    LabelProfileSaved="PROFILE SAVED"
+                    ValueProfileSaved="{StaticResource xValueLvl1ProfileSaved}"
+                    LabelProfileOpened="PROFILE OPENED"
+                    ValueProfileOpened="{StaticResource xValueLvl1ProfileOpened}"/>
 
                 <HV4DX:UserDivider
                     Grid.Column="0" Grid.ColumnSpan="1"

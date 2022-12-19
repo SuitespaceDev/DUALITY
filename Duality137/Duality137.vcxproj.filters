@@ -164,9 +164,6 @@
     <Filter Include="2. Property Pages\b. Runtime\PromptPage">
       <UniqueIdentifier>{0e84d148-cdb4-4948-bf17-6458d38ca028}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Property Pages\d. IO\InterfacePortPage">
-      <UniqueIdentifier>{82555fc2-5afd-4d41-a254-a2466d3b400a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Property Pages\d. IO\PeripheralDevicePage">
       <UniqueIdentifier>{c5ca18e1-9ee9-4cd0-8daf-145c83f78046}</UniqueIdentifier>
     </Filter>
@@ -369,9 +366,6 @@
     </Page>
     <Page Include="PeripheralDevicePage.xaml">
       <Filter>2. Property Pages\d. IO\PeripheralDevicePage</Filter>
-    </Page>
-    <Page Include="InterfacePortPage.xaml">
-      <Filter>2. Property Pages\d. IO\InterfacePortPage</Filter>
     </Page>
     <Page Include="ProcessingCorePage.xaml">
       <Filter>2. Property Pages\d. IO\ProcessingCorePage</Filter>

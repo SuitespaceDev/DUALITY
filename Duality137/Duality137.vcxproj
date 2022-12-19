@@ -165,9 +165,6 @@
     <ClInclude Include="ProfilePage.xaml.h">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="InterfacePortPage.xaml.h">
-      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="CloudProject.xaml.h">
       <DependentUpon>CloudProject.xaml</DependentUpon>
     </ClInclude>
@@ -355,9 +352,6 @@
     </ClCompile>
     <ClCompile Include="ProfilePage.xaml.cpp">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="InterfacePortPage.xaml.cpp">
-      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="CloudProject.xaml.cpp">
       <DependentUpon>CloudProject.xaml</DependentUpon>
@@ -562,9 +556,6 @@
     <Midl Include="ProfilePage.idl">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="InterfacePortPage.idl">
-      <DependentUpon>InterfacePortPage.xaml</DependentUpon>
-    </Midl>
     <Midl Include="CloudProject.idl">
       <DependentUpon>CloudProject.xaml</DependentUpon>
     </Midl>
@@ -737,7 +728,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ProfilePage.xaml" />
-    <Page Include="InterfacePortPage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
     <Page Include="ContextMenuPage.xaml" />

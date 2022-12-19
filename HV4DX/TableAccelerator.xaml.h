@@ -2,8 +2,12 @@
 
 #include "TableAccelerator.g.h"
 
+namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
+namespace MUX = winrt::Microsoft::UI::Xaml;
 namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::HV4DX::implementation
 {
@@ -141,12 +145,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_accelerator_memory_size{};
 
     public:
-        WFITT::IObservableVector<HV4DX::TableAcceleratorBus> ItemIOBusConnections();
+        MUXC::TextBlock ListComPortSelectedProtocol();
 
-        void ItemIOBusConnections(WFITT::IObservableVector<HV4DX::TableAcceleratorBus> const&);
+        void ListComPortSelectedProtocol(MUXC::TextBlock const&);
 
     private:
-        WFITT::IObservableVector<HV4DX::TableAcceleratorBus> item_io_bus_connections{};
+        MUXC::TextBlock list_com_port_selected_protocol{};
+
+    public:
+        WFITT::IObservableVector<MUXC::TextBlock> ListComPortProtocol();
+
+        void ListComPortProtocol(WFITT::IObservableVector<MUXC::TextBlock> const&);
+
+    private:
+        WFITT::IObservableVector<MUXC::TextBlock> list_com_port_protocol{ winrt::single_threaded_observable_vector<MUXC::TextBlock>() };
 
     public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);

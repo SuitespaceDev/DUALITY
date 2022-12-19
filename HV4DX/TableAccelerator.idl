@@ -1,5 +1,3 @@
-import "TableAcceleratorBus.idl";
-
 namespace HV4DX
 {
     [default_interface]
@@ -24,7 +22,8 @@ namespace HV4DX
         String LabelAcceleratorMemorySize;
         String ValueAcceleratorMemorySize;
 
-        Windows.Foundation.Collections.IObservableVector<TableAcceleratorBus> ItemIOBusConnections;
+        Microsoft.UI.Xaml.Controls.TextBlock ListComPortSelectedProtocol;
+        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> ListComPortProtocol;
 
     }
 

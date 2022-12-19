@@ -9,9 +9,8 @@ namespace HV4DX
 
         String Value;
 
-        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> FilterList;
-
         Microsoft.UI.Xaml.Controls.TextBlock FilterType;
+        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> FilterList;
 
     }
 
