@@ -1,0 +1,25 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TablePeripheralDevice : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TablePeripheralDevice();
+
+        String LabelPeripheralManufacturer;
+        String ValuePeripheralManufacturer; 
+        String LabelPeripheralModel;
+        String ValuePeripheralModel;
+        String LabelPeripheralHVID;
+        String ValuePeripheralHVID;
+        String LabelPeripheralID;
+        String ValuePeripheralID;
+        String LabelPeripheralAcceleratorHVID;
+        String ValuePeripheralAcceleratorHVID;
+        String LabelPeripheralAcceleratorID;
+        String ValuePeripheralAcceleratorID;
+        String LabelPeripheralAcceleratorComPort;
+        String ValuePeripheralAcceleratorComPort;
+
+    }
+
+}

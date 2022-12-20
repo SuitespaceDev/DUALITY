@@ -1,5 +1,5 @@
 ﻿<UserControl
-    x:Class="HV4DX.TableParameter"
+    x:Class="HV4DX.TableContrLibrary"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HV4DX"
@@ -15,25 +15,20 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Border 
-        BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-        BorderThickness="0"
-        Height="32">
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-
-        </Grid>
-
-    </Border>
+    </Grid>
 
 </UserControl>

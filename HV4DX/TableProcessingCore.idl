@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableProcessingCore : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableProcessingCore();
+
+    }
+
+}

@@ -29,32 +29,56 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    hstring UserFilterItem::Value()
+    void UserFilterItem::IncrementIndex(WF::IInspectable const&, MUX::RoutedEventArgs const&)
     {
-        return value;
+        if (selected_item < item_list.Size())
+        {
+            selected_item++;
 
-    }
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
 
-    void UserFilterItem::Value(winrt::hstring const& e)
-    {
-        value = e;
+        }
 
         return;
 
     }
 
-    winrt::hstring UserFilterItem::Item()
+    void UserFilterItem::DecrementIndex(WF::IInspectable const&, MUX::RoutedEventArgs const&)
+    {
+        if (selected_item > 0)
+        {
+            selected_item--;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
+
+        }
+
+    }
+
+    uint32_t UserFilterItem::SelectedItem()
     { 
         
-        return item;
+        return selected_item;
     
+    }
+
+    void UserFilterItem::SelectedItem(uint32_t const& e)
+    {
+        selected_item = e;
+
+        return;
+
     }
 
     WFITT::IObservableVector<winrt::hstring> UserFilterItem::ItemList()
     {
         if (item_list.Size() == 0)
         {
-            item_list.Append(L". . .");
+            item_list.Append(L"Empty");
+
+            selected_item = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
 
         }
 
@@ -64,17 +88,15 @@ namespace winrt::HV4DX::implementation
 
     void UserFilterItem::ItemList(WFITT::IObservableVector<winrt::hstring> const& e)
     {
-        item_list.Clear();
-
         if (e.Size() > 0)
         {
+            item_list.Clear();
+
             item_list = e;
 
-            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ItemList" });
+            selected_item = 0;
 
-            item = *item_list.begin();
-
-            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Item" });
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
 
         }
 
@@ -82,16 +104,16 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    bool UserFilterItem::Editable()
+    bool UserFilterItem::IsEditable()
     {
 
-        return editable;
+        return is_editable;
 
     }
 
-    void UserFilterItem::Editable(bool const& e)
+    void UserFilterItem::IsEditable(bool const& e)
     {
-        editable = e;
+        is_editable = e;
 
         return;
 

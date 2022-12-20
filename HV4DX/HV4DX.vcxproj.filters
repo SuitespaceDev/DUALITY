@@ -16,15 +16,6 @@
     <Filter Include="UserFilters\UserFilterMMM">
       <UniqueIdentifier>{b1559ad7-2650-4797-8024-d9d0add2dc03}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilter">
-      <UniqueIdentifier>{462a9693-4fa5-437c-9bfb-c25d4c3af13b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserFilters\UserFilterItem">
-      <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserFilters\UserFilterType">
-      <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UserFilters\UserFilterTime">
       <UniqueIdentifier>{96b05608-7dce-4c2c-a833-b5534e690887}</UniqueIdentifier>
     </Filter>
@@ -153,24 +144,6 @@
     </Filter>
     <Filter Include="g. TableIO\TablePeripheralDevice">
       <UniqueIdentifier>{5644339d-e10e-4d58-a5f9-6c366134ed5b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableKeyboard">
-      <UniqueIdentifier>{196233fb-29f5-470c-8d82-abcc065b4f0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableMouse">
-      <UniqueIdentifier>{764c8301-f701-4010-af7f-34dfd0cd2d8b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableTablet">
-      <UniqueIdentifier>{5286fb4a-ce6a-4f9f-9c49-d3d5b98a12b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableMIDI">
-      <UniqueIdentifier>{40128dd5-f3dd-4520-98cd-08f355018c4e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableMapInDgtl">
-      <UniqueIdentifier>{6f9c946a-b99c-42ce-b686-f26f20830bb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="g. TableIO\TablePeripheralDevice\TableMapInAnlg">
-      <UniqueIdentifier>{b18891ca-65b2-47e9-a40d-844ad74c6921}</UniqueIdentifier>
     </Filter>
     <Filter Include="h. TableLibrary">
       <UniqueIdentifier>{13bb6faa-84ce-4732-bcc3-ef8bdfc3b0eb}</UniqueIdentifier>
@@ -382,6 +355,15 @@
     <Filter Include="g. TableIO\TableAccelerator\TableComPort\TableWiFi">
       <UniqueIdentifier>{befeba9d-8420-49e6-8ef5-bf47dc8d8453}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UserFilters\temp">
+      <UniqueIdentifier>{cad649d3-5b79-4c1a-a35c-3cf2d4b63427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserFilters\temp\UserFilterItem">
+      <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserFilters\temp\UserFilterType">
+      <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -423,7 +405,7 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="UserFilterItem.xaml">
-      <Filter>UserFilters\UserFilterItem</Filter>
+      <Filter>UserFilters\temp\UserFilterItem</Filter>
     </Page>
     <Page Include="UserDivider.xaml">
       <Filter>UserString\UserDivider</Filter>
@@ -434,9 +416,6 @@
     <Page Include="UserFile.xaml">
       <Filter>UserString\UserFile</Filter>
     </Page>
-    <Page Include="UserFilter.xaml">
-      <Filter>UserFilters\UserFilter</Filter>
-    </Page>
     <Page Include="UserFilterNew.xaml">
       <Filter>UserFilters\UserFilterNew</Filter>
     </Page>
@@ -444,7 +423,7 @@
       <Filter>UserFilters\UserFilterTime</Filter>
     </Page>
     <Page Include="UserFilterType.xaml">
-      <Filter>UserFilters\UserFilterType</Filter>
+      <Filter>UserFilters\temp\UserFilterType</Filter>
     </Page>
     <Page Include="UserPassword.xaml">
       <Filter>UserString\UserPassword</Filter>
@@ -452,17 +431,14 @@
     <Page Include="UserBlock.xaml">
       <Filter>UserString\UserBlock</Filter>
     </Page>
-    <Page Include="TableContract.xaml">
+    <Page Include="TableContrLibrary.xaml">
       <Filter>h. TableLibrary\TableContract</Filter>
     </Page>
-    <Page Include="TableIterator.xaml">
+    <Page Include="TableIttLibrary.xaml">
       <Filter>h. TableLibrary\TableIterator</Filter>
     </Page>
     <Page Include="TableRuntimeClass.xaml">
       <Filter>k. TableProcess\TableRuntimeClass</Filter>
-    </Page>
-    <Page Include="TableParameter.xaml">
-      <Filter>h. TableLibrary\TableParameter</Filter>
     </Page>
     <Page Include="UserFilterMMM.xaml">
       <Filter>UserFilters\UserFilterMMM</Filter>
@@ -538,6 +514,33 @@
     </Page>
     <Page Include="TableNetworkAdapter.xaml">
       <Filter>g. TableIO\TableAccelerator\TableComPort</Filter>
+    </Page>
+    <Page Include="TablePeripheralDevice.xaml">
+      <Filter>g. TableIO\TablePeripheralDevice</Filter>
+    </Page>
+    <Page Include="TableProcessingCore.xaml">
+      <Filter>g. TableIO\TableProcessingCore</Filter>
+    </Page>
+    <Page Include="TableRandomMemory.xaml">
+      <Filter>g. TableIO\TableRandomMemory</Filter>
+    </Page>
+    <Page Include="TableIttItem.xaml">
+      <Filter>h. TableLibrary\TableIterator</Filter>
+    </Page>
+    <Page Include="TableContrItem.xaml">
+      <Filter>h. TableLibrary\TableContract</Filter>
+    </Page>
+    <Page Include="TableFuncLibrary.xaml">
+      <Filter>h. TableLibrary\TableFunction</Filter>
+    </Page>
+    <Page Include="TableFuncItem.xaml">
+      <Filter>h. TableLibrary\TableFunction</Filter>
+    </Page>
+    <Page Include="TableParamLibrary.xaml">
+      <Filter>h. TableLibrary\TableParameter</Filter>
+    </Page>
+    <Page Include="TableParamItem.xaml">
+      <Filter>h. TableLibrary\TableParameter</Filter>
     </Page>
   </ItemGroup>
 </Project>

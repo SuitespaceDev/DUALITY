@@ -12,13 +12,13 @@ namespace HV4DX
         String LabelAcceleratorHVID;
         String ValueAcceleratorHVID;
         String LabelAcceleratorID;
-        String ValueAcceleratorID;
+        UInt32 IndexAcceleratorID;
         String LabelAcceleratorMemory;
         String ValueAcceleratorMemory;
         String LabelAcceleratorCoreClock;
-        String ValueAcceleratorCoreClock;
+        UInt32 IndexAcceleratorCoreClock;
         String LabelAcceleratorMemoryClock;
-        String ValueAcceleratorMemoryClock;
+        UInt32 IndexAcceleratorMemoryClock;
         String LabelAcceleratorMemorySize;
         String ValueAcceleratorMemorySize;
 

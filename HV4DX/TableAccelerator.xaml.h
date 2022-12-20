@@ -73,28 +73,12 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label_accelerator_id{};
 
     public:
-        winrt::hstring ValueAcceleratorID();
+        uint32_t IndexAcceleratorID();
 
-        void ValueAcceleratorID(winrt::hstring const&);
-
-    private:
-        winrt::hstring value_accelerator_id{};
-
-    public:
-        winrt::hstring LabelAcceleratorCoreClock();
-
-        void LabelAcceleratorCoreClock(winrt::hstring const&);
+        void IndexAcceleratorID(uint32_t const&);
 
     private:
-        winrt::hstring label_accelerator_core_clock{};
-
-    public:
-        winrt::hstring ValueAcceleratorCoreClock();
-
-        void ValueAcceleratorCoreClock(winrt::hstring const&);
-
-    private:
-        winrt::hstring value_accelerator_core_clock{};
+        uint32_t index_accelerator_id{};
 
     public:
         winrt::hstring LabelAcceleratorMemory();
@@ -113,6 +97,22 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_accelerator_memory{};
 
     public:
+        winrt::hstring LabelAcceleratorCoreClock();
+
+        void LabelAcceleratorCoreClock(winrt::hstring const&);
+
+    private:
+        winrt::hstring label_accelerator_core_clock{};
+
+    public:
+        uint32_t IndexAcceleratorCoreClock();
+
+        void IndexAcceleratorCoreClock(uint32_t const&);
+
+    private:
+        uint32_t index_accelerator_core_clock{};
+
+    public:
         winrt::hstring LabelAcceleratorMemoryClock();
 
         void LabelAcceleratorMemoryClock(winrt::hstring const&);
@@ -121,12 +121,12 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label_accelerator_memory_clock{};
 
     public:
-        winrt::hstring ValueAcceleratorMemoryClock();
+        uint32_t IndexAcceleratorMemoryClock();
 
-        void ValueAcceleratorMemoryClock(winrt::hstring const&);
+        void IndexAcceleratorMemoryClock(uint32_t const&);
 
     private:
-        winrt::hstring value_accelerator_memory_clock{};
+        uint32_t index_accelerator_memory_clock{};
 
     public:
         winrt::hstring LabelAcceleratorMemorySize();

@@ -37,7 +37,7 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
             Label="{x:Bind LabelProfileMaxPath}"
-            Value="{x:Bind ValueProfileMaxPath}"/>
+            SelectedItem="{x:Bind SelectedItemProfileMaxPath}"/>
 
         <local:UserDateTime 
             Grid.Column="1" Grid.ColumnSpan="1" 

@@ -37,13 +37,13 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="{x:Bind LabelAccountID}"
-            Value="{x:Bind ValueAccountID}"/>
+            SelectedItem="{x:Bind SelectedItemAccountID}"/>
 
         <local:UserFilterItem
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
             Label="{x:Bind LabelAccountMaxPath}"
-            Value="{x:Bind ValueAccountMaxPath}"/>
+            SelectedItem="{x:Bind SelectedItemAccountMaxPath}"/>
 
         <local:UserBlock 
             Grid.Column="1" Grid.ColumnSpan="1" 

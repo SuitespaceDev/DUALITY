@@ -120,7 +120,6 @@
                         <NavigationViewItem Tag="{}{202AF229-5997-499D-963E-6A021C8EAAD1}" x:Name="ShellPage" Content="Shell"/>
                         <NavigationViewItem Tag="{}{41BB9503-037B-404B-86BF-F521773343AA}" x:Name="AsyncPage" Content="Async"/>
                         <NavigationViewItem Tag="{}{DF0AF07C-F15B-4574-AF66-8B0DD6C8891A}" x:Name="RPCPage" Content="RPC"/>
-                        <NavigationViewItem Tag="{}{DBB5ADCE-50A3-4DB5-B127-D527B55BD3DF}" x:Name="RuntimeClassPage" Content="Runtime Class"/>
                         <NavigationViewItem Tag="{}{B34BD3DB-6250-487A-A11B-160FA5B09FA3}" x:Name="PipePage" Content="Pipe"/>
                         <NavigationViewItem Tag="{}{AD99D754-4A6C-422D-B4FC-7164916CE3ED}" x:Name="SharedMemPage" Content="Shared Memory"/>
                     </NavigationViewItem.MenuItems>

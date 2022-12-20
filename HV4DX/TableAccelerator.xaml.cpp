@@ -119,16 +119,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccelerator::ValueAcceleratorID()
+	uint32_t TableAccelerator::IndexAcceleratorID()
 	{
 
-		return value_accelerator_id;
+		return index_accelerator_id;
 
 	}
 
-	void  TableAccelerator::ValueAcceleratorID(winrt::hstring const& e)
+	void  TableAccelerator::IndexAcceleratorID(uint32_t const& e)
 	{
-		value_accelerator_id = e;
+		index_accelerator_id = e;
 
 		return;
 
@@ -179,16 +179,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccelerator::ValueAcceleratorCoreClock()
+	uint32_t TableAccelerator::IndexAcceleratorCoreClock()
 	{
 
-		return value_accelerator_core_clock;
+		return index_accelerator_core_clock;
 
 	}
 
-	void  TableAccelerator::ValueAcceleratorCoreClock(winrt::hstring const& e)
+	void  TableAccelerator::IndexAcceleratorCoreClock(uint32_t const& e)
 	{
-		value_accelerator_core_clock = e;
+		index_accelerator_core_clock = e;
 
 		return;
 
@@ -209,16 +209,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccelerator::ValueAcceleratorMemoryClock()
+	uint32_t TableAccelerator::IndexAcceleratorMemoryClock()
 	{
 
-		return value_accelerator_memory_clock;
+		return index_accelerator_memory_clock;
 
 	}
 
-	void  TableAccelerator::ValueAcceleratorMemoryClock(winrt::hstring const& e)
+	void  TableAccelerator::IndexAcceleratorMemoryClock(uint32_t const& e)
 	{
-		value_accelerator_memory_clock = e;
+		index_accelerator_memory_clock = e;
 
 		return;
 

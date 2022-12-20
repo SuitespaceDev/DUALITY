@@ -38,7 +38,7 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
             Label="{x:Bind LabelRTCMaxPath}"
-            Value="{x:Bind ValueRTCMaxPath}"/>
+            SelectedItem="{x:Bind SelectedItemRTCMaxPath}"/>
 
         <local:UserBlock 
             Grid.Column="1" Grid.ColumnSpan="1" 

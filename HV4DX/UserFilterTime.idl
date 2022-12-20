@@ -1,11 +1,32 @@
 namespace HV4DX
 {
     [bindable]
-    runtimeclass UserFilterTime : Microsoft.UI.Xaml.Controls.UserControl
+    runtimeclass UserFilterTime : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserFilterTime();
 
-        event Windows.Foundation.EventHandler<String> FilterChanged;
+        String Label;
+
+        UInt32 SelectedMonth;
+        Windows.Foundation.Collections.IObservableVector<String> Months{ get; };
+
+        UInt32 SelectedDay;
+        Windows.Foundation.Collections.IObservableVector<String> Days{ get; };
+
+        UInt32 SelectedYear;
+        Windows.Foundation.Collections.IObservableVector<String> Years{ get; };
+
+        UInt32 SelectedHour;
+        Windows.Foundation.Collections.IObservableVector<String> Hours{ get; };
+
+        UInt32 SelectedMinute;
+        Windows.Foundation.Collections.IObservableVector<String> Minutes{ get; };
+
+        UInt32 SelectedSecond;
+        Windows.Foundation.Collections.IObservableVector<String> Seconds{ get; };
+
+        UInt32 SelectedOperator;
+        Windows.Foundation.Collections.IObservableVector<String> Operators{ get; };
 
     }
 

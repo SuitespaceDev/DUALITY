@@ -20,49 +20,21 @@
 
         <StackPanel>
 
-            <TabView
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
-                MinHeight="500"
-                Margin="6,6,6,6">
-
-                <TabViewItem
-                    Header="MOUSE"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="KEYBOARD"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="TABLET"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="MAPPED"   
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="MIDI"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-                <TabViewItem
-                    Header="ANALOGUE"
-                    IsClosable="False">
-
-                </TabViewItem>
-
-            </TabView>
+            <HV4DX:TablePeripheralDevice
+                LabelPeripheralManufacturer="PERIPHERAL MANUFACTURER"
+                ValuePeripheralManufacturer=""
+                LabelPeripheralModel="PERIPHERAL MODEL"
+                ValuePeripheralModel=""
+                LabelPeripheralHVID="PERIPHERAL HVID"
+                ValuePeripheralHVID=""
+                LabelPeripheralID="PERIPHERAL ID"
+                ValuePeripheralID=""
+                LabelPeripheralAcceleratorHVID="ACCELERATOR HVID"
+                ValuePeripheralAcceleratorHVID=""
+                LabelPeripheralAcceleratorID="ACCELERATOR ID"
+                ValuePeripheralAcceleratorID=""
+                LabelPeripheralAcceleratorComPort="ACCELERATOR COMPORT"
+                ValuePeripheralAcceleratorComPort=""/>
 
             <HV4DX:UserDivider/>
 

@@ -7,13 +7,9 @@ namespace HV4DX
 
         String Label;
 
-        String Value;
-
-        String Item{ get; };
-        
+        Boolean IsEditable{ get; };
+        UInt32 SelectedItem;
         Windows.Foundation.Collections.IObservableVector<String> ItemList;
-
-        Boolean Editable;
 
     }
 

@@ -1,0 +1,95 @@
+﻿<UserControl
+    x:Class="HV4DX.TablePeripheralDevice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserBlock 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralManufacturer}"
+            Value="{x:Bind ValuePeripheralManufacturer}"/>
+
+        <local:UserBlock 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralModel}"
+            Value="{x:Bind ValuePeripheralModel}"/>
+
+        <local:UserFilterNew 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralHVID}" 
+            Value="{x:Bind ValuePeripheralHVID}"/>
+
+        <local:UserFilterItem 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralID}" 
+            SelectedItem="{x:Bind SelectedItemPeripheralID}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralAcceleratorHVID}"
+            Value="{x:Bind ValuePeripheralAcceleratorHVID}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralAcceleratorID}"
+            Value="{x:Bind ValuePeripheralAcceleratorID}"/>
+
+        <local:UserBlock 
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="{x:Bind LabelPeripheralAcceleratorComPort}"
+            Value="{x:Bind ValuePeripheralAcceleratorComPort}"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MAPPING"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>

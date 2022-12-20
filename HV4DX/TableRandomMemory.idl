@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableRandomMemory : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableRandomMemory();
+
+    }
+
+}

@@ -24,55 +24,55 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildTheme}"
-            Value="{x:Bind ValueBuildTheme}"/>
+            SelectedItem="{x:Bind SelectedItemBuildTheme}"/>
 
         <local:UserFilterItem
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildUIScale}"
-            Value="{x:Bind ValueBuildUIScale}"/>
+            SelectedItem="{x:Bind SelectedItemBuildUIScale}"/>
 
         <local:UserFilterItem
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildAntiAliasing}"
-            Value="{x:Bind ValueBuildAntiAliasing}"/>
+            SelectedItem="{x:Bind SelectedItemBuildAntiAliasing}"/>
 
         <local:UserFilterItem
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildFullScreen}"
-            Value="{x:Bind ValueBuildFullScreen}"/>
+            SelectedItem="{x:Bind SelectedItemBuildFullScreen}"/>
         
         <local:UserFilterItem
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildResolution}"
-            Value="{x:Bind ValueBuildResolution}"/>
+            SelectedItem="{x:Bind SelectedItemBuildResolution}"/>
         
         <local:UserFilterItem
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildRefreshRate}"
-            Value="{x:Bind ValueBuildRefreshRate}"/>
+            SelectedItem="{x:Bind SelectedItemBuildRefreshRate}"/>
      
         <local:UserFilterItem
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildFont}"
-            Value="{x:Bind ValueBuildFont}"/>
+            SelectedItem="{x:Bind SelectedItemBuildFont}"/>
         
         <local:UserFilterItem
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildFontSize}"
-            Value="{x:Bind ValueBuildFontSize}"/>
+            SelectedItem="{x:Bind SelectedItemBuildFontSize}"/>
         
         <local:UserFilterItem
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelBuildFontWeight}"
-            Value="{x:Bind ValueBuildFontWeight}"/>
+            SelectedItem="{x:Bind SelectedItemBuildFontWeight}"/>
         
     </Grid>
 

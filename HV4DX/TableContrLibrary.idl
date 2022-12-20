@@ -1,0 +1,11 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableContrLibrary : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableContrLibrary();
+    
+    }
+
+}
