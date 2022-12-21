@@ -5,7 +5,9 @@
 namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
 namespace MUX = winrt::Microsoft::UI::Xaml;
+namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
 namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::HV4DX::implementation
 {
@@ -31,20 +33,28 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value{};
 
     public:
-        WFITT::IObservableVector<MUXC::TextBlock> FilterList();
+        WFITT::IObservableVector<winrt::hstring> FilterList();
 
-        void FilterList(WFITT::IObservableVector<MUXC::TextBlock> const&);
+        void FilterList(WFITT::IObservableVector<winrt::hstring> const&);
 
     private:
-        WFITT::IObservableVector<MUXC::TextBlock> filter_list{ winrt::single_threaded_observable_vector<MUXC::TextBlock>() };
+        WFITT::IObservableVector<winrt::hstring> filter_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
     public:
-        MUXC::TextBlock FilterType();
+        uint32_t FilterType();
 
-        void FilterType(MUXC::TextBlock const&);
+        void FilterType(uint32_t const&);
 
     private:
-        MUXC::TextBlock filter_type{};
+        uint32_t filter_type{};
+
+    public:
+        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+        void PropertyChanged(winrt::event_token const&) noexcept;
+
+    private:
+        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 

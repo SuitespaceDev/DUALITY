@@ -355,13 +355,10 @@
     <Filter Include="g. TableIO\TableAccelerator\TableComPort\TableWiFi">
       <UniqueIdentifier>{befeba9d-8420-49e6-8ef5-bf47dc8d8453}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\temp">
-      <UniqueIdentifier>{cad649d3-5b79-4c1a-a35c-3cf2d4b63427}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserFilters\temp\UserFilterItem">
+    <Filter Include="UserFilters\UserFilterItem">
       <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\temp\UserFilterType">
+    <Filter Include="UserFilters\UserFilterType">
       <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -394,7 +391,6 @@
     <Midl Include="UserDivider.idl" />
     <Midl Include="UserEntry.idl" />
     <Midl Include="UserFile.idl" />
-    <Midl Include="UserFilter.idl" />
     <Midl Include="UserFilterNew.idl" />
     <Midl Include="UserFilterTime.idl" />
     <Midl Include="UserFilterType.idl" />
@@ -405,7 +401,7 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="UserFilterItem.xaml">
-      <Filter>UserFilters\temp\UserFilterItem</Filter>
+      <Filter>UserFilters\UserFilterItem</Filter>
     </Page>
     <Page Include="UserDivider.xaml">
       <Filter>UserString\UserDivider</Filter>
@@ -423,7 +419,7 @@
       <Filter>UserFilters\UserFilterTime</Filter>
     </Page>
     <Page Include="UserFilterType.xaml">
-      <Filter>UserFilters\temp\UserFilterType</Filter>
+      <Filter>UserFilters\UserFilterType</Filter>
     </Page>
     <Page Include="UserPassword.xaml">
       <Filter>UserString\UserPassword</Filter>

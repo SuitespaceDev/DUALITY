@@ -14,182 +14,305 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableAccount::LabelAccountHVID()
-    {
-        return label_hvid;
+	winrt::hstring TableAccountNew::LabelAccountHVID()
+	{
+		return label_account_hvid;
 
-    }
+	}
 
-    void TableAccount::LabelAccountHVID(winrt::hstring const& e)
-    {
-        label_hvid = e;
+	void TableAccountNew::LabelAccountHVID(winrt::hstring const& e)
+	{
+		label_account_hvid = e;
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::ValueAccountHVID()
-    {
-        return value_hvid;
+	uint32_t TableAccountNew::IndexAccountHVID()
+	{
+		return index_account_hvid;
 
-    }
+	}
 
-    void TableAccount::ValueAccountHVID(winrt::hstring const& e)
-    {
-        value_hvid = e;
+	void TableAccountNew::IndexAccountHVID(uint32_t const& e)
+	{
+		index_account_hvid = e;
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::LabelAccountID()
-    {
-        return label_account_id;
+	WFITT::IObservableVector<winrt::hstring> TableAccountNew::ListAccountHVID()
+	{
+		if (list_account_hvid.Size() == 0)
+		{
+			list_account_hvid.Append(L"Empty");
 
-    }
+			index_account_hvid = 0;
 
-    void TableAccount::LabelAccountID(winrt::hstring const& e)
-    {
-        label_account_id = e;
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountHVID" });
 
-        return;
+			return list_account_hvid;
 
-    }
+		}
+		else
+		{
+			return list_account_hvid;
 
-    winrt::hstring TableAccount::ValueAccountID()
-    {
-        return value_account_id;
+		}
 
-    }
+	}
 
-    void TableAccount::ValueAccountID(winrt::hstring const& e)
-    {
-        value_account_id = e;
+	void TableAccountNew::ListAccountHVID(WFITT::IObservableVector<winrt::hstring> const& e)
+	{
+		if (e.Size() != 0)
+		{
+			list_account_hvid.Clear();
 
-        return;
+			list_account_hvid = e;
 
-    }
+			index_account_hvid = 0;
 
-    winrt::hstring TableAccount::LabelAccountMaxPath()
-    {
-        return label_maxpath;
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountHVID" });
 
-    }
+			return;
 
-    void TableAccount::LabelAccountMaxPath(winrt::hstring const& e)
-    {
-        label_maxpath = e;
+		}
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::ValueAccountMaxPath()
-    {
-        return value_maxpath;
+	winrt::hstring TableAccountNew::LabelAccountID()
+	{
+		return label_account_id;
 
-    }
+	}
 
-    void TableAccount::ValueAccountMaxPath(winrt::hstring const& e)
-    {
-        value_maxpath = e;
+	void TableAccountNew::LabelAccountID(winrt::hstring const& e)
+	{
+		label_account_id = e;
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::LabelAccountCreated()
-    {
-        return label_created;
+	uint32_t TableAccountNew::IndexAccountID()
+	{
+		return index_account_id;
 
-    }
+	}
 
-    void TableAccount::LabelAccountCreated(winrt::hstring const& e)
-    {
-        label_created = e;
+	void TableAccountNew::IndexAccountID(uint32_t const& e)
+	{
+		index_account_id = e;
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::ValueAccountCreated()
-    {
-        return value_created;
+	WFITT::IObservableVector<winrt::hstring> TableAccountNew::ListAccountID()
+	{
+		if (list_account_id.Size() == 0)
+		{
+			list_account_id.Append(L"Empty");
 
-    }
+			index_account_id = 0;
 
-    void TableAccount::ValueAccountCreated(winrt::hstring const& e)
-    {
-        value_created = e;
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountID" });
 
-        return;
+			return list_account_id;
 
-    }
+		}
+		else
+		{
+			return list_account_id;
 
-    winrt::hstring TableAccount::LabelAccountUpdated()
-    {
-        return label_updated;
+		}
 
-    }
+	}
 
-    void TableAccount::LabelAccountUpdated(winrt::hstring const& e)
-    {
-        label_updated = e;
+	void TableAccountNew::ListAccountID(WFITT::IObservableVector<winrt::hstring> const& e)
+	{
+		if (e.Size() != 0)
+		{
+			list_account_id.Clear();
 
-        return;
+			list_account_id = e;
 
-    }
+			index_account_id = 0;
 
-    winrt::hstring TableAccount::ValueAccountUpdated()
-    {
-        return value_updated;
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountID" });
 
-    }
+			return;
 
-    void TableAccount::ValueAccountUpdated(winrt::hstring const& e)
-    {
-        value_updated = e;
+		}
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::LabelAccountPassword()
-    {
-        return label_password;
+	winrt::hstring TableAccountNew::LabelAccountMaxPath()
+	{
+		return label_account_maxpath;
 
-    }
+	}
 
-    void TableAccount::LabelAccountPassword(winrt::hstring const& e)
-    {
-        label_password = e;
+	void TableAccountNew::LabelAccountMaxPath(winrt::hstring const& e)
+	{
+		label_account_maxpath = e;
 
-        return;
+		return;
 
-    }
+	}
 
-    winrt::hstring TableAccount::ValueAccountPassword()
-    {
-        return value_password;
+	uint32_t TableAccountNew::IndexAccountMaxPath()
+	{
+		return index_account_maxpath;
 
-    }
+	}
 
-    void TableAccount::ValueAccountPassword(winrt::hstring const& e)
-    {
-        value_password = e;
+	void TableAccountNew::IndexAccountMaxPath(uint32_t const& e)
+	{
+		index_account_maxpath = e;
 
-        return;
+		return;
 
-    }
+	}
 
-	winrt::hstring TableAccount::LabelAccount()
+	WFITT::IObservableVector<winrt::hstring> TableAccountNew::ListAccountMaxPath()
+	{
+		if (list_account_maxpath.Size() == 0)
+		{
+			list_account_maxpath.Append(L"Empty");
+
+			index_account_maxpath = 0;
+
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountID" });
+
+			return list_account_maxpath;
+
+		}
+		else
+		{
+			return list_account_maxpath;
+
+		}
+
+	}
+
+	void TableAccountNew::ListAccountMaxPath(WFITT::IObservableVector<winrt::hstring> const& e)
+	{
+		if (e.Size() != 0)
+		{
+			list_account_maxpath.Clear();
+
+			list_account_maxpath = e;
+
+			index_account_maxpath = 0;
+
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexAccountID" });
+
+			return;
+
+		}
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::LabelAccountCreated()
+	{
+		return label_account_created;
+
+	}
+
+	void TableAccountNew::LabelAccountCreated(winrt::hstring const& e)
+	{
+		label_account_created = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::ValueAccountCreated()
+	{
+		return value_account_created;
+
+	}
+
+	void TableAccountNew::ValueAccountCreated(winrt::hstring const& e)
+	{
+		value_account_created = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::LabelAccountUpdated()
+	{
+		return label_account_updated;
+
+	}
+
+	void TableAccountNew::LabelAccountUpdated(winrt::hstring const& e)
+	{
+		label_account_updated = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::ValueAccountUpdated()
+	{
+		return value_account_updated;
+
+	}
+
+	void TableAccountNew::ValueAccountUpdated(winrt::hstring const& e)
+	{
+		value_account_updated = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::LabelAccountPassword()
+	{
+		return label_account_password;
+
+	}
+
+	void TableAccountNew::LabelAccountPassword(winrt::hstring const& e)
+	{
+		label_account_password = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::ValueAccountPassword()
+	{
+		return value_account_password;
+
+	}
+
+	void TableAccountNew::ValueAccountPassword(winrt::hstring const& e)
+	{
+		value_account_password = e;
+
+		return;
+
+	}
+
+	winrt::hstring TableAccountNew::LabelAccount()
 	{
 
 		return label_account;
 
 	}
 
-	void TableAccount::LabelAccount(winrt::hstring const& e)
+	void TableAccountNew::LabelAccount(winrt::hstring const& e)
 	{
 		label_account = e;
 
@@ -197,14 +320,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccount()
+	winrt::hstring TableAccountNew::ValueAccount()
 	{
 
 		return value_account;
 
 	}
 
-	void TableAccount::ValueAccount(winrt::hstring const& e)
+	void TableAccountNew::ValueAccount(winrt::hstring const& e)
 	{
 		value_account = e;
 
@@ -212,14 +335,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountAddressOne()
+	winrt::hstring TableAccountNew::LabelAccountAddressOne()
 	{
 
 		return label_account_address_one;
 
 	}
 
-	void TableAccount::LabelAccountAddressOne(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountAddressOne(winrt::hstring const& e)
 	{
 		label_account_address_one = e;
 
@@ -227,14 +350,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountAddressOne()
+	winrt::hstring TableAccountNew::ValueAccountAddressOne()
 	{
 
 		return value_account_address_one;
 
 	}
 
-	void TableAccount::ValueAccountAddressOne(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountAddressOne(winrt::hstring const& e)
 	{
 		value_account_address_one = e;
 
@@ -242,14 +365,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountAddressTwo()
+	winrt::hstring TableAccountNew::LabelAccountAddressTwo()
 	{
 
 		return label_account_address_two;
 
 	}
 
-	void TableAccount::LabelAccountAddressTwo(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountAddressTwo(winrt::hstring const& e)
 	{
 		label_account_address_two = e;
 
@@ -257,14 +380,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountAddressTwo()
+	winrt::hstring TableAccountNew::ValueAccountAddressTwo()
 	{
 
 		return value_account_address_two;
 
 	}
 
-	void TableAccount::ValueAccountAddressTwo(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountAddressTwo(winrt::hstring const& e)
 	{
 		value_account_address_two = e;
 
@@ -272,14 +395,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountCity()
+	winrt::hstring TableAccountNew::LabelAccountCity()
 	{
 
 		return label_account_city;
 
 	}
 
-	void TableAccount::LabelAccountCity(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountCity(winrt::hstring const& e)
 	{
 		label_account_city = e;
 
@@ -287,14 +410,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountCity()
+	winrt::hstring TableAccountNew::ValueAccountCity()
 	{
 
 		return value_account_city;
 
 	}
 
-	void TableAccount::ValueAccountCity(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountCity(winrt::hstring const& e)
 	{
 		value_account_city = e;
 
@@ -302,14 +425,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountRegion()
+	winrt::hstring TableAccountNew::LabelAccountRegion()
 	{
 
 		return label_account_region;
 
 	}
 
-	void TableAccount::LabelAccountRegion(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountRegion(winrt::hstring const& e)
 	{
 		label_account_region = e;
 
@@ -317,14 +440,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountRegion()
+	winrt::hstring TableAccountNew::ValueAccountRegion()
 	{
 
 		return value_account_region;
 
 	}
 
-	void TableAccount::ValueAccountRegion(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountRegion(winrt::hstring const& e)
 	{
 		value_account_region = e;
 
@@ -332,14 +455,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountEMail()
+	winrt::hstring TableAccountNew::LabelAccountEMail()
 	{
 
 		return label_account_email;
 
 	}
 
-	void TableAccount::LabelAccountEMail(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountEMail(winrt::hstring const& e)
 	{
 		label_account_email = e;
 
@@ -347,14 +470,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountEMail()
+	winrt::hstring TableAccountNew::ValueAccountEMail()
 	{
 
 		return value_account_email;
 
 	}
 
-	void TableAccount::ValueAccountEMail(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountEMail(winrt::hstring const& e)
 	{
 		value_account_email = e;
 
@@ -362,14 +485,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountPrimaryPhone()
+	winrt::hstring TableAccountNew::LabelAccountPrimaryPhone()
 	{
 
 		return label_account_primary_phone;
 
 	}
 
-	void TableAccount::LabelAccountPrimaryPhone(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountPrimaryPhone(winrt::hstring const& e)
 	{
 		label_account_primary_phone = e;
 
@@ -377,14 +500,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountPrimaryPhone()
+	winrt::hstring TableAccountNew::ValueAccountPrimaryPhone()
 	{
 
 		return value_account_primary_phone;
 
 	}
 
-	void TableAccount::ValueAccountPrimaryPhone(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountPrimaryPhone(winrt::hstring const& e)
 	{
 		value_account_primary_phone = e;
 
@@ -392,14 +515,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::LabelAccountSecondaryPhone()
+	winrt::hstring TableAccountNew::LabelAccountSecondaryPhone()
 	{
 
 		return label_account_secondary_phone;
 
 	}
 
-	void TableAccount::LabelAccountSecondaryPhone(winrt::hstring const& e)
+	void TableAccountNew::LabelAccountSecondaryPhone(winrt::hstring const& e)
 	{
 		label_account_secondary_phone = e;
 
@@ -407,14 +530,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccount::ValueAccountSecondaryPhone()
+	winrt::hstring TableAccountNew::ValueAccountSecondaryPhone()
 	{
 
 		return value_account_secondary_phone;
 
 	}
 
-	void TableAccount::ValueAccountSecondaryPhone(winrt::hstring const& e)
+	void TableAccountNew::ValueAccountSecondaryPhone(winrt::hstring const& e)
 	{
 		value_account_secondary_phone = e;
 
@@ -422,16 +545,31 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	bool TableAccount::AccountIsEditable()
+	bool TableAccountNew::AccountIsEditable()
 	{
 
 		return account_is_editable;
 
 	}
 
-	void TableAccount::AccountIsEditable(bool const& e)
+	void TableAccountNew::AccountIsEditable(bool const& e)
 	{
 		account_is_editable = e;
+
+		return;
+
+	}
+
+	event_token TableAccountNew::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+	{
+
+		return property_changed_event.add(handler);
+
+	}
+
+	void TableAccountNew::PropertyChanged(winrt::event_token const& token) noexcept
+	{
+		property_changed_event.remove(token);
 
 		return;
 

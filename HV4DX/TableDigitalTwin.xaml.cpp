@@ -182,6 +182,11 @@ namespace winrt::HV4DX::implementation
 
     }
 
+
+
+
+
+
     winrt::hstring TableDigitalTwin::LabelLocalization()
     {
         return label_localization;
@@ -195,6 +200,70 @@ namespace winrt::HV4DX::implementation
         return;
 
     }
+
+    uint32_t TableDigitalTwin::IndexLocalization()
+    {
+        return index_localization;
+
+    }
+
+    void TableDigitalTwin::IndexLocalization(uint32_t const& e)
+    {
+        index_localization = e;
+
+        return;
+
+    }
+
+    WFITT::IObservableVector<winrt::hstring> TableDigitalTwin::ListLocalization()
+    {
+        if (list_localization.Size() == 0)
+        {
+            list_localization.Append(L"Empty");
+
+            index_localization = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexLocalization" });
+
+            return list_localization;
+
+        }
+        else
+        {
+            return list_localization;
+
+        }
+
+    }
+
+    void TableDigitalTwin::ListLocalization(WFITT::IObservableVector<winrt::hstring> const& e)
+    {
+        if (e.Size() != 0)
+        {
+            list_localization.Clear();
+
+            list_localization = e;
+
+            index_localization = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexLocalization" });
+
+            return;
+
+        }
+
+        return;
+
+    }
+
+
+
+
+
+
+
+
+
 
     winrt::hstring TableDigitalTwin::LabelTimeZone()
     {
@@ -210,6 +279,13 @@ namespace winrt::HV4DX::implementation
 
     }
 
+
+
+
+
+
+
+
     winrt::hstring TableDigitalTwin::LabelKeyboard()
     {
         return label_keyboard;
@@ -224,6 +300,13 @@ namespace winrt::HV4DX::implementation
 
     }
 
+
+
+
+
+
+
+
     winrt::hstring TableDigitalTwin::LabelWindowsTarget()
     {
         return label_windows_target;
@@ -237,6 +320,14 @@ namespace winrt::HV4DX::implementation
         return;
 
     }
+
+
+
+
+
+
+
+
 
     winrt::hstring TableDigitalTwin::LabelExecutableDir()
     {
@@ -317,6 +408,21 @@ namespace winrt::HV4DX::implementation
     void  TableDigitalTwin::ValueXamlDir(winrt::hstring const& e)
     {
         value_xaml_dir = e;
+
+        return;
+
+    }
+
+    event_token TableDigitalTwin::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+    {
+
+        return property_changed_event.add(handler);
+
+    }
+
+    void TableDigitalTwin::PropertyChanged(winrt::event_token const& token) noexcept
+    {
+        property_changed_event.remove(token);
 
         return;
 

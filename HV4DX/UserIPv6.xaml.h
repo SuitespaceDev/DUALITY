@@ -46,6 +46,14 @@ namespace winrt::HV4DX::implementation
         winrt::hstring placeholder{};
 
     public:
+        bool ReadOnly();
+
+        void ReadOnly(bool const&);
+
+    private:
+        bool read_only{};
+
+    public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
         void PropertyChanged(winrt::event_token const&) noexcept;

@@ -29,46 +29,109 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	winrt::hstring UserFilterNew::Value() 
+	uint32_t UserFilterNew::SelectedItem()
 	{ 
 		
-		return value; 
+		return selected_item;
 	
 	}
 
-	void UserFilterNew::Value(winrt::hstring const& e)
+	void UserFilterNew::SelectedItem(uint32_t const& e)
 	{ 
-		value = e; 
+		selected_item = e;
 	
 		return;
 	
 	}
 
-	winrt::event_token UserFilterNew::FilterChanged(WF::EventHandler<winrt::hstring> const& handler)
+	void UserFilterNew::NextItem(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		return filter_changed_event.add(handler);
+		if (selected_item < (item_list.Size() - 1))
+		{
+			selected_item++;
 
-	}
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
 
-	void UserFilterNew::FilterChanged(winrt::event_token const& token) noexcept
-	{
-		filter_changed_event.remove(token);
-
+		}
+		
 		return;
 
 	}
 
-	void UserFilterNew::UserFilterNewUp(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	void UserFilterNew::PreviousItem(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		filter_changed_event(*this, L"");
+		if (selected_item > 0)
+		{
+			selected_item--;
 
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" } );
+
+		}
+		
 		return;
 
 	}
 
-	void UserFilterNew::UserFilterNewDown(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	WFITT::IObservableVector<winrt::hstring> UserFilterNew::ItemList()
 	{
-		filter_changed_event(*this, L"");
+		if (item_list.Size() == 0)
+		{
+			item_list.Append(L"Empty");
+
+			return item_list;
+
+		}
+		else
+		{
+			return item_list;
+
+		}
+
+	}
+
+	void UserFilterNew::ItemList(WFITT::IObservableVector<winrt::hstring> const& e)
+	{
+		if (e.Size() == 0)
+		{
+			return;
+
+		}
+		else
+		{
+			item_list = e;
+
+			return;
+
+		}
+
+	}
+
+	void UserFilterNew::NewItem(WF::IInspectable const&, MUX::RoutedEventArgs const&)
+	{
+
+
+
+
+	}
+
+	void UserFilterNew::DeleteItem(WF::IInspectable const&, MUX::RoutedEventArgs const&)
+	{
+
+
+
+
+	}
+	
+	event_token UserFilterNew::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+	{
+
+		return property_changed_event.add(handler);
+
+	}
+
+	void UserFilterNew::PropertyChanged(winrt::event_token const& token) noexcept
+	{
+		property_changed_event.remove(token);
 
 		return;
 

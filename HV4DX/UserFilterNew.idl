@@ -1,15 +1,13 @@
 namespace HV4DX
 {
     [bindable]
-    runtimeclass UserFilterNew : Microsoft.UI.Xaml.Controls.UserControl
+    runtimeclass UserFilterNew : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserFilterNew();
     
         String Label;
-
-        String Value;
-
-        event Windows.Foundation.EventHandler<String> FilterChanged;
+        UInt32 SelectedItem;
+        Windows.Foundation.Collections.IObservableVector<String> ItemList;
 
     }
 

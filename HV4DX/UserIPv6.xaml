@@ -57,7 +57,9 @@
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Value}"/>
+                    Text="{x:Bind Valu, Mode=TwoWay}"
+                    PlaceholderText="{x:Bind Placeholder, Mode=OneTime}"
+                    IsReadOnly="{x:Bind ReadOnly, Mode=TwoWay}"/>
 
             </Border>
 

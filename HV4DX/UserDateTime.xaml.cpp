@@ -63,13 +63,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	MUX::DependencyProperty UserDateTime::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserDateTime>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserDateTime::OnValueChanged} });
-
 	winrt::hstring UserDateTime::Placeholder()
 	{
 
@@ -80,6 +73,21 @@ namespace winrt::HV4DX::implementation
 	void UserDateTime::Placeholder(winrt::hstring const& e)
 	{
 		placeholder = e;
+
+		return;
+
+	}
+
+	bool UserDateTime::ReadOnly()
+	{
+
+		return read_only;
+
+	}
+
+	void UserDateTime::ReadOnly(bool const& e)
+	{
+		read_only = e;
 
 		return;
 
@@ -99,5 +107,12 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
+
+	MUX::DependencyProperty UserDateTime::value_property =
+		MUX::DependencyProperty::Register(
+			L"Value",
+			winrt::xaml_typename<winrt::hstring>(),
+			winrt::xaml_typename<winrt::HV4DX::UserDateTime>(),
+			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserDateTime::OnValueChanged} });
 
 }

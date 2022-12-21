@@ -2,10 +2,18 @@
 
 #include "TableAccountNew.g.h"
 
+namespace WF = winrt::Windows::Foundation;
+namespace WFITT = winrt::Windows::Foundation::Collections;
+namespace MUX = winrt::Microsoft::UI::Xaml;
+namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
+
 namespace winrt::HV4DX::implementation
 {
     struct TableAccountNew : TableAccountNewT<TableAccountNew>
     {
+	public:
         TableAccountNew();
 
 	public:
@@ -14,20 +22,23 @@ namespace winrt::HV4DX::implementation
 		void LabelAccountHVID(winrt::hstring const&);
 
 	private:
-		winrt::hstring label_hvid{};
+		winrt::hstring label_account_hvid{};
 
 	public:
-		winrt::hstring ValueAccountHVID();
+		uint32_t IndexAccountHVID();
 
-		void ValueAccountHVID(winrt::hstring const&);
+		void IndexAccountHVID(uint32_t const&);
 
 	private:
-		winrt::hstring value_hvid{};
+		uint32_t index_account_hvid{};
 
 	public:
-		winrt::hstring LabelAccountMaxPath();
+		WFITT::IObservableVector<winrt::hstring> ListAccountHVID();
 
-		void LabelAccountMaxPath(winrt::hstring const&);
+		void ListAccountHVID(WFITT::IObservableVector<winrt::hstring> const&);
+
+	private:
+		WFITT::IObservableVector<winrt::hstring> list_account_hvid{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
 	public:
 		winrt::hstring LabelAccountID();
@@ -38,23 +49,44 @@ namespace winrt::HV4DX::implementation
 		winrt::hstring label_account_id{};
 
 	public:
-		winrt::hstring ValueAccountID();
+		uint32_t IndexAccountID();
 
-		void ValueAccountID(winrt::hstring const&);
-
-	private:
-		winrt::hstring value_account_id{};
+		void IndexAccountID(uint32_t const&);
 
 	private:
-		winrt::hstring label_maxpath{};
+		uint32_t index_account_id{};
 
 	public:
-		winrt::hstring ValueAccountMaxPath();
+		WFITT::IObservableVector<winrt::hstring> ListAccountID();
 
-		void ValueAccountMaxPath(winrt::hstring const&);
+		void ListAccountID(WFITT::IObservableVector<winrt::hstring> const&);
 
 	private:
-		winrt::hstring value_maxpath{};
+		WFITT::IObservableVector<winrt::hstring> list_account_id{ winrt::single_threaded_observable_vector<winrt::hstring>() };
+
+	public:
+		winrt::hstring LabelAccountMaxPath();
+
+		void LabelAccountMaxPath(winrt::hstring const&);
+
+	private:
+		winrt::hstring label_account_maxpath{};
+
+	public:
+		uint32_t IndexAccountMaxPath();
+
+		void IndexAccountMaxPath(uint32_t const&);
+
+	private:
+		uint32_t index_account_maxpath{};
+
+	public:
+		WFITT::IObservableVector<winrt::hstring> ListAccountMaxPath();
+
+		void ListAccountMaxPath(WFITT::IObservableVector<winrt::hstring> const&);
+
+	private:
+		WFITT::IObservableVector<winrt::hstring> list_account_maxpath{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
 	public:
 		winrt::hstring LabelAccountCreated();
@@ -62,7 +94,7 @@ namespace winrt::HV4DX::implementation
 		void LabelAccountCreated(winrt::hstring const&);
 
 	private:
-		winrt::hstring label_created{};
+		winrt::hstring label_account_created{};
 
 	public:
 		winrt::hstring ValueAccountCreated();
@@ -70,7 +102,7 @@ namespace winrt::HV4DX::implementation
 		void ValueAccountCreated(winrt::hstring const&);
 
 	private:
-		winrt::hstring value_created{};
+		winrt::hstring value_account_created{};
 
 	public:
 		winrt::hstring LabelAccountUpdated();
@@ -78,7 +110,7 @@ namespace winrt::HV4DX::implementation
 		void LabelAccountUpdated(winrt::hstring const&);
 
 	private:
-		winrt::hstring label_updated{};
+		winrt::hstring label_account_updated{};
 
 	public:
 		winrt::hstring ValueAccountUpdated();
@@ -86,7 +118,7 @@ namespace winrt::HV4DX::implementation
 		void ValueAccountUpdated(winrt::hstring const&);
 
 	private:
-		winrt::hstring value_updated{};
+		winrt::hstring value_account_updated{};
 
 	public:
 		winrt::hstring LabelAccountPassword();
@@ -94,7 +126,7 @@ namespace winrt::HV4DX::implementation
 		void LabelAccountPassword(winrt::hstring const&);
 
 	private:
-		winrt::hstring label_password{};
+		winrt::hstring label_account_password{};
 
 	public:
 		winrt::hstring ValueAccountPassword();
@@ -102,7 +134,7 @@ namespace winrt::HV4DX::implementation
 		void ValueAccountPassword(winrt::hstring const&);
 
 	private:
-		winrt::hstring value_password{};
+		winrt::hstring value_account_password{};
 
 	public:
 		winrt::hstring LabelAccount();
@@ -239,6 +271,14 @@ namespace winrt::HV4DX::implementation
 
 	private:
 		bool account_is_editable{};
+
+	public:
+		winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+		void PropertyChanged(winrt::event_token const&) noexcept;
+
+	private:
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 }

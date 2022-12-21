@@ -24,25 +24,36 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label{};
 
     public:
-        winrt::hstring Value();
+        uint32_t SelectedItem();
 
-        void Value(winrt::hstring const&);
+        void SelectedItem(uint32_t const&);
 
-    private:
-        winrt::hstring value{};
+        void NextItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-    public:
-        void UserFilterNewUp(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-
-        void UserFilterNewDown(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-
-    public:
-        winrt::event_token FilterChanged(WF::EventHandler<winrt::hstring> const&);
-
-        void FilterChanged(winrt::event_token const&) noexcept;
+        void PreviousItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
     private:
-        winrt::event<WF::EventHandler<winrt::hstring>> filter_changed_event;
+        uint32_t selected_item{};
+
+    public:
+        WFITT::IObservableVector<winrt::hstring> ItemList();
+
+        void ItemList(WFITT::IObservableVector<winrt::hstring> const&);
+
+        void NewItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
+        void DeleteItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
+    private:
+        WFITT::IObservableVector<winrt::hstring> item_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };
+
+    public:
+        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+        void PropertyChanged(winrt::event_token const&) noexcept;
+
+    private:
+        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 

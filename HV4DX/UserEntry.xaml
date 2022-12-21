@@ -40,7 +40,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label}"/>
+                    Text="{x:Bind Label, Mode=OneTime}"/>
 
             </Border>
 
@@ -56,7 +56,8 @@
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Value}"/>
+                    Text="{x:Bind Value, Mode=TwoWay}"
+                    PlaceholderText="{x:Bind Placeholder, Mode=OneTime}"/>
 
             </Border>
 

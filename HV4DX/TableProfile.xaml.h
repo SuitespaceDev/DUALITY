@@ -2,6 +2,13 @@
 
 #include "TableProfile.g.h"
 
+namespace WF = winrt::Windows::Foundation;
+namespace WFITT = winrt::Windows::Foundation::Collections;
+namespace MUX = winrt::Microsoft::UI::Xaml;
+namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
+
 namespace winrt::HV4DX::implementation
 {
     struct TableProfile : TableProfileT<TableProfile>
@@ -18,12 +25,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label_profile_hvid{};
 
     public:
-        winrt::hstring ValueProfileHVID();
+        uint32_t IndexProfileHVID();
 
-        void ValueProfileHVID(winrt::hstring const&);
+        void IndexProfileHVID(uint32_t const&);
 
     private:
-        winrt::hstring value_profile_hvid{};
+        uint32_t index_profile_hvid{};
+
+    public:
+        WFITT::IObservableVector<winrt::hstring> ListProfileHVID();
+
+        void ListProfileHVID(WFITT::IObservableVector<winrt::hstring> const&);
+
+    private:
+        WFITT::IObservableVector<winrt::hstring> list_profile_hvid{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
     public:
         winrt::hstring LabelProfileMMM();
@@ -66,12 +81,20 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label_profile_maxpath{};
 
     public:
-        winrt::hstring ValueProfileMaxPath();
+        uint32_t IndexProfileMaxPath();
 
-        void ValueProfileMaxPath(winrt::hstring const&);
+        void IndexProfileMaxPath(uint32_t const&);
 
     private:
-        winrt::hstring value_profile_maxpath{};
+        uint32_t index_profile_maxpath{};
+
+    public:
+        WFITT::IObservableVector<winrt::hstring> ListProfileMaxPath();
+
+        void ListProfileMaxPath(WFITT::IObservableVector<winrt::hstring> const&);
+
+    private:
+        WFITT::IObservableVector<winrt::hstring> list_profile_maxpath{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
     public:
         winrt::hstring LabelProfileCreated();
@@ -120,6 +143,14 @@ namespace winrt::HV4DX::implementation
 
     private:
         winrt::hstring value_profile_opened{};
+
+    public:
+        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+        void PropertyChanged(winrt::event_token const&) noexcept;
+
+    private:
+        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 

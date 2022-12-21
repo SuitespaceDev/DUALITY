@@ -5,13 +5,12 @@ namespace HV4DX
     runtimeclass UserIPv6 : Microsoft.UI.Xaml.Controls.UserControl
     {
         UserIPv6();
-
+    
         String Label;
-
         String Value;
-        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
-
         String Placeholder;
+        Boolean ReadOnly;
+        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
 
     }
 

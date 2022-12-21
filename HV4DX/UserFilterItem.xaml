@@ -64,8 +64,8 @@
                     FontWeight="Medium"
                     FontSize="12" 
                     SelectedIndex="{x:Bind SelectedItem, Mode=TwoWay}"              
-                    ItemsSource="{x:Bind ItemList, Mode=OneWay}"
-                    IsEditable="{x:Bind IsEditable, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind ItemList, Mode=TwoWay}"
+                    IsEditable="{x:Bind IsEditable, Mode=TwoWay}"/>
 
             </Border>
 

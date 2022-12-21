@@ -60,13 +60,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	MUX::DependencyProperty UserTime::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserTime>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserTime::OnValueChanged} });
-
 	winrt::hstring UserTime::Placeholder()
 	{
 
@@ -77,6 +70,21 @@ namespace winrt::HV4DX::implementation
 	void UserTime::Placeholder(winrt::hstring const& e)
 	{
 		placeholder = e;
+
+		return;
+
+	}
+
+	bool UserTime::ReadOnly()
+	{
+
+		return read_only;
+
+	}
+
+	void UserTime::ReadOnly(bool const& e)
+	{
+		read_only = e;
 
 		return;
 
@@ -96,5 +104,12 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
+
+	MUX::DependencyProperty UserTime::value_property =
+		MUX::DependencyProperty::Register(
+			L"Value",
+			winrt::xaml_typename<winrt::hstring>(),
+			winrt::xaml_typename<winrt::HV4DX::UserTime>(),
+			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserTime::OnValueChanged} });
 
 }

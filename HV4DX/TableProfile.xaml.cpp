@@ -28,15 +28,56 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableProfile::ValueProfileHVID()
+    uint32_t TableProfile::IndexProfileHVID()
     {
-        return value_profile_hvid;
+        return index_profile_hvid;
 
     }
 
-    void TableProfile::ValueProfileHVID(winrt::hstring const& e)
+    void TableProfile::IndexProfileHVID(uint32_t const& e)
     {
-        value_profile_hvid = e;
+        index_profile_hvid = e;
+
+        return;
+
+    }
+
+    WFITT::IObservableVector<winrt::hstring> TableProfile::ListProfileHVID()
+    {
+        if (list_profile_hvid.Size() == 0)
+        {
+            list_profile_hvid.Append(L"Empty");
+
+            index_profile_hvid = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexProfileHVID" });
+
+            return list_profile_hvid;
+
+        }
+        else
+        {
+            return list_profile_hvid;
+
+        }
+
+    }
+
+    void TableProfile::ListProfileHVID(WFITT::IObservableVector<winrt::hstring> const& e)
+    {
+        if (e.Size() != 0)
+        {
+            list_profile_hvid.Clear();
+
+            list_profile_hvid = e;
+
+            index_profile_hvid = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexProfileHVID" });
+
+            return;
+
+        }
 
         return;
 
@@ -112,15 +153,56 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableProfile::ValueProfileMaxPath()
+    uint32_t TableProfile::IndexProfileMaxPath()
     {
-        return value_profile_maxpath;
+        return index_profile_maxpath;
 
     }
 
-    void TableProfile::ValueProfileMaxPath(winrt::hstring const& e)
+    void TableProfile::IndexProfileMaxPath(uint32_t const& e)
     {
-        value_profile_maxpath = e;
+        index_profile_maxpath = e;
+
+        return;
+
+    }
+
+    WFITT::IObservableVector<winrt::hstring> TableProfile::ListProfileMaxPath()
+    {
+        if (list_profile_maxpath.Size() == 0)
+        {
+            list_profile_maxpath.Append(L"Empty");
+
+            index_profile_maxpath = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexProfileMaxPath" });
+
+            return list_profile_maxpath;
+
+        }
+        else
+        {
+            return list_profile_maxpath;
+
+        }
+
+    }
+
+    void TableProfile::ListProfileMaxPath(WFITT::IObservableVector<winrt::hstring> const& e)
+    {
+        if (e.Size() != 0)
+        {
+            list_profile_maxpath.Clear();
+
+            list_profile_maxpath = e;
+
+            index_profile_maxpath = 0;
+
+            property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"IndexProfileMaxPath" });
+
+            return;
+
+        }
 
         return;
 
@@ -205,6 +287,21 @@ namespace winrt::HV4DX::implementation
     void TableProfile::ValueProfileOpened(winrt::hstring const& e)
     {
         value_profile_opened = e;
+
+        return;
+
+    }
+
+    event_token TableProfile::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+    {
+
+        return property_changed_event.add(handler);
+
+    }
+
+    void TableProfile::PropertyChanged(winrt::event_token const& token) noexcept
+    {
+        property_changed_event.remove(token);
 
         return;
 

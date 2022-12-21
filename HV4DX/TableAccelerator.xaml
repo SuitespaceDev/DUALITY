@@ -45,7 +45,7 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelAcceleratorHVID}" 
-            Value="{x:Bind ValueAcceleratorHVID}"/>
+            SelectedItem="{x:Bind IndexAcceleratorHVID}"/>
 
         <local:UserFilterItem 
             Grid.Column="0" Grid.ColumnSpan="1" 

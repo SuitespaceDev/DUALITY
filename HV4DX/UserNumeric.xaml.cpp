@@ -63,13 +63,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	MUX::DependencyProperty UserNumeric::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserNumeric>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserNumeric::OnValueChanged} });
-
 	winrt::hstring UserNumeric::Placeholder()
 	{
 
@@ -80,6 +73,21 @@ namespace winrt::HV4DX::implementation
 	void UserNumeric::Placeholder(winrt::hstring const& e)
 	{
 		placeholder = e;
+
+		return;
+
+	}
+
+	bool UserNumeric::ReadOnly()
+	{
+
+		return read_only;
+
+	}
+
+	void UserNumeric::ReadOnly(bool const& e)
+	{
+		read_only = e;
 
 		return;
 
@@ -99,5 +107,12 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
+
+	MUX::DependencyProperty UserNumeric::value_property =
+		MUX::DependencyProperty::Register(
+			L"Value",
+			winrt::xaml_typename<winrt::hstring>(),
+			winrt::xaml_typename<winrt::HV4DX::UserNumeric>(),
+			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserNumeric::OnValueChanged} });
 
 }

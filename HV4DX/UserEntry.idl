@@ -1,7 +1,7 @@
 namespace HV4DX
 {
     [bindable]
-    runtimeclass UserEntry : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass UserEntry : Microsoft.UI.Xaml.Controls.UserControl
     {
         UserEntry();
 

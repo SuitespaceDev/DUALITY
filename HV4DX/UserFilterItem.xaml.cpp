@@ -31,7 +31,7 @@ namespace winrt::HV4DX::implementation
 
     void UserFilterItem::IncrementIndex(WF::IInspectable const&, MUX::RoutedEventArgs const&)
     {
-        if (selected_item < item_list.Size())
+        if (selected_item < (item_list.Size() - 1))
         {
             selected_item++;
 

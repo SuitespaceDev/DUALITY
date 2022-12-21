@@ -44,34 +44,51 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	WFITT::IObservableVector<MUXC::TextBlock> UserFilterType::FilterList()
+	WFITT::IObservableVector<winrt::hstring> UserFilterType::FilterList()
 	{
 		return filter_list;
 
 	}
 
-	void UserFilterType::FilterList(WFITT::IObservableVector<MUXC::TextBlock> const& e)
+	void UserFilterType::FilterList(WFITT::IObservableVector<winrt::hstring> const& e)
 	{
 		filter_list.Clear();
 
-		for (MUXC::TextBlock itt : e)
-		{
-			filter_list.Append(itt);
+		filter_list = e;
 
-		}
+		filter_type = 0;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"FilterType" });
+
+		return;
 
 	}
 
-	MUXC::TextBlock UserFilterType::FilterType()
+	uint32_t UserFilterType::FilterType()
 	{ 
 		
 		return filter_type; 
 	
 	}
 
-	void UserFilterType::FilterType(MUXC::TextBlock const& e)
+	void UserFilterType::FilterType(uint32_t const& e)
 	{ 
 		filter_type = e; 
+
+		return;
+
+	}
+
+	event_token UserFilterType::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+	{
+
+		return property_changed_event.add(handler);
+
+	}
+
+	void UserFilterType::PropertyChanged(winrt::event_token const& token) noexcept
+	{
+		property_changed_event.remove(token);
 
 		return;
 

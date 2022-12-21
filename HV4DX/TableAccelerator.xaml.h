@@ -57,12 +57,12 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label_accelerator_hvid{};
 
     public:
-        winrt::hstring ValueAcceleratorHVID();
+        winrt::hstring IndexAcceleratorHVID();
 
-        void ValueAcceleratorHVID(winrt::hstring const&);
+        void IndexAcceleratorHVID(winrt::hstring const&);
 
     private:
-        winrt::hstring value_accelerator_hvid{};
+        winrt::hstring index_accelerator_hvid{};
 
     public:
         winrt::hstring LabelAcceleratorID();

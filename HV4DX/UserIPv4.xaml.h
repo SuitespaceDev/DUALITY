@@ -2,13 +2,13 @@
 
 #include "UserIPv4.g.h"
 
-namespace WF        = winrt::Windows::Foundation;
-namespace WFITT     = winrt::Windows::Foundation::Collections;
-namespace WUX       = winrt::Windows::UI::Xaml;
-namespace WUXI      = winrt::Windows::UI::Xaml::Interop;
-namespace MUX       = winrt::Microsoft::UI::Xaml;
-namespace MUXC      = winrt::Microsoft::UI::Xaml::Controls;
-namespace MUXD      = winrt::Microsoft::UI::Xaml::Data;
+namespace WF = winrt::Windows::Foundation;
+namespace WFITT = winrt::Windows::Foundation::Collections;
+namespace WUX = winrt::Windows::UI::Xaml;
+namespace WUXI = winrt::Windows::UI::Xaml::Interop;
+namespace MUX = winrt::Microsoft::UI::Xaml;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
 
 namespace winrt::HV4DX::implementation
 {
@@ -44,6 +44,14 @@ namespace winrt::HV4DX::implementation
 
     private:
         winrt::hstring placeholder{};
+
+    public:
+        bool ReadOnly();
+
+        void ReadOnly(bool const&);
+
+    private:
+        bool read_only{};
 
     public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);

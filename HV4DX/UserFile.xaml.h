@@ -2,6 +2,13 @@
 
 #include "UserFile.g.h"
 
+namespace WF = winrt::Windows::Foundation;
+namespace WFITT = winrt::Windows::Foundation::Collections;
+namespace MUX = winrt::Microsoft::UI::Xaml;
+namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
+
 namespace winrt::HV4DX::implementation
 {
     struct UserFile : UserFileT<UserFile>
@@ -22,16 +29,18 @@ namespace winrt::HV4DX::implementation
 
         void Value(winrt::hstring const&);
 
+        void FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
     private:
         winrt::hstring value{};
 
     public:
-        winrt::hstring Placeholder();
+        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
-        void Placeholder(winrt::hstring const&);
+        void PropertyChanged(winrt::event_token const&) noexcept;
 
     private:
-        winrt::hstring placeholder{};
+        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 }

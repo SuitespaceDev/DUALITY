@@ -4,13 +4,19 @@ namespace HV4DX
     runtimeclass TableAccount : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableAccount();
-
+	
         String LabelAccountHVID;
-        String ValueAccountHVID;
+        UInt32 IndexAccountHVID;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountHVID;
+
         String LabelAccountID;
-        String ValueAccountID;
+		UInt32 IndexAccountID;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountID;
+
         String LabelAccountMaxPath;
-        String ValueAccountMaxPath;
+		UInt32 IndexAccountMaxPath;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountMaxPath;
+
         String LabelAccountCreated;
         String ValueAccountCreated;
         String LabelAccountUpdated;

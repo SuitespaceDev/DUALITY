@@ -63,13 +63,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	MUX::DependencyProperty UserIPv4::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserIPv4>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserIPv4::OnValueChanged} });
-
 	winrt::hstring UserIPv4::Placeholder()
 	{
 
@@ -80,6 +73,21 @@ namespace winrt::HV4DX::implementation
 	void UserIPv4::Placeholder(winrt::hstring const& e)
 	{
 		placeholder = e;
+
+		return;
+
+	}
+
+	bool UserIPv4::ReadOnly()
+	{
+
+		return read_only;
+
+	}
+
+	void UserIPv4::ReadOnly(bool const& e)
+	{
+		read_only = e;
 
 		return;
 
@@ -99,5 +107,12 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
+
+	MUX::DependencyProperty UserIPv4::value_property =
+		MUX::DependencyProperty::Register(
+			L"Value",
+			winrt::xaml_typename<winrt::hstring>(),
+			winrt::xaml_typename<winrt::HV4DX::UserIPv4>(),
+			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserIPv4::OnValueChanged} });
 
 }

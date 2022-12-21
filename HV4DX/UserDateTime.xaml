@@ -58,7 +58,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     Text="{x:Bind Value}"
-                    IsReadOnly="True"/>
+                    PlaceholderText="{x:Bind Placeholder, Mode=OneTime}"
+                    IsReadOnly="{x:Bind ReadOnly}"/>
                 
             </Border>
 

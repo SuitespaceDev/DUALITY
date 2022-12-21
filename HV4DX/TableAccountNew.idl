@@ -1,16 +1,22 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TableAccountNew : Microsoft.UI.Xaml.Controls.Page
+    runtimeclass TableAccountNew : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         TableAccountNew();
 
         String LabelAccountHVID;
-        String ValueAccountHVID;
+        UInt32 IndexAccountHVID;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountHVID;
+
         String LabelAccountID;
-        String ValueAccountID;
+		UInt32 IndexAccountID;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountID;
+
         String LabelAccountMaxPath;
-        String ValueAccountMaxPath;
+		UInt32 IndexAccountMaxPath;
+		Windows.Foundation.Collections.IObservableVector<String> ListAccountMaxPath;
+
         String LabelAccountCreated;
         String ValueAccountCreated;
         String LabelAccountUpdated;

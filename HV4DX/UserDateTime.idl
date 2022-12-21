@@ -4,12 +4,12 @@ namespace HV4DX
     runtimeclass UserDateTime : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserDateTime();
+
         String Label;
-
         String Value;
-        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
-
         String Placeholder;
+        Boolean ReadOnly;
+        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
 
     }
 

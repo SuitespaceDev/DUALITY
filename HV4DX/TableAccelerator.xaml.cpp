@@ -89,16 +89,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring TableAccelerator::ValueAcceleratorHVID()
+	winrt::hstring TableAccelerator::IndexAcceleratorHVID()
 	{
 
-		return value_accelerator_hvid;
+		return index_accelerator_hvid;
 
 	}
 
-	void  TableAccelerator::ValueAcceleratorHVID(winrt::hstring const& e)
+	void  TableAccelerator::IndexAcceleratorHVID(winrt::hstring const& e)
 	{
-		value_accelerator_hvid = e;
+		index_accelerator_hvid = e;
 
 		return;
 

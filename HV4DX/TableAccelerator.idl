@@ -10,7 +10,7 @@ namespace HV4DX
         String LabelAcceleratorModel;
         String ValueAcceleratorModel;
         String LabelAcceleratorHVID;
-        String ValueAcceleratorHVID;
+        String IndexAcceleratorHVID;
         String LabelAcceleratorID;
         UInt32 IndexAcceleratorID;
         String LabelAcceleratorMemory;

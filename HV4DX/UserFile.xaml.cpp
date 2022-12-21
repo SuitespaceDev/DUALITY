@@ -44,19 +44,27 @@ namespace winrt::HV4DX::implementation
     
     }
 
-    winrt::hstring UserFile::Placeholder()
-    { 
-        
-        return placeholder; 
-    
+    void UserFile::FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&)
+    {
+
+
+        return;
+
     }
 
-    void UserFile::Placeholder(winrt::hstring const& e)
-    { 
-        placeholder = e; 
-    
+    event_token UserFile::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+    {
+
+        return property_changed_event.add(handler);
+
+    }
+
+    void UserFile::PropertyChanged(winrt::event_token const& token) noexcept
+    {
+        property_changed_event.remove(token);
+
         return;
-    
+
     }
 
 }

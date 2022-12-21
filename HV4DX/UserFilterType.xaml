@@ -26,7 +26,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Border 
@@ -41,7 +41,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label}"/>
+                    Text="{x:Bind Label, Mode=OneTime}"/>
 
             </Border>
 
@@ -58,7 +58,7 @@
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Value}"/>
+                    Text="{x:Bind Value, Mode=TwoWay}"/>
 
             </Border>
 
@@ -77,7 +77,8 @@
                     FontWeight="Medium"
                     SelectedIndex="0"
                     SelectedItem="{x:Bind FilterType, Mode=TwoWay}"
-                    ItemsSource="{x:Bind FilterList, Mode=TwoWay}"/>
+                    ItemsSource="{x:Bind FilterList, Mode=TwoWay}"
+                    IsEditable="False"/>
 
             </Border>
 

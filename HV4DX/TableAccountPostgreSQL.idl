@@ -5,29 +5,5 @@ namespace HV4DX
     {
         TableAccountPostgreSQL();
 
-        String LabelAccountDBHost;
-        String ValueAccountDBHost;
-
-        String LabelAccountDBRole;
-        String ValueAccountDBRole;
-
-        String LabelAccountDBPort;
-        String ValueAccountDBPort;
-
-        String LabelAccountDBService;
-        String ValueAccountDBService;
-
-        String LabelAccountDBSSLMode;
-        String ValueAccountDBSSLMode;
-
-        String LabelAccountDBSSLClientCert;
-        String ValueAccountDBSSLClientCert;
-
-        String LabelAccountDBSSLClientKey;
-        String ValueAccountDBSSLClientKey;
-
-        String LabelAccountDBSSLRootCert;
-        String ValueAccountDBSSLRootCert;
-
     }
 }

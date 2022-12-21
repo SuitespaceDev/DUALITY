@@ -30,86 +30,89 @@
         <local:UserFilterNew
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountHVID}"
-            Value="{x:Bind ValueAccountHVID}"/>
+            Label="{x:Bind LabelAccountHVID, Mode=OneTime}"
+            SelectedItem="{x:Bind IndexAccountHVID, Mode=TwoWay}"
+            ItemList="{x:Bind ListAccountHVID, Mode=TwoWay}"/>
 
         <local:UserFilterItem 
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountID}"
-            SelectedItem="{x:Bind SelectedItemAccountID}"/>
+            Label="{x:Bind LabelAccountID, Mode=OneTime}"
+            SelectedItem="{x:Bind IndexAccountID, Mode=TwoWay}"
+            ItemList="{x:Bind ListAccountID, Mode=TwoWay}"/>
 
         <local:UserFilterItem
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountMaxPath}"
-            SelectedItem="{x:Bind SelectedItemAccountMaxPath}"/>
+            Label="{x:Bind LabelAccountMaxPath, Mode=OneTime}"
+            SelectedItem="{x:Bind IndexAccountMaxPath, Mode=TwoWay}"
+            ItemList="{x:Bind ListAccountMaxPath, Mode=TwoWay}"/>
 
         <local:UserBlock 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountCreated}"
-            Value="{x:Bind ValueAccountCreated}"/>
+            Label="{x:Bind LabelAccountCreated, Mode=OneTime}"
+            Value="{x:Bind ValueAccountCreated, Mode=OneWay}"/>
 
         <local:UserBlock 
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountUpdated}"
-            Value="{x:Bind ValueAccountUpdated}"/>
+            Label="{x:Bind LabelAccountUpdated, Mode=OneTime}"
+            Value="{x:Bind ValueAccountUpdated, Mode=TwoWay}"/>
 
         <local:UserPassword
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountPassword}"
-            Value="{x:Bind ValueAccountPassword}"/>
+            Label="{x:Bind LabelAccountPassword, Mode=OneTime}"
+            Value="{x:Bind ValueAccountPassword, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccount}" 
-            Value="{x:Bind ValueAccount}"/>
+            Label="{x:Bind LabelAccount, Mode=OneTime}" 
+            Value="{x:Bind ValueAccount, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="4" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountAddressOne}" 
-            Value="{x:Bind ValueAccountAddressOne}"/>
+            Label="{x:Bind LabelAccountAddressOne, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountAddressOne, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="5" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountAddressTwo}" 
-            Value="{x:Bind ValueAccountAddressTwo}"/>
+            Label="{x:Bind LabelAccountAddressTwo, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountAddressTwo, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="6" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountCity}" 
-            Value="{x:Bind ValueAccountCity}"/>
+            Label="{x:Bind LabelAccountCity, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountCity, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="7" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountRegion}" 
-            Value="{x:Bind ValueAccountRegion}"/>
+            Label="{x:Bind LabelAccountRegion, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountRegion, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="8" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountEMail}" 
-            Value="{x:Bind ValueAccountEMail}"/>
+            Label="{x:Bind LabelAccountEMail, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountEMail, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="9" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountPrimaryPhone}" 
-            Value="{x:Bind ValueAccountPrimaryPhone}"/>
+            Label="{x:Bind LabelAccountPrimaryPhone, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountPrimaryPhone, Mode=TwoWay}"/>
 
         <local:UserEntry 
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="10" Grid.RowSpan="1"
-            Label="{x:Bind LabelAccountSecondaryPhone}" 
-            Value="{x:Bind ValueAccountSecondaryPhone}"/>
+            Label="{x:Bind LabelAccountSecondaryPhone, Mode=OneTime}" 
+            Value="{x:Bind ValueAccountSecondaryPhone, Mode=TwoWay}"/>
 
     </Grid>
 
