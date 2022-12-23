@@ -18,15 +18,11 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring Label();
 
-        void Label(winrt::hstring const&);
-
     private:
         winrt::hstring label{};
 
     public:
         winrt::hstring ValueMIL();
-
-        void ValueMIL(winrt::hstring const&);
 
         void IncreaseMilestone(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
@@ -38,8 +34,6 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring ValueMAJ();
 
-        void ValueMAJ(winrt::hstring const&);
-
         void IncreaseMajor(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
         void DecreaseMajor(WF::IInspectable const&, MUX::RoutedEventArgs const&);
@@ -50,14 +44,15 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring ValueMIN();
 
-        void ValueMIN(winrt::hstring const&);
-
         void IncreaseMinor(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
         void DecreaseMinor(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
     private:
         winrt::hstring value_min{};
+
+    public:
+        void NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
     };
 

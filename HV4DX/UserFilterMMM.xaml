@@ -34,6 +34,7 @@
                 <ColumnDefinition Width="54"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="16"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -52,7 +53,7 @@
                     Padding="3,3,3,3"  
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label}"/>
+                    Text="{x:Bind Label, Mode=OneWay}"/>
 
             </Border>
 
@@ -87,7 +88,7 @@
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind ValueMIL}"/>
+                    Text="{x:Bind ValueMIL, Mode=OneWay}"/>
 
             </Border>
 
@@ -162,7 +163,7 @@
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind ValueMAJ}"/>
+                    Text="{x:Bind ValueMAJ, Mode=OneWay}"/>
 
             </Border>
 
@@ -237,7 +238,7 @@
                     FontWeight="Medium"
                     FontSize="12"
                     TextAlignment="Center"
-                    Text="{x:Bind ValueMIN}"/>
+                    Text="{x:Bind ValueMIN, Mode=OneWay}"/>
 
             </Border>
 
@@ -277,6 +278,29 @@
                     <Button.Background>
                         <ImageBrush ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Down.png"/>
                     </Button.Background>
+                </Button>
+
+            </Border>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="10" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="2"
+                Margin="2,2,2,2">
+
+                <Button 
+                    Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Padding="3,3,3,3"
+                    Click="NewMMM">
+
+                    <FontIcon 
+                        FontFamily="Segoe" 
+                        FontSize="12"
+                        Glyph="&#x2026;"/>
+
                 </Button>
 
             </Border>

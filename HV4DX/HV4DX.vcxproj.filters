@@ -505,12 +505,6 @@
     <Page Include="TableAccelerator.xaml">
       <Filter>g. TableIO\TableAccelerator</Filter>
     </Page>
-    <Page Include="TableComPort.xaml">
-      <Filter>g. TableIO\TableAccelerator\TableComPort</Filter>
-    </Page>
-    <Page Include="TableNetworkAdapter.xaml">
-      <Filter>g. TableIO\TableAccelerator\TableComPort</Filter>
-    </Page>
     <Page Include="TablePeripheralDevice.xaml">
       <Filter>g. TableIO\TablePeripheralDevice</Filter>
     </Page>
@@ -537,6 +531,12 @@
     </Page>
     <Page Include="TableParamItem.xaml">
       <Filter>h. TableLibrary\TableParameter</Filter>
+    </Page>
+    <Page Include="TableNetworkAdapter.xaml">
+      <Filter>g. TableIO\TableAccelerator</Filter>
+    </Page>
+    <Page Include="TableComPort.xaml">
+      <Filter>g. TableIO\TableAccelerator</Filter>
     </Page>
   </ItemGroup>
 </Project>

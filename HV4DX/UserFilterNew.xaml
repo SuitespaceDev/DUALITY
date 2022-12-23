@@ -47,7 +47,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label, Mode=OneTime}"/>
+                    Text="{x:Bind Label, Mode=OneWay}"/>
 
             </Border>
 
@@ -65,7 +65,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedItem, Mode=TwoWay}"
-                    ItemsSource="{x:Bind ItemList, Mode=TwoWay}"/>
+                    ItemsSource="{x:Bind ItemList, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 

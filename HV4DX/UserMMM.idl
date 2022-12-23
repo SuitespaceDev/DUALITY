@@ -6,12 +6,12 @@ namespace HV4DX
     {
         UserMMM();
     
-        String Label;
+        String Label{ get; };
+        String Placeholder{ get; };
         String Value;
-        String Placeholder;
-        Boolean ReadOnly;
-        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
 
+        Boolean ReadOnly;
+        
     }
 
 }

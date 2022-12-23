@@ -47,7 +47,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label}"/>
+                    Text="{x:Bind Label, Mode=OneWay}"/>
 
             </Border>
 

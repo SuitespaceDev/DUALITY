@@ -21,43 +21,26 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserPassword::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	winrt::hstring UserPassword::Value()
 	{
 
-		return winrt::unbox_value<winrt::hstring>(GetValue(value_property));
+		return value;
 
 	}
 
 	void UserPassword::Value(winrt::hstring const& e)
 	{
-		SetValue(value_property, winrt::box_value(e));
+		value = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
 
 		return;
 
 	}
 
-	MUX::DependencyProperty UserPassword::ValueProperty()
+	void UserPassword::ViewPassword(WF::IInspectable const&, MUX::RoutedEventArgs const&)
 	{
 
-		return value_property;
-
-	}
-
-	void UserPassword::OnValueChanged(MUX::DependencyObject const& obj, MUX::DependencyPropertyChangedEventArgs const& e)
-	{
-		if (HV4DX::UserPassword Control{ obj.try_as<HV4DX::UserPassword>() })
-		{
-			//HV4DX::implementation::UserPassword* ptr{ winrt::get_self<HV4DX::implementation::UserPassword>(Control) };
-
-		}
 
 		return;
 
@@ -67,14 +50,6 @@ namespace winrt::HV4DX::implementation
 	{
 
 		return placeholder;
-
-	}
-
-	void UserPassword::Placeholder(winrt::hstring const& e)
-	{
-		placeholder = e;
-
-		return;
 
 	}
 
@@ -88,6 +63,8 @@ namespace winrt::HV4DX::implementation
 	void UserPassword::ReadOnly(bool const& e)
 	{
 		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
 
 		return;
 
@@ -107,12 +84,5 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
-
-	MUX::DependencyProperty UserPassword::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserPassword>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserPassword::OnValueChanged} });
 
 }

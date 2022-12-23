@@ -4,9 +4,12 @@ namespace HV4DX
     runtimeclass UserFile : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserFile();
-
-        String Label;
+    
+        String Label{ get; };
+        String Placeholder{ get; };
         String Value;
+
+        Boolean ReadOnly;
 
     }
 

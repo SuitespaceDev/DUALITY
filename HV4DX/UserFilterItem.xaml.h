@@ -19,8 +19,6 @@ namespace winrt::HV4DX::implementation
 	public:
 		winrt::hstring Label();
 
-		void Label(winrt::hstring const&);
-
 	private:
 		winrt::hstring label{};
 
@@ -38,8 +36,6 @@ namespace winrt::HV4DX::implementation
 
 	public:
 		WFITT::IObservableVector<winrt::hstring> ItemList();
-
-		void ItemList(WFITT::IObservableVector<winrt::hstring> const&);
 
 	private:
 		WFITT::IObservableVector<winrt::hstring> item_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };

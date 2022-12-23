@@ -67,7 +67,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label, Mode=OneTime}"/>
+                    Text="{x:Bind Label, Mode=OneWay}"/>
 
             </Border>
 
@@ -105,7 +105,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedMonth, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Months, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Months, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -183,7 +184,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedDay, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Days, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Days, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -261,7 +263,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedYear, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Years, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Years, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -339,7 +342,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedHour, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Hours, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Hours, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -417,7 +421,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedMinute, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Minutes, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Minutes, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -495,7 +500,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedSecond, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Seconds, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Seconds, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 
@@ -573,7 +579,8 @@
                     FontWeight="Medium"
                     FontSize="12"
                     SelectedIndex="{x:Bind SelectedOperator, Mode=TwoWay}"
-                    ItemsSource="{x:Bind Operators, Mode=OneWay}"/>
+                    ItemsSource="{x:Bind Operators, Mode=OneWay}"
+                    IsEditable="False"/>
 
             </Border>
 

@@ -14,57 +14,75 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring UserFile::Label()
-    { 
-        
-        return label; 
-    
-    }
+	winrt::hstring UserFile::Label()
+	{
 
-    void UserFile::Label(winrt::hstring const& e)
-    { 
-        label = e; 
-    
-        return;
-    
-    }
+		return label;
 
-    winrt::hstring UserFile::Value()
-    { 
-        
-        return value; 
-    
-    }
+	}
 
-    void UserFile::Value(winrt::hstring const& e)
-    { 
-        value = e; 
-    
-        return;
-    
-    }
+	winrt::hstring UserFile::Value()
+	{
 
-    void UserFile::FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&)
-    {
+		return value;
+
+	}
+
+	void UserFile::Value(winrt::hstring const& e)
+	{
+		value = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
+
+		return;
+
+	}
+
+	void UserFile::FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&)
+	{
 
 
-        return;
+		return;
 
-    }
+	}
 
-    event_token UserFile::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
-    {
+	winrt::hstring UserFile::Placeholder()
+	{
 
-        return property_changed_event.add(handler);
+		return placeholder;
 
-    }
+	}
 
-    void UserFile::PropertyChanged(winrt::event_token const& token) noexcept
-    {
-        property_changed_event.remove(token);
+	bool UserFile::ReadOnly()
+	{
 
-        return;
+		return read_only;
 
-    }
+	}
+
+	void UserFile::ReadOnly(bool const& e)
+	{
+		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
+
+		return;
+
+	}
+
+	event_token UserFile::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+	{
+
+		return property_changed_event.add(handler);
+
+	}
+
+	void UserFile::PropertyChanged(winrt::event_token const& token) noexcept
+	{
+		property_changed_event.remove(token);
+
+		return;
+
+	}
 
 }

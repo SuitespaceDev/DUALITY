@@ -19,26 +19,20 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring Label();
 
-        void Label(winrt::hstring const&);
-
     private:
         winrt::hstring label{};
 
     public:
-        winrt::hstring Value();
-
-        void Value(winrt::hstring const&);
+        uint32_t CurrentItem();
 
     private:
-        winrt::hstring value{};
+        uint32_t current_item{};
 
     public:
-        WFITT::IObservableVector<winrt::hstring> FilterList();
-
-        void FilterList(WFITT::IObservableVector<winrt::hstring> const&);
+        WFITT::IObservableVector<winrt::hstring> ItemList();
 
     private:
-        WFITT::IObservableVector<winrt::hstring> filter_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };
+        WFITT::IObservableVector<winrt::hstring> item_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
     public:
         uint32_t FilterType();
@@ -47,6 +41,12 @@ namespace winrt::HV4DX::implementation
 
     private:
         uint32_t filter_type{};
+
+    public:
+        WFITT::IObservableVector<winrt::hstring> FilterList();
+
+    private:
+        WFITT::IObservableVector<winrt::hstring> filter_list{ winrt::single_threaded_observable_vector<winrt::hstring>() };
 
     public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);

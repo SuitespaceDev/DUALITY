@@ -21,42 +21,29 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	void UserFilterType::Label(winrt::hstring const& e)
-	{ 
-		label = e; 
-	
-		return;
-	
-	}
-
-	winrt::hstring UserFilterType::Value() 
+	uint32_t UserFilterType::CurrentItem()
 	{ 
 		
-		return value; 
+		return current_item;
 	
 	}
 
-	void UserFilterType::Value(winrt::hstring const& e)
-	{ 
-		value = e; 
-	
-		return;
-	
-	}
-
-	WFITT::IObservableVector<winrt::hstring> UserFilterType::FilterList()
+	WFITT::IObservableVector<winrt::hstring> UserFilterType::ItemList()
 	{
-		return filter_list;
+		return item_list;
 
 	}
 
-	void UserFilterType::FilterList(WFITT::IObservableVector<winrt::hstring> const& e)
+	uint32_t UserFilterType::FilterType()
 	{
-		filter_list.Clear();
 
-		filter_list = e;
+		return filter_type;
 
-		filter_type = 0;
+	}
+
+	void UserFilterType::FilterType(uint32_t const& e)
+	{
+		filter_type = e;
 
 		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"FilterType" });
 
@@ -64,18 +51,9 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterType::FilterType()
-	{ 
-		
-		return filter_type; 
-	
-	}
-
-	void UserFilterType::FilterType(uint32_t const& e)
-	{ 
-		filter_type = e; 
-
-		return;
+	WFITT::IObservableVector<winrt::hstring> UserFilterType::FilterList()
+	{
+		return filter_list;
 
 	}
 

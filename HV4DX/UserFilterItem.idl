@@ -5,10 +5,11 @@ namespace HV4DX
     {
         UserFilterItem();
 
-        String Label;
+        String Label{ get; };
         UInt32 SelectedItem;
-        Windows.Foundation.Collections.IObservableVector<String> ItemList;
-        Boolean IsEditable{ get; };
+        Windows.Foundation.Collections.IObservableVector<String> ItemList{ get; };
+
+        Boolean IsEditable;
 
     }
 

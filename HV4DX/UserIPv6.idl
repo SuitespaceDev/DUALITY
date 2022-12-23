@@ -6,11 +6,11 @@ namespace HV4DX
     {
         UserIPv6();
     
-        String Label;
+        String Label{ get; };
+        String Placeholder{ get; };
         String Value;
-        String Placeholder;
+
         Boolean ReadOnly;
-        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
 
     }
 

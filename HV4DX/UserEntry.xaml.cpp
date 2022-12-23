@@ -14,72 +14,49 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring UserEntry::Label() 
-	{ 
-		
-		return label; 
-	
-	}
+	winrt::hstring UserEntry::Label()
+	{
 
-	void UserEntry::Label(winrt::hstring const& e)
-	{ 
-		label = e; 
-
-		return;
+		return label;
 
 	}
 
-	winrt::hstring UserEntry::Value() 
-	{ 
-		
-		return winrt::unbox_value<winrt::hstring>(GetValue(value_property));
-	
+	winrt::hstring UserEntry::Value()
+	{
+
+		return value;
+
 	}
 
 	void UserEntry::Value(winrt::hstring const& e)
-	{ 
-		SetValue(value_property, winrt::box_value(e));
-
-		return;
-
-	}
-	
-	MUX::DependencyProperty UserEntry::ValueProperty()
-	{ 
-		
-		return value_property;
-	
-	}
-
-	void UserEntry::OnValueChanged(MUX::DependencyObject const& obj, MUX::DependencyPropertyChangedEventArgs const& e)
 	{
-		if (HV4DX::UserEntry Control{ obj.try_as<HV4DX::UserEntry>() })
-		{
-			//HV4DX::implementation::UserEntry* ptr{ winrt::get_self<HV4DX::implementation::UserEntry>(Control) };
-		
-		}
-		
+		value = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
+
 		return;
 
 	}
 
-	MUX::DependencyProperty UserEntry::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserEntry>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserEntry::OnValueChanged} });
-	
-	winrt::hstring UserEntry::Placeholder() 
-	{ 
-		
-		return placeholder; 
-	
+	winrt::hstring UserEntry::Placeholder()
+	{
+
+		return placeholder;
+
 	}
 
-	void UserEntry::Placeholder(winrt::hstring const& e)
-	{ 
-		placeholder = e; 
+	bool UserEntry::ReadOnly()
+	{
+
+		return read_only;
+
+	}
+
+	void UserEntry::ReadOnly(bool const& e)
+	{
+		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
 
 		return;
 

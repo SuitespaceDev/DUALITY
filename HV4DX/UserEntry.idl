@@ -4,14 +4,13 @@ namespace HV4DX
     runtimeclass UserEntry : Microsoft.UI.Xaml.Controls.UserControl
     {
         UserEntry();
-
-        String Label;
-
+    
+        String Label{ get; };
+        String Placeholder{ get; };
         String Value;
-        static Microsoft.UI.Xaml.DependencyProperty ValueProperty{ get; };
 
-        String Placeholder;
-        
+        Boolean ReadOnly;
+
     }
 
 }

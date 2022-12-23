@@ -22,89 +22,92 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
-        
-        <local:UserEntry
+
+        <local:UserBlock
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelEnterpriseName, Mode=OneTime}"
-            Value="{x:Bind ValueEnterpriseName, Mode=TwoWay}"/>
+            Label="Digital Twin:"
+            Value="Enterprise Account"/>
 
         <local:UserEntry
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelEnterpriseID, Mode=OneTime}"
-            Value="{x:Bind ValueEnterpriseID, Mode=TwoWay}"/>
-
-        <local:UserEntry
+            x:Name="EnterpriseName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelBuildName, Mode=OneTime}"
-            Value="{x:Bind ValueBuildName, Mode=TwoWay}"/>
+            Label="Enterprise Name"/>
 
         <local:UserEntry
+            x:Name="EnterpriseHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelBuildID, Mode=OneTime}"
-            Value="{x:Bind ValueBuildID, Mode=TwoWay}"/>
+            Label="HVID"/>
+
+        <local:UserEntry
+            x:Name="BuildName"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Build Name"/>
+
+        <local:UserEntry
+            x:Name="BuildID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Build ID"/>
 
         <local:UserMMM
+            x:Name="BuildMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelBuildMMM, Mode=OneTime}"
-            Value="{x:Bind ValueBuildMMM, Mode=TwoWay}"/>
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="MMM"/>
 
         <local:UserBlock 
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelBuildDate, Mode=OneTime}"
-            Value="{x:Bind ValueBuildDate, Mode=TwoWay}"/>
-
-        <local:UserFilterItem
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1"
-            Label="{x:Bind LabelLocalization, Mode=OneTime}"
-            SelectedItem="{x:Bind IndexLocalization, Mode=TwoWay}"
-            ItemList="{x:Bind ListLocalization, Mode=TwoWay}"/>
-
-        <local:UserFilterItem
+            x:Name="BuildDate"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="{x:Bind LabelTimeZone, Mode=OneTime}"
-            SelectedItem="{x:Bind IndexTimeZone, Mode=TwoWay}"
-            ItemList="{x:Bind ListTimeZone, Mode=TwoWay}"/>
+            Label="Build Date"/>
 
         <local:UserFilterItem
+            x:Name="Localization"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1"
-            Label="{x:Bind LabelKeyboard, Mode=OneTime}"
-            SelectedItem="{x:Bind IndexKeyboard, Mode=TwoWay}"
-            ItemList="{x:Bind ListKeyboard, Mode=TwoWay}"/>
+            Label="Localization"/>
 
         <local:UserFilterItem
+            x:Name="TimeZone"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1"
-            Label="{x:Bind LabelWindowsTarget, Mode=OneTime}"
-            SelectedItem="{x:Bind IndexWindowsTarget, Mode=TwoWay}"
-            ItemList="{x:Bind ListWindowsTarget, Mode=TwoWay}"/>
+            Label="Time Zone"/>
+
+        <local:UserFilterItem
+            x:Name="Keyboard"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Keyboard"/>
+
+        <local:UserFilterItem
+            x:Name="WindowsTarget"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Windows Target"/>
 
         <local:UserFile
-            Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="5" Grid.RowSpan="1"
-            Label="{x:Bind LabelExecutableDir, Mode=OneTime}"
-            Value="{x:Bind ValueExecutableDir, Mode=OneWay}"/>
-
-        <local:UserFile 
+            x:Name="ExecutableDir"
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="6" Grid.RowSpan="1"
-            Label="{x:Bind LabelAssetsDir, Mode=OneTime}"
-            Value="{x:Bind ValueAssetsDir, Mode=OneWay}"/>
+            Label="Executable Dir"/>
 
-        <local:UserFile
+        <local:UserFile 
+            x:Name="AssetsDir"
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="7" Grid.RowSpan="1"
-            Label="{x:Bind LabelXamlDir, Mode=OneTime}"
-            Value="{x:Bind ValueXamlDir, Mode=OneWay}"/>
+            Label="Assets Dir"/>
+
+        <local:UserFile
+            x:Name="XamlDir"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="8" Grid.RowSpan="1"
+            Label="Xaml Dir"/>
 
     </Grid>
 

@@ -4,30 +4,11 @@ namespace HV4DX
     runtimeclass TableDrive : Microsoft.UI.Xaml.Controls.Page
     {
         TableDrive();
+    
+        String TableKey{ get; };
+	
+        void SelectDefaultFromTables(String uid);
 
-        String LabelPartitionHVID;
-        String ValuePartitionHVID;
-        String LabelPartitionName;
-        String LabelPartitionType;
-        String LabelPartitionCreatedDATETIME;
-        String ValuePartitionCreatedDATETIME;
-        String LabelPartitionSavedDATETIME;
-        String ValuePartitionSavedDATETIME;
-        String LabelPartitionOpenedDATETIME;
-        String ValuePartitionOpenedDATETIME;
-        String LabelReserved;
-        String ValueReserved;
-        String LabelAllocated;
-        String ValueAllocated;
-        String LabelClusterSize;
-        String ValueClusterSize;
-        String LabelPageSize;
-        String ValuePageSize;
-        String LabelAttSize;
-        String ValueAttSize;
-        String LabelWhitespaceEncryption;
-        String ValueWhitespaceEncryption;
-        
     }
 
 }

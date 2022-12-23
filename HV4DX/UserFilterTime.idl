@@ -5,7 +5,7 @@ namespace HV4DX
     {
         UserFilterTime();
 
-        String Label;
+        String Label{ get; };
 
         UInt32 SelectedMonth;
         Windows.Foundation.Collections.IObservableVector<String> Months{ get; };

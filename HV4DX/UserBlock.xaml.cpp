@@ -21,14 +21,6 @@ namespace winrt::HV4DX::implementation
     
     }
 
-    void UserBlock::Label(winrt::hstring const& e)
-    { 
-        label = e; 
-    
-        return;
-    
-    }
-
     winrt::hstring UserBlock::Value() 
     { 
         
@@ -37,12 +29,28 @@ namespace winrt::HV4DX::implementation
     }
 
     void UserBlock::Value(winrt::hstring const& e)
-    { 
-        
+    {         
         value = e; 
-    
+
+        property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
+
         return;
     
+    }
+
+    event_token UserBlock::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+    {
+
+        return property_changed_event.add(handler);
+
+    }
+
+    void UserBlock::PropertyChanged(winrt::event_token const& token) noexcept
+    {
+        property_changed_event.remove(token);
+
+        return;
+
     }
 
 }

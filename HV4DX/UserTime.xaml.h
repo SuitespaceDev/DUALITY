@@ -20,8 +20,6 @@ namespace winrt::HV4DX::implementation
 	public:
 		winrt::hstring Label();
 
-		void Label(winrt::hstring const&);
-
 	private:
 		winrt::hstring label{};
 
@@ -30,17 +28,11 @@ namespace winrt::HV4DX::implementation
 
 		void Value(winrt::hstring const&);
 
-		static MUX::DependencyProperty ValueProperty();
-
-		static void OnValueChanged(MUX::DependencyObject const&, MUX::DependencyPropertyChangedEventArgs const&);
-
 	private:
-		static MUX::DependencyProperty value_property;
+		winrt::hstring value{};
 
 	public:
 		winrt::hstring Placeholder();
-
-		void Placeholder(winrt::hstring const&);
 
 	private:
 		winrt::hstring placeholder{};

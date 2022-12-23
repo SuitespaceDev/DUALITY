@@ -17,49 +17,43 @@ namespace winrt::HV4DX::implementation
     public:
         UserPassword();
 
-    public:
-        winrt::hstring Label();
+	public:
+		winrt::hstring Label();
 
-        void Label(winrt::hstring const&);
+	private:
+		winrt::hstring label{};
 
-    private:
-        winrt::hstring label{};
+	public:
+		winrt::hstring Value();
 
-    public:
-        winrt::hstring Value();
+		void Value(winrt::hstring const&);
 
-        void Value(winrt::hstring const&);
+		void ViewPassword(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        static MUX::DependencyProperty ValueProperty();
+	private:
+		winrt::hstring value{};
 
-        static void OnValueChanged(MUX::DependencyObject const&, MUX::DependencyPropertyChangedEventArgs const&);
+	public:
+		winrt::hstring Placeholder();
 
-    private:
-        static MUX::DependencyProperty value_property;
+	private:
+		winrt::hstring placeholder{};
 
-    public:
-        winrt::hstring Placeholder();
+	public:
+		bool ReadOnly();
 
-        void Placeholder(winrt::hstring const&);
+		void ReadOnly(bool const&);
 
-    private:
-        winrt::hstring placeholder{};
+	private:
+		bool read_only{};
 
-    public:
-        bool ReadOnly();
+	public:
+		winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
-        void ReadOnly(bool const&);
+		void PropertyChanged(winrt::event_token const&) noexcept;
 
-    private:
-        bool read_only{};
-
-    public:
-        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
-
-        void PropertyChanged(winrt::event_token const&) noexcept;
-
-    private:
-        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+	private:
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 }

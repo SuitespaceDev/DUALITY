@@ -17,49 +17,41 @@ namespace winrt::HV4DX::implementation
     public:
         UserMMM();
 
-    public:
-        winrt::hstring Label();
+	public:
+		winrt::hstring Label();
 
-        void Label(winrt::hstring const&);
+	private:
+		winrt::hstring label{};
 
-    private:
-        winrt::hstring label{};
+	public:
+		winrt::hstring Value();
 
-    public:
-        winrt::hstring Value();
+		void Value(winrt::hstring const&);
 
-        void Value(winrt::hstring const&);
+	private:
+		winrt::hstring value{};
 
-        static MUX::DependencyProperty ValueProperty();
+	public:
+		winrt::hstring Placeholder();
 
-        static void OnValueChanged(MUX::DependencyObject const&, MUX::DependencyPropertyChangedEventArgs const&);
+	private:
+		winrt::hstring placeholder{};
 
-    private:
-        static MUX::DependencyProperty value_property;
+	public:
+		bool ReadOnly();
 
-    public:
-        winrt::hstring Placeholder();
+		void ReadOnly(bool const&);
 
-        void Placeholder(winrt::hstring const&);
+	private:
+		bool read_only{};
 
-    private:
-        winrt::hstring placeholder{};
+	public:
+		winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
-    public:
-        bool ReadOnly();
+		void PropertyChanged(winrt::event_token const&) noexcept;
 
-        void ReadOnly(bool const&);
-
-    private:
-        bool read_only{};
-
-    public:
-        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
-
-        void PropertyChanged(winrt::event_token const&) noexcept;
-
-    private:
-        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+	private:
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 

@@ -117,7 +117,7 @@ namespace winrt::HV4DX::implementation
 
 			try
 			{
-				CTBASE::CHV4DMMDDYYYY{ std::wstring{ L"02/29/" + selected_year } };
+				CTBASE::CHV4DMMDDYYYY flex{ std::wstring{ L"02/29/" + selected_year } };
 
 			}
 			catch (std::exception)
@@ -381,14 +381,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserFilterTime::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	WFITT::IObservableVector<winrt::hstring> UserFilterTime::Months()
 	{
 
@@ -432,6 +424,8 @@ namespace winrt::HV4DX::implementation
 	void UserFilterTime::SelectedMonth(uint32_t const& e)
 	{
 		selected_month = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedMonth" });
 
 		return;
 
@@ -481,6 +475,8 @@ namespace winrt::HV4DX::implementation
 	{
 		selected_day = e;
 
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedDay" });
+
 		return;
 
 	}
@@ -528,6 +524,8 @@ namespace winrt::HV4DX::implementation
 	void UserFilterTime::SelectedYear(uint32_t const& e)
 	{
 		selected_year = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedYear" });
 
 		return;
 
@@ -577,6 +575,8 @@ namespace winrt::HV4DX::implementation
 	{
 		selected_hour = e;
 
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedHour" });
+
 		return;
 
 	}
@@ -624,6 +624,8 @@ namespace winrt::HV4DX::implementation
 	void UserFilterTime::SelectedMinute(uint32_t const& e)
 	{
 		selected_minute = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedMinute" });
 
 		return;
 
@@ -673,6 +675,8 @@ namespace winrt::HV4DX::implementation
 	{
 		selected_second = e;
 
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedSecond" });
+
 		return;
 
 	}
@@ -720,6 +724,8 @@ namespace winrt::HV4DX::implementation
 	void UserFilterTime::SelectedOperator(uint32_t const& e)
 	{
 		selected_operator = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedOperator" });
 
 		return;
 

@@ -16,31 +16,43 @@ namespace winrt::HV4DX::implementation
     public:
         UserFile();
 
-    public:
-        winrt::hstring Label();
+	public:
+		winrt::hstring Label();
 
-        void Label(winrt::hstring const&);
+	private:
+		winrt::hstring label{};
 
-    private:
-        winrt::hstring label{};
+	public:
+		winrt::hstring Value();
 
-    public:
-        winrt::hstring Value();
+		void Value(winrt::hstring const&);
 
-        void Value(winrt::hstring const&);
+		void FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        void FilePicker(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+	private:
+		winrt::hstring value{};
 
-    private:
-        winrt::hstring value{};
+	public:
+		winrt::hstring Placeholder();
 
-    public:
-        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+	private:
+		winrt::hstring placeholder{};
 
-        void PropertyChanged(winrt::event_token const&) noexcept;
+	public:
+		bool ReadOnly();
 
-    private:
-        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+		void ReadOnly(bool const&);
+
+	private:
+		bool read_only{};
+
+	public:
+		winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+		void PropertyChanged(winrt::event_token const&) noexcept;
+
+	private:
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 }

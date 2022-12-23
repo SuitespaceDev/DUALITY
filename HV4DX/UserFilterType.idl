@@ -5,10 +5,11 @@ namespace HV4DX
     {
         UserFilterType();
 
-        String Label;
-        String Value;
+        String Label{ get; };
+        UInt32 CurrentItem{ get; };
+        Windows.Foundation.Collections.IObservableVector<String> ItemList{ get; };
         UInt32 FilterType;
-        Windows.Foundation.Collections.IObservableVector<String> FilterList;
+        Windows.Foundation.Collections.IObservableVector<String> FilterList{ get; };
 
     }
 

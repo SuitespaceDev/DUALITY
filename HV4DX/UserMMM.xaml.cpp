@@ -21,43 +21,18 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserMMM::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	winrt::hstring UserMMM::Value()
 	{
 
-		return winrt::unbox_value<winrt::hstring>(GetValue(value_property));
+		return value;
 
 	}
 
 	void UserMMM::Value(winrt::hstring const& e)
 	{
-		SetValue(value_property, winrt::box_value(e));
+		value = e;
 
-		return;
-
-	}
-
-	MUX::DependencyProperty UserMMM::ValueProperty()
-	{
-
-		return value_property;
-
-	}
-
-	void UserMMM::OnValueChanged(MUX::DependencyObject const& obj, MUX::DependencyPropertyChangedEventArgs const& e)
-	{
-		if (HV4DX::UserMMM Control{ obj.try_as<HV4DX::UserMMM>() })
-		{
-			//HV4DX::implementation::UserMMM* ptr{ winrt::get_self<HV4DX::implementation::UserMMM>(Control) };
-
-		}
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
 
 		return;
 
@@ -67,14 +42,6 @@ namespace winrt::HV4DX::implementation
 	{
 
 		return placeholder;
-
-	}
-
-	void UserMMM::Placeholder(winrt::hstring const& e)
-	{
-		placeholder = e;
-
-		return;
 
 	}
 
@@ -88,6 +55,8 @@ namespace winrt::HV4DX::implementation
 	void UserMMM::ReadOnly(bool const& e)
 	{
 		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
 
 		return;
 
@@ -107,12 +76,5 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
-
-	MUX::DependencyProperty UserMMM::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserMMM>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserMMM::OnValueChanged} });
 
 }

@@ -4,44 +4,10 @@ namespace HV4DX
     runtimeclass TableAccount : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableAccount();
+
+        String TableKey{ get; };
 	
-        String LabelAccountHVID;
-        UInt32 IndexAccountHVID;
-		Windows.Foundation.Collections.IObservableVector<String> ListAccountHVID;
-
-        String LabelAccountID;
-		UInt32 IndexAccountID;
-		Windows.Foundation.Collections.IObservableVector<String> ListAccountID;
-
-        String LabelAccountMaxPath;
-		UInt32 IndexAccountMaxPath;
-		Windows.Foundation.Collections.IObservableVector<String> ListAccountMaxPath;
-
-        String LabelAccountCreated;
-        String ValueAccountCreated;
-        String LabelAccountUpdated;
-        String ValueAccountUpdated;
-        String LabelAccountPassword;
-        String ValueAccountPassword;
-
-		String LabelAccount;
-		String ValueAccount;
-		String LabelAccountAddressOne;
-		String ValueAccountAddressOne;
-		String LabelAccountAddressTwo;
-		String ValueAccountAddressTwo;
-		String LabelAccountCity;
-		String ValueAccountCity;
-		String LabelAccountRegion;
-		String ValueAccountRegion;
-		String LabelAccountEMail;
-		String ValueAccountEMail;
-		String LabelAccountPrimaryPhone;
-		String ValueAccountPrimaryPhone;
-		String LabelAccountSecondaryPhone;
-		String ValueAccountSecondaryPhone;
-
-		Boolean AccountIsEditable;
+        void SelectDefaultFromTables(String uid);
 
     }
 

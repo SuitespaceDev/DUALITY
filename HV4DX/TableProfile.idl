@@ -5,25 +5,12 @@ namespace HV4DX
     {
         TableProfile();
 
-        String LabelProfileHVID;
-        UInt32 IndexProfileHVID;
-        Windows.Foundation.Collections.IObservableVector<String> ListProfileHVID;
-
-        String LabelProfileMMM;
-        String ValueProfileMIL;
-        String ValueProfileMAJ;
-        String ValueProfileMIN;
-
-        String LabelProfileMaxPath;
-        UInt32 IndexProfileMaxPath;
-        Windows.Foundation.Collections.IObservableVector<String> ListProfileID;
-
-        String LabelProfileCreated;
-        String ValueProfileCreated;
-        String LabelProfileSaved;
-        String ValueProfileSaved;
-        String LabelProfileOpened;
-        String ValueProfileOpened;
+        String LabelProfileHVID{ get; };
+        String LabelProfileMMM{ get; };
+        String LabelProfileMaxPath{ get; };
+        String LabelProfileCreated{ get; };
+        String LabelProfileSaved{ get; };
+        String LabelProfileOpened{ get; };
 
     }
 

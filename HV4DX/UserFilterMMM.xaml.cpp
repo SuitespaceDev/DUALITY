@@ -17,25 +17,9 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserFilterMMM::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	winrt::hstring UserFilterMMM::ValueMIL()
 	{
 		return value_mil;
-
-	}
-
-	void UserFilterMMM::ValueMIL(winrt::hstring const& e)
-	{
-		value_mil = e;
-
-		return;
 
 	}
 
@@ -57,14 +41,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserFilterMMM::ValueMAJ(winrt::hstring const& e)
-	{
-		value_maj = e;
-
-		return;
-
-	}
-
 	void UserFilterMMM::IncreaseMajor(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		return;
@@ -83,14 +59,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserFilterMMM::ValueMIN(winrt::hstring const& e)
-	{
-		value_min = e;
-
-		return;
-
-	}
-
 	void UserFilterMMM::IncreaseMinor(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
 		return;
@@ -98,6 +66,12 @@ namespace winrt::HV4DX::implementation
 	}
 
 	void UserFilterMMM::DecreaseMinor(Windows::Foundation::IInspectable const& sender, MUX::RoutedEventArgs const& e)
+	{
+		return;
+
+	}
+
+	void UserFilterMMM::NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&)
 	{
 		return;
 

@@ -40,7 +40,7 @@
                     Padding="3,3,3,3"                
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Label}"/>
+                    Text="{x:Bind Label, Mode=OneWay}"/>
 
             </Border>
 
@@ -57,8 +57,8 @@
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"
-                    Text="{x:Bind Valu, Mode=TwoWay}"
-                    PlaceholderText="{x:Bind Placeholder, Mode=OneTime}"
+                    PlaceholderText="{x:Bind Placeholder, Mode=OneWay}"
+                    Text="{x:Bind Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                     IsReadOnly="{x:Bind ReadOnly, Mode=TwoWay}"/>
 
             </Border>

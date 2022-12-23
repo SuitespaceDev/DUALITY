@@ -5,13 +5,10 @@ namespace HV4DX
     {
         UserFilterMMM();
 
-        String Label;
-    
-        String ValueMIL;
-
-        String ValueMAJ;
-
-        String ValueMIN;
+        String Label{ get; };
+        String ValueMIL{ get; };
+        String ValueMAJ{ get; };
+        String ValueMIN{ get; };
 
     }
 

@@ -22,75 +22,83 @@
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
+        <local:UserBlock
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Accounts:"
+            Value="TableKey"/>
+
         <local:UserFilterNew 
+            x:Name="PartitionHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionHVID}" 
-            SelectedItem="{x:Bind IndexPartitionHVID}"/>
+            Label="HVID"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionName}"/>
+            Label="Name"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionType"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionType}"/>
+            Label="Partition Type"/>
 
         <local:UserBlock 
+            x:Name="PartitionCreated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionCreatedDATETIME}"
-            Value="{x:Bind ValuePartitionCreatedDATETIME}"/>
+            Label="DateTime Created"/>
 
         <local:UserBlock 
+            x:Name="PartitionSaved"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionSavedDATETIME}"
-            Value="{x:Bind ValuePartitionSavedDATETIME}"/>
+            Label="DateTime Saved"/>
 
         <local:UserBlock 
+            x:Name="PartitionOpened"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionOpenedDATETIME}" 
-            Value="{x:Bind ValuePartitionOpenedDATETIME}"/>
+            Label="DateTime Opened" />
 
         <local:UserEntry 
+            x:Name="PartitionReserved"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelReserved}" 
-            Value="{x:Bind ValueReserved}"/>
+            Label="Reserved"/>
 
         <local:UserEntry 
+            x:Name="PartitionAllocated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelAllocated}" 
-            Value="{x:Bind ValueAllocated}"/>
+            Label="Allocated" />
 
         <local:UserEntry 
+            x:Name="PartitionClusterSize"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelClusterSize}" 
-            Value="{x:Bind ValueClusterSize}"/>
+            Label="Cluster Size" />
 
         <local:UserEntry 
+            x:Name="PartitionPageSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPageSize}" 
-            Value="{x:Bind ValuePageSize}"/>
+            Label="Page Size"/>
 
         <local:UserEntry 
+            x:Name="PartitionAttSize"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="{x:Bind LabelAttSize}" 
-            Value="{x:Bind ValueAttSize}"/>
+            Label="Attribute Size"/>
 
         <local:UserEntry 
+            x:Name="PartitionWhitespaceEncryption"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="{x:Bind LabelWhitespaceEncryption}" 
-            Value="{x:Bind ValueWhitespaceEncryption}"/>
+            Label="Whitespace Encryption" />
 
     </Grid>
 

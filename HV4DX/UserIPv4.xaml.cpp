@@ -21,43 +21,18 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserIPv4::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	winrt::hstring UserIPv4::Value()
 	{
 
-		return winrt::unbox_value<winrt::hstring>(GetValue(value_property));
+		return value;
 
 	}
 
 	void UserIPv4::Value(winrt::hstring const& e)
 	{
-		SetValue(value_property, winrt::box_value(e));
+		value = e;
 
-		return;
-
-	}
-
-	MUX::DependencyProperty UserIPv4::ValueProperty()
-	{
-
-		return value_property;
-
-	}
-
-	void UserIPv4::OnValueChanged(MUX::DependencyObject const& obj, MUX::DependencyPropertyChangedEventArgs const& e)
-	{
-		if (HV4DX::UserIPv4 Control{ obj.try_as<HV4DX::UserIPv4>() })
-		{
-			//HV4DX::implementation::UserIPv4* ptr{ winrt::get_self<HV4DX::implementation::UserIPv4>(Control) };
-
-		}
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
 
 		return;
 
@@ -67,14 +42,6 @@ namespace winrt::HV4DX::implementation
 	{
 
 		return placeholder;
-
-	}
-
-	void UserIPv4::Placeholder(winrt::hstring const& e)
-	{
-		placeholder = e;
-
-		return;
 
 	}
 
@@ -88,6 +55,8 @@ namespace winrt::HV4DX::implementation
 	void UserIPv4::ReadOnly(bool const& e)
 	{
 		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
 
 		return;
 
@@ -107,12 +76,5 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
-
-	MUX::DependencyProperty UserIPv4::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserIPv4>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserIPv4::OnValueChanged} });
 
 }

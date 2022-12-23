@@ -21,14 +21,6 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	void UserFilterNew::Label(winrt::hstring const& e)
-	{ 
-		label = e; 
-	
-		return;
-	
-	}
-
 	uint32_t UserFilterNew::SelectedItem()
 	{ 
 		
@@ -39,7 +31,9 @@ namespace winrt::HV4DX::implementation
 	void UserFilterNew::SelectedItem(uint32_t const& e)
 	{ 
 		selected_item = e;
-	
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
+
 		return;
 	
 	}
@@ -78,29 +72,16 @@ namespace winrt::HV4DX::implementation
 		{
 			item_list.Append(L"Empty");
 
+			selected_item = 0;
+
+			property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"SelectedItem" });
+
 			return item_list;
 
 		}
 		else
 		{
 			return item_list;
-
-		}
-
-	}
-
-	void UserFilterNew::ItemList(WFITT::IObservableVector<winrt::hstring> const& e)
-	{
-		if (e.Size() == 0)
-		{
-			return;
-
-		}
-		else
-		{
-			item_list = e;
-
-			return;
 
 		}
 

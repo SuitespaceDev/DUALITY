@@ -18,43 +18,18 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	void UserTime::Label(winrt::hstring const& e)
-	{
-		label = e;
-
-		return;
-
-	}
-
 	winrt::hstring UserTime::Value()
 	{
 
-		return winrt::unbox_value<winrt::hstring>(GetValue(value_property));
+		return value;
 
 	}
 
 	void UserTime::Value(winrt::hstring const& e)
 	{
-		SetValue(value_property, winrt::box_value(e));
+		value = e;
 
-		return;
-
-	}
-
-	MUX::DependencyProperty UserTime::ValueProperty()
-	{
-
-		return value_property;
-
-	}
-
-	void UserTime::OnValueChanged(MUX::DependencyObject const& obj, MUX::DependencyPropertyChangedEventArgs const& e)
-	{
-		if (HV4DX::UserTime Control{ obj.try_as<HV4DX::UserTime>() })
-		{
-			//HV4DX::implementation::UserTime* ptr{ winrt::get_self<HV4DX::implementation::UserTime>(Control) };
-
-		}
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Value" });
 
 		return;
 
@@ -64,14 +39,6 @@ namespace winrt::HV4DX::implementation
 	{
 
 		return placeholder;
-
-	}
-
-	void UserTime::Placeholder(winrt::hstring const& e)
-	{
-		placeholder = e;
-
-		return;
 
 	}
 
@@ -85,6 +52,8 @@ namespace winrt::HV4DX::implementation
 	void UserTime::ReadOnly(bool const& e)
 	{
 		read_only = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
 
 		return;
 
@@ -104,12 +73,5 @@ namespace winrt::HV4DX::implementation
 		return;
 
 	}
-
-	MUX::DependencyProperty UserTime::value_property =
-		MUX::DependencyProperty::Register(
-			L"Value",
-			winrt::xaml_typename<winrt::hstring>(),
-			winrt::xaml_typename<winrt::HV4DX::UserTime>(),
-			MUX::PropertyMetadata{ winrt::box_value(L""), MUX::PropertyChangedCallback{&UserTime::OnValueChanged} });
 
 }

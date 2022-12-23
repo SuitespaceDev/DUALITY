@@ -2,45 +2,11 @@ namespace HV4DX
 {
     [bindable]
     [default_interface]
-    runtimeclass TableDigitalTwin : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass TableDigitalTwin : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableDigitalTwin();
-
-        String LabelEnterpriseName;
-        String ValueEnterpriseName;
-        String LabelEnterpriseID;
-        String ValueEnterpriseID;
-        String LabelBuildName;
-        String ValueBuildName;
-        String LabelBuildID;
-        String ValueBuildID;
-        String LabelBuildMMM;
-        String ValueBuildMMM;
-        String LabelBuildDate;
-        String ValueBuildDate;
-
-        String LabelLocalization;
-        UInt32 IndexLocalization;
-        Windows.Foundation.Collections.IObservableVector<String> ListAccountLocalization;
-
-        String LabelTimeZone;
-        UInt32 IndexTimeZone;
-        Windows.Foundation.Collections.IObservableVector<String> ListAccountTimeZone;
-
-        String LabelKeyboard;
-        UInt32 IndexKeyboard;
-        Windows.Foundation.Collections.IObservableVector<String> ListAccountKeyboard;
-
-        String LabelWindowsTarget;
-        UInt32 IndexWindowsTarget;
-        Windows.Foundation.Collections.IObservableVector<String> ListAccountWindowsTarget;
-
-        String LabelExecutableDir;
-        String ValueExecutableDir;
-        String LabelAssetsDir;
-        String ValueAssetsDir;
-        String LabelXamlDir;
-        String ValueXamlDir;
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

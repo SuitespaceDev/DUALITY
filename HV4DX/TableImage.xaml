@@ -25,98 +25,110 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterNew 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageHVID}" 
             SelectedItem="{x:Bind IndexImageHVID}"/>
 
         <local:UserFilterItem 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageName}"/>
 
         <local:UserFilterItem 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageType}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageCreatedDATETIME}"
             Value="{x:Bind ValueImageCreatedDATETIME}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageSavedDATETIME}"
             Value="{x:Bind ValueImageSavedDATETIME}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="{x:Bind LabelImageOpenedDATETIME}" 
             Value="{x:Bind ValueImageOpenedDATETIME}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DVOLOFF}" 
             Value="{x:Bind ValueHV4DVOLOFF}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DVOLSZ}" 
             Value="{x:Bind ValueHV4DVOLSZ}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DSFTOFF}" 
             Value="{x:Bind ValueHV4DSFTOFF}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DSFTSZ}" 
             Value="{x:Bind ValueHV4DSFTSZ}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DMIROFF}" 
             Value="{x:Bind ValueHV4DMIROFF}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DMIRSZ}" 
             Value="{x:Bind ValueHV4DMIRSZ}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DATTOFF}" 
             Value="{x:Bind ValueHV4DATTOFF}"/>
 
         <local:UserBlock 
+            x:Name=""
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1" 
             Label="{x:Bind LabelHV4DATTSZ}" 
             Value="{x:Bind ValueHV4DATTSZ}"/>
 
         <local:UserBlock 
+            x:Name="HV4DBMPOFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DBMPOFF}" 
-            Value="{x:Bind ValueHV4DBMPOFF}"/>
+            Grid.Row="7" Grid.RowSpan="1" />
 
         <local:UserBlock 
+            x:Name="HV4DBMPSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DBMPSZ}" 
-            Value="{x:Bind ValueHV4DBMPSZ}"/>
+            Grid.Row="7" Grid.RowSpan="1" />
 
     </Grid>
 
