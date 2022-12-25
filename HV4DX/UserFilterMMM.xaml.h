@@ -5,8 +5,9 @@
 namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
 namespace MUX = winrt::Microsoft::UI::Xaml;
-namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
 namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::HV4DX::implementation
 {
@@ -17,6 +18,8 @@ namespace winrt::HV4DX::implementation
 
     public:
         winrt::hstring Label();
+
+        void Label(winrt::hstring const&);
 
     private:
         winrt::hstring label{};
@@ -53,6 +56,14 @@ namespace winrt::HV4DX::implementation
 
     public:
         void NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
+    public:
+        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+
+        void PropertyChanged(winrt::event_token const&) noexcept;
+
+    private:
+        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
 
     };
 

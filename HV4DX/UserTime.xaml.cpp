@@ -18,6 +18,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
+	void UserTime::Label(winrt::hstring const& e)
+	{
+		label = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+		return;
+
+	}
+
 	winrt::hstring UserTime::Value()
 	{
 

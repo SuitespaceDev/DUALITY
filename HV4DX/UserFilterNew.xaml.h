@@ -15,6 +15,8 @@ namespace winrt::HV4DX::implementation
     public:
         UserFilterNew();
 
+        void Label(winrt::hstring const&);
+
     public:
         winrt::hstring Label();
 
@@ -22,16 +24,16 @@ namespace winrt::HV4DX::implementation
         winrt::hstring label{};
 
     public:
-        uint32_t SelectedItem();
+        int32_t SelectedItem();
 
-        void SelectedItem(uint32_t const&);
+        void SelectedItem(int32_t const&);
 
         void NextItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
         void PreviousItem(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
     private:
-        uint32_t selected_item{};
+        int32_t selected_item{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> ItemList();

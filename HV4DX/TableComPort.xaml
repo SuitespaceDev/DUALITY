@@ -21,87 +21,35 @@
         </Grid.RowDefinitions>
 
         <local:UserBlock 
+            x:Name="ComPortNodeHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelComPortNodeHVID}"
-            Value="{x:Bind ValueComPortNodeHVID}"/>
+            Label="ComPort Node HVID"/>
 
         <local:UserBlock 
+            x:Name="ComPortNodeID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelComPortNodeID}"
-            Value="{x:Bind ValueComPortNodeID}"/>
+            Label="ID"/>
 
         <local:UserBlock 
+            x:Name="ComPortNodeTemp"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelComPortNodeTemp}"
-            Value="{x:Bind ValueComPortNodeTemp}"/>
+            Label="Temp"/>
 
         <local:UserBlock 
+            x:Name="ComPortNodeAcceleratorHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelAcceleratorHVID}" 
-            Value="{x:Bind ValueAcceleratorHVID}"/>
+            Label="Accelerator HVID"/>
 
         <local:UserFilterType
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="2"
-            MinHeight="500">
-            <local:UserFilterType.FilterList>
-                <TextBlock Text="BIOS"/>
-                <TextBlock Text="VRM"/>
-                <TextBlock Text="PWM"/>
-                <TextBlock Text="OOBM"/>
-                <TextBlock Text="RS-232"/>
-                <TextBlock Text="DB-25"/>
-                <TextBlock Text="USB 2.0"/>
-                <TextBlock Text="USB 3.1"/>
-                <TextBlock Text="USB 4.0"/>
-                <TextBlock Text="IEEE 1394"/>
-                <TextBlock Text="LAN"/>
-                <TextBlock Text="Ethernet"/>
-                <TextBlock Text="EiWARP"/>
-                <TextBlock Text="RoCE"/>
-                <TextBlock Text="Infiniband"/>
-                <TextBlock Text="WiFi"/>
-                <TextBlock Text="SCSI"/>
-                <TextBlock Text="SAS"/>
-                <TextBlock Text="FCP"/>
-                <TextBlock Text="UAS"/>
-                <TextBlock Text="AHCI"/>
-                <TextBlock Text="SATA"/>
-                <TextBlock Text="SATAII"/>
-                <TextBlock Text="SATAIII"/>
-                <TextBlock Text="eSATA"/>
-                <TextBlock Text="PCIe"/>
-                <TextBlock Text="PCIe 2.0"/>
-                <TextBlock Text="PCIe 3.0"/>
-                <TextBlock Text="PCIe 4.0"/>
-                <TextBlock Text="PCIe 5.0"/>
-                <TextBlock Text="PCIe 6.0"/>
-                <TextBlock Text="NVMe"/>
-                <TextBlock Text="NVMe 2.0"/>
-                <TextBlock Text="Oculink"/>
-                <TextBlock Text="NVLink"/>
-                <TextBlock Text="HDMI 1.0"/>
-                <TextBlock Text="HDMI 1.1"/>
-                <TextBlock Text="HDMI 1.2"/>
-                <TextBlock Text="HDMI 1.3"/>
-                <TextBlock Text="HDMI 1.4"/>
-                <TextBlock Text="HDMI 2.0"/>
-                <TextBlock Text="HDMI 2.1"/>
-                <TextBlock Text="DP 1.0"/>
-                <TextBlock Text="DP 1.1"/>
-                <TextBlock Text="DP 1.2"/>
-                <TextBlock Text="DP 1.3"/>
-                <TextBlock Text="DP 1.4"/>
-                <TextBlock Text="DP 2.0"/>
-                <TextBlock Text="DP 2.1"/>
-            </local:UserFilterType.FilterList>
-        </local:UserFilterType>
+            MinHeight="500"/>
 
     </Grid>
 

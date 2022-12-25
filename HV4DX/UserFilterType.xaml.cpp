@@ -21,7 +21,17 @@ namespace winrt::HV4DX::implementation
 	
 	}
 
-	uint32_t UserFilterType::CurrentItem()
+	void UserFilterType::Label(winrt::hstring const& e)
+	{
+		label = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+		return;
+
+	}
+
+	int32_t UserFilterType::CurrentItem()
 	{ 
 		
 		return current_item;
@@ -34,14 +44,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterType::FilterType()
+	int32_t UserFilterType::FilterType()
 	{
 
 		return filter_type;
 
 	}
 
-	void UserFilterType::FilterType(uint32_t const& e)
+	void UserFilterType::FilterType(int32_t const& e)
 	{
 		filter_type = e;
 

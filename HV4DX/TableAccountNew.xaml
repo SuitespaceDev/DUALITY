@@ -1,4 +1,4 @@
-﻿<Page
+﻿<UserControl
     x:Class="HV4DX.TableAccountNew"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -32,7 +32,7 @@
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
             Label="Accounts:"
-            Value="{x:Bind TableKey}"/>
+            Value="{x:Bind ValueKey}"/>
 
         <local:UserFilterNew
             x:Name="AccountHVID"            

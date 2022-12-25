@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include "winrt/HV4DX.h"
+
 #include "ProfilePage.g.h"
 
 namespace WF        = winrt::Windows::Foundation;

@@ -11,4 +11,14 @@ namespace winrt::HV4DX::implementation
         InitializeComponent();
     }
 
+    void TableContrItem::SelectDefaultFromTables(winrt::hstring const& e)
+    {
+
+
+
+
+        return;
+
+    }
+
 }

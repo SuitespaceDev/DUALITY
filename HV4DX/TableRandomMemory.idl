@@ -4,6 +4,8 @@ namespace HV4DX
     runtimeclass TableRandomMemory : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableRandomMemory();
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

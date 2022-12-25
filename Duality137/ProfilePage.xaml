@@ -13,7 +13,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DLVL1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -22,37 +21,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableAccount
-                LabelAccountHVID="ACCOUNT HVID"
-                ValueAccountHVID="{StaticResource xValueLvl1AccountHVID}"
-                LabelAccountID="ACCOUNT ID"
-                ValueAccountID="{StaticResource xValueLvl1AccountID}"
-                LabelAccountMaxPath="ACCOUNT"
-                ValueAccountMaxPath="{StaticResource xValueLvl1AccountMaxPath}"
-                LabelAccountCreated="ACCOUNT CREATED"
-                ValueAccountCreated="{StaticResource xValueLvl1AccountCreated}"
-                LabelAccountUpdated="ACCOUNT UPDATED"
-                ValueAccountUpdated="{StaticResource xValueLvl1AccountUpdated}"
-                LabelAccountPassword="ACCOUNT PASSWORD"
-                ValueAccountPassword="{StaticResource xValueLvl1AccountPassword}"
-                LabelAccount="PROJECT MANAGER"
-                ValueAccount="{StaticResource xValueLvl1Account}"
-                LabelAccountAddressOne="ADDRESS ONE"
-                ValueAccountAddressOne="{StaticResource xValueLvl1AccountAddressOne}"
-                LabelAccountAddressTwo="ADDRESS TWO"
-                ValueAccountAddressTwo="{StaticResource xValueLvl1AccountAddressTwo}"
-                LabelAccountCity="CITY"
-                ValueAccountCity="{StaticResource xValueLvl1AccountCity}"
-                LabelAccountRegion="REGION"
-                ValueAccountRegion="{StaticResource xValueLvl1AccountRegion}"
-                LabelAccountPrimaryPhone="PRIMARY NUMBER"
-                ValueAccountPrimaryPhone="{StaticResource xValueLvl1AccountPrimaryPhone}"
-                LabelAccountSecondaryPhone="SECONDARY NUMBER"
-                ValueAccountSecondaryPhone="{StaticResource xValueLvl1AccountSecondaryPhone}"
-                LabelAccountEMail="EMAIL ADDRESS"
-                ValueAccountEMail="{StaticResource xValueLvl1AccountEMail}"/>
+            <HV4DX:TableKey
+                ValueKey="TABLE_KEY_BUILD_PROFILE"/>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:UserDivider
+                x:Name="TableMachineProfile"/>
 
             <Border 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"

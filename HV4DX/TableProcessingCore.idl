@@ -4,6 +4,8 @@ namespace HV4DX
     runtimeclass TableProcessingCore : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableProcessingCore();
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

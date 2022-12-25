@@ -1,4 +1,4 @@
-﻿<Page
+﻿<UserControl
     x:Class="HV4DX.TableImage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -25,111 +25,101 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterNew 
-            x:Name=""
+            x:Name="ImageHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageHVID}" 
-            SelectedItem="{x:Bind IndexImageHVID}"/>
+            Label="Image HVID"/>
 
         <local:UserFilterItem 
-            x:Name=""
+            x:Name="ImageName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageName}"/>
+            Label="Name"/>
 
         <local:UserFilterItem 
-            x:Name=""
+            x:Name="ImageFormat"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageType}"/>
+            Label="Format"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="ImageCreated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageCreatedDATETIME}"
-            Value="{x:Bind ValueImageCreatedDATETIME}"/>
+            Label="DateTime Created}"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="ImageUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageSavedDATETIME}"
-            Value="{x:Bind ValueImageSavedDATETIME}"/>
+            Label="DateTime Updated"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="ImageOpened"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelImageOpenedDATETIME}" 
-            Value="{x:Bind ValueImageOpenedDATETIME}"/>
+            Label="DateTime Opened"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DVOLOFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DVOLOFF}" 
-            Value="{x:Bind ValueHV4DVOLOFF}"/>
+            Label="$HV4DVOL Offset"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DVOLSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DVOLSZ}" 
-            Value="{x:Bind ValueHV4DVOLSZ}"/>
+            Label="$HV4DVOL Size"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DSFTOFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DSFTOFF}" 
-            Value="{x:Bind ValueHV4DSFTOFF}"/>
+            Label="$HV4DSFT Offset"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DSFTSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DSFTSZ}" 
-            Value="{x:Bind ValueHV4DSFTSZ}"/>
+            Label="$HV4DSFT Size"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DMIROFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DMIROFF}" 
-            Value="{x:Bind ValueHV4DMIROFF}"/>
+            Label="$HV4DMIR Offset"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DMIRSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DMIRSZ}" 
-            Value="{x:Bind ValueHV4DMIRSZ}"/>
+            Label="$HV4DMIR Size"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DATTOFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DATTOFF}" 
-            Value="{x:Bind ValueHV4DATTOFF}"/>
+            Label="$HV4DATT Offset"/>
 
         <local:UserBlock 
-            x:Name=""
+            x:Name="HV4DATTSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1" 
-            Label="{x:Bind LabelHV4DATTSZ}" 
-            Value="{x:Bind ValueHV4DATTSZ}"/>
+            Label="$HV4DATT Size"/>
 
         <local:UserBlock 
             x:Name="HV4DBMPOFF"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" />
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="$HV4DBMP Offset"/>
 
         <local:UserBlock 
             x:Name="HV4DBMPSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" />
+            Grid.Row="7" Grid.RowSpan="1"
+            Label="$HV4DBMP Size" />
 
     </Grid>
 
-</Page>
+</UserControl>

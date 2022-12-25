@@ -14,4 +14,14 @@ namespace winrt::HV4DX::implementation
 
     }
 
+    void TableProcessingCore::SelectDefaultFromTables(winrt::hstring const& e)
+    {
+
+
+
+
+        return;
+
+    }
+
 }

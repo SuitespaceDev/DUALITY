@@ -38,6 +38,8 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring Label();
 
+        void Label(winrt::hstring const&);
+
     private:
         winrt::hstring label{};
 
@@ -52,12 +54,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousMonth(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedMonth();
+        int32_t SelectedMonth();
 
-        void SelectedMonth(uint32_t const&);
+        void SelectedMonth(int32_t const&);
 
     private:
-        uint32_t selected_month{};
+        int32_t selected_month{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Days();
@@ -70,12 +72,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousDay(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedDay();
+        int32_t SelectedDay();
 
-        void SelectedDay(uint32_t const&);
+        void SelectedDay(int32_t const&);
 
     private:
-        uint32_t selected_day{};
+        int32_t selected_day{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Years();
@@ -88,12 +90,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousYear(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedYear();
+        int32_t SelectedYear();
 
-        void SelectedYear(uint32_t const&);
+        void SelectedYear(int32_t const&);
 
     private:
-        uint32_t selected_year{};
+        int32_t selected_year{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Hours();
@@ -106,12 +108,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousHour(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedHour();
+        int32_t SelectedHour();
 
-        void SelectedHour(uint32_t const&);
+        void SelectedHour(int32_t const&);
 
     private:
-        uint32_t selected_hour{};
+        int32_t selected_hour{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Minutes();
@@ -124,12 +126,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousMinute(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedMinute();
+        int32_t SelectedMinute();
 
-        void SelectedMinute(uint32_t const&);
+        void SelectedMinute(int32_t const&);
 
     private:
-        uint32_t selected_minute{};
+        int32_t selected_minute{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Seconds();
@@ -142,12 +144,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousSecond(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedSecond();
+        int32_t SelectedSecond();
 
-        void SelectedSecond(uint32_t const&);
+        void SelectedSecond(int32_t const&);
 
     private:
-        uint32_t selected_second{};
+        int32_t selected_second{};
 
     public:
         WFITT::IObservableVector<winrt::hstring> Operators();
@@ -160,12 +162,12 @@ namespace winrt::HV4DX::implementation
 
         void PreviousOperator(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-        uint32_t SelectedOperator();
+        int32_t SelectedOperator();
 
-        void SelectedOperator(uint32_t const&);
+        void SelectedOperator(int32_t const&);
 
     private:
-        uint32_t selected_operator{};
+        int32_t selected_operator{};
 
     public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);

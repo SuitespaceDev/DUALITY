@@ -2,11 +2,11 @@ namespace HV4DX
 {
     [bindable]
     [default_interface]
-    runtimeclass UserIPv6 : Microsoft.UI.Xaml.Controls.UserControl
+    runtimeclass UserIPv6 : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserIPv6();
     
-        String Label{ get; };
+        String Label;
         String Placeholder{ get; };
         String Value;
 

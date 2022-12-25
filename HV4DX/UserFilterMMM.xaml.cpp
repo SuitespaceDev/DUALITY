@@ -17,6 +17,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
+	void UserFilterMMM::Label(winrt::hstring const& e)
+	{
+		label = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+		return;
+
+	}
+
 	winrt::hstring UserFilterMMM::ValueMIL()
 	{
 		return value_mil;
@@ -73,6 +83,21 @@ namespace winrt::HV4DX::implementation
 
 	void UserFilterMMM::NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&)
 	{
+		return;
+
+	}
+
+	event_token UserFilterMMM::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+	{
+
+		return property_changed_event.add(handler);
+
+	}
+
+	void UserFilterMMM::PropertyChanged(winrt::event_token const& token) noexcept
+	{
+		property_changed_event.remove(token);
+
 		return;
 
 	}

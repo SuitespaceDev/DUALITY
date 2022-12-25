@@ -2,11 +2,11 @@ namespace HV4DX
 {
     [bindable]
     [default_interface]
-    runtimeclass UserMMM : Microsoft.UI.Xaml.Controls.UserControl
+    runtimeclass UserMMM : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserMMM();
     
-        String Label{ get; };
+        String Label;
         String Placeholder{ get; };
         String Value;
 

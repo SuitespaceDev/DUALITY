@@ -5,22 +5,7 @@ namespace HV4DX
     {
         TableNetworkAdapter();
     
-        String LabelNICManufacturer;
-        String ValueNICManufacturer; 
-        String LabelNICModel;
-        String ValueNICModel;
-        String LabelNICHVID;
-        String ValueNICHVID;
-        String LabelNICID;
-        String ValueNICID; 
-        String LabelNICInputOutputBus;
-        String ValueNICInputOutputBus;
-        String LabelNICDuplex;
-        String ValueNICDuplex;
-        String LabelNICMTU;
-        String ValueNICMTU;
-        String LabelNICSpeed;
-        String ValueNICSpeed;
+        void SelectDefaultFromTables(String uid);
 
     }
 

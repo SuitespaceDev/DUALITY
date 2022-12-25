@@ -1,28 +1,11 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TablePartition : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass TablePartition : Microsoft.UI.Xaml.Controls.UserControl
     {
         TablePartition();
-
-        String LabelPartitionHVID;
-        String ValuePartitionHVID;
-        String LabelPartitionID;
-        String ValuePartitionID;
-        String LabelPartitionName;
-        String ValuePartitionName;
-        String LabelPartitionType;
-        String ValuePartitionType;
-        String LabelPartitionAccessLvl;
-        String ValuePartitionAccessLvl;
-        String LabelPartitionSize;
-        String ValuePartitionSize;
-        String LabelPartitionUsed;
-        String ValuePartitionUsed;
-        String LabelPartitionFormattedDATETIME;
-        String ValuePartitionFormattedDATETIME;
-        String LabelPartitionOpenedDATETIME;
-        String ValuePartitionOpenedDATETIME;
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

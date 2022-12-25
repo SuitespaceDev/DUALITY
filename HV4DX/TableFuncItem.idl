@@ -4,6 +4,8 @@ namespace HV4DX
     runtimeclass TableFuncItem : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableFuncItem();
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

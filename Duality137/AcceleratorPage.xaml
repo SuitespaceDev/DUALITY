@@ -12,7 +12,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DLVL1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -22,22 +21,7 @@
         <StackPanel>
 
             <HV4DX:TableAccelerator
-                LabelAcceleratorManufacturer="ACCELERATOR MANUFACTURER"
-                ValueAcceleratorManufacturer="{StaticResource xValueLvl1AcceleratorManufacturer}"
-                LabelAcceleratorModel="ACCELERATOR MODEL"
-                ValueAcceleratorModel="{StaticResource xValueLvl1AcceleratorModel}"
-                LabelAcceleratorHVID="ACCELERATOR HVID"
-                ValueAcceleratorHVID="{StaticResource xValueLvl1AcceleratorHVID}"
-                LabelAcceleratorID="ACCELERATOR ID"
-                ValueAcceleratorID="{StaticResource xValueLvl1AcceleratorID}"
-                LabelAcceleratorCoreClock="ACCELERATOR CORE CLOCK"
-                ValueAcceleratorCoreClock="{StaticResource xValueLvl1AcceleratorCoreClock}"
-                LabelAcceleratorMemory="ACCELERATOR MEMORY"
-                ValueAcceleratorMemory="{StaticResource xValueLvl1AcceleratorMemory}"
-                LabelAcceleratorMemoryClock="ACCELERATOR MEMORY CLOCK"
-                ValueAcceleratorMemoryClock="{StaticResource xValueLvl1AcceleratorMemoryClock}"
-                LabelAcceleratorMemorySize="ACCELERATOR MEMORY (kB)"
-                ValueAcceleratorMemorySize="{StaticResource xValueLvl1AcceleratorMemorySize}"/>
+                x:Name="TableAcceleratorInterfaces"/>
 
             <HV4DX:UserDivider/>
 

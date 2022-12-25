@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "TableProfile.g.h"
+#include "TableKey.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
@@ -11,10 +11,18 @@ namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::HV4DX::implementation
 {
-    struct TableProfile : TableProfileT<TableProfile>
+    struct TableKey : TableKeyT<TableKey>
     {
     public:
-        TableProfile();
+        TableKey();
+
+    public:
+        winrt::hstring ValueKey();
+
+        void ValueKey(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_key{};
 
     public:
         winrt::hstring LabelProfileHVID();
@@ -72,7 +80,7 @@ namespace winrt::HV4DX::implementation
 
 namespace winrt::HV4DX::factory_implementation
 {
-    struct TableProfile : TableProfileT<TableProfile, implementation::TableProfile>
+    struct TableKey : TableKeyT<TableKey, implementation::TableKey>
     {
     };
 }

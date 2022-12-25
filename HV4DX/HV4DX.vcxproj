@@ -113,10 +113,8 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <PostBuildEvent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		  xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DX\HV4DX\HV4DX.xaml" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"
-		  xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DX\HV4DX\*.xbf" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"
-	  </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DX\HV4DX\HV4DX.xaml" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"
+;xcopy /y "C:\Users\rebek\Source\DUALITY\x64\Debug\HV4DX\HV4DX\*.*" "C:\Users\rebek\Source\DUALITY\x64\Debug\Duality137\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
@@ -198,8 +196,8 @@
       <DependentUpon>TableProcessingCore.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableProfile.xaml.h">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <ClInclude Include="TableKey.xaml.h">
+      <DependentUpon>TableKey.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableComPort.xaml.h">
@@ -367,8 +365,8 @@
       <DependentUpon>TableProcessingCore.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableProfile.xaml.cpp">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <ClCompile Include="TableKey.xaml.cpp">
+      <DependentUpon>TableKey.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableComPort.xaml.cpp">
@@ -537,8 +535,8 @@
       <DependentUpon>TableProcessingCore.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableProfile.idl">
-      <DependentUpon>TableProfile.xaml</DependentUpon>
+    <Midl Include="TableKey.idl">
+      <DependentUpon>TableKey.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableComPort.idl">
@@ -688,7 +686,7 @@
     <Page Include="TableProcessingCore.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableProfile.xaml">
+    <Page Include="TableKey.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableComPort.xaml">

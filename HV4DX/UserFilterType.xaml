@@ -59,8 +59,7 @@
                     VerticalAlignment="Stretch"
                     Padding="3,3,3,3"      
                     FontWeight="Medium"
-                    SelectedIndex="0"
-                    SelectedItem="{x:Bind CurrentItem, Mode=OneWay}"
+                    SelectedIndex="{x:Bind CurrentItem, Mode=OneWay}"
                     ItemsSource="{x:Bind ItemList, Mode=OneWay}"
                     IsEditable="False"/>
 
@@ -79,8 +78,7 @@
                     VerticalAlignment="Stretch"
                     Padding="3,3,3,3"      
                     FontWeight="Medium"
-                    SelectedIndex="0"
-                    SelectedItem="{x:Bind FilterType, Mode=TwoWay}"
+                    SelectedIndex="{x:Bind FilterType, Mode=TwoWay}"
                     ItemsSource="{x:Bind FilterList, Mode=OneWay}"
                     IsEditable="False"/>
 

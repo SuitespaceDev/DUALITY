@@ -7,7 +7,11 @@ namespace winrt::HV4DX::implementation
 {
     struct TableRandomMemory : TableRandomMemoryT<TableRandomMemory>
     {
+    public:
         TableRandomMemory();
+
+    public:
+        void SelectDefaultFromTables(winrt::hstring const&);
 
     };
 

@@ -6,22 +6,7 @@ namespace HV4DX
     {
         TableRuntimeClass();
     
-        String LabelRTCHVID;
-        String ValueRTCHVID;
-        String LabelRTCMMM;
-        String ValueRTCMIL;
-        String ValueRTCMAJ;
-        String ValueRTCMIN;
-        String LabelRTCMaxPath;
-        String ValueRTCMaxPath;
-        String LabelRTCNamespace;
-        String ValueRTCNamespace;
-        String LabelRTC;
-        String ValueRTC;
-        String LabelRTCCompiled;
-        String ValueRTCCompiled;
-        String LabelRTCDLL;
-        String ValueRTCDLL;
+        void SelectDefaultFromTables(String uid);
 
     }
 

@@ -22,22 +22,7 @@
         <StackPanel>
 
             <HV4DX:TableRuntimeClass
-                LabelRTCHVID="MODULE HVID"
-                ValueRTCHVID="{StaticResource xValueMetricRTCHVID}"
-                LabelRTCMMM="MODULE MMM"
-                ValueRTCMIL="{StaticResource xValueMetricRTCMIL}"
-                ValueRTCMAJ="{StaticResource xValueMetricRTCMAJ}"
-                ValueRTCMIN="{StaticResource xValueMetricRTCMIN}"
-                LabelRTCMaxPath="MODULE NAME"
-                ValueRTCMaxPath="{StaticResource xValueMetricRTCMaxPath}"
-                LabelRTCNamespace="RUNTIME NAMESPACE"
-                ValueRTCNamespace="{StaticResource xValueMetricRTCNamespace}"
-                LabelRTC="RUNTIME CLASS"
-                ValueRTC="{StaticResource xValueMetricRTC}"
-                LabelRTCCompiled="MODULE COMPILE DATE"
-                ValueRTCCompiled="{StaticResource xValueMetricRTCCompiled}"
-                LabelRTCDLL="MODULE DLL"
-                ValueRTCDLL="{StaticResource xValueMetricRTCDLL}"/>
+                x:Name="TableMetrics"/>
 
             <HV4DX:UserDivider/>
 

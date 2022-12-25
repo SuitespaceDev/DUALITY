@@ -14,12 +14,6 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableDrive::TableKey()
-    {
-        return table_key;
-
-    }
-
     void TableDrive::SelectDefaultFromTables(winrt::hstring const& e)
     {
 

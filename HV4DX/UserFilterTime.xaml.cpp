@@ -381,6 +381,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
+	void UserFilterTime::Label(winrt::hstring const& e)
+	{
+		label = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+		return;
+
+	}
+
 	WFITT::IObservableVector<winrt::hstring> UserFilterTime::Months()
 	{
 
@@ -414,14 +424,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedMonth()
+	int32_t UserFilterTime::SelectedMonth()
 	{
 		
 		return selected_month;
 
 	}
 
-	void UserFilterTime::SelectedMonth(uint32_t const& e)
+	void UserFilterTime::SelectedMonth(int32_t const& e)
 	{
 		selected_month = e;
 
@@ -464,14 +474,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedDay()
+	int32_t UserFilterTime::SelectedDay()
 	{
 
 		return selected_day;
 
 	}
 
-	void UserFilterTime::SelectedDay(uint32_t const& e)
+	void UserFilterTime::SelectedDay(int32_t const& e)
 	{
 		selected_day = e;
 
@@ -514,14 +524,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedYear()
+	int32_t UserFilterTime::SelectedYear()
 	{
 
 		return selected_year;
 
 	}
 
-	void UserFilterTime::SelectedYear(uint32_t const& e)
+	void UserFilterTime::SelectedYear(int32_t const& e)
 	{
 		selected_year = e;
 
@@ -564,14 +574,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedHour()
+	int32_t UserFilterTime::SelectedHour()
 	{
 
 		return selected_hour;
 
 	}
 
-	void UserFilterTime::SelectedHour(uint32_t const& e)
+	void UserFilterTime::SelectedHour(int32_t const& e)
 	{
 		selected_hour = e;
 
@@ -614,14 +624,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedMinute()
+	int32_t UserFilterTime::SelectedMinute()
 	{
 
 		return selected_minute;
 
 	}
 
-	void UserFilterTime::SelectedMinute(uint32_t const& e)
+	void UserFilterTime::SelectedMinute(int32_t const& e)
 	{
 		selected_minute = e;
 
@@ -664,14 +674,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedSecond()
+	int32_t UserFilterTime::SelectedSecond()
 	{
 
 		return selected_second;
 
 	}
 
-	void UserFilterTime::SelectedSecond(uint32_t const& e)
+	void UserFilterTime::SelectedSecond(int32_t const& e)
 	{
 		selected_second = e;
 
@@ -714,14 +724,14 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	uint32_t UserFilterTime::SelectedOperator()
+	int32_t UserFilterTime::SelectedOperator()
 	{
 
 		return selected_operator;
 
 	}
 
-	void UserFilterTime::SelectedOperator(uint32_t const& e)
+	void UserFilterTime::SelectedOperator(int32_t const& e)
 	{
 		selected_operator = e;
 

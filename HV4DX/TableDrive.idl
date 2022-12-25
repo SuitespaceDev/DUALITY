@@ -5,8 +5,6 @@ namespace HV4DX
     {
         TableDrive();
     
-        String TableKey{ get; };
-	
         void SelectDefaultFromTables(String uid);
 
     }

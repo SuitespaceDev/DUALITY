@@ -21,58 +21,58 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterItem
+            x:Name="BuildTheme"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildTheme}"
-            SelectedItem="{x:Bind IndexBuildTheme}"/>
+            Label="Theme"/>
 
         <local:UserFilterItem
+            x:Name="BuildUIScale"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildUIScale}"
-            SelectedItem="{x:Bind IndexBuildUIScale}"/>
+            Label="UI Scale"/>
 
         <local:UserFilterItem
+            x:Name="BuildAntiAliasing"
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildAntiAliasing}"
-            SelectedItem="{x:Bind IndexBuildAntiAliasing}"/>
+            Label="Anti Aliasing"/>
 
         <local:UserFilterItem
+            x:Name="BuildFullScreen"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildFullScreen}"
-            SelectedItem="{x:Bind IndexBuildFullScreen}"/>
-        
+            Label="Full Screen"/>
+
         <local:UserFilterItem
+            x:Name="BuildResolution"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildResolution}"
-            SelectedItem="{x:Bind IndexBuildResolution}"/>
-        
+            Label="Resolution"/>
+
         <local:UserFilterItem
+            x:Name="BuildRefreshRate"
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildRefreshRate}"
-            SelectedItem="{x:Bind IndexBuildRefreshRate}"/>
-     
+            Label="Refresh Rate"/>
+
         <local:UserFilterItem
+            x:Name="BuildFont"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildFont}"
-            SelectedItem="{x:Bind IndexBuildFont}"/>
-        
+            Label="Font"/>
+
         <local:UserFilterItem
+            x:Name="BuildFontSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildFontSize}"
-            SelectedItem="{x:Bind IndexBuildFontSize}"/>
-        
+            Label="Font Size"/>
+
         <local:UserFilterItem
+            x:Name="BuildFontWeight"
             Grid.Column="2" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelBuildFontWeight}"
-            SelectedItem="{x:Bind IndexBuildFontWeight}"/>
+            Label="Font Weight"/>
         
     </Grid>
 

@@ -19,6 +19,8 @@ namespace winrt::HV4DX::implementation
 	public:
 		winrt::hstring Label();
 
+		void Label(winrt::hstring const&);
+
 	private:
 		winrt::hstring label{};
 
@@ -27,12 +29,12 @@ namespace winrt::HV4DX::implementation
 
 		void DecrementIndex(WF::IInspectable const&, MUX::RoutedEventArgs const&);
 
-		uint32_t SelectedItem();
+		int32_t SelectedItem();
 
-		void SelectedItem(uint32_t const&);
+		void SelectedItem(int32_t const&);
 
 	private:
-		uint32_t selected_item{};
+		int32_t selected_item{};
 
 	public:
 		WFITT::IObservableVector<winrt::hstring> ItemList();

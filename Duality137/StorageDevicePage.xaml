@@ -20,41 +20,8 @@
 
         <StackPanel>
 
-            <HV4DX:TableStorage            
-                LabelDriveManufacturer="DRIVE MANUFACTURER"
-                ValueDriveManufacturer="Samsung"
-                LabelDriveHVID="DRIVE HVID"
-                ValueDriveHVID="{}{D8FEFE37-E148-4AC5-89B7-5D6D27AFFF99}"
-                LabelDriveMaxPath="DRIVE NAME"
-                ValueDriveMaxPath="Drive 0"
-                LabelDriveType="DRIVE TYPE"
-                ValueDriveType="NVMe SSD"
-                LabelDriveSize="DRIVE SIZE (kB)"
-                ValueDriveSize="536870912"
-                LabelDriveUsed="DRIVE USED"
-                ValueDriveUsed="134217728">
-                <HV4DX:TableStorage.ItemList>
-                    <HV4DX:TablePartition
-                        LabelPartitionHVID="PARTITION HVID"
-                        ValuePartitionHVID="{}{B2EBB469-797F-4CC7-BADF-83DF88C34F20}"
-                        LabelPartitionID="PARTITION ID"
-                        ValuePartitionID=""
-                        LabelPartitionName="PARTITION NAME"
-                        ValuePartitionName="Local Disk"
-                        LabelPartitionType="PARTITION FILE SYSTEM"
-                        ValuePartitionType="NTFS"
-                        LabelPartitionAccessLvl="PARTITION ACCESS LVL"
-                        ValuePartitionAccessLvl="LVL 1"
-                        LabelPartitionSize="PARTITION SIZE (kB)"
-                        ValuePartitionSize="536,870,912"
-                        LabelPartitionUsed="PARTITION USED (kB)"
-                        ValuePartitionUsed="134,217,728"
-                        LabelPartitionFormattedDATETIME="PARTITION FORMATTED"
-                        ValuePartitionFormattedDATETIME="01/01/2023 00:00:00"
-                        LabelPartitionOpenedDATETIME="PARTITION ACCESSED"
-                        ValuePartitionOpenedDATETIME="01/01/2023 00:00:00"/>
-                </HV4DX:TableStorage.ItemList>                
-            </HV4DX:TableStorage>
+            <HV4DX:TableStorage
+                x:Name="TableStorageDevice"/>
 
             <HV4DX:UserDivider
              Grid.Column="0" Grid.ColumnSpan="2"

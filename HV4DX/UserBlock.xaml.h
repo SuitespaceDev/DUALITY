@@ -20,6 +20,8 @@ namespace winrt::HV4DX::implementation
     public:
         winrt::hstring Label();
 
+        void Label(winrt::hstring const&);
+
     private:
         winrt::hstring label{};
 

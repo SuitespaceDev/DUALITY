@@ -4,20 +4,9 @@ namespace HV4DX
     runtimeclass TableIttItem : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableIttItem();
-    /*
-        String LabelIttLibraryHVID;
-        String ValueIttLibraryHVID;
-        String LabelIttLibraryID;
-        String ValueIttLibraryID;
-        String LabelIttLibraryMMM;
-        String ValueIttLibraryMMM;
-        String LabelIttLibraryName;
-        String ValueIttLibraryName;
-        String LabelIttLibraryCompiledDT;
-        String ValueIttLibraryCompiledDT;
-        String LabelIttLibraryNamespace;
-        String ValueIttLibraryNamespace;
-        */
+ 
+        void SelectDefaultFromTables(String uid);
+
     }
 
 }

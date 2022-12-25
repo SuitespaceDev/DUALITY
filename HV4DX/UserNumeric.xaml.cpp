@@ -21,6 +21,16 @@ namespace winrt::HV4DX::implementation
 
 	}
 
+	void UserNumeric::Label(winrt::hstring const& e)
+	{
+		label = e;
+
+		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+		return;
+
+	}
+
 	winrt::hstring UserNumeric::Value()
 	{
 

@@ -9,6 +9,9 @@ namespace winrt::HV4DX::implementation
     public:
         TableContrLibrary();
 
+    public:
+        void SelectDefaultFromTables(winrt::hstring const&);
+
     };
 
 }

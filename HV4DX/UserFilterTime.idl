@@ -5,27 +5,27 @@ namespace HV4DX
     {
         UserFilterTime();
 
-        String Label{ get; };
+        String Label;
 
-        UInt32 SelectedMonth;
+        Int32 SelectedMonth;
         Windows.Foundation.Collections.IObservableVector<String> Months{ get; };
 
-        UInt32 SelectedDay;
+        Int32 SelectedDay;
         Windows.Foundation.Collections.IObservableVector<String> Days{ get; };
 
-        UInt32 SelectedYear;
+        Int32 SelectedYear;
         Windows.Foundation.Collections.IObservableVector<String> Years{ get; };
 
-        UInt32 SelectedHour;
+        Int32 SelectedHour;
         Windows.Foundation.Collections.IObservableVector<String> Hours{ get; };
 
-        UInt32 SelectedMinute;
+        Int32 SelectedMinute;
         Windows.Foundation.Collections.IObservableVector<String> Minutes{ get; };
 
-        UInt32 SelectedSecond;
+        Int32 SelectedSecond;
         Windows.Foundation.Collections.IObservableVector<String> Seconds{ get; };
 
-        UInt32 SelectedOperator;
+        Int32 SelectedOperator;
         Windows.Foundation.Collections.IObservableVector<String> Operators{ get; };
 
     }

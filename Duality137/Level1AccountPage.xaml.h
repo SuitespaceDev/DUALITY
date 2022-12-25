@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include "winrt/HV4DX.h"
+
 #include "Level1AccountPage.g.h"
 
 namespace winrt::Duality137::implementation

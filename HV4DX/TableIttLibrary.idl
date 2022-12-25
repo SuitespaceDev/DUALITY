@@ -5,26 +5,9 @@ namespace HV4DX
     runtimeclass TableIttLibrary : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableIttLibrary();
-    /*
-        String LabelIttLibraryHVID;
-        String ValueIttLibraryHVID;
-        String LabelIttLibraryMMM;
-        String ValueIttLibraryMMM;
-        String LabelIttLibraryName;
-        String ValueIttLibraryName;
-        String LabelIttLibraryCompiledDT;
-        String ValueIttLibraryCompiledDT;
-        String LabelIttLibraryDll;
-        String ValueIttLibraryDll;
-        String LabelIttLibraryNamespace;
-        String ValueIttLibraryNamespace;
+ 
+        void SelectDefaultFromTables(String uid);
 
-        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> ListSupportedInterface;
-
-        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> ListSupportedExtArgs;
-
-        Windows.Foundation.Collections.IObservableVector<HV4D.IHV4DRETURN> ListItterators;
-        */
     }
 
 }

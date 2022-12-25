@@ -6,24 +6,8 @@ namespace HV4DX
     {
         TableWindow();
     
-        String LabelBuildTheme;
-        String ValueBuildTheme;
-        String LabelBuildUIScale;
-        String ValueBuildUIScale;
-        String LabelBuildAntiAliasing;
-        String ValueBuildAntiAliasing;
-        String LabelBuildFullScreen;
-        String ValueBuildFullScreen;
-        String LabelBuildResolution;
-        String ValueBuildResolution;
-        String LabelBuildRefreshRate;
-        String ValueBuildRefreshRate;
-        String LabelBuildFont;
-        String ValueBuildFont;
-        String LabelBuildFontSize;
-        String ValueBuildFontSize;
-        String LabelBuildFontWeight;
-        String ValueBuildFontWeight;
+        void SelectDefaultFromTables(String uid);
+
     }
 
 }

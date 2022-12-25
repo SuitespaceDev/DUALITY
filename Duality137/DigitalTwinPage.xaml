@@ -12,7 +12,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DLVL1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,30 +19,9 @@
     <ScrollViewer>
 
         <StackPanel>
-            
+
             <HV4DX:TableDigitalTwin
-                LabelEnterpriseName="ENTERPRISE"
-                ValueEnterpriseName="{StaticResource xValueEnterpriseName}"
-                LabelEnterpriseID="ENTERPRISE ID"
-                ValueEnterpriseID="{StaticResource xValueEnterpriseID}"
-                LabelBuildName="BUILD"
-                ValueBuildName="{StaticResource xValueEnterpriseBuildName}"
-                LabelBuildID="BUILD ID"
-                ValueBuildID="{StaticResource xValueEnterpriseBuildID}"
-                LabelBuildMMM="BUILD VERSION"
-                ValueBuildMMM="{StaticResource xValueEnterpriseBuildMMM}"
-                LabelBuildDate="BUILD DATETIME"
-                ValueBuildDate="{StaticResource xValueEnterpriseBuildDate}"
-                LabelLocalization="LOCALIZATION"
-                LabelTimeZone="TIMEZONE"
-                LabelKeyboard="KEYBOARD LAYOUT"
-                LabelWindowsTarget="WINDOWS TARGET"
-                LabelExecutableDir="EXECUTABLE DIRECTORY"
-                ValueExecutableDir="{StaticResource xValueEnterpriseBuildExecutableDir}"
-                LabelAssetsDir="ASSETS DIRECTORY"
-                ValueAssetsDir="{StaticResource xValueEnterpriseBuildAssetsDir}"
-                LabelXamlDir="XAML DIRECTORY"
-                ValueXamlDir="{StaticResource xValueEnterpriseBuildXamlDir}"/>
+                x:Name="TableEnterpriseAccount"/>
 
             <HV4DX:UserDivider/>
 

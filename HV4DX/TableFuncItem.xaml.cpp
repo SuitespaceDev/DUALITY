@@ -14,4 +14,14 @@ namespace winrt::HV4DX::implementation
 
     }
 
+    void TableFuncItem::SelectDefaultFromTables(winrt::hstring const& e)
+    {
+
+
+
+
+        return;
+
+    }
+
 }

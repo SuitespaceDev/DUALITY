@@ -5,7 +5,7 @@ namespace HV4DX
     {
         UserDateTime();
     
-        String Label{ get; };
+        String Label;
         String Placeholder{ get; };
         String Value;
 

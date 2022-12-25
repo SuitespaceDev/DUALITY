@@ -17,10 +17,12 @@ namespace winrt::HV4DX::implementation
         TableAccountNew();
 
     public:
-        winrt::hstring TableKey();
+        winrt::hstring ValueKey();
+
+        void ValueKey(winrt::hstring const&);
 
     private:
-        winrt::hstring table_key{};
+        winrt::hstring value_key{};
 
     public:
         void SelectDefaultFromTables(winrt::hstring const&);

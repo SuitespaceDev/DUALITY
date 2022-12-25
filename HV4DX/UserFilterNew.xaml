@@ -61,6 +61,7 @@
 
                 <ComboBox 
                     Foreground="Black"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"

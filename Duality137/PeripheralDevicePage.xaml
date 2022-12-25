@@ -21,20 +21,7 @@
         <StackPanel>
 
             <HV4DX:TablePeripheralDevice
-                LabelPeripheralManufacturer="PERIPHERAL MANUFACTURER"
-                ValuePeripheralManufacturer=""
-                LabelPeripheralModel="PERIPHERAL MODEL"
-                ValuePeripheralModel=""
-                LabelPeripheralHVID="PERIPHERAL HVID"
-                ValuePeripheralHVID=""
-                LabelPeripheralID="PERIPHERAL ID"
-                ValuePeripheralID=""
-                LabelPeripheralAcceleratorHVID="ACCELERATOR HVID"
-                ValuePeripheralAcceleratorHVID=""
-                LabelPeripheralAcceleratorID="ACCELERATOR ID"
-                ValuePeripheralAcceleratorID=""
-                LabelPeripheralAcceleratorComPort="ACCELERATOR COMPORT"
-                ValuePeripheralAcceleratorComPort=""/>
+                x:Name="TablePeripheralDevices"/>
 
             <HV4DX:UserDivider/>
 

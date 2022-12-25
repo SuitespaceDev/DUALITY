@@ -223,9 +223,6 @@
     <Filter Include="k. TableProcess\TableRuntimeClass">
       <UniqueIdentifier>{41ce206b-4fc1-42a4-a758-8023c1966dc7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="c. TableProfile">
-      <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="g. TableIO\TableAccelerator">
       <UniqueIdentifier>{ed9f9966-c34e-4c90-8789-dcd3947a85e5}</UniqueIdentifier>
     </Filter>
@@ -360,6 +357,9 @@
     </Filter>
     <Filter Include="UserFilters\UserFilterType">
       <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c. TableKey">
+      <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -499,8 +499,8 @@
     <Page Include="TablePartition.xaml">
       <Filter>g. TableIO\TableStorage\TablePartition</Filter>
     </Page>
-    <Page Include="TableProfile.xaml">
-      <Filter>c. TableProfile</Filter>
+    <Page Include="TableKey.xaml">
+      <Filter>c. TableKey</Filter>
     </Page>
     <Page Include="TableAccelerator.xaml">
       <Filter>g. TableIO\TableAccelerator</Filter>

@@ -5,8 +5,8 @@ namespace HV4DX
     {
         UserFilterNew();
     
-        String Label{ get; };
-        UInt32 SelectedItem;
+        String Label;
+        Int32 SelectedItem;
         Windows.Foundation.Collections.IObservableVector<String> ItemList{ get; };
 
     }

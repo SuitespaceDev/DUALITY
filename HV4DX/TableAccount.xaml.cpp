@@ -14,9 +14,17 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableAccount::TableKey()
+    winrt::hstring TableAccount::ValueKey()
     {
-        return table_key;
+        return value_key;
+
+    }
+
+    void TableAccount::ValueKey(winrt::hstring const& e)
+    {
+        value_key = e;
+
+        return;
 
     }
 

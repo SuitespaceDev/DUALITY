@@ -4,6 +4,8 @@ namespace HV4DX
     runtimeclass TableContrItem : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableContrItem();
+    
+        void SelectDefaultFromTables(String uid);
 
     }
 

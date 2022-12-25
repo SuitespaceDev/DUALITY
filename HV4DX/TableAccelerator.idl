@@ -1,29 +1,11 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TableAccelerator : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass TableAccelerator : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableAccelerator();
     
-        String LabelAcceleratorManufacturer;
-        String ValueAcceleratorManufacturer; 
-        String LabelAcceleratorModel;
-        String ValueAcceleratorModel;
-        String LabelAcceleratorHVID;
-        String IndexAcceleratorHVID;
-        String LabelAcceleratorID;
-        UInt32 IndexAcceleratorID;
-        String LabelAcceleratorMemory;
-        String ValueAcceleratorMemory;
-        String LabelAcceleratorCoreClock;
-        UInt32 IndexAcceleratorCoreClock;
-        String LabelAcceleratorMemoryClock;
-        UInt32 IndexAcceleratorMemoryClock;
-        String LabelAcceleratorMemorySize;
-        String ValueAcceleratorMemorySize;
-
-        Microsoft.UI.Xaml.Controls.TextBlock ListComPortSelectedProtocol;
-        Windows.Foundation.Collections.IObservableVector<Microsoft.UI.Xaml.Controls.TextBlock> ListComPortProtocol;
+        void SelectDefaultFromTables(String uid);
 
     }
 

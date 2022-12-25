@@ -21,9 +21,19 @@ namespace winrt::HV4DX::implementation
 
     }
 
+    void UserFilterItem::Label(winrt::hstring const& e)
+    {
+        label = e;
+
+        property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"Label" });
+
+        return;
+
+    }
+
     void UserFilterItem::IncrementIndex(WF::IInspectable const&, MUX::RoutedEventArgs const&)
     {
-        if (selected_item < (item_list.Size() - 1))
+        if ((uint32_t)selected_item < (item_list.Size() - 1))
         {
             selected_item++;
 
@@ -47,14 +57,14 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    uint32_t UserFilterItem::SelectedItem()
+    int32_t UserFilterItem::SelectedItem()
     { 
         
         return selected_item;
     
     }
 
-    void UserFilterItem::SelectedItem(uint32_t const& e)
+    void UserFilterItem::SelectedItem(int32_t const& e)
     {
         selected_item = e;
 

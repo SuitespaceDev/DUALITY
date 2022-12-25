@@ -5,6 +5,8 @@ namespace HV4DX
     {
         TableFuncLibrary();
     
+        void SelectDefaultFromTables(String uid);
+
     }
 
 }

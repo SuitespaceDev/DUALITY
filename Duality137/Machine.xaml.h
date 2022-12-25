@@ -7,6 +7,7 @@
 
 #include "winrt/HV4D.h"
 #include "winrt/HV4DTBASIC.h"
+#include "winrt/HV4DX.h"
 
 #include "../CHV4DTBASIC/CHV4DHVID.h"
 #include "../CHV4DTBASIC/CHV4DMAXPATH.h"

@@ -9,6 +9,9 @@ namespace winrt::HV4DX::implementation
     public:
         TableIttItem();
 
+    public:
+        void SelectDefaultFromTables(winrt::hstring const&);
+
     };
 }
 

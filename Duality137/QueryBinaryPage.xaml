@@ -21,22 +21,7 @@
         <StackPanel>
 
             <HV4DX:TableRuntimeClass
-                LabelRTCHVID="MODULE HVID"
-                ValueRTCHVID=""
-                LabelRTCMMM="MODULE MMM"
-                ValueRTCMIL=""
-                ValueRTCMAJ=""
-                ValueRTCMIN=""
-                LabelRTCMaxPath="MODULE NAME"
-                ValueRTCMaxPath=""
-                LabelRTCNamespace="RUNTIME NAMESPACE"
-                ValueRTCNamespace=""
-                LabelRTC="RUNTIME CLASS"
-                ValueRTC=""
-                LabelRTCCompiled="MODULE COMPILE DATE"
-                ValueRTCCompiled=""
-                LabelRTCDLL="MODULE DLL"
-                ValueRTCDLL=""/>
+                x:Name="TableQueryBinary"/>
 
             <HV4DX:UserDivider/>
 

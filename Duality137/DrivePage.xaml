@@ -22,28 +22,7 @@
         <StackPanel>
 
             <HV4DX:TableDrive
-                LabelPartitionHVID="PARTITION HVID"
-                ValuePartitionHVID="{StaticResource xValuePartitionHVID}"
-                LabelPartitionName="PARTITION NAME"
-                LabelPartitionType="PARTITION TYPE"
-                LabelPartitionCreatedDATETIME="PARTITION CREATED DATETIME"
-                ValuePartitionCreatedDATETIME="{StaticResource xValuePartitionCreatedDATETIME}"
-                LabelPartitionSavedDATETIME="PARTITION SAVED DATETIME"
-                ValuePartitionSavedDATETIME="{StaticResource xValuePartitionSavedDATETIME}"
-                LabelPartitionOpenedDATETIME="PARTITION OPENED DATETIME"
-                ValuePartitionOpenedDATETIME="{StaticResource xValuePartitionOpenedDATETIME}"
-                LabelReserved="RESERVED (kB)"
-                ValueReserved="{StaticResource xValuePartitionReserved}"
-                LabelAllocated="ALLOCATED (kB)"
-                ValueAllocated="{StaticResource xValuePartitionAllocated}"
-                LabelClusterSize="CLUSTER SIZE (kB)"
-                ValueClusterSize="{StaticResource xValuePartitionClusterSize}"
-                LabelPageSize="PAGE SIZE (kB)"
-                ValuePageSize="{StaticResource xValuePartitionPageSize}"
-                LabelAttSize="ATTRIBUTE SIZE (kB)"
-                ValueAttSize="{StaticResource xValuePartitionAttributeSize}"
-                LabelWhitespaceEncryption="WHITESPACE ENCRYPTION"
-                ValueWhitespaceEncryption="{StaticResource xValueWhitespaceEncryption}"/>
+                x:Name="TableDigitalTwinDrive"/>
 
             <HV4DX:UserDivider/>
 

@@ -1,4 +1,4 @@
-﻿<Page
+﻿<UserControl
     x:Class="HV4DX.TableDrive"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -22,84 +22,78 @@
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserBlock
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="Accounts:"
-            Value="TableKey"/>
-
         <local:UserFilterNew 
-            x:Name="PartitionHVID"
+            x:Name="DriveHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="HVID"/>
+            Label="Drive HVID"/>
 
         <local:UserFilterItem 
-            x:Name="PartitionName"
+            x:Name="DriveName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="Name"/>
 
         <local:UserFilterItem 
-            x:Name="PartitionType"
+            x:Name="DrivePartition"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="Partition Type"/>
+            Label="Partition"/>
 
         <local:UserBlock 
-            x:Name="PartitionCreated"
+            x:Name="DriveCreated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="DateTime Created"/>
 
         <local:UserBlock 
-            x:Name="PartitionSaved"
+            x:Name="DriveUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="DateTime Saved"/>
+            Label="DateTime Updated"/>
 
         <local:UserBlock 
-            x:Name="PartitionOpened"
+            x:Name="DriveOpened"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="DateTime Opened" />
 
         <local:UserEntry 
-            x:Name="PartitionReserved"
+            x:Name="DriveReserved"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Reserved"/>
 
         <local:UserEntry 
-            x:Name="PartitionAllocated"
+            x:Name="DriveAllocated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Allocated" />
 
         <local:UserEntry 
-            x:Name="PartitionClusterSize"
+            x:Name="DriveClusterSize"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
             Label="Cluster Size" />
 
         <local:UserEntry 
-            x:Name="PartitionPageSize"
+            x:Name="DrivePageSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
             Label="Page Size"/>
 
         <local:UserEntry 
-            x:Name="PartitionAttSize"
+            x:Name="DriveAttSize"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
             Label="Attribute Size"/>
 
         <local:UserEntry 
-            x:Name="PartitionWhitespaceEncryption"
+            x:Name="DriveWhitespaceEncryption"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
             Label="Whitespace Encryption" />
 
     </Grid>
 
-</Page>
+</UserControl>

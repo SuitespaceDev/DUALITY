@@ -29,46 +29,46 @@
         </Grid.RowDefinitions>
 
         <local:UserBlock 
+            x:Name="PeripheralManufacturer"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralManufacturer}"
-            Value="{x:Bind ValuePeripheralManufacturer}"/>
+            Label="Manufacturer"/>
 
         <local:UserBlock 
+            x:Name="PeripheralModel"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralModel}"
-            Value="{x:Bind ValuePeripheralModel}"/>
+            Label="Model"/>
 
         <local:UserFilterNew 
+            x:Name="PeripheralHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralHVID}" 
-            SelectedItem="{x:Bind IndexPeripheralHVID}"/>
+            Label="HVID"/>
 
         <local:UserFilterItem 
+            x:Name="PeripheralID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralID}" 
-            SelectedItem="{x:Bind IndexPeripheralID}"/>
+            Label="ID"/>
 
         <local:UserBlock 
+            x:Name="PeripheralAcceleratorHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralAcceleratorHVID}"
-            Value="{x:Bind ValuePeripheralAcceleratorHVID}"/>
+            Label="Accelerator HVID"/>
 
         <local:UserBlock 
+            x:Name="PeripheralAcceleratorID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralAcceleratorID}"
-            Value="{x:Bind ValuePeripheralAcceleratorID}"/>
+            Label="Accelerator ID"/>
 
         <local:UserBlock 
+            x:Name="PeripheralAcceleratorComPort"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPeripheralAcceleratorComPort}"
-            Value="{x:Bind ValuePeripheralAcceleratorComPort}"/>
+            Label="Accelerator ComPort"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"

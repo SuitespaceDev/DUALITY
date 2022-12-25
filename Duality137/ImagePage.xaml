@@ -22,36 +22,7 @@
         <StackPanel>
 
             <HV4DX:TableImage
-                LabelImageHVID="IMAGE HVID"
-                ValueImageHVID="{StaticResource xValueImageHVID}"
-                LabelImageName="IMAGE NAME"
-                LabelImageType="IMAGE TYPE"
-                LabelImageCreatedDATETIME="IMAGE CREATED DATETIME"
-                ValueImageCreatedDATETIME="{StaticResource xValueImageCreatedDATETIME}"
-                LabelImageSavedDATETIME="IMAGE SAVED DATETIME"
-                ValueImageSavedDATETIME="{StaticResource xValueImageSavedDATETIME}"
-                LabelImageOpenedDATETIME="IMAGE OPENED DATETIME"
-                ValueImageOpenedDATETIME="{StaticResource xValueImageOpenedDATETIME}"
-                LabelHV4DVOLOFF="$HV4D VOLUME OFFSET (kB)"
-                ValueHV4DVOLOFF="{StaticResource xValueHV4DVOLOFF}"
-                LabelHV4DVOLSZ="$HV4D VOLUME SIZE (kB)"
-                ValueHV4DVOLSZ="{StaticResource xValueHV4DVOLSZ}"
-                LabelHV4DSFTOFF="$HV4D FILE TABLE OFFSET (kB)"
-                ValueHV4DSFTOFF="{StaticResource xValueHV4DSFTOFF}"
-                LabelHV4DSFTSZ="$HV4D FILE TABLE SIZE (kB)"
-                ValueHV4DSFTSZ="{StaticResource xValueHV4DSFTSZ}"
-                LabelHV4DMIROFF="$HV4D MIRROR OFFSET (kB)"
-                ValueHV4DMIROFF="{StaticResource xValueHV4DMIROFF}"
-                LabelHV4DMIRSZ="$HV4D MIRROR SIZE (kB)"
-                ValueHV4DMIRSZ="{StaticResource xValueHV4DMIRSZ}"
-                LabelHV4DATTOFF="$HV4D ATTRIBUTE OFFSET (kB)"
-                ValueHV4DATTOFF="{StaticResource xValueHV4DATTOFF}"
-                LabelHV4DATTSZ="$HV4D ATTRIBUTE SIZE (kB)"
-                ValueHV4DATTSZ="{StaticResource xValueHV4DATTSZ}"
-                LabelHV4DBMPOFF="$HV4D BITMAP OFFSET (kB)"
-                ValueHV4DBMPOFF="{StaticResource xValueHV4DBMPOFF}"
-                LabelHV4DBMPSZ="$HV4D BITMAP SIZE (kB)"
-                ValueHV4DBMPSZ="{StaticResource xValueHV4DBMPSZ}"/>
+                x:Name="TableDigitalTwinImage"/>
 
             <HV4DX:UserDivider/>
 

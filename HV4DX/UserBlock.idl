@@ -6,7 +6,7 @@ namespace HV4DX
     {
         UserBlock();
 
-        String Label{ get; };
+        String Label;
         String Value;
 
     }

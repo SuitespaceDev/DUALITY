@@ -12,7 +12,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-                <ResourceDictionary Source="ms-appx:///DHV4DKERNEL.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -22,22 +21,7 @@
         <StackPanel>
 
             <HV4DX:TableRuntimeClass
-                LabelRTCHVID="MODULE HVID"
-                ValueRTCHVID="{StaticResource xValuePromptRTCHVID}"
-                LabelRTCMMM="MODULE MMM"
-                ValueRTCMIL="{StaticResource xValuePromptRTCMIL}"
-                ValueRTCMAJ="{StaticResource xValuePromptRTCMAJ}"
-                ValueRTCMIN="{StaticResource xValuePromptRTCMIN}"
-                LabelRTCMaxPath="MODULE NAME"
-                ValueRTCMaxPath="{StaticResource xValuePromptRTCMaxPath}"
-                LabelRTCNamespace="RUNTIME NAMESPACE"
-                ValueRTCNamespace="{StaticResource xValuePromptRTCNamespace}"
-                LabelRTC="RUNTIME CLASS"
-                ValueRTC="{StaticResource xValuePromptRTC}"
-                LabelRTCCompiled="MODULE COMPILE DATE"
-                ValueRTCCompiled="{StaticResource xValuePromptRTCCompiled}"
-                LabelRTCDLL="MODULE DLL"
-                ValueRTCDLL="{StaticResource xValuePromptRTCDLL}"/>
+                x:Name="TableCommandPrompt"/>
 
             <HV4DX:UserDivider/>
 

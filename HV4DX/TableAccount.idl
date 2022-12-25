@@ -5,7 +5,7 @@ namespace HV4DX
     {
         TableAccount();
 
-        String TableKey{ get; };
+        String ValueKey;
 	
         void SelectDefaultFromTables(String uid);
 

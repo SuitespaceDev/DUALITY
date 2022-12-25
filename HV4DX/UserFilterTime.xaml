@@ -100,7 +100,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -179,7 +179,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -258,7 +258,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -337,7 +337,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -416,7 +416,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -495,7 +495,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"
@@ -574,7 +574,7 @@
 
                 <ComboBox
                     Foreground="Black"  
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3"                  
                     FontWeight="Medium"
                     FontSize="12"

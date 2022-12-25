@@ -1,11 +1,11 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TableAccountNew : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass TableAccountNew : Microsoft.UI.Xaml.Controls.Page
     {
         TableAccountNew();
     
-        String TableKey{ get; };
+        String ValueKey;
 	
         void SelectDefaultFromTables(String uid);
 

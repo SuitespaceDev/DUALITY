@@ -21,48 +21,46 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterNew
+            x:Name="RTCHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCHVID}"
-            SelectedItem="{x:Bind IndexRTCHVID}"/>
+            Label="HVID"/>
 
         <local:UserFilterMMM
+            x:Name="RTCMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCMMM}"
-            ValueMIL="{x:Bind ValueRTCMIL}"
-            ValueMAJ="{x:Bind ValueRTCMAJ}"
-            ValueMIN="{x:Bind ValueRTCMIN}"/>
+            Label="MMM"/>
 
         <local:UserFilterItem
+            x:Name="RTCMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCMaxPath}"
-            SelectedItem="{x:Bind IndexRTCMaxPath}"/>
+            Label="Name"/>
 
         <local:UserBlock 
+            x:Name="RTCNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCNamespace}"
-            Value="{x:Bind ValueRTCNamespace}"/>
+            Label="Namespace"/>
 
         <local:UserBlock 
+            x:Name="RTC"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTC}"
-            Value="{x:Bind ValueRTC}"/>
+            Label="Runtime Class"/>
 
         <local:UserBlock 
+            x:Name="RTCCompiled"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCCompiled}"
-            Value="{x:Bind ValueRTCCompiled}"/>
+            Label="Compiled"/>
 
         <local:UserFile 
+            x:Name="RTCDLL"
             Grid.Column="0" Grid.ColumnSpan="2" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="{x:Bind LabelRTCDLL}"
-            Value="{x:Bind ValueRTCDLL}"/>
+            Label="DLL"/>
 
     </Grid>
 

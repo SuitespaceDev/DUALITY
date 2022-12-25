@@ -60,11 +60,12 @@
 
                 <ComboBox 
                     Foreground="Black"
+                    HorizontalAlignment="Stretch"
                     Padding="3,3,3,3" 
                     FontWeight="Medium"
                     FontSize="12" 
                     SelectedIndex="{x:Bind SelectedItem, Mode=TwoWay}"              
-                    ItemsSource="{x:Bind ItemList, Mode=TwoWay}"
+                    ItemsSource="{x:Bind ItemList, Mode=OneWay}"
                     IsEditable="{x:Bind IsEditable, Mode=TwoWay}"/>
 
             </Border>

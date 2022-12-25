@@ -21,58 +21,58 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterNew 
+            x:Name="PartitionHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionHVID}" 
-            SelectedItem="{x:Bind IndexPartitionHVID}"/>
+            Label="Partition HVID"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionID}" 
-            SelectedItem="{x:Bind IndexPartitionID}"/>
+            Label="ID"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionName}" 
-            SelectedItem="{x:Bind IndexPartitionName}"/>
+            Label="Name"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionFormat"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionType}"
-            SelectedItem="{x:Bind IndexPartitionType}"/>
+            Label="Type"/>
 
         <local:UserFilterItem 
+            x:Name="PartitionAccessLvl"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionAccessLvl}" 
-            SelectedItem="{x:Bind IndexPartitionAccessLvl}"/>
+            Label="Clearance Lvl"/>
 
         <local:UserBlock 
+            x:Name="PartitionSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionSize}" 
-            Value="{x:Bind ValuePartitionSize}"/>
+            Label="Size"/>
 
         <local:UserBlock 
+            x:Name="PartitionUsed"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionUsed}" 
-            Value="{x:Bind ValuePartitionUsed}"/>
+            Label="Used"/>
 
         <local:UserBlock 
+            x:Name="PartitionFormatted"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionFormattedDATETIME}"
-            Value="{x:Bind ValuePartitionFormattedDATETIME}"/>
+            Label="DateTime Formated"/>
 
         <local:UserBlock 
+            x:Name="PartitionAccessed"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="{x:Bind LabelPartitionOpenedDATETIME}" 
-            Value="{x:Bind ValuePartitionOpenedDATETIME}"/>
+            Label="Accessed"/>
 
     </Grid>
 
