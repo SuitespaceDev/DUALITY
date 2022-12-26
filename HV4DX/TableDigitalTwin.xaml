@@ -21,7 +21,6 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserEntry
@@ -32,74 +31,62 @@
 
         <local:UserEntry
             x:Name="EnterpriseHVID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
             Label="HVID"/>
 
-        <local:UserEntry
-            x:Name="BuildName"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
-            Label="Build Name"/>
-
-        <local:UserEntry
-            x:Name="BuildID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
-            Label="Build ID"/>
-
         <local:UserMMM
-            x:Name="BuildMMM"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="MMM"/>
+            x:Name="EnterpriseRegistered"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Registered"/>
 
         <local:UserBlock 
-            x:Name="BuildDate"
+            x:Name="EnterpriseUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="Build Date"/>
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Updated"/>
 
         <local:UserFilterItem
-            x:Name="Localization"
+            x:Name="EnterpriseLocalization"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1"
+            Grid.Row="2" Grid.RowSpan="1"
             Label="Localization"/>
 
         <local:UserFilterItem
-            x:Name="TimeZone"
+            x:Name="EnterpriseTimeZone"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1"
+            Grid.Row="2" Grid.RowSpan="1"
             Label="Time Zone"/>
 
         <local:UserFilterItem
-            x:Name="Keyboard"
+            x:Name="EnterpriseKeyboard"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1"
+            Grid.Row="3" Grid.RowSpan="1"
             Label="Keyboard"/>
 
         <local:UserFilterItem
-            x:Name="WindowsTarget"
+            x:Name="EnterpriseWindowsTarget"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1"
+            Grid.Row="3" Grid.RowSpan="1"
             Label="Windows Target"/>
 
         <local:UserFile
-            x:Name="ExecutableDir"
+            x:Name="EnterpriseExecutableDir"
             Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="5" Grid.RowSpan="1"
+            Grid.Row="4" Grid.RowSpan="1"
             Label="Executable Dir"/>
 
         <local:UserFile 
-            x:Name="AssetsDir"
+            x:Name="EnterpriseAssetsDir"
             Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="6" Grid.RowSpan="1"
+            Grid.Row="5" Grid.RowSpan="1"
             Label="Assets Dir"/>
 
         <local:UserFile
-            x:Name="XamlDir"
+            x:Name="EnterpriseXamlDir"
             Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="7" Grid.RowSpan="1"
+            Grid.Row="6" Grid.RowSpan="1"
             Label="Xaml Dir"/>
 
     </Grid>
