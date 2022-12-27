@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableSoftDrive : Microsoft.UI.Xaml.Controls.Page
+    {
+        TableSoftDrive();
+    
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

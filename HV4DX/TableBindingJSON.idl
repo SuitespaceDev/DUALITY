@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableBindingJSON : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableBindingJSON();
+
+    }
+
+}

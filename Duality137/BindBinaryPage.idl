@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass BindBinaryPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        BindBinaryPage();
+
+    }
+
+}

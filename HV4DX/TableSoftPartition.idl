@@ -1,0 +1,11 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableSoftPartition : Microsoft.UI.Xaml.Controls.Page
+    {
+        TableSoftPartition();
+        
+        void SelectDefaultFromTables(String uid);
+
+    }
+}

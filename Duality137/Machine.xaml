@@ -60,8 +60,8 @@
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{9126C512-05D3-4CFE-BFC0-6EBC1897DE0F}" x:Name="DigitalTwinPage" Content="DigitalTwin"/>
                         <NavigationViewItem Tag="{}{EB6EDAF6-5FB5-4F6F-9EC7-7702E1E9FFAD}" x:Name="WindowPage" Content="Window"/>
-                        <NavigationViewItem Tag="{}{2612BFF3-C034-413E-A01E-0848A45F9917}" x:Name="DrivePage" Content="Drive"/>
-                        <NavigationViewItem Tag="{}{B7EB7843-92A7-4F79-B626-CF20978AB4A8}" x:Name="ImagePage" Content="Image"/>
+                        <NavigationViewItem Tag="{}{2612BFF3-C034-413E-A01E-0848A45F9917}" x:Name="SoftDrivePage" Content="Drive"/>
+                        <NavigationViewItem Tag="{}{B7EB7843-92A7-4F79-B626-CF20978AB4A8}" x:Name="SoftPartitionPage" Content="Image"/>
                         <NavigationViewItem Tag="{}{31EABFEA-8F60-48FE-A747-8C24368E9897}" x:Name="PromptPage" Content="Prompt"/>
                         <NavigationViewItem Tag="{}{55AFB022-E642-4CC2-828E-D3979EC272EC}" x:Name="DebugPage" Content="Debug"/>
                         <NavigationViewItem Tag="{}{1B3D1454-1FD9-454A-812C-7FC16B2F9B51}" x:Name="MetricPage" Content="Metric"/>
@@ -69,12 +69,12 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{E1F8583C-67B8-4D9A-BD15-256B3C0E0698}" x:Name="DataBindingPage" Content="Data Binding">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="QueryBinaryPage" Content="Query Binary"/>
-                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="QueryJSONPage" Content="Query JSON"/>
-                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="QueryXMLPage" Content="Query XML"/>
-                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="QueryXAMLPage" Content="Query XAML"/>
-                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="QueryQIFPage" Content="Query QIF"/>
-                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="QueryPostgreSQLPage" Content="Query PostgreSQL"/>
+                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="BindBinaryPage" Content="Bind Binary"/>
+                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="BindJSONPage" Content="Bind JSON"/>
+                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="BindXMLPage" Content="Bind XML"/>
+                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="BindXAMLPage" Content="Bind XAML"/>
+                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="BindQIFPage" Content="Bind QIF"/>
+                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="BindPostgreSQLPage" Content="Bind PostgreSQL"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
@@ -142,17 +142,17 @@
                     Grid.Row="0" Grid.RowSpan="1"/>
 
                 <HV4DX:TableKey
-                    x:Name="TableMachine"
+                    x:Name="MachineBuildKey"
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="1" Grid.RowSpan="1"
-                    ValueKey="TABLE_KEY_BUILD"/>
+                    ValueKey="MACHINE_BUILD_KEY"/>
 
                 <HV4DX:UserDivider
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="2" Grid.RowSpan="1"/>
 
                 <Frame 
-                    x:Name="FrameMachine" 
+                    x:Name="MachineFrame" 
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="3" Grid.RowSpan="1"
                     NavigationFailed="MetadataPortalNavFailed"/>

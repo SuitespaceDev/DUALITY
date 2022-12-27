@@ -6,6 +6,8 @@ namespace HV4DX
     {
         TableRuntimeClass();
     
+        String ValueKey;
+	
         void SelectDefaultFromTables(String uid);
 
     }

@@ -8,13 +8,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Page.Resources>
+    <ScrollViewer>
 
+        <StackPanel>
+
+
+
+            <HV4DX:UserDivider/>
+
+            <HV4DX:TableDescription
+                x:Name="DeviceDescription"
+                ValueKey="_DEVICE_DESCRIPTION"/>
+
+            <HV4DX:UserDivider/>
+
+        </StackPanel>
+
+    </ScrollViewer>
 
 </Page>

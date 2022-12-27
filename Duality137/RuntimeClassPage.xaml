@@ -3,10 +3,27 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
+    xmlns:HV4DX="using:HV4DX"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    
-    
+    <ScrollViewer>
+
+        <StackPanel>
+
+
+
+            <HV4DX:UserDivider/>
+
+            <HV4DX:TableDescription
+                x:Name="DeviceDescription"
+                ValueKey="_DEVICE_DESCRIPTION"/>
+
+            <HV4DX:UserDivider/>
+
+        </StackPanel>
+
+    </ScrollViewer>
+
 </Page>

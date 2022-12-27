@@ -28,52 +28,11 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableKey::LabelProfileHVID()
-    {
-        return label_profile_hvid;
-
-    }
-
-    winrt::hstring TableKey::LabelProfileMMM()
-    {
-        return label_profile_mmm;
-
-    }
-
-    winrt::hstring TableKey::LabelProfileMaxPath()
-    {
-        return label_profile_maxpath;
-
-    }
-
-    winrt::hstring TableKey::LabelProfileCreated()
-    {
-        return label_profile_created;
-
-    }
-
-    winrt::hstring TableKey::LabelProfileSaved()
-    {
-        return label_profile_saved;
-
-    }
-
-    winrt::hstring TableKey::LabelProfileOpened()
-    {
-        return label_profile_opened;
-
-    }
-
-    event_token TableKey::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
+    void TableKey::SelectDefaultFromTables(winrt::hstring const& e)
     {
 
-        return property_changed_event.add(handler);
 
-    }
 
-    void TableKey::PropertyChanged(winrt::event_token const& token) noexcept
-    {
-        property_changed_event.remove(token);
 
         return;
 

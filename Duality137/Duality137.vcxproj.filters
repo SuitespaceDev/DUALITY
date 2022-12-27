@@ -98,24 +98,6 @@
     <Filter Include="2. Property Pages\c. DataBinding">
       <UniqueIdentifier>{168d59aa-2bc9-445f-a7d3-ab5f16ee565d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryBinaryPage">
-      <UniqueIdentifier>{ce344f92-8f9b-4c40-9aa6-1880171a3880}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryJSONPage">
-      <UniqueIdentifier>{aaa97d7c-bb2d-4079-b932-666f37aa269f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryPostgreSQLPage">
-      <UniqueIdentifier>{2516a2d7-276a-45b5-a737-136e7d3ba923}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryQIFPage">
-      <UniqueIdentifier>{bafc3bea-ed59-4518-abe3-b94277de065a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryXAMLPage">
-      <UniqueIdentifier>{e475e165-cef0-4c2c-9081-733fb834bf8f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\c. DataBinding\QueryXMLPage">
-      <UniqueIdentifier>{d545a9db-9d37-47ad-84a2-3c0124d1aa32}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Property Pages\d. IO">
       <UniqueIdentifier>{5207a7a2-61eb-4094-ac2f-223aed5a8145}</UniqueIdentifier>
     </Filter>
@@ -149,12 +131,6 @@
     <Filter Include="2. Property Pages\b. Runtime\DebugPage">
       <UniqueIdentifier>{0e06fd61-72f1-4b81-85f8-eda3ae2cfae0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Property Pages\b. Runtime\DrivePage">
-      <UniqueIdentifier>{9ace3084-cf77-4d46-8f5a-5ef8c0d5c57b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\b. Runtime\ImagePage">
-      <UniqueIdentifier>{24329ef0-f27e-4626-9606-c01fafbfec8d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Property Pages\b. Runtime\MetricPage">
       <UniqueIdentifier>{5874f8d2-0a81-428a-a6de-604fc65a61ee}</UniqueIdentifier>
     </Filter>
@@ -166,6 +142,30 @@
     </Filter>
     <Filter Include="2. Property Pages\d. IO\PeripheralDevicePage">
       <UniqueIdentifier>{c5ca18e1-9ee9-4cd0-8daf-145c83f78046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\b. Runtime\SoftPartitionPage">
+      <UniqueIdentifier>{24329ef0-f27e-4626-9606-c01fafbfec8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\b. Runtime\SoftDrivePage">
+      <UniqueIdentifier>{9ace3084-cf77-4d46-8f5a-5ef8c0d5c57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindBinaryPage">
+      <UniqueIdentifier>{ce344f92-8f9b-4c40-9aa6-1880171a3880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindJSONPage">
+      <UniqueIdentifier>{aaa97d7c-bb2d-4079-b932-666f37aa269f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindPostgreSQLPage">
+      <UniqueIdentifier>{2516a2d7-276a-45b5-a737-136e7d3ba923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindQIFPage">
+      <UniqueIdentifier>{bafc3bea-ed59-4518-abe3-b94277de065a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindXAMLPage">
+      <UniqueIdentifier>{e475e165-cef0-4c2c-9081-733fb834bf8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\c. DataBinding\BindXMLPage">
+      <UniqueIdentifier>{d545a9db-9d37-47ad-84a2-3c0124d1aa32}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -304,11 +304,11 @@
     <Page Include="DebugPage.xaml">
       <Filter>2. Property Pages\b. Runtime\DebugPage</Filter>
     </Page>
-    <Page Include="DrivePage.xaml">
-      <Filter>2. Property Pages\b. Runtime\DrivePage</Filter>
+    <Page Include="SoftDrivePage.xaml">
+      <Filter>2. Property Pages\b. Runtime\SoftDrivePage</Filter>
     </Page>
-    <Page Include="ImagePage.xaml">
-      <Filter>2. Property Pages\b. Runtime\ImagePage</Filter>
+    <Page Include="SoftPartitionPage.xaml">
+      <Filter>2. Property Pages\b. Runtime\SoftPartitionPage</Filter>
     </Page>
     <Page Include="MetricPage.xaml">
       <Filter>2. Property Pages\b. Runtime\MetricPage</Filter>
@@ -331,23 +331,23 @@
     <Page Include="RuntimeClassPage.xaml">
       <Filter>2. Property Pages\g. Process</Filter>
     </Page>
-    <Page Include="QueryBinaryPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryBinaryPage</Filter>
+    <Page Include="BindBinaryPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindBinaryPage</Filter>
     </Page>
-    <Page Include="QueryJSONPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryJSONPage</Filter>
+    <Page Include="BindJSONPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindJSONPage</Filter>
     </Page>
-    <Page Include="QueryPostgreSQLPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryPostgreSQLPage</Filter>
+    <Page Include="BindPostgreSQLPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindPostgreSQLPage</Filter>
     </Page>
-    <Page Include="QueryQIFPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryQIFPage</Filter>
+    <Page Include="BindQIFPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindQIFPage</Filter>
     </Page>
-    <Page Include="QueryXAMLPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryXAMLPage</Filter>
+    <Page Include="BindXAMLPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindXAMLPage</Filter>
     </Page>
-    <Page Include="QueryXMLPage.xaml">
-      <Filter>2. Property Pages\c. DataBinding\QueryXMLPage</Filter>
+    <Page Include="BindXMLPage.xaml">
+      <Filter>2. Property Pages\c. DataBinding\BindXMLPage</Filter>
     </Page>
     <Page Include="Level1AccountPage.xaml">
       <Filter>2. Property Pages\a. Accounts\Level1AccountPage</Filter>

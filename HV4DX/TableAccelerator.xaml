@@ -84,7 +84,7 @@
             <StackPanel
                 x:Name="AcceleratorComPorts"
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
+                BorderThickness="1"
                 MinHeight="500"/>
 
         </ScrollViewer>

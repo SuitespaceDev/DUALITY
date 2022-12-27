@@ -25,54 +25,7 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_key{};
 
     public:
-        winrt::hstring LabelProfileHVID();
-
-    private:
-        winrt::hstring label_profile_hvid{};
-
-    public:
-        winrt::hstring LabelProfileMMM();
-
-    private:
-        winrt::hstring label_profile_mmm{};
-
-    public:
-        winrt::hstring ValueProfileMAJ();
-
-    private:
-        winrt::hstring value_profile_maj{};
-
-    public:
-        winrt::hstring LabelProfileMaxPath();
-
-    private:
-        winrt::hstring label_profile_maxpath{};
-
-    public:
-        winrt::hstring LabelProfileCreated();
-
-    private:
-        winrt::hstring label_profile_created{};
-
-    public:
-        winrt::hstring LabelProfileSaved();
-
-    private:
-        winrt::hstring label_profile_saved{};
-
-    public:
-        winrt::hstring LabelProfileOpened();
-
-    private:
-        winrt::hstring label_profile_opened{};
-
-    public:
-        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
-
-        void PropertyChanged(winrt::event_token const&) noexcept;
-
-    private:
-        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+        void SelectDefaultFromTables(winrt::hstring const&);
 
     };
 

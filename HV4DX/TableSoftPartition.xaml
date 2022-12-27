@@ -1,0 +1,125 @@
+﻿<UserControl
+    x:Class="HV4DX.TableSoftPartition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterNew 
+            x:Name="SoftPartitionHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="SoftPartition HVID"/>
+
+        <local:UserFilterItem 
+            x:Name="SoftPartitionName"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Name"/>
+
+        <local:UserFilterItem 
+            x:Name="SoftPartitionFormat"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Format"/>
+
+        <local:UserBlock 
+            x:Name="SoftPartitionCreated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="DateTime Created}"/>
+
+        <local:UserBlock 
+            x:Name="SoftPartitionUpdated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="DateTime Updated"/>
+
+        <local:UserBlock 
+            x:Name="SoftPartitionOpened"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="DateTime Opened"/>
+
+        <local:UserBlock 
+            x:Name="HV4DVOLOFF"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="$HV4DVOL Offset"/>
+
+        <local:UserBlock 
+            x:Name="HV4DVOLSZ"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="$HV4DVOL Size"/>
+
+        <local:UserBlock 
+            x:Name="HV4DSFTOFF"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="$HV4DSFT Offset"/>
+
+        <local:UserBlock 
+            x:Name="HV4DSFTSZ"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="$HV4DSFT Size"/>
+
+        <local:UserBlock 
+            x:Name="HV4DMIROFF"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="$HV4DMIR Offset"/>
+
+        <local:UserBlock 
+            x:Name="HV4DMIRSZ"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="$HV4DMIR Size"/>
+
+        <local:UserBlock 
+            x:Name="HV4DATTOFF"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1" 
+            Label="$HV4DATT Offset"/>
+
+        <local:UserBlock 
+            x:Name="HV4DATTSZ"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1" 
+            Label="$HV4DATT Size"/>
+
+        <local:UserBlock 
+            x:Name="HV4DBMPOFF"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="$HV4DBMP Offset"/>
+
+        <local:UserBlock 
+            x:Name="HV4DBMPSZ"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1"
+            Label="$HV4DBMP Size" />
+
+    </Grid>
+
+</UserControl>

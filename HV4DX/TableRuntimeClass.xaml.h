@@ -10,6 +10,14 @@ namespace winrt::HV4DX::implementation
         TableRuntimeClass();
 
     public:
+        winrt::hstring ValueKey();
+
+        void ValueKey(winrt::hstring const&);
+
+    private:
+        winrt::hstring value_key{};
+
+    public:
         void SelectDefaultFromTables(winrt::hstring const&);
 
     };

@@ -4,14 +4,10 @@ namespace HV4DX
     runtimeclass TableKey : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableKey();
-
+    
         String ValueKey;
-        String LabelProfileHVID{ get; };
-        String LabelProfileMMM{ get; };
-        String LabelProfileMaxPath{ get; };
-        String LabelProfileCreated{ get; };
-        String LabelProfileSaved{ get; };
-        String LabelProfileOpened{ get; };
+	
+        void SelectDefaultFromTables(String uid);
 
     }
 

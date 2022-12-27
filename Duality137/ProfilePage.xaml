@@ -9,45 +9,21 @@
     mc:Ignorable="d"
     Loaded="Loaded">
 
-    <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Page.Resources>
-
     <ScrollViewer>
 
         <StackPanel>
 
-            <HV4DX:TableKey
-                ValueKey="TABLE_KEY_BUILD_PROFILE"/>
+            <HV4DX:TableAccount
+                x:Name="MachineBuildProfile"
+                ValueKey="MACHINE_BUILD_PROFILE"/>
 
-            <HV4DX:UserDivider
-                x:Name="TableMachineProfile"/>
+            <HV4DX:UserDivider/>
 
-            <Border 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
-                Height="500"
-                Margin="6,6,6,6">
+            <HV4DX:TableDescription
+                x:Name="MachineBuildDescription"
+                ValueKey="MACHINE_BUILD_DESCRIPTION"/>
 
-                <TextBox 
-                    Foreground="Black"
-                    AcceptsReturn="True"
-                    TextWrapping="Wrap"
-                    FontWeight="Medium"
-                    FontSize="12"
-                    Padding="3,3,3,3"
-                    PlaceholderText="Add description here ..."
-                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-
-            </Border>
-
-            <HV4DX:UserDivider
-                    Grid.Column="0" Grid.ColumnSpan="1"
-                    Grid.Row="4" Grid.RowSpan="1"/>
+            <HV4DX:UserDivider/>
 
         </StackPanel>
 

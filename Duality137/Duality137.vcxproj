@@ -190,8 +190,8 @@
     <ClInclude Include="Level2AccountPage.xaml.h">
       <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="DrivePage.xaml.h">
-      <DependentUpon>DrivePage.xaml</DependentUpon>
+    <ClInclude Include="SoftDrivePage.xaml.h">
+      <DependentUpon>SoftDrivePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="Duality.xaml.h">
       <DependentUpon>Duality.xaml</DependentUpon>
@@ -205,8 +205,8 @@
     <ClInclude Include="GitProject.xaml.h">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ImagePage.xaml.h">
-      <DependentUpon>ImagePage.xaml</DependentUpon>
+    <ClInclude Include="SoftPartitionPage.xaml.h">
+      <DependentUpon>SoftPartitionPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="IteratorPage.xaml.h">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
@@ -245,23 +245,23 @@
     <ClInclude Include="Level4AccountPage.xaml.h">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryBinaryPage.xaml.h">
-      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
+    <ClInclude Include="BindBinaryPage.xaml.h">
+      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryJSONPage.xaml.h">
-      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
+    <ClInclude Include="BindJSONPage.xaml.h">
+      <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryPostgreSQLPage.xaml.h">
-      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
+    <ClInclude Include="BindPostgreSQLPage.xaml.h">
+      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryQIFPage.xaml.h">
-      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
+    <ClInclude Include="BindQIFPage.xaml.h">
+      <DependentUpon>BindQIFPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryXAMLPage.xaml.h">
-      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
+    <ClInclude Include="BindXAMLPage.xaml.h">
+      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="QueryXMLPage.xaml.h">
-      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
+    <ClInclude Include="BindXMLPage.xaml.h">
+      <DependentUpon>BindXMLPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="RootUI.xaml.h">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -378,8 +378,8 @@
     <ClCompile Include="Level2AccountPage.xaml.cpp">
       <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="DrivePage.xaml.cpp">
-      <DependentUpon>DrivePage.xaml</DependentUpon>
+    <ClCompile Include="SoftDrivePage.xaml.cpp">
+      <DependentUpon>SoftDrivePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Duality.xaml.cpp">
       <DependentUpon>Duality.xaml</DependentUpon>
@@ -393,8 +393,8 @@
     <ClCompile Include="GitProject.xaml.cpp">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ImagePage.xaml.cpp">
-      <DependentUpon>ImagePage.xaml</DependentUpon>
+    <ClCompile Include="SoftPartitionPage.xaml.cpp">
+      <DependentUpon>SoftPartitionPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="IteratorPage.xaml.cpp">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
@@ -433,23 +433,23 @@
     <ClCompile Include="Level4AccountPage.xaml.cpp">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryBinaryPage.xaml.cpp">
-      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
+    <ClCompile Include="BindBinaryPage.xaml.cpp">
+      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryJSONPage.xaml.cpp">
-      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
+    <ClCompile Include="BindJSONPage.xaml.cpp">
+      <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryPostgreSQLPage.xaml.cpp">
-      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
+    <ClCompile Include="BindPostgreSQLPage.xaml.cpp">
+      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryQIFPage.xaml.cpp">
-      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
+    <ClCompile Include="BindQIFPage.xaml.cpp">
+      <DependentUpon>BindQIFPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryXAMLPage.xaml.cpp">
-      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
+    <ClCompile Include="BindXAMLPage.xaml.cpp">
+      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="QueryXMLPage.xaml.cpp">
-      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
+    <ClCompile Include="BindXMLPage.xaml.cpp">
+      <DependentUpon>BindXMLPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="RootUI.xaml.cpp">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -581,8 +581,8 @@
     <Midl Include="Level2AccountPage.idl">
       <DependentUpon>Level2AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="DrivePage.idl">
-      <DependentUpon>DrivePage.xaml</DependentUpon>
+    <Midl Include="SoftDrivePage.idl">
+      <DependentUpon>SoftDrivePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="Duality.idl">
       <DependentUpon>Duality.xaml</DependentUpon>
@@ -596,8 +596,8 @@
     <Midl Include="GitProject.idl">
       <DependentUpon>GitProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ImagePage.idl">
-      <DependentUpon>ImagePage.xaml</DependentUpon>
+    <Midl Include="SoftPartitionPage.idl">
+      <DependentUpon>SoftPartitionPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="IteratorPage.idl">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
@@ -636,23 +636,23 @@
     <Midl Include="Level4AccountPage.idl">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryBinaryPage.idl">
-      <DependentUpon>QueryBinaryPage.xaml</DependentUpon>
+    <Midl Include="BindBinaryPage.idl">
+      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryJSONPage.idl">
-      <DependentUpon>QueryJSONPage.xaml</DependentUpon>
+    <Midl Include="BindJSONPage.idl">
+      <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryPostgreSQLPage.idl">
-      <DependentUpon>QueryPostgreSQLPage.xaml</DependentUpon>
+    <Midl Include="BindPostgreSQLPage.idl">
+      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryQIFPage.idl">
-      <DependentUpon>QueryQIFPage.xaml</DependentUpon>
+    <Midl Include="BindQIFPage.idl">
+      <DependentUpon>BindQIFPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryXAMLPage.idl">
-      <DependentUpon>QueryXAMLPage.xaml</DependentUpon>
+    <Midl Include="BindXAMLPage.idl">
+      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="QueryXMLPage.idl">
-      <DependentUpon>QueryXMLPage.xaml</DependentUpon>
+    <Midl Include="BindXMLPage.idl">
+      <DependentUpon>BindXMLPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="RootUI.idl">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -738,12 +738,12 @@
     <Page Include="UserControlPage.xaml" />
     <Page Include="PreProcessPage.xaml" />
     <Page Include="Level2AccountPage.xaml" />
-    <Page Include="DrivePage.xaml" />
+    <Page Include="SoftDrivePage.xaml" />
     <Page Include="Duality137Buttons.xaml" />
     <Page Include="DigitalTwinPage.xaml" />
     <Page Include="FunctionPage.xaml" />
     <Page Include="GitProject.xaml" />
-    <Page Include="ImagePage.xaml" />
+    <Page Include="SoftPartitionPage.xaml" />
     <Page Include="IteratorPage.xaml" />
     <Page Include="PeripheralDevicePage.xaml" />
     <Page Include="PostProcessPage.xaml" />
@@ -758,12 +758,12 @@
     <Page Include="PipePage.xaml" />
     <Page Include="Level3AccountPage.xaml" />
     <Page Include="Level4AccountPage.xaml" />
-    <Page Include="QueryBinaryPage.xaml" />
-    <Page Include="QueryJSONPage.xaml" />
-    <Page Include="QueryPostgreSQLPage.xaml" />
-    <Page Include="QueryQIFPage.xaml" />
-    <Page Include="QueryXAMLPage.xaml" />
-    <Page Include="QueryXMLPage.xaml" />
+    <Page Include="BindBinaryPage.xaml" />
+    <Page Include="BindJSONPage.xaml" />
+    <Page Include="BindPostgreSQLPage.xaml" />
+    <Page Include="BindQIFPage.xaml" />
+    <Page Include="BindXAMLPage.xaml" />
+    <Page Include="BindXMLPage.xaml" />
     <Page Include="RootUI.xaml" />
     <Page Include="RPCPage.xaml" />
     <Page Include="SaveToCloud.xaml" />

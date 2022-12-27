@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include "winrt/HV4DX.h"
+
 #include "BitmapPage.g.h"
 
 namespace winrt::Duality137::implementation

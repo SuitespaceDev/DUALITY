@@ -21,32 +21,19 @@
         <StackPanel>
 
             <HV4DX:TableAccount
-                x:Name="TableLvl4Access"
+                x:Name="AccountLvl4Access"
                 ValueKey="LEVEL_4_ACCESS"/>
 
-            <HV4DX:UserDivider/>
-
-            <Border 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="2"
-                Height="500"
-                Margin="6,6,6,6">
-
-                <TextBox 
-                    Foreground="Black"
-                    AcceptsReturn="True"
-                    TextWrapping="Wrap"
-                    FontWeight="Medium"
-                    FontSize="12"
-                    Padding="3,3,3,3"
-                    PlaceholderText="Add description here ..."
-                    ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-
-            </Border>
+            <HV4DX:TableAccountPort/>
 
             <HV4DX:UserDivider
-                    Grid.Column="0" Grid.ColumnSpan="1"
-                    Grid.Row="4" Grid.RowSpan="1"/>
+                x:Name="AccountlVL4ComAccess"/>
+
+            <HV4DX:TableDescription
+                x:Name="AccountLvl4AccessDescription"
+                ValueKey="ACCOUNT_LVL4_ACCESS_DESCRIPTION"/>
+
+            <HV4DX:UserDivider/>
 
         </StackPanel>
 
