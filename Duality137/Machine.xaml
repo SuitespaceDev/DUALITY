@@ -86,11 +86,12 @@
                         <NavigationViewItem Tag="{}{36E17529-39A7-4AEC-9EF9-1CAF3188B56A}" x:Name="ProcessorCorePage" Content="Processor Cores"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
-                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{1106C674-FBBE-4342-82BB-18C0DD5CC21D}" x:Name="LibraryPage" Content="Library">
+                <NavigationViewItem SelectsOnInvoked="True" Tag="{}{1106C674-FBBE-4342-82BB-18C0DD5CC21D}" x:Name="LibraryPage" Content="Library">
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{10F0039B-38CC-4E11-AF68-C6CD8B23F896}" x:Name="ParameterPage" Content="Parameter"/>
                         <NavigationViewItem Tag="{}{2729C26F-3A03-477A-8256-89DF655F695A}" x:Name="IteratorPage" Content="Iterator"/>
                         <NavigationViewItem Tag="{}{B75B0EEF-136B-4BCE-8731-638818E8460D}" x:Name="FunctionPage" Content="Function"/>
+                        <NavigationViewItem Tag="{}{30FAEF18-2BF3-4D67-837F-45C9D2036AC9}" x:Name="EventPage" Content="Event"/>
                         <NavigationViewItem Tag="{}{63EDE647-2895-4E83-9332-553F6CA558C4}" x:Name="ContractPage" Content="Contract"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>

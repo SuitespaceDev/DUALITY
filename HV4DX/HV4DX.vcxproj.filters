@@ -379,6 +379,9 @@
     <Filter Include="f. TableBinding\TableBindingXAML">
       <UniqueIdentifier>{3a673505-b1f0-4c7a-b778-1f4e5917636a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="h. TableLibrary\TableEvent">
+      <UniqueIdentifier>{55bcd46d-9afc-4640-bcad-9ef6e2df71fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -445,10 +448,10 @@
     <Page Include="UserBlock.xaml">
       <Filter>UserString\UserBlock</Filter>
     </Page>
-    <Page Include="TableContrLibrary.xaml">
+    <Page Include="TableContract.xaml">
       <Filter>h. TableLibrary\TableContract</Filter>
     </Page>
-    <Page Include="TableIttLibrary.xaml">
+    <Page Include="TableIterator.xaml">
       <Filter>h. TableLibrary\TableIterator</Filter>
     </Page>
     <Page Include="TableRuntimeClass.xaml">
@@ -532,22 +535,22 @@
     <Page Include="TableRandomMemory.xaml">
       <Filter>g. TableIO\TableRandomMemory</Filter>
     </Page>
-    <Page Include="TableIttItem.xaml">
+    <Page Include="TableIteratorItem.xaml">
       <Filter>h. TableLibrary\TableIterator</Filter>
     </Page>
-    <Page Include="TableContrItem.xaml">
+    <Page Include="TableContractItem.xaml">
       <Filter>h. TableLibrary\TableContract</Filter>
     </Page>
-    <Page Include="TableFuncLibrary.xaml">
+    <Page Include="TableFunction.xaml">
       <Filter>h. TableLibrary\TableFunction</Filter>
     </Page>
-    <Page Include="TableFuncItem.xaml">
+    <Page Include="TableFunctionItem.xaml">
       <Filter>h. TableLibrary\TableFunction</Filter>
     </Page>
-    <Page Include="TableParamLibrary.xaml">
+    <Page Include="TableParameter.xaml">
       <Filter>h. TableLibrary\TableParameter</Filter>
     </Page>
-    <Page Include="TableParamItem.xaml">
+    <Page Include="TableParameterItem.xaml">
       <Filter>h. TableLibrary\TableParameter</Filter>
     </Page>
     <Page Include="TableNetworkAdapter.xaml">
@@ -579,6 +582,15 @@
     </Page>
     <Page Include="TableBindingXML.xaml">
       <Filter>f. TableBinding\TableBindingXML</Filter>
+    </Page>
+    <Page Include="TableLibrary.xaml">
+      <Filter>h. TableLibrary</Filter>
+    </Page>
+    <Page Include="TableEvent.xaml">
+      <Filter>h. TableLibrary\TableEvent</Filter>
+    </Page>
+    <Page Include="TableEventItem.xaml">
+      <Filter>h. TableLibrary\TableEvent</Filter>
     </Page>
   </ItemGroup>
 </Project>

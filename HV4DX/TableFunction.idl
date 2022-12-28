@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableFunction : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableFunction();
+    
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

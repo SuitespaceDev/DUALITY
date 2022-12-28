@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableEvent : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableEvent();
+
+        void SelectDefaultFromTables(String uid);
+
+    }
+}

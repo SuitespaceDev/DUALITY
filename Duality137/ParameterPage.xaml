@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-
+            <HV4DX:TableParameter
+                x:Name="ParameterLibrary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="ParameterLibraryDescription"
+                ValueKey="PARAMETER_LIBRARY_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 

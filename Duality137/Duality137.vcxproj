@@ -132,6 +132,10 @@
     <ClInclude Include="BlankProject.xaml.h">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="EventPage.xaml.h">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="Level1AccountPage.xaml.h">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
     </ClInclude>
@@ -145,6 +149,10 @@
     </ClInclude>
     <ClInclude Include="Landing.xaml.h">
       <DependentUpon>Landing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="LibraryPage.xaml.h">
+      <DependentUpon>LibraryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="Machine.xaml.h">
@@ -320,6 +328,10 @@
     <ClCompile Include="BlankProject.xaml.cpp">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="EventPage.xaml.cpp">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="Level1AccountPage.xaml.cpp">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
     </ClCompile>
@@ -333,6 +345,10 @@
     </ClCompile>
     <ClCompile Include="Landing.xaml.cpp">
       <DependentUpon>Landing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="LibraryPage.xaml.cpp">
+      <DependentUpon>LibraryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="Machine.xaml.cpp">
@@ -523,6 +539,10 @@
     <Midl Include="BlankProject.idl">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </Midl>
+    <Midl Include="EventPage.idl">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="Level1AccountPage.idl">
       <DependentUpon>Level1AccountPage.xaml</DependentUpon>
     </Midl>
@@ -536,6 +556,10 @@
     </Midl>
     <Midl Include="Landing.idl">
       <DependentUpon>Landing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="LibraryPage.idl">
+      <DependentUpon>LibraryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="Machine.idl">
@@ -707,6 +731,9 @@
     <Page Include="DHV4DKERNEL.xaml" />
     <Page Include="DHV4DPARTITION.xaml" />
     <Page Include="DHV4DIMAGE.xaml" />
+    <Page Include="EventPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Level1AccountPage.xaml" />
     <Page Include="DebugPage.xaml">
       <SubType>Designer</SubType>
@@ -715,6 +742,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Landing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LibraryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Machine.xaml" />

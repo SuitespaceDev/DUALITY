@@ -44,29 +44,29 @@
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Contract HVID"/>
 
+        <local:UserFile 
+            x:Name="BindingBinaryRTCDLL"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="DLL"/>
+
         <local:UserBlock 
             x:Name="BindingBinaryRTCNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
             x:Name="BindingBinaryRTC"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="2" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
         <local:UserBlock 
             x:Name="BindingBinaryRTCCompiled"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="Compiled"/>
-
-        <local:UserFile 
-            x:Name="BindingBinaryRTCDLL"
-            Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="DLL"/>
+            Label="Compiled"/>
 
     </Grid>
 

@@ -1,0 +1,13 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableIteratorItem : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableIteratorItem();
+ 
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

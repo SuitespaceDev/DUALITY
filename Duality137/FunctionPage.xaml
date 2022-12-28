@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-
+            <HV4DX:TableFunction
+                x:Name="FunctionLibrary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="FunctionLibraryDescription"
+                ValueKey="FUNCTION_LIBRARY_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 

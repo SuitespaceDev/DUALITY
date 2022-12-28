@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-
+            <HV4DX:TableIterator
+                x:Name="IteratorLibrary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="IteratorLibraryDescription"
+                ValueKey="ITERATOR_LIBRARY_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 
@@ -27,3 +28,4 @@
     </ScrollViewer>
 
 </Page>
+

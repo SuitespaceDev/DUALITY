@@ -43,7 +43,7 @@
             x:Name="RTCMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="Name"/>
+            Label="Tag"/>
 
         <local:UserBlock 
             x:Name="RTCNamespace"

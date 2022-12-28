@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="-14,0,-10,0">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -27,52 +27,46 @@
             Label="Partition HVID"/>
 
         <local:UserFilterItem 
-            x:Name="PartitionID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="ID"/>
-
-        <local:UserFilterItem 
             x:Name="PartitionName"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Name"/>
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Tag"/>
 
         <local:UserFilterItem 
             x:Name="PartitionFormat"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Type"/>
 
         <local:UserFilterItem 
             x:Name="PartitionAccessLvl"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Clearance Lvl"/>
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Clearance Level"/>
 
         <local:UserBlock 
             x:Name="PartitionSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
             Label="Size"/>
 
         <local:UserBlock 
             x:Name="PartitionUsed"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="Used"/>
 
         <local:UserBlock 
             x:Name="PartitionFormatted"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="DateTime Formated"/>
 
         <local:UserBlock 
             x:Name="PartitionAccessed"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
-            Label="Accessed"/>
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="DateTime Accessed"/>
 
     </Grid>
 

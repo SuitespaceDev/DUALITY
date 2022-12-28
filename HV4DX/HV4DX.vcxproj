@@ -180,8 +180,8 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableContrItem.xaml.h">
-      <DependentUpon>TableContrItem.xaml</DependentUpon>
+    <ClInclude Include="TableContractItem.xaml.h">
+      <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableDescription.xaml.h">
@@ -192,32 +192,44 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableEvent.xaml.h">
+      <DependentUpon>TableEvent.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableEventItem.xaml.h">
+      <DependentUpon>TableEventItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableLibrary.xaml.h">
+      <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableSoftDrive.xaml.h">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableFuncItem.xaml.h">
-      <DependentUpon>TableFuncItem.xaml</DependentUpon>
+    <ClInclude Include="TableFunctionItem.xaml.h">
+      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableFuncLibrary.xaml.h">
-      <DependentUpon>TableFuncLibrary.xaml</DependentUpon>
+    <ClInclude Include="TableFunction.xaml.h">
+      <DependentUpon>TableFunction.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableSoftPartition.xaml.h">
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableIttItem.xaml.h">
-      <DependentUpon>TableIttItem.xaml</DependentUpon>
+    <ClInclude Include="TableIteratorItem.xaml.h">
+      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableParamItem.xaml.h">
-      <DependentUpon>TableParamItem.xaml</DependentUpon>
+    <ClInclude Include="TableParameterItem.xaml.h">
+      <DependentUpon>TableParameterItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableParamLibrary.xaml.h">
-      <DependentUpon>TableParamLibrary.xaml</DependentUpon>
+    <ClInclude Include="TableParameter.xaml.h">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TablePeripheralDevice.xaml.h">
@@ -310,11 +322,11 @@
     <ClInclude Include="UserPassword.xaml.h">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="TableContrLibrary.xaml.h">
-      <DependentUpon>TableContrLibrary.xaml</DependentUpon>
+    <ClInclude Include="TableContract.xaml.h">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="TableIttLibrary.xaml.h">
-      <DependentUpon>TableIttLibrary.xaml</DependentUpon>
+    <ClInclude Include="TableIterator.xaml.h">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="TableRuntimeClass.xaml.h">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
@@ -381,8 +393,8 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableContrItem.xaml.cpp">
-      <DependentUpon>TableContrItem.xaml</DependentUpon>
+    <ClCompile Include="TableContractItem.xaml.cpp">
+      <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableDescription.xaml.cpp">
@@ -393,32 +405,44 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableEvent.xaml.cpp">
+      <DependentUpon>TableEvent.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableEventItem.xaml.cpp">
+      <DependentUpon>TableEventItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableLibrary.xaml.cpp">
+      <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableSoftDrive.xaml.cpp">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableFuncItem.xaml.cpp">
-      <DependentUpon>TableFuncItem.xaml</DependentUpon>
+    <ClCompile Include="TableFunctionItem.xaml.cpp">
+      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableFuncLibrary.xaml.cpp">
-      <DependentUpon>TableFuncLibrary.xaml</DependentUpon>
+    <ClCompile Include="TableFunction.xaml.cpp">
+      <DependentUpon>TableFunction.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableSoftPartition.xaml.cpp">
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableIttItem.xaml.cpp">
-      <DependentUpon>TableIttItem.xaml</DependentUpon>
+    <ClCompile Include="TableIteratorItem.xaml.cpp">
+      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableParamItem.xaml.cpp">
-      <DependentUpon>TableParamItem.xaml</DependentUpon>
+    <ClCompile Include="TableParameterItem.xaml.cpp">
+      <DependentUpon>TableParameterItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableParamLibrary.xaml.cpp">
-      <DependentUpon>TableParamLibrary.xaml</DependentUpon>
+    <ClCompile Include="TableParameter.xaml.cpp">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TablePeripheralDevice.xaml.cpp">
@@ -511,11 +535,11 @@
     <ClCompile Include="UserPassword.xaml.cpp">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="TableContrLibrary.xaml.cpp">
-      <DependentUpon>TableContrLibrary.xaml</DependentUpon>
+    <ClCompile Include="TableContract.xaml.cpp">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="TableIttLibrary.xaml.cpp">
-      <DependentUpon>TableIttLibrary.xaml</DependentUpon>
+    <ClCompile Include="TableIterator.xaml.cpp">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="TableRuntimeClass.xaml.cpp">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
@@ -583,8 +607,8 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableContrItem.idl">
-      <DependentUpon>TableContrItem.xaml</DependentUpon>
+    <Midl Include="TableContractItem.idl">
+      <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableDescription.idl">
@@ -595,32 +619,44 @@
       <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableEvent.idl">
+      <DependentUpon>TableEvent.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableEventItem.idl">
+      <DependentUpon>TableEventItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableLibrary.idl">
+      <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableSoftDrive.idl">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableFuncItem.idl">
-      <DependentUpon>TableFuncItem.xaml</DependentUpon>
+    <Midl Include="TableFunctionItem.idl">
+      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableFuncLibrary.idl">
-      <DependentUpon>TableFuncLibrary.xaml</DependentUpon>
+    <Midl Include="TableFunction.idl">
+      <DependentUpon>TableFunction.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableSoftPartition.idl">
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableIttItem.idl">
-      <DependentUpon>TableIttItem.xaml</DependentUpon>
+    <Midl Include="TableIteratorItem.idl">
+      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableParamItem.idl">
-      <DependentUpon>TableParamItem.xaml</DependentUpon>
+    <Midl Include="TableParameterItem.idl">
+      <DependentUpon>TableParameterItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableParamLibrary.idl">
-      <DependentUpon>TableParamLibrary.xaml</DependentUpon>
+    <Midl Include="TableParameter.idl">
+      <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TablePeripheralDevice.idl">
@@ -714,11 +750,11 @@
     <Midl Include="UserPassword.idl">
       <DependentUpon>UserPassword.xaml</DependentUpon>
     </Midl>
-    <Midl Include="TableContrLibrary.idl">
-      <DependentUpon>TableContrLibrary.xaml</DependentUpon>
+    <Midl Include="TableContract.idl">
+      <DependentUpon>TableContract.xaml</DependentUpon>
     </Midl>
-    <Midl Include="TableIttLibrary.idl">
-      <DependentUpon>TableIttLibrary.xaml</DependentUpon>
+    <Midl Include="TableIterator.idl">
+      <DependentUpon>TableIterator.xaml</DependentUpon>
     </Midl>
     <Midl Include="TableRuntimeClass.idl">
       <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
@@ -770,7 +806,7 @@
     <Page Include="TableBindingXML.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableContrItem.xaml">
+    <Page Include="TableContractItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableDescription.xaml">
@@ -779,25 +815,34 @@
     <Page Include="TableDigitalTwin.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableEvent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableEventItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableLibrary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableSoftDrive.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableFuncItem.xaml">
+    <Page Include="TableFunctionItem.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableFuncLibrary.xaml">
+    <Page Include="TableFunction.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSoftPartition.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableIttItem.xaml">
+    <Page Include="TableIteratorItem.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableParamItem.xaml">
+    <Page Include="TableParameterItem.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableParamLibrary.xaml">
+    <Page Include="TableParameter.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePeripheralDevice.xaml">
@@ -857,8 +902,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserPassword.xaml" />
-    <Page Include="TableContrLibrary.xaml" />
-    <Page Include="TableIttLibrary.xaml" />
+    <Page Include="TableContract.xaml" />
+    <Page Include="TableIterator.xaml" />
     <Page Include="TableRuntimeClass.xaml" />
     <Page Include="UserTime.xaml">
       <SubType>Designer</SubType>

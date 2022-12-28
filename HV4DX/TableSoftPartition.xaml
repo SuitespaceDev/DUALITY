@@ -34,7 +34,7 @@
             x:Name="SoftPartitionName"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="Name"/>
+            Label="Tag"/>
 
         <local:UserFilterItem 
             x:Name="SoftPartitionFormat"

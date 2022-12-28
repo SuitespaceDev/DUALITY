@@ -9,8 +9,7 @@ namespace winrt::Duality137::implementation
     IteratorPage::IteratorPage()
     {
         InitializeComponent();
-    
-    
+        
         return;
     
     }

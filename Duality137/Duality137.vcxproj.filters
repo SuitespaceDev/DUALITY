@@ -116,12 +116,6 @@
     <Filter Include="2. Property Pages\e. Library">
       <UniqueIdentifier>{834ae501-6211-4a90-b791-5debe62a61eb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Property Pages\f. Pipeline">
-      <UniqueIdentifier>{566ff007-0790-4a58-8877-6596c7a3f24d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\g. Process">
-      <UniqueIdentifier>{058370e3-4183-472f-9686-373240b1d022}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Property Pages\b. Runtime">
       <UniqueIdentifier>{2d718091-74a5-46c8-89d4-f1972219f4de}</UniqueIdentifier>
     </Filter>
@@ -166,6 +160,30 @@
     </Filter>
     <Filter Include="2. Property Pages\c. DataBinding\BindXMLPage">
       <UniqueIdentifier>{d545a9db-9d37-47ad-84a2-3c0124d1aa32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\g. Pipeline">
+      <UniqueIdentifier>{566ff007-0790-4a58-8877-6596c7a3f24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\h. Process">
+      <UniqueIdentifier>{058370e3-4183-472f-9686-373240b1d022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. Library\ContractPage">
+      <UniqueIdentifier>{0b142261-f42d-4567-91fe-71b367f0bf0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. Library\FunctionPage">
+      <UniqueIdentifier>{9da4fb5f-5f98-4d29-80cc-4eabdd574404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. Library\IteratorPage">
+      <UniqueIdentifier>{1562b55a-bdc5-4dcd-a936-fa98c66b4e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. Library\ParameterPage">
+      <UniqueIdentifier>{a3e19fd9-3254-401e-8483-602f880aea78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX">
+      <UniqueIdentifier>{9ff19d6d-cae2-42a4-afaf-d65fb80eaa74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. Library\EventPage">
+      <UniqueIdentifier>{9f5ac510-0821-49e3-a89d-4a85f82b8754}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -223,50 +241,38 @@
     <Page Include="Landing.xaml">
       <Filter>6. Landing</Filter>
     </Page>
-    <Page Include="ParameterPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="IteratorPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="ContractPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="FunctionPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
     <Page Include="BitmapPage.xaml">
-      <Filter>2. Property Pages\f. Pipeline</Filter>
+      <Filter>2. Property Pages\g. Pipeline</Filter>
     </Page>
     <Page Include="TopologyPage.xaml">
-      <Filter>2. Property Pages\f. Pipeline</Filter>
+      <Filter>2. Property Pages\g. Pipeline</Filter>
     </Page>
     <Page Include="PostProcessPage.xaml">
-      <Filter>2. Property Pages\f. Pipeline</Filter>
+      <Filter>2. Property Pages\g. Pipeline</Filter>
     </Page>
     <Page Include="ComputeKernelPage.xaml">
-      <Filter>2. Property Pages\f. Pipeline</Filter>
+      <Filter>2. Property Pages\g. Pipeline</Filter>
     </Page>
     <Page Include="PreProcessPage.xaml">
-      <Filter>2. Property Pages\f. Pipeline</Filter>
+      <Filter>2. Property Pages\g. Pipeline</Filter>
     </Page>
     <Page Include="ApplicationPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="ShellPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="AsyncPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="RPCPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="PipePage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="SharedMemoryPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="TemplateProject.xaml">
       <Filter>7. Pickers</Filter>
@@ -276,24 +282,6 @@
     </Page>
     <Page Include="Diagnostics.xaml">
       <Filter>10. Diagnostics</Filter>
-    </Page>
-    <Page Include="ContextMenuPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="UserControlPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="ResourcePage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="ToolBarPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="WidgetPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
-    </Page>
-    <Page Include="XamlPgPage.xaml">
-      <Filter>2. Property Pages\e. Library</Filter>
     </Page>
     <Page Include="DHV4DLVL1.xaml">
       <Filter>11. Default</Filter>
@@ -329,7 +317,7 @@
       <Filter>11. Default</Filter>
     </Page>
     <Page Include="RuntimeClassPage.xaml">
-      <Filter>2. Property Pages\g. Process</Filter>
+      <Filter>2. Property Pages\h. Process</Filter>
     </Page>
     <Page Include="BindBinaryPage.xaml">
       <Filter>2. Property Pages\c. DataBinding\BindBinaryPage</Filter>
@@ -375,6 +363,42 @@
     </Page>
     <Page Include="StorageDevicePage.xaml">
       <Filter>2. Property Pages\d. IO\StorageDevicePage</Filter>
+    </Page>
+    <Page Include="ContextMenuPage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="ResourcePage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="ToolBarPage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="UserControlPage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="WidgetPage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="XamlPgPage.xaml">
+      <Filter>2. Property Pages\f. UX</Filter>
+    </Page>
+    <Page Include="ContractPage.xaml">
+      <Filter>2. Property Pages\e. Library\ContractPage</Filter>
+    </Page>
+    <Page Include="FunctionPage.xaml">
+      <Filter>2. Property Pages\e. Library\FunctionPage</Filter>
+    </Page>
+    <Page Include="IteratorPage.xaml">
+      <Filter>2. Property Pages\e. Library\IteratorPage</Filter>
+    </Page>
+    <Page Include="ParameterPage.xaml">
+      <Filter>2. Property Pages\e. Library\ParameterPage</Filter>
+    </Page>
+    <Page Include="LibraryPage.xaml">
+      <Filter>2. Property Pages\e. Library</Filter>
+    </Page>
+    <Page Include="EventPage.xaml">
+      <Filter>2. Property Pages\e. Library\EventPage</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

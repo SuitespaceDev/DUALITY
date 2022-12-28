@@ -1,0 +1,13 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableContract : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableContract();
+    
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}
