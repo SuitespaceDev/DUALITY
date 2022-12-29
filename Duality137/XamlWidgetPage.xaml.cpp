@@ -1,12 +1,12 @@
 ﻿#include "pch.h"
-#include "ResourcePage.xaml.h"
-#if __has_include("ResourcePage.g.cpp")
-#include "ResourcePage.g.cpp"
+#include "XamlWidgetPage.xaml.h"
+#if __has_include("XamlWidgetPage.g.cpp")
+#include "XamlWidgetPage.g.cpp"
 #endif
 
 namespace winrt::Duality137::implementation
 {
-    ResourcePage::ResourcePage()
+    XamlWidgetPage::XamlWidgetPage()
     {
         InitializeComponent();
     

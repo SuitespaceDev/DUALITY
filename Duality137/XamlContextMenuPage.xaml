@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Duality137.ContextMenuPage"
+    x:Class="Duality137.XamlContextMenuPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-            
-            
+            <HV4DX:TableXamlContextMenu
+                x:Name="XamlContextMenu"/>
+
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="XamlContextMenuDescription"
+                ValueKey="XAML_CONTEXT_MENU_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 

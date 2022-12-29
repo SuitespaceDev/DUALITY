@@ -56,7 +56,7 @@
             x:Name="SoftDriveOpened"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="DateTime Opened" />
+            Label="DateTime Opened"/>
 
         <local:UserEntry 
             x:Name="SoftDriveReserved"
@@ -68,13 +68,13 @@
             x:Name="SoftDriveAllocated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="Allocated" />
+            Label="Allocated"/>
 
         <local:UserEntry 
             x:Name="SoftDriveClusterSize"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="Cluster Size" />
+            Label="Cluster Size"/>
 
         <local:UserEntry 
             x:Name="SoftDrivePageSize"
@@ -92,7 +92,7 @@
             x:Name="SoftDriveWhitespaceEncryption"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="Whitespace Encryption" />
+            Label="Whitespace Encryption"/>
 
     </Grid>
 

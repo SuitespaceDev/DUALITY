@@ -180,6 +180,10 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableXamlContextMenu.xaml.h">
+      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableContractItem.xaml.h">
       <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -198,10 +202,13 @@
     </ClInclude>
     <ClInclude Include="TableEventItem.xaml.h">
       <DependentUpon>TableEventItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableLibrary.xaml.h">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableXamlResource.xaml.h">
+      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableSoftDrive.xaml.h">
@@ -263,8 +270,24 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableXamlToolBar.xaml.h">
+      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableUserControl.xaml.h">
+      <DependentUpon>TableUserControl.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableXamlWidget.xaml.h">
+      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableWindow.xaml.h">
       <DependentUpon>TableWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableXamlPg.xaml.h">
+      <DependentUpon>TableXamlPg.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
@@ -276,6 +299,10 @@
     </ClInclude>
     <ClInclude Include="UserDateTime.xaml.h">
       <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterGoTo.xaml.h">
+      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserIPv4.xaml.h">
@@ -393,6 +420,10 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableXamlContextMenu.xaml.cpp">
+      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableContractItem.xaml.cpp">
       <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -411,10 +442,13 @@
     </ClCompile>
     <ClCompile Include="TableEventItem.xaml.cpp">
       <DependentUpon>TableEventItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableLibrary.xaml.cpp">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableXamlResource.xaml.cpp">
+      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableSoftDrive.xaml.cpp">
@@ -476,8 +510,24 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableXamlToolBar.xaml.cpp">
+      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableUserControl.xaml.cpp">
+      <DependentUpon>TableUserControl.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableXamlWidget.xaml.cpp">
+      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableWindow.xaml.cpp">
       <DependentUpon>TableWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableXamlPg.xaml.cpp">
+      <DependentUpon>TableXamlPg.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
@@ -489,6 +539,10 @@
     </ClCompile>
     <ClCompile Include="UserDateTime.xaml.cpp">
       <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterGoTo.xaml.cpp">
+      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserIPv4.xaml.cpp">
@@ -607,6 +661,10 @@
       <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableXamlContextMenu.idl">
+      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableContractItem.idl">
       <DependentUpon>TableContractItem.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -629,6 +687,10 @@
     </Midl>
     <Midl Include="TableLibrary.idl">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableXamlResource.idl">
+      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableSoftDrive.idl">
@@ -691,8 +753,24 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableXamlToolBar.idl">
+      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableUserControl.idl">
+      <DependentUpon>TableUserControl.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableXamlWidget.idl">
+      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableWindow.idl">
       <DependentUpon>TableWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableXamlPg.idl">
+      <DependentUpon>TableXamlPg.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserBlock.idl">
@@ -704,6 +782,10 @@
     </Midl>
     <Midl Include="UserDateTime.idl">
       <DependentUpon>UserDateTime.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterGoTo.idl">
+      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserIPv4.idl">
@@ -806,6 +888,9 @@
     <Page Include="TableBindingXML.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableXamlContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableContractItem.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -818,10 +903,11 @@
     <Page Include="TableEvent.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableEventItem.xaml">
+    <Page Include="TableEventItem.xaml" />
+    <Page Include="TableLibrary.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableLibrary.xaml">
+    <Page Include="TableXamlResource.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSoftDrive.xaml">
@@ -869,7 +955,19 @@
     <Page Include="TableStorage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableXamlToolBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableXamlWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableXamlPg.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserBlock.xaml" />
@@ -877,6 +975,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserDateTime.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterGoTo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserIPv4.xaml">

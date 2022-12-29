@@ -48,19 +48,19 @@
             x:Name="ProfileCreated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="Created"/>
+            Label="DateTime Created"/>
 
         <local:UserDateTime 
             x:Name="ProfileSaved"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="Saved"/>
+            Label="DateTime Saved"/>
 
         <local:UserDateTime 
             x:Name="ProfileOpened"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
-            Label="Opened"/>
+            Label="DateTime Opened"/>
 
     </Grid>
     

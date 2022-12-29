@@ -118,7 +118,7 @@
             x:Name="HV4DBMPSZ"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="7" Grid.RowSpan="1"
-            Label="$HV4DBMP Size" />
+            Label="$HV4DBMP Size"/>
 
     </Grid>
 

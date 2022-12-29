@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Duality137.ResourcePage"
+    x:Class="Duality137.XamlToolBarPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Duality137"
@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-
+            <HV4DX:TableXamlToolBar
+                x:Name="XamlToolBar"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="XamlToolBarDescription"
+                ValueKey="XAML_TOOL_BAR_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 

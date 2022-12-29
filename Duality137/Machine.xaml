@@ -97,12 +97,12 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{F8A96E30-710E-4C6E-A158-B8390CDF61BF}" x:Name="UXPage" Content="UX">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{0DB7C610-447E-423F-85C3-44E81D7F16B3}" x:Name="ResourcePage" Content="Resource"/>
+                        <NavigationViewItem Tag="{}{0DB7C610-447E-423F-85C3-44E81D7F16B3}" x:Name="XamlResourcePage" Content="Xaml Resource"/>
                         <NavigationViewItem Tag="{}{ECFE799D-62A4-498A-A398-20E6E4AD2A9C}" x:Name="UserControlPage" Content="UserControl"/>
                         <NavigationViewItem Tag="{}{853BC787-D7FD-4618-A18E-DD5A53E4AF44}" x:Name="XamlPgPage" Content="Xaml Page"/>
-                        <NavigationViewItem Tag="{}{71E2E256-72DF-4403-9DDA-09BBC11ABD7D}" x:Name="ToolBarPage" Content="Tool Bar"/>
-                        <NavigationViewItem Tag="{}{69840795-22B9-4E5D-A336-8A652E83683E}" x:Name="WidgetPage" Content="Widget"/>
-                        <NavigationViewItem Tag="{}{8304CF6F-5ACD-4B68-A56B-5FF189287374}" x:Name="ContextMenuPage" Content="Context Menu"/>
+                        <NavigationViewItem Tag="{}{71E2E256-72DF-4403-9DDA-09BBC11ABD7D}" x:Name="XamlToolBarPage" Content="Xaml Tool Bar"/>
+                        <NavigationViewItem Tag="{}{69840795-22B9-4E5D-A336-8A652E83683E}" x:Name="XamlWidgetPage" Content="Xaml Widget"/>
+                        <NavigationViewItem Tag="{}{8304CF6F-5ACD-4B68-A56B-5FF189287374}" x:Name="XamlContextMenuPage" Content="Xaml Context Menu"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{727D1D5A-6AE2-422C-99E6-47CBB8C10E2B}" x:Name="PipelinePage" Content="Pipeline">

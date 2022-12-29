@@ -1,12 +1,12 @@
 ﻿#include "pch.h"
-#include "WidgetPage.xaml.h"
-#if __has_include("WidgetPage.g.cpp")
-#include "WidgetPage.g.cpp"
+#include "XamlToolBarPage.xaml.h"
+#if __has_include("XamlToolBarPage.g.cpp")
+#include "XamlToolBarPage.g.cpp"
 #endif
 
 namespace winrt::Duality137::implementation
 {
-    WidgetPage::WidgetPage()
+    XamlToolBarPage::XamlToolBarPage()
     {
         InitializeComponent();
     

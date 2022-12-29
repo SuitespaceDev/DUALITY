@@ -179,8 +179,8 @@
     <ClInclude Include="ComputeKernelPage.xaml.h">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ContextMenuPage.xaml.h">
-      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
+    <ClInclude Include="XamlContextMenuPage.xaml.h">
+      <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="ContractPage.xaml.h">
       <DependentUpon>ContractPage.xaml</DependentUpon>
@@ -296,17 +296,17 @@
     <ClInclude Include="TemplateProject.xaml.h">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ResourcePage.xaml.h">
-      <DependentUpon>ResourcePage.xaml</DependentUpon>
+    <ClInclude Include="XamlResourcePage.xaml.h">
+      <DependentUpon>XamlResourcePage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ToolBarPage.xaml.h">
-      <DependentUpon>ToolBarPage.xaml</DependentUpon>
+    <ClInclude Include="XamlToolBarPage.xaml.h">
+      <DependentUpon>XamlToolBarPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="AcceleratorPage.xaml.h">
       <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="WidgetPage.xaml.h">
-      <DependentUpon>WidgetPage.xaml</DependentUpon>
+    <ClInclude Include="XamlWidgetPage.xaml.h">
+      <DependentUpon>XamlWidgetPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="WindowPage.xaml.h">
       <DependentUpon>WindowPage.xaml</DependentUpon>
@@ -375,8 +375,8 @@
     <ClCompile Include="ComputeKernelPage.xaml.cpp">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ContextMenuPage.xaml.cpp">
-      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
+    <ClCompile Include="XamlContextMenuPage.xaml.cpp">
+      <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="ContractPage.xaml.cpp">
       <DependentUpon>ContractPage.xaml</DependentUpon>
@@ -495,17 +495,17 @@
     <ClCompile Include="TemplateProject.xaml.cpp">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ResourcePage.xaml.cpp">
-      <DependentUpon>ResourcePage.xaml</DependentUpon>
+    <ClCompile Include="XamlResourcePage.xaml.cpp">
+      <DependentUpon>XamlResourcePage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ToolBarPage.xaml.cpp">
-      <DependentUpon>ToolBarPage.xaml</DependentUpon>
+    <ClCompile Include="XamlToolBarPage.xaml.cpp">
+      <DependentUpon>XamlToolBarPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="AcceleratorPage.xaml.cpp">
       <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="WidgetPage.xaml.cpp">
-      <DependentUpon>WidgetPage.xaml</DependentUpon>
+    <ClCompile Include="XamlWidgetPage.xaml.cpp">
+      <DependentUpon>XamlWidgetPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="WindowPage.xaml.cpp">
       <DependentUpon>WindowPage.xaml</DependentUpon>
@@ -586,8 +586,8 @@
     <Midl Include="ComputeKernelPage.idl">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ContextMenuPage.idl">
-      <DependentUpon>ContextMenuPage.xaml</DependentUpon>
+    <Midl Include="XamlContextMenuPage.idl">
+      <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="ContractPage.idl">
       <DependentUpon>ContractPage.xaml</DependentUpon>
@@ -702,17 +702,17 @@
     <Midl Include="TemplateProject.idl">
       <DependentUpon>TemplateProject.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ResourcePage.idl">
-      <DependentUpon>ResourcePage.xaml</DependentUpon>
+    <Midl Include="XamlResourcePage.idl">
+      <DependentUpon>XamlResourcePage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ToolBarPage.idl">
-      <DependentUpon>ToolBarPage.xaml</DependentUpon>
+    <Midl Include="XamlToolBarPage.idl">
+      <DependentUpon>XamlToolBarPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="AcceleratorPage.idl">
       <DependentUpon>AcceleratorPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="WidgetPage.idl">
-      <DependentUpon>WidgetPage.xaml</DependentUpon>
+    <Midl Include="XamlWidgetPage.idl">
+      <DependentUpon>XamlWidgetPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="WindowPage.idl">
       <DependentUpon>WindowPage.xaml</DependentUpon>
@@ -760,7 +760,7 @@
     <Page Include="ProfilePage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
-    <Page Include="ContextMenuPage.xaml" />
+    <Page Include="XamlContextMenuPage.xaml" />
     <Page Include="ContractPage.xaml" />
     <Page Include="RuntimeClassPage.xaml">
       <SubType>Designer</SubType>
@@ -802,10 +802,10 @@
     <Page Include="SharedMemoryPage.xaml" />
     <Page Include="ShellPage.xaml" />
     <Page Include="TemplateProject.xaml" />
-    <Page Include="ResourcePage.xaml" />
-    <Page Include="ToolBarPage.xaml" />
+    <Page Include="XamlResourcePage.xaml" />
+    <Page Include="XamlToolBarPage.xaml" />
     <Page Include="AcceleratorPage.xaml" />
-    <Page Include="WidgetPage.xaml" />
+    <Page Include="XamlWidgetPage.xaml" />
     <Page Include="WindowPage.xaml" />
     <Page Include="XamlPgPage.xaml" />
   </ItemGroup>

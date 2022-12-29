@@ -12,13 +12,14 @@
 
         <StackPanel>
 
-
+            <HV4DX:TableUserControl
+                x:Name="UserControl"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                x:Name="UserControlDescription"
+                ValueKey="USER_CONTROL_DESCRIPTION"/>
 
             <HV4DX:UserDivider/>
 

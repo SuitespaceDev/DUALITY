@@ -28,41 +28,41 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterNew 
-            x:Name="FunctionDictionaryHVID"
+        <local:UserFilterItem 
+            x:Name="FunctionDictionaryContractHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Function Dictionary HVID"/>
-
-        <local:UserFilterMMM 
-            x:Name="FunctionDictionaryMMM"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="MMM"/>
+            Label="Contract HVID"/>
 
         <local:UserFilterItem 
-            x:Name="FunctionDictionaryMaxPath"
+            x:Name="FunctionDictionaryContractID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="ID"/>
+
+        <local:UserFilterItem 
+            x:Name="FunctionDictionaryContractMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserFilterItem 
+        <local:UserFilterGoTo 
             x:Name="FunctionDictionaryLibraryHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="Library HVID"/>
 
         <local:UserBlock 
-            x:Name="FunctionDictionaryNamespace"
+            x:Name="FunctionServiceNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
-            Label="Namespace"/>
+            Label="Service Namespace"/>
 
         <local:UserBlock 
-            x:Name="FunctionDictionaryRuntimeClass"
+            x:Name="FunctionServiceRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
-            Label="Runtime Class"/>
+            Label="Service Runtime Class"/>
 
         <StackPanel
             x:Name="FunctionDictionaryFunctions"

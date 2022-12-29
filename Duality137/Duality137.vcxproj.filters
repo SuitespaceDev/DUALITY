@@ -185,6 +185,24 @@
     <Filter Include="2. Property Pages\e. Library\EventPage">
       <UniqueIdentifier>{9f5ac510-0821-49e3-a89d-4a85f82b8754}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2. Property Pages\f. UX\UserControlPage">
+      <UniqueIdentifier>{d93a2fac-6b90-46e4-9950-60ca1438bdb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX\XamlPgPage">
+      <UniqueIdentifier>{a1dd4846-11fe-48eb-8578-8d50ce72a55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX\XamlContextMenuPage">
+      <UniqueIdentifier>{682fd50e-955d-438b-aa6e-4d077eba05c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX\XamlWidgetPage">
+      <UniqueIdentifier>{433bcb87-5ce9-4185-9bf2-5c4dd961118c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX\XamlToolBarPage">
+      <UniqueIdentifier>{244ebed6-0913-44fc-8ab9-287ff1af754a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\f. UX\XamlResourcePage">
+      <UniqueIdentifier>{c397cca0-c60c-42d8-9a8d-5c7d685fd91e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -364,24 +382,6 @@
     <Page Include="StorageDevicePage.xaml">
       <Filter>2. Property Pages\d. IO\StorageDevicePage</Filter>
     </Page>
-    <Page Include="ContextMenuPage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
-    <Page Include="ResourcePage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
-    <Page Include="ToolBarPage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
-    <Page Include="UserControlPage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
-    <Page Include="WidgetPage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
-    <Page Include="XamlPgPage.xaml">
-      <Filter>2. Property Pages\f. UX</Filter>
-    </Page>
     <Page Include="ContractPage.xaml">
       <Filter>2. Property Pages\e. Library\ContractPage</Filter>
     </Page>
@@ -399,6 +399,24 @@
     </Page>
     <Page Include="EventPage.xaml">
       <Filter>2. Property Pages\e. Library\EventPage</Filter>
+    </Page>
+    <Page Include="XamlContextMenuPage.xaml">
+      <Filter>2. Property Pages\f. UX\XamlContextMenuPage</Filter>
+    </Page>
+    <Page Include="XamlResourcePage.xaml">
+      <Filter>2. Property Pages\f. UX\XamlResourcePage</Filter>
+    </Page>
+    <Page Include="XamlToolBarPage.xaml">
+      <Filter>2. Property Pages\f. UX\XamlToolBarPage</Filter>
+    </Page>
+    <Page Include="UserControlPage.xaml">
+      <Filter>2. Property Pages\f. UX\UserControlPage</Filter>
+    </Page>
+    <Page Include="XamlWidgetPage.xaml">
+      <Filter>2. Property Pages\f. UX\XamlWidgetPage</Filter>
+    </Page>
+    <Page Include="XamlPgPage.xaml">
+      <Filter>2. Property Pages\f. UX\XamlPgPage</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

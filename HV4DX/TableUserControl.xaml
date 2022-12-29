@@ -1,0 +1,129 @@
+﻿<UserControl
+    x:Class="HV4DX.TableUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterNew 
+            x:Name="UserControlHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="UserControl HVID"/>
+
+        <local:UserFilterMMM 
+            x:Name="UserControlMMM"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="MMM"/>
+
+        <local:UserFilterItem 
+            x:Name="UserControlMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserFilterGoTo 
+            x:Name="UserControlLibraryHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Library HVID"/>
+
+        <local:UserBlock 
+            x:Name="UserControlCompiled"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="DateTime Created"/>
+
+        <local:UserBlock 
+            x:Name="UserControlUpdated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="DateTime Updated"/>
+
+        <local:UserBlock 
+            x:Name="UserControlNamespace"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Namespace"/>
+
+        <local:UserBlock 
+            x:Name="UserControlRTC"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Runtime Class"/>
+
+        <local:UserFile 
+            x:Name="UserControlFile"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Xaml File"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="VIEW XAML"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>

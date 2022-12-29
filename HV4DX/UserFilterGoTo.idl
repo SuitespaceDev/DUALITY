@@ -1,0 +1,16 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserFilterGoTo : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserFilterGoTo();
+
+        String Label;
+        Int32 SelectedItem;
+        Windows.Foundation.Collections.IObservableVector<String> ItemList{ get; };
+
+        Boolean IsEditable;
+
+    }
+
+}

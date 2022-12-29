@@ -43,13 +43,13 @@
             Label="Dictionary HVID"/>
 
         <local:UserBlock 
-            x:Name="IteratorDictionaryNamespace"
+            x:Name="IteratorServiceNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="IteratorRuntimeClass"
+            x:Name="IteratorServiceRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1"
             Label="Runtime Class"/>

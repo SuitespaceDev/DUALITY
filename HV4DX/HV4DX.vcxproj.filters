@@ -124,27 +124,6 @@
     <Filter Include="h. TableLibrary\TableContract">
       <UniqueIdentifier>{c8604a60-daf5-4e05-9f2a-aac93d157b5f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="i. TableXaml">
-      <UniqueIdentifier>{7ba9853a-0feb-4e28-9f5c-e8ebd7804e18}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableXamlPg">
-      <UniqueIdentifier>{695eda57-8de2-49cb-89e8-fde4581b0809}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableWidget">
-      <UniqueIdentifier>{a6c38dc4-f632-4b85-ae38-85b867b946b8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableUserControl">
-      <UniqueIdentifier>{aa6cfe70-8151-4db1-bfba-e075f7535615}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableToolBar">
-      <UniqueIdentifier>{8b6eebe9-bac6-4e60-b147-67b1ed01f545}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableResource">
-      <UniqueIdentifier>{714bfd30-fe49-4cc3-8a1c-bdb8996ea5c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="i. TableXaml\TableContextMenu">
-      <UniqueIdentifier>{9d671667-3e36-433f-aa51-21af6b27b4a9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="j. TablePipeline">
       <UniqueIdentifier>{b643d3de-96f7-4a10-a28f-5996d3f224b1}</UniqueIdentifier>
     </Filter>
@@ -382,6 +361,30 @@
     <Filter Include="h. TableLibrary\TableEvent">
       <UniqueIdentifier>{55bcd46d-9afc-4640-bcad-9ef6e2df71fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UserFilters\UserFilterGoTo">
+      <UniqueIdentifier>{d9792923-df0d-4f17-9726-bf0e20aedba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX">
+      <UniqueIdentifier>{7ba9853a-0feb-4e28-9f5c-e8ebd7804e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableXamlPg">
+      <UniqueIdentifier>{695eda57-8de2-49cb-89e8-fde4581b0809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableUserControl">
+      <UniqueIdentifier>{aa6cfe70-8151-4db1-bfba-e075f7535615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableXamlWidget">
+      <UniqueIdentifier>{a6c38dc4-f632-4b85-ae38-85b867b946b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableXamlToolBar">
+      <UniqueIdentifier>{8b6eebe9-bac6-4e60-b147-67b1ed01f545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableXamlResource">
+      <UniqueIdentifier>{714bfd30-fe49-4cc3-8a1c-bdb8996ea5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i. TableUX\TableXamlContextMenu">
+      <UniqueIdentifier>{9d671667-3e36-433f-aa51-21af6b27b4a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -418,6 +421,9 @@
     <Midl Include="UserPassword.idl" />
     <Midl Include="TablePartition.idl">
       <Filter>TableItem\TablePartition</Filter>
+    </Midl>
+    <Midl Include="TableEventItem.idl">
+      <Filter>h. TableLibrary\TableEvent</Filter>
     </Midl>
   </ItemGroup>
   <ItemGroup>
@@ -591,6 +597,27 @@
     </Page>
     <Page Include="TableEventItem.xaml">
       <Filter>h. TableLibrary\TableEvent</Filter>
+    </Page>
+    <Page Include="UserFilterGoTo.xaml">
+      <Filter>UserFilters\UserFilterGoTo</Filter>
+    </Page>
+    <Page Include="TableXamlContextMenu.xaml">
+      <Filter>i. TableUX\TableXamlContextMenu</Filter>
+    </Page>
+    <Page Include="TableXamlResource.xaml">
+      <Filter>i. TableUX\TableXamlResource</Filter>
+    </Page>
+    <Page Include="TableXamlToolBar.xaml">
+      <Filter>i. TableUX\TableXamlToolBar</Filter>
+    </Page>
+    <Page Include="TableUserControl.xaml">
+      <Filter>i. TableUX\TableUserControl</Filter>
+    </Page>
+    <Page Include="TableXamlWidget.xaml">
+      <Filter>i. TableUX\TableXamlWidget</Filter>
+    </Page>
+    <Page Include="TableXamlPg.xaml">
+      <Filter>i. TableUX\TableXamlPg</Filter>
     </Page>
   </ItemGroup>
 </Project>
