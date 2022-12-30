@@ -21,8 +21,6 @@
                 x:Name="DigitalTwinSoftDriveDescription"
                 ValueKey="DIGITAL_TWIN_SOFTDRIVE_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

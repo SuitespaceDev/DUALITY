@@ -1,0 +1,13 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableDebug : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableDebug();
+
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

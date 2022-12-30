@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TablePipe : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TablePipe();
+
+    }
+
+}

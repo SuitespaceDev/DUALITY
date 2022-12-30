@@ -21,8 +21,6 @@
                 x:Name="BindXAMLDescription"
                 ValueKey="BIND_XAML_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

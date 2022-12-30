@@ -21,8 +21,6 @@
                 x:Name="UserControlDescription"
                 ValueKey="USER_CONTROL_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

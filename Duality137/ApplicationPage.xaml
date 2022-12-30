@@ -20,8 +20,6 @@
                 x:Name="DeviceDescription"
                 ValueKey="_DEVICE_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

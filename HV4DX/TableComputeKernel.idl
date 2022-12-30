@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableComputeKernel : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableComputeKernel();
+        
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

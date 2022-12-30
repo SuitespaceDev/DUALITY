@@ -26,55 +26,82 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserBlock 
+        <local:UserFilterItem 
             x:Name="PeripheralManufacturer"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Manufacturer"/>
+            Label="Peripheral Manufacturer"/>
 
-        <local:UserBlock 
-            x:Name="PeripheralModel"
+        <local:UserFilterItem 
+            x:Name="PeripheralModelHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
+            Label="Model S/N"/>
+
+        <local:UserFilterItem 
+            x:Name="PeripheralModelMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Model"/>
 
         <local:UserFilterNew 
             x:Name="PeripheralHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
             Label="HVID"/>
 
         <local:UserFilterItem 
             x:Name="PeripheralID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
             Label="ID"/>
+
+        <local:UserFilterItem 
+            x:Name="PeripheralMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="PeripheralInstalled"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Installed"/>
+
+        <local:UserBlock 
+            x:Name="PeripheralUpdated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Updated"/>
 
         <local:UserBlock 
             x:Name="PeripheralAcceleratorHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Accelerator HVID"/>
 
         <local:UserBlock 
             x:Name="PeripheralAcceleratorID"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="Accelerator ID"/>
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="ID"/>
 
         <local:UserBlock 
             x:Name="PeripheralAcceleratorComPort"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Accelerator ComPort"/>
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="ComPort"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1">
+            Grid.Row="5" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -84,7 +111,27 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MAPPING"
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="6" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MAPPINGS"
                     FontSize="12"/>
             </Button>
 

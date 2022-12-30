@@ -21,8 +21,6 @@
                 x:Name="BindJSONDescription"
                 ValueKey="BIND_JSON_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

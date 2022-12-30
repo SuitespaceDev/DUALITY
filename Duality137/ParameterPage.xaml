@@ -21,8 +21,6 @@
                 x:Name="ParameterLibraryDescription"
                 ValueKey="PARAMETER_LIBRARY_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

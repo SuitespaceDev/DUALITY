@@ -12,17 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableRuntimeClass
-                x:Name="ComponentServiceMetric"
-                ValueKey="COMPONENT_SERVICE_METRIC"/>
+            <HV4DX:TableMetric
+                x:Name="ComponentServiceMetric"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
                 x:Name="ComponentServiceMetricDescription"
                 ValueKey="COMPONENT_SERVICE_METRIC_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
 
         </StackPanel>
 

@@ -13,17 +13,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableAccount
-                x:Name="MachineBuildProfile"
-                ValueKey="MACHINE_BUILD_PROFILE"/>
+            <HV4DX:TableProfile
+                x:Name="MachineBuildProfile"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
                 x:Name="MachineBuildDescription"
                 ValueKey="MACHINE_BUILD_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
 
         </StackPanel>
 

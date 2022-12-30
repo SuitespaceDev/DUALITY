@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableLvl4Account : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableLvl4Account();
+
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableBitmap : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableBitmap();
+        
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

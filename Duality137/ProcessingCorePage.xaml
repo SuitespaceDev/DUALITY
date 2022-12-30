@@ -12,13 +12,14 @@
 
         <StackPanel>
 
+            <HV4DX:TableProcessingCore
+                x:Name="ProcessingCore"/>
+
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="Description"
-                ValueKey="_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
+                x:Name="ProcessingCoreDescription"
+                ValueKey="PROCESSING_CORE_DESCRIPTION"/>
 
         </StackPanel>
 

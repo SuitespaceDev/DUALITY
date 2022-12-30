@@ -21,8 +21,6 @@
                 x:Name="XamlResourceDescription"
                 ValueKey="XAML_RESOURCE_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

@@ -21,8 +21,6 @@
                 x:Name="BindQIFDescription"
                 ValueKey="BIND_QIF_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

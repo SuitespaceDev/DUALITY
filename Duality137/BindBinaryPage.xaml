@@ -21,8 +21,6 @@
                 x:Name="BindBinaryDescription"
                 ValueKey="BIND_BINARY_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

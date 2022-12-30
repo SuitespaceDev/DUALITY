@@ -132,8 +132,6 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="32"/>
-                    <RowDefinition Height="140"/>
-                    <RowDefinition Height="32"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="32"/>
                 </Grid.RowDefinitions>
@@ -142,21 +140,15 @@
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="0" Grid.RowSpan="1"/>
 
-                <HV4DX:TableKey
-                    x:Name="MachineBuildKey"
+                <Frame 
+                    x:Name="MachineFrame" 
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="1" Grid.RowSpan="1"
-                    ValueKey="MACHINE_BUILD_KEY"/>
+                    NavigationFailed="MetadataPortalNavFailed"/>
 
                 <HV4DX:UserDivider
                     Grid.Column="0" Grid.ColumnSpan="1"
                     Grid.Row="2" Grid.RowSpan="1"/>
-
-                <Frame 
-                    x:Name="MachineFrame" 
-                    Grid.Column="0" Grid.ColumnSpan="1"
-                    Grid.Row="3" Grid.RowSpan="1"
-                    NavigationFailed="MetadataPortalNavFailed"/>
 
             </Grid>
 
@@ -185,7 +177,7 @@
                FontWeight="Medium"
                FontSize="20"
                 Foreground="{StaticResource HV4DBackdropZNear}"
-               Text="Duality137 ▪ 1.000.001 ▪ {8AB4FA7F-9991-4426-82C5-E46D11230D04}"/>
+               Text="Duality137 ©2023 ▪ 1.000.001 ▪ {8AB4FA7F-9991-4426-82C5-E46D11230D04}"/>
 
             <Button Background="{StaticResource HV4DPropertyPageGrey}"
                 Content="Cancel" 

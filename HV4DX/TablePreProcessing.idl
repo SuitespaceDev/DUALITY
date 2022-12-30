@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TablePreProcessing : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TablePreProcessing();
+        
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

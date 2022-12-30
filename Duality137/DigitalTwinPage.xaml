@@ -21,8 +21,6 @@
                 x:Name="EnterpriseAccountDescription"
                 ValueKey="ENTERPRISE_ACCOUNT_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

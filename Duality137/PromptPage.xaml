@@ -12,17 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableRuntimeClass
-                x:Name="ComponentServicePrompt"
-                ValueKey="COMPONENT_SERVICE_PROMPT"/>
+            <HV4DX:TablePrompt
+                x:Name="ComponentServicePrompt"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
                 x:Name="ComponentServicePromptDescription"
                 ValueKey="COMPONENT_SERVICE_PROMPT_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
 
         </StackPanel>
 

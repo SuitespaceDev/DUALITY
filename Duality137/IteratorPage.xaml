@@ -21,8 +21,6 @@
                 x:Name="IteratorLibraryDescription"
                 ValueKey="ITERATOR_LIBRARY_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

@@ -21,8 +21,6 @@
                 x:Name="XamlWidgetDescription"
                 ValueKey="XAML_WIDGET_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TablePostProcessing : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TablePostProcessing();
+        
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

@@ -7,6 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
     <Grid 
         Margin="6,6,6,6">
         <Grid.ColumnDefinitions>
@@ -14,6 +22,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
@@ -39,34 +50,92 @@
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="BindingQIFContractHVID"
+            x:Name="BindingQIFRTCCompiled"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
-            Label="Contract HVID"/>
-
-        <local:UserFile 
-            x:Name="BindingQIFRTCDLL"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="DLL"/>
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Compiled"/>
 
         <local:UserBlock 
-            x:Name="BindingQIFRTCNamespace"
+            x:Name="BindingQIFInstalled"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Installed"/>
+
+        <local:UserBlock 
+            x:Name="BindingQIFUpdated"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Updated"/>
+
+        <local:UserBlock 
+            x:Name="BindingQIFNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="0" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
             x:Name="BindingQIFRTC"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
-        <local:UserBlock 
-            x:Name="BindingQIFRTCCompiled"
+        <local:UserFilterItem 
+            x:Name="BindingQIFSuppInterfaces"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1"
-            Label="Compiled"/>
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Supported Interfaces"/>
+
+        <local:UserFilterItem 
+            x:Name="BindingQIFAccessLvl"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Access Level"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="PERMISSIONS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <local:UserFile 
+            x:Name="BindingQIFDLL"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="DLL"/>
 
     </Grid>
 

@@ -13,6 +13,7 @@ namespace winrt::HV4DX::implementation
         void SelectDefaultFromTables(winrt::hstring const&);
 
     };
+
 }
 
 namespace winrt::HV4DX::factory_implementation

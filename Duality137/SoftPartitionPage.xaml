@@ -21,8 +21,6 @@
                 x:Name="DigitalTwinSoftPartitionDescription"
                 ValueKey="DIGITAL_TWIN_SOFTPARTITION_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

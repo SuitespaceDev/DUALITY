@@ -21,8 +21,6 @@
                 x:Name="BindPostgreSQLDescription"
                 ValueKey="BIND_POSTGRESQL_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

@@ -21,8 +21,6 @@
                 x:Name="WindowThemeDescription"
                 ValueKey="WINDOW_THEME_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

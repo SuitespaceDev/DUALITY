@@ -21,8 +21,6 @@
                 x:Name="StorageDeviceDescription"
                 ValueKey="STORAGE_DEVICE_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

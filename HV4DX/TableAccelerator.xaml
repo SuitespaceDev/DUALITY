@@ -26,68 +26,97 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserBlock 
+        <local:UserFilterItem 
             x:Name="AcceleratorManufacturer"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="Accelerator Manufacturer"/>
 
-        <local:UserBlock 
-            x:Name="AcceleratorModel"
+        <local:UserFilterItem 
+            x:Name="AcceleratorModelHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
+            Label="Model S/N"/>
+
+        <local:UserFilterItem 
+            x:Name="AcceleratorModelMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Model"/>
 
         <local:UserFilterNew 
             x:Name="AcceleratorHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
             Label="HVID"/>
 
         <local:UserFilterItem 
             x:Name="AcceleratorID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
             Label="ID"/>
 
         <local:UserFilterItem 
-            x:Name="AcceleratorCoreClock"
+            x:Name="AcceleratorMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="AcceleratorInstalled"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Core Clock"/>
+            Label="Installed"/>
 
         <local:UserBlock 
-            x:Name="AcceleratorMemory"
+            x:Name="AcceleratorUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="Accelerator Memory"/>
+            Label="Updated"/>
 
-        <local:UserFilterItem 
-            x:Name="AcceleratorMemoryClock"
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Memory Clock"/>
+            Grid.Row="4" Grid.RowSpan="1">
 
-        <local:UserBlock 
-            x:Name="AcceleratorMemorySize"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
-            Label="Memory Size"/>
-
-        <ScrollViewer
-                Grid.Column="0" Grid.ColumnSpan="2" 
-                Grid.Row="4" Grid.RowSpan="1">
-            
-            <StackPanel
-                x:Name="AcceleratorComPorts"
+            <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
                 BorderThickness="1"
-                MinHeight="500"/>
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MAPPINGS"
+                    FontSize="12"/>
+            </Button>
 
-        </ScrollViewer>
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
 
     </Grid>
 

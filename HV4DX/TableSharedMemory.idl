@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableSharedMemory : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableSharedMemory();
+
+    }
+
+}

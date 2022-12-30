@@ -21,8 +21,6 @@
                 x:Name="ContractLibraryDescription"
                 ValueKey="CONTRACT_LIBRARY_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

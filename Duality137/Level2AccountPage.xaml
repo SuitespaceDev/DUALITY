@@ -12,11 +12,8 @@
 
         <StackPanel>
 
-            <HV4DX:TableAccount
-                x:Name="AccountLvl2Access"
-                ValueKey="LEVEL_2_ACCESS"/>
-
-            <HV4DX:TableAccountPort/>
+            <HV4DX:TableLvl2Account
+                x:Name="AccountLvl2Access"/>
 
             <HV4DX:UserDivider
                 x:Name="AccountlVL2ComAccess"/>
@@ -24,8 +21,6 @@
             <HV4DX:TableDescription
                 x:Name="AccountLvl2AccessDescription"
                 ValueKey="ACCOUNT_LVL2_ACCESS_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
 
         </StackPanel>
 

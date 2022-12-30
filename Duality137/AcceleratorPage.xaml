@@ -21,8 +21,6 @@
                 x:Name="AcceleratorInterfaceDescription"
                 ValueKey="ACCELERATOR_INTERFACE_DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

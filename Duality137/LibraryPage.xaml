@@ -21,8 +21,6 @@
                 x:Name="LibraryABIDescription"
                 ValueKey="LIBRARY_ABI__DESCRIPTION"/>
 
-            <HV4DX:UserDivider/>
-
         </StackPanel>
 
     </ScrollViewer>

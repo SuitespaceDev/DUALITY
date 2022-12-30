@@ -1,0 +1,12 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableProfile : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableProfile();
+
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

@@ -12,13 +12,14 @@
 
         <StackPanel>
 
+            <HV4DX:TableRandomMemory
+                x:Name="RandomMemory"/>
+
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="Description"
-                ValueKey="_DESCRIPTION"/>
-
-            <HV4DX:UserDivider/>
+                x:Name="RandomMemoryDescription"
+                ValueKey="RANDOM_MEMORY_DESCRIPTION"/>
 
         </StackPanel>
 

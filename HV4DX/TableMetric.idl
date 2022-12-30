@@ -1,0 +1,13 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableMetric : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableMetric();
+
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

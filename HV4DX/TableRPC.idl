@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableRPC : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableRPC();
+
+    }
+
+}
