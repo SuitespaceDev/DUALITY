@@ -244,6 +244,9 @@
     <Filter Include="e. TableAccount\TableLvl4Account">
       <UniqueIdentifier>{3cef8362-b091-4a21-b460-11008ed8b8db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UserFilters\UserFilterNewMMM">
+      <UniqueIdentifier>{3768c642-5273-4e04-852a-e7ed8e8dc6ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -278,9 +281,6 @@
     <Midl Include="UserFilterTime.idl" />
     <Midl Include="UserFilterType.idl" />
     <Midl Include="UserPassword.idl" />
-    <Midl Include="TablePartition.idl">
-      <Filter>TableItem\TablePartition</Filter>
-    </Midl>
     <Midl Include="TableEventItem.idl">
       <Filter>h. TableLibrary\TableEvent</Filter>
     </Midl>
@@ -321,9 +321,6 @@
     </Page>
     <Page Include="TableRuntimeClass.xaml">
       <Filter>l. TableProcess\TableRuntimeClass</Filter>
-    </Page>
-    <Page Include="UserFilterMMM.xaml">
-      <Filter>UserFilters\UserFilterMMM</Filter>
     </Page>
     <Page Include="UserIPv4.xaml">
       <Filter>UserString\UserIPv4</Filter>
@@ -382,13 +379,7 @@
     <Page Include="TableIteratorItem.xaml">
       <Filter>i. TableLibrary\TableIterator</Filter>
     </Page>
-    <Page Include="TableContractItem.xaml">
-      <Filter>i. TableLibrary\TableContract</Filter>
-    </Page>
     <Page Include="TableFunction.xaml">
-      <Filter>i. TableLibrary\TableFunction</Filter>
-    </Page>
-    <Page Include="TableFunctionItem.xaml">
       <Filter>i. TableLibrary\TableFunction</Filter>
     </Page>
     <Page Include="TableParameter.xaml">
@@ -422,9 +413,6 @@
       <Filter>i. TableLibrary</Filter>
     </Page>
     <Page Include="TableEvent.xaml">
-      <Filter>i. TableLibrary\TableEvent</Filter>
-    </Page>
-    <Page Include="TableEventItem.xaml">
       <Filter>i. TableLibrary\TableEvent</Filter>
     </Page>
     <Page Include="UserFilterGoTo.xaml">
@@ -504,6 +492,12 @@
     </Page>
     <Page Include="TableShell.xaml">
       <Filter>l. TableProcess\TableShell</Filter>
+    </Page>
+    <Page Include="UserFilterNewMMM.xaml">
+      <Filter>UserFilters\UserFilterNewMMM</Filter>
+    </Page>
+    <Page Include="UserFilterMMM.xaml">
+      <Filter>UserFilters\UserFilterMMM</Filter>
     </Page>
   </ItemGroup>
 </Project>

@@ -236,10 +236,6 @@
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableContractItem.xaml.h">
-      <DependentUpon>TableContractItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableDescription.xaml.h">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -252,9 +248,6 @@
       <DependentUpon>TableEvent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableEventItem.xaml.h">
-      <DependentUpon>TableEventItem.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="TableLibrary.xaml.h">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -265,10 +258,6 @@
     </ClInclude>
     <ClInclude Include="TableSoftDrive.xaml.h">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableFunctionItem.xaml.h">
-      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableFunction.xaml.h">
@@ -342,6 +331,10 @@
       <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="UserFilterMMM.xaml.h">
+      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserIPv4.xaml.h">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -371,8 +364,8 @@
     <ClInclude Include="UserFilterType.xaml.h">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserFilterMMM.xaml.h">
-      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+    <ClInclude Include="UserFilterNewMMM.xaml.h">
+      <DependentUpon>UserFilterNewMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserMMM.xaml.h">
@@ -513,10 +506,6 @@
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableContractItem.xaml.cpp">
-      <DependentUpon>TableContractItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TableDescription.xaml.cpp">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -529,9 +518,6 @@
       <DependentUpon>TableEvent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableEventItem.xaml.cpp">
-      <DependentUpon>TableEventItem.xaml</DependentUpon>
-    </ClCompile>
     <ClCompile Include="TableLibrary.xaml.cpp">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -542,10 +528,6 @@
     </ClCompile>
     <ClCompile Include="TableSoftDrive.xaml.cpp">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableFunctionItem.xaml.cpp">
-      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableFunction.xaml.cpp">
@@ -619,6 +601,10 @@
       <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="UserFilterMMM.xaml.cpp">
+      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserIPv4.xaml.cpp">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -648,8 +634,8 @@
     <ClCompile Include="UserFilterType.xaml.cpp">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserFilterMMM.xaml.cpp">
-      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+    <ClCompile Include="UserFilterNewMMM.xaml.cpp">
+      <DependentUpon>UserFilterNewMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserMMM.xaml.cpp">
@@ -791,10 +777,6 @@
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableContractItem.idl">
-      <DependentUpon>TableContractItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableDescription.idl">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -807,10 +789,6 @@
       <DependentUpon>TableEvent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableEventItem.idl">
-      <DependentUpon>TableEventItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableLibrary.idl">
       <DependentUpon>TableLibrary.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -821,10 +799,6 @@
     </Midl>
     <Midl Include="TableSoftDrive.idl">
       <DependentUpon>TableSoftDrive.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableFunctionItem.idl">
-      <DependentUpon>TableFunctionItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableFunction.idl">
@@ -898,6 +872,10 @@
       <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="UserFilterMMM.idl">
+      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserIPv4.idl">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -927,8 +905,8 @@
     <Midl Include="UserFilterType.idl">
       <DependentUpon>UserFilterType.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserFilterMMM.idl">
-      <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+    <Midl Include="UserFilterNewMMM.idl">
+      <DependentUpon>UserFilterNewMMM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserMMM.idl">
@@ -1040,9 +1018,6 @@
     <Page Include="TableXamlContextMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableContractItem.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="TableDescription.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -1052,7 +1027,6 @@
     <Page Include="TableEvent.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableEventItem.xaml" />
     <Page Include="TableLibrary.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -1060,9 +1034,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSoftDrive.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableFunctionItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableFunction.xaml">
@@ -1117,6 +1088,9 @@
     <Page Include="UserFilterGoTo.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UserFilterMMM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserIPv4.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -1130,7 +1104,7 @@
     <Page Include="UserFilterNew.xaml" />
     <Page Include="UserFilterTime.xaml" />
     <Page Include="UserFilterType.xaml" />
-    <Page Include="UserFilterMMM.xaml">
+    <Page Include="UserFilterNewMMM.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserMMM.xaml">

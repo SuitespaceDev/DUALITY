@@ -49,10 +49,10 @@
             Label="Tag"/>
 
         <local:UserFilterGoTo 
-            x:Name="ContextMenuSupportedInterfaces"
+            x:Name="ContextMenuSupportedContracts"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
-            Label="Supported Interfaces"/>
+            Label="Supported Contracts"/>
 
         <local:UserBlock 
             x:Name="ContextMenuCompiled"

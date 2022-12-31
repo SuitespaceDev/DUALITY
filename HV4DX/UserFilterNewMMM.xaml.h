@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "UserFilterMMM.g.h"
+#include "UserFilterNewMMM.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
@@ -11,10 +11,10 @@ namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::HV4DX::implementation
 {
-    struct UserFilterMMM : UserFilterMMMT<UserFilterMMM>
+    struct UserFilterNewMMM : UserFilterNewMMMT<UserFilterNewMMM>
     {
     public:
-        UserFilterMMM();
+        UserFilterNewMMM();
 
     public:
         winrt::hstring Label();
@@ -55,6 +55,9 @@ namespace winrt::HV4DX::implementation
         winrt::hstring value_min{};
 
     public:
+        void NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
+    public:
         winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
         void PropertyChanged(winrt::event_token const&) noexcept;
@@ -68,7 +71,7 @@ namespace winrt::HV4DX::implementation
 
 namespace winrt::HV4DX::factory_implementation
 {
-    struct UserFilterMMM : UserFilterMMMT<UserFilterMMM, implementation::UserFilterMMM>
+    struct UserFilterNewMMM : UserFilterNewMMMT<UserFilterNewMMM, implementation::UserFilterNewMMM>
     {
     };
 }

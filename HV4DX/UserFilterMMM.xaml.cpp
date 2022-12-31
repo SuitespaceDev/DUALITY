@@ -9,7 +9,7 @@ namespace winrt::HV4DX::implementation
     UserFilterMMM::UserFilterMMM()
     {
         InitializeComponent();
-    }
+	}
 
 	winrt::hstring UserFilterMMM::Label()
 	{
@@ -76,12 +76,6 @@ namespace winrt::HV4DX::implementation
 	}
 
 	void UserFilterMMM::DecreaseMinor(Windows::Foundation::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		return;
-
-	}
-
-	void UserFilterMMM::NewMMM(WF::IInspectable const&, MUX::RoutedEventArgs const&)
 	{
 		return;
 

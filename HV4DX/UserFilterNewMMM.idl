@@ -1,0 +1,15 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserFilterNewMMM : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserFilterNewMMM();
+
+        String Label;
+        String ValueMIL{ get; };
+        String ValueMAJ{ get; };
+        String ValueMIN{ get; };
+
+    }
+
+}
