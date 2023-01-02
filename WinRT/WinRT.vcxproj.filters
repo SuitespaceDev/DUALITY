@@ -2,10 +2,10 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
     <ClCompile Include="tBoolean.cpp">
       <Filter>Boolean</Filter>
@@ -124,19 +124,19 @@
     <ClCompile Include="cUInt64.cpp">
       <Filter>UInt64</Filter>
     </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>1. Service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
     <None Include="WinRT.def">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="a. Project">
-      <UniqueIdentifier>{f491923f-1101-423f-976c-68002317e364}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UInt8">
       <UniqueIdentifier>{b66325c4-0288-491a-9f9f-a49c8f5618be}</UniqueIdentifier>
     </Filter>
@@ -176,13 +176,21 @@
     <Filter Include="String">
       <UniqueIdentifier>{e8684942-050a-4d85-bcd6-79968282486b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>{f491923f-1101-423f-976c-68002317e364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Service">
+      <UniqueIdentifier>{8c1984a1-27f0-490a-87fd-b9bc5fd84556}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>0. Project</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

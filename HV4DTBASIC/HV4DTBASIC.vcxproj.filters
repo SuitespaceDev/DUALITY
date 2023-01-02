@@ -2,10 +2,10 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </ClCompile>
     <ClCompile Include="HV4DABS.cpp">
       <Filter>HV4DABS</Filter>
@@ -52,6 +52,9 @@
     <ClCompile Include="HV4DTEXTBLOBW.cpp">
       <Filter>HV4DTEXTBLOBW</Filter>
     </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>0. Service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="HV4DABS.idl" />
@@ -74,19 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4DTBASIC.def">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </None>
     <None Include="packages.config">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </None>
     <None Include="PropertySheet.props">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="a. Project">
-      <UniqueIdentifier>{80792c3d-7bd8-47ec-988c-5ccc0a2ecc86}</UniqueIdentifier>
-    </Filter>
     <Filter Include="HV4DABS">
       <UniqueIdentifier>{b49da364-b31c-4391-bfa5-46b0fe244cfc}</UniqueIdentifier>
     </Filter>
@@ -132,10 +132,16 @@
     <Filter Include="HV4DTEXTBLOBW">
       <UniqueIdentifier>{e817cc86-c01f-494d-a1a1-8ed6538a7535}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0. Service">
+      <UniqueIdentifier>{52c8e569-dcfd-41eb-9137-0ee596d1ea80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Project">
+      <UniqueIdentifier>{80792c3d-7bd8-47ec-988c-5ccc0a2ecc86}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>a. Project</Filter>
+      <Filter>1. Project</Filter>
     </ClInclude>
     <ClInclude Include="HV4DABS.h" />
     <ClInclude Include="HV4DCLASST.h" />

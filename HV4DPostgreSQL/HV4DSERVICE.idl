@@ -1,0 +1,10 @@
+namespace HV4DPostgreSQL
+{
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DOBJECT
+    {
+        HV4DSERVICE();
+
+
+    }
+
+}

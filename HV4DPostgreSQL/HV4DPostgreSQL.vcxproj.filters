@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>{f81058c0-956c-4622-a61c-19de88c5ed82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Service">
+      <UniqueIdentifier>{61b2f8d3-a27e-44a4-a406-b0dcbbb64326}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>1. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Class.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HV4DPostgreSQL.def">
+      <Filter>0. Project</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>0. Project</Filter>
+    </None>
+    <None Include="PropertySheet.props">
+      <Filter>0. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>0. Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

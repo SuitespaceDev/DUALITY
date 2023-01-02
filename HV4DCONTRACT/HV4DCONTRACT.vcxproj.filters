@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="a. Project">
-      <UniqueIdentifier>{5dedcb96-1ccd-406e-9433-8f19659f5eb5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Service">
-      <UniqueIdentifier>{c7cb2c3e-a279-46e7-b2ae-d87fd08f9384}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contracts">
       <UniqueIdentifier>{eddecd17-28a7-4417-8f14-969f5d0051b8}</UniqueIdentifier>
     </Filter>
@@ -145,34 +139,43 @@
     <Filter Include="Contracts\Framework\HV4DDISPATCH">
       <UniqueIdentifier>{9492e1ff-dc5f-4725-86fb-8db9caa92056}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>{5dedcb96-1ccd-406e-9433-8f19659f5eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Service">
+      <UniqueIdentifier>{c7cb2c3e-a279-46e7-b2ae-d87fd08f9384}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>1. Service</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4DABI.def">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
     <None Include="packages.config">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
     <None Include="PropertySheet.props">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </Natvis>
   </ItemGroup>
 </Project>

@@ -1,9 +1,9 @@
-namespace HV4DSYSCALL
+namespace HV4DENCRYPTION
 {
-    [default_interface]
-    runtimeclass HV4DSERVICE : HV4DCONTRACT.IObject
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DOBJECT
     {
         HV4DSERVICE();
+
 
     }
 

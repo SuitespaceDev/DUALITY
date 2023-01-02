@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="a. Project">
-      <UniqueIdentifier>{b4c99d09-1919-4a38-a7fd-e6c74272f07f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="CHV4DABS">
       <UniqueIdentifier>{995954fd-75f6-46a0-b445-7d9500b6e01d}</UniqueIdentifier>
     </Filter>
@@ -49,10 +46,13 @@
     <Filter Include="CHV4DHHMMSS">
       <UniqueIdentifier>{e511c2d8-06b7-4ccb-a071-f2c8516cd590}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>{b4c99d09-1919-4a38-a7fd-e6c74272f07f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClInclude>
     <ClInclude Include="CHV4DABS.h" />
     <ClInclude Include="CHV4DCLASST.h" />
@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DABS.cpp">
       <Filter>CHV4DABS</Filter>

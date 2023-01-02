@@ -131,7 +131,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HV4DSERVICE.cpp">
-      <SubType>Code</SubType>
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

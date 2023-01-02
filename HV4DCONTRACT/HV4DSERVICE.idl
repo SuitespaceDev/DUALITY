@@ -1,0 +1,10 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DOBJECT
+    {
+        HV4DSERVICE();
+
+
+    }
+
+}

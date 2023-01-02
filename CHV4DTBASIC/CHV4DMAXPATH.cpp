@@ -42,7 +42,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DMAXPATH::HV4DIsValidMAXPATH()
 	{
-		if (tagMAXPATH.size() > 256)
+		if (tagMAXPATH.size() > 255)
 		{
 			throw std::domain_error("");
 

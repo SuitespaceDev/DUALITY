@@ -179,6 +179,10 @@
       <DependentUpon>HV4DOFFSET.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="HV4DSERVICE.h">
+      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="HV4DTEXTBLOBA.h">
       <DependentUpon>HV4DTEXTBLOBA.cpp</DependentUpon>
       <SubType>
@@ -217,6 +221,10 @@
     <ClCompile Include="HV4DMMM.cpp" />
     <ClCompile Include="HV4DNUMERIC.cpp" />
     <ClCompile Include="HV4DOFFSET.cpp" />
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4DTEXTBLOBA.cpp">
       <SubType>
       </SubType>
@@ -290,6 +298,10 @@
     </Midl>
     <Midl Include="HV4DOFFSET.idl">
       <DependentUpon>HV4DOFFSET.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSERVICE.idl">
+      <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="HV4DTEXTBLOBA.idl">
