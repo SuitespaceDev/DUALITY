@@ -12,66 +12,73 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserFilterItem
-            x:Name="BuildTheme"
+            x:Name="WindowHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
+            Label="Theme HVID"/>
+
+        <local:UserFilterItem
+            x:Name="WindowTheme"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="Theme"/>
 
         <local:UserFilterItem
-            x:Name="BuildUIScale"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
+            x:Name="WindowUIScale"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="UI Scale"/>
 
         <local:UserFilterItem
-            x:Name="BuildAntiAliasing"
-            Grid.Column="2" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
+            x:Name="WindowAntiAliasing"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
             Label="Anti Aliasing"/>
 
         <local:UserFilterItem
-            x:Name="BuildFullScreen"
+            x:Name="WindowFullScreen"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
             Label="Full Screen"/>
 
         <local:UserFilterItem
-            x:Name="BuildResolution"
+            x:Name="WindowResolution"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
             Label="Resolution"/>
 
         <local:UserFilterItem
-            x:Name="BuildRefreshRate"
-            Grid.Column="2" Grid.ColumnSpan="1" 
+            x:Name="WindowRefreshRate"
+            Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="Refresh Rate"/>
 
         <local:UserFilterItem
-            x:Name="BuildFont"
-            Grid.Column="0" Grid.ColumnSpan="1" 
+            x:Name="WindowFont"
+            Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Font"/>
 
         <local:UserFilterItem
-            x:Name="BuildFontSize"
+            x:Name="WindowFontSize"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
             Label="Font Size"/>
 
         <local:UserFilterItem
-            x:Name="BuildFontWeight"
-            Grid.Column="2" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            x:Name="WindowFontWeight"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
             Label="Font Weight"/>
         
     </Grid>

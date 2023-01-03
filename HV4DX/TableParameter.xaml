@@ -30,6 +30,7 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserFilterGoTo 
@@ -56,11 +57,17 @@
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserFilterItem 
-            x:Name="ParameterSupportedContracts"
+        <local:UserFilterGoTo 
+            x:Name="ParameterSupportedContractHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="Supported Contracts"/>
+            Label="Supported Contract HVID"/>
+
+        <local:UserBlock 
+            x:Name="ParameterSupportedContractTag"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Supported Contract Tag"/>
 
         <local:UserBlock 
             x:Name="ParameterServiceNamespace"
@@ -100,47 +107,53 @@
 
         </Border>
 
-        <local:UserFilterItem 
-            x:Name="ParameterType"
+        <local:UserFilterGoTo 
+            x:Name="ParameterBaseTypeHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
-            Label="Base Type"/>
+            Label="Base Type HVID"/>
+
+        <local:UserBlock 
+            x:Name="ParameterBaseTypeTag"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Base Type Tag"/>
 
         <local:UserFilterItem 
             x:Name="ParameterHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1" 
             Label="Parameter HVID"/>
 
         <local:UserFilterItem 
             x:Name="ParameterID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
             Label="ID"/>
 
         <local:UserFilterItem 
             x:Name="ParameterMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
             x:Name="ParameterContractNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1"
+            Grid.Row="6" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="ParameterContractRTC"
+            x:Name="ParameterContractRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1"
+            Grid.Row="7" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
             Grid.Column="1" Grid.ColumnSpan="1"
-            Grid.Row="7" Grid.RowSpan="1">
+            Grid.Row="8" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"

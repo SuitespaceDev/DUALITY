@@ -73,7 +73,7 @@
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="XamlWidgetRTC"
+            x:Name="XamlWidgetRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Runtime Class"/>

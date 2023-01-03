@@ -268,14 +268,6 @@
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableIteratorItem.xaml.h">
-      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableParameterItem.xaml.h">
-      <DependentUpon>TableParameterItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableParameter.xaml.h">
       <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -536,14 +528,6 @@
     </ClCompile>
     <ClCompile Include="TableSoftPartition.xaml.cpp">
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableIteratorItem.xaml.cpp">
-      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableParameterItem.xaml.cpp">
-      <DependentUpon>TableParameterItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableParameter.xaml.cpp">
@@ -809,14 +793,6 @@
       <DependentUpon>TableSoftPartition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableIteratorItem.idl">
-      <DependentUpon>TableIteratorItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableParameterItem.idl">
-      <DependentUpon>TableParameterItem.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableParameter.idl">
       <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -1040,12 +1016,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSoftPartition.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableIteratorItem.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableParameterItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableParameter.xaml">

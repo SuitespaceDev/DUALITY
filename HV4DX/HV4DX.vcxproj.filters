@@ -281,9 +281,6 @@
     <Midl Include="UserFilterTime.idl" />
     <Midl Include="UserFilterType.idl" />
     <Midl Include="UserPassword.idl" />
-    <Midl Include="TableEventItem.idl">
-      <Filter>h. TableLibrary\TableEvent</Filter>
-    </Midl>
   </ItemGroup>
   <ItemGroup>
     <Page Include="UserFilterItem.xaml">
@@ -376,16 +373,10 @@
     <Page Include="TableRandomMemory.xaml">
       <Filter>h. TableIO\TableRandomMemory</Filter>
     </Page>
-    <Page Include="TableIteratorItem.xaml">
-      <Filter>i. TableLibrary\TableIterator</Filter>
-    </Page>
     <Page Include="TableFunction.xaml">
       <Filter>i. TableLibrary\TableFunction</Filter>
     </Page>
     <Page Include="TableParameter.xaml">
-      <Filter>i. TableLibrary\TableParameter</Filter>
-    </Page>
-    <Page Include="TableParameterItem.xaml">
       <Filter>i. TableLibrary\TableParameter</Filter>
     </Page>
     <Page Include="TableDescription.xaml">

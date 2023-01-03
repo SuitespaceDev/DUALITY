@@ -50,7 +50,7 @@
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="BindingQIFRTCCompiled"
+            x:Name="BindingQIFRuntimeClassCompiled"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
             Label="Compiled"/>
@@ -74,7 +74,7 @@
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="BindingQIFRTC"
+            x:Name="BindingQIFRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>

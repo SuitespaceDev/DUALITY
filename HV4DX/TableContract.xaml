@@ -118,13 +118,13 @@
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="ContractDictionaryNamespace"
+            x:Name="ContractNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="ContractDictionaryRuntimeClass"
+            x:Name="ContractRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1"
             Label="Runtime Class"/>
