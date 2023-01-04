@@ -128,9 +128,6 @@
     <Filter Include="2. Property Pages\d. DataBinding\BindJSONPage">
       <UniqueIdentifier>{aaa97d7c-bb2d-4079-b932-666f37aa269f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Property Pages\d. DataBinding\BindPostgreSQLPage">
-      <UniqueIdentifier>{2516a2d7-276a-45b5-a737-136e7d3ba923}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Property Pages\d. DataBinding\BindQIFPage">
       <UniqueIdentifier>{bafc3bea-ed59-4518-abe3-b94277de065a}</UniqueIdentifier>
     </Filter>
@@ -145,18 +142,6 @@
     </Filter>
     <Filter Include="2. Property Pages\e. IO\AcceleratorPage">
       <UniqueIdentifier>{ff5b8d29-b8ac-4c24-b01d-b7bfbedf6dac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\e. IO\ProcessingCorePage">
-      <UniqueIdentifier>{6cf97c7e-02a6-49e0-9fca-d13eb53dd3ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\e. IO\RandomMemoryPage">
-      <UniqueIdentifier>{a49ea94b-da80-4f24-9f08-b543cd4bc7b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\e. IO\StorageDevicePage">
-      <UniqueIdentifier>{fcd94ff9-7401-41cf-9365-9c425750e097}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Property Pages\e. IO\PeripheralDevicePage">
-      <UniqueIdentifier>{c5ca18e1-9ee9-4cd0-8daf-145c83f78046}</UniqueIdentifier>
     </Filter>
     <Filter Include="2. Property Pages\f. Library">
       <UniqueIdentifier>{834ae501-6211-4a90-b791-5debe62a61eb}</UniqueIdentifier>
@@ -205,6 +190,21 @@
     </Filter>
     <Filter Include="2. Property Pages\a. Profile">
       <UniqueIdentifier>{5052eb7b-c37d-43ff-a1f8-c4546aff519e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\d. DataBinding\BindPostgresPage">
+      <UniqueIdentifier>{2516a2d7-276a-45b5-a737-136e7d3ba923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. IO\MemoryPage">
+      <UniqueIdentifier>{a49ea94b-da80-4f24-9f08-b543cd4bc7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. IO\ProcessorPage">
+      <UniqueIdentifier>{6cf97c7e-02a6-49e0-9fca-d13eb53dd3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. IO\DevicePage">
+      <UniqueIdentifier>{c5ca18e1-9ee9-4cd0-8daf-145c83f78046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\e. IO\StoragePage">
+      <UniqueIdentifier>{fcd94ff9-7401-41cf-9365-9c425750e097}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -343,8 +343,8 @@
     <Page Include="BindJSONPage.xaml">
       <Filter>2. Property Pages\d. DataBinding\BindJSONPage</Filter>
     </Page>
-    <Page Include="BindPostgreSQLPage.xaml">
-      <Filter>2. Property Pages\d. DataBinding\BindPostgreSQLPage</Filter>
+    <Page Include="BindPostgresPage.xaml">
+      <Filter>2. Property Pages\d. DataBinding\BindPostgresPage</Filter>
     </Page>
     <Page Include="BindQIFPage.xaml">
       <Filter>2. Property Pages\d. DataBinding\BindQIFPage</Filter>
@@ -370,17 +370,17 @@
     <Page Include="AcceleratorPage.xaml">
       <Filter>2. Property Pages\e. IO\AcceleratorPage</Filter>
     </Page>
-    <Page Include="PeripheralDevicePage.xaml">
-      <Filter>2. Property Pages\e. IO\PeripheralDevicePage</Filter>
+    <Page Include="DevicePage.xaml">
+      <Filter>2. Property Pages\e. IO\DevicePage</Filter>
     </Page>
-    <Page Include="ProcessingCorePage.xaml">
-      <Filter>2. Property Pages\e. IO\ProcessingCorePage</Filter>
+    <Page Include="ProcessorPage.xaml">
+      <Filter>2. Property Pages\e. IO\ProcessorPage</Filter>
     </Page>
-    <Page Include="RandomMemoryPage.xaml">
-      <Filter>2. Property Pages\e. IO\RandomMemoryPage</Filter>
+    <Page Include="MemoryPage.xaml">
+      <Filter>2. Property Pages\e. IO\MemoryPage</Filter>
     </Page>
-    <Page Include="StorageDevicePage.xaml">
-      <Filter>2. Property Pages\e. IO\StorageDevicePage</Filter>
+    <Page Include="StoragePage.xaml">
+      <Filter>2. Property Pages\e. IO\StoragePage</Filter>
     </Page>
     <Page Include="ContractPage.xaml">
       <Filter>2. Property Pages\f. Library\ContractPage</Filter>

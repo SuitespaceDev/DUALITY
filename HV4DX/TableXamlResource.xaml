@@ -30,7 +30,7 @@
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterNew 
+        <local:UserFilterNewHVID 
             x:Name="XamlResourceHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
@@ -48,7 +48,7 @@
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserFilterGoTo 
+        <local:UserFilterGoToHVID 
             x:Name="XamlResourceLibraryHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 

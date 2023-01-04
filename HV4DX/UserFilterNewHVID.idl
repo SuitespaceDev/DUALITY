@@ -1,0 +1,14 @@
+namespace HV4DX
+{
+    [bindable]
+    runtimeclass UserFilterNewHVID : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserFilterNewHVID();
+    
+        String Label;
+        Int32 SelectedItem;
+        Windows.Foundation.Collections.IObservableVector<String> ItemList{ get; };
+
+    }
+
+}

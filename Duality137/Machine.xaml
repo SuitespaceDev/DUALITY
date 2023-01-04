@@ -69,21 +69,21 @@
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{E1F8583C-67B8-4D9A-BD15-256B3C0E0698}" x:Name="DataBindingPage" Content="Data Binding">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="BindBinaryPage" Content="Bind Binary"/>
-                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="BindJSONPage" Content="Bind JSON"/>
-                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="BindXMLPage" Content="Bind XML"/>
-                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="BindXAMLPage" Content="Bind XAML"/>
-                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="BindQIFPage" Content="Bind QIF"/>
-                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="BindPostgreSQLPage" Content="Bind PostgreSQL"/>
+                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="BindBinaryPage" Content="Binary"/>
+                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="BindJSONPage" Content="JSON"/>
+                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="BindXMLPage" Content="XML"/>
+                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="BindXAMLPage" Content="XAML"/>
+                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="BindQIFPage" Content="QIF"/>
+                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="BindPostgresPage" Content="Postgres"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{AEB4D9F3-E14E-4F60-9315-93386C608B28}" x:Name="AcceleratorPage" Content="Accelerator"/>
-                        <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="PeripheralDevicePage" Content="Peripheral Device"/>
-                        <NavigationViewItem Tag="{}{AFB7FB2D-4C2D-4A47-850A-05CE3FB1CA1B}" x:Name="StorageDevicePage" Content="Storage Device"/>
-                        <NavigationViewItem Tag="{}{19E262AB-C56E-47A7-AAE9-A9459F4726BF}" x:Name="RandomMemoryPage" Content="Random Memory"/>
-                        <NavigationViewItem Tag="{}{36E17529-39A7-4AEC-9EF9-1CAF3188B56A}" x:Name="ProcessorCorePage" Content="Processor Cores"/>
+                        <NavigationViewItem Tag="{}{1FB6C794-C781-436A-8BD6-C7E3049C4491}" x:Name="DevicePage" Content="Device"/>
+                        <NavigationViewItem Tag="{}{AFB7FB2D-4C2D-4A47-850A-05CE3FB1CA1B}" x:Name="StoragePage" Content="Storage"/>
+                        <NavigationViewItem Tag="{}{19E262AB-C56E-47A7-AAE9-A9459F4726BF}" x:Name="MemoryPage" Content="Memory"/>
+                        <NavigationViewItem Tag="{}{36E17529-39A7-4AEC-9EF9-1CAF3188B56A}" x:Name="ProcessorPage" Content="Processor"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="True" Tag="{}{1106C674-FBBE-4342-82BB-18C0DD5CC21D}" x:Name="LibraryPage" Content="Library">

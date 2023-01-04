@@ -25,60 +25,47 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
+            <RowDefinition Height="6"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterGoTo 
+        <local:UserFilterGoToHVID 
             x:Name="LibraryHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="Library HVID"/>
 
-        <local:UserFilterItem 
-            x:Name="EventDictionaryHVID"
+        <local:UserFilterMMM 
+            x:Name="LibraryMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="Event Dictionary HVID"/>
+            Label="MMM"/>
 
-        <local:UserFilterMMM 
-            x:Name="EventDictionaryMMM"
+        <local:UserBlock 
+            x:Name="LibraryMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
-            Label="MMM"/>
+            Label="Tag"/>
+
+        <local:UserFilterItem 
+            x:Name="EventDictionaryHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Event Dictionary HVID"/>
 
         <local:UserFilterItem 
             x:Name="EventDictionaryMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
-            Label="Tag"/>    
-        
-        <local:UserBlock 
-            x:Name="EventServiceNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="Service Namespace"/>
-
-        <local:UserBlock 
-            x:Name="EventServiceRuntimeClass"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
-            Label="Service Runtime Class"/>
-
-        <local:UserFilterItem 
-            x:Name="EventServiceAccessLvl"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
-            Label="Access Level"/>
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Tag"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1">
+            Grid.Column="1" Grid.ColumnSpan="1"
+            Grid.Row="2" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -88,7 +75,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="PERMISSIONS"
+                    Text="MANUAL"
                     FontSize="12"/>
             </Button>
 
@@ -124,30 +111,10 @@
             Grid.Row="5" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
-        <Border 
-            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-            BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1"
-            Grid.Row="6" Grid.RowSpan="1">
-
-            <Button 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="1"
-                Margin="2,2,2,2"
-                Padding="0,0,0,0"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
-                <TextBlock 
-                    Text="MANUAL"
-                    FontSize="12"/>
-            </Button>
-
-        </Border>
-
         <local:UserBlock 
             x:Name="EventSupportedArgument"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1" 
             Label="Supported Argument"/>
 
     </Grid>

@@ -7,6 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
     <Grid 
         Margin="6,6,6,6">
         <Grid.ColumnDefinitions>
@@ -18,49 +26,122 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterNew
-            x:Name="PromptServiceHVID"
+        <local:UserFilterNewHVID 
+            x:Name="BindingPromptHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="Prompt Service HVID"/>
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Prompt Binding HVID"/>
 
-        <local:UserFilterMMM
-            x:Name="PromptServiceMMM"
+        <local:UserFilterMMM 
+            x:Name="BindingPromptMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="MMM"/>
 
-        <local:UserFilterItem
-            x:Name="PromptServiceMaxPath"
+        <local:UserFilterItem 
+            x:Name="BindingPromptMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="PromptServiceCompiled"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
+            x:Name="BindingPromptCompiled"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
             Label="Compiled"/>
 
         <local:UserBlock 
-            x:Name="PromptServiceNamespace"
+            x:Name="BindingPromptInstalled"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Installed"/>
+
+        <local:UserBlock 
+            x:Name="BindingPromptUpdated"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Updated"/>
+
+        <local:UserFile 
+            x:Name="BindingPromptDLL"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="DLL"/>
+
+        <local:UserBlock 
+            x:Name="BindingPromptNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="0" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="PromptService"
+            x:Name="BindingPromptRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
-        <local:UserFile 
-            x:Name="PromptServiceDLL"
-            Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="3" Grid.RowSpan="1"
-            Label="DLL"/>
+        <local:UserFilterItem 
+            x:Name="BindingPromptSupportedContract"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Supported Contract"/>
+
+        <local:UserFilterItem 
+            x:Name="BindingPromptSupportedContractMaxPath"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="BindingPromptAccessLvl"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Access Level"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="PERMISSIONS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
 
     </Grid>
 

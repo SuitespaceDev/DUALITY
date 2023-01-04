@@ -1,0 +1,15 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass UserGoToHVID : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserGoToHVID();
+
+        String Label;
+        String Value;
+        String Placeholder;
+        Boolean IsEditable;
+
+    }
+
+}

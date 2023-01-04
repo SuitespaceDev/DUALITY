@@ -27,7 +27,7 @@
             Label="Component Services:"
             Value="{x:Bind ValueKey, Mode=OneTime}"/>
 
-        <local:UserFilterNew
+        <local:UserFilterNewHVID
             x:Name="RuntimeClassHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"

@@ -158,16 +158,16 @@
     <ClInclude Include="Machine.xaml.h">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="ProcessingCorePage.xaml.h">
-      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+    <ClInclude Include="ProcessorPage.xaml.h">
+      <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="PromptPage.xaml.h">
       <DependentUpon>PromptPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="RandomMemoryPage.xaml.h">
-      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+    <ClInclude Include="MemoryPage.xaml.h">
+      <DependentUpon>MemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="ProfilePage.xaml.h">
@@ -219,8 +219,8 @@
     <ClInclude Include="IteratorPage.xaml.h">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="PeripheralDevicePage.xaml.h">
-      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
+    <ClInclude Include="DevicePage.xaml.h">
+      <DependentUpon>DevicePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="PostProcessPage.xaml.h">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -231,8 +231,8 @@
     <ClInclude Include="MetricPage.xaml.h">
       <DependentUpon>MetricPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="StorageDevicePage.xaml.h">
-      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
+    <ClInclude Include="StoragePage.xaml.h">
+      <DependentUpon>StoragePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="OpenProject.xaml.h">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -259,8 +259,8 @@
     <ClInclude Include="BindJSONPage.xaml.h">
       <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindPostgreSQLPage.xaml.h">
-      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
+    <ClInclude Include="BindPostgresPage.xaml.h">
+      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="BindQIFPage.xaml.h">
       <DependentUpon>BindQIFPage.xaml</DependentUpon>
@@ -354,16 +354,16 @@
     <ClCompile Include="Machine.xaml.cpp">
       <DependentUpon>Machine.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="ProcessingCorePage.xaml.cpp">
-      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+    <ClCompile Include="ProcessorPage.xaml.cpp">
+      <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="PromptPage.xaml.cpp">
       <DependentUpon>PromptPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="RandomMemoryPage.xaml.cpp">
-      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+    <ClCompile Include="MemoryPage.xaml.cpp">
+      <DependentUpon>MemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="ProfilePage.xaml.cpp">
@@ -415,8 +415,8 @@
     <ClCompile Include="IteratorPage.xaml.cpp">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="PeripheralDevicePage.xaml.cpp">
-      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
+    <ClCompile Include="DevicePage.xaml.cpp">
+      <DependentUpon>DevicePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="PostProcessPage.xaml.cpp">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -427,8 +427,8 @@
     <ClCompile Include="MetricPage.xaml.cpp">
       <DependentUpon>MetricPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="StorageDevicePage.xaml.cpp">
-      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
+    <ClCompile Include="StoragePage.xaml.cpp">
+      <DependentUpon>StoragePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="OpenProject.xaml.cpp">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -455,8 +455,8 @@
     <ClCompile Include="BindJSONPage.xaml.cpp">
       <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindPostgreSQLPage.xaml.cpp">
-      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
+    <ClCompile Include="BindPostgresPage.xaml.cpp">
+      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="BindQIFPage.xaml.cpp">
       <DependentUpon>BindQIFPage.xaml</DependentUpon>
@@ -565,16 +565,16 @@
     <Midl Include="Machine.idl">
       <DependentUpon>Machine.xaml</DependentUpon>
     </Midl>
-    <Midl Include="ProcessingCorePage.idl">
-      <DependentUpon>ProcessingCorePage.xaml</DependentUpon>
+    <Midl Include="ProcessorPage.idl">
+      <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="PromptPage.idl">
       <DependentUpon>PromptPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="RandomMemoryPage.idl">
-      <DependentUpon>RandomMemoryPage.xaml</DependentUpon>
+    <Midl Include="MemoryPage.idl">
+      <DependentUpon>MemoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="ProfilePage.idl">
@@ -626,8 +626,8 @@
     <Midl Include="IteratorPage.idl">
       <DependentUpon>IteratorPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="PeripheralDevicePage.idl">
-      <DependentUpon>PeripheralDevicePage.xaml</DependentUpon>
+    <Midl Include="DevicePage.idl">
+      <DependentUpon>DevicePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="PostProcessPage.idl">
       <DependentUpon>PostProcessPage.xaml</DependentUpon>
@@ -638,8 +638,8 @@
     <Midl Include="MetricPage.idl">
       <DependentUpon>MetricPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="StorageDevicePage.idl">
-      <DependentUpon>StorageDevicePage.xaml</DependentUpon>
+    <Midl Include="StoragePage.idl">
+      <DependentUpon>StoragePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="OpenProject.idl">
       <DependentUpon>OpenProject.xaml</DependentUpon>
@@ -666,8 +666,8 @@
     <Midl Include="BindJSONPage.idl">
       <DependentUpon>BindJSONPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindPostgreSQLPage.idl">
-      <DependentUpon>BindPostgreSQLPage.xaml</DependentUpon>
+    <Midl Include="BindPostgresPage.idl">
+      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="BindQIFPage.idl">
       <DependentUpon>BindQIFPage.xaml</DependentUpon>
@@ -748,13 +748,13 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Machine.xaml" />
-    <Page Include="ProcessingCorePage.xaml">
+    <Page Include="ProcessorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="PromptPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="RandomMemoryPage.xaml">
+    <Page Include="MemoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ProfilePage.xaml" />
@@ -775,11 +775,11 @@
     <Page Include="GitProject.xaml" />
     <Page Include="SoftPartitionPage.xaml" />
     <Page Include="IteratorPage.xaml" />
-    <Page Include="PeripheralDevicePage.xaml" />
+    <Page Include="DevicePage.xaml" />
     <Page Include="PostProcessPage.xaml" />
     <Page Include="TopologyPage.xaml" />
     <Page Include="MetricPage.xaml" />
-    <Page Include="StorageDevicePage.xaml" />
+    <Page Include="StoragePage.xaml" />
     <Page Include="OpenProject.xaml" />
     <Page Include="Operational.xaml">
       <SubType>Designer</SubType>
@@ -790,7 +790,7 @@
     <Page Include="Level4AccountPage.xaml" />
     <Page Include="BindBinaryPage.xaml" />
     <Page Include="BindJSONPage.xaml" />
-    <Page Include="BindPostgreSQLPage.xaml" />
+    <Page Include="BindPostgresPage.xaml" />
     <Page Include="BindQIFPage.xaml" />
     <Page Include="BindXAMLPage.xaml" />
     <Page Include="BindXMLPage.xaml" />

@@ -1,0 +1,170 @@
+﻿<UserControl
+    x:Class="HV4DX.TableDevice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterItem 
+            x:Name="DeviceManufacturer"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Device Manufacturer"/>
+
+        <local:UserFilterItem 
+            x:Name="DeviceModelHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Model S/N"/>
+
+        <local:UserFilterItem 
+            x:Name="DeviceModelMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Model"/>
+
+        <local:UserFilterNewHVID 
+            x:Name="DeviceHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="HVID"/>
+
+        <local:UserFilterItem 
+            x:Name="DeviceID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="ID"/>
+
+        <local:UserFilterItem 
+            x:Name="DeviceMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="DeviceBuilt"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Built"/>
+
+        <local:UserBlock 
+            x:Name="DeviceInstalled"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Installed"/>
+
+        <local:UserBlock 
+            x:Name="DeviceUpdated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Updated"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MAPPINGS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="DIAGNOSE"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <local:UserGoToHVID 
+            x:Name="DeviceAcceleratorHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="Accelerator HVID"/>
+
+        <local:UserBlock 
+            x:Name="DeviceAcceleratorMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="DeviceAcceleratorComPort"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="ComPort"/>
+
+    </Grid>
+
+</UserControl>

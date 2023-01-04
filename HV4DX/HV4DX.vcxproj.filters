@@ -10,9 +10,6 @@
     <Filter Include="UserFilters">
       <UniqueIdentifier>{9262fe98-6358-4091-b13f-93be4974388f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterNew">
-      <UniqueIdentifier>{b348e635-20c7-4891-b6e4-9da9176efafe}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UserFilters\UserFilterMMM">
       <UniqueIdentifier>{b1559ad7-2650-4797-8024-d9d0add2dc03}</UniqueIdentifier>
     </Filter>
@@ -79,9 +76,6 @@
     <Filter Include="c. Table">
       <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterGoTo">
-      <UniqueIdentifier>{d9792923-df0d-4f17-9726-bf0e20aedba7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="d. TableProfile">
       <UniqueIdentifier>{d5ee8251-b009-4466-8cf0-83e77ce976fc}</UniqueIdentifier>
     </Filter>
@@ -118,9 +112,6 @@
     <Filter Include="g. TableBinding\TableBindingQIF">
       <UniqueIdentifier>{55d5cfd8-1bbe-4cbc-9f30-f152a7054d6b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="g. TableBinding\TableBindingPostgreSQL">
-      <UniqueIdentifier>{74ef9e5f-5ae8-4b98-b4d9-2908f4342bab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="g. TableBinding\TableBindingJSON">
       <UniqueIdentifier>{5d6a6237-bfb7-4de3-ac1a-a403576343d3}</UniqueIdentifier>
     </Filter>
@@ -136,17 +127,8 @@
     <Filter Include="h. TableIO">
       <UniqueIdentifier>{c96bb157-a7c7-4d8e-ab07-f17321d0df62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="h. TableIO\TableProcessingCore">
-      <UniqueIdentifier>{2d3f99bb-518a-41f0-8c19-bfe56e59eb21}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="h. TableIO\TableRandomMemory">
-      <UniqueIdentifier>{79bbcdb5-5e3e-4fb7-ade0-b49bfb227e67}</UniqueIdentifier>
-    </Filter>
     <Filter Include="h. TableIO\TableStorage">
       <UniqueIdentifier>{c34273a1-d2d4-43fe-8e1e-1089bb76b5e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="h. TableIO\TablePeripheralDevice">
-      <UniqueIdentifier>{5644339d-e10e-4d58-a5f9-6c366134ed5b}</UniqueIdentifier>
     </Filter>
     <Filter Include="h. TableIO\TableAccelerator">
       <UniqueIdentifier>{ed9f9966-c34e-4c90-8789-dcd3947a85e5}</UniqueIdentifier>
@@ -247,6 +229,30 @@
     <Filter Include="UserFilters\UserFilterNewMMM">
       <UniqueIdentifier>{3768c642-5273-4e04-852a-e7ed8e8dc6ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UserFilters\UserFilterNewHVID">
+      <UniqueIdentifier>{b348e635-20c7-4891-b6e4-9da9176efafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserString\UserHVID">
+      <UniqueIdentifier>{3ea9ad0e-1743-4f93-bd9d-304998cecb9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserFilters\UserFilterGoToHVID">
+      <UniqueIdentifier>{d9792923-df0d-4f17-9726-bf0e20aedba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserString\UserGoToHVID">
+      <UniqueIdentifier>{50f4d371-699d-4c9d-92f9-84993af02250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g. TableBinding\TableBindingPostgres">
+      <UniqueIdentifier>{74ef9e5f-5ae8-4b98-b4d9-2908f4342bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h. TableIO\TableProcessor">
+      <UniqueIdentifier>{2d3f99bb-518a-41f0-8c19-bfe56e59eb21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h. TableIO\TableMemory">
+      <UniqueIdentifier>{79bbcdb5-5e3e-4fb7-ade0-b49bfb227e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h. TableIO\TableDevice">
+      <UniqueIdentifier>{5644339d-e10e-4d58-a5f9-6c366134ed5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -295,8 +301,8 @@
     <Page Include="UserFile.xaml">
       <Filter>UserString\UserFile</Filter>
     </Page>
-    <Page Include="UserFilterNew.xaml">
-      <Filter>UserFilters\UserFilterNew</Filter>
+    <Page Include="UserFilterNewHVID.xaml">
+      <Filter>UserFilters\UserFilterNewHVID</Filter>
     </Page>
     <Page Include="UserFilterTime.xaml">
       <Filter>UserFilters\UserFilterTime</Filter>
@@ -364,14 +370,14 @@
     <Page Include="TableAccelerator.xaml">
       <Filter>h. TableIO\TableAccelerator</Filter>
     </Page>
-    <Page Include="TablePeripheralDevice.xaml">
-      <Filter>h. TableIO\TablePeripheralDevice</Filter>
+    <Page Include="TableDevice.xaml">
+      <Filter>h. TableIO\TableDevice</Filter>
     </Page>
-    <Page Include="TableProcessingCore.xaml">
-      <Filter>h. TableIO\TableProcessingCore</Filter>
+    <Page Include="TableProcessor.xaml">
+      <Filter>h. TableIO\TableProcessor</Filter>
     </Page>
-    <Page Include="TableRandomMemory.xaml">
-      <Filter>h. TableIO\TableRandomMemory</Filter>
+    <Page Include="TableMemory.xaml">
+      <Filter>h. TableIO\TableMemory</Filter>
     </Page>
     <Page Include="TableFunction.xaml">
       <Filter>i. TableLibrary\TableFunction</Filter>
@@ -388,8 +394,8 @@
     <Page Include="TableBindingJSON.xaml">
       <Filter>g. TableBinding\TableBindingJSON</Filter>
     </Page>
-    <Page Include="TableBindingPostgreSQL.xaml">
-      <Filter>g. TableBinding\TableBindingPostgreSQL</Filter>
+    <Page Include="TableBindingPostgres.xaml">
+      <Filter>g. TableBinding\TableBindingPostgres</Filter>
     </Page>
     <Page Include="TableBindingQIF.xaml">
       <Filter>g. TableBinding\TableBindingQIF</Filter>
@@ -406,8 +412,8 @@
     <Page Include="TableEvent.xaml">
       <Filter>i. TableLibrary\TableEvent</Filter>
     </Page>
-    <Page Include="UserFilterGoTo.xaml">
-      <Filter>UserFilters\UserFilterGoTo</Filter>
+    <Page Include="UserFilterGoToHVID.xaml">
+      <Filter>UserFilters\UserFilterGoToHVID</Filter>
     </Page>
     <Page Include="TableXamlContextMenu.xaml">
       <Filter>j. TableUX\TableXamlContextMenu</Filter>
@@ -489,6 +495,9 @@
     </Page>
     <Page Include="UserFilterMMM.xaml">
       <Filter>UserFilters\UserFilterMMM</Filter>
+    </Page>
+    <Page Include="UserGoToHVID.xaml">
+      <Filter>UserString\UserGoToHVID</Filter>
     </Page>
   </ItemGroup>
 </Project>

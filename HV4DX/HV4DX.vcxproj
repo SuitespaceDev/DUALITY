@@ -172,8 +172,8 @@
       <DependentUpon>TableBindingJSON.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableBindingPostgreSQL.xaml.h">
-      <DependentUpon>TableBindingPostgreSQL.xaml</DependentUpon>
+    <ClInclude Include="TableBindingPostgres.xaml.h">
+      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableBindingQIF.xaml.h">
@@ -272,16 +272,16 @@
       <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TablePeripheralDevice.xaml.h">
-      <DependentUpon>TablePeripheralDevice.xaml</DependentUpon>
+    <ClInclude Include="TableDevice.xaml.h">
+      <DependentUpon>TableDevice.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableProcessingCore.xaml.h">
-      <DependentUpon>TableProcessingCore.xaml</DependentUpon>
+    <ClInclude Include="TableProcessor.xaml.h">
+      <DependentUpon>TableProcessor.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableRandomMemory.xaml.h">
-      <DependentUpon>TableRandomMemory.xaml</DependentUpon>
+    <ClInclude Include="TableMemory.xaml.h">
+      <DependentUpon>TableMemory.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableStorage.xaml.h">
@@ -319,12 +319,16 @@
       <DependentUpon>UserDateTime.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="UserFilterGoTo.xaml.h">
-      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
+    <ClInclude Include="UserFilterGoToHVID.xaml.h">
+      <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserFilterMMM.xaml.h">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserGoToHVID.xaml.h">
+      <DependentUpon>UserGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserIPv4.xaml.h">
@@ -347,8 +351,8 @@
     <ClInclude Include="UserFile.xaml.h">
       <DependentUpon>UserFile.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="UserFilterNew.xaml.h">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    <ClInclude Include="UserFilterNewHVID.xaml.h">
+      <DependentUpon>UserFilterNewHVID.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="UserFilterTime.xaml.h">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -434,8 +438,8 @@
       <DependentUpon>TableBindingJSON.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableBindingPostgreSQL.xaml.cpp">
-      <DependentUpon>TableBindingPostgreSQL.xaml</DependentUpon>
+    <ClCompile Include="TableBindingPostgres.xaml.cpp">
+      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableBindingQIF.xaml.cpp">
@@ -534,16 +538,16 @@
       <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TablePeripheralDevice.xaml.cpp">
-      <DependentUpon>TablePeripheralDevice.xaml</DependentUpon>
+    <ClCompile Include="TableDevice.xaml.cpp">
+      <DependentUpon>TableDevice.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableProcessingCore.xaml.cpp">
-      <DependentUpon>TableProcessingCore.xaml</DependentUpon>
+    <ClCompile Include="TableProcessor.xaml.cpp">
+      <DependentUpon>TableProcessor.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableRandomMemory.xaml.cpp">
-      <DependentUpon>TableRandomMemory.xaml</DependentUpon>
+    <ClCompile Include="TableMemory.xaml.cpp">
+      <DependentUpon>TableMemory.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableStorage.xaml.cpp">
@@ -581,12 +585,16 @@
       <DependentUpon>UserDateTime.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="UserFilterGoTo.xaml.cpp">
-      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
+    <ClCompile Include="UserFilterGoToHVID.xaml.cpp">
+      <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserFilterMMM.xaml.cpp">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserGoToHVID.xaml.cpp">
+      <DependentUpon>UserGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserIPv4.xaml.cpp">
@@ -609,8 +617,8 @@
     <ClCompile Include="UserFile.xaml.cpp">
       <DependentUpon>UserFile.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="UserFilterNew.xaml.cpp">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    <ClCompile Include="UserFilterNewHVID.xaml.cpp">
+      <DependentUpon>UserFilterNewHVID.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="UserFilterTime.xaml.cpp">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -697,8 +705,8 @@
       <DependentUpon>TableBindingJSON.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableBindingPostgreSQL.idl">
-      <DependentUpon>TableBindingPostgreSQL.xaml</DependentUpon>
+    <Midl Include="TableBindingPostgres.idl">
+      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableBindingQIF.idl">
@@ -797,16 +805,16 @@
       <DependentUpon>TableParameter.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TablePeripheralDevice.idl">
-      <DependentUpon>TablePeripheralDevice.xaml</DependentUpon>
+    <Midl Include="TableDevice.idl">
+      <DependentUpon>TableDevice.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableProcessingCore.idl">
-      <DependentUpon>TableProcessingCore.xaml</DependentUpon>
+    <Midl Include="TableProcessor.idl">
+      <DependentUpon>TableProcessor.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableRandomMemory.idl">
-      <DependentUpon>TableRandomMemory.xaml</DependentUpon>
+    <Midl Include="TableMemory.idl">
+      <DependentUpon>TableMemory.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableStorage.idl">
@@ -844,12 +852,16 @@
       <DependentUpon>UserDateTime.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="UserFilterGoTo.idl">
-      <DependentUpon>UserFilterGoTo.xaml</DependentUpon>
+    <Midl Include="UserFilterGoToHVID.idl">
+      <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserFilterMMM.idl">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserGoToHVID.idl">
+      <DependentUpon>UserGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserIPv4.idl">
@@ -872,8 +884,8 @@
     <Midl Include="UserFile.idl">
       <DependentUpon>UserFile.xaml</DependentUpon>
     </Midl>
-    <Midl Include="UserFilterNew.idl">
-      <DependentUpon>UserFilterNew.xaml</DependentUpon>
+    <Midl Include="UserFilterNewHVID.idl">
+      <DependentUpon>UserFilterNewHVID.xaml</DependentUpon>
     </Midl>
     <Midl Include="UserFilterTime.idl">
       <DependentUpon>UserFilterTime.xaml</DependentUpon>
@@ -946,7 +958,7 @@
     <Page Include="TableBindingJSON.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableBindingPostgreSQL.xaml">
+    <Page Include="TableBindingPostgres.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableBindingQIF.xaml">
@@ -1021,13 +1033,13 @@
     <Page Include="TableParameter.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TablePeripheralDevice.xaml">
+    <Page Include="TableDevice.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableProcessingCore.xaml">
+    <Page Include="TableProcessor.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableRandomMemory.xaml">
+    <Page Include="TableMemory.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableStorage.xaml">
@@ -1055,10 +1067,13 @@
     <Page Include="UserDateTime.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserFilterGoTo.xaml">
+    <Page Include="UserFilterGoToHVID.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserFilterMMM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserGoToHVID.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserIPv4.xaml">
@@ -1071,7 +1086,7 @@
     <Page Include="UserDivider.xaml" />
     <Page Include="UserEntry.xaml" />
     <Page Include="UserFile.xaml" />
-    <Page Include="UserFilterNew.xaml" />
+    <Page Include="UserFilterNewHVID.xaml" />
     <Page Include="UserFilterTime.xaml" />
     <Page Include="UserFilterType.xaml" />
     <Page Include="UserFilterNewMMM.xaml">

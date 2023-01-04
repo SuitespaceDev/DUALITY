@@ -48,7 +48,7 @@
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Model"/>
 
-        <local:UserFilterNew 
+        <local:UserFilterNewHVID 
             x:Name="AcceleratorHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
@@ -67,16 +67,42 @@
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="AcceleratorInstalled"
+            x:Name="AcceleratorBuilt"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
+            Label="Built"/>
+
+        <local:UserBlock 
+            x:Name="AcceleratorInstalled"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="Installed"/>
 
         <local:UserBlock 
             x:Name="AcceleratorUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Updated"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MAPPINGS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -92,7 +118,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MAPPINGS"
+                    Text="DIAGNOSE"
                     FontSize="12"/>
             </Button>
 

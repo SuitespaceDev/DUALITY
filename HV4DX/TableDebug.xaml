@@ -7,6 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
     <Grid 
         Margin="6,6,6,6">
         <Grid.ColumnDefinitions>
@@ -18,49 +26,122 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterNew
-            x:Name="DebugServiceHVID"
+        <local:UserFilterNewHVID 
+            x:Name="BindingDebugHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
-            Label="Debug Service HVID"/>
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Debug Binding HVID"/>
 
-        <local:UserFilterMMM
-            x:Name="DebugServiceMMM"
+        <local:UserFilterMMM 
+            x:Name="BindingDebugMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="MMM"/>
 
-        <local:UserFilterItem
-            x:Name="DebugServiceMaxPath"
+        <local:UserFilterItem 
+            x:Name="BindingDebugMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="PromptServiceCompiled"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1"
+            x:Name="BindingDebugCompiled"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
             Label="Compiled"/>
 
         <local:UserBlock 
-            x:Name="PromptServiceNamespace"
+            x:Name="BindingDebugInstalled"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Installed"/>
+
+        <local:UserBlock 
+            x:Name="BindingDebugUpdated"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Updated"/>
+
+        <local:UserFile 
+            x:Name="BindingDebugDLL"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="DLL"/>
+
+        <local:UserBlock 
+            x:Name="BindingDebugNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1"
+            Grid.Row="0" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="PromptService"
+            x:Name="BindingDebugRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
-        <local:UserFile 
-            x:Name="DebugServiceDLL"
-            Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="3" Grid.RowSpan="1"
-            Label="DLL"/>
+        <local:UserFilterItem 
+            x:Name="BindingDebugSupportedContract"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Supported Contract"/>
+
+        <local:UserFilterItem 
+            x:Name="BindingDebugSupportedContractMaxPath"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="BindingDebugAccessLvl"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Access Level"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="PERMISSIONS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
 
     </Grid>
 
