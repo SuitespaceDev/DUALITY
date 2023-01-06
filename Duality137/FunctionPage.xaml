@@ -13,13 +13,13 @@
         <StackPanel>
 
             <HV4DX:TableFunction
-                x:Name="FunctionLibrary"/>
+                x:Name="FunctionDictionary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="FunctionLibraryDescription"
-                ValueKey="FUNCTION_LIBRARY_DESCRIPTION"/>
+                x:Name="FunctionDictionaryDescription"
+                ValueKey="FUNCTION_DICTIONARY_NOTES"/>
 
         </StackPanel>
 

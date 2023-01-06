@@ -13,13 +13,13 @@
         <StackPanel>
 
             <HV4DX:TableContract
-                x:Name="ContractLibrary"/>
+                x:Name="ContractDictionary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="ContractLibraryDescription"
-                ValueKey="CONTRACT_LIBRARY_DESCRIPTION"/>
+                x:Name="ContractDictionaryDescription"
+                ValueKey="CONTRACT_DICTIONARY_NOTES"/>
 
         </StackPanel>
 

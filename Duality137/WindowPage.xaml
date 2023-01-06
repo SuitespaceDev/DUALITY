@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="WindowThemeDescription"
-                ValueKey="WINDOW_THEME_DESCRIPTION"/>
+                ValueKey="WINDOW_THEME_NOTES"/>
 
         </StackPanel>
 

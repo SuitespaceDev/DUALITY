@@ -13,13 +13,13 @@
         <StackPanel>
 
             <HV4DX:TableEvent
-                x:Name="EventLibrary"/>
+                x:Name="EventDictionary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="EventLibraryDescription"
-                ValueKey="EVENT_LIBRARY_DESCRIPTION"/>
+                x:Name="EventDictionaryDescription"
+                ValueKey="EVENT_DICTIONARY_NOTES"/>
 
         </StackPanel>
 

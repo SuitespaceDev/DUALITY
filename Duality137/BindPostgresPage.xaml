@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="BindPostgresDescription"
-                ValueKey="BIND_POSTGRES_DESCRIPTION"/>
+                ValueKey="BIND_POSTGRES_NOTES"/>
 
         </StackPanel>
 

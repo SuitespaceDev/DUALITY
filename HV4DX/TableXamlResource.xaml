@@ -25,58 +25,52 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterNewHVID 
-            x:Name="XamlResourceHVID"
+        <local:UserFilterGoToHVID 
+            x:Name="LibraryHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Xaml Resource HVID"/>
+            Label="Library HVID"/>
 
         <local:UserFilterMMM 
-            x:Name="XamlResourceMMM"
+            x:Name="LibraryMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="MMM"/>
 
-        <local:UserFilterItem 
-            x:Name="XamlResourceMaxPath"
+        <local:UserBlock 
+            x:Name="LibraryMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserFilterGoToHVID 
-            x:Name="XamlResourceLibraryHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
-            Label="Library HVID"/>
-
-        <local:UserBlock 
-            x:Name="XamlResourceCreated"
+        <local:UserFilterItem 
+            x:Name="XamlResourceDictionaryHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="DateTime Created"/>
+            Label="Xaml Resource Dictionary HVID"/>
 
-        <local:UserBlock 
-            x:Name="XamlResourceUpdated"
+        <local:UserFilterItem 
+            x:Name="XamlResourceDictionaryMaxPath"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="DateTime Updated"/>
-
-        <local:UserFile 
-            x:Name="XamlResourceFile"
-            Grid.Column="0" Grid.ColumnSpan="2" 
-            Grid.Row="4" Grid.RowSpan="1" 
-            Label="Xaml File"/>
+            Label="Tag"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1">
+            Grid.Column="1" Grid.ColumnSpan="1"
+            Grid.Row="2" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -92,11 +86,77 @@
 
         </Border>
 
+        <local:UserGoToHVID 
+            x:Name="XamlResourceServiceHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Service HVID"/>
+
+        <local:UserBlock 
+            x:Name="XamlResourceService"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Service"/>
+
+        <local:UserFilterGoToHVID 
+            x:Name="XamlResourceSupportedContractHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Supported Contract"/>
+
+        <local:UserBlock 
+            x:Name="XamlResourceSupportedContractMaxPath"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Contract"/>
+
+        <local:UserFilterGoToHVID 
+            x:Name="XamlResourceHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="Xaml Resource HVID"/>
+
+        <local:UserFilterItem 
+            x:Name="XamlResourceID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1" 
+            Label="ID"/>
+
+        <local:UserFilterItem 
+            x:Name="XamlResourceMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="9" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserBlock 
+            x:Name="XamlResourceNamespace"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1"
+            Label="Namespace"/>
+
+        <local:UserBlock 
+            x:Name="XamlResourceRuntimeClass"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1"
+            Label="Runtime Class"/>
+
+        <local:UserGoToHVID 
+            x:Name="XamlResourceContractHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="9" Grid.RowSpan="1" 
+            Label="Xaml Resource Contract HVID"/>
+
+        <local:UserGoToFile 
+            x:Name="XamlResourceXamlFile"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="10" Grid.RowSpan="1" 
+            Label="Xaml File"/>
+
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1">
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="11" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -106,7 +166,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="EDIT XAML"
+                    Text="VIEW XAML"
                     FontSize="12"/>
             </Button>
 

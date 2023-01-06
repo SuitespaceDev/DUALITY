@@ -83,7 +83,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MANUAL"
+                    Text="MANUAL PAGES"
                     FontSize="12"/>
             </Button>
 

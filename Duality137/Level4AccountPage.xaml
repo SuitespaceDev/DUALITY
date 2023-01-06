@@ -28,7 +28,7 @@
 
             <HV4DX:TableDescription
                 x:Name="AccountLvl4AccessDescription"
-                ValueKey="ACCOUNT_LVL4_ACCESS_DESCRIPTION"/>
+                ValueKey="ACCOUNT_LVL4_ACCESS_NOTES"/>
 
         </StackPanel>
 

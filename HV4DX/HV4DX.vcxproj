@@ -232,6 +232,10 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableUX.xaml.h">
+      <DependentUpon>TableUX.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableXamlContextMenu.xaml.h">
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -325,6 +329,10 @@
     </ClInclude>
     <ClInclude Include="UserFilterMMM.xaml.h">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserGoToFile.xaml.h">
+      <DependentUpon>UserGoToFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserGoToHVID.xaml.h">
@@ -498,6 +506,10 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableUX.xaml.cpp">
+      <DependentUpon>TableUX.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableXamlContextMenu.xaml.cpp">
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -591,6 +603,10 @@
     </ClCompile>
     <ClCompile Include="UserFilterMMM.xaml.cpp">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserGoToFile.xaml.cpp">
+      <DependentUpon>UserGoToFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserGoToHVID.xaml.cpp">
@@ -765,6 +781,10 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableUX.idl">
+      <DependentUpon>TableUX.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableXamlContextMenu.idl">
       <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -858,6 +878,10 @@
     </Midl>
     <Midl Include="UserFilterMMM.idl">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserGoToFile.idl">
+      <DependentUpon>UserGoToFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserGoToHVID.idl">
@@ -1003,6 +1027,9 @@
     <Page Include="TableTopology.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableUX.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableXamlContextMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -1071,6 +1098,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserFilterMMM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserGoToFile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserGoToHVID.xaml">

@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="XamlWidgetDescription"
-                ValueKey="XAML_WIDGET_DESCRIPTION"/>
+                ValueKey="XAML_WIDGET_NOTES"/>
 
         </StackPanel>
 

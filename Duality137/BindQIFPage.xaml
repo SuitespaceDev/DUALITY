@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="BindQIFDescription"
-                ValueKey="BIND_QIF_DESCRIPTION"/>
+                ValueKey="BIND_QIF_NOTES"/>
 
         </StackPanel>
 

@@ -20,7 +20,7 @@
 
             <HV4DX:TableDescription
                 x:Name="MachineBuildDescription"
-                ValueKey="MACHINE_BUILD_DESCRIPTION"/>
+                ValueKey="MACHINE_BUILD_NOTES"/>
 
         </StackPanel>
 

@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="StorageDescription"
-                ValueKey="STORAGE_DESCRIPTION"/>
+                ValueKey="STORAGE_NOTES"/>
 
         </StackPanel>
 

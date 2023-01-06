@@ -79,7 +79,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MANUAL"
+                    Text="MANUAL PAGES"
                     FontSize="12"/>
             </Button>
 
@@ -104,13 +104,13 @@
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="FunctionContractNamespace"
+            x:Name="FunctionNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="FunctionContractRuntimeClass"
+            x:Name="FunctionRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1"
             Label="Runtime Class"/>
@@ -129,7 +129,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MANUAL"
+                    Text="MANUAL PAGES"
                     FontSize="12"/>
             </Button>
 

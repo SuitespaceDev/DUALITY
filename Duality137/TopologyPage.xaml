@@ -18,7 +18,7 @@
 
             <HV4DX:TableDescription
                 x:Name="DeviceDescription"
-                ValueKey="_DEVICE_DESCRIPTION"/>
+                ValueKey="_DEVICE_NOTES"/>
 
         </StackPanel>
 

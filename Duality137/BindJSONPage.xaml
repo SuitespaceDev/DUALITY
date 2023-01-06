@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="BindJSONDescription"
-                ValueKey="BIND_JSON_DESCRIPTION"/>
+                ValueKey="BIND_JSON_NOTES"/>
 
         </StackPanel>
 

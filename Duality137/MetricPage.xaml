@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="ComponentServiceMetricDescription"
-                ValueKey="COMPONENT_SERVICE_METRIC_DESCRIPTION"/>
+                ValueKey="COMPONENT_SERVICE_METRIC_NOTES"/>
 
         </StackPanel>
 

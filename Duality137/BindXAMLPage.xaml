@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="BindXAMLDescription"
-                ValueKey="BIND_XAML_DESCRIPTION"/>
+                ValueKey="BIND_XAML_NOTES"/>
 
         </StackPanel>
 

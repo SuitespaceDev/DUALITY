@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="XamlPgDescription"
-                ValueKey="XAML_PAGE_DESCRIPTION"/>
+                ValueKey="XAML_PAGE_NOTES"/>
 
         </StackPanel>
 

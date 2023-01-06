@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="DeviceDescription"
-                ValueKey="PERIPHERAL_DEVICE_DESCRIPTION"/>
+                ValueKey="PERIPHERAL_DEVICE_NOTES"/>
 
         </StackPanel>
 

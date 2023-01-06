@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="XamlResourceDescription"
-                ValueKey="XAML_RESOURCE_DESCRIPTION"/>
+                ValueKey="XAML_RESOURCE_NOTES"/>
 
         </StackPanel>
 

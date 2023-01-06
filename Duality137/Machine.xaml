@@ -95,7 +95,7 @@
                         <NavigationViewItem Tag="{}{63EDE647-2895-4E83-9332-553F6CA558C4}" x:Name="ContractPage" Content="Contract"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
-                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{F8A96E30-710E-4C6E-A158-B8390CDF61BF}" x:Name="UXPage" Content="UX">
+                <NavigationViewItem SelectsOnInvoked="True" Tag="{}{F8A96E30-710E-4C6E-A158-B8390CDF61BF}" x:Name="UXPage" Content="UX">
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{0DB7C610-447E-423F-85C3-44E81D7F16B3}" x:Name="XamlResourcePage" Content="Xaml Resource"/>
                         <NavigationViewItem Tag="{}{ECFE799D-62A4-498A-A398-20E6E4AD2A9C}" x:Name="UserControlPage" Content="UserControl"/>

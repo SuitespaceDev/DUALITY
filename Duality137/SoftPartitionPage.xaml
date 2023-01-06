@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="DigitalTwinSoftPartitionDescription"
-                ValueKey="DIGITAL_TWIN_SOFTPARTITION_DESCRIPTION"/>
+                ValueKey="DIGITAL_TWIN_SOFTPARTITION_NOTES"/>
 
         </StackPanel>
 

@@ -179,6 +179,10 @@
     <ClInclude Include="ComputeKernelPage.xaml.h">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="UXPage.xaml.h">
+      <DependentUpon>UXPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="XamlContextMenuPage.xaml.h">
       <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
     </ClInclude>
@@ -374,6 +378,10 @@
     </ClCompile>
     <ClCompile Include="ComputeKernelPage.xaml.cpp">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="UXPage.xaml.cpp">
+      <DependentUpon>UXPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="XamlContextMenuPage.xaml.cpp">
       <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
@@ -586,6 +594,10 @@
     <Midl Include="ComputeKernelPage.idl">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </Midl>
+    <Midl Include="UXPage.idl">
+      <DependentUpon>UXPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="XamlContextMenuPage.idl">
       <DependentUpon>XamlContextMenuPage.xaml</DependentUpon>
     </Midl>
@@ -760,6 +772,9 @@
     <Page Include="ProfilePage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
+    <Page Include="UXPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="XamlContextMenuPage.xaml" />
     <Page Include="ContractPage.xaml" />
     <Page Include="RuntimeClassPage.xaml">

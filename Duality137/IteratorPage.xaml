@@ -13,13 +13,13 @@
         <StackPanel>
 
             <HV4DX:TableIterator
-                x:Name="IteratorLibrary"/>
+                x:Name="IteratorDictionary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="IteratorLibraryDescription"
-                ValueKey="ITERATOR_LIBRARY_DESCRIPTION"/>
+                x:Name="IteratorDictionaryDescription"
+                ValueKey="ITERATOR_DICTIONARY_NOTES"/>
 
         </StackPanel>
 

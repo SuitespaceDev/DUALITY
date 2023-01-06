@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="ComponentServiceDebuggerDescription"
-                ValueKey="COMPONENT_SERVICE_DEBUGGER_DESCRIPTION"/>
+                ValueKey="COMPONENT_SERVICE_DEBUGGER_NOTES"/>
 
         </StackPanel>
 

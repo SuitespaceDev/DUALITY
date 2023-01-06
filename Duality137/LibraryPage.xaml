@@ -13,13 +13,13 @@
         <StackPanel>
 
             <HV4DX:TableLibrary
-                x:Name="LibraryABI"/>
+                x:Name="ABILibrary"/>
 
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="LibraryABIDescription"
-                ValueKey="LIBRARY_ABI__DESCRIPTION"/>
+                x:Name="ABILibraryDescription"
+                ValueKey="ABI_LIBRARY_NOTES"/>
 
         </StackPanel>
 

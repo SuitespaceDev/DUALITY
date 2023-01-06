@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="XamlToolBarDescription"
-                ValueKey="XAML_TOOL_BAR_DESCRIPTION"/>
+                ValueKey="XAML_TOOL_BAR_NOTES"/>
 
         </StackPanel>
 

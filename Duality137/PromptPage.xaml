@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="ComponentServicePromptDescription"
-                ValueKey="COMPONENT_SERVICE_PROMPT_DESCRIPTION"/>
+                ValueKey="COMPONENT_SERVICE_PROMPT_NOTES"/>
 
         </StackPanel>
 

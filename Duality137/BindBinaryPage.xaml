@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="BindBinaryDescription"
-                ValueKey="BIND_BINARY_DESCRIPTION"/>
+                ValueKey="BIND_BINARY_NOTES"/>
 
         </StackPanel>
 

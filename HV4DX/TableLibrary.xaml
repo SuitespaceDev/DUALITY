@@ -39,73 +39,73 @@
         </Grid.RowDefinitions>
 
         <local:UserFilterNewHVID 
-            x:Name="BindingBinaryHVID"
+            x:Name="LibraryHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Binary Binding HVID"/>
+            Label="Library HVID"/>
 
         <local:UserFilterMMM 
-            x:Name="BindingBinaryMMM"
+            x:Name="LibraryMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="MMM"/>
 
         <local:UserFilterItem 
-            x:Name="BindingBinaryMaxPath"
+            x:Name="LibraryMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryCompiled"
+            x:Name="LibraryCompiled"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1"
             Label="Compiled"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryInstalled"
+            x:Name="LibraryInstalled"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1"
             Label="Installed"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryUpdated"
+            x:Name="LibraryUpdated"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1"
             Label="Updated"/>
 
         <local:UserFile 
-            x:Name="BindingBinaryDLL"
+            x:Name="LibraryDLL"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1"
             Label="DLL"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryNamespace"
+            x:Name="LibraryNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryRuntimeClass"
+            x:Name="LibraryRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
         <local:UserFilterItem 
-            x:Name="BindingBinarySupportedContract"
+            x:Name="LibrarySupportedContract"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Supported Contract"/>
 
         <local:UserFilterItem 
-            x:Name="BindingBinarySupportedContractMaxPath"
+            x:Name="LibrarySupportedContractMaxPath"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
-            x:Name="BindingBinaryAccessLvl"
+            x:Name="LibraryAccessLvl"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="4" Grid.RowSpan="1" 
             Label="Access Level"/>

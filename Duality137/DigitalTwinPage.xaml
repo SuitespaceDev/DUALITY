@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="EnterpriseAccountDescription"
-                ValueKey="ENTERPRISE_ACCOUNT_DESCRIPTION"/>
+                ValueKey="ENTERPRISE_ACCOUNT_NOTES"/>
 
         </StackPanel>
 

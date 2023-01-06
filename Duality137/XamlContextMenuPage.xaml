@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="XamlContextMenuDescription"
-                ValueKey="XAML_CONTEXT_MENU_DESCRIPTION"/>
+                ValueKey="XAML_CONTEXT_MENU_NOTES"/>
 
         </StackPanel>
 

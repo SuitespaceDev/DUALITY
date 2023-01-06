@@ -421,6 +421,9 @@
     <Page Include="ProfilePage.xaml">
       <Filter>2. Property Pages\a. Profile</Filter>
     </Page>
+    <Page Include="UXPage.xaml">
+      <Filter>2. Property Pages\g. UX</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">

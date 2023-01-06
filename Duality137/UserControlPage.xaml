@@ -19,7 +19,7 @@
 
             <HV4DX:TableDescription
                 x:Name="UserControlDescription"
-                ValueKey="USER_CONTROL_DESCRIPTION"/>
+                ValueKey="USER_CONTROL_NOTES"/>
 
         </StackPanel>
 
