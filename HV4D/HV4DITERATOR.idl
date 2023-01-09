@@ -1,0 +1,11 @@
+import "IHV4DITERATOR.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4DITERATOR : [default] HV4D.IHV4DOBJECT, IHV4DTTYPE
+    {
+        HV4DITERATOR();
+
+    }
+
+}

@@ -1,12 +1,12 @@
 ﻿#include "pch.h"
-#include "HV4DOBJECT.h"
-#if __has_include("HV4DOBJECT.g.cpp")
-#include "HV4DOBJECT.g.cpp"
+#include "HV4DITERATOR.h"
+#if __has_include("HV4DITERATOR.g.cpp")
+#include "HV4DITERATOR.g.cpp"
 #endif
 
 namespace winrt::HV4D::implementation
 {
-	HV4DOBJECT::HV4DOBJECT()
+	HV4DITERATOR::HV4DITERATOR()
 	{
 		HV4DListSupportedInterfaces();
 
@@ -18,7 +18,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4DOBJECT::HV4DOBJECT(HV4D::IHV4DOBJECT const& sender)
+	HV4DITERATOR::HV4DITERATOR(HV4D::IHV4DOBJECT const& sender)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -32,7 +32,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4DOBJECT::HV4DOBJECT(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
+	HV4DITERATOR::HV4DITERATOR(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -50,7 +50,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DOBJECT::HV4DUuidOfInstance()
+	winrt::guid HV4DITERATOR::HV4DUuidOfInstance()
 	{
 
 		return uuid_of_instance;
@@ -58,7 +58,7 @@ namespace winrt::HV4D::implementation
 	}
 
 
-	void HV4DOBJECT::HV4DSetUuidOfInstance()
+	void HV4DITERATOR::HV4DSetUuidOfInstance()
 	{
 		GUID uid;
 
@@ -78,7 +78,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	uint64_t HV4DOBJECT::HV4DCreatedDateTime()
+	uint64_t HV4DITERATOR::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	uint64_t HV4DOBJECT::HV4DUpdatedDateTime()
+	uint64_t HV4DITERATOR::HV4DUpdatedDateTime()
 	{
 
 
@@ -94,7 +94,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DSetCreatedDateTime()
+	void HV4DITERATOR::HV4DSetCreatedDateTime()
 	{
 		created_date_time = (uint64_t)std::time(nullptr);
 
@@ -102,7 +102,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DSetUpdatedDateTime()
+	void HV4DITERATOR::HV4DSetUpdatedDateTime()
 	{
 		updated_date_time = (uint64_t)std::time(nullptr);
 
@@ -110,7 +110,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DOBJECT::HV4DSupportsInterfaces()
+	WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DITERATOR::HV4DSupportsInterfaces()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -118,7 +118,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DListSupportedInterfaces()
+	void HV4DITERATOR::HV4DListSupportedInterfaces()
 	{
 		supported_interfaces = winrt::single_threaded_vector<HV4D::HV4DT_TYPE_CONTRACT>();
 
@@ -128,15 +128,15 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4D::IHV4DTTYPE HV4DOBJECT::HV4DGetTType()
+	HV4D::IHV4DTTYPE HV4DITERATOR::HV4DGetTType()
 	{
 		HV4DSetUpdatedDateTime();
 
-		return HV4D::HV4DT_TYPE_CONTRACT{ nullptr, winrt::guid{L"{0034EB60-089C-4B10-96FB-8F2FF99F4EC7}"}, nullptr};
+		return HV4D::HV4DT_TYPE_CONTRACT{ nullptr, winrt::guid{L"{0034EB60-089C-4B10-96FB-8F2FF99F4EC7}"}, nullptr };
 
 	};
 
-	HV4D::IHV4DOBJECT HV4DOBJECT::HV4DSender()
+	HV4D::IHV4DOBJECT HV4DITERATOR::HV4DSender()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -144,7 +144,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DSender(HV4D::IHV4DOBJECT const& e)
+	void HV4DITERATOR::HV4DSender(HV4D::IHV4DOBJECT const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -154,31 +154,31 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DOBJECT::HV4DTTypeUid()
+	winrt::guid HV4DITERATOR::HV4DTTypeUid()
 	{
 		HV4DSetUpdatedDateTime();
 
-		return winrt::guid{ L"{D1B82BD5-92C1-4E6E-B197-A8CCB190F989}" };
+		return winrt::guid{ L"{AC3981F5-84C0-46D9-BA44-B1036A938C58}" };
 
 	}
 
-	uint64_t HV4DOBJECT::HV4DTTypeID()
+	uint64_t HV4DITERATOR::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
-		return 0xD1B82BD592C14E6E;
+		return 0xAC3981F584C046D9;
 
 	}
 
-	winrt::hstring HV4DOBJECT::HV4DTTypeName()
+	winrt::hstring HV4DITERATOR::HV4DTTypeName()
 	{
 		HV4DSetUpdatedDateTime();
 
-		return L"IHV4DOBJECT";
+		return L"IHV4DITERATOR";
 
 	}
 
-	winrt::guid HV4DOBJECT::HV4DExtendedArgsType()
+	winrt::guid HV4DITERATOR::HV4DExtendedArgsType()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -186,7 +186,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DExtendedArgsType(winrt::guid const& e)
+	void HV4DITERATOR::HV4DExtendedArgsType(winrt::guid const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -196,7 +196,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	WF::IInspectable HV4DOBJECT::HV4DExtendedArgs()
+	WF::IInspectable HV4DITERATOR::HV4DExtendedArgs()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -204,7 +204,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DExtendedArgs(WF::IInspectable const& e)
+	void HV4DITERATOR::HV4DExtendedArgs(WF::IInspectable const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -214,7 +214,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::hstring HV4DOBJECT::HV4DComments()
+	winrt::hstring HV4DITERATOR::HV4DComments()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -222,7 +222,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DOBJECT::HV4DComments(winrt::hstring const& e)
+	void HV4DITERATOR::HV4DComments(winrt::hstring const& e)
 	{
 		HV4DSetUpdatedDateTime();
 

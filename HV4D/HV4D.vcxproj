@@ -105,6 +105,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="HV4DITERATOR.h">
+      <DependentUpon>HV4DITERATOR.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="HV4DOBJECT.h">
       <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
       <SubType>Code</SubType>
@@ -354,6 +358,10 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HV4DITERATOR.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4DOBJECT.cpp">
       <SubType>
       </SubType>
@@ -564,6 +572,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="HV4DITERATOR.idl">
+      <DependentUpon>HV4DITERATOR.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="HV4DOBJECT.idl">
       <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
       <SubType>Code</SubType>
@@ -806,6 +818,7 @@
       <SubType>
       </SubType>
     </Midl>
+    <Midl Include="IHV4DITERATOR.idl" />
     <Midl Include="IHV4DOBJECT.idl">
       <SubType>Code</SubType>
     </Midl>

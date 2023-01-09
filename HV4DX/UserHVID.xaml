@@ -1,0 +1,70 @@
+﻿<UserControl
+    x:Class="HV4DX.UserHVID"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+                <ResourceDictionary Source="ms-appx:///HV4DXDIM.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border 
+        BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+        BorderThickness="1"
+        HorizontalAlignment="Stretch"
+        Height="32">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{StaticResource HV4DStandardG0}"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Grid.Column="0" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1"
+                Margin="2,2,2,2">
+
+                <TextBlock 
+                    Foreground="Black" 
+                    Padding="3,3,3,3"                
+                    FontWeight="Medium"
+                    FontSize="12"
+                    Text="{x:Bind Label, Mode=OneWay}"/>
+
+            </Border>
+
+            <Border 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                Background="{ThemeResource HV4DPropertyPageGrey}"
+                BorderThickness="1"
+                Grid.Column="1" Grid.ColumnSpan="1"
+                Grid.Row="0" Grid.RowSpan="1"
+                Margin="2,2,2,2">
+
+                <TextBox 
+                    Foreground="Black"
+                    Padding="3,3,3,3"                           
+                    FontWeight="Medium"
+                    FontSize="12"
+                    PlaceholderText="{x:Bind Placeholder, Mode=OneWay}"
+                    Text="{x:Bind Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    IsReadOnly="{x:Bind ReadOnly, Mode=TwoWay}"/>
+
+            </Border>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

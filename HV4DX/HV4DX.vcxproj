@@ -339,6 +339,10 @@
       <DependentUpon>UserGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="UserHVID.xaml.h">
+      <DependentUpon>UserHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserIPv4.xaml.h">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -611,6 +615,10 @@
     </ClCompile>
     <ClCompile Include="UserGoToHVID.xaml.cpp">
       <DependentUpon>UserGoToHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserHVID.xaml.cpp">
+      <DependentUpon>UserHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserIPv4.xaml.cpp">
@@ -888,6 +896,10 @@
       <DependentUpon>UserGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="UserHVID.idl">
+      <DependentUpon>UserHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserIPv4.idl">
       <DependentUpon>UserIPv4.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -1104,6 +1116,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserGoToHVID.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserHVID.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserIPv4.xaml">

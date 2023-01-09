@@ -507,5 +507,8 @@
     <Page Include="UserGoToFile.xaml">
       <Filter>UserString\UserGoToFile</Filter>
     </Page>
+    <Page Include="UserHVID.xaml">
+      <Filter>UserString\UserHVID</Filter>
+    </Page>
   </ItemGroup>
 </Project>

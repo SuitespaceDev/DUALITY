@@ -37,6 +37,9 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserFilterGoToHVID 
@@ -210,6 +213,30 @@
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="14" Grid.RowSpan="1"
             Label="Arity"/>
+
+        <local:UserBlock 
+            x:Name="ContractMemberParameterDirection"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="15" Grid.RowSpan="1"
+            Label="Direction"/>
+
+        <local:UserBlock 
+            x:Name="ContractMemberParameterView"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="16" Grid.RowSpan="1"
+            Label="View"/>
+
+        <local:UserFilterGoToHVID 
+            x:Name="ContractMemberParameterIteratorHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="15" Grid.RowSpan="1"
+            Label="Iterator HVID"/>
+
+        <local:UserBlock 
+            x:Name="ContractMemberParameterIteratorMAXPATH"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="16" Grid.RowSpan="1"
+            Label="Tag"/>
 
     </Grid>
 
