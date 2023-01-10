@@ -11,8 +11,8 @@ namespace winrt::Duality137::implementation
     public:
         Level1AccountPage();
 
-
     };
+
 }
 
 namespace winrt::Duality137::factory_implementation

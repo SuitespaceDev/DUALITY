@@ -9,8 +9,7 @@ namespace winrt::Duality137::implementation
     Level1AccountPage::Level1AccountPage()
     {
         InitializeComponent();
-    
-    
+        
         return;
     
     }

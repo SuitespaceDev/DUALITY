@@ -1,0 +1,13 @@
+namespace HV4DX
+{
+    [bindable]
+    [default_interface]
+    runtimeclass TableEnterprise : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableEnterprise();
+    
+        void SelectDefaultFromTables(String uid);
+
+    }
+
+}

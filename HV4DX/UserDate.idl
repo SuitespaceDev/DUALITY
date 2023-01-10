@@ -1,7 +1,7 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass UserDate : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass UserDate : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserDate();
     

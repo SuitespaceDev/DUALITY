@@ -1,0 +1,83 @@
+﻿<UserControl
+    x:Class="HV4DX.TableContact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserEntry 
+            x:Name="Contact"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Contact"/>
+
+        <local:UserEntry 
+            x:Name="ContactAddressOne"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Address One"/>
+
+        <local:UserEntry 
+            x:Name="ContactAddressTwo"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Address Two"/>
+
+        <local:UserEntry 
+            x:Name="ContactCity"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="City"/>
+
+        <local:UserEntry 
+            x:Name="ContactRegion"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Region"/>
+
+        <local:UserEntry 
+            x:Name="ContactPostalCode"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Postal Code"/>
+
+        <local:UserEntry 
+            x:Name="ContactEMail"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="EMail"/>
+
+        <local:UserEntry 
+            x:Name="ContactPrimaryPhone"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="Primary Phone"/>
+
+        <local:UserEntry 
+            x:Name="ContactSecondaryPhone"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="7" Grid.RowSpan="1"
+            Label="Secondary Phone"/>
+
+    </Grid>
+
+</UserControl>

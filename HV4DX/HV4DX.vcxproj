@@ -132,6 +132,10 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableAccount.xaml.h">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableApplication.xaml.h">
       <DependentUpon>TableApplication.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -140,52 +144,20 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableLvl2Account.xaml.h">
-      <DependentUpon>TableLvl2Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableLvl3Account.xaml.h">
-      <DependentUpon>TableLvl3Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableLvl4Account.xaml.h">
-      <DependentUpon>TableLvl4Account.xaml</DependentUpon>
+    <ClInclude Include="TableContact.xaml.h">
+      <DependentUpon>TableContact.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TablePipe.xaml.h">
       <DependentUpon>TablePipe.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableConnectionPostgres.xaml.h">
+      <DependentUpon>TableConnectionPostgres.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableProfile.xaml.h">
       <DependentUpon>TableProfile.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableLvl1Account.xaml.h">
-      <DependentUpon>TableLvl1Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingBinary.xaml.h">
-      <DependentUpon>TableBindingBinary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingJSON.xaml.h">
-      <DependentUpon>TableBindingJSON.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingPostgres.xaml.h">
-      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingQIF.xaml.h">
-      <DependentUpon>TableBindingQIF.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingXAML.xaml.h">
-      <DependentUpon>TableBindingXAML.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableBindingXML.xaml.h">
-      <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableBitmap.xaml.h">
@@ -196,14 +168,6 @@
       <DependentUpon>TableComputeKernel.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableDebug.xaml.h">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableMetric.xaml.h">
-      <DependentUpon>TableMetric.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TablePostProcessing.xaml.h">
       <DependentUpon>TablePostProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -212,12 +176,12 @@
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TablePrompt.xaml.h">
-      <DependentUpon>TablePrompt.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableRPC.xaml.h">
       <DependentUpon>TableRPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableService.xaml.h">
+      <DependentUpon>TableService.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableSharedMemory.xaml.h">
@@ -232,32 +196,20 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableUX.xaml.h">
-      <DependentUpon>TableUX.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableXamlContextMenu.xaml.h">
-      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+    <ClInclude Include="TableDictionary.xaml.h">
+      <DependentUpon>TableDictionary.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableDescription.xaml.h">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableDigitalTwin.xaml.h">
-      <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
+    <ClInclude Include="TableEnterprise.xaml.h">
+      <DependentUpon>TableEnterprise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableEvent.xaml.h">
       <DependentUpon>TableEvent.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableLibrary.xaml.h">
-      <DependentUpon>TableLibrary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableXamlResource.xaml.h">
-      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableSoftDrive.xaml.h">
@@ -292,24 +244,12 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableXamlToolBar.xaml.h">
-      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableUserControl.xaml.h">
-      <DependentUpon>TableUserControl.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="TableXamlWidget.xaml.h">
-      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="TableWindow.xaml.h">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableXamlPg.xaml.h">
-      <DependentUpon>TableXamlPg.xaml</DependentUpon>
+    <ClInclude Include="TableXaml.xaml.h">
+      <DependentUpon>TableXaml.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
@@ -410,6 +350,10 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableAccount.xaml.cpp">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableApplication.xaml.cpp">
       <DependentUpon>TableApplication.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -418,52 +362,20 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableLvl2Account.xaml.cpp">
-      <DependentUpon>TableLvl2Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableLvl3Account.xaml.cpp">
-      <DependentUpon>TableLvl3Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableLvl4Account.xaml.cpp">
-      <DependentUpon>TableLvl4Account.xaml</DependentUpon>
+    <ClCompile Include="TableContact.xaml.cpp">
+      <DependentUpon>TableContact.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TablePipe.xaml.cpp">
       <DependentUpon>TablePipe.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableConnectionPostgres.xaml.cpp">
+      <DependentUpon>TableConnectionPostgres.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableProfile.xaml.cpp">
       <DependentUpon>TableProfile.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableLvl1Account.xaml.cpp">
-      <DependentUpon>TableLvl1Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingBinary.xaml.cpp">
-      <DependentUpon>TableBindingBinary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingJSON.xaml.cpp">
-      <DependentUpon>TableBindingJSON.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingPostgres.xaml.cpp">
-      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingQIF.xaml.cpp">
-      <DependentUpon>TableBindingQIF.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingXAML.xaml.cpp">
-      <DependentUpon>TableBindingXAML.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableBindingXML.xaml.cpp">
-      <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableBitmap.xaml.cpp">
@@ -474,14 +386,6 @@
       <DependentUpon>TableComputeKernel.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableDebug.xaml.cpp">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableMetric.xaml.cpp">
-      <DependentUpon>TableMetric.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TablePostProcessing.xaml.cpp">
       <DependentUpon>TablePostProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -490,12 +394,12 @@
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TablePrompt.xaml.cpp">
-      <DependentUpon>TablePrompt.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TableRPC.xaml.cpp">
       <DependentUpon>TableRPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableService.xaml.cpp">
+      <DependentUpon>TableService.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableSharedMemory.xaml.cpp">
@@ -510,32 +414,20 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableUX.xaml.cpp">
-      <DependentUpon>TableUX.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableXamlContextMenu.xaml.cpp">
-      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+    <ClCompile Include="TableDictionary.xaml.cpp">
+      <DependentUpon>TableDictionary.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableDescription.xaml.cpp">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableDigitalTwin.xaml.cpp">
-      <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
+    <ClCompile Include="TableEnterprise.xaml.cpp">
+      <DependentUpon>TableEnterprise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableEvent.xaml.cpp">
       <DependentUpon>TableEvent.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableLibrary.xaml.cpp">
-      <DependentUpon>TableLibrary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableXamlResource.xaml.cpp">
-      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableSoftDrive.xaml.cpp">
@@ -570,24 +462,12 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableXamlToolBar.xaml.cpp">
-      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableUserControl.xaml.cpp">
-      <DependentUpon>TableUserControl.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
-    <ClCompile Include="TableXamlWidget.xaml.cpp">
-      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </ClCompile>
     <ClCompile Include="TableWindow.xaml.cpp">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableXamlPg.xaml.cpp">
-      <DependentUpon>TableXamlPg.xaml</DependentUpon>
+    <ClCompile Include="TableXaml.xaml.cpp">
+      <DependentUpon>TableXaml.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
@@ -689,6 +569,10 @@
       <DependentUpon>TableAccelerator.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableAccount.idl">
+      <DependentUpon>TableAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableApplication.idl">
       <DependentUpon>TableApplication.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -697,52 +581,20 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableLvl2Account.idl">
-      <DependentUpon>TableLvl2Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableLvl3Account.idl">
-      <DependentUpon>TableLvl3Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableLvl4Account.idl">
-      <DependentUpon>TableLvl4Account.xaml</DependentUpon>
+    <Midl Include="TableContact.idl">
+      <DependentUpon>TableContact.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TablePipe.idl">
       <DependentUpon>TablePipe.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableConnectionPostgres.idl">
+      <DependentUpon>TableConnectionPostgres.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableProfile.idl">
       <DependentUpon>TableProfile.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableLvl1Account.idl">
-      <DependentUpon>TableLvl1Account.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingBinary.idl">
-      <DependentUpon>TableBindingBinary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingJSON.idl">
-      <DependentUpon>TableBindingJSON.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingPostgres.idl">
-      <DependentUpon>TableBindingPostgres.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingQIF.idl">
-      <DependentUpon>TableBindingQIF.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingXAML.idl">
-      <DependentUpon>TableBindingXAML.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableBindingXML.idl">
-      <DependentUpon>TableBindingXML.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableBitmap.idl">
@@ -753,14 +605,6 @@
       <DependentUpon>TableComputeKernel.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableDebug.idl">
-      <DependentUpon>TableDebug.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableMetric.idl">
-      <DependentUpon>TableMetric.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TablePostProcessing.idl">
       <DependentUpon>TablePostProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -769,12 +613,12 @@
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TablePrompt.idl">
-      <DependentUpon>TablePrompt.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableRPC.idl">
       <DependentUpon>TableRPC.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableService.idl">
+      <DependentUpon>TableService.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableSharedMemory.idl">
@@ -789,32 +633,20 @@
       <DependentUpon>TableTopology.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableUX.idl">
-      <DependentUpon>TableUX.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableXamlContextMenu.idl">
-      <DependentUpon>TableXamlContextMenu.xaml</DependentUpon>
+    <Midl Include="TableDictionary.idl">
+      <DependentUpon>TableDictionary.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableDescription.idl">
       <DependentUpon>TableDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableDigitalTwin.idl">
-      <DependentUpon>TableDigitalTwin.xaml</DependentUpon>
+    <Midl Include="TableEnterprise.idl">
+      <DependentUpon>TableEnterprise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableEvent.idl">
       <DependentUpon>TableEvent.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableLibrary.idl">
-      <DependentUpon>TableLibrary.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableXamlResource.idl">
-      <DependentUpon>TableXamlResource.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableSoftDrive.idl">
@@ -849,24 +681,12 @@
       <DependentUpon>TableStorage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableXamlToolBar.idl">
-      <DependentUpon>TableXamlToolBar.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableUserControl.idl">
-      <DependentUpon>TableUserControl.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="TableXamlWidget.idl">
-      <DependentUpon>TableXamlWidget.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
     <Midl Include="TableWindow.idl">
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableXamlPg.idl">
-      <DependentUpon>TableXamlPg.xaml</DependentUpon>
+    <Midl Include="TableXaml.idl">
+      <DependentUpon>TableXaml.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserBlock.idl">
@@ -964,46 +784,25 @@
     <Page Include="TableAccelerator.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableApplication.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableAsync.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableLvl2Account.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableLvl3Account.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableLvl4Account.xaml">
+    <Page Include="TableContact.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePipe.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableConnectionPostgres.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableProfile.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableLvl1Account.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingBinary.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingJSON.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingPostgres.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingQIF.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingXAML.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableBindingXML.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableBitmap.xaml">
@@ -1012,22 +811,16 @@
     <Page Include="TableComputeKernel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableDebug.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableMetric.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="TablePostProcessing.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePreProcessing.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TablePrompt.xaml">
+    <Page Include="TableRPC.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableRPC.xaml">
+    <Page Include="TableService.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSharedMemory.xaml">
@@ -1039,25 +832,16 @@
     <Page Include="TableTopology.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableUX.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableXamlContextMenu.xaml">
+    <Page Include="TableDictionary.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableDescription.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableDigitalTwin.xaml">
+    <Page Include="TableEnterprise.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableEvent.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableLibrary.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableXamlResource.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableSoftDrive.xaml">
@@ -1084,19 +868,10 @@
     <Page Include="TableStorage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableXamlToolBar.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableUserControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TableXamlWidget.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="TableWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableXamlPg.xaml">
+    <Page Include="TableXaml.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserBlock.xaml" />

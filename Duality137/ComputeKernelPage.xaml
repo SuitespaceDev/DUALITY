@@ -17,8 +17,7 @@
             <HV4DX:UserDivider/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"
-                ValueKey="_DEVICE_NOTES"/>
+                x:Name="DeviceDescription"/>
 
         </StackPanel>
 

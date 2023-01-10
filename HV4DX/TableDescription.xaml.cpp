@@ -14,15 +14,15 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    winrt::hstring TableDescription::ValueKey()
+    winrt::hstring TableDescription::TableDescriptionHVID()
     {
-        return value_key;
+        return table_description_hvid;
 
     }
 
-    void TableDescription::ValueKey(winrt::hstring const& e)
+    void TableDescription::TableDescriptionHVID(winrt::hstring const& e)
     {
-        value_key = e;
+        table_description_hvid = e;
 
         return;
 

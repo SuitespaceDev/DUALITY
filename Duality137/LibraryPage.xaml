@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableLibrary
-                x:Name="ABILibrary"/>
+            <HV4DX:TableService
+                x:Name="ABIService"/>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:TableContact
+                x:Name="ABIServiceContact"/>
 
             <HV4DX:TableDescription
-                x:Name="ABILibraryDescription"
-                ValueKey="ABI_LIBRARY_NOTES"/>
+                x:Name="ABIServiceDescription"/>
 
         </StackPanel>
 

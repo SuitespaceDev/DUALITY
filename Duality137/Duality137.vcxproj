@@ -120,6 +120,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AccountPage.xaml.h">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="ApplicationPage.xaml.h">
       <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </ClInclude>
@@ -131,6 +135,14 @@
     </ClInclude>
     <ClInclude Include="BlankProject.xaml.h">
       <DependentUpon>BlankProject.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="DataBindingPage.xaml.h">
+      <DependentUpon>DataBindingPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ConnectionPostgresPage.xaml.h">
+      <DependentUpon>ConnectionPostgresPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="EventPage.xaml.h">
       <DependentUpon>EventPage.xaml</DependentUpon>
@@ -179,6 +191,10 @@
     <ClInclude Include="ComputeKernelPage.xaml.h">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="RuntimePage.xaml.h">
+      <DependentUpon>RuntimePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UXPage.xaml.h">
       <DependentUpon>UXPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -193,8 +209,8 @@
       <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="UserControlPage.xaml.h">
-      <DependentUpon>UserControlPage.xaml</DependentUpon>
+    <ClInclude Include="XamlControlPage.xaml.h">
+      <DependentUpon>XamlControlPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="PreProcessPage.xaml.h">
       <DependentUpon>PreProcessPage.xaml</DependentUpon>
@@ -208,8 +224,8 @@
     <ClInclude Include="Duality.xaml.h">
       <DependentUpon>Duality.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="DigitalTwinPage.xaml.h">
-      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
+    <ClInclude Include="EnterprisePage.xaml.h">
+      <DependentUpon>EnterprisePage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="FunctionPage.xaml.h">
       <DependentUpon>FunctionPage.xaml</DependentUpon>
@@ -257,23 +273,23 @@
     <ClInclude Include="Level4AccountPage.xaml.h">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindBinaryPage.xaml.h">
-      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
+    <ClInclude Include="BinaryBindingPage.xaml.h">
+      <DependentUpon>BinaryBindingPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindJSONPage.xaml.h">
-      <DependentUpon>BindJSONPage.xaml</DependentUpon>
+    <ClInclude Include="JSONBindingPage.xaml.h">
+      <DependentUpon>JSONBindingPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindPostgresPage.xaml.h">
-      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
+    <ClInclude Include="PostgresBindingPage.xaml.h">
+      <DependentUpon>PostgresBindingPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindQIFPage.xaml.h">
-      <DependentUpon>BindQIFPage.xaml</DependentUpon>
+    <ClInclude Include="QIFBindingPage.xaml.h">
+      <DependentUpon>QIFBindingPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindXAMLPage.xaml.h">
-      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
+    <ClInclude Include="XAMLBindingPage.xaml.h">
+      <DependentUpon>XAMLBindingPage.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="BindXMLPage.xaml.h">
-      <DependentUpon>BindXMLPage.xaml</DependentUpon>
+    <ClInclude Include="XMLBindingPage.xaml.h">
+      <DependentUpon>XMLBindingPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="RootUI.xaml.h">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -320,6 +336,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AccountPage.xaml.cpp">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="ApplicationPage.xaml.cpp">
       <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </ClCompile>
@@ -331,6 +351,14 @@
     </ClCompile>
     <ClCompile Include="BlankProject.xaml.cpp">
       <DependentUpon>BlankProject.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="DataBindingPage.xaml.cpp">
+      <DependentUpon>DataBindingPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ConnectionPostgresPage.xaml.cpp">
+      <DependentUpon>ConnectionPostgresPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="EventPage.xaml.cpp">
       <DependentUpon>EventPage.xaml</DependentUpon>
@@ -379,6 +407,10 @@
     <ClCompile Include="ComputeKernelPage.xaml.cpp">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="RuntimePage.xaml.cpp">
+      <DependentUpon>RuntimePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UXPage.xaml.cpp">
       <DependentUpon>UXPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -393,8 +425,8 @@
       <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="UserControlPage.xaml.cpp">
-      <DependentUpon>UserControlPage.xaml</DependentUpon>
+    <ClCompile Include="XamlControlPage.xaml.cpp">
+      <DependentUpon>XamlControlPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="PreProcessPage.xaml.cpp">
       <DependentUpon>PreProcessPage.xaml</DependentUpon>
@@ -408,8 +440,8 @@
     <ClCompile Include="Duality.xaml.cpp">
       <DependentUpon>Duality.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="DigitalTwinPage.xaml.cpp">
-      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
+    <ClCompile Include="EnterprisePage.xaml.cpp">
+      <DependentUpon>EnterprisePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="FunctionPage.xaml.cpp">
       <DependentUpon>FunctionPage.xaml</DependentUpon>
@@ -457,23 +489,23 @@
     <ClCompile Include="Level4AccountPage.xaml.cpp">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindBinaryPage.xaml.cpp">
-      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
+    <ClCompile Include="BinaryBindingPage.xaml.cpp">
+      <DependentUpon>BinaryBindingPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindJSONPage.xaml.cpp">
-      <DependentUpon>BindJSONPage.xaml</DependentUpon>
+    <ClCompile Include="JSONBindingPage.xaml.cpp">
+      <DependentUpon>JSONBindingPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindPostgresPage.xaml.cpp">
-      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
+    <ClCompile Include="PostgresBindingPage.xaml.cpp">
+      <DependentUpon>PostgresBindingPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindQIFPage.xaml.cpp">
-      <DependentUpon>BindQIFPage.xaml</DependentUpon>
+    <ClCompile Include="QIFBindingPage.xaml.cpp">
+      <DependentUpon>QIFBindingPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindXAMLPage.xaml.cpp">
-      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
+    <ClCompile Include="XAMLBindingPage.xaml.cpp">
+      <DependentUpon>XAMLBindingPage.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="BindXMLPage.xaml.cpp">
-      <DependentUpon>BindXMLPage.xaml</DependentUpon>
+    <ClCompile Include="XMLBindingPage.xaml.cpp">
+      <DependentUpon>XMLBindingPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="RootUI.xaml.cpp">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -535,6 +567,10 @@
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="AccountPage.idl">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="ApplicationPage.idl">
       <DependentUpon>ApplicationPage.xaml</DependentUpon>
     </Midl>
@@ -546,6 +582,14 @@
     </Midl>
     <Midl Include="BlankProject.idl">
       <DependentUpon>BlankProject.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="DataBindingPage.idl">
+      <DependentUpon>DataBindingPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ConnectionPostgresPage.idl">
+      <DependentUpon>ConnectionPostgresPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="EventPage.idl">
       <DependentUpon>EventPage.xaml</DependentUpon>
@@ -594,6 +638,10 @@
     <Midl Include="ComputeKernelPage.idl">
       <DependentUpon>ComputeKernelPage.xaml</DependentUpon>
     </Midl>
+    <Midl Include="RuntimePage.idl">
+      <DependentUpon>RuntimePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UXPage.idl">
       <DependentUpon>UXPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -608,8 +656,8 @@
       <DependentUpon>RuntimeClassPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="UserControlPage.idl">
-      <DependentUpon>UserControlPage.xaml</DependentUpon>
+    <Midl Include="XamlControlPage.idl">
+      <DependentUpon>XamlControlPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="PreProcessPage.idl">
       <DependentUpon>PreProcessPage.xaml</DependentUpon>
@@ -623,8 +671,8 @@
     <Midl Include="Duality.idl">
       <DependentUpon>Duality.xaml</DependentUpon>
     </Midl>
-    <Midl Include="DigitalTwinPage.idl">
-      <DependentUpon>DigitalTwinPage.xaml</DependentUpon>
+    <Midl Include="EnterprisePage.idl">
+      <DependentUpon>EnterprisePage.xaml</DependentUpon>
     </Midl>
     <Midl Include="FunctionPage.idl">
       <DependentUpon>FunctionPage.xaml</DependentUpon>
@@ -672,23 +720,23 @@
     <Midl Include="Level4AccountPage.idl">
       <DependentUpon>Level4AccountPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindBinaryPage.idl">
-      <DependentUpon>BindBinaryPage.xaml</DependentUpon>
+    <Midl Include="BinaryBindingPage.idl">
+      <DependentUpon>BinaryBindingPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindJSONPage.idl">
-      <DependentUpon>BindJSONPage.xaml</DependentUpon>
+    <Midl Include="JSONBindingPage.idl">
+      <DependentUpon>JSONBindingPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindPostgresPage.idl">
-      <DependentUpon>BindPostgresPage.xaml</DependentUpon>
+    <Midl Include="PostgresBindingPage.idl">
+      <DependentUpon>PostgresBindingPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindQIFPage.idl">
-      <DependentUpon>BindQIFPage.xaml</DependentUpon>
+    <Midl Include="QIFBindingPage.idl">
+      <DependentUpon>QIFBindingPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindXAMLPage.idl">
-      <DependentUpon>BindXAMLPage.xaml</DependentUpon>
+    <Midl Include="XAMLBindingPage.idl">
+      <DependentUpon>XAMLBindingPage.xaml</DependentUpon>
     </Midl>
-    <Midl Include="BindXMLPage.idl">
-      <DependentUpon>BindXMLPage.xaml</DependentUpon>
+    <Midl Include="XMLBindingPage.idl">
+      <DependentUpon>XMLBindingPage.xaml</DependentUpon>
     </Midl>
     <Midl Include="RootUI.idl">
       <DependentUpon>RootUI.xaml</DependentUpon>
@@ -735,10 +783,19 @@
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="Duality.xaml" />
+    <Page Include="AccountPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ApplicationPage.xaml" />
     <Page Include="AsyncPage.xaml" />
     <Page Include="BitmapPage.xaml" />
     <Page Include="BlankProject.xaml" />
+    <Page Include="DataBindingPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConnectionPostgresPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="DHV4DLVL1.xaml" />
     <Page Include="DHV4DKERNEL.xaml" />
     <Page Include="DHV4DPARTITION.xaml" />
@@ -772,6 +829,9 @@
     <Page Include="ProfilePage.xaml" />
     <Page Include="CloudProject.xaml" />
     <Page Include="ComputeKernelPage.xaml" />
+    <Page Include="RuntimePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UXPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -780,12 +840,12 @@
     <Page Include="RuntimeClassPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControlPage.xaml" />
+    <Page Include="XamlControlPage.xaml" />
     <Page Include="PreProcessPage.xaml" />
     <Page Include="Level2AccountPage.xaml" />
     <Page Include="SoftDrivePage.xaml" />
     <Page Include="Duality137Buttons.xaml" />
-    <Page Include="DigitalTwinPage.xaml" />
+    <Page Include="EnterprisePage.xaml" />
     <Page Include="FunctionPage.xaml" />
     <Page Include="GitProject.xaml" />
     <Page Include="SoftPartitionPage.xaml" />
@@ -803,12 +863,12 @@
     <Page Include="PipePage.xaml" />
     <Page Include="Level3AccountPage.xaml" />
     <Page Include="Level4AccountPage.xaml" />
-    <Page Include="BindBinaryPage.xaml" />
-    <Page Include="BindJSONPage.xaml" />
-    <Page Include="BindPostgresPage.xaml" />
-    <Page Include="BindQIFPage.xaml" />
-    <Page Include="BindXAMLPage.xaml" />
-    <Page Include="BindXMLPage.xaml" />
+    <Page Include="BinaryBindingPage.xaml" />
+    <Page Include="JSONBindingPage.xaml" />
+    <Page Include="PostgresBindingPage.xaml" />
+    <Page Include="QIFBindingPage.xaml" />
+    <Page Include="XAMLBindingPage.xaml" />
+    <Page Include="XMLBindingPage.xaml" />
     <Page Include="RootUI.xaml" />
     <Page Include="RPCPage.xaml" />
     <Page Include="SaveToCloud.xaml" />

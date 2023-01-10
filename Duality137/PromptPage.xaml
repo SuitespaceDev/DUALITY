@@ -12,14 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TablePrompt
-                x:Name="ComponentServicePrompt"/>
-
-            <HV4DX:UserDivider/>
+            <HV4DX:UserDivider
+                x:Name="ServicePrompt"/>
 
             <HV4DX:TableDescription
-                x:Name="ComponentServicePromptDescription"
-                ValueKey="COMPONENT_SERVICE_PROMPT_NOTES"/>
+                x:Name="ServicePromptDescription"/>
 
         </StackPanel>
 

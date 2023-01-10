@@ -15,11 +15,8 @@
             <HV4DX:TableProcessor
                 x:Name="Processor"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="ProcessorDescription"
-                ValueKey="PROCESSOR_NOTES"/>
+                x:Name="ProcessorDescription"/>
 
         </StackPanel>
 

@@ -12,14 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableMetric
-                x:Name="ComponentServiceMetric"/>
-
-            <HV4DX:UserDivider/>
+            <HV4DX:UserDivider
+                x:Name="ServiceMetric"/>
 
             <HV4DX:TableDescription
-                x:Name="ComponentServiceMetricDescription"
-                ValueKey="COMPONENT_SERVICE_METRIC_NOTES"/>
+                x:Name="ServiceMetricDescription"/>
 
         </StackPanel>
 

@@ -5,10 +5,8 @@ namespace HV4DX
     {
         TableDescription();
     
-        String ValueKey;
+        String TableDescriptionHVID;
 	
-        void SelectDefaultFromTables(String uid);
-
     }
 
 }

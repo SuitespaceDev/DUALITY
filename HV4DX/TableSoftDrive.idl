@@ -1,7 +1,7 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TableSoftDrive : Microsoft.UI.Xaml.Controls.Page
+    runtimeclass TableSoftDrive : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableSoftDrive();
     

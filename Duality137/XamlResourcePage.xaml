@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableXamlResource
+            <HV4DX:TableDictionary
+                x:Name="XamlResourceDictionary"/>
+
+            <HV4DX:TableXaml
                 x:Name="XamlResource"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="XamlResourceDescription"
-                ValueKey="XAML_RESOURCE_NOTES"/>
+                x:Name="XamlResourceDescription"/>
 
         </StackPanel>
 

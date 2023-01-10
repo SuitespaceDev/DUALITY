@@ -48,7 +48,7 @@
             </NavigationView.Resources>
             <NavigationView.MenuItems>
                 <NavigationViewItem IsSelected="True" Tag="{}{2F385E17-4F57-4A6B-A3D6-9C63A97D77E5}" x:Name="ProfilePage" Content="Profile"/>
-                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{859710B0-BC7E-47FB-9907-2DE9DF5E1798}" x:Name="UserAccountsPage" Content="Account">
+                <NavigationViewItem SelectsOnInvoked="True" Tag="{}{859710B0-BC7E-47FB-9907-2DE9DF5E1798}" x:Name="AccountPage" Content="Account">
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{14EE711B-158A-4113-AC93-BEA9D99700DF}" x:Name="Level1AccountPage" Content="Level 1 Account"/>
                         <NavigationViewItem Tag="{}{E0AF95F9-8AA2-41B2-9238-FA7984F283A5}" x:Name="Level2AccountPage" Content="Level 2 Account"/>
@@ -56,9 +56,14 @@
                         <NavigationViewItem Tag="{}{D382650E-91C0-4F7C-8485-1FF46C9AF941}" x:Name="Level4AccountPage" Content="Level 4 Account"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
-                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{02C3E566-4174-4D42-BC66-A01C7DC8D533}" x:Name="RuntimePage" Content="Runtime">
+                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2724AAA2-123B-4185-A9F1-7205D742262C}" x:Name="ConnectionPage" Content="Connection">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{9126C512-05D3-4CFE-BFC0-6EBC1897DE0F}" x:Name="DigitalTwinPage" Content="DigitalTwin"/>
+                        <NavigationViewItem Tag="{}{681D1C8F-E001-42A4-BAAB-FD450E5F3F39}" x:Name="ConnectionPostgresPage" Content="Postgress"/>
+                    </NavigationViewItem.MenuItems>
+                </NavigationViewItem>
+                <NavigationViewItem SelectsOnInvoked="True" Tag="{}{02C3E566-4174-4D42-BC66-A01C7DC8D533}" x:Name="RuntimePage" Content="Runtime">
+                    <NavigationViewItem.MenuItems>
+                        <NavigationViewItem Tag="{}{9126C512-05D3-4CFE-BFC0-6EBC1897DE0F}" x:Name="EnterprisePage" Content="Enterprise"/>
                         <NavigationViewItem Tag="{}{EB6EDAF6-5FB5-4F6F-9EC7-7702E1E9FFAD}" x:Name="WindowPage" Content="Window"/>
                         <NavigationViewItem Tag="{}{2612BFF3-C034-413E-A01E-0848A45F9917}" x:Name="SoftDrivePage" Content="Drive"/>
                         <NavigationViewItem Tag="{}{B7EB7843-92A7-4F79-B626-CF20978AB4A8}" x:Name="SoftPartitionPage" Content="Image"/>
@@ -67,14 +72,14 @@
                         <NavigationViewItem Tag="{}{1B3D1454-1FD9-454A-812C-7FC16B2F9B51}" x:Name="MetricPage" Content="Metric"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
-                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{E1F8583C-67B8-4D9A-BD15-256B3C0E0698}" x:Name="DataBindingPage" Content="Data Binding">
+                <NavigationViewItem SelectsOnInvoked="True" Tag="{}{E1F8583C-67B8-4D9A-BD15-256B3C0E0698}" x:Name="DataBindingPage" Content="Data Binding">
                     <NavigationViewItem.MenuItems>
-                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="BindBinaryPage" Content="Binary"/>
-                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="BindJSONPage" Content="JSON"/>
-                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="BindXMLPage" Content="XML"/>
-                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="BindXAMLPage" Content="XAML"/>
-                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="BindQIFPage" Content="QIF"/>
-                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="BindPostgresPage" Content="Postgres"/>
+                        <NavigationViewItem Tag="{}{5E8FCF0C-62AD-46FA-BDFE-A94BFB18D5C9}" x:Name="BinaryBindingPage" Content="Binary"/>
+                        <NavigationViewItem Tag="{}{6515BE6A-7349-4DBC-803E-8C190B198758}" x:Name="JSONBindingPage" Content="JSON"/>
+                        <NavigationViewItem Tag="{}{3D0ED970-7D01-40D8-A679-72D56E412EBB}" x:Name="XMLBindingPage" Content="XML"/>
+                        <NavigationViewItem Tag="{}{DC7DA50F-8D48-4EEC-93F5-F12D4AEA2818}" x:Name="XAMLBindingPage" Content="XAML"/>
+                        <NavigationViewItem Tag="{}{2618883D-37BA-460B-B3EF-6D617701CBA6}" x:Name="QIFBindingPage" Content="QIF"/>
+                        <NavigationViewItem Tag="{}{EDC1BCCE-D74E-4C1C-9DD7-7C5EBDAF31B0}" x:Name="PostgresBindingPage" Content="Postgres"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem SelectsOnInvoked="False" Tag="{}{2A0D7577-A39A-409F-B4BB-20E0D2C71B96}" x:Name="IOPage" Content="IO">
@@ -98,7 +103,7 @@
                 <NavigationViewItem SelectsOnInvoked="True" Tag="{}{F8A96E30-710E-4C6E-A158-B8390CDF61BF}" x:Name="UXPage" Content="UX">
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem Tag="{}{0DB7C610-447E-423F-85C3-44E81D7F16B3}" x:Name="XamlResourcePage" Content="Xaml Resource"/>
-                        <NavigationViewItem Tag="{}{ECFE799D-62A4-498A-A398-20E6E4AD2A9C}" x:Name="UserControlPage" Content="UserControl"/>
+                        <NavigationViewItem Tag="{}{ECFE799D-62A4-498A-A398-20E6E4AD2A9C}" x:Name="XamlControlPage" Content="Xaml Control"/>
                         <NavigationViewItem Tag="{}{853BC787-D7FD-4618-A18E-DD5A53E4AF44}" x:Name="XamlPgPage" Content="Xaml Page"/>
                         <NavigationViewItem Tag="{}{71E2E256-72DF-4403-9DDA-09BBC11ABD7D}" x:Name="XamlToolBarPage" Content="Xaml Tool Bar"/>
                         <NavigationViewItem Tag="{}{69840795-22B9-4E5D-A336-8A652E83683E}" x:Name="XamlWidgetPage" Content="Xaml Widget"/>

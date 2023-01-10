@@ -12,14 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableDebug
-                x:Name="ComponentServiceDebugger"/>
-
-            <HV4DX:UserDivider/>
+            <HV4DX:UserDivider
+                x:Name="ServiceDebugger"/>
 
             <HV4DX:TableDescription
-                x:Name="ComponentServiceDebuggerDescription"
-                ValueKey="COMPONENT_SERVICE_DEBUGGER_NOTES"/>
+                x:Name="ServiceDebuggerDescription"/>
 
         </StackPanel>
 

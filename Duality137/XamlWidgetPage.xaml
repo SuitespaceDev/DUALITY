@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableXamlWidget
+            <HV4DX:TableDictionary
+                x:Name="XamlWidgetDictionary"/>
+
+            <HV4DX:TableXaml
                 x:Name="XamlWidget"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="XamlWidgetDescription"
-                ValueKey="XAML_WIDGET_NOTES"/>
+                x:Name="XamlWidgetDescription"/>
 
         </StackPanel>
 

@@ -20,15 +20,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableLvl3Account
+            <HV4DX:UserDivider
                 x:Name="AccountLvl3Access"/>
 
             <HV4DX:UserDivider
                 x:Name="AccountlVL3ComAccess"/>
 
             <HV4DX:TableDescription
-                x:Name="AccountLvl3AccessDescription"
-                ValueKey="ACCOUNT_LVL3_ACCESS_NOTES"/>
+                x:Name="AccountLvl3AccessDescription"/>
 
         </StackPanel>
 

@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableXamlToolBar
+            <HV4DX:TableDictionary
+                x:Name="XamlToolBarDictionary"/>
+
+            <HV4DX:TableXaml
                 x:Name="XamlToolBar"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="XamlToolBarDescription"
-                ValueKey="XAML_TOOL_BAR_NOTES"/>
+                x:Name="XamlToolBarDescription"/>
 
         </StackPanel>
 

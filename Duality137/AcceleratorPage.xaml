@@ -15,11 +15,8 @@
             <HV4DX:TableAccelerator
                 x:Name="AcceleratorInterface"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="AcceleratorInterfaceDescription"
-                ValueKey="ACCELERATOR_INTERFACE_NOTES"/>
+                x:Name="AcceleratorInterfaceDescription"/>
 
         </StackPanel>
 

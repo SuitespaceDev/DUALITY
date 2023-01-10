@@ -15,11 +15,8 @@
             <HV4DX:TableIterator
                 x:Name="IteratorDictionary"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="IteratorDictionaryDescription"
-                ValueKey="ITERATOR_DICTIONARY_NOTES"/>
+                x:Name="IteratorDictionaryDescription"/>
 
         </StackPanel>
 

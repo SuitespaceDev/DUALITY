@@ -13,13 +13,10 @@
         <StackPanel>
 
             <HV4DX:TableSoftPartition
-                x:Name="DigitalTwinSoftPartition"/>
-
-            <HV4DX:UserDivider/>
+                x:Name="SoftPartition"/>
 
             <HV4DX:TableDescription
-                x:Name="DigitalTwinSoftPartitionDescription"
-                ValueKey="DIGITAL_TWIN_SOFTPARTITION_NOTES"/>
+                x:Name="SoftPartitionDescription"/>
 
         </StackPanel>
 

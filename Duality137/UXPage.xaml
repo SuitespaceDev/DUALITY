@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableUX
+            <HV4DX:TableService
                 x:Name="UXLibrary"/>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:TableContact
+                x:Name="UXLibraryContact"/>
 
             <HV4DX:TableDescription
-                x:Name="UXLibraryDescription"
-                ValueKey="UX_LIBRARY_NOTES"/>
+                x:Name="UXLibraryDescription"/>
 
         </StackPanel>
 

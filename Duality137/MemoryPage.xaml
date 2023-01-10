@@ -15,11 +15,8 @@
             <HV4DX:TableMemory
                 x:Name="Memory"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="MemoryDescription"
-                ValueKey="MEMORY_NOTES"/>
+                x:Name="MemoryDescription"/>
 
         </StackPanel>
 

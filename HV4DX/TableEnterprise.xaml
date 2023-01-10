@@ -1,0 +1,94 @@
+﻿<UserControl
+    x:Class="HV4DX.TableEnterprise"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserEntry
+            x:Name="EnterpriseName"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Enterprise Name"/>
+
+        <local:UserEntry
+            x:Name="EnterpriseHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="HVID"/>
+
+        <local:UserMMM
+            x:Name="EnterpriseRegistered"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Registered"/>
+
+        <local:UserBlock 
+            x:Name="EnterpriseUpdated"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Updated"/>
+
+        <local:UserFilterItem
+            x:Name="EnterpriseLocalization"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Localization"/>
+
+        <local:UserFilterItem
+            x:Name="EnterpriseTimeZone"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Time Zone"/>
+
+        <local:UserFilterItem
+            x:Name="EnterpriseKeyboard"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Keyboard"/>
+
+        <local:UserFilterItem
+            x:Name="EnterpriseWindowsTarget"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Windows Target"/>
+
+        <local:UserFile
+            x:Name="EnterpriseExecutableDir"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Executable Dir"/>
+
+        <local:UserFile 
+            x:Name="EnterpriseAssetsDir"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="5" Grid.RowSpan="1"
+            Label="Assets Dir"/>
+
+        <local:UserFile
+            x:Name="EnterpriseXamlDir"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="6" Grid.RowSpan="1"
+            Label="Xaml Dir"/>
+
+    </Grid>
+
+</UserControl>

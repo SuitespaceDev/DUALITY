@@ -10,12 +10,12 @@ namespace winrt::HV4DX::implementation
         TableDescription();
 
     public:
-        winrt::hstring ValueKey();
+        winrt::hstring TableDescriptionHVID();
 
-        void ValueKey(winrt::hstring const&);
+        void TableDescriptionHVID(winrt::hstring const&);
 
     private:
-        winrt::hstring value_key{};
+        winrt::hstring table_description_hvid{};
 
     public:
         void SelectDefaultFromTables(winrt::hstring const&);

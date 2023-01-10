@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableXamlContextMenu
+            <HV4DX:TableDictionary
+                x:Name="XamlContextMenuDictionary"/>
+
+            <HV4DX:TableXaml
                 x:Name="XamlContextMenu"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="XamlContextMenuDescription"
-                ValueKey="XAML_CONTEXT_MENU_NOTES"/>
+                x:Name="XamlContextMenuDescription"/>
 
         </StackPanel>
 

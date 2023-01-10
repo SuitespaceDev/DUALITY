@@ -14,13 +14,13 @@
         <StackPanel>
 
             <HV4DX:TableProfile
-                x:Name="MachineBuildProfile"/>
+                x:Name="BuildProfile"/>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:TableContact
+                x:Name="BuildProfileContact"/>
 
             <HV4DX:TableDescription
-                x:Name="MachineBuildDescription"
-                ValueKey="MACHINE_BUILD_NOTES"/>
+                x:Name="BuildProfileDescription"/>
 
         </StackPanel>
 

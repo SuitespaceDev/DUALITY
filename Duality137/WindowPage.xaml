@@ -15,11 +15,8 @@
             <HV4DX:TableWindow
                 x:Name="WindowTheme"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="WindowThemeDescription"
-                ValueKey="WINDOW_THEME_NOTES"/>
+                x:Name="WindowThemeDescription"/>
 
         </StackPanel>
 

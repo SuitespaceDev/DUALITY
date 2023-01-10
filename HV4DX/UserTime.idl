@@ -1,7 +1,7 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass UserTime : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    runtimeclass UserTime : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         UserTime();
 

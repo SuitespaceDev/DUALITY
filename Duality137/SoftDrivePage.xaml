@@ -13,13 +13,10 @@
         <StackPanel>
 
             <HV4DX:TableSoftDrive
-                x:Name="DigitalTwinSoftDrive"/>
-
-            <HV4DX:UserDivider/>
+                x:Name="SoftDrive"/>
 
             <HV4DX:TableDescription
-                x:Name="DigitalTwinSoftDriveDescription"
-                ValueKey="DIGITAL_TWIN_SOFTDRIVE_NOTES"/>
+                x:Name="SoftDriveDescription"/>
 
         </StackPanel>
 

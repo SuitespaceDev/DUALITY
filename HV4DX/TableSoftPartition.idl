@@ -1,7 +1,7 @@
 namespace HV4DX
 {
     [default_interface]
-    runtimeclass TableSoftPartition : Microsoft.UI.Xaml.Controls.Page
+    runtimeclass TableSoftPartition : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableSoftPartition();
         

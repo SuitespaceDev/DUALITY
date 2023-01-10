@@ -12,14 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableXamlPg
-                x:Name="XamlPg"/>
+            <HV4DX:TableDictionary
+                x:Name="XamlPageDictionary"/>
 
-            <HV4DX:UserDivider/>
+            <HV4DX:TableXaml
+                x:Name="XamlPage"/>
 
             <HV4DX:TableDescription
-                x:Name="XamlPgDescription"
-                ValueKey="XAML_PAGE_NOTES"/>
+                x:Name="XamlPgDescription"/>
 
         </StackPanel>
 

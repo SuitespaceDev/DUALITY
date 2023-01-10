@@ -1,0 +1,10 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass XAMLBindingPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        XAMLBindingPage();
+
+    }
+
+}

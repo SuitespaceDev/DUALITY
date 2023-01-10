@@ -15,11 +15,8 @@
             <HV4DX:TableStorage
                 x:Name="Storage"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="StorageDescription"
-                ValueKey="STORAGE_NOTES"/>
+                x:Name="StorageDescription"/>
 
         </StackPanel>
 

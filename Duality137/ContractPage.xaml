@@ -15,11 +15,8 @@
             <HV4DX:TableContract
                 x:Name="ContractDictionary"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="ContractDictionaryDescription"
-                ValueKey="CONTRACT_DICTIONARY_NOTES"/>
+                x:Name="ContractDictionaryDescription"/>
 
         </StackPanel>
 

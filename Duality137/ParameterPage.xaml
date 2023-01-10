@@ -15,11 +15,8 @@
             <HV4DX:TableParameter
                 x:Name="ParameterDictionary"/>
 
-            <HV4DX:UserDivider/>
-
             <HV4DX:TableDescription
-                x:Name="ParameterDictionaryDescription"
-                ValueKey="PARAMETER_DICTIONARY_NOTES"/>
+                x:Name="ParameterDictionaryDescription"/>
 
         </StackPanel>
 
