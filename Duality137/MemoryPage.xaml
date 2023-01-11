@@ -12,6 +12,9 @@
 
         <StackPanel>
 
+            <HV4DX:TableHardware
+                x:Name="MemoryHardware"/>
+
             <HV4DX:TableMemory
                 x:Name="Memory"/>
 

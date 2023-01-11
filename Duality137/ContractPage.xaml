@@ -12,8 +12,17 @@
 
         <StackPanel>
 
-            <HV4DX:TableContract
+            <HV4DX:TableDictionary
                 x:Name="ContractDictionary"/>
+
+            <HV4DX:TableContract
+                x:Name="Contract"/>
+
+            <HV4DX:TableContractMember
+                x:Name="ContractMember"/>
+
+            <HV4DX:TableFunctionParameter
+                x:Name="ContractParameter"/>
 
             <HV4DX:TableDescription
                 x:Name="ContractDictionaryDescription"/>

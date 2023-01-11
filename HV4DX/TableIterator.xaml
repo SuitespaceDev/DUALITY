@@ -25,90 +25,36 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="6"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
-
-        <local:UserFilterGoToHVID 
-            x:Name="LibraryHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Library HVID"/>
-
-        <local:UserFilterMMM 
-            x:Name="LibraryMMM"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="MMM"/>
-
-        <local:UserBlock 
-            x:Name="LibraryMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <local:UserFilterItem 
-            x:Name="IteratorDictionaryHVID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Iterator Dictionary HVID"/>
-
-        <local:UserFilterItem 
-            x:Name="IteratorDictionaryMaxPath"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <Border 
-            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-            BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1"
-            Grid.Row="2" Grid.RowSpan="1">
-
-            <Button 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="1"
-                Margin="2,2,2,2"
-                Padding="0,0,0,0"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
-                <TextBlock 
-                    Text="MANUAL PAGES"
-                    FontSize="12"/>
-            </Button>
-
-        </Border>
 
         <local:UserFilterItem 
             x:Name="IteratorHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
             Label="Iterator HVID"/>
 
         <local:UserFilterItem 
             x:Name="IteratorID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="ID"/>
 
         <local:UserFilterItem 
             x:Name="IteratorMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
             x:Name="IteratorNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1"
+            Grid.Row="0" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
             x:Name="IteratorRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1"
+            Grid.Row="1" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
     </Grid>

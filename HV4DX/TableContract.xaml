@@ -25,57 +25,42 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="6"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="6"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="6"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterGoToHVID 
-            x:Name="LibraryHVID"
+        <local:UserFilterItem 
+            x:Name="ContractHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Library HVID"/>
+            Label="Contract HVID"/>
 
-        <local:UserFilterMMM 
-            x:Name="LibraryMMM"
+        <local:UserFilterItem 
+            x:Name="ContractID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
-            Label="MMM"/>
+            Label="ID"/>
 
-        <local:UserBlock 
-            x:Name="LibraryMaxPath"
+        <local:UserFilterItem 
+            x:Name="ContractMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserFilterItem 
-            x:Name="ContractDictionaryHVID"
+        <local:UserBlock 
+            x:Name="ContractNamespace"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Contract Dictionary HVID"/>
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Namespace"/>
 
-        <local:UserFilterItem 
-            x:Name="ContractDictionaryMaxPath"
+        <local:UserBlock 
+            x:Name="ContractRuntimeClass"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="Tag"/>
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Runtime Class"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1">
 
             <Button 
@@ -91,152 +76,6 @@
             </Button>
 
         </Border>
-
-        <local:UserFilterItem 
-            x:Name="ContractHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
-            Label="Contract HVID"/>
-
-        <local:UserFilterItem 
-            x:Name="ContractID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1" 
-            Label="ID"/>
-
-        <local:UserFilterItem 
-            x:Name="ContractMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <local:UserBlock 
-            x:Name="ContractNamespace"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1"
-            Label="Namespace"/>
-
-        <local:UserBlock 
-            x:Name="ContractRuntimeClass"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1"
-            Label="Runtime Class"/>
-
-        <Border 
-            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-            BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1">
-
-            <Button 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="1"
-                Margin="2,2,2,2"
-                Padding="0,0,0,0"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
-                <TextBlock 
-                    Text="MANUAL PAGES"
-                    FontSize="12"/>
-            </Button>
-
-        </Border>
-
-        <local:UserFilterGoToHVID 
-            x:Name="ContractMemberHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="8" Grid.RowSpan="1" 
-            Label="Member HVID"/>
-
-        <local:UserFilterGoToHVID 
-            x:Name="ContractMemberID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="9" Grid.RowSpan="1" 
-            Label="ID"/>
-
-        <local:UserFilterGoToHVID 
-            x:Name="ContractMemberMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="10" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberType"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="8" Grid.RowSpan="1" 
-            Label="Type"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberPosition"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="9" Grid.RowSpan="1"
-            Label="Position"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberArity"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="10" Grid.RowSpan="1"
-            Label="Arity"/>
-
-        <local:UserFilterItem 
-            x:Name="ContractMemberParameterHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="12" Grid.RowSpan="1" 
-            Label="Parameter HVID"/>
-
-        <local:UserFilterItem 
-            x:Name="ContractMemberParameterID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="13" Grid.RowSpan="1" 
-            Label="ID"/>
-
-        <local:UserFilterItem 
-            x:Name="ContractMemberParameterMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="14" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <local:UserGoToHVID 
-            x:Name="ContractMemberParameter"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="12" Grid.RowSpan="1" 
-            Label="Parameter"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberParameterPosition"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="13" Grid.RowSpan="1"
-            Label="Position"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberParameterArity"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="14" Grid.RowSpan="1"
-            Label="Arity"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberParameterDirection"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="15" Grid.RowSpan="1"
-            Label="Direction"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberParameterView"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="16" Grid.RowSpan="1"
-            Label="View"/>
-
-        <local:UserFilterGoToHVID 
-            x:Name="ContractMemberParameterIteratorHVID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="15" Grid.RowSpan="1"
-            Label="Iterator HVID"/>
-
-        <local:UserBlock 
-            x:Name="ContractMemberParameterIteratorMAXPATH"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="16" Grid.RowSpan="1"
-            Label="Tag"/>
 
     </Grid>
 

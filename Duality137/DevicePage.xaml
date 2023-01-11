@@ -12,6 +12,9 @@
 
         <StackPanel>
 
+            <HV4DX:TableHardware
+                x:Name="DeviceHardware"/>
+
             <HV4DX:TableDevice
                 x:Name="Device"/>
 

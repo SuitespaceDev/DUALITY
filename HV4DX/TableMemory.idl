@@ -5,8 +5,6 @@ namespace HV4DX
     {
         TableMemory();
     
-        void SelectDefaultFromTables(String uid);
-
     }
 
 }

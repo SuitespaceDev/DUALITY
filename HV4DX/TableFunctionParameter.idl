@@ -1,0 +1,10 @@
+namespace HV4DX
+{
+    [default_interface]
+    runtimeclass TableFunctionParameter : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        TableFunctionParameter();
+
+    }
+
+}

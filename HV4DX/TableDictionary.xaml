@@ -46,13 +46,13 @@
             Label="Tag"/>
 
         <local:UserFilterItem 
-            x:Name="XamlContextMenuDictionaryHVID"
+            x:Name="DictionaryHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Xaml Menu Dictionary HVID"/>
+            Label="Dictionary HVID"/>
 
         <local:UserFilterItem 
-            x:Name="XamlContextMenuDictionaryMaxPath"
+            x:Name="DictionaryMaxPath"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="Tag"/>

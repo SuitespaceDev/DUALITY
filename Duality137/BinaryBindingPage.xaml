@@ -12,8 +12,8 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider
-                x:Name="BinaryBinding"/>
+            <HV4DX:TableBindingPolicy
+                x:Name="BinaryBindingPolicy"/>
 
             <HV4DX:TableDescription
                 x:Name="BinaryBindingDescription"/>

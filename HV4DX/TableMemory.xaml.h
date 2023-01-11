@@ -1,6 +1,5 @@
 ﻿#pragma once
 
-
 #include "TableMemory.g.h"
 
 namespace winrt::HV4DX::implementation
@@ -9,9 +8,6 @@ namespace winrt::HV4DX::implementation
     {
     public:
         TableMemory();
-
-    public:
-        void SelectDefaultFromTables(winrt::hstring const&);
 
     };
 

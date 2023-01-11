@@ -12,8 +12,11 @@
 
         <StackPanel>
 
+            <HV4DX:TableHardware
+                x:Name="AcceleratorHardware"/>
+
             <HV4DX:TableAccelerator
-                x:Name="AcceleratorInterface"/>
+                x:Name="Accelerator"/>
 
             <HV4DX:TableDescription
                 x:Name="AcceleratorInterfaceDescription"/>

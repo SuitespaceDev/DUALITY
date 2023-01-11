@@ -94,6 +94,30 @@
     <Filter Include="b. Table">
       <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="b. Table\Account">
+      <UniqueIdentifier>{7a49449a-2eb2-44c2-8ced-20357583b712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Hardware">
+      <UniqueIdentifier>{afc0cfcf-2447-4cd8-8c8e-6c7c5a9c4090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Pipeline">
+      <UniqueIdentifier>{d1461ebe-d34e-46b2-8830-349dbd74920c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Process">
+      <UniqueIdentifier>{aaa983df-cd6c-42dd-83c4-34e4afde4c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Runtime">
+      <UniqueIdentifier>{6ff2df24-e3fb-4330-bb5e-0af209c507ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Library">
+      <UniqueIdentifier>{c65a2c6f-1381-4ce0-ac62-8dec03c96260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\UX">
+      <UniqueIdentifier>{7b4e57cc-aa5d-420b-a0b7-c6fe410d8f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="b. Table\Connection">
+      <UniqueIdentifier>{6c427af0-869e-4431-8c91-d4a141c82492}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -204,104 +228,128 @@
     <Page Include="UserHVID.xaml">
       <Filter>UserString\UserHVID</Filter>
     </Page>
-    <Page Include="TableProfile.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
     <Page Include="TableAccount.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableConnectionPostgres.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableWindow.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableSoftPartition.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableSoftDrive.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableEnterprise.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableAccelerator.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableDevice.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableMemory.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableProcessor.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableStorage.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableContract.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableEvent.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableFunction.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableIterator.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableParameter.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableDictionary.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableXaml.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableBitmap.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableComputeKernel.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TablePostProcessing.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TablePreProcessing.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableTopology.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableApplication.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableAsync.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TablePipe.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableRPC.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableSharedMemory.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableRuntimeClass.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableShell.xaml">
-      <Filter>b. Table</Filter>
-    </Page>
-    <Page Include="TableService.xaml">
-      <Filter>b. Table</Filter>
+      <Filter>b. Table\Account</Filter>
     </Page>
     <Page Include="TableContact.xaml">
-      <Filter>b. Table</Filter>
+      <Filter>b. Table\Account</Filter>
+    </Page>
+    <Page Include="TableEnterprise.xaml">
+      <Filter>b. Table\Account</Filter>
+    </Page>
+    <Page Include="TableAccelerator.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TableDevice.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TableHardware.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TableMemory.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TableProcessor.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TablePostProcessing.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TablePreProcessing.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TableTopology.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TableBitmap.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TableShell.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableRPC.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableApplication.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableAsync.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableComputeKernel.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TablePipe.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableProfile.xaml">
+      <Filter>b. Table\Account</Filter>
+    </Page>
+    <Page Include="TableContract.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableDictionary.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableEvent.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableFunction.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableIterator.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableParameter.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableRuntimeClass.xaml">
+      <Filter>b. Table\Pipeline</Filter>
+    </Page>
+    <Page Include="TableSharedMemory.xaml">
+      <Filter>b. Table\Process</Filter>
+    </Page>
+    <Page Include="TableStorage.xaml">
+      <Filter>b. Table\Hardware</Filter>
+    </Page>
+    <Page Include="TableSoftDrive.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableSoftPartition.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableWindow.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableXaml.xaml">
+      <Filter>b. Table\UX</Filter>
+    </Page>
+    <Page Include="TableGroupPolicy.xaml">
+      <Filter>b. Table\Account</Filter>
+    </Page>
+    <Page Include="TableDebug.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableMetric.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TablePrompt.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableConnectionPostgres.xaml">
+      <Filter>b. Table\Connection</Filter>
+    </Page>
+    <Page Include="TableBindingPolicy.xaml">
+      <Filter>b. Table\Runtime</Filter>
+    </Page>
+    <Page Include="TableService.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableFunctionParameter.xaml">
+      <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableContractMember.xaml">
+      <Filter>b. Table\Library</Filter>
     </Page>
   </ItemGroup>
 </Project>

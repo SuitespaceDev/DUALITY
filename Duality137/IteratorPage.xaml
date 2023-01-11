@@ -12,8 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableIterator
+            <HV4DX:TableDictionary
                 x:Name="IteratorDictionary"/>
+
+            <HV4DX:TableIterator
+                x:Name="Iterator"/>
 
             <HV4DX:TableDescription
                 x:Name="IteratorDictionaryDescription"/>

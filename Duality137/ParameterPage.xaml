@@ -12,8 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableParameter
+            <HV4DX:TableDictionary
                 x:Name="ParameterDictionary"/>
+
+            <HV4DX:TableParameter
+                x:Name="Parameter"/>
 
             <HV4DX:TableDescription
                 x:Name="ParameterDictionaryDescription"/>

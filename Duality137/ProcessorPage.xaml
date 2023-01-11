@@ -12,6 +12,9 @@
 
         <StackPanel>
 
+            <HV4DX:TableHardware
+                x:Name="ProcessorHardware"/>
+
             <HV4DX:TableProcessor
                 x:Name="Processor"/>
 

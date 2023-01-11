@@ -25,122 +25,68 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="6"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
         <local:UserFilterGoToHVID 
-            x:Name="LibraryHVID"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Library HVID"/>
-
-        <local:UserFilterMMM 
-            x:Name="LibraryMMM"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="MMM"/>
-
-        <local:UserBlock 
-            x:Name="LibraryMaxPath"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <local:UserFilterItem 
-            x:Name="ParameterDictionaryHVID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Parameter Dictionary HVID"/>
-
-        <local:UserFilterItem 
-            x:Name="ParameterDictionaryMaxPath"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="Tag"/>
-
-        <Border 
-            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-            BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1"
-            Grid.Row="2" Grid.RowSpan="1">
-
-            <Button 
-                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
-                BorderThickness="1"
-                Margin="2,2,2,2"
-                Padding="0,0,0,0"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
-                <TextBlock 
-                    Text="MANUAL PAGES"
-                    FontSize="12"/>
-            </Button>
-
-        </Border>
-
-        <local:UserFilterGoToHVID 
             x:Name="ParameterHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
             Label="Parameter HVID"/>
 
         <local:UserFilterItem 
             x:Name="ParameterID"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="ID"/>
 
         <local:UserFilterItem 
             x:Name="ParameterMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserBlock 
             x:Name="ParameterNamespace"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1"
+            Grid.Row="3" Grid.RowSpan="1"
             Label="Namespace"/>
 
         <local:UserBlock 
             x:Name="ParameterRuntimeClass"
             Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="8" Grid.RowSpan="1"
+            Grid.Row="4" Grid.RowSpan="1"
             Label="Runtime Class"/>
 
         <local:UserGoToHVID 
             x:Name="ParameterContractHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
             Label="Parameter Contract HVID"/>
 
         <local:UserGoToHVID 
             x:Name="ParameterValueHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="Value HVID"/>
 
         <local:UserBlock 
             x:Name="ParameterValueMaxPath"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="6" Grid.RowSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Value"/>
 
         <local:UserFilterGoToHVID 
             x:Name="ParameterSupportedContractHVID"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="7" Grid.RowSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
             Label="Supported Contract"/>
 
         <local:UserBlock 
             x:Name="ParameterSupportedContractMaxPath"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="8" Grid.RowSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
             Label="Contract"/>
 
     </Grid>

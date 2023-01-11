@@ -20,14 +20,11 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider
-                x:Name="AccountLvl4Access"/>
-
-            <HV4DX:UserDivider
-                x:Name="AccountlVL4ComAccess"/>
+            <HV4DX:TableGroupPolicy
+                x:Name="Lvl4AccountGroupPolicy"/>
 
             <HV4DX:TableDescription
-                x:Name="AccountLvl4AccessDescription"/>
+                x:Name="Lvl4AccountDescription"/>
 
         </StackPanel>
 

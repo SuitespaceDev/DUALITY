@@ -12,8 +12,8 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider
-                x:Name="JSONBinding"/>
+            <HV4DX:TableBindingPolicy
+                x:Name="JSONBindingPolicy"/>
 
             <HV4DX:TableDescription
                 x:Name="JSONBindingDescription"/>

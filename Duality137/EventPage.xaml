@@ -12,8 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:TableEvent
+            <HV4DX:TableDictionary
                 x:Name="EventDictionary"/>
+
+            <HV4DX:TableEvent
+                x:Name="Event"/>
 
             <HV4DX:TableDescription
                 x:Name="EventDictionaryDescription"/>

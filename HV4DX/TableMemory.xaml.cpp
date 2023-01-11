@@ -14,14 +14,4 @@ namespace winrt::HV4DX::implementation
 
     }
 
-    void TableMemory::SelectDefaultFromTables(winrt::hstring const& e)
-    {
-
-
-
-
-        return;
-
-    }
-
 }

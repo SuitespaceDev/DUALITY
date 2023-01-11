@@ -12,11 +12,11 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider
-                x:Name="AccountLvl1Access"/>
+            <HV4DX:TableGroupPolicy
+                x:Name="Lvl1AccountGroupPolicy"/>
 
             <HV4DX:TableDescription
-                x:Name="AccountLvl1AccessDescription"/>
+                x:Name="Lvl1AccountDescription"/>
 
         </StackPanel>
 

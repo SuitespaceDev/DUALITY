@@ -1,0 +1,94 @@
+﻿<UserControl
+    x:Class="HV4DX.TableFunctionParameter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HV4DX"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterItem 
+            x:Name="FunctionParameterHVID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Parameter HVID"/>
+
+        <local:UserFilterItem 
+            x:Name="FunctionParameterID"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="ID"/>
+
+        <local:UserFilterItem 
+            x:Name="FunctionParameterMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Tag"/>
+
+        <local:UserFilterGoToHVID 
+            x:Name="FunctionParameter"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Parameter"/>
+
+        <local:UserBlock 
+            x:Name="FunctionParameterPosition"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Position"/>
+
+        <local:UserBlock 
+            x:Name="FunctionParameterArity"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Arity"/>
+
+        <local:UserBlock 
+            x:Name="FunctionParameterDirection"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Direction"/>
+
+        <local:UserBlock 
+            x:Name="FunctionParameterView"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="View"/>
+
+        <local:UserFilterGoToHVID 
+            x:Name="FunctionParameterIteratorHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Iterator HVID"/>
+
+        <local:UserBlock 
+            x:Name="FunctionParameterIteratorMAXPATH"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Tag"/>
+
+    </Grid>
+    
+</UserControl>

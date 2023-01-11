@@ -12,8 +12,8 @@
 
         <StackPanel>
 
-            <HV4DX:UserDivider
-                x:Name="XMLBinding"/>
+            <HV4DX:TableBindingPolicy
+                x:Name="XMLBindingPolicy"/>
 
             <HV4DX:TableDescription
                 x:Name="XMLBindingDescription"/>

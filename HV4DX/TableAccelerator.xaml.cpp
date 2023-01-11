@@ -6,22 +6,12 @@
 
 namespace winrt::HV4DX::implementation
 {
-	TableAccelerator::TableAccelerator()
-	{
-		InitializeComponent();
+    TableAccelerator::TableAccelerator()
+    {
+        InitializeComponent();
 
-		return;
+        return;
 
-	}
-
-	void TableAccelerator::SelectDefaultFromTables(winrt::hstring const& e)
-	{
-
-
-
-
-		return;
-
-	}
+    }
 
 }

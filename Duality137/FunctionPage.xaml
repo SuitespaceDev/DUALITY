@@ -12,8 +12,14 @@
 
         <StackPanel>
 
-            <HV4DX:TableFunction
+            <HV4DX:TableDictionary
                 x:Name="FunctionDictionary"/>
+
+            <HV4DX:TableFunction
+                x:Name="Function"/>
+
+            <HV4DX:TableFunctionParameter
+                x:Name="FunctionParameter"/>
 
             <HV4DX:TableDescription
                 x:Name="FunctionDictionaryDescription"/>

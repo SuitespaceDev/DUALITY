@@ -12,6 +12,9 @@
 
         <StackPanel>
 
+            <HV4DX:TableHardware
+                x:Name="StorageHardware"/>
+
             <HV4DX:TableStorage
                 x:Name="Storage"/>
 

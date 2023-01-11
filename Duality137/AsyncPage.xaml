@@ -12,12 +12,11 @@
 
         <StackPanel>
 
-
-
-            <HV4DX:UserDivider/>
+            <HV4DX:TableRPC
+                x:Name="Async"/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"/>
+                x:Name="AsyncDescription"/>
 
         </StackPanel>
 

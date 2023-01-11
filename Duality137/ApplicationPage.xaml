@@ -12,12 +12,11 @@
 
         <StackPanel>
 
-
-
-            <HV4DX:UserDivider/>
+            <HV4DX:TableRPC
+                x:Name="Application"/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"/>
+                x:Name="ApplicationDescription"/>
 
         </StackPanel>
 

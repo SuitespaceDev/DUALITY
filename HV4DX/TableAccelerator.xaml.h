@@ -2,22 +2,12 @@
 
 #include "TableAccelerator.g.h"
 
-namespace WF = winrt::Windows::Foundation;
-namespace WFITT = winrt::Windows::Foundation::Collections;
-namespace MUX = winrt::Microsoft::UI::Xaml;
-namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
-namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
-namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
-
 namespace winrt::HV4DX::implementation
 {
     struct TableAccelerator : TableAcceleratorT<TableAccelerator>
     {
     public:
         TableAccelerator();
-
-    public:
-        void SelectDefaultFromTables(winrt::hstring const&);
 
     };
 

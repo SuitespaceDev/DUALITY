@@ -12,12 +12,11 @@
 
         <StackPanel>
 
-
-
-            <HV4DX:UserDivider/>
+            <HV4DX:TableTopology
+                x:Name="Topology"/>
 
             <HV4DX:TableDescription
-                x:Name="DeviceDescription"/>
+                x:Name="TopologyDescription"/>
 
         </StackPanel>
 

@@ -144,8 +144,36 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableBindingPolicy.xaml.h">
+      <DependentUpon>TableBindingPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TableContact.xaml.h">
       <DependentUpon>TableContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableContractMember.xaml.h">
+      <DependentUpon>TableContractMember.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableDebug.xaml.h">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableFunctionParameter.xaml.h">
+      <DependentUpon>TableFunctionParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableGroupPolicy.xaml.h">
+      <DependentUpon>TableGroupPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableHardware.xaml.h">
+      <DependentUpon>TableHardware.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TableMetric.xaml.h">
+      <DependentUpon>TableMetric.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TablePipe.xaml.h">
@@ -174,6 +202,10 @@
     </ClInclude>
     <ClInclude Include="TablePreProcessing.xaml.h">
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TablePrompt.xaml.h">
+      <DependentUpon>TablePrompt.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="TableRPC.xaml.h">
@@ -362,8 +394,36 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="TableBindingPolicy.xaml.cpp">
+      <DependentUpon>TableBindingPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="TableContact.xaml.cpp">
       <DependentUpon>TableContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableContractMember.xaml.cpp">
+      <DependentUpon>TableContractMember.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableDebug.xaml.cpp">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableFunctionParameter.xaml.cpp">
+      <DependentUpon>TableFunctionParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableGroupPolicy.xaml.cpp">
+      <DependentUpon>TableGroupPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableHardware.xaml.cpp">
+      <DependentUpon>TableHardware.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableMetric.xaml.cpp">
+      <DependentUpon>TableMetric.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TablePipe.xaml.cpp">
@@ -392,6 +452,10 @@
     </ClCompile>
     <ClCompile Include="TablePreProcessing.xaml.cpp">
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TablePrompt.xaml.cpp">
+      <DependentUpon>TablePrompt.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TableRPC.xaml.cpp">
@@ -581,8 +645,36 @@
       <DependentUpon>TableAsync.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableBindingPolicy.idl">
+      <DependentUpon>TableBindingPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TableContact.idl">
       <DependentUpon>TableContact.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableContractMember.idl">
+      <DependentUpon>TableContractMember.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableDebug.idl">
+      <DependentUpon>TableDebug.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableFunctionParameter.idl">
+      <DependentUpon>TableFunctionParameter.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableGroupPolicy.idl">
+      <DependentUpon>TableGroupPolicy.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableHardware.idl">
+      <DependentUpon>TableHardware.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TableMetric.idl">
+      <DependentUpon>TableMetric.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TablePipe.idl">
@@ -611,6 +703,10 @@
     </Midl>
     <Midl Include="TablePreProcessing.idl">
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TablePrompt.idl">
+      <DependentUpon>TablePrompt.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="TableRPC.idl">
@@ -793,7 +889,28 @@
     <Page Include="TableAsync.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TableBindingPolicy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TableContact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableContractMember.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableDebug.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableFunctionParameter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableGroupPolicy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableHardware.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableMetric.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePipe.xaml">
@@ -815,6 +932,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePreProcessing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablePrompt.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TableRPC.xaml">

@@ -4,8 +4,6 @@ namespace HV4DX
     runtimeclass TableAccelerator : Microsoft.UI.Xaml.Controls.UserControl
     {
         TableAccelerator();
-    
-        void SelectDefaultFromTables(String uid);
 
     }
 
