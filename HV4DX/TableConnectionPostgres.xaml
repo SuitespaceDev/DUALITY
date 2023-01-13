@@ -30,67 +30,46 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
-
-        <local:UserEntry
-            x:Name="PostgresConnectionHost"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="0" Grid.RowSpan="1" 
-            Label="Host"/>
-
-        <local:UserBlock
-            x:Name="PostgresConnectionPort"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="Port"/>
-
-        <local:UserEntry
-            x:Name="PostgresConnectionRole"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
-            Label="Role"/>
-
-        <local:UserEntry
-            x:Name="PostgresConnectionService"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
-            Label="Service"/>
-
-        <local:UserEntry
-            x:Name="PostgresConnectionSSLMode"
-            Grid.Column="0" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1" 
-            Label="SSLMode"/>
 
         <local:UserFilterNewHVID
             x:Name="PostgresConnectionHVID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
-            Label="Connection HVID"/>
+            Label="Postgres Connection HVID"/>
 
-        <local:UserFilterItem
-            x:Name="PostgresConnectionID"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="1" Grid.RowSpan="1" 
-            Label="ID"/>
-
-        <local:UserFilterItem
+        <local:UserEntry
             x:Name="PostgresConnectionMaxPath"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="2" Grid.RowSpan="1" 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
             Label="Tag"/>
 
         <local:UserEntry
             x:Name="PostgresConnectionAccessLvl"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="3" Grid.RowSpan="1" 
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
             Label="Access Level"/>
 
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
-            Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="4" Grid.RowSpan="1">
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -106,23 +85,227 @@
 
         </Border>
 
-        <local:UserFile
-            x:Name="PostgresConnectionSSLClientCert"
-            Grid.Column="0" Grid.ColumnSpan="2" 
+        <local:UserEntry
+            x:Name="PostgresConnectionHost"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1" 
+            Label="Host"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionHostIPV4"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1" 
+            Label="Host IPV4"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionHostIPV6"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Host IPV6"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionPort"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Port"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionDatabase"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Database"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionUser"
+            Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
-            Label="SSLClientCert"/>
+            Label="User"/>
 
-        <local:UserFile
-            x:Name="PostgresConnectionSSLClientKey"
-            Grid.Column="0" Grid.ColumnSpan="2" 
+        <local:UserPassword
+            x:Name="PostgresConnectionPassword"
+            Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="6" Grid.RowSpan="1" 
-            Label="SSLClientKey"/>
+            Label="Password"/>
 
         <local:UserFile
-            x:Name="PostgresConnectionSSLRootCert"
-            Grid.Column="0" Grid.ColumnSpan="2" 
+            x:Name="PostgresConnectionPassFile"
+            Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="7" Grid.RowSpan="1" 
-            Label="SSLRootCert"/>
+            Label="Password File"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionChannelBinding"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Channel Binding"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionConnectTimeout"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Connect Timeout"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionClientEncoding"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1" 
+            Label="Client Encoding"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionOptions"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="7" Grid.RowSpan="1" 
+            Label="Options"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionApplicationName"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1" 
+            Label="Application Name"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionFallbackApplicationName"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="8" Grid.RowSpan="1" 
+            Label="Fallback Application Name"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionKeepAlives"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="9" Grid.RowSpan="1" 
+            Label="Keep Alives"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionKeepAlivesIdle"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="10" Grid.RowSpan="1" 
+            Label="Keep Alives Idle"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionKeepAlivesInterval"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="11" Grid.RowSpan="1" 
+            Label="Keep Alives Interval"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionKeepAlivesCount"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="12" Grid.RowSpan="1" 
+            Label="Keep Alives Count"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionTCPUserTimeout"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="9" Grid.RowSpan="1" 
+            Label="TCP User Timeout"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionReplication"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="10" Grid.RowSpan="1" 
+            Label="Replication"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionGCCEncMode"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="11" Grid.RowSpan="1" 
+            Label="GCC Enc Mode"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionRequirePeer"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="12" Grid.RowSpan="1" 
+            Label="Require Peer"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLMode"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="13" Grid.RowSpan="1" 
+            Label="SSL Mode"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLCompression"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="13" Grid.RowSpan="1" 
+            Label="SSL Compression"/>
+
+        <local:UserFile
+            x:Name="PostgresConnectionSSLCertificate"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="14" Grid.RowSpan="1" 
+            Label="SSL Certificate"/>
+
+        <local:UserFile
+            x:Name="PostgresConnectionSSLKey"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="15" Grid.RowSpan="1" 
+            Label="SSL Key"/>
+
+        <local:UserFile
+            x:Name="PostgresConnectionSSLRootCertificate"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="16" Grid.RowSpan="1" 
+            Label="SSL Root Certificate"/>
+
+        <local:UserFile
+            x:Name="PostgresConnectionSSLCRLDir"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="17" Grid.RowSpan="1" 
+            Label="SSL CRL Dir"/>
+
+        <local:UserFile
+            x:Name="PostgresConnectionSSLCRL"
+            Grid.Column="0" Grid.ColumnSpan="2" 
+            Grid.Row="18" Grid.RowSpan="1" 
+            Label="SSL CRL"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLPassword"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="19" Grid.RowSpan="1" 
+            Label="SSL Password"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLSNI"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="19" Grid.RowSpan="1" 
+            Label="SSL SNI"/>
+        
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLMinProtocolVersion"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="20" Grid.RowSpan="1" 
+            Label="SSL Min. Protocol Version"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionSSLMaxProtocolVersion"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="20" Grid.RowSpan="1" 
+            Label="SSL Max. Protocol Version"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionKrbSrvName"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="21" Grid.RowSpan="1" 
+            Label="Kerberos Server Name"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionGssLib"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="21" Grid.RowSpan="1" 
+            Label="Gss Library"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionService"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="22" Grid.RowSpan="1" 
+            Label="Service"/>
+
+        <local:UserEntry
+            x:Name="PostgresConnectionTargetSessionAttrs"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="22" Grid.RowSpan="1" 
+            Label="Target Session Attributes"/>
 
     </Grid>
 

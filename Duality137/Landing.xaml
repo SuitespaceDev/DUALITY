@@ -18,528 +18,124 @@
                 <ResourceDictionary Source="ms-appx:///Duality137Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <ImageBrush x:Key="RecentProjects" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\RecentProjects.png"/>
-            <ImageBrush x:Key="OpenProject" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\OpenProject.png"/>
+            <ImageBrush x:Key="Landing" ImageSource="C:\Users\rebek\Source\DUALITY\Duality137\Assets\Landing.png"/>
 
         </ResourceDictionary>
 
     </Page.Resources>
 
-    <Grid x:Name="LandingRoot" Background="{StaticResource SplashDuality137}">
+    <Grid x:Name="LandingRoot" Background="{StaticResource Landing}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="8*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="15*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Rectangle x:Name="TitleDuality137" 
-                   Fill="{StaticResource Duality137}"
-                   Grid.Column="1" Grid.ColumnSpan="6" 
-                   Grid.Row="2" Grid.RowSpan="6"/>
+        <ScrollViewer 
+            Background="Black"
+            Opacity="0.05"
+            FlowDirection="LeftToRight"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1">
 
-        <Rectangle x:Name="TitleEnterpriseLogo" 
-                   Fill="{StaticResource EnterpriseLogo}"
-                   Grid.Column="18" Grid.ColumnSpan="13" 
-                   Grid.Row="2" Grid.RowSpan="4"/>
-
-        <Rectangle x:Name="TitleLandings" 
-                   Fill="{StaticResource RecentProjects}"
-                   Grid.Column="1" Grid.ColumnSpan="6" 
-                   Grid.Row="13" Grid.RowSpan="4"/>
-
-        <ScrollViewer FlowDirection="LeftToRight"
-                   Grid.Column="1" Grid.ColumnSpan="6" 
-                   Grid.Row="18" Grid.RowSpan="38">
-
-            <StackPanel Height="2000"
-                        Margin="0,0,0,10">
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
-                <Grid Height="50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="Red Dragon Cybernetics Project" 
-                               Grid.Column="0" Grid.ColumnSpan="2"
-                               Grid.Row="0" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="C:\users\user\RedDragon\" 
-                               Grid.Column="0" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Left"/>
-
-                    <TextBlock Text="11/04/2022 21:19" 
-                               Grid.Column="1" Grid.ColumnSpan="1"
-                               Grid.Row="1" Grid.RowSpan="1"
-                               HorizontalTextAlignment="Right"/>
-
-                </Grid>
-
+            <StackPanel
+                x:Name="ProjectIndexed">
 
             </StackPanel>
 
         </ScrollViewer>
 
+        <StackPanel
+            Grid.Column="3" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1">
 
-        <!-- ********************************************************************************************* -->
-
-
-        <Rectangle x:Name="TitleOpenProject" 
-                   Fill="{StaticResource OpenProject}"
-                   Grid.Column="23" Grid.ColumnSpan="6" 
-                   Grid.Row="13" Grid.RowSpan="4"/>
-
-
-        <Button x:Name="OpenProjectButton001"
+            <Button 
+                x:Name="OpenProjectButton001"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="18" Grid.RowSpan="4"
                 Click="OpenProject001">
 
-            <TextBlock Text="Open Project From Computer"
-                       Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Open Project From Computer"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
 
-        <Button x:Name="OpenProjectButton002"
+            <Button 
+                x:Name="OpenProjectButton002"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="22" Grid.RowSpan="4"
                 Click="OpenProject002">
 
-            <TextBlock Text="Open Project From Cloud"
-                       Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Download Project From Cloud"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
 
-        <Button x:Name="OpenProjectButton003"
+            <Button 
+                x:Name="OpenProjectButton003"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="26" Grid.RowSpan="4"
                 Click="OpenProject003">
 
-            <TextBlock Text="New Project From Template"
-                       Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Create Templated Project"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
 
-        <Button x:Name="OpenProjectButton004"
+            <Button 
+                x:Name="OpenProjectButton004"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="30" Grid.RowSpan="4"
                 Click="OpenProject004">
 
-            <TextBlock Text="New Blank Project"
-                           Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Create Blank Project"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
 
-        <Button x:Name="OpenProjectButton005"
+            <Button 
+                x:Name="OpenProjectButton005"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="34" Grid.RowSpan="4"
                 Click="OpenProject005">
 
-            <TextBlock Text="Clone Project From Git"
-                       Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Clone Project From Git"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
 
-        <Button x:Name="OpenProjectButton006"
+            <Button 
+                x:Name="OpenProjectButton006"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="22" Grid.ColumnSpan="8" 
-                Grid.Row="38" Grid.RowSpan="4"
                 Click="OpenProject006">
 
-            <TextBlock Text="EXIT"
-                       Style="{StaticResource RightMenuText}"/>
+                <TextBlock 
+                    Text="Exit"
+                    Style="{StaticResource RightMenuText}"/>
 
-        </Button>
+            </Button>
+
+        </StackPanel>
 
         <Button x:Name="LoaderSettings"
                 Style="{StaticResource RightMenuButton}"
-                Grid.Column="1" Grid.ColumnSpan="6" 
-                Grid.Row="59" Grid.RowSpan="4"
+                Grid.Column="1" Grid.ColumnSpan="1" 
+                Grid.Row="2" Grid.RowSpan="1"
                 Click="GoToLoaderSettings">
 
-            <TextBlock Text="GoTo Loader Settings"
-                       Style="{StaticResource RightMenuText}"/>
+            <TextBlock 
+                Text="GoTo Loader Settings"
+                Style="{StaticResource RightMenuText}"/>
 
         </Button>
-
 
     </Grid>
 

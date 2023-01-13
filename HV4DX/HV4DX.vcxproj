@@ -204,6 +204,10 @@
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="TableProjectIndex.xaml.h">
+      <DependentUpon>TableProjectIndex.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="TablePrompt.xaml.h">
       <DependentUpon>TablePrompt.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -452,6 +456,10 @@
     </ClCompile>
     <ClCompile Include="TablePreProcessing.xaml.cpp">
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TableProjectIndex.xaml.cpp">
+      <DependentUpon>TableProjectIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="TablePrompt.xaml.cpp">
@@ -705,6 +713,10 @@
       <DependentUpon>TablePreProcessing.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="TableProjectIndex.idl">
+      <DependentUpon>TableProjectIndex.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="TablePrompt.idl">
       <DependentUpon>TablePrompt.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -932,6 +944,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePreProcessing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TableProjectIndex.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TablePrompt.xaml">

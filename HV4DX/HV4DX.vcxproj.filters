@@ -118,6 +118,9 @@
     <Filter Include="b. Table\Connection">
       <UniqueIdentifier>{6c427af0-869e-4431-8c91-d4a141c82492}</UniqueIdentifier>
     </Filter>
+    <Filter Include="b. Table\Landing">
+      <UniqueIdentifier>{6b70654b-c521-44ae-b752-50d4a66f9fd2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -350,6 +353,9 @@
     </Page>
     <Page Include="TableContractMember.xaml">
       <Filter>b. Table\Library</Filter>
+    </Page>
+    <Page Include="TableProjectIndex.xaml">
+      <Filter>b. Table\Landing</Filter>
     </Page>
   </ItemGroup>
 </Project>
