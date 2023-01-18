@@ -48,30 +48,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring UserHVID::Placeholder()
-	{
-
-		return placeholder;
-
-	}
-
-	bool UserHVID::ReadOnly()
-	{
-
-		return read_only;
-
-	}
-
-	void UserHVID::ReadOnly(bool const& e)
-	{
-		read_only = e;
-
-		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
-
-		return;
-
-	}
-
 	event_token UserHVID::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
 	{
 

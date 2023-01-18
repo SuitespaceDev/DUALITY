@@ -284,8 +284,8 @@
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="TableXaml.xaml.h">
-      <DependentUpon>TableXaml.xaml</DependentUpon>
+    <ClInclude Include="TableXamlFile.xaml.h">
+      <DependentUpon>TableXamlFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserBlock.xaml.h">
@@ -303,8 +303,20 @@
       <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="UserFilterHVID.xaml.h">
+      <DependentUpon>UserFilterHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="UserFilterMMM.xaml.h">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserFilterNewItem.xaml.h">
+      <DependentUpon>UserFilterNewItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UserGoTo.xaml.h">
+      <DependentUpon>UserGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="UserGoToFile.xaml.h">
@@ -368,9 +380,6 @@
     </ClInclude>
     <ClInclude Include="TableIterator.xaml.h">
       <DependentUpon>TableIterator.xaml</DependentUpon>
-    </ClInclude>
-    <ClInclude Include="TableRuntimeClass.xaml.h">
-      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="UserTime.xaml.h">
       <DependentUpon>UserTime.xaml</DependentUpon>
@@ -538,8 +547,8 @@
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="TableXaml.xaml.cpp">
-      <DependentUpon>TableXaml.xaml</DependentUpon>
+    <ClCompile Include="TableXamlFile.xaml.cpp">
+      <DependentUpon>TableXamlFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserBlock.xaml.cpp">
@@ -557,8 +566,20 @@
       <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
+    <ClCompile Include="UserFilterHVID.xaml.cpp">
+      <DependentUpon>UserFilterHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="UserFilterMMM.xaml.cpp">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserFilterNewItem.xaml.cpp">
+      <DependentUpon>UserFilterNewItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="UserGoTo.xaml.cpp">
+      <DependentUpon>UserGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="UserGoToFile.xaml.cpp">
@@ -622,9 +643,6 @@
     </ClCompile>
     <ClCompile Include="TableIterator.xaml.cpp">
       <DependentUpon>TableIterator.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="TableRuntimeClass.xaml.cpp">
-      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="UserTime.xaml.cpp">
       <DependentUpon>UserTime.xaml</DependentUpon>
@@ -793,8 +811,8 @@
       <DependentUpon>TableWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="TableXaml.idl">
-      <DependentUpon>TableXaml.xaml</DependentUpon>
+    <Midl Include="TableXamlFile.idl">
+      <DependentUpon>TableXamlFile.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserBlock.idl">
@@ -812,8 +830,20 @@
       <DependentUpon>UserFilterGoToHVID.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="UserFilterHVID.idl">
+      <DependentUpon>UserFilterHVID.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="UserFilterMMM.idl">
       <DependentUpon>UserFilterMMM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserFilterNewItem.idl">
+      <DependentUpon>UserFilterNewItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="UserGoTo.idl">
+      <DependentUpon>UserGoTo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="UserGoToFile.idl">
@@ -877,9 +907,6 @@
     </Midl>
     <Midl Include="TableIterator.idl">
       <DependentUpon>TableIterator.xaml</DependentUpon>
-    </Midl>
-    <Midl Include="TableRuntimeClass.idl">
-      <DependentUpon>TableRuntimeClass.xaml</DependentUpon>
     </Midl>
     <Midl Include="UserTime.idl">
       <DependentUpon>UserTime.xaml</DependentUpon>
@@ -1006,7 +1033,7 @@
     <Page Include="TableWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TableXaml.xaml">
+    <Page Include="TableXamlFile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserBlock.xaml" />
@@ -1019,7 +1046,16 @@
     <Page Include="UserFilterGoToHVID.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UserFilterHVID.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserFilterMMM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserFilterNewItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserGoTo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserGoToFile.xaml">
@@ -1056,7 +1092,6 @@
     <Page Include="UserPassword.xaml" />
     <Page Include="TableContract.xaml" />
     <Page Include="TableIterator.xaml" />
-    <Page Include="TableRuntimeClass.xaml" />
     <Page Include="UserTime.xaml">
       <SubType>Designer</SubType>
     </Page>

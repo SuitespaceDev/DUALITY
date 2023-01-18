@@ -47,9 +47,6 @@
     <Filter Include="2. Property Pages">
       <UniqueIdentifier>{089075ce-2884-45c1-a8d5-d82e99a0f50a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3. Machine">
-      <UniqueIdentifier>{8fab1ebe-4f28-4ecb-a5b8-f40ff534f55c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="4. Main">
       <UniqueIdentifier>{2a9524bd-fbc5-45bf-9c5d-88f2ee9a9bdb}</UniqueIdentifier>
     </Filter>
@@ -110,6 +107,12 @@
     <Filter Include="2. Property Pages\c. Connections">
       <UniqueIdentifier>{c3beaad9-7eb8-4f86-aebf-342ef2fffa73}</UniqueIdentifier>
     </Filter>
+    <Filter Include="4. Main\3. Machine">
+      <UniqueIdentifier>{8fab1ebe-4f28-4ecb-a5b8-f40ff534f55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Property Pages\k. Projects">
+      <UniqueIdentifier>{ba6cd6b6-bf67-4c60-bf6d-fdfcc097550e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -137,7 +140,7 @@
       <Filter>7. Pickers</Filter>
     </Page>
     <Page Include="Machine.xaml">
-      <Filter>3. Machine</Filter>
+      <Filter>4. Main\3. Machine</Filter>
     </Page>
     <Page Include="CloudProject.xaml">
       <Filter>7. Pickers</Filter>
@@ -339,6 +342,9 @@
     </Page>
     <Page Include="RuntimePage.xaml">
       <Filter>2. Property Pages\d. Runtime</Filter>
+    </Page>
+    <Page Include="ProjectIndexPage.xaml">
+      <Filter>2. Property Pages\k. Projects</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

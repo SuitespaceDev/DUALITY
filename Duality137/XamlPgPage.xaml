@@ -15,11 +15,11 @@
             <HV4DX:TableDictionary
                 x:Name="XamlPageDictionary"/>
 
-            <HV4DX:TableXaml
+            <HV4DX:TableXamlFile
                 x:Name="XamlPage"/>
 
             <HV4DX:TableDescription
-                x:Name="XamlPgDescription"/>
+                x:Name="XamlPageDescription"/>
 
         </StackPanel>
 

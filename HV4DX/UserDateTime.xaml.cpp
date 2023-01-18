@@ -48,30 +48,6 @@ namespace winrt::HV4DX::implementation
 
 	}
 
-	winrt::hstring UserDateTime::Placeholder()
-	{
-
-		return placeholder;
-
-	}
-
-	bool UserDateTime::ReadOnly()
-	{
-
-		return read_only;
-
-	}
-
-	void UserDateTime::ReadOnly(bool const& e)
-	{
-		read_only = e;
-
-		property_changed_event(*this, MUXD::PropertyChangedEventArgs{ L"ReadOnly" });
-
-		return;
-
-	}
-
 	event_token UserDateTime::PropertyChanged(MUXD::PropertyChangedEventHandler const& handler)
 	{
 

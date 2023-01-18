@@ -11,8 +11,8 @@ namespace winrt::Duality137::implementation
     public:
         ShellPage();
 
-
     };
+
 }
 
 namespace winrt::Duality137::factory_implementation

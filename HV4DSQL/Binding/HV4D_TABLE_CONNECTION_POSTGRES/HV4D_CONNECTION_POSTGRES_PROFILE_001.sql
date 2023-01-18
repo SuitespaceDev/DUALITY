@@ -1,0 +1,14 @@
+SET search_path=hv4d_schema_machine_001;
+INSERT INTO HV4D_TABLE_CONNECTION_POSTGRES VALUES(
+'{2B4A12DF-8B72-4D2D-9BA6-BAB7D72FC6D1}',
+'CONNECTION_RUNTIME_PROFILE_001',
+'LEVEL_1_ACCESS',
+'localhost',
+'127.0.0.1',
+'0:0:0:0:0:0:0:1',
+'3146',
+'HV4DXDB001',
+'admin',
+'password1');
+	
+	

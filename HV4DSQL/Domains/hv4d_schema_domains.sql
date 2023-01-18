@@ -1,0 +1,15 @@
+SET search_path=hv4d_schema_public;
+CREATE DOMAIN hv4d_type_bool BOOLEAN;
+CREATE DOMAIN hv4d_type_datetime CHARACTER(19);
+CREATE DOMAIN hv4d_type_hhmmss CHARACTER(8);
+CREATE DOMAIN hv4d_type_hvid CHARACTER(38);
+CREATE DOMAIN hv4d_type_id CHARACTER(16);
+CREATE DOMAIN hv4d_type_maxpath CHARACTER(255);
+CREATE DOMAIN hv4d_type_mmddyyyy CHARACTER(10);
+CREATE DOMAIN hv4d_type_mmm CHARACTER(9);
+CREATE DOMAIN hv4d_type_numeric_i64 BIGINT;
+CREATE DOMAIN hv4d_type_numeric_i128 CHARACTER(38);
+CREATE DOMAIN hv4d_type_numeric_u64 BIGINT;
+CREATE DOMAIN hv4d_type_numeric_u128 CHARACTER(38);
+CREATE DOMAIN hv4d_type_phone CHARACTER(8); 
+CREATE DOMAIN hv4d_type_uint SMALLINT;

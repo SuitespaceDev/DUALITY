@@ -15,7 +15,7 @@
             <HV4DX:TableDictionary
                 x:Name="XamlToolBarDictionary"/>
 
-            <HV4DX:TableXaml
+            <HV4DX:TableXamlFile
                 x:Name="XamlToolBar"/>
 
             <HV4DX:TableDescription

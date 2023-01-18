@@ -15,7 +15,7 @@
             <HV4DX:TableDictionary
                 x:Name="XamlContextMenuDictionary"/>
 
-            <HV4DX:TableXaml
+            <HV4DX:TableXamlFile
                 x:Name="XamlContextMenu"/>
 
             <HV4DX:TableDescription

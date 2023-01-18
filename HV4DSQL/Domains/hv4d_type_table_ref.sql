@@ -1,0 +1,4 @@
+SET search_path=hv4d_schema_public;
+CREATE TYPE hv4d_type_table_ref AS(
+TABLE_REF_TABLE_TYPE HV4D_TYPE_MAXPATH,
+TABLE_REF_TABLE_HVID HV4D_TYPE_HVID); 

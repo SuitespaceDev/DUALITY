@@ -28,27 +28,28 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
 
-        <local:UserFilterItem 
+        <local:UserFilterHVID 
             x:Name="HardwareManufacturer"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="Hardware Manufacturer"/>
 
-        <local:UserFilterItem 
+        <local:UserBlock 
             x:Name="HardwareModelHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="Model S/N"/>
 
-        <local:UserFilterItem 
+        <local:UserBlock 
             x:Name="HardwareModelMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
             Label="Model"/>
 
-        <local:UserFilterNewHVID 
+        <local:UserHVID 
             x:Name="HardwareHVID"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="3" Grid.RowSpan="1" 
@@ -60,25 +61,45 @@
             Grid.Row="4" Grid.RowSpan="1" 
             Label="ID"/>
 
-        <local:UserFilterItem 
+        <local:UserFilterNewItem 
             x:Name="HardwareMaxPath"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="5" Grid.RowSpan="1" 
             Label="Tag"/>
 
-        <local:UserBlock 
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="6" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="MANUAL PAGES"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <local:UserDateTime 
             x:Name="HardwareBuilt"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="0" Grid.RowSpan="1" 
             Label="Built"/>
 
-        <local:UserBlock 
+        <local:UserDateTime 
             x:Name="HardwareInstalled"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1" 
             Label="Installed"/>
 
-        <local:UserBlock 
+        <local:UserDateTime 
             x:Name="HardwareUpdated"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="2" Grid.RowSpan="1" 
@@ -124,11 +145,17 @@
 
         </Border>
 
+        <local:UserBlock 
+            x:Name="HardwareAccessLevel"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1" 
+            Label="Access Level"/>
+
         <Border 
             BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
             BorderThickness="1"
             Grid.Column="1" Grid.ColumnSpan="1" 
-            Grid.Row="5" Grid.RowSpan="1">
+            Grid.Row="6" Grid.RowSpan="1">
 
             <Button 
                 BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
@@ -138,7 +165,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <TextBlock 
-                    Text="MANUAL PAGES"
+                    Text="PERMISSIONS"
                     FontSize="12"/>
             </Button>
 

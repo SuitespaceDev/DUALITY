@@ -118,8 +118,14 @@
     <Filter Include="b. Table\Connection">
       <UniqueIdentifier>{6c427af0-869e-4431-8c91-d4a141c82492}</UniqueIdentifier>
     </Filter>
-    <Filter Include="b. Table\Landing">
-      <UniqueIdentifier>{6b70654b-c521-44ae-b752-50d4a66f9fd2}</UniqueIdentifier>
+    <Filter Include="UserFilters\UserFilterNewItem">
+      <UniqueIdentifier>{51b06ed0-2a8a-4e5c-bfd6-5a10ea2a493f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserFilters\UserFilterHVID">
+      <UniqueIdentifier>{32f207d6-fc8a-42b3-9e0b-4a8769a98f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserString\UserGoTo">
+      <UniqueIdentifier>{b6dd9a30-c294-4bea-bb47-2f9e4c701262}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -306,9 +312,6 @@
     <Page Include="TableParameter.xaml">
       <Filter>b. Table\Library</Filter>
     </Page>
-    <Page Include="TableRuntimeClass.xaml">
-      <Filter>b. Table\Pipeline</Filter>
-    </Page>
     <Page Include="TableSharedMemory.xaml">
       <Filter>b. Table\Process</Filter>
     </Page>
@@ -324,7 +327,7 @@
     <Page Include="TableWindow.xaml">
       <Filter>b. Table\Runtime</Filter>
     </Page>
-    <Page Include="TableXaml.xaml">
+    <Page Include="TableXamlFile.xaml">
       <Filter>b. Table\UX</Filter>
     </Page>
     <Page Include="TableGroupPolicy.xaml">
@@ -355,7 +358,16 @@
       <Filter>b. Table\Library</Filter>
     </Page>
     <Page Include="TableProjectIndex.xaml">
-      <Filter>b. Table\Landing</Filter>
+      <Filter>b. Table\Account</Filter>
+    </Page>
+    <Page Include="UserFilterNewItem.xaml">
+      <Filter>UserFilters\UserFilterNewItem</Filter>
+    </Page>
+    <Page Include="UserFilterHVID.xaml">
+      <Filter>UserFilters\UserFilterHVID</Filter>
+    </Page>
+    <Page Include="UserGoTo.xaml">
+      <Filter>UserString\UserGoTo</Filter>
     </Page>
   </ItemGroup>
 </Project>

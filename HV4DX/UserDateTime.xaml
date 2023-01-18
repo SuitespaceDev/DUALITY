@@ -52,14 +52,12 @@
                 Grid.Row="0" Grid.RowSpan="1"
                 Margin="2,2,2,2">
 
-                <TextBox 
+                <TextBlock 
                     Foreground="Black"
                     Padding="3,3,3,3"                           
                     FontWeight="Medium"
                     FontSize="12"
-                    PlaceholderText="{x:Bind Placeholder, Mode=OneWay}"
-                    Text="{x:Bind Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                    IsReadOnly="{x:Bind ReadOnly, Mode=TwoWay}"/>
+                    Text="{x:Bind Value, Mode=OneWay}"/>
 
             </Border>
 

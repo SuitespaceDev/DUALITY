@@ -6,10 +6,7 @@ namespace HV4DX
         UserHVID();
 
         String Label;
-        String Placeholder{ get; };
         String Value;
-
-        Boolean ReadOnly;
 
     }
 

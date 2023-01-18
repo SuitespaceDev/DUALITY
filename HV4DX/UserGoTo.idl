@@ -1,0 +1,15 @@
+namespace HV4DX
+{
+    [bindable]
+    runtimeclass UserGoTo : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserGoTo();
+
+        String Label;
+        String Value;
+        String Placeholder;
+        Boolean IsEditable;
+
+    }
+
+}

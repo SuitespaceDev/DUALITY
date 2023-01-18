@@ -129,6 +129,7 @@
                         <NavigationViewItem Tag="{}{AD99D754-4A6C-422D-B4FC-7164916CE3ED}" x:Name="SharedMemPage" Content="Shared Memory"/>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
+                <NavigationViewItem SelectsOnInvoked="False" Tag="{}{34D7C2F1-F74E-47A7-A9D4-3E81F184BDDE}" x:Name="ProjectIndexPage" Content="Projects"/>
             </NavigationView.MenuItems>
 
             <Grid>
