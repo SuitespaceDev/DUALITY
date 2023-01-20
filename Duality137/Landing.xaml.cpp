@@ -26,15 +26,15 @@ namespace winrt::Duality137::implementation
 
 	void Landing::Loaded(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
 	{
-		PopulateRecent();
+		IndexProjects();
 
 		return;
 
 	}
 
-	void Landing::PopulateRecent()
+	void Landing::IndexProjects()
 	{
-
+		Projects.HV4DConnect();
 
 
 		return;

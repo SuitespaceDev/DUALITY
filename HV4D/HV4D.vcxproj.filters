@@ -350,9 +350,7 @@
     <None Include="HV4D.def">
       <Filter>0. Project</Filter>
     </None>
-    <None Include="packages.config">
-      <Filter>0. Project</Filter>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

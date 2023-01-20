@@ -20,18 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="Class.idl" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="HV4DPostgreSQL.def">
-      <Filter>0. Project</Filter>
-    </None>
-    <None Include="packages.config">
       <Filter>0. Project</Filter>
     </None>
     <None Include="PropertySheet.props">
       <Filter>0. Project</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

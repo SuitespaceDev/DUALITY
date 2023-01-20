@@ -110,9 +110,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnableModules>true</EnableModules>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -140,110 +142,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CHV4DABS.h">
-      <DependentUpon>CHV4DABS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DALPHANUMERIC.h">
-      <DependentUpon>CHV4DALPHANUMERIC.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DCLASST.h">
-      <DependentUpon>CHV4DCLASST.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DDATETIME.h">
-      <DependentUpon>CHV4DDATETIME.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DHEX.h">
-      <DependentUpon>CHV4DHEX.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DHHMMSS.h">
-      <DependentUpon>CHV4DHHMMSS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DHVID.h">
-      <DependentUpon>CHV4DHVID.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DKEY.h">
-      <DependentUpon>CHV4DKEY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DMAXPATH.h">
-      <DependentUpon>CHV4DMAXPATH.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DMMDDYYYY.h">
-      <DependentUpon>CHV4DMMDDYYYY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DMMM.h">
-      <DependentUpon>CHV4DMMM.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DNUMERIC.h">
-      <DependentUpon>CHV4DNUMERIC.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DOFFSET.h">
-      <DependentUpon>CHV4DOFFSET.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DTEXTBLOBA.h">
-      <DependentUpon>CHV4DTEXTBLOBA.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="CHV4DTEXTBLOBW.h">
-      <DependentUpon>CHV4DTEXTBLOBW.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CHV4DABS.cpp" />
-    <ClCompile Include="CHV4DALPHANUMERIC.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DCLASST.cpp" />
-    <ClCompile Include="CHV4DDATETIME.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DHEX.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DHHMMSS.cpp" />
-    <ClCompile Include="CHV4DHVID.cpp" />
-    <ClCompile Include="CHV4DKEY.cpp" />
-    <ClCompile Include="CHV4DMAXPATH.cpp" />
-    <ClCompile Include="CHV4DMMDDYYYY.cpp" />
-    <ClCompile Include="CHV4DMMM.cpp" />
-    <ClCompile Include="CHV4DNUMERIC.cpp" />
-    <ClCompile Include="CHV4DOFFSET.cpp" />
-    <ClCompile Include="CHV4DTEXTBLOBA.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DTEXTBLOBW.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="CHV4DABS.ixx" />
+    <ClCompile Include="CHV4DALPHANUMERIC.ixx" />
+    <ClCompile Include="CHV4DCLASST.ixx" />
+    <ClCompile Include="CHV4DDATETIME.ixx" />
+    <ClCompile Include="CHV4DHEX.ixx" />
+    <ClCompile Include="CHV4DHHMMSS.ixx" />
+    <ClCompile Include="CHV4DHVID.ixx" />
+    <ClCompile Include="CHV4DKEY.ixx" />
+    <ClCompile Include="CHV4DMAXPATH.ixx" />
+    <ClCompile Include="CHV4DMMDDYYYY.ixx" />
+    <ClCompile Include="CHV4DMMM.ixx" />
+    <ClCompile Include="CHV4DNUMERIC.ixx" />
+    <ClCompile Include="CHV4DOFFSET.ixx" />
+    <ClCompile Include="CHV4DTEXTBLOBA.ixx" />
+    <ClCompile Include="CHV4DTEXTBLOBW.ixx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

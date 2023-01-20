@@ -79,12 +79,10 @@
     <None Include="HV4DTBASIC.def">
       <Filter>1. Project</Filter>
     </None>
-    <None Include="packages.config">
-      <Filter>1. Project</Filter>
-    </None>
     <None Include="PropertySheet.props">
       <Filter>1. Project</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="HV4DABS">

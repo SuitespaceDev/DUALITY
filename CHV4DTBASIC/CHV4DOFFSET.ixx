@@ -1,6 +1,57 @@
-#include "pch.h"
+export module CHV4DOFFSET;
 
-#include "CHV4DOFFSET.h"
+import <vector>;
+
+import <string>;
+
+import <stdexcept>;
+
+import <tuple>;
+
+import CHV4DNUMERIC;
+
+export namespace CHV4D::CHV4DTBASIC
+{
+	class CHV4DOFFSET
+	{
+	public:
+		CHV4DOFFSET();
+
+		CHV4DOFFSET(std::wstring const& l, std::wstring const& u);
+
+		CHV4DOFFSET(unsigned long const& lo, unsigned long const& uo, unsigned long const& lsz, unsigned long const& usz);
+
+		CHV4DOFFSET(uint64_t const& l, uint64_t const& u);
+
+		CHV4DOFFSET(CHV4DOFFSET const&);
+
+	public:
+		void operator = (std::tuple<std::wstring const&, std::wstring const&>);
+
+		void operator = (std::tuple<unsigned long, unsigned long, unsigned long, unsigned long>);
+
+		void operator = (std::tuple<uint64_t, uint64_t>);
+
+		void operator = (CHV4DOFFSET const&);
+
+		bool operator == (CHV4DOFFSET const&) const;
+
+		bool operator != (CHV4DOFFSET const&) const;
+
+		operator std::tuple<std::wstring, std::wstring>() const;
+
+		operator std::tuple<uint64_t, uint64_t>() const;
+
+		operator std::tuple<unsigned long, unsigned long, unsigned long, unsigned long>() const;
+
+	private:
+		CHV4DNUMERIC tagOFFSET{};
+
+		CHV4DNUMERIC tagSIZE{};
+
+	};
+
+}
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -40,9 +91,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DOFFSET::CHV4DOFFSET(DWORD const& off_bot, DWORD const& off_upp, DWORD const& sz_bot, DWORD const& sz_upp)
+	CHV4DOFFSET::CHV4DOFFSET(unsigned long const& off_bot, unsigned long const& off_upp, unsigned long const& sz_bot, unsigned long const& sz_upp)
 	{
-		DWORD array[4]{ off_bot, off_upp, sz_bot, sz_upp };
+		unsigned long array[4]{ off_bot, off_upp, sz_bot, sz_upp };
 
 		memcpy(&tagOFFSET, &array[0], sizeof(uint64_t));
 
@@ -100,9 +151,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DOFFSET::operator = (std::tuple<DWORD, DWORD, DWORD, DWORD> e)
+	void CHV4DOFFSET::operator = (std::tuple<unsigned long, unsigned long, unsigned long, unsigned long> e)
 	{
-		DWORD array[4]{ std::get<0>(e), std::get<1>(e), std::get<2>(e), std::get<3>(e) };
+		unsigned long array[4]{ std::get<0>(e), std::get<1>(e), std::get<2>(e), std::get<3>(e) };
 
 		memcpy(&tagOFFSET, &array[0], sizeof(uint64_t));
 
@@ -156,17 +207,17 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DOFFSET::operator std::tuple<DWORD, DWORD, DWORD, DWORD>() const
+	CHV4DOFFSET::operator std::tuple<unsigned long, unsigned long, unsigned long, unsigned long>() const
 	{
-		DWORD offset_top{}, offset_bot{}, size_top{}, size_bot{};
+		unsigned long offset_top{}, offset_bot{}, size_top{}, size_bot{};
 
-		memcpy(&offset_bot, &((DWORD*)&tagOFFSET)[0], sizeof(DWORD));
+		memcpy(&offset_bot, &((unsigned long*)&tagOFFSET)[0], sizeof(unsigned long));
 
-		memcpy(&offset_top, &((DWORD*)&tagOFFSET)[1], sizeof(DWORD));
+		memcpy(&offset_top, &((unsigned long*)&tagOFFSET)[1], sizeof(unsigned long));
 
-		memcpy(&size_bot, &((DWORD*)&tagSIZE)[0], sizeof(DWORD));
+		memcpy(&size_bot, &((unsigned long*)&tagSIZE)[0], sizeof(unsigned long));
 
-		memcpy(&size_top, &((DWORD*)&tagSIZE)[1], sizeof(DWORD));
+		memcpy(&size_top, &((unsigned long*)&tagSIZE)[1], sizeof(unsigned long));
 
 		return std::tuple{ offset_bot, offset_top, size_bot, size_top };
 

@@ -39,6 +39,12 @@
     <ClCompile Include="pch.cpp">
       <Filter>1. Project</Filter>
     </ClCompile>
+    <ClCompile Include="CHV4DPublicConnection.cpp">
+      <Filter>11. Public</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DIndexProjects.cpp">
+      <Filter>6. Landing</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="1. Project">
@@ -70,9 +76,6 @@
     </Filter>
     <Filter Include="xResources">
       <UniqueIdentifier>{560551db-e3dd-495a-9240-ce0d5cfd5013}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="11. Default">
-      <UniqueIdentifier>{3db65e28-7790-4be9-b6f7-648fa80d3247}</UniqueIdentifier>
     </Filter>
     <Filter Include="12. Text">
       <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
@@ -112,6 +115,9 @@
     </Filter>
     <Filter Include="2. Property Pages\k. Projects">
       <UniqueIdentifier>{ba6cd6b6-bf67-4c60-bf6d-fdfcc097550e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11. Public">
+      <UniqueIdentifier>{3db65e28-7790-4be9-b6f7-648fa80d3247}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -207,18 +213,6 @@
     </Page>
     <Page Include="Diagnostics.xaml">
       <Filter>10. Diagnostics</Filter>
-    </Page>
-    <Page Include="DHV4DLVL1.xaml">
-      <Filter>11. Default</Filter>
-    </Page>
-    <Page Include="DHV4DIMAGE.xaml">
-      <Filter>11. Default</Filter>
-    </Page>
-    <Page Include="DHV4DPARTITION.xaml">
-      <Filter>11. Default</Filter>
-    </Page>
-    <Page Include="DHV4DKERNEL.xaml">
-      <Filter>11. Default</Filter>
     </Page>
     <Page Include="RuntimeClassPage.xaml">
       <Filter>2. Property Pages\j. Process</Filter>

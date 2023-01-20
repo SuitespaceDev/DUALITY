@@ -1,6 +1,64 @@
-#include "pch.h"
+export module CHV4DMMM;
 
-#include "CHV4DMMM.h"
+import <vector>;
+
+import <string>;
+
+import <stdexcept>;
+
+export namespace CHV4D::CHV4DTBASIC
+{
+	class CHV4DMMM
+	{
+	public:
+		CHV4DMMM();
+
+		CHV4DMMM(std::wstring const&);
+
+		CHV4DMMM(uint32_t const&, uint32_t const&, uint32_t const&);
+
+		CHV4DMMM(CHV4DMMM const&);
+
+	private:
+		void HV4DIsValidMMM(std::wstring const&) const;
+
+	public:
+		void operator = (std::tuple<uint32_t, uint32_t, uint32_t>);
+
+		void operator = (std::wstring const&);
+
+		void operator = (CHV4DMMM const&);
+
+		bool operator == (std::wstring const&) const;
+
+		bool operator == (CHV4DMMM const&) const;
+
+		bool operator != (std::wstring const&) const;
+
+		bool operator != (CHV4DMMM const&) const;
+
+		bool operator > (std::wstring const&) const;
+
+		bool operator > (CHV4DMMM const&) const;
+
+		bool operator < (std::wstring const&) const;
+
+		bool operator < (CHV4DMMM const&) const;
+
+		operator std::wstring() const;
+
+		operator std::tuple<uint32_t, uint32_t, uint32_t>() const;
+
+	private:
+		std::wstring tagMMM{};
+
+	private:
+		const std::vector<wchar_t> HV4DNumericW{ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+	};
+
+}
+
 
 namespace CHV4D::CHV4DTBASIC
 {
@@ -58,7 +116,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		if(!(s[1] == '.' && s[5] == '.'))
+		if (!(s[1] == '.' && s[5] == '.'))
 		{
 			throw std::domain_error("");
 
@@ -90,9 +148,9 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		tagMMM = std::wstring{ 
-			std::to_wstring(std::get<0>(e)) + L"." + 
-			std::to_wstring(std::get<1>(e)) + L"." + 
+		tagMMM = std::wstring{
+			std::to_wstring(std::get<0>(e)) + L"." +
+			std::to_wstring(std::get<1>(e)) + L"." +
 			std::to_wstring(std::get<2>(e)) };
 
 	}
@@ -216,7 +274,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DMMM::operator std::wstring () const
+	CHV4DMMM::operator std::wstring() const
 	{
 		return tagMMM;
 

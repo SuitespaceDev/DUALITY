@@ -1,5 +1,5 @@
 
-	void RecentProject::HV4DPopulateRecent()
+	void RecentProject::HV4DIndexProjects()
 	{
 		std::vector<const CHV4DINDEX* const>* IndexedProjects{ nullptr };
 
