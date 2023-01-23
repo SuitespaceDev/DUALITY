@@ -1,13 +1,10 @@
+module;
+
+#include <time.h>
+
 export module CHV4DMMDDYYYY;
 
-import <vector>;
-import <unordered_map>;
-
-import <string>;
-
-import <ctime>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -133,7 +130,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		std::vector<wchar_t>::const_iterator nitt{};
 
-		for (uint8_t i = 0; i < 10; i++)
+		for (std::uint8_t i = 0; i < 10; i++)
 		{
 			nitt = std::find(HV4DNumericW.begin(), HV4DNumericW.end(), s[i]);
 
@@ -151,11 +148,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		uint64_t dd_max{};
+		std::uint64_t dd_max{};
 
 		try
 		{
-			dd_max = std::wcstoull(HV4DMMDDW.at(std::wstring{ s[0], s[1] }).c_str(), NULL, 10);
+			dd_max = std::wcstoull(HV4DMMDDW.at(std::wstring{ s[0], s[1] }).c_str(), nullptr, 10);
 
 		}
 		catch (std::out_of_range)
@@ -164,17 +161,17 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		uint64_t mm = std::wcstoull(std::wstring{ s[0], s[1] }.c_str(), NULL, 10);
+		std::uint64_t mm = std::wcstoull(std::wstring{ s[0], s[1] }.c_str(), nullptr, 10);
 
-		uint64_t dd = std::wcstoull(std::wstring{ s[3], s[4] }.c_str(), NULL, 10);
+		std::uint64_t dd = std::wcstoull(std::wstring{ s[3], s[4] }.c_str(), nullptr, 10);
 
-		uint64_t yy = std::wcstoull(std::wstring{ &s[6], &s[9] }.c_str(), NULL, 10);
+		std::uint64_t yy = std::wcstoull(std::wstring{ &s[6], &s[9] }.c_str(), nullptr, 10);
 
 		std::vector<std::wstring>::const_iterator citt{};
 
 		citt = std::find(HV4DLeapW.begin(), HV4DLeapW.end(), std::wstring{ &s[6], &s[9] });
 
-		if (citt != HV4DLeapW.end())
+		if (citt != HV4DLeapW.end() && mm == 2)
 		{
 			dd_max += 1;
 
@@ -290,14 +287,14 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMMDDYYYY::operator > (CHV4DMMDDYYYY const& e) const
 	{
-		uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), NULL, 10);
-		uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), NULL, 10);
+		std::uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), nullptr, 10);
+		std::uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), nullptr, 10);
 
-		uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), NULL, 10);
-		uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), NULL, 10);
+		std::uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), nullptr, 10);
+		std::uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), nullptr, 10);
 
-		uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), NULL, 10);
-		uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), NULL, 10);
+		std::uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), nullptr, 10);
+		std::uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), nullptr, 10);
 
 		if (a_yyyy > b_yyyy)
 		{
@@ -359,14 +356,14 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DMMDDYYYY::operator < (CHV4DMMDDYYYY const& e) const
 	{
-		uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), NULL, 10);
-		uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), NULL, 10);
+		std::uint64_t a_mm = std::wcstoull(std::wstring{ tagMMDDYYYY[0], tagMMDDYYYY[1] }.c_str(), nullptr, 10);
+		std::uint64_t b_mm = std::wcstoull(std::wstring{ e.tagMMDDYYYY[0], e.tagMMDDYYYY[1] }.c_str(), nullptr, 10);
 
-		uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), NULL, 10);
-		uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), NULL, 10);
+		std::uint64_t a_dd = std::wcstoull(std::wstring{ tagMMDDYYYY[3], tagMMDDYYYY[4] }.c_str(), nullptr, 10);
+		std::uint64_t b_dd = std::wcstoull(std::wstring{ e.tagMMDDYYYY[3], e.tagMMDDYYYY[4] }.c_str(), nullptr, 10);
 
-		uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), NULL, 10);
-		uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), NULL, 10);
+		std::uint64_t a_yyyy = std::wcstoull(std::wstring{ &tagMMDDYYYY[6], &tagMMDDYYYY[9] }.c_str(), nullptr, 10);
+		std::uint64_t b_yyyy = std::wcstoull(std::wstring{ &e.tagMMDDYYYY[6], &e.tagMMDDYYYY[9] }.c_str(), nullptr, 10);
 
 		if (a_yyyy < b_yyyy)
 		{
@@ -418,21 +415,21 @@ namespace CHV4D::CHV4DTBASIC
 	CHV4DMMDDYYYY::operator std::tuple<long, long, long>() const
 	{
 		return std::tuple{
-			std::wcstoul(tagMMDDYYYY.substr(0, 2).c_str(), NULL, 10),
-			std::wcstoul(tagMMDDYYYY.substr(3, 4).c_str(), NULL, 10),
-			std::wcstoul(tagMMDDYYYY.substr(6, 9).c_str(), NULL, 10) };
+			std::wcstoul(tagMMDDYYYY.substr(0, 2).c_str(), nullptr, 10),
+			std::wcstoul(tagMMDDYYYY.substr(3, 4).c_str(), nullptr, 10),
+			std::wcstoul(tagMMDDYYYY.substr(6, 9).c_str(), nullptr, 10) };
 
 	}
 
 	void CHV4DMMDDYYYY::operator()()
 	{
-		std::time_t time = std::time(nullptr);
+		std::time_t t = std::time(nullptr);
 
-		std::tm now{};
+		std::tm* now{};
 
-		int is_valid = localtime_s(&now, &time);
+		int result = ::localtime_s(now, &t);
 
-		if (is_valid != NULL)
+		if (result == NULL)
 		{
 			tagMMDDYYYY.clear();
 
@@ -442,7 +439,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		char buffer[128];
 
-		size_t ret = strftime(buffer, sizeof(buffer), "%m/%d/%Y", &now);
+		size_t ret = std::strftime(buffer, sizeof(buffer), "%m/%d/%Y", now);
 
 		if (ret == 0)
 		{

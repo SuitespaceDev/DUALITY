@@ -1,10 +1,6 @@
 export module CHV4DHEX;
 
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -13,7 +9,7 @@ export namespace CHV4D::CHV4DTBASIC
 	public:
 		CHV4DHEX();
 
-		CHV4DHEX(uint64_t const&);
+		CHV4DHEX(std::uint64_t const&);
 
 		CHV4DHEX(std::wstring const&);
 
@@ -23,7 +19,7 @@ export namespace CHV4D::CHV4DTBASIC
 		void HV4DIsValidHEX(std::wstring const&) const;
 
 	public:
-		void operator = (uint64_t const&);
+		void operator = (std::uint64_t const&);
 
 		void operator = (std::wstring const&);
 
@@ -35,7 +31,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		operator std::wstring() const;
 
-		operator uint64_t() const;
+		operator std::uint64_t() const;
 
 	private:
 		std::wstring tagHEX{};
@@ -57,7 +53,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DHEX::CHV4DHEX(uint64_t const& n)
+	CHV4DHEX::CHV4DHEX(std::uint64_t const& n)
 	{
 		tagHEX = std::to_wstring(n);
 
@@ -106,8 +102,6 @@ namespace CHV4D::CHV4DTBASIC
 
 		for (std::wstring::const_iterator itt = tagHEX.begin(); itt != tagHEX.end(); itt++)
 		{
-			uint32_t index{};
-
 			citt = std::find(HV4DHexW.begin(), HV4DHexW.end(), *itt);
 
 			if (citt == HV4DHexW.end())
@@ -122,7 +116,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DHEX::operator = (uint64_t const& n)
+	void CHV4DHEX::operator = (std::uint64_t const& n)
 	{
 		tagHEX = std::to_wstring(n);
 
@@ -186,9 +180,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DHEX::operator uint64_t() const
+	CHV4DHEX::operator std::uint64_t() const
 	{
-		return wcstoull(tagHEX.c_str(), NULL, 16);
+		return std::wcstoull(tagHEX.c_str(), nullptr, 16);
 
 	}
 

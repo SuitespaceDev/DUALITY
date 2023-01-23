@@ -1,14 +1,10 @@
+module;
+
+#include <guiddef.h>
+
 export module CHV4DKEY;
 
-import <guiddef.h>;
-
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
-
-import <tuple>;
+import std;
 
 import CHV4DHVID;
 import CHV4DMAXPATH;
@@ -58,9 +54,9 @@ export namespace CHV4D::CHV4DTBASIC
 
 			std::size_t h1{}, h2{}, h3;
 
-			memcpy(&h1, &std::get<0>(key), sizeof(long long));
+			std::memcpy(&h1, &std::get<0>(key), sizeof(long long));
 
-			memcpy(&h2, &std::get<0>(key).Data4, sizeof(long long));
+			std::memcpy(&h2, &std::get<0>(key).Data4, sizeof(long long));
 
 			h1 = h1 ^ h2;
 
@@ -178,7 +174,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DKEY::operator == (CHV4DKEY const& e) const
 	{
-		return tagHVID == e.tagHVID && tagMAXPATH == e.tagMAXPATH;
+		return ((tagHVID == e.tagHVID) && (tagMAXPATH == e.tagMAXPATH));
 
 	}
 
@@ -199,23 +195,23 @@ namespace CHV4D::CHV4DTBASIC
 		return !(tagHVID > e.tagHVID && tagMAXPATH == e.tagMAXPATH);
 
 	}
-
+	
 	CHV4DKEY::operator std::tuple<std::wstring, std::wstring>() const
 	{
 		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
-
+	
 	CHV4DKEY::operator std::tuple<GUID, std::wstring>() const
 	{
 		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
-
+	
 	CHV4DKEY::operator std::tuple<CHV4DHVID, CHV4DMAXPATH>() const
 	{
 		return std::tuple{ tagHVID, tagMAXPATH };
 
 	}
-
+	
 }

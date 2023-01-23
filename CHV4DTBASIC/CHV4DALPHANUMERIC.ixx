@@ -1,10 +1,6 @@
 export module CHV4DALPHANUMERIC;
 
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -86,8 +82,6 @@ namespace CHV4D::CHV4DTBASIC
 
 		for (std::wstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
 		{
-			uint32_t index{};
-
 			citt = std::find(HV4DAlphaNumericW.begin(), HV4DAlphaNumericW.end(), *itt);
 
 			if (citt == HV4DAlphaNumericW.end())

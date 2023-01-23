@@ -1,10 +1,8 @@
 export module CHV4DNUMERIC;
 
-import <vector>;
+import std;
 
-import <string>;
-
-import <stdexcept>;
+import <climits>;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -13,52 +11,52 @@ export namespace CHV4D::CHV4DTBASIC
 	public:
 		CHV4DNUMERIC();
 
-		CHV4DNUMERIC(uint64_t const&);
+		CHV4DNUMERIC(std::uint64_t const&);
 
 		CHV4DNUMERIC(std::wstring const&);
 
 		CHV4DNUMERIC(CHV4DNUMERIC const&);
 
 	private:
-		uint64_t HV4DStringToInt(std::wstring const&) const;
+		std::uint64_t HV4DStringToInt(std::wstring const&) const;
 
 	public:
 		void operator = (std::wstring const&);
 
-		void operator = (uint64_t const&);
+		void operator = (std::uint64_t const&);
 
 		void operator = (CHV4DNUMERIC const&);
 
 		bool operator == (std::wstring const&) const;
 
-		bool operator == (uint64_t const&) const;
+		bool operator == (std::uint64_t const&) const;
 
 		bool operator == (CHV4DNUMERIC const&) const;
 
 		bool operator != (std::wstring const&) const;
 
-		bool operator != (uint64_t const&) const;
+		bool operator != (std::uint64_t const&) const;
 
 		bool operator != (CHV4DNUMERIC const&) const;
 
 		bool operator < (std::wstring const&) const;
 
-		bool operator < (uint64_t const&) const;
+		bool operator < (std::uint64_t const&) const;
 
 		bool operator < (CHV4DNUMERIC const&) const;
 
 		bool operator > (std::wstring const&) const;
 
-		bool operator > (uint64_t const&) const;
+		bool operator > (std::uint64_t const&) const;
 
 		bool operator > (CHV4DNUMERIC const&) const;
 
 		operator std::wstring() const;
 
-		operator uint64_t() const;
+		operator std::uint64_t() const;
 
 	private:
-		uint64_t tagNUM;
+		std::uint64_t tagNUM;
 
 	private:
 		const std::vector<wchar_t> HV4DNumericW{ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
@@ -78,7 +76,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DNUMERIC::CHV4DNUMERIC(uint64_t const& n)
+	CHV4DNUMERIC::CHV4DNUMERIC(std::uint64_t const& n)
 	{
 		tagNUM = n;
 
@@ -111,9 +109,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	uint64_t CHV4DNUMERIC::HV4DStringToInt(std::wstring const& s) const
+	std::uint64_t CHV4DNUMERIC::HV4DStringToInt(std::wstring const& s) const
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		std::wstring::const_iterator citt{};
 
@@ -129,7 +127,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		num = std::wcstoull(&s[0], NULL, 10);
+		num = std::wcstoull(&s[0], nullptr, 10);
 
 		if(num == ULLONG_MAX)
 		{
@@ -160,7 +158,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DNUMERIC::operator = (uint64_t const& e)
+	void CHV4DNUMERIC::operator = (std::uint64_t const& e)
 	{
 		tagNUM = e;
 
@@ -178,7 +176,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DNUMERIC::operator == (std::wstring const& s) const
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		try
 		{
@@ -195,7 +193,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	bool CHV4DNUMERIC::operator == (uint64_t const& e) const
+	bool CHV4DNUMERIC::operator == (std::uint64_t const& e) const
 	{
 
 		return tagNUM == e;
@@ -211,7 +209,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DNUMERIC::operator != (std::wstring const& s) const
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		try
 		{
@@ -228,7 +226,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	bool CHV4DNUMERIC::operator != (uint64_t const& e) const
+	bool CHV4DNUMERIC::operator != (std::uint64_t const& e) const
 	{
 
 		return tagNUM != e;
@@ -244,7 +242,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DNUMERIC::operator < (std::wstring const& s) const
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		try
 		{
@@ -261,7 +259,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	bool CHV4DNUMERIC::operator < (uint64_t const& e) const
+	bool CHV4DNUMERIC::operator < (std::uint64_t const& e) const
 	{
 
 		return tagNUM < e;
@@ -277,7 +275,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	bool CHV4DNUMERIC::operator > (std::wstring const& s) const
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		try
 		{
@@ -294,7 +292,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	bool CHV4DNUMERIC::operator > (uint64_t const& e) const
+	bool CHV4DNUMERIC::operator > (std::uint64_t const& e) const
 	{
 
 		return tagNUM > e;
@@ -314,7 +312,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DNUMERIC::operator uint64_t () const
+	CHV4DNUMERIC::operator std::uint64_t () const
 	{
 		return tagNUM;
 

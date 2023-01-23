@@ -1,11 +1,6 @@
 export module CHV4DTEXTBLOBA;
 
-import <vector>;
-import <unordered_map>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -32,7 +27,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		operator std::wstring() const;
 
-		CHV4DTEXTBLOBA operator()(uint64_t const&, uint64_t const&);
+		CHV4DTEXTBLOBA operator()(std::uint64_t const&, std::uint64_t const&);
 
 		bool HV4DHasSymbols();
 
@@ -94,10 +89,8 @@ namespace CHV4D::CHV4DTBASIC
 	{
 		std::vector<wchar_t>::const_iterator citt{};
 
-		for (std::wstring::const_iterator itt = tagTEXTBLOBA.begin(); itt != tagTEXTBLOBA.end(); itt++)
+		for (std::wstring::const_iterator itt = s.begin(); itt != s.end(); itt++)
 		{
-			uint32_t index{};
-
 			citt = std::find(HV4DKeyMapW.begin(), HV4DKeyMapW.end(), *itt);
 
 			if (citt == HV4DKeyMapW.end())
@@ -170,7 +163,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DTEXTBLOBA CHV4DTEXTBLOBA::operator()(uint64_t const& i, uint64_t const& l)
+	CHV4DTEXTBLOBA CHV4DTEXTBLOBA::operator()(std::uint64_t const& i, std::uint64_t const& l)
 	{
 		return tagTEXTBLOBA.substr(i, l);
 
@@ -182,8 +175,6 @@ namespace CHV4D::CHV4DTBASIC
 
 		for (std::wstring::const_iterator itt = tagTEXTBLOBA.begin(); itt != tagTEXTBLOBA.end(); itt++)
 		{
-			uint32_t index{};
-
 			citt = std::find(HV4DSymbolW.begin(), HV4DSymbolW.end(), *itt);
 
 			if (citt != HV4DSymbolW.end())

@@ -1,10 +1,6 @@
 export module CHV4DMAXPATH;
 
-import <string>;
-
-import <vector>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -31,7 +27,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		operator std::wstring() const;
 
-		std::wstring operator()(uint64_t const&, uint64_t const&) const;
+		std::wstring operator()(std::uint64_t const&, std::uint64_t const&) const;
 
 	private:
 		std::wstring tagMAXPATH{ '\0' };
@@ -96,8 +92,6 @@ namespace CHV4D::CHV4DTBASIC
 
 		for (std::wstring::const_iterator itt = tagMAXPATH.begin(); itt != tagMAXPATH.end(); itt++)
 		{
-			uint32_t index{};
-
 			citt = std::find(HV4DMaxPathW.begin(), HV4DMaxPathW.end(), *itt);
 
 			if (citt == HV4DMaxPathW.end())
@@ -172,7 +166,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	std::wstring CHV4DMAXPATH::operator()(uint64_t const& i, uint64_t const& l) const
+	std::wstring CHV4DMAXPATH::operator()(std::uint64_t const& i, std::uint64_t const& l) const
 	{
 
 		return tagMAXPATH.substr(i, l);

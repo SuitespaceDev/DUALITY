@@ -1,15 +1,10 @@
+module;
+
+#include <combaseapi.h>
+
 export module CHV4DHVID;
 
-import <objbase.h>;
-
-import <vector>;
-
-import <string>;
-
-import <iostream>;
-import <sstream>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -278,7 +273,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		for (uint8_t i = 0; i < 8; i++)
+		for (std::uint8_t i = 0; i < 8; i++)
 		{
 			if (tagHVID.Data4[i] < e.tagHVID.Data4[i])
 			{
@@ -361,7 +356,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		for (uint8_t i = 0; i < 8; i++)
+		for (std::uint8_t i = 0; i < 8; i++)
 		{
 			if (tagHVID.Data4[i] > e.tagHVID.Data4[i])
 			{
@@ -415,11 +410,11 @@ namespace CHV4D::CHV4DTBASIC
 	{
 		GUID hvid{ uid };
 
-		uint8_t i_array[16]{};
+		std::uint8_t i_array[16]{};
 
-		uint8_t* data1 = reinterpret_cast<uint8_t*>(&hvid.Data1);
-		uint8_t* data2 = reinterpret_cast<uint8_t*>(&hvid.Data2);
-		uint8_t* data3 = reinterpret_cast<uint8_t*>(&hvid.Data3);
+		std::uint8_t* data1 = reinterpret_cast<std::uint8_t*>(&hvid.Data1);
+		std::uint8_t* data2 = reinterpret_cast<std::uint8_t*>(&hvid.Data2);
+		std::uint8_t* data3 = reinterpret_cast<std::uint8_t*>(&hvid.Data3);
 
 		i_array[0] = data1[3];
 		i_array[1] = data1[2];
@@ -429,20 +424,20 @@ namespace CHV4D::CHV4DTBASIC
 		i_array[5] = data2[0];
 		i_array[6] = data3[1];
 		i_array[7] = data3[0];
-		i_array[8] = (uint8_t)hvid.Data4[0];
-		i_array[9] = (uint8_t)hvid.Data4[1];
-		i_array[10] = (uint8_t)hvid.Data4[2];
-		i_array[11] = (uint8_t)hvid.Data4[3];
-		i_array[12] = (uint8_t)hvid.Data4[4];
-		i_array[13] = (uint8_t)hvid.Data4[5];
-		i_array[14] = (uint8_t)hvid.Data4[6];
-		i_array[15] = (uint8_t)hvid.Data4[7];
+		i_array[8] = (std::uint8_t)hvid.Data4[0];
+		i_array[9] = (std::uint8_t)hvid.Data4[1];
+		i_array[10] = (std::uint8_t)hvid.Data4[2];
+		i_array[11] = (std::uint8_t)hvid.Data4[3];
+		i_array[12] = (std::uint8_t)hvid.Data4[4];
+		i_array[13] = (std::uint8_t)hvid.Data4[5];
+		i_array[14] = (std::uint8_t)hvid.Data4[6];
+		i_array[15] = (std::uint8_t)hvid.Data4[7];
 
 		std::vector<std::wstring> view{};
 
 		std::wostringstream ss{};
 
-		for (uint8_t i = 0; i < 16; i++)
+		for (std::uint8_t i = 0; i < 16; i++)
 		{
 			ss << std::hex << i_array[i];
 			view.push_back(ss.str());
@@ -451,7 +446,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		std::wstring out{ L"{" };
 
-		for (uint8_t i = 0; i < 16; i++)
+		for (std::uint8_t i = 0; i < 16; i++)
 		{
 			out = out + view[i];
 
@@ -464,6 +459,8 @@ namespace CHV4D::CHV4DTBASIC
 
 		out = out + L"}";
 
+		s = out;
+
 		return;
 
 
@@ -471,17 +468,17 @@ namespace CHV4D::CHV4DTBASIC
 
 	void CHV4DHVID::HV4DToGUID(std::wstring const& s, GUID& uid) const
 	{
-		uid.Data1 = wcstoul(std::wstring{ &s[1],  &s[9] }.c_str(), NULL, 16);
-		uid.Data2 = (unsigned short)wcstoul(std::wstring{ &s[10], &s[14] }.c_str(), NULL, 16);
-		uid.Data3 = (unsigned short)wcstoul(std::wstring{ &s[15], &s[19] }.c_str(), NULL, 16);
-		uid.Data4[0] = (char)wcstoul(std::wstring{ s[20], s[21] }.c_str(), NULL, 16);
-		uid.Data4[1] = (char)wcstoul(std::wstring{ s[22], s[23] }.c_str(), NULL, 16);
-		uid.Data4[2] = (char)wcstoul(std::wstring{ s[25], s[26] }.c_str(), NULL, 16);
-		uid.Data4[3] = (char)wcstoul(std::wstring{ s[27], s[28] }.c_str(), NULL, 16);
-		uid.Data4[4] = (char)wcstoul(std::wstring{ s[29], s[30] }.c_str(), NULL, 16);
-		uid.Data4[5] = (char)wcstoul(std::wstring{ s[31], s[32] }.c_str(), NULL, 16);
-		uid.Data4[6] = (char)wcstoul(std::wstring{ s[33], s[34] }.c_str(), NULL, 16);
-		uid.Data4[7] = (char)wcstoul(std::wstring{ s[35], s[36] }.c_str(), NULL, 16);
+		uid.Data1 = wcstoul(std::wstring{ &s[1],  &s[9] }.c_str(), nullptr, 16);
+		uid.Data2 = (unsigned short)wcstoul(std::wstring{ &s[10], &s[14] }.c_str(), nullptr, 16);
+		uid.Data3 = (unsigned short)wcstoul(std::wstring{ &s[15], &s[19] }.c_str(), nullptr, 16);
+		uid.Data4[0] = (char)wcstoul(std::wstring{ s[20], s[21] }.c_str(), nullptr, 16);
+		uid.Data4[1] = (char)wcstoul(std::wstring{ s[22], s[23] }.c_str(), nullptr, 16);
+		uid.Data4[2] = (char)wcstoul(std::wstring{ s[25], s[26] }.c_str(), nullptr, 16);
+		uid.Data4[3] = (char)wcstoul(std::wstring{ s[27], s[28] }.c_str(), nullptr, 16);
+		uid.Data4[4] = (char)wcstoul(std::wstring{ s[29], s[30] }.c_str(), nullptr, 16);
+		uid.Data4[5] = (char)wcstoul(std::wstring{ s[31], s[32] }.c_str(), nullptr, 16);
+		uid.Data4[6] = (char)wcstoul(std::wstring{ s[33], s[34] }.c_str(), nullptr, 16);
+		uid.Data4[7] = (char)wcstoul(std::wstring{ s[35], s[36] }.c_str(), nullptr, 16);
 	}
 
 }

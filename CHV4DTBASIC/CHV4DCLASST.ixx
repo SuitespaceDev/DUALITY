@@ -1,10 +1,6 @@
 export module CHV4DCLASST;
 
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 import CHV4DMAXPATH;
 

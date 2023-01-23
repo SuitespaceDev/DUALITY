@@ -1,53 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
     <Filter Include="CHV4DABS">
-      <UniqueIdentifier>{995954fd-75f6-46a0-b445-7d9500b6e01d}</UniqueIdentifier>
+      <UniqueIdentifier>{51660375-da65-4890-a24c-b0c25261abc5}</UniqueIdentifier>
     </Filter>
     <Filter Include="CHV4DALPHANUMERIC">
-      <UniqueIdentifier>{26c01824-3877-4b80-8a2a-a0ebc1b8933a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DMAXPATH">
-      <UniqueIdentifier>{45d6dae1-f9a1-4a00-81cc-d3436f0831ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DNUMERIC">
-      <UniqueIdentifier>{3f719be5-707f-4d4d-a32d-6ed40b4ef999}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DOFFSET">
-      <UniqueIdentifier>{374c0a9b-3d45-4dbd-af56-2ea6e3266911}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DTEXTBLOBA">
-      <UniqueIdentifier>{a9e4c712-e3f0-4650-9318-eead946aa10f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DTEXTBLOBW">
-      <UniqueIdentifier>{d3e3de27-4449-457b-b1f8-366db4f71bd0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DHVID">
-      <UniqueIdentifier>{ae2b4e4f-504b-49f3-9b30-988ec561c8f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DKEY">
-      <UniqueIdentifier>{5b752207-fc2d-4c64-b8e3-2fe889131097}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DMMM">
-      <UniqueIdentifier>{3bc7e824-fcf4-4d40-9d0d-7b23ff096cac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DHEX">
-      <UniqueIdentifier>{6e0f34e8-5d9e-4d24-97e4-6a7dece0e444}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DMMDDYYYY">
-      <UniqueIdentifier>{bb82529f-5c54-4b11-8b0a-f6171f9669eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CHV4DDATETIME">
-      <UniqueIdentifier>{5f666203-5fae-4be4-874b-b6363617d9fe}</UniqueIdentifier>
+      <UniqueIdentifier>{ebb5c624-229f-4e28-836a-be07862fb5aa}</UniqueIdentifier>
     </Filter>
     <Filter Include="CHV4DCLASST">
-      <UniqueIdentifier>{e238fa98-9ced-429e-bfb4-e8771517b822}</UniqueIdentifier>
+      <UniqueIdentifier>{943cc4ca-ad95-4925-ae5c-63780fcc770d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DDATETIME">
+      <UniqueIdentifier>{995d9420-8ff3-4e31-8d3a-0e55c535c5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DHEX">
+      <UniqueIdentifier>{68b4d014-29d9-457c-b0e6-df7cd9df38d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="CHV4DHHMMSS">
-      <UniqueIdentifier>{e511c2d8-06b7-4ccb-a071-f2c8516cd590}</UniqueIdentifier>
+      <UniqueIdentifier>{711d3d03-ad5e-4edf-b4fa-e01deb4401f9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="0. Project">
-      <UniqueIdentifier>{b4c99d09-1919-4a38-a7fd-e6c74272f07f}</UniqueIdentifier>
+    <Filter Include="CHV4DHVID">
+      <UniqueIdentifier>{8b19de81-7a75-4dfa-9ea0-bf07284e8628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DKEY">
+      <UniqueIdentifier>{5922067c-2efe-403a-9a7d-e36157c1d014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMAXPATH">
+      <UniqueIdentifier>{f29d2669-384f-4741-90a5-9e5ae0df0262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMMDDYYYY">
+      <UniqueIdentifier>{16091b87-edef-4457-8b2f-f0c8a5791aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DMMM">
+      <UniqueIdentifier>{7d40382d-c998-45dc-b541-5c712dd5e2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DNUMERIC">
+      <UniqueIdentifier>{c5f95f3e-f0e9-48fd-949f-4b553fc23065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DOFFSET">
+      <UniqueIdentifier>{87aa8c18-c0dd-460b-8037-2b690a7d7cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DTEXTBLOBA">
+      <UniqueIdentifier>{491fdade-1309-4d0b-ad45-ee2aa31a2b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHV4DTEXTBLOBW">
+      <UniqueIdentifier>{d3ea3135-365e-4d1c-911e-04f4f830b9f1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,6 @@
 export module CHV4DABS;
 
-import <string>;
-
-import <stdexcept>;
+import std;
 
 import CHV4DMAXPATH;
 

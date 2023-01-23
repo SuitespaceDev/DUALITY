@@ -1,10 +1,6 @@
 export module CHV4DMMM;
 
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -15,7 +11,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		CHV4DMMM(std::wstring const&);
 
-		CHV4DMMM(uint32_t const&, uint32_t const&, uint32_t const&);
+		CHV4DMMM(std::uint32_t const&, std::uint32_t const&, std::uint32_t const&);
 
 		CHV4DMMM(CHV4DMMM const&);
 
@@ -23,7 +19,7 @@ export namespace CHV4D::CHV4DTBASIC
 		void HV4DIsValidMMM(std::wstring const&) const;
 
 	public:
-		void operator = (std::tuple<uint32_t, uint32_t, uint32_t>);
+		void operator = (std::tuple<std::uint32_t, std::uint32_t, std::uint32_t>);
 
 		void operator = (std::wstring const&);
 
@@ -47,7 +43,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		operator std::wstring() const;
 
-		operator std::tuple<uint32_t, uint32_t, uint32_t>() const;
+		operator std::tuple<std::uint32_t, std::uint32_t, std::uint32_t>() const;
 
 	private:
 		std::wstring tagMMM{};
@@ -88,7 +84,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DMMM::CHV4DMMM(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
+	CHV4DMMM::CHV4DMMM(std::uint32_t const& mil, std::uint32_t const& maj, std::uint32_t const& min)
 	{
 		if (mil > 10 || maj > 999 || min > 999)
 		{
@@ -140,7 +136,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	void CHV4DMMM::operator = (std::tuple<uint32_t, uint32_t, uint32_t> e)
+	void CHV4DMMM::operator = (std::tuple<std::uint32_t, std::uint32_t, std::uint32_t> e)
 	{
 		if (std::get<0>(e) > 10 || std::get<1>(e) > 999 || std::get<2>(e) > 999)
 		{
@@ -280,9 +276,9 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DMMM::operator std::tuple<uint32_t, uint32_t, uint32_t>() const
+	CHV4DMMM::operator std::tuple<std::uint32_t, std::uint32_t, std::uint32_t>() const
 	{
-		uint32_t mil{}, maj{}, min{};
+		std::uint32_t mil{}, maj{}, min{};
 
 		std::wstring str_mil{ tagMMM[0] };
 
@@ -290,11 +286,11 @@ namespace CHV4D::CHV4DTBASIC
 
 		std::wstring str_min{ &tagMMM[4], &tagMMM[6] };
 
-		mil = std::wcstoul(str_mil.c_str(), NULL, 10);
+		mil = std::wcstoul(str_mil.c_str(), nullptr, 10);
 
-		maj = std::wcstoul(str_maj.c_str(), NULL, 10);
+		maj = std::wcstoul(str_maj.c_str(), nullptr, 10);
 
-		min = std::wcstoul(str_min.c_str(), NULL, 10);
+		min = std::wcstoul(str_min.c_str(), nullptr, 10);
 
 		return std::tuple{ mil, maj, min };
 

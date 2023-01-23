@@ -1,12 +1,10 @@
+module;
+
+#include <guiddef.h>
+
 export module CHV4DDATETIME;
 
-import <objbase.h>;
-
-import <vector>;
-
-import <string>;
-
-import <stdexcept>;
+import std;
 
 import CHV4DMMDDYYYY;
 import CHV4DHHMMSS;

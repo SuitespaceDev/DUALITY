@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="std.ixx" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4fd067db-7938-4ec0-84a1-9b3eb9f3ac9c}</ProjectGuid>
-    <RootNamespace>CHV4DTBASIC</RootNamespace>
+    <ProjectGuid>{9ac158b9-60cd-4009-b33b-c786bebecbc3}</ProjectGuid>
+    <RootNamespace>std</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,9 +73,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <PublicModuleDirectories>C:\Users\rebek\Source\DUALITY\x64\Debug;$(PublicModuleDirectories)</PublicModuleDirectories>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -109,12 +109,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -132,10 +133,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>
-      </PrecompiledHeaderFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -145,23 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="CHV4DABS.ixx" />
-    <ClCompile Include="CHV4DALPHANUMERIC.ixx" />
-    <ClCompile Include="CHV4DCLASST.ixx" />
-    <ClCompile Include="CHV4DDATETIME.ixx" />
-    <ClCompile Include="CHV4DHEX.ixx" />
-    <ClCompile Include="CHV4DHHMMSS.ixx" />
-    <ClCompile Include="CHV4DHVID.ixx" />
-    <ClCompile Include="CHV4DKEY.ixx" />
-    <ClCompile Include="CHV4DMAXPATH.ixx" />
-    <ClCompile Include="CHV4DMMDDYYYY.ixx" />
-    <ClCompile Include="CHV4DMMM.ixx" />
-    <ClCompile Include="CHV4DNUMERIC.ixx" />
-    <ClCompile Include="CHV4DOFFSET.ixx" />
-    <ClCompile Include="CHV4DTEXTBLOBA.ixx" />
-    <ClCompile Include="CHV4DTEXTBLOBW.ixx" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

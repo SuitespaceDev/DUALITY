@@ -1,12 +1,10 @@
+module;
+
+#include <time.h>
+
 export module CHV4DHHMMSS;
 
-import <vector>;
-
-import <string>;
-
-import <ctime>;
-
-import <stdexcept>;
+import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {
@@ -45,7 +43,7 @@ export namespace CHV4D::CHV4DTBASIC
 
 		operator std::wstring() const;
 
-		operator std::tuple<uint8_t, uint8_t, uint8_t>() const;
+		operator std::tuple<std::uint8_t, std::uint8_t, std::uint8_t>() const;
 
 		void operator()();
 
@@ -275,24 +273,24 @@ namespace CHV4D::CHV4DTBASIC
 
 	}
 
-	CHV4DHHMMSS::operator std::tuple<uint8_t, uint8_t, uint8_t>() const
+	CHV4DHHMMSS::operator std::tuple<std::uint8_t, std::uint8_t, std::uint8_t>() const
 	{
 		return std::tuple{
-			(uint8_t)std::stoi(std::wstring{tagHHMMSS[0]} + tagHHMMSS[1]),
-			(uint8_t)std::stoi(std::wstring{ tagHHMMSS[2] } + tagHHMMSS[3]),
-			(uint8_t)std::stoi(std::wstring{ tagHHMMSS[4] } + tagHHMMSS[5]) };
+			(std::uint8_t)std::stoi(std::wstring{tagHHMMSS[0]} + tagHHMMSS[1]),
+			(std::uint8_t)std::stoi(std::wstring{ tagHHMMSS[2] } + tagHHMMSS[3]),
+			(std::uint8_t)std::stoi(std::wstring{ tagHHMMSS[4] } + tagHHMMSS[5]) };
 
 	}
 
 	void CHV4DHHMMSS::operator()()
 	{
-		std::time_t time = std::time(nullptr);
+		std::time_t t = std::time(nullptr);
 
-		std::tm now{};
+		std::tm* now{};
 
-		int is_valid = localtime_s(&now, &time);
+		int result = ::localtime_s(now, &t);
 
-		if (is_valid != NULL)
+		if (result == NULL)
 		{
 			tagHHMMSS.clear();
 
@@ -302,7 +300,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		char buffer[128];
 
-		size_t ret = strftime(buffer, sizeof(buffer), "%X", &now);
+		size_t ret = std::strftime(buffer, sizeof(buffer), "%X", now);
 
 		if (ret == 0)
 		{
@@ -312,7 +310,7 @@ namespace CHV4D::CHV4DTBASIC
 
 		}
 
-		std::wstring str{ &buffer[0], &buffer[strlen(buffer)] };
+		std::wstring str{ &buffer[0], &buffer[std::strlen(buffer)] };
 
 		tagHHMMSS = str;
 
