@@ -97,5 +97,53 @@
     <ClCompile Include="CHV4DTEXTBLOBW.ixx">
       <Filter>CHV4DTEXTBLOBW</Filter>
     </ClCompile>
+    <ClCompile Include="CHV4DABS.cpp">
+      <Filter>CHV4DABS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTBASIC.ixx">
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMAXPATH.cpp">
+      <Filter>CHV4DMAXPATH</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DALPHANUMERIC.cpp">
+      <Filter>CHV4DALPHANUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DCLASST.cpp">
+      <Filter>CHV4DCLASST</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDATETIME.cpp">
+      <Filter>CHV4DDATETIME</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHEX.cpp">
+      <Filter>CHV4DHEX</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHHMMSS.cpp">
+      <Filter>CHV4DHHMMSS</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DHVID.cpp">
+      <Filter>CHV4DHVID</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DKEY.cpp">
+      <Filter>CHV4DKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMDDYYYY.cpp">
+      <Filter>CHV4DMMDDYYYY</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMMM.cpp">
+      <Filter>CHV4DMMM</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DNUMERIC.cpp">
+      <Filter>CHV4DNUMERIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DOFFSET.cpp">
+      <Filter>CHV4DOFFSET</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTEXTBLOBA.cpp">
+      <Filter>CHV4DTEXTBLOBA</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DTEXTBLOBW.cpp">
+      <Filter>CHV4DTEXTBLOBW</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

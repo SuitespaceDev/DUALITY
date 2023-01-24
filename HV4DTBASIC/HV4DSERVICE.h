@@ -26,18 +26,18 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::guid uuid_of_instance{};
 
 	public:
-		virtual uint64_t HV4DCreatedDateTime();
+		virtual std::uint64_t HV4DCreatedDateTime();
 
-		virtual uint64_t HV4DUpdatedDateTime();
+		virtual std::uint64_t HV4DUpdatedDateTime();
 
 	private:
 		void HV4DSetCreatedDateTime();
 
 		void HV4DSetUpdatedDateTime();
 
-		uint64_t created_date_time{ 0 };
+		std::uint64_t created_date_time{ 0 };
 
-		uint64_t updated_date_time{ 0 };
+		std::uint64_t updated_date_time{ 0 };
 
 	public:
 		virtual WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();

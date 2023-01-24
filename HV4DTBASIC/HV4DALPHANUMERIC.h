@@ -1,14 +1,8 @@
 #pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DTBASIC.lib")
-
-#include <Objbase.h>
-
-#include <ctime>
-
-#include "../CHV4DTBASIC/CHV4DALPHANUMERIC.h"
-
 #include "HV4DALPHANUMERIC.g.h"
+
+import CHV4DTBASIC;
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFC = winrt::Windows::Foundation::Collections;
@@ -36,18 +30,18 @@ namespace winrt::HV4DTBASIC::implementation
 		winrt::guid uuid_of_instance{};
 
 	public:
-		virtual uint64_t HV4DCreatedDateTime();
+		virtual std::uint64_t HV4DCreatedDateTime();
 
-		virtual uint64_t HV4DUpdatedDateTime();
+		virtual std::uint64_t HV4DUpdatedDateTime();
 
 	private:
 		void HV4DSetCreatedDateTime();
 
 		void HV4DSetUpdatedDateTime();
 
-		uint64_t created_date_time{ 0 };
+		std::uint64_t created_date_time{ 0 };
 
-		uint64_t updated_date_time{ 0 };
+		std::uint64_t updated_date_time{ 0 };
 
 	public:
 		virtual WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
@@ -71,7 +65,7 @@ namespace winrt::HV4DTBASIC::implementation
 	public:
 		virtual winrt::guid HV4DTTypeUid();
 
-		virtual uint64_t HV4DTTypeID();
+		virtual std::uint64_t HV4DTTypeID();
 
 		virtual winrt::hstring HV4DTTypeName();
 

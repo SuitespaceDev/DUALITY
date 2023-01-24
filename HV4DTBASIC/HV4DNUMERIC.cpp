@@ -78,7 +78,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DNUMERIC::HV4DCreatedDateTime()
+	std::uint64_t HV4DNUMERIC::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DNUMERIC::HV4DUpdatedDateTime()
+	std::uint64_t HV4DNUMERIC::HV4DUpdatedDateTime()
 	{
 
 
@@ -96,7 +96,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DNUMERIC::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -104,7 +104,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DNUMERIC::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -164,7 +164,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DNUMERIC::HV4DTTypeID()
+	std::uint64_t HV4DNUMERIC::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -234,7 +234,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromNUM(uint64_t const& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromNUM(std::uint64_t const& n)
 	{
 		try
 		{
@@ -270,7 +270,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICFromProj(TBASIC::HV4DNUMERIC const& e)
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		e.HV4DNUMERICToNUM(num);
 
@@ -289,7 +289,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICToNUM(uint64_t& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICToNUM(std::uint64_t& n)
 	{
 		n = tagNUMERIC;
 
@@ -313,7 +313,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICIsEqualNUM(uint64_t const& n)
+	HV4D::IHV4DRETURN HV4DNUMERIC::HV4DNUMERICIsEqualNUM(std::uint64_t const& n)
 	{
 		CTBASIC::CHV4DNUMERIC num{};
 
@@ -383,7 +383,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		CTBASIC::CHV4DNUMERIC num{};
 
-		uint64_t val{};
+		std::uint64_t val{};
 
 		e.HV4DNUMERICToNUM(val);
 

@@ -117,6 +117,10 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>
+      </AdditionalModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -146,21 +150,44 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CHV4DABS.ixx" />
+    <ClCompile Include="CHV4DABS.cpp" />
+    <ClCompile Include="CHV4DABS.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="CHV4DALPHANUMERIC.cpp" />
     <ClCompile Include="CHV4DALPHANUMERIC.ixx" />
+    <ClCompile Include="CHV4DCLASST.cpp" />
     <ClCompile Include="CHV4DCLASST.ixx" />
+    <ClCompile Include="CHV4DDATETIME.cpp" />
     <ClCompile Include="CHV4DDATETIME.ixx" />
+    <ClCompile Include="CHV4DHEX.cpp" />
     <ClCompile Include="CHV4DHEX.ixx" />
+    <ClCompile Include="CHV4DHHMMSS.cpp" />
     <ClCompile Include="CHV4DHHMMSS.ixx" />
+    <ClCompile Include="CHV4DHVID.cpp" />
     <ClCompile Include="CHV4DHVID.ixx" />
+    <ClCompile Include="CHV4DKEY.cpp" />
     <ClCompile Include="CHV4DKEY.ixx" />
+    <ClCompile Include="CHV4DMAXPATH.cpp" />
     <ClCompile Include="CHV4DMAXPATH.ixx" />
+    <ClCompile Include="CHV4DMMDDYYYY.cpp" />
     <ClCompile Include="CHV4DMMDDYYYY.ixx" />
+    <ClCompile Include="CHV4DMMM.cpp" />
     <ClCompile Include="CHV4DMMM.ixx" />
+    <ClCompile Include="CHV4DNUMERIC.cpp" />
     <ClCompile Include="CHV4DNUMERIC.ixx" />
+    <ClCompile Include="CHV4DOFFSET.cpp" />
     <ClCompile Include="CHV4DOFFSET.ixx" />
+    <ClCompile Include="CHV4DTBASIC.ixx" />
+    <ClCompile Include="CHV4DTEXTBLOBA.cpp" />
     <ClCompile Include="CHV4DTEXTBLOBA.ixx" />
+    <ClCompile Include="CHV4DTEXTBLOBW.cpp" />
     <ClCompile Include="CHV4DTEXTBLOBW.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\std\std.vcxproj">
+      <Project>{9ac158b9-60cd-4009-b33b-c786bebecbc3}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

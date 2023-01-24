@@ -78,7 +78,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DHEX::HV4DCreatedDateTime()
+	std::uint64_t HV4DHEX::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DHEX::HV4DUpdatedDateTime()
+	std::uint64_t HV4DHEX::HV4DUpdatedDateTime()
 	{
 
 
@@ -96,7 +96,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DHEX::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -104,7 +104,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DHEX::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -164,7 +164,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DHEX::HV4DTTypeID()
+	std::uint64_t HV4DHEX::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -251,7 +251,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXFromNUM(uint64_t const& n)
+	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXFromNUM(std::uint64_t const& n)
 	{
 		try
 		{
@@ -270,7 +270,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXFromProj(TBASIC::HV4DHEX const& e)
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		e.HV4DHEXToNUM(num);
 
@@ -297,7 +297,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXToNUM(uint64_t& n)
+	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXToNUM(std::uint64_t& n)
 	{
 		n = tagHEX;
 
@@ -330,7 +330,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXIsEqualNUM(uint64_t const& n)
+	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXIsEqualNUM(std::uint64_t const& n)
 	{
 		CTBASIC::CHV4DHEX hex{ n };
 
@@ -349,7 +349,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHEX::HV4DHEXIsEqualProj(TBASIC::HV4DHEX const& e)
 	{
-		uint64_t num{};
+		std::uint64_t num{};
 
 		e.HV4DHEXToNUM(num);
 

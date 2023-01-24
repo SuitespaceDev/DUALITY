@@ -40,7 +40,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DSERVICE::HV4DCreatedDateTime()
+	std::uint64_t HV4DSERVICE::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -48,7 +48,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DSERVICE::HV4DUpdatedDateTime()
+	std::uint64_t HV4DSERVICE::HV4DUpdatedDateTime()
 	{
 
 
@@ -58,7 +58,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DSERVICE::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -66,7 +66,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DSERVICE::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 

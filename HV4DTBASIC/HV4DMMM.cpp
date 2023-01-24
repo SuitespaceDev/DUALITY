@@ -78,7 +78,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DMMM::HV4DCreatedDateTime()
+	std::uint64_t HV4DMMM::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DMMM::HV4DUpdatedDateTime()
+	std::uint64_t HV4DMMM::HV4DUpdatedDateTime()
 	{
 
 
@@ -96,7 +96,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DMMM::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -104,7 +104,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DMMM::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -164,7 +164,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DMMM::HV4DTTypeID()
+	std::uint64_t HV4DMMM::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -251,7 +251,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMFromNumeric(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMFromNumeric(std::uint32_t const& mil, std::uint32_t const& maj, std::uint32_t const& min)
 	{
 		try
 		{
@@ -297,9 +297,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMToNumeric(uint32_t& mil, uint32_t& maj, uint32_t& min)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMToNumeric(std::uint32_t& mil, std::uint32_t& maj, std::uint32_t& min)
 	{
-		std::tuple<uint32_t, uint32_t, uint32_t> mmm = tagMMM;
+		std::tuple<std::uint32_t, std::uint32_t, std::uint32_t> mmm = tagMMM;
 
 		mil = std::get<0>(mmm);
 
@@ -352,7 +352,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMIsEqualNumeric(uint32_t const& mil, uint32_t const& maj, uint32_t const& min)
+	HV4D::IHV4DRETURN HV4DMMM::HV4DMMMIsEqualNumeric(std::uint32_t const& mil, std::uint32_t const& maj, std::uint32_t const& min)
 	{
 		CTBASIC::CHV4DMMM mmm{};
 

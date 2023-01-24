@@ -79,7 +79,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DOFFSET::HV4DCreatedDateTime()
+	std::uint64_t HV4DOFFSET::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -87,7 +87,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DOFFSET::HV4DUpdatedDateTime()
+	std::uint64_t HV4DOFFSET::HV4DUpdatedDateTime()
 	{
 
 
@@ -97,7 +97,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DOFFSET::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -105,7 +105,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DOFFSET::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -165,7 +165,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DOFFSET::HV4DTTypeID()
+	std::uint64_t HV4DOFFSET::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -252,7 +252,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromNUM(uint64_t const& o, uint64_t const& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromNUM(std::uint64_t const& o, std::uint64_t const& sz)
 	{
 		try
 		{
@@ -271,7 +271,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETFromProj(TBASIC::HV4DOFFSET const& e)
 	{
-		uint64_t offset{}, size{};
+		std::uint64_t offset{}, size{};
 
 		e.HV4DOFFSETToNUM(offset, size);
 
@@ -290,9 +290,9 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToNUM(uint64_t& o, uint64_t& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToNUM(std::uint64_t& o, std::uint64_t& sz)
 	{
-		std::tuple<uint64_t, uint64_t> offset = tagOFFSET;
+		std::tuple<std::uint64_t, std::uint64_t> offset = tagOFFSET;
 
 		o = std::get<0>(offset);
 
@@ -316,7 +316,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETToProj(TBASIC::HV4DOFFSET& e)
 	{
-		std::tuple<uint64_t, uint64_t> offset = tagOFFSET;
+		std::tuple<std::uint64_t, std::uint64_t> offset = tagOFFSET;
 
 		e.HV4DOFFSETFromNUM(std::get<0>(offset), std::get<1>(offset));
 
@@ -324,7 +324,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETIsEqualNUM(uint64_t const& o, uint64_t const& sz)
+	HV4D::IHV4DRETURN HV4DOFFSET::HV4DOFFSETIsEqualNUM(std::uint64_t const& o, std::uint64_t const& sz)
 	{
 		CTBASIC::CHV4DOFFSET offset{};
 
@@ -384,7 +384,7 @@ namespace winrt::HV4DTBASIC::implementation
 	{
 		CTBASIC::CHV4DOFFSET offset{};
 
-		uint64_t o{}, sz{};
+		std::uint64_t o{}, sz{};
 
 		e.HV4DOFFSETToNUM(o, sz);
 

@@ -55,6 +55,9 @@
     <ClCompile Include="HV4DSERVICE.cpp">
       <Filter>0. Service</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.35.32213\modules\std.ixx">
+      <Filter>1. Project</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="HV4DABS.idl" />
@@ -158,5 +161,8 @@
     <ClInclude Include="HV4DNUMERIC.h" />
     <ClInclude Include="HV4DOFFSET.h" />
     <ClInclude Include="HV4DHVID.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
   </ItemGroup>
 </Project>

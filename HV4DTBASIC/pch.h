@@ -3,18 +3,16 @@
 #pragma hdrstop
 
 #include <windows.h>
-#include <unknwn.h>
-#include <inspectable.h>
+
+#include <wil/cppwinrt.h>
+#include <wil/cppwinrt_helpers.h>
+#include <wil/resource.h>
 
 #include <hstring.h>
 
 #pragma warning(disable : 4100)
 
 #undef GetCurrentTime
-
-#include <wil/cppwinrt.h>
-#include <wil/cppwinrt_helpers.h>
-#include <wil/resource.h>
 
 #include <winrt/Windows.Foundation.h>
 #include <winrt/Windows.Foundation.Collections.h>

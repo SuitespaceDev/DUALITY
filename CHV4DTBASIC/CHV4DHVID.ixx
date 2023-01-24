@@ -2,9 +2,9 @@ module;
 
 #include <combaseapi.h>
 
-export module CHV4DHVID;
+export module CHV4DTBASIC:CHV4DHVID;
 
-import std;
+export import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {

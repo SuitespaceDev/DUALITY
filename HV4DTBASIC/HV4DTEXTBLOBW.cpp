@@ -78,7 +78,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DTEXTBLOBW::HV4DCreatedDateTime()
+	std::uint64_t HV4DTEXTBLOBW::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DTEXTBLOBW::HV4DUpdatedDateTime()
+	std::uint64_t HV4DTEXTBLOBW::HV4DUpdatedDateTime()
 	{
 
 
@@ -96,7 +96,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DTEXTBLOBW::HV4DSetCreatedDateTime()
 	{
-		created_date_time = (uint64_t)std::time(nullptr);
+		created_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -104,7 +104,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	void HV4DTEXTBLOBW::HV4DSetUpdatedDateTime()
 	{
-		updated_date_time = (uint64_t)std::time(nullptr);
+		updated_date_time = (std::uint64_t)std::time(nullptr);
 
 		return;
 
@@ -164,7 +164,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	uint64_t HV4DTEXTBLOBW::HV4DTTypeID()
+	std::uint64_t HV4DTEXTBLOBW::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -348,7 +348,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4D::IHV4DRETURN HV4DTEXTBLOBW::HV4DTEXTBLOBWSubStr(uint64_t const& i, uint64_t const& l, TBASIC::HV4DTEXTBLOBW& o)
+	HV4D::IHV4DRETURN HV4DTEXTBLOBW::HV4DTEXTBLOBWSubStr(std::uint64_t const& i, std::uint64_t const& l, TBASIC::HV4DTEXTBLOBW& o)
 	{
 		CTBASIC::CHV4DTEXTBLOBW subtext = tagTEXT(i, l);
 
