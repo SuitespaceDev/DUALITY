@@ -2,9 +2,11 @@ module;
 
 #include <guiddef.h>
 
-export module CHV4DTBASIC:CHV4DKEY;
+#include <string>
 
-export import std;
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DKEY;
 
 import :CHV4DHVID;
 import :CHV4DMAXPATH;

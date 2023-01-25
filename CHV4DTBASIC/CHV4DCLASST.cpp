@@ -1,6 +1,8 @@
 module;
 
+#include <string>
 
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DCLASST;
 

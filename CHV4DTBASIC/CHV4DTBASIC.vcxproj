@@ -184,12 +184,6 @@
     <ClCompile Include="CHV4DTEXTBLOBW.cpp" />
     <ClCompile Include="CHV4DTEXTBLOBW.ixx" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\std\std.vcxproj">
-      <Project>{9ac158b9-60cd-4009-b33b-c786bebecbc3}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>

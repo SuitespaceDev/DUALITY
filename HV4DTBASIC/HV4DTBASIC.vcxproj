@@ -326,9 +326,6 @@
     <ProjectReference Include="..\CHV4DTBASIC\CHV4DTBASIC.vcxproj">
       <Project>{4fd067db-7938-4ec0-84a1-9b3eb9f3ac9c}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\std\std.vcxproj">
-      <Project>{9ac158b9-60cd-4009-b33b-c786bebecbc3}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

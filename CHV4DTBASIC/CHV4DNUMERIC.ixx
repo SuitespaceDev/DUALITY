@@ -1,10 +1,16 @@
 module;
 
+#include <string>
+
+#include <cstdint>
+
+#include <vector>
+
 #include <climits>
 
-export module CHV4DTBASIC:CHV4DNUMERIC;
+#include <stdexcept>
 
-export import std;
+export module CHV4DTBASIC:CHV4DNUMERIC;
 
 export namespace CHV4D::CHV4DTBASIC
 {

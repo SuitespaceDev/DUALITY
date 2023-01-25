@@ -2,9 +2,11 @@ module;
 
 #include <guiddef.h>
 
-export module CHV4DTBASIC:CHV4DDATETIME;
+#include <string>
 
-export import std;
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DDATETIME;
 
 import :CHV4DMMDDYYYY;
 import :CHV4DHHMMSS;

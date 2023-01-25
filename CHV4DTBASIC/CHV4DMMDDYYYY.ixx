@@ -1,10 +1,16 @@
 module;
 
-#include <time.h>
+#include <string>
+
+#include <vector>
+
+#include <unordered_map>
+
+#include <ctime>
+
+#include <stdexcept>
 
 export module CHV4DTBASIC:CHV4DMMDDYYYY;
-
-export import std;
 
 export namespace CHV4D::CHV4DTBASIC
 {

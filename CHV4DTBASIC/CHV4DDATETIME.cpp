@@ -2,7 +2,9 @@ module;
 
 #include <guiddef.h>
 
+#include <string>
 
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DDATETIME;
 

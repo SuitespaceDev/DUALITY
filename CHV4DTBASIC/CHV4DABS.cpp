@@ -1,6 +1,10 @@
 module;
 
+#include <string>
 
+#include <tuple>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DABS;
 

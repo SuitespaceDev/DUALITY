@@ -1,8 +1,12 @@
 module;
 
-export module CHV4DTBASIC:CHV4DTEXTBLOBA;
+#include <string>
 
-export import std;
+#include <vector>
+
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DTEXTBLOBA;
 
 export namespace CHV4D::CHV4DTBASIC
 {

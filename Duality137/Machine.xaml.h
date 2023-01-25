@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#pragma comment (lib, "C:\\Users\\rebek\\Source\\DUALITY\\x64\\Debug\\CHV4DTBASIC.lib")
-
 #include <functional>
 #include <bitset>
 
@@ -9,9 +7,7 @@
 #include "winrt/HV4DTBASIC.h"
 #include "winrt/HV4DX.h"
 
-#include "../CHV4DTBASIC/CHV4DHVID.h"
-#include "../CHV4DTBASIC/CHV4DMAXPATH.h"
-#include "../CHV4DTBASIC/CHV4DKEY.h"
+import CHV4DTBASIC;
 
 #include "Machine.g.h"
 

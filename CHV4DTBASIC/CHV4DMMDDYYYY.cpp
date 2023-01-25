@@ -1,8 +1,14 @@
 module;
 
+#include <string>
 
+#include <vector>
 
-#include <time.h>
+#include <unordered_map>
+
+#include <ctime>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DMMDDYYYY;
 

@@ -1,6 +1,12 @@
 module;
 
+#include <string>
 
+#include <cstdint>
+
+#include <vector>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DMMM;
 

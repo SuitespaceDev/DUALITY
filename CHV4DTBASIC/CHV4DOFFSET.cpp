@@ -1,6 +1,10 @@
 module;
 
+#include <string>
 
+#include <cstdint>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DOFFSET;
 

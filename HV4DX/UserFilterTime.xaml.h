@@ -2,7 +2,7 @@
 
 #pragma comment (lib, "C:\\Users\\rebek\\source\\DUALITY\\x64\\debug\\CHV4DTBASIC.lib")
 
-#include "../CHV4DTBASIC/CHV4DMMDDYYYY.h"
+import CHV4DTBASIC;
 
 #include "UserFilterTime.g.h"
 

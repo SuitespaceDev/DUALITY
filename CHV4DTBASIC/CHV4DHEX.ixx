@@ -1,8 +1,14 @@
 module;
 
-export module CHV4DTBASIC:CHV4DHEX;
+#include <string>
 
-export import std;
+#include <cstdint>
+
+#include <vector>
+
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DHEX;
 
 export namespace CHV4D::CHV4DTBASIC
 {

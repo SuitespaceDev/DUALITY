@@ -1,8 +1,12 @@
 module;
 
-export module CHV4DTBASIC:CHV4DOFFSET;
+#include <string>
 
-export import std;
+#include <cstdint>
+
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DOFFSET;
 
 import :CHV4DNUMERIC;
 

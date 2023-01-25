@@ -1,6 +1,14 @@
 module;
 
+#include <string>
+
+#include <cstdint>
+
+#include <vector>
+
 #include <climits>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DNUMERIC;
 

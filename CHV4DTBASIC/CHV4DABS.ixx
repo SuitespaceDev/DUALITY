@@ -1,8 +1,12 @@
 module;
 
-export module CHV4DTBASIC:CHV4DABS;
+#include <string>
 
-import std;
+#include <tuple>
+
+#include <stdexcept>
+
+export module CHV4DTBASIC:CHV4DABS;
 
 import :CHV4DMAXPATH;
 

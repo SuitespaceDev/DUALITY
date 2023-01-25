@@ -299,7 +299,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToGuid(winrt::guid& uid)
 	{
-		uid = tagHVID.operator const GUID&();
+		uid = tagHVID.operator GUID();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -307,7 +307,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	HV4D::IHV4DRETURN HV4DHVID::HV4DHVIDToProj(TBASIC::HV4DHVID& e)
 	{
-		e.HV4DHVIDFromGuid(tagHVID.operator const GUID&());
+		e.HV4DHVIDFromGuid(tagHVID.operator GUID());
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 

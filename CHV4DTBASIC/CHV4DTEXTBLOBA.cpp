@@ -1,6 +1,10 @@
 module;
 
+#include <string>
 
+#include <vector>
+
+#include <stdexcept>
 
 module CHV4DTBASIC:CHV4DTEXTBLOBA;
 

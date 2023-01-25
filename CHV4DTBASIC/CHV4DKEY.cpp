@@ -2,6 +2,10 @@ module;
 
 #include <guiddef.h>
 
+#include <string>
+
+#include <stdexcept>
+
 module CHV4DTBASIC:CHV4DKEY;
 
 namespace CHV4D::CHV4DTBASIC
@@ -132,7 +136,7 @@ namespace CHV4D::CHV4DTBASIC
 
 	CHV4DKEY::operator std::tuple<std::wstring, std::wstring>() const
 	{
-		return std::tuple{ tagHVID, tagMAXPATH };
+		return std::tuple{ tagHVID, tagMAXPATH};
 
 	}
 

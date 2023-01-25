@@ -1,8 +1,10 @@
 module;
 
+#include <string>
+
+#include <stdexcept>
+
 export module CHV4DTBASIC:CHV4DCLASST;
-
-
 
 import :CHV4DMAXPATH;
 
