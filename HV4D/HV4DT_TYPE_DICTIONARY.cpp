@@ -1,12 +1,12 @@
 #include "pch.h"
-#include "HV4DT_TYPE_INDEX.h"
-#if __has_include("HV4DT_TYPE_INDEX.g.cpp")
-#include "HV4DT_TYPE_INDEX.g.cpp"
+#include "HV4DT_TYPE_DICTIONARY.h"
+#if __has_include("HV4DT_TYPE_DICTIONARY.g.cpp")
+#include "HV4DT_TYPE_DICTIONARY.g.cpp"
 #endif
 
 namespace winrt::HV4D::implementation
 {
-	HV4DT_TYPE_INDEX::HV4DT_TYPE_INDEX()
+	HV4DT_TYPE_DICTIONARY::HV4DT_TYPE_DICTIONARY()
 	{
 		HV4DListSupportedInterfaces();
 
@@ -18,7 +18,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4DT_TYPE_INDEX::HV4DT_TYPE_INDEX(HV4D::IHV4DOBJECT const& sender)
+	HV4DT_TYPE_DICTIONARY::HV4DT_TYPE_DICTIONARY(HV4D::IHV4DOBJECT const& sender)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -32,7 +32,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4DT_TYPE_INDEX::HV4DT_TYPE_INDEX(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
+	HV4DT_TYPE_DICTIONARY::HV4DT_TYPE_DICTIONARY(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -50,7 +50,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DT_TYPE_INDEX::HV4DUuidOfInstance()
+	winrt::guid HV4DT_TYPE_DICTIONARY::HV4DUuidOfInstance()
 	{
 
 		return uuid_of_instance;
@@ -58,7 +58,7 @@ namespace winrt::HV4D::implementation
 	}
 
 
-	void HV4DT_TYPE_INDEX::HV4DSetUuidOfInstance()
+	void HV4DT_TYPE_DICTIONARY::HV4DSetUuidOfInstance()
 	{
 		GUID uid;
 
@@ -78,7 +78,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	uint64_t HV4DT_TYPE_INDEX::HV4DCreatedDateTime()
+	uint64_t HV4DT_TYPE_DICTIONARY::HV4DCreatedDateTime()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -86,7 +86,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	uint64_t HV4DT_TYPE_INDEX::HV4DUpdatedDateTime()
+	uint64_t HV4DT_TYPE_DICTIONARY::HV4DUpdatedDateTime()
 	{
 
 
@@ -94,7 +94,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DSetCreatedDateTime()
+	void HV4DT_TYPE_DICTIONARY::HV4DSetCreatedDateTime()
 	{
 		created_date_time = (uint64_t)std::time(nullptr);
 
@@ -102,7 +102,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DSetUpdatedDateTime()
+	void HV4DT_TYPE_DICTIONARY::HV4DSetUpdatedDateTime()
 	{
 		updated_date_time = (uint64_t)std::time(nullptr);
 
@@ -110,7 +110,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DT_TYPE_INDEX::HV4DSupportsInterfaces()
+	WFC::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DT_TYPE_DICTIONARY::HV4DSupportsInterfaces()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -118,19 +118,15 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DListSupportedInterfaces()
+	void HV4DT_TYPE_DICTIONARY::HV4DListSupportedInterfaces()
 	{
 		supported_interfaces = winrt::single_threaded_vector<HV4D::HV4DT_TYPE_CONTRACT>();
-
-		supported_interfaces.Append(HV4D::HV4DT_TYPE_CONTRACT{});
-
-		supported_interfaces.Append(HV4D::HV4DT_TYPE_CONTRACT{});
 
 		return;
 
 	}
 
-	HV4D::IHV4DTTYPE HV4DT_TYPE_INDEX::HV4DGetTType()
+	HV4D::IHV4DTTYPE HV4DT_TYPE_DICTIONARY::HV4DGetTType()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -138,7 +134,7 @@ namespace winrt::HV4D::implementation
 
 	};
 
-	HV4D::IHV4DOBJECT HV4DT_TYPE_INDEX::HV4DSender()
+	HV4D::IHV4DOBJECT HV4DT_TYPE_DICTIONARY::HV4DSender()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -146,7 +142,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DSender(HV4D::IHV4DOBJECT const& e)
+	void HV4DT_TYPE_DICTIONARY::HV4DSender(HV4D::IHV4DOBJECT const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -156,7 +152,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::guid HV4DT_TYPE_INDEX::HV4DTTypeUid()
+	winrt::guid HV4DT_TYPE_DICTIONARY::HV4DTTypeUid()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -164,7 +160,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	uint64_t HV4DT_TYPE_INDEX::HV4DTTypeID()
+	uint64_t HV4DT_TYPE_DICTIONARY::HV4DTTypeID()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -172,15 +168,15 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::hstring HV4DT_TYPE_INDEX::HV4DTTypeName()
+	winrt::hstring HV4DT_TYPE_DICTIONARY::HV4DTTypeName()
 	{
 		HV4DSetUpdatedDateTime();
 
-		return L"HV4DT_TYPE_INDEX";
+		return L"HV4DT_TYPE_DICTIONARY";
 
 	}
 
-	winrt::guid HV4DT_TYPE_INDEX::HV4DExtendedArgsType()
+	winrt::guid HV4DT_TYPE_DICTIONARY::HV4DExtendedArgsType()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -188,7 +184,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DExtendedArgsType(winrt::guid const& e)
+	void HV4DT_TYPE_DICTIONARY::HV4DExtendedArgsType(winrt::guid const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -198,7 +194,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	WF::IInspectable HV4DT_TYPE_INDEX::HV4DExtendedArgs()
+	WF::IInspectable HV4DT_TYPE_DICTIONARY::HV4DExtendedArgs()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -206,7 +202,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DExtendedArgs(WF::IInspectable const& e)
+	void HV4DT_TYPE_DICTIONARY::HV4DExtendedArgs(WF::IInspectable const& e)
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -216,7 +212,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	winrt::hstring HV4DT_TYPE_INDEX::HV4DComments()
+	winrt::hstring HV4DT_TYPE_DICTIONARY::HV4DComments()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -224,7 +220,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4DT_TYPE_INDEX::HV4DComments(winrt::hstring const& e)
+	void HV4DT_TYPE_DICTIONARY::HV4DComments(winrt::hstring const& e)
 	{
 		HV4DSetUpdatedDateTime();
 

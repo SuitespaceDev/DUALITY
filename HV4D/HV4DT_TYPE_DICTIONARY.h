@@ -4,7 +4,7 @@
 
 #include <ctime>
 
-#include "HV4DT_TYPE_INDEX.g.h"
+#include "HV4DT_TYPE_DICTIONARY.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFC = winrt::Windows::Foundation::Collections;
@@ -12,14 +12,14 @@ namespace HV4D = winrt::HV4D;
 
 namespace winrt::HV4D::implementation
 {
-	struct HV4DT_TYPE_INDEX : HV4DT_TYPE_INDEXT<HV4DT_TYPE_INDEX>
+	struct HV4DT_TYPE_DICTIONARY : HV4DT_TYPE_DICTIONARYT<HV4DT_TYPE_DICTIONARY>
 	{
 	public:
-		HV4DT_TYPE_INDEX();
+		HV4DT_TYPE_DICTIONARY();
 
-		HV4DT_TYPE_INDEX(HV4D::IHV4DOBJECT const&);
+		HV4DT_TYPE_DICTIONARY(HV4D::IHV4DOBJECT const&);
 
-		HV4DT_TYPE_INDEX(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+		HV4DT_TYPE_DICTIONARY(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
 
 	public:
 		virtual winrt::guid HV4DUuidOfInstance();
@@ -99,7 +99,7 @@ namespace winrt::HV4D::implementation
 
 namespace winrt::HV4D::factory_implementation
 {
-	struct HV4DT_TYPE_INDEX : HV4DT_TYPE_INDEXT<HV4DT_TYPE_INDEX, implementation::HV4DT_TYPE_INDEX>
+	struct HV4DT_TYPE_DICTIONARY : HV4DT_TYPE_DICTIONARYT<HV4DT_TYPE_DICTIONARY, implementation::HV4DT_TYPE_DICTIONARY>
 	{
 
 	};

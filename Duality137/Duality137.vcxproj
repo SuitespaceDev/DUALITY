@@ -137,10 +137,6 @@
       <DependentUpon>CHV4DIndexProjects.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="CHV4DPublicConnection.h">
-      <DependentUpon>CHV4DPublicConnection.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="DataBindingPage.xaml.h">
       <DependentUpon>DataBindingPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -362,10 +358,6 @@
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="CHV4DIndexProjects.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="CHV4DPublicConnection.cpp">
       <SubType>
       </SubType>
     </ClCompile>

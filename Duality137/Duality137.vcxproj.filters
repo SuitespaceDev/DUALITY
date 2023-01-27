@@ -39,9 +39,6 @@
     <ClCompile Include="pch.cpp">
       <Filter>1. Project</Filter>
     </ClCompile>
-    <ClCompile Include="CHV4DPublicConnection.cpp">
-      <Filter>11. Public</Filter>
-    </ClCompile>
     <ClCompile Include="CHV4DIndexProjects.cpp">
       <Filter>6. Landing</Filter>
     </ClCompile>
@@ -73,12 +70,6 @@
     </Filter>
     <Filter Include="10. Diagnostics">
       <UniqueIdentifier>{83b1219a-9d96-4fc1-a394-07d5cf7308d7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="xResources">
-      <UniqueIdentifier>{560551db-e3dd-495a-9240-ce0d5cfd5013}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="12. Text">
-      <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
     </Filter>
     <Filter Include="2. Property Pages\b. Accounts">
       <UniqueIdentifier>{abc28302-87b8-4140-b47b-3e9c9760d12b}</UniqueIdentifier>
@@ -116,15 +107,15 @@
     <Filter Include="2. Property Pages\k. Projects">
       <UniqueIdentifier>{ba6cd6b6-bf67-4c60-bf6d-fdfcc097550e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="11. Public">
-      <UniqueIdentifier>{3db65e28-7790-4be9-b6f7-648fa80d3247}</UniqueIdentifier>
+    <Filter Include="appx:///Text">
+      <UniqueIdentifier>{f6be06bc-d6ca-4f62-b75f-4d5f69abe189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="appx:///Resources">
+      <UniqueIdentifier>{560551db-e3dd-495a-9240-ce0d5cfd5013}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
-      <Filter>1. Project</Filter>
-    </None>
-    <None Include="PropertySheet.props">
       <Filter>1. Project</Filter>
     </None>
   </ItemGroup>
@@ -152,7 +143,7 @@
       <Filter>7. Pickers</Filter>
     </Page>
     <Page Include="Duality137Buttons.xaml">
-      <Filter>xResources</Filter>
+      <Filter>appx:///Resources</Filter>
     </Page>
     <Page Include="GitProject.xaml">
       <Filter>7. Pickers</Filter>
@@ -348,19 +339,19 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CreateProcess.txt">
-      <Filter>12. Text</Filter>
+      <Filter>appx:///Text</Filter>
     </Text>
     <Text Include="GUID.txt">
-      <Filter>12. Text</Filter>
+      <Filter>appx:///Text</Filter>
     </Text>
     <Text Include="LoadDll.txt">
-      <Filter>12. Text</Filter>
+      <Filter>appx:///Text</Filter>
     </Text>
     <Text Include="PopulateRecent.txt">
-      <Filter>12. Text</Filter>
+      <Filter>appx:///Text</Filter>
     </Text>
     <Text Include="LoaderSettings.txt">
-      <Filter>12. Text</Filter>
+      <Filter>appx:///Text</Filter>
     </Text>
   </ItemGroup>
 </Project>

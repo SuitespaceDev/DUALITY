@@ -13,150 +13,6 @@
     <Filter Include="3. System Iterators">
       <UniqueIdentifier>{a6ba7003-7df7-42b3-be3f-db4880aead51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE">
-      <UniqueIdentifier>{c66b19a9-1d4a-42ba-9de9-b517043df59c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\0. HV4DT_TYPE_UNKNOWN">
-      <UniqueIdentifier>{3cba263a-2e18-4844-bdee-87581b2d4707}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\1. HV4DT_TYPE_PROCESS">
-      <UniqueIdentifier>{2683da70-c552-4483-858f-d1fd75f3fcff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION">
-      <UniqueIdentifier>{9755fc43-c739-4f15-a075-0734ff0a6cff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX">
-      <UniqueIdentifier>{5ad37ffc-af17-46bd-b540-dbd939b4af03}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_PROP_PAGE">
-      <UniqueIdentifier>{376bfe60-8064-484b-a6a0-5a433c8e1c39}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_OBJECT">
-      <UniqueIdentifier>{ca648708-363f-4c3b-a054-6c77c431855f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_UIELEMENT">
-      <UniqueIdentifier>{ef9fa5ce-1059-4cc6-9c17-e5f068e6659e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY">
-      <UniqueIdentifier>{4db8e30e-e396-43a0-bbd1-89f0afce5f9f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE">
-      <UniqueIdentifier>{8e82a436-fb44-4fa2-ad49-a3f151261293}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER">
-      <UniqueIdentifier>{32ba9509-7197-4028-8d0c-04e7bc9665cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_EVENT">
-      <UniqueIdentifier>{cfce59e2-a7f2-4ab7-a2c7-2a6b713514f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_PARAMETER">
-      <UniqueIdentifier>{6eb3a63f-a1b3-488b-b8f0-a8dc2edbd1c7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_FUNCTION">
-      <UniqueIdentifier>{240798b9-2a7c-43cf-9500-7dc5f766c81d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_CONTRACT">
-      <UniqueIdentifier>{5c4c7fd3-9f8c-445e-97e1-0c1d9cb2f669}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_ITERATOR">
-      <UniqueIdentifier>{da997f87-de03-4c52-9a94-b4434bcd3f26}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN">
-      <UniqueIdentifier>{e865c572-647d-4f94-b741-228e243f25d4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_ALREADY_CONFIGURED">
-      <UniqueIdentifier>{f8bb9d48-15bf-49d2-8db6-4c48649a74be}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_DIR_ALREADY_EXISTS">
-      <UniqueIdentifier>{b0671c07-667f-488a-ae52-7158fe113eb8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_DIR_DOESNT_EXIST">
-      <UniqueIdentifier>{e281ef47-2fcf-4944-93d4-0512afaef7a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_FALSE">
-      <UniqueIdentifier>{3814093e-aa85-44e0-a6f8-ff99c4d68a3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_FILE_ALREADY_EXISTS">
-      <UniqueIdentifier>{77f41dcc-fbbd-4f12-951e-6ee32d87a4ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_FILE_BAD_FORMATTING">
-      <UniqueIdentifier>{a2511839-487f-4057-887c-3c1d53c1c5ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_FILE_DOESNT_EXIST">
-      <UniqueIdentifier>{66a00ac4-f79f-48bb-987a-e7afef59c37a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_FILE_HANDLE_OPEN">
-      <UniqueIdentifier>{d4b2d3ac-3238-457a-873a-7561e147191e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_IMAGE_NOT_LOADED">
-      <UniqueIdentifier>{c1844dbb-5337-48d4-99b1-4618c968dc3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED">
-      <UniqueIdentifier>{9661d41c-7581-4f45-b413-16767ecaea34}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_INVALID_ARGUMENT">
-      <UniqueIdentifier>{360f0018-6ec3-4b8c-8911-c255bb9d49b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_INVALID_INTERFACE">
-      <UniqueIdentifier>{75f70d1b-149f-4555-bd61-68aedce98829}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_INVALID_POINTER">
-      <UniqueIdentifier>{e07bd13e-872e-4e21-a6de-e57463afa6f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_MODULE_NOT_FOUND">
-      <UniqueIdentifier>{a538b100-f0e1-4e05-b44e-ff3966556611}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_NO_FILE_OPEN">
-      <UniqueIdentifier>{cad8656d-6c5d-452d-b5fa-7a8776e764f1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_NOT_CONFIGURED">
-      <UniqueIdentifier>{a2de847b-ef1b-4de1-af6e-d2c63d07da5f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_NOT_SYSTEM_MODULE">
-      <UniqueIdentifier>{ac6fd4e4-0598-40e3-b1da-30720610ee57}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_OPERATION_FAILED">
-      <UniqueIdentifier>{7289d9c8-9b50-4ec8-a3ab-e1666723bbb0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_OPERATION_SUCCEEDED">
-      <UniqueIdentifier>{1f40d88e-5500-4355-bfd8-37a585136069}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_OUT_OF_MEM">
-      <UniqueIdentifier>{de6713b3-6030-4813-be64-cef41272c0de}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_OUT_OF_RANGE">
-      <UniqueIdentifier>{8b2fdf1b-51d5-43b0-b838-1c49dc0505a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS">
-      <UniqueIdentifier>{b1873f9c-f2b3-47ec-a8f7-afef01295f03}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_PROCESS_NOT_FOUND">
-      <UniqueIdentifier>{91672dca-1b7a-407e-93ba-4d2d070c5a93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_PROPERLY_CONFIGURED">
-      <UniqueIdentifier>{e15dfacb-ca22-4055-a8c5-81a646ac6000}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_RTCLASS_NOT_FOUND">
-      <UniqueIdentifier>{f5c574eb-c84e-4047-9847-0a370e2f7a12}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_TRUE">
-      <UniqueIdentifier>{657d5234-c55b-48e8-a413-1df661aa2f20}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_UNKNOWN">
-      <UniqueIdentifier>{1e942fb9-08e3-4fb0-92a3-b6edccfa9ea6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_VALID_ARGUMENT">
-      <UniqueIdentifier>{829579da-6d62-4d49-917d-a797d942d131}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_IS_GREATER">
-      <UniqueIdentifier>{ec481f16-6bc3-4484-8db5-c54347b54cae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_IS_LESSER">
-      <UniqueIdentifier>{3c232a65-b566-47fd-beaf-ae7d1eda41cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. System Iterators\f. HV4DRETURN\HV4D_IS_EQUAL">
-      <UniqueIdentifier>{201ccb38-5085-4eb6-a539-0b05564d6df1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. System Contracts\IHV4DOBJECT">
       <UniqueIdentifier>{5efacf46-f105-44f0-ae13-2a76d2d51287}</UniqueIdentifier>
     </Filter>
@@ -181,8 +37,140 @@
     <Filter Include="2. System Contracts\IHV4DPARAMETER">
       <UniqueIdentifier>{c990b021-9957-4f25-908f-c0a450798a1c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_RTCLASS">
-      <UniqueIdentifier>{3300b15e-8c70-479a-a09b-8d0d9533de41}</UniqueIdentifier>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE">
+      <UniqueIdentifier>{5e06aa4e-a41c-49b0-b7f5-b98b0850c3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\0. HV4DT_TYPE_UNKNOWN">
+      <UniqueIdentifier>{3cba263a-2e18-4844-bdee-87581b2d4707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\1. HV4DT_TYPE_PROCESS">
+      <UniqueIdentifier>{2683da70-c552-4483-858f-d1fd75f3fcff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN">
+      <UniqueIdentifier>{e865c572-647d-4f94-b741-228e243f25d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_ALREADY_CONFIGURED">
+      <UniqueIdentifier>{f8bb9d48-15bf-49d2-8db6-4c48649a74be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_DIR_ALREADY_EXISTS">
+      <UniqueIdentifier>{b0671c07-667f-488a-ae52-7158fe113eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_DIR_DOESNT_EXIST">
+      <UniqueIdentifier>{e281ef47-2fcf-4944-93d4-0512afaef7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_FALSE">
+      <UniqueIdentifier>{3814093e-aa85-44e0-a6f8-ff99c4d68a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_FILE_ALREADY_EXISTS">
+      <UniqueIdentifier>{77f41dcc-fbbd-4f12-951e-6ee32d87a4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_FILE_BAD_FORMATTING">
+      <UniqueIdentifier>{a2511839-487f-4057-887c-3c1d53c1c5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_FILE_DOESNT_EXIST">
+      <UniqueIdentifier>{66a00ac4-f79f-48bb-987a-e7afef59c37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_FILE_HANDLE_OPEN">
+      <UniqueIdentifier>{d4b2d3ac-3238-457a-873a-7561e147191e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_IMAGE_NOT_LOADED">
+      <UniqueIdentifier>{c1844dbb-5337-48d4-99b1-4618c968dc3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED">
+      <UniqueIdentifier>{9661d41c-7581-4f45-b413-16767ecaea34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_INVALID_ARGUMENT">
+      <UniqueIdentifier>{360f0018-6ec3-4b8c-8911-c255bb9d49b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_INVALID_INTERFACE">
+      <UniqueIdentifier>{75f70d1b-149f-4555-bd61-68aedce98829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_INVALID_POINTER">
+      <UniqueIdentifier>{e07bd13e-872e-4e21-a6de-e57463afa6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_MODULE_NOT_FOUND">
+      <UniqueIdentifier>{a538b100-f0e1-4e05-b44e-ff3966556611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_NO_FILE_OPEN">
+      <UniqueIdentifier>{cad8656d-6c5d-452d-b5fa-7a8776e764f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_NOT_CONFIGURED">
+      <UniqueIdentifier>{a2de847b-ef1b-4de1-af6e-d2c63d07da5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_NOT_SYSTEM_MODULE">
+      <UniqueIdentifier>{ac6fd4e4-0598-40e3-b1da-30720610ee57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_OPERATION_FAILED">
+      <UniqueIdentifier>{7289d9c8-9b50-4ec8-a3ab-e1666723bbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_OPERATION_SUCCEEDED">
+      <UniqueIdentifier>{1f40d88e-5500-4355-bfd8-37a585136069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_OUT_OF_MEM">
+      <UniqueIdentifier>{de6713b3-6030-4813-be64-cef41272c0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_OUT_OF_RANGE">
+      <UniqueIdentifier>{8b2fdf1b-51d5-43b0-b838-1c49dc0505a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS">
+      <UniqueIdentifier>{b1873f9c-f2b3-47ec-a8f7-afef01295f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_PROCESS_NOT_FOUND">
+      <UniqueIdentifier>{91672dca-1b7a-407e-93ba-4d2d070c5a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_PROPERLY_CONFIGURED">
+      <UniqueIdentifier>{e15dfacb-ca22-4055-a8c5-81a646ac6000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_RTCLASS_NOT_FOUND">
+      <UniqueIdentifier>{f5c574eb-c84e-4047-9847-0a370e2f7a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_TRUE">
+      <UniqueIdentifier>{657d5234-c55b-48e8-a413-1df661aa2f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_UNKNOWN">
+      <UniqueIdentifier>{1e942fb9-08e3-4fb0-92a3-b6edccfa9ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_VALID_ARGUMENT">
+      <UniqueIdentifier>{829579da-6d62-4d49-917d-a797d942d131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_IS_GREATER">
+      <UniqueIdentifier>{ec481f16-6bc3-4484-8db5-c54347b54cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_IS_LESSER">
+      <UniqueIdentifier>{3c232a65-b566-47fd-beaf-ae7d1eda41cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_IS_EQUAL">
+      <UniqueIdentifier>{201ccb38-5085-4eb6-a539-0b05564d6df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\2. HV4DT_TYPE_SERVICE">
+      <UniqueIdentifier>{8e82a436-fb44-4fa2-ad49-a3f151261293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\3. HV4DT_TYPE_PROVIDER">
+      <UniqueIdentifier>{32ba9509-7197-4028-8d0c-04e7bc9665cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\4. HV4DT_TYPE_LIBRARY">
+      <UniqueIdentifier>{4db8e30e-e396-43a0-bbd1-89f0afce5f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\5, HV4DT_TYPE_DICTIONARY">
+      <UniqueIdentifier>{5ad37ffc-af17-46bd-b540-dbd939b4af03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\6. HV4DT_TYPE_PARAMETER">
+      <UniqueIdentifier>{6eb3a63f-a1b3-488b-b8f0-a8dc2edbd1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\7. HV4DT_TYPE_ITERATOR">
+      <UniqueIdentifier>{da997f87-de03-4c52-9a94-b4434bcd3f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\8. HV4DT_TYPE_FUNCTION">
+      <UniqueIdentifier>{240798b9-2a7c-43cf-9500-7dc5f766c81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\9. HV4DT_TYPE_EVENT">
+      <UniqueIdentifier>{cfce59e2-a7f2-4ab7-a2c7-2a6b713514f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\10. HV4DT_TYPE_CONTRACT">
+      <UniqueIdentifier>{5c4c7fd3-9f8c-445e-97e1-0c1d9cb2f669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4D_T_TYPE\11. HV4DT_TYPE_SESSION">
+      <UniqueIdentifier>{9755fc43-c739-4f15-a075-0734ff0a6cff}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -196,133 +184,115 @@
       <Filter>1. Service</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OPERATION_FAILED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_OPERATION_FAILED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_OPERATION_FAILED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_ALREADY_CONFIGURED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_ALREADY_CONFIGURED</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_DIR_ALREADY_EXISTS</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_ALREADY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_DIR_DOESNT_EXIST.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_DIR_DOESNT_EXIST</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_DIR_DOESNT_EXIST</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FALSE.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_FALSE</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_FALSE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_ALREADY_EXISTS.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_FILE_ALREADY_EXISTS</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_FILE_ALREADY_EXISTS</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_BAD_FORMATTING.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_FILE_BAD_FORMATTING</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_FILE_BAD_FORMATTING</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_DOESNT_EXIST.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_FILE_DOESNT_EXIST</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_FILE_DOESNT_EXIST</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_HANDLE_OPEN.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_FILE_HANDLE_OPEN</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_FILE_HANDLE_OPEN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IMAGE_NOT_LOADED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_IMAGE_NOT_LOADED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_IMAGE_NOT_LOADED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IMPROPERLY_CONFIGURED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_IMPROPERLY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_ARGUMENT.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_INVALID_ARGUMENT</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_INVALID_ARGUMENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_INTERFACE.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_INVALID_INTERFACE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4D_INVALID_POINTER.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_INVALID_POINTER</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_INVALID_INTERFACE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_MODULE_NOT_FOUND.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_MODULE_NOT_FOUND</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_MODULE_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NO_FILE_OPEN.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_NO_FILE_OPEN</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_NO_FILE_OPEN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NOT_CONFIGURED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_NOT_CONFIGURED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_NOT_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NOT_SYSTEM_MODULE.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_NOT_SYSTEM_MODULE</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_NOT_SYSTEM_MODULE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OPERATION_SUCCEEDED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_OPERATION_SUCCEEDED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_OPERATION_SUCCEEDED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OUT_OF_MEM.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_OUT_OF_MEM</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_OUT_OF_MEM</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OUT_OF_RANGE.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_OUT_OF_RANGE</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_OUT_OF_RANGE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PAGE_ALREADY_EXISTS.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_PAGE_ALREADY_EXISTS</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PROCESS_NOT_FOUND.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_PROCESS_NOT_FOUND</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_PROCESS_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PROPERLY_CONFIGURED.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_PROPERLY_CONFIGURED</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_PROPERLY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_RTCLASS_NOT_FOUND.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_RTCLASS_NOT_FOUND</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_RTCLASS_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_TRUE.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_TRUE</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_TRUE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_UNKNOWN.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_UNKNOWN</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_UNKNOWN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_VALID_ARGUMENT.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_VALID_ARGUMENT</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_VALID_ARGUMENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_CONTRACT.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_CONTRACT</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\10. HV4DT_TYPE_CONTRACT</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_ITERATOR.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_ITERATOR</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\7. HV4DT_TYPE_ITERATOR</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_SERVICE.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\2. HV4DT_TYPE_SERVICE</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_UNKNOWN.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\0. HV4DT_TYPE_UNKNOWN</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\0. HV4DT_TYPE_UNKNOWN</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_PROCESS.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\1. HV4DT_TYPE_PROCESS</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\1. HV4DT_TYPE_PROCESS</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_EVENT.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_EVENT</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\9. HV4DT_TYPE_EVENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_FUNCTION.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_FUNCTION</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\8. HV4DT_TYPE_FUNCTION</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_PARAMETER.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY\HV4DT_TYPE_SERVICE\HV4DT_TYPE_PROVIDER\HV4DT_TYPE_PARAMETER</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\6. HV4DT_TYPE_PARAMETER</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_LIBRARY.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\2. HV4DT_TYPE_LIBRARY</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\4. HV4DT_TYPE_LIBRARY</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_UIELEMENT.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_UIELEMENT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_PROP_PAGE.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_PROP_PAGE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_OBJECT.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_OBJECT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_INDEX.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX</Filter>
+    <ClCompile Include="HV4DT_TYPE_DICTIONARY.cpp">
+      <Filter>3. System Iterators\HV4D_T_TYPE\5, HV4DT_TYPE_DICTIONARY</Filter>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_SESSION.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_RTCLASS.cpp">
-      <Filter>3. System Iterators\e. HV4DTTYPE\3. HV4DT_TYPE_SESSION\HV4DT_TYPE_INDEX\HV4DT_TYPE_RTCLASS</Filter>
+      <Filter>3. System Iterators\HV4D_T_TYPE\11. HV4DT_TYPE_SESSION</Filter>
     </ClCompile>
     <ClCompile Include="HV4DOBJECT.cpp">
       <Filter>2. System Contracts\IHV4DOBJECT</Filter>
@@ -334,23 +304,31 @@
       <Filter>2. System Contracts\IHV4DRETURN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_GREATER.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_IS_GREATER</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_IS_GREATER</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_LESSER.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_IS_LESSER</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_IS_LESSER</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_EQUAL.cpp">
-      <Filter>3. System Iterators\f. HV4DRETURN\HV4D_IS_EQUAL</Filter>
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_IS_EQUAL</Filter>
     </ClCompile>
     <ClCompile Include="HV4DITERATOR.cpp">
       <Filter>2. System Contracts\IHV4DITERATOR</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_DIR_ALREADY_EXISTS</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_INVALID_POINTER.cpp">
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_INVALID_POINTER</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4D.def">
       <Filter>0. Project</Filter>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <Filter>0. Project</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -370,5 +348,10 @@
     <Midl Include="IHV4DITERATOR.idl">
       <Filter>2. System Contracts\IHV4DITERATOR</Filter>
     </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>0. Project</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

@@ -2,6 +2,10 @@
 
 #include <shobjidl.h>
 
+#include <vector>
+
+#include <functional>
+
 #include "winrt/Windows.UI.Popups.h"
 
 #include "winrt/HV4D.h"
@@ -38,18 +42,13 @@ namespace winrt::Duality137::implementation
 	private:
 		void IndexProjects();
 
-		HV4DDUALITY::CHV4DIndexProjects Projects{};
+		HV4DDUALITY::CHV4DIndexProjects ProjectIndex{};
 
 	public:
-		void Landing001(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-		void Landing002(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-		void Landing003(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-		void Landing004(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-		void Landing005(WF::IInspectable const&, MUX::RoutedEventArgs const&);
-		void Landing006(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+		std::vector<std::function<void(WF::IInspectable const&, MUX::RoutedEventArgs const&)>> ProjectActivation{};
 
 	private:
-		void OpenLanding(uint32_t);
+		void OpenIndexedProject(HV4DX::TableProjectIndex const&);
 
 	public:
 		void OpenProject001(WF::IInspectable const&, MUX::RoutedEventArgs const&);

@@ -122,10 +122,6 @@ namespace winrt::HV4D::implementation
 	{
 		supported_interfaces = winrt::single_threaded_vector<HV4D::HV4DT_TYPE_CONTRACT>();
 
-		supported_interfaces.Append(HV4D::HV4DT_TYPE_CONTRACT{});
-
-		supported_interfaces.Append(HV4D::HV4DT_TYPE_CONTRACT{});
-
 		return;
 
 	}

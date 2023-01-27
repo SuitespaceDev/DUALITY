@@ -12,10 +12,10 @@
     <RootNamespace>HV4D</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
-    <AppContainerApplication>true</AppContainerApplication>
+    <AppContainerApplication>false</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
-    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
     <DesktopCompatible>true</DesktopCompatible>
     <UseWinUI>true</UseWinUI>
@@ -93,6 +93,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpplatest</LanguageStandard>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdc17</LanguageStandard_C>
+      <ConformanceMode Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ConformanceMode>
+      <EnableModules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableModules>
+      <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
@@ -140,8 +145,8 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_INDEX.h">
-      <DependentUpon>HV4DT_TYPE_INDEX.cpp</DependentUpon>
+    <ClInclude Include="HV4DT_TYPE_DICTIONARY.h">
+      <DependentUpon>HV4DT_TYPE_DICTIONARY.cpp</DependentUpon>
       <SubType>
       </SubType>
     </ClInclude>
@@ -155,11 +160,6 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_OBJECT.h">
-      <DependentUpon>HV4DT_TYPE_OBJECT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="HV4DT_TYPE_PARAMETER.h">
       <DependentUpon>HV4DT_TYPE_PARAMETER.cpp</DependentUpon>
       <SubType>
@@ -170,16 +170,6 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_PROP_PAGE.h">
-      <DependentUpon>HV4DT_TYPE_PROP_PAGE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_RTCLASS.h">
-      <DependentUpon>HV4DT_TYPE_RTCLASS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SERVICE.h">
       <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
       <SubType>
@@ -187,11 +177,6 @@
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SESSION.h">
       <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_UIELEMENT.h">
-      <DependentUpon>HV4DT_TYPE_UIELEMENT.cpp</DependentUpon>
       <SubType>
       </SubType>
     </ClInclude>
@@ -390,7 +375,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_INDEX.cpp">
+    <ClCompile Include="HV4DT_TYPE_DICTIONARY.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -402,10 +387,6 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_OBJECT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="HV4DT_TYPE_PARAMETER.cpp">
       <SubType>
       </SubType>
@@ -414,23 +395,11 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_PROP_PAGE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_RTCLASS.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="HV4DT_TYPE_SERVICE.cpp">
       <SubType>
       </SubType>
     </ClCompile>
     <ClCompile Include="HV4DT_TYPE_SESSION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_UIELEMENT.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -603,8 +572,8 @@
       <SubType>
       </SubType>
     </Midl>
-    <Midl Include="HV4DT_TYPE_INDEX.idl">
-      <DependentUpon>HV4DT_TYPE_INDEX.cpp</DependentUpon>
+    <Midl Include="HV4DT_TYPE_DICTIONARY.idl">
+      <DependentUpon>HV4DT_TYPE_DICTIONARY.cpp</DependentUpon>
       <SubType>
       </SubType>
     </Midl>
@@ -618,11 +587,6 @@
       <SubType>
       </SubType>
     </Midl>
-    <Midl Include="HV4DT_TYPE_OBJECT.idl">
-      <DependentUpon>HV4DT_TYPE_OBJECT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
     <Midl Include="HV4DT_TYPE_PARAMETER.idl">
       <DependentUpon>HV4DT_TYPE_PARAMETER.cpp</DependentUpon>
       <SubType>
@@ -633,16 +597,6 @@
       <SubType>
       </SubType>
     </Midl>
-    <Midl Include="HV4DT_TYPE_PROP_PAGE.idl">
-      <DependentUpon>HV4DT_TYPE_PROP_PAGE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_RTCLASS.idl">
-      <DependentUpon>HV4DT_TYPE_RTCLASS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
     <Midl Include="HV4DT_TYPE_SERVICE.idl">
       <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
       <SubType>
@@ -650,11 +604,6 @@
     </Midl>
     <Midl Include="HV4DT_TYPE_SESSION.idl">
       <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_UIELEMENT.idl">
-      <DependentUpon>HV4DT_TYPE_UIELEMENT.cpp</DependentUpon>
       <SubType>
       </SubType>
     </Midl>

@@ -137,13 +137,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PropertySheet.props">
-      <Filter>a. Project</Filter>
-    </None>
     <None Include="HV4DX.def">
       <Filter>a. Project</Filter>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <Filter>a. Project</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -355,9 +354,6 @@
     <Page Include="TableContractMember.xaml">
       <Filter>b. Table\Library</Filter>
     </Page>
-    <Page Include="TableProjectIndex.xaml">
-      <Filter>b. Table\Account</Filter>
-    </Page>
     <Page Include="UserFilterNewItem.xaml">
       <Filter>UserFilters\UserFilterNewItem</Filter>
     </Page>
@@ -367,8 +363,13 @@
     <Page Include="UserGoTo.xaml">
       <Filter>UserString\UserGoTo</Filter>
     </Page>
+    <Page Include="TableProjectIndex.xaml">
+      <Filter>b. Table</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
+      <Filter>a. Project</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

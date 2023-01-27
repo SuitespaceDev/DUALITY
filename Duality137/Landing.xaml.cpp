@@ -34,62 +34,17 @@ namespace winrt::Duality137::implementation
 
 	void Landing::IndexProjects()
 	{
-		Projects.HV4DConnect();
+		if (ProjectIndex.HV4DIndexProjects(ProjectActivation).HV4DReturnTypeID() != HV4D::HV4D_OPERATION_SUCCEEDED{}.HV4DReturnTypeID())
+		{
+			throw HV4D::HV4D_OPERATION_FAILED{};
 
-
-		return;
-
-	}
-
-	void Landing::Landing001(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(0);
+		}
 
 		return;
 
 	}
 
-	void Landing::Landing002(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(1);
-
-		return;
-
-	}
-
-	void Landing::Landing003(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(2);
-
-		return;
-
-	}
-
-	void Landing::Landing004(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(3);
-
-		return;
-
-	}
-
-	void Landing::Landing005(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(4);
-
-		return;
-
-	}
-
-	void Landing::Landing006(WF::IInspectable const& sender, MUX::RoutedEventArgs const& e)
-	{
-		OpenLanding(5);
-
-		return;
-
-	}
-
-	void Landing::OpenLanding(uint32_t i)
+	void Landing::OpenIndexedProject(HV4DX::TableProjectIndex const& e)
 	{
 
 

@@ -11,32 +11,46 @@ namespace HV4DDUALITY
 
 	}
 
-	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DConnect()
+	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DIndexProjects(std::vector<std::function<void(WF::IInspectable const&, MUX::RoutedEventArgs const&)>>& o)
 	{
-		PublicConnection.CHV4DMakePublicConnection();
+		MakeConnection();
+
+		PopulateProjectIndex();
+
+		BreakConnection();
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
 	}
 
-	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DDisconnect()
+	void CHV4DIndexProjects::MakeConnection()
 	{
+		PublicConnection = PQsetdbLogin(
+			"localhost",
+			"3146",
+			NULL,
+			NULL,
+			"HV4DXDB001",
+			"postgres",
+			"password1");
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+		throw HV4D::HV4D_OPERATION_FAILED{};
 
 	}
 
-	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DIndexProjects()
+	void CHV4DIndexProjects::PopulateProjectIndex()
 	{
+		auto query = PQexec(PublicConnection,
+			"SELECT * FROM table_name;");
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+		throw HV4D::HV4D_OPERATION_FAILED{};
 
 	}
 
-	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DGetProjectIndex(std::vector<HV4DX::TableProjectIndex>& o)
+	void CHV4DIndexProjects::BreakConnection()
 	{
 
-		return HV4D::HV4D_OPERATION_SUCCEEDED{};
+		throw HV4D::HV4D_OPERATION_FAILED{};
 
 	}
 
