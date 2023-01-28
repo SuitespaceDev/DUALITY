@@ -7,5 +7,129 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///HV4DX.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid 
+        Margin="6,6,6,6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+
+        <local:UserFilterHVID
+            x:Name="ProjectIndexHVID"            
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Project Index HVID"/>
+
+        <local:UserFilterNewMMM 
+            x:Name="ProjectIndexMMM"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="MMM"/>
+
+        <local:UserFilterNewItem
+            x:Name="ProjectIndexMaxPath"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1"
+            Label="Tag"/>
+
+        <local:UserDateTime 
+            x:Name="ProjectIndexCreated"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1"
+            Label="Created"/>
+
+        <local:UserDateTime 
+            x:Name="ProjectIndexUpdated"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1"
+            Label="Updated"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="0" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="HYPERTEXT DOCUMENTATION"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+        <local:UserBlock
+            x:Name="ProjectIndexDatabase"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="0" Grid.RowSpan="1"
+            Label="Database"/>
+
+        <local:UserBlock
+            x:Name="ProjectIndexSchema"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"
+            Label="Schema"/>
+
+        <local:UserBlock 
+            x:Name="ProjectIndexAccessLevel"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="2" Grid.RowSpan="1" 
+            Label="Access Level"/>
+
+        <local:UserBlock 
+            x:Name="ProjectIndexAdministratorHVID"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="3" Grid.RowSpan="1" 
+            Label="Administrator HVID"/>
+
+        <local:UserBlock 
+            x:Name="ProjectIndexAdministratorMaxPath"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="4" Grid.RowSpan="1" 
+            Label="Administrator"/>
+
+        <Border 
+            BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+            BorderThickness="1"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="5" Grid.RowSpan="1">
+
+            <Button 
+                BorderBrush="{ThemeResource HV4DButtonBorderStandard}"
+                BorderThickness="1"
+                Margin="2,2,2,2"
+                Padding="0,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <TextBlock 
+                    Text="PERMISSIONS"
+                    FontSize="12"/>
+            </Button>
+
+        </Border>
+
+    </Grid>
+
 </UserControl>

@@ -127,6 +127,9 @@
     <Filter Include="UserString\UserGoTo">
       <UniqueIdentifier>{b6dd9a30-c294-4bea-bb47-2f9e4c701262}</UniqueIdentifier>
     </Filter>
+    <Filter Include="b. Table\Project">
+      <UniqueIdentifier>{79b53f3b-c44f-4ddb-91fa-72b03bc09536}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -364,7 +367,7 @@
       <Filter>UserString\UserGoTo</Filter>
     </Page>
     <Page Include="TableProjectIndex.xaml">
-      <Filter>b. Table</Filter>
+      <Filter>b. Table\Project</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

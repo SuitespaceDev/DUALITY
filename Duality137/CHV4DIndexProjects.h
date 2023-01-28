@@ -2,9 +2,15 @@
 
 #include <functional>
 
+#include <string>
+#include <locale>
+#include <codecvt>
+
 #include <vector>
 
 #include <libpq-fe.h>
+
+#include "winrt/Duality137.h"
 
 #include "winrt/HV4D.h"
 #include "winrt/HV4DX.h"
@@ -14,6 +20,8 @@ namespace WFITT = winrt::Windows::Foundation::Collections;
 namespace WUPOP = winrt::Windows::UI::Popups;
 namespace MUX = winrt::Microsoft::UI::Xaml;
 namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+
+namespace Duality137 = winrt::Duality137;
 
 namespace HV4D = winrt::HV4D;
 namespace HV4DX = winrt::HV4DX;
@@ -46,6 +54,7 @@ namespace HV4DDUALITY
 		HV4D::IHV4DRETURN HV4DGetProjectIndexSize(uint32_t&);
 
 	private:
+		std::vector<Duality137::ProjectIndex> Rows{};
 
 	};
 

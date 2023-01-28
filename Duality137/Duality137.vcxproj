@@ -93,7 +93,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;DISABLE_XAML_GENERATED_MAIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpplatest</LanguageStandard>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
       <EnableModules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableModules>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\PostgreSQL\15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdc17</LanguageStandard_C>
@@ -173,6 +173,10 @@
     </ClInclude>
     <ClInclude Include="ProcessorPage.xaml.h">
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ProjectIndex.xaml.h">
+      <DependentUpon>ProjectIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="ProjectIndexPage.xaml.h">
@@ -397,6 +401,10 @@
     </ClCompile>
     <ClCompile Include="ProcessorPage.xaml.cpp">
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ProjectIndex.xaml.cpp">
+      <DependentUpon>ProjectIndex.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="ProjectIndexPage.xaml.cpp">
@@ -633,6 +641,10 @@
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="ProjectIndex.idl">
+      <DependentUpon>ProjectIndex.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="ProjectIndexPage.idl">
       <DependentUpon>ProjectIndexPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -830,6 +842,9 @@
     </Page>
     <Page Include="Machine.xaml" />
     <Page Include="ProcessorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProjectIndex.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ProjectIndexPage.xaml">

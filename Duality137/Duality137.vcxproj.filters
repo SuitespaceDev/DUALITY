@@ -331,6 +331,9 @@
     <Page Include="ProjectIndexPage.xaml">
       <Filter>2. Property Pages\k. Projects</Filter>
     </Page>
+    <Page Include="ProjectIndex.xaml">
+      <Filter>6. Landing</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">

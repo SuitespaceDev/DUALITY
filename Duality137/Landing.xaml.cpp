@@ -34,11 +34,15 @@ namespace winrt::Duality137::implementation
 
 	void Landing::IndexProjects()
 	{
+		ProjectIndex.HV4DIndexProjects(ProjectActivation);
+
+		/*
 		if (ProjectIndex.HV4DIndexProjects(ProjectActivation).HV4DReturnTypeID() != HV4D::HV4D_OPERATION_SUCCEEDED{}.HV4DReturnTypeID())
 		{
 			throw HV4D::HV4D_OPERATION_FAILED{};
 
 		}
+		*/
 
 		return;
 

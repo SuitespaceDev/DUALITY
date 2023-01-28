@@ -13,11 +13,38 @@ namespace HV4DDUALITY
 
 	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DIndexProjects(std::vector<std::function<void(WF::IInspectable const&, MUX::RoutedEventArgs const&)>>& o)
 	{
-		MakeConnection();
+		try
+		{
+			MakeConnection();
 
-		PopulateProjectIndex();
+		}
+		catch (HV4D::HV4D_OPERATION_FAILED e)
+		{
 
-		BreakConnection();
+
+		}
+
+		try
+		{
+			PopulateProjectIndex();
+
+		}
+		catch (HV4D::HV4D_OPERATION_FAILED e)
+		{
+
+
+		}
+
+		try
+		{
+			BreakConnection();
+
+		}
+		catch (HV4D::HV4D_OPERATION_FAILED e)
+		{
+
+
+		}
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 
@@ -34,23 +61,37 @@ namespace HV4DDUALITY
 			"postgres",
 			"password1");
 
-		throw HV4D::HV4D_OPERATION_FAILED{};
+		if(!PublicConnection) throw HV4D::HV4D_OPERATION_FAILED{};
 
 	}
 
 	void CHV4DIndexProjects::PopulateProjectIndex()
 	{
 		auto query = PQexec(PublicConnection,
-			"SELECT * FROM table_name;");
+			"SELECT * FROM hv4d_table_indexed_project;");
 
-		throw HV4D::HV4D_OPERATION_FAILED{};
+		for (int i = 0; i < PQntuples(query); i++)
+		{
+			std::wstring_convert<std::codecvt_utf8<wchar_t>> UTF8_Converter{};
+
+			Duality137::ProjectIndex index{};
+			index.ValueProjectIndexHVID(UTF8_Converter.from_bytes(PQgetvalue(query, i, 0)));
+			index.ValueProjectIndexMMM(UTF8_Converter.from_bytes(PQgetvalue(query, i, 1)));
+			index.ValueProjectIndexTag(UTF8_Converter.from_bytes(PQgetvalue(query, i, 2)));
+			index.ValueProjectIndexCreated(UTF8_Converter.from_bytes(PQgetvalue(query, i, 3)));
+			index.ValueProjectIndexUpdated(UTF8_Converter.from_bytes(PQgetvalue(query, i, 4)));
+			index.ValueProjectIndexDatabase(UTF8_Converter.from_bytes(PQgetvalue(query, i, 5)));
+			index.ValueProjectIndexAccessLevel(UTF8_Converter.from_bytes(PQgetvalue(query, i, 6)));
+
+			Rows.push_back(index);
+
+		}
 
 	}
 
 	void CHV4DIndexProjects::BreakConnection()
 	{
 
-		throw HV4D::HV4D_OPERATION_FAILED{};
 
 	}
 

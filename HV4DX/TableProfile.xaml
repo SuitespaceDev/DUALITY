@@ -35,7 +35,7 @@
             Label="Build Profile HVID"/>
 
         <local:UserFilterNewMMM 
-            x:Name="ProfileID"
+            x:Name="ProfileMMM"
             Grid.Column="0" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1"
             Label="MMM"/>
