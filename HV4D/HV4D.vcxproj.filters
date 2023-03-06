@@ -172,6 +172,12 @@
     <Filter Include="3. System Iterators\HV4D_T_TYPE\11. HV4DT_TYPE_SESSION">
       <UniqueIdentifier>{9755fc43-c739-4f15-a075-0734ff0a6cff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_COM_SUCCEEDED">
+      <UniqueIdentifier>{99a9b540-5194-4fbf-85b4-a59dacd9c1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Iterators\HV4DRETURN\HV4D_COM_FAILED">
+      <UniqueIdentifier>{7e7e7823-3533-4378-88b6-a23c960c2343}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
@@ -320,6 +326,12 @@
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_POINTER.cpp">
       <Filter>3. System Iterators\HV4DRETURN\HV4D_INVALID_POINTER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_COM_SUCCEEDED.cpp">
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_COM_SUCCEEDED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4D_COM_FAILED.cpp">
+      <Filter>3. System Iterators\HV4DRETURN\HV4D_COM_FAILED</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

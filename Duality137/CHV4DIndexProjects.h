@@ -34,7 +34,7 @@ namespace HV4DDUALITY
 		CHV4DIndexProjects();
 
 	public:
-		HV4D::IHV4DRETURN HV4DIndexProjects(std::vector<std::function<void(WF::IInspectable const&, MUX::RoutedEventArgs const&)>>&);
+		HV4D::IHV4DRETURN HV4DIndexProjects();
 
 	private:
 		void MakeConnection();
@@ -53,8 +53,10 @@ namespace HV4DDUALITY
 
 		HV4D::IHV4DRETURN HV4DGetProjectIndexSize(uint32_t&);
 
+		HV4D::IHV4DRETURN HV4DGetProjectIndex(uint32_t const& i, Duality137::IndexedProject** o);
+
 	private:
-		std::vector<Duality137::ProjectIndex> Rows{};
+		std::vector<Duality137::IndexedProject> Rows{};
 
 	};
 

@@ -190,6 +190,16 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="HV4D_COM_FAILED.h">
+      <DependentUpon>HV4D_COM_FAILED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HV4D_COM_SUCCEEDED.h">
+      <DependentUpon>HV4D_COM_SUCCEEDED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="HV4D_DIR_ALREADY_EXISTS.h">
       <DependentUpon>HV4D_DIR_ALREADY_EXISTS.cpp</DependentUpon>
       <SubType>
@@ -411,6 +421,14 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="HV4D_COM_FAILED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4D_COM_SUCCEEDED.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
       <SubType>
       </SubType>
@@ -614,6 +632,16 @@
     </Midl>
     <Midl Include="HV4D_ALREADY_CONFIGURED.idl">
       <DependentUpon>HV4D_ALREADY_CONFIGURED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_COM_FAILED.idl">
+      <DependentUpon>HV4D_COM_FAILED.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="HV4D_COM_SUCCEEDED.idl">
+      <DependentUpon>HV4D_COM_SUCCEEDED.cpp</DependentUpon>
       <SubType>
       </SubType>
     </Midl>

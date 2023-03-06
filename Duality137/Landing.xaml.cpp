@@ -28,21 +28,47 @@ namespace winrt::Duality137::implementation
 	{
 		IndexProjects();
 
+		PopulateProjectIndex();
+
 		return;
 
 	}
 
 	void Landing::IndexProjects()
 	{
-		ProjectIndex.HV4DIndexProjects(ProjectActivation);
+		auto ret = ProjectIndex.HV4DIndexProjects();
 
-		/*
-		if (ProjectIndex.HV4DIndexProjects(ProjectActivation).HV4DReturnTypeID() != HV4D::HV4D_OPERATION_SUCCEEDED{}.HV4DReturnTypeID())
+		if (ret.HV4DReturnTypeID() != HV4D::HV4D_OPERATION_SUCCEEDED{}.HV4DReturnTypeID())
 		{
 			throw HV4D::HV4D_OPERATION_FAILED{};
 
 		}
-		*/
+
+		return;
+
+	}
+
+	void Landing::PopulateProjectIndex()
+	{
+		uint32_t num{};
+		
+		HV4D::IHV4DRETURN ret = ProjectIndex.HV4DGetProjectIndexSize(num);
+
+		if (ret.HV4DReturnTypeID() != HV4D::HV4D_OPERATION_SUCCEEDED{}.HV4DReturnTypeID())
+		{
+			throw HV4D::HV4D_OPERATION_FAILED{};
+
+		}
+
+		for (uint32_t i = 0; i < num; i++)
+		{
+			Duality137::IndexedProject** Project = new Duality137::IndexedProject*;
+
+			ret = ProjectIndex.HV4DGetProjectIndex(i, Project);
+
+			ListedProjects().Children().Append(**Project);
+
+		}
 
 		return;
 

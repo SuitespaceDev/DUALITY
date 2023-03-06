@@ -1,0 +1,23 @@
+namespace Duality137
+{
+    [default_interface]
+    runtimeclass IndexedProject : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        IndexedProject();
+
+        String ValueIndexedProjectHVID;
+        String ValueIndexedProjectMMM;
+        String ValueIndexedProjectTag;
+        String ValueIndexedProjectCreated;
+        String ValueIndexedProjectUpdated;
+        String ValueIndexedProjectDatabase;
+        String ValueIndexedProjectSchema;
+        String ValueIndexedProjectAccessLevel;
+        String ValueIndexedProjectAdministratorHVID;
+        String ValueIndexedProjectAdministratorTag;
+        void ValueIndexedProjectPermissions(String[] str);
+        String[] ValueIndexedProjectPermissions();
+
+    }
+
+}

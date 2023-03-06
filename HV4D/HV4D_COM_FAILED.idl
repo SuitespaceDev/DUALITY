@@ -1,0 +1,16 @@
+import "IHV4DOBJECT.idl";
+import "IHV4DRETURN.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4D_COM_FAILED : [default] IHV4DOBJECT, IHV4DRETURN
+    {
+        HV4D_COM_FAILED();
+
+        HV4D_COM_FAILED(IHV4DOBJECT sender);
+
+        HV4D_COM_FAILED(IHV4DOBJECT sender, Guid boxed, Object args);
+
+    }
+
+}

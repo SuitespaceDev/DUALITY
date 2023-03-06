@@ -42,6 +42,8 @@ namespace winrt::Duality137::implementation
 	private:
 		void IndexProjects();
 
+		void PopulateProjectIndex();
+
 		HV4DDUALITY::CHV4DIndexProjects ProjectIndex{};
 
 	public:

@@ -40,7 +40,7 @@
       <Filter>1. Project</Filter>
     </ClCompile>
     <ClCompile Include="CHV4DIndexProjects.cpp">
-      <Filter>6. Landing</Filter>
+      <Filter>6. Landing\Project Index</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +112,9 @@
     </Filter>
     <Filter Include="appx:///Resources">
       <UniqueIdentifier>{560551db-e3dd-495a-9240-ce0d5cfd5013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. Landing\Project Index">
+      <UniqueIdentifier>{cc567503-8086-49e5-a849-e29cf3c0a0c9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -331,8 +334,8 @@
     <Page Include="ProjectIndexPage.xaml">
       <Filter>2. Property Pages\k. Projects</Filter>
     </Page>
-    <Page Include="ProjectIndex.xaml">
-      <Filter>6. Landing</Filter>
+    <Page Include="IndexedProject.xaml">
+      <Filter>6. Landing\Project Index</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>

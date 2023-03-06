@@ -175,8 +175,8 @@
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="ProjectIndex.xaml.h">
-      <DependentUpon>ProjectIndex.xaml</DependentUpon>
+    <ClInclude Include="IndexedProject.xaml.h">
+      <DependentUpon>IndexedProject.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="ProjectIndexPage.xaml.h">
@@ -403,8 +403,8 @@
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
-    <ClCompile Include="ProjectIndex.xaml.cpp">
-      <DependentUpon>ProjectIndex.xaml</DependentUpon>
+    <ClCompile Include="IndexedProject.xaml.cpp">
+      <DependentUpon>IndexedProject.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="ProjectIndexPage.xaml.cpp">
@@ -641,8 +641,8 @@
       <DependentUpon>ProcessorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="ProjectIndex.idl">
-      <DependentUpon>ProjectIndex.xaml</DependentUpon>
+    <Midl Include="IndexedProject.idl">
+      <DependentUpon>IndexedProject.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="ProjectIndexPage.idl">
@@ -844,7 +844,7 @@
     <Page Include="ProcessorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ProjectIndex.xaml">
+    <Page Include="IndexedProject.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ProjectIndexPage.xaml">
