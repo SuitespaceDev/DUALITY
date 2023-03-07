@@ -62,11 +62,11 @@ namespace winrt::Duality137::implementation
 
 		for (uint32_t i = 0; i < num; i++)
 		{
-			Duality137::IndexedProject** Project = new Duality137::IndexedProject*;
+			Duality137::IndexedProject Project{};
 
 			ret = ProjectIndex.HV4DGetProjectIndex(i, Project);
 
-			ListedProjects().Children().Append(**Project);
+			ListedProjects().Children().Append(Project);
 
 		}
 

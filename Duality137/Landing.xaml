@@ -39,14 +39,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ScrollViewer 
-            Background="Black"
+        <Rectangle
+            Fill="Black"
             Opacity="0.05"
+            Grid.Column="1" Grid.ColumnSpan="1" 
+            Grid.Row="1" Grid.RowSpan="1"/>
+        
+        <ScrollViewer 
             FlowDirection="LeftToRight"
+            HorizontalAlignment="Stretch"
             Grid.Column="1" Grid.ColumnSpan="1" 
             Grid.Row="1" Grid.RowSpan="1">
 
-            <StackPanel x:Name="ListedProjects"/>
+            <StackPanel 
+                x:Name="ListedProjects"
+                HorizontalAlignment="Stretch"/>
 
         </ScrollViewer>
 

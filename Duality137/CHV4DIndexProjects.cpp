@@ -106,7 +106,26 @@ namespace HV4DDUALITY
 			index.ValueIndexedProjectCreated(winrt::to_hstring(PQgetvalue(query, i, 3)));
 			index.ValueIndexedProjectUpdated(winrt::to_hstring(PQgetvalue(query, i, 4)));
 			index.ValueIndexedProjectDatabase(winrt::to_hstring(PQgetvalue(query, i, 5)));
-			index.ValueIndexedProjectAccessLevel(winrt::to_hstring(PQgetvalue(query, i, 6)));
+			index.ValueIndexedProjectSchema(winrt::to_hstring(PQgetvalue(query, i, 6)));
+			index.ValueIndexedProjectAccessLevel(winrt::to_hstring(PQgetvalue(query, i, 7)));
+			index.ValueIndexedProjectAdministratorHVID(winrt::to_hstring(PQgetvalue(query, i, 8)));
+			index.ValueIndexedProjectAdministratorTag(winrt::to_hstring(PQgetvalue(query, i, 9)));
+
+			char* PermissionList = PQgetvalue(query, i, 10);
+
+			std::vector<winrt::hstring> IndexedPermissions{};
+
+			std::stringstream data_stream{PermissionList};
+			
+			std::string Permission;
+			
+			while (std::getline(data_stream, Permission, ','))
+			{
+				IndexedPermissions.push_back(winrt::to_hstring(Permission));
+			
+			}
+
+			index.ValueIndexedProjectPermissions(IndexedPermissions);
 
 			Rows.push_back(index);
 
@@ -138,9 +157,9 @@ namespace HV4DDUALITY
 
 	}
 
-	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DGetProjectIndex(uint32_t const& i, Duality137::IndexedProject** o)
+	HV4D::IHV4DRETURN CHV4DIndexProjects::HV4DGetProjectIndex(uint32_t const& i, Duality137::IndexedProject& o)
 	{
-		*o = &Rows.at(i);
+		o = Rows.at(i);
 
 		return HV4D::HV4D_OPERATION_SUCCEEDED{};
 

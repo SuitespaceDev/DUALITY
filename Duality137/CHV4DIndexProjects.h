@@ -6,6 +6,9 @@
 #include <locale>
 #include <codecvt>
 
+#include <iostream>
+#include <sstream>
+
 #include <vector>
 
 #include <libpq-fe.h>
@@ -53,7 +56,7 @@ namespace HV4DDUALITY
 
 		HV4D::IHV4DRETURN HV4DGetProjectIndexSize(uint32_t&);
 
-		HV4D::IHV4DRETURN HV4DGetProjectIndex(uint32_t const& i, Duality137::IndexedProject** o);
+		HV4D::IHV4DRETURN HV4DGetProjectIndex(uint32_t const& i, Duality137::IndexedProject& o);
 
 	private:
 		std::vector<Duality137::IndexedProject> Rows{};
