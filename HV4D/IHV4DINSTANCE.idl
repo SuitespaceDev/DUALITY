@@ -1,0 +1,15 @@
+namespace HV4D
+{
+    [uuid("9769D5C6-5019-4C7C-B0EF-7DA9CC15993A")]
+    [version(0x10000001)]
+    interface IHV4DINSTANCE
+    {
+        Guid HV4DUuidOfInstance();
+
+        UInt64 HV4DCreatedDateTime();
+
+        UInt64 HV4DUpdatedDateTime();
+
+    }
+
+}

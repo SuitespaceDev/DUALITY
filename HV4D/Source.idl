@@ -1,0 +1,70 @@
+I like this pattern.The TType and Return(equivalent to std::exception) system libraries are already defined, I just need to rework them based on this adjusted pattern.From here I will create some 50 system interfaces and add all this shit into PostgreSQL.
+
+namespace HV4D
+{
+    [uuid("CD7DFCE5-3208-424A-8498-3D96E011821A")]
+    [version(0x10000001)]
+    interface IHV4DCOBJECT
+    {
+    http://Windows.Foundation.Collections.IVector<HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
+
+    }
+
+    [uuid("9769D5C6-5019-4C7C-B0EF-7DA9CC15993A")]
+    [version(0x10000001)]
+    interface IHV4DINSTANCE
+    {
+        Guid HV4DUuidOfInstance();
+
+        UInt64 HV4DCreatedDateTime();
+
+        UInt64 HV4DUpdatedDateTime();
+
+    }
+
+    [uuid("35BB4645-E9B1-4062-BCB4-F1E3FF7E94F8")]
+    [version(0x10000001)]
+    interface IHV4DTTYPE
+    {
+        Guid HV4DTTypeUid();
+
+        UInt64 HV4DTTypeID();
+
+        String HV4DTTypeName();
+
+    };
+
+    [uuid("D3E028DF-4C5A-4658-B4E1-124FE0E221F2")]
+    [version(0x10000001)]
+    interface IHV4DAGGREGATE
+    {
+
+    }
+
+    [uuid("1079A24A-3B39-429D-88D8-57D1431DF0A9")]
+    [version(0x10000001)]
+    interface IHV4DEXTARGS
+    {
+        IHV4DCOBJECT HV4DSender;
+
+        Guid HV4DExtendedArgsType;
+
+        Object HV4DExtendedArgs;
+
+        String HV4DComments;
+
+    }
+
+    [uuid("639FB8D2-1E34-4240-9FEE-9F030B5D15B5")]
+    [version(0x10000001)]
+    interface IHV4DRETURN
+    {
+        Guid HV4DReturnTypeUid();
+
+        UInt64 HV4DReturnTypeID();
+
+        String HV4DReturnTypeName();
+
+    };
+
+}

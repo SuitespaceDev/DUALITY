@@ -4,6 +4,8 @@
 #include "IndexedProject.g.cpp"
 #endif
 
+#include "winrt/PeregrineX12.h"
+
 namespace winrt::Duality137::implementation
 {
     IndexedProject::IndexedProject()
@@ -173,10 +175,37 @@ namespace winrt::Duality137::implementation
 
     void IndexedProject::Bootstrap(WF::IInspectable const&, MUX::RoutedEventArgs const&)
     {
-    
-    
-    
-    
+        int32_t ret = 0;
+
+        void* dllHandle = WINRT_IMPL_LoadLibraryW(L"C:\\Users\\rebek\\source\\DUALITY\\x64\\Debug\\PeregrineX12\\PeregrineX12.dll");
+
+        if (!dllHandle) throw;
+
+        void* pProc = WINRT_IMPL_GetProcAddress(dllHandle, "DllGetActivationFactory");
+        auto DllGetActivationFactory = reinterpret_cast<int32_t(__stdcall*)(void* classId, void** factory)>(pProc);
+
+        static const WCHAR* cname = L"PeregrineX12.HV4DWorkspace";
+        const size_t cnamelen = wcslen(cname);
+
+        HSTRING hcname = NULL;
+        HSTRING_HEADER project;
+        HRESULT hr = WindowsCreateStringReference(cname, cnamelen, &project, &hcname);
+
+        com_ptr< winrt::impl::abi_t<winrt::Windows::Foundation::IActivationFactory> > oCOMActivationFactory{ nullptr };
+        ret = (*DllGetActivationFactory)(&project, oCOMActivationFactory.put_void());
+
+        com_ptr< winrt::impl::abi_t<winrt::Windows::Foundation::IUnknown> > iObj{ nullptr };
+        ret = oCOMActivationFactory.get()->ActivateInstance(iObj.put_void());
+
+        winrt::Windows::Foundation::IUnknown oApplication{ nullptr };
+        winrt::copy_from_abi(oApplication, iObj.get());
+
+        oApplication.as<winrt::PeregrineX12::HV4DWorkspace>().HV4DCreateWindow();
+
+        oCOMActivationFactory.detach();
+
+        WindowsDeleteString(hcname);
+            
     }
 
 }

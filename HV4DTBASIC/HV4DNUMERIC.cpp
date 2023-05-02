@@ -18,7 +18,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4DNUMERIC::HV4DNUMERIC(HV4D::IHV4DOBJECT const& sender)
+	HV4DNUMERIC::HV4DNUMERIC(HV4D::IHV4DCOBJECT const& sender)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -32,7 +32,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	HV4DNUMERIC::HV4DNUMERIC(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
+	HV4DNUMERIC::HV4DNUMERIC(HV4D::IHV4DCOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -138,7 +138,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	};
 
-	HV4D::IHV4DOBJECT HV4DNUMERIC::HV4DSender()
+	HV4D::IHV4DCOBJECT HV4DNUMERIC::HV4DSender()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -146,7 +146,7 @@ namespace winrt::HV4DTBASIC::implementation
 
 	}
 
-	void HV4DNUMERIC::HV4DSender(HV4D::IHV4DOBJECT const& e)
+	void HV4DNUMERIC::HV4DSender(HV4D::IHV4DCOBJECT const& e)
 	{
 		HV4DSetUpdatedDateTime();
 

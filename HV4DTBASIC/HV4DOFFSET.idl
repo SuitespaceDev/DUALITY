@@ -2,13 +2,13 @@ import "HV4DNUMERIC.idl";
 
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DOFFSET : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    runtimeclass HV4DOFFSET : [default] HV4D.IHV4DCOBJECT, HV4D.IHV4DTTYPE
     {
 		HV4DOFFSET();
 
-		HV4DOFFSET(HV4D.IHV4DOBJECT sender);
+		HV4DOFFSET(HV4D.IHV4DCOBJECT sender);
 
-		HV4DOFFSET(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
+		HV4DOFFSET(HV4D.IHV4DCOBJECT sender, Guid boxed, Object args);
 
 		HV4D.IHV4DRETURN HV4DOFFSETFromHstring(String off, String sz);
 

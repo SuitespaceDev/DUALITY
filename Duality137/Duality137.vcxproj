@@ -137,6 +137,22 @@
       <DependentUpon>CHV4DIndexProjects.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClCompile Include="CHV4DKernelSpace.ixx">
+      <FileType>Document</FileType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DProcessBridge.ixx">
+      <FileType>Document</FileType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DSoftDiskBridge.ixx">
+      <FileType>Document</FileType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DUserSpace.ixx">
+      <FileType>Document</FileType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClInclude Include="DataBindingPage.xaml.h">
       <DependentUpon>DataBindingPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -361,9 +377,45 @@
     <ClCompile Include="BlankProject.xaml.cpp">
       <DependentUpon>BlankProject.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="CHV4DAssetBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DAssetBridge.ixx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DDebugBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DDebugBridge.ixx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="CHV4DIndexProjects.cpp">
       <SubType>
       </SubType>
+    </ClCompile>
+    <ClCompile Include="CHV4DKernelSpace.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DMachineStateBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DMachineStateBridge.ixx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DMetricBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DMetricBridge.ixx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DProcessBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DSoftDiskBridge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CHV4DUserSpace.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="DataBindingPage.xaml.cpp">
       <DependentUpon>DataBindingPage.xaml</DependentUpon>
@@ -933,6 +985,9 @@
     </ProjectReference>
     <ProjectReference Include="..\HV4D\HV4D.vcxproj">
       <Project>{a4ed9b82-b439-4a9e-a0b4-b2748ee39ab2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PeregrineX12\PeregrineX12.vcxproj">
+      <Project>{41946976-b2ad-4bae-8953-cca6c99b93bb}</Project>
     </ProjectReference>
   </ItemGroup>
   <!-- 

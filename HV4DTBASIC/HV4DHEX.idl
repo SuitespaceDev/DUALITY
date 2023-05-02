@@ -1,12 +1,12 @@
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DHEX : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    runtimeclass HV4DHEX : [default] HV4D.IHV4DCOBJECT, HV4D.IHV4DTTYPE
     {
 		HV4DHEX();
 
-		HV4DHEX(HV4D.IHV4DOBJECT sender);
+		HV4DHEX(HV4D.IHV4DCOBJECT sender);
 
-		HV4DHEX(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
+		HV4DHEX(HV4D.IHV4DCOBJECT sender, Guid boxed, Object args);
 
 		HV4D.IHV4DRETURN HV4DHEXFromHstring(String n);
 

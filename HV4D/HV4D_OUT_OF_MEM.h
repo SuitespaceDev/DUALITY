@@ -17,9 +17,9 @@ namespace winrt::HV4D::implementation
 	public:
 		HV4D_OUT_OF_MEM();
 
-		HV4D_OUT_OF_MEM(HV4D::IHV4DOBJECT const&);
+		HV4D_OUT_OF_MEM(HV4D::IHV4DCOBJECT const&);
 
-		HV4D_OUT_OF_MEM(HV4D::IHV4DOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+		HV4D_OUT_OF_MEM(HV4D::IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
 
 	public:
 		virtual winrt::guid HV4DUuidOfInstance();
@@ -55,12 +55,12 @@ namespace winrt::HV4D::implementation
 		virtual HV4D::IHV4DTTYPE HV4DGetTType();
 
 	public:
-		virtual HV4D::IHV4DOBJECT HV4DSender();
+		virtual HV4D::IHV4DCOBJECT HV4DSender();
 
-		virtual void HV4DSender(HV4D::IHV4DOBJECT const&);
+		virtual void HV4DSender(HV4D::IHV4DCOBJECT const&);
 
 	private:
-		HV4D::IHV4DOBJECT owner_handle{};
+		HV4D::IHV4DCOBJECT owner_handle{};
 
 	public:
 		virtual winrt::guid HV4DReturnTypeUid();

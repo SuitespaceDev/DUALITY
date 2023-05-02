@@ -1,0 +1,13 @@
+import "IHV4DTTYPE.idl";
+
+namespace HV4D
+{
+    [uuid("7AEEAE86-9EB7-4D05-ABEC-C185BA2DCCE1")]
+    [version(0x10000001)]
+    interface IHV4DFUNCTION : HV4D.IHV4DTTYPE
+    {
+
+
+    }
+
+}

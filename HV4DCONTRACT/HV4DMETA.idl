@@ -1,0 +1,13 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DMETA : [default] HV4D.IHV4DCOBJECT, IHV4DTTYPE
+    {
+        HV4DMETA();
+        
+        HV4DMETA(HV4D.IHV4DCOBJECT const&);
+                
+        HV4DMETA(HV4D.IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+        
+    }
+
+}

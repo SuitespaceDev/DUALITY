@@ -18,7 +18,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4D_ALREADY_CONFIGURED::HV4D_ALREADY_CONFIGURED(HV4D::IHV4DOBJECT const& sender)
+	HV4D_ALREADY_CONFIGURED::HV4D_ALREADY_CONFIGURED(HV4D::IHV4DCOBJECT const& sender)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -32,7 +32,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	HV4D_ALREADY_CONFIGURED::HV4D_ALREADY_CONFIGURED(HV4D::IHV4DOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
+	HV4D_ALREADY_CONFIGURED::HV4D_ALREADY_CONFIGURED(HV4D::IHV4DCOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
 	{
 		HV4DListSupportedInterfaces();
 
@@ -137,7 +137,7 @@ namespace winrt::HV4D::implementation
 
 	};
 
-	HV4D::IHV4DOBJECT HV4D_ALREADY_CONFIGURED::HV4DSender()
+	HV4D::IHV4DCOBJECT HV4D_ALREADY_CONFIGURED::HV4DSender()
 	{
 		HV4DSetUpdatedDateTime();
 
@@ -145,7 +145,7 @@ namespace winrt::HV4D::implementation
 
 	}
 
-	void HV4D_ALREADY_CONFIGURED::HV4DSender(HV4D::IHV4DOBJECT const& e)
+	void HV4D_ALREADY_CONFIGURED::HV4DSender(HV4D::IHV4DCOBJECT const& e)
 	{
 		HV4DSetUpdatedDateTime();
 

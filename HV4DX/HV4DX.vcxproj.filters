@@ -1,59 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="a. Project">
+    <Filter Include="TableEvents">
+      <UniqueIdentifier>{36bfecba-9f97-420f-9ecc-4264fea3ba6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0. Project">
       <UniqueIdentifier>{5e46b651-33ef-4571-96ca-9c090cbefcb9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="b. Resource Dictionary">
+    <Filter Include="1. Resource Dictionary">
       <UniqueIdentifier>{8505de51-f183-4235-b990-85990c0ae7e3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters">
+    <Filter Include="2. Table">
+      <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Account">
+      <UniqueIdentifier>{7a49449a-2eb2-44c2-8ced-20357583b712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Hardware">
+      <UniqueIdentifier>{afc0cfcf-2447-4cd8-8c8e-6c7c5a9c4090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Pipeline">
+      <UniqueIdentifier>{d1461ebe-d34e-46b2-8830-349dbd74920c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Process">
+      <UniqueIdentifier>{aaa983df-cd6c-42dd-83c4-34e4afde4c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Runtime">
+      <UniqueIdentifier>{6ff2df24-e3fb-4330-bb5e-0af209c507ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Library">
+      <UniqueIdentifier>{c65a2c6f-1381-4ce0-ac62-8dec03c96260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\UX">
+      <UniqueIdentifier>{7b4e57cc-aa5d-420b-a0b7-c6fe410d8f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Connection">
+      <UniqueIdentifier>{6c427af0-869e-4431-8c91-d4a141c82492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Table\Project">
+      <UniqueIdentifier>{79b53f3b-c44f-4ddb-91fa-72b03bc09536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls">
+      <UniqueIdentifier>{aff67e26-8f94-410e-ab46-539a08422456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserFilters">
       <UniqueIdentifier>{9262fe98-6358-4091-b13f-93be4974388f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterMMM">
+    <Filter Include="3. Controls\UserFilters\UserFilterMMM">
       <UniqueIdentifier>{b1559ad7-2650-4797-8024-d9d0add2dc03}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterTime">
+    <Filter Include="3. Controls\UserFilters\UserFilterTime">
       <UniqueIdentifier>{96b05608-7dce-4c2c-a833-b5534e690887}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString">
-      <UniqueIdentifier>{87e48342-7245-4a9f-877c-6ea5d1ce85b4}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterItem">
+      <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserIPv4">
-      <UniqueIdentifier>{62be1f72-dd29-4933-81b3-d8819fc4dbd8}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterType">
+      <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserIPv6">
-      <UniqueIdentifier>{57f21a05-42ba-454f-b8a9-33c5152f958e}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterNewMMM">
+      <UniqueIdentifier>{3768c642-5273-4e04-852a-e7ed8e8dc6ce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserEntry">
-      <UniqueIdentifier>{ac9fa5cf-836c-4a07-8e44-0cee3ef8039c}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterNewHVID">
+      <UniqueIdentifier>{b348e635-20c7-4891-b6e4-9da9176efafe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserBlock">
-      <UniqueIdentifier>{b210b23d-1f7f-4937-b04a-7f8f98cde924}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterGoToHVID">
+      <UniqueIdentifier>{d9792923-df0d-4f17-9726-bf0e20aedba7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserFile">
-      <UniqueIdentifier>{a093ec54-e3ab-48b5-9a51-e2d65b62f9bd}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterNewItem">
+      <UniqueIdentifier>{51b06ed0-2a8a-4e5c-bfd6-5a10ea2a493f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserPassword">
-      <UniqueIdentifier>{6f8762dc-8ad4-476c-b7b1-41528fe1d952}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserDivider">
-      <UniqueIdentifier>{f3073de4-47a3-424d-aa90-91364accb335}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserDate">
-      <UniqueIdentifier>{29ab4920-360d-4508-ac6a-b317ee5b9ab7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserTime">
-      <UniqueIdentifier>{3a44c9fe-2ed5-477e-9b72-e18404723b54}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserDateTime">
-      <UniqueIdentifier>{5428baff-a4d2-48d6-b517-9786c5bf58d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserMMM">
-      <UniqueIdentifier>{3819cdcf-0738-4594-97be-c164bb369b03}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserNumeric">
-      <UniqueIdentifier>{1151e466-e5e7-45a2-8df5-a9862df558d6}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserFilters\UserFilterHVID">
+      <UniqueIdentifier>{32f207d6-fc8a-42b3-9e0b-4a8769a98f28}</UniqueIdentifier>
     </Filter>
     <Filter Include="UserEvent">
       <UniqueIdentifier>{eb2ee1a9-920a-4372-931f-c973621f9626}</UniqueIdentifier>
@@ -61,95 +79,80 @@
     <Filter Include="UserEvent\UserEventDebug">
       <UniqueIdentifier>{842f18b3-6aaf-4693-8fb8-06b4ff2319ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="TableEvents">
-      <UniqueIdentifier>{36bfecba-9f97-420f-9ecc-4264fea3ba6c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UserEvent\UserEventKeyboard">
       <UniqueIdentifier>{8dceb4d0-899d-4d9c-b3d5-cc040c7cc6ba}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterItem">
-      <UniqueIdentifier>{bf871ee5-bc99-4ba8-84b6-25b61e76e4c7}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserString">
+      <UniqueIdentifier>{87e48342-7245-4a9f-877c-6ea5d1ce85b4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterType">
-      <UniqueIdentifier>{bf0c940e-24af-4a5b-b15f-cfe87cf308f4}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserString\UserIPv4">
+      <UniqueIdentifier>{62be1f72-dd29-4933-81b3-d8819fc4dbd8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterNewMMM">
-      <UniqueIdentifier>{3768c642-5273-4e04-852a-e7ed8e8dc6ce}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserString\UserIPv6">
+      <UniqueIdentifier>{57f21a05-42ba-454f-b8a9-33c5152f958e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterNewHVID">
-      <UniqueIdentifier>{b348e635-20c7-4891-b6e4-9da9176efafe}</UniqueIdentifier>
+    <Filter Include="3. Controls\UserString\UserEntry">
+      <UniqueIdentifier>{ac9fa5cf-836c-4a07-8e44-0cee3ef8039c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserHVID">
+    <Filter Include="3. Controls\UserString\UserBlock">
+      <UniqueIdentifier>{b210b23d-1f7f-4937-b04a-7f8f98cde924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserFile">
+      <UniqueIdentifier>{a093ec54-e3ab-48b5-9a51-e2d65b62f9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserPassword">
+      <UniqueIdentifier>{6f8762dc-8ad4-476c-b7b1-41528fe1d952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserDivider">
+      <UniqueIdentifier>{f3073de4-47a3-424d-aa90-91364accb335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserDate">
+      <UniqueIdentifier>{29ab4920-360d-4508-ac6a-b317ee5b9ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserTime">
+      <UniqueIdentifier>{3a44c9fe-2ed5-477e-9b72-e18404723b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserDateTime">
+      <UniqueIdentifier>{5428baff-a4d2-48d6-b517-9786c5bf58d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserMMM">
+      <UniqueIdentifier>{3819cdcf-0738-4594-97be-c164bb369b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserNumeric">
+      <UniqueIdentifier>{1151e466-e5e7-45a2-8df5-a9862df558d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Controls\UserString\UserHVID">
       <UniqueIdentifier>{3ea9ad0e-1743-4f93-bd9d-304998cecb9f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserFilters\UserFilterGoToHVID">
-      <UniqueIdentifier>{d9792923-df0d-4f17-9726-bf0e20aedba7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserGoToHVID">
+    <Filter Include="3. Controls\UserString\UserGoToHVID">
       <UniqueIdentifier>{50f4d371-699d-4c9d-92f9-84993af02250}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UserString\UserGoToFile">
+    <Filter Include="3. Controls\UserString\UserGoToFile">
       <UniqueIdentifier>{e0116954-1ab5-4cc6-9a46-16d578926fcb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="b. Table">
-      <UniqueIdentifier>{bd237bf2-ca99-4a2f-b472-b10700e0e46c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Account">
-      <UniqueIdentifier>{7a49449a-2eb2-44c2-8ced-20357583b712}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Hardware">
-      <UniqueIdentifier>{afc0cfcf-2447-4cd8-8c8e-6c7c5a9c4090}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Pipeline">
-      <UniqueIdentifier>{d1461ebe-d34e-46b2-8830-349dbd74920c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Process">
-      <UniqueIdentifier>{aaa983df-cd6c-42dd-83c4-34e4afde4c8c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Runtime">
-      <UniqueIdentifier>{6ff2df24-e3fb-4330-bb5e-0af209c507ea}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Library">
-      <UniqueIdentifier>{c65a2c6f-1381-4ce0-ac62-8dec03c96260}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\UX">
-      <UniqueIdentifier>{7b4e57cc-aa5d-420b-a0b7-c6fe410d8f84}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Connection">
-      <UniqueIdentifier>{6c427af0-869e-4431-8c91-d4a141c82492}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserFilters\UserFilterNewItem">
-      <UniqueIdentifier>{51b06ed0-2a8a-4e5c-bfd6-5a10ea2a493f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserFilters\UserFilterHVID">
-      <UniqueIdentifier>{32f207d6-fc8a-42b3-9e0b-4a8769a98f28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UserString\UserGoTo">
+    <Filter Include="3. Controls\UserString\UserGoTo">
       <UniqueIdentifier>{b6dd9a30-c294-4bea-bb47-2f9e4c701262}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="b. Table\Project">
-      <UniqueIdentifier>{79b53f3b-c44f-4ddb-91fa-72b03bc09536}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4DX.def">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
     <None Include="packages.config">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -163,216 +166,216 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="UserFilterItem.xaml">
-      <Filter>UserFilters\UserFilterItem</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterItem</Filter>
     </Page>
     <Page Include="UserDivider.xaml">
-      <Filter>UserString\UserDivider</Filter>
+      <Filter>3. Controls\UserString\UserDivider</Filter>
     </Page>
     <Page Include="UserEntry.xaml">
-      <Filter>UserString\UserEntry</Filter>
+      <Filter>3. Controls\UserString\UserEntry</Filter>
     </Page>
     <Page Include="UserFile.xaml">
-      <Filter>UserString\UserFile</Filter>
+      <Filter>3. Controls\UserString\UserFile</Filter>
     </Page>
     <Page Include="UserFilterNewHVID.xaml">
-      <Filter>UserFilters\UserFilterNewHVID</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterNewHVID</Filter>
     </Page>
     <Page Include="UserFilterTime.xaml">
-      <Filter>UserFilters\UserFilterTime</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterTime</Filter>
     </Page>
     <Page Include="UserFilterType.xaml">
-      <Filter>UserFilters\UserFilterType</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterType</Filter>
     </Page>
     <Page Include="UserPassword.xaml">
-      <Filter>UserString\UserPassword</Filter>
+      <Filter>3. Controls\UserString\UserPassword</Filter>
     </Page>
     <Page Include="UserBlock.xaml">
-      <Filter>UserString\UserBlock</Filter>
+      <Filter>3. Controls\UserString\UserBlock</Filter>
     </Page>
     <Page Include="UserIPv4.xaml">
-      <Filter>UserString\UserIPv4</Filter>
+      <Filter>3. Controls\UserString\UserIPv4</Filter>
     </Page>
     <Page Include="UserIPv6.xaml">
-      <Filter>UserString\UserIPv6</Filter>
+      <Filter>3. Controls\UserString\UserIPv6</Filter>
     </Page>
     <Page Include="HV4DX.xaml">
-      <Filter>b. Resource Dictionary</Filter>
+      <Filter>1. Resource Dictionary</Filter>
     </Page>
     <Page Include="UserMMM.xaml">
-      <Filter>UserString\UserMMM</Filter>
+      <Filter>3. Controls\UserString\UserMMM</Filter>
     </Page>
     <Page Include="HV4DXDIM.xaml">
-      <Filter>b. Resource Dictionary</Filter>
+      <Filter>1. Resource Dictionary</Filter>
     </Page>
     <Page Include="UserDate.xaml">
-      <Filter>UserString\UserDate</Filter>
+      <Filter>3. Controls\UserString\UserDate</Filter>
     </Page>
     <Page Include="UserDateTime.xaml">
-      <Filter>UserString\UserDateTime</Filter>
+      <Filter>3. Controls\UserString\UserDateTime</Filter>
     </Page>
     <Page Include="UserNumeric.xaml">
-      <Filter>UserString\UserNumeric</Filter>
+      <Filter>3. Controls\UserString\UserNumeric</Filter>
     </Page>
     <Page Include="UserTime.xaml">
-      <Filter>UserString\UserTime</Filter>
+      <Filter>3. Controls\UserString\UserTime</Filter>
     </Page>
     <Page Include="TableDescription.xaml">
-      <Filter>b. Table</Filter>
+      <Filter>2. Table</Filter>
     </Page>
     <Page Include="UserFilterGoToHVID.xaml">
-      <Filter>UserFilters\UserFilterGoToHVID</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterGoToHVID</Filter>
     </Page>
     <Page Include="UserFilterNewMMM.xaml">
-      <Filter>UserFilters\UserFilterNewMMM</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterNewMMM</Filter>
     </Page>
     <Page Include="UserFilterMMM.xaml">
-      <Filter>UserFilters\UserFilterMMM</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterMMM</Filter>
     </Page>
     <Page Include="UserGoToHVID.xaml">
-      <Filter>UserString\UserGoToHVID</Filter>
+      <Filter>3. Controls\UserString\UserGoToHVID</Filter>
     </Page>
     <Page Include="UserGoToFile.xaml">
-      <Filter>UserString\UserGoToFile</Filter>
+      <Filter>3. Controls\UserString\UserGoToFile</Filter>
     </Page>
     <Page Include="UserHVID.xaml">
-      <Filter>UserString\UserHVID</Filter>
+      <Filter>3. Controls\UserString\UserHVID</Filter>
     </Page>
     <Page Include="TableAccount.xaml">
-      <Filter>b. Table\Account</Filter>
+      <Filter>2. Table\Account</Filter>
     </Page>
     <Page Include="TableContact.xaml">
-      <Filter>b. Table\Account</Filter>
+      <Filter>2. Table\Account</Filter>
     </Page>
     <Page Include="TableEnterprise.xaml">
-      <Filter>b. Table\Account</Filter>
+      <Filter>2. Table\Account</Filter>
     </Page>
     <Page Include="TableAccelerator.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TableDevice.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TableHardware.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TableMemory.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TableProcessor.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TablePostProcessing.xaml">
-      <Filter>b. Table\Pipeline</Filter>
+      <Filter>2. Table\Pipeline</Filter>
     </Page>
     <Page Include="TablePreProcessing.xaml">
-      <Filter>b. Table\Pipeline</Filter>
+      <Filter>2. Table\Pipeline</Filter>
     </Page>
     <Page Include="TableTopology.xaml">
-      <Filter>b. Table\Pipeline</Filter>
+      <Filter>2. Table\Pipeline</Filter>
     </Page>
     <Page Include="TableBitmap.xaml">
-      <Filter>b. Table\Pipeline</Filter>
+      <Filter>2. Table\Pipeline</Filter>
     </Page>
     <Page Include="TableShell.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableRPC.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableApplication.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableAsync.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableComputeKernel.xaml">
-      <Filter>b. Table\Pipeline</Filter>
+      <Filter>2. Table\Pipeline</Filter>
     </Page>
     <Page Include="TablePipe.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableProfile.xaml">
-      <Filter>b. Table\Account</Filter>
+      <Filter>2. Table\Account</Filter>
     </Page>
     <Page Include="TableContract.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableDictionary.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableEvent.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableFunction.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableIterator.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableParameter.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableSharedMemory.xaml">
-      <Filter>b. Table\Process</Filter>
+      <Filter>2. Table\Process</Filter>
     </Page>
     <Page Include="TableStorage.xaml">
-      <Filter>b. Table\Hardware</Filter>
+      <Filter>2. Table\Hardware</Filter>
     </Page>
     <Page Include="TableSoftDrive.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableSoftPartition.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableWindow.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableXamlFile.xaml">
-      <Filter>b. Table\UX</Filter>
+      <Filter>2. Table\UX</Filter>
     </Page>
     <Page Include="TableGroupPolicy.xaml">
-      <Filter>b. Table\Account</Filter>
+      <Filter>2. Table\Account</Filter>
     </Page>
     <Page Include="TableDebug.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableMetric.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TablePrompt.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableConnectionPostgres.xaml">
-      <Filter>b. Table\Connection</Filter>
+      <Filter>2. Table\Connection</Filter>
     </Page>
     <Page Include="TableBindingPolicy.xaml">
-      <Filter>b. Table\Runtime</Filter>
+      <Filter>2. Table\Runtime</Filter>
     </Page>
     <Page Include="TableService.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableFunctionParameter.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="TableContractMember.xaml">
-      <Filter>b. Table\Library</Filter>
+      <Filter>2. Table\Library</Filter>
     </Page>
     <Page Include="UserFilterNewItem.xaml">
-      <Filter>UserFilters\UserFilterNewItem</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterNewItem</Filter>
     </Page>
     <Page Include="UserFilterHVID.xaml">
-      <Filter>UserFilters\UserFilterHVID</Filter>
+      <Filter>3. Controls\UserFilters\UserFilterHVID</Filter>
     </Page>
     <Page Include="UserGoTo.xaml">
-      <Filter>UserString\UserGoTo</Filter>
+      <Filter>3. Controls\UserString\UserGoTo</Filter>
     </Page>
     <Page Include="TableProjectIndex.xaml">
-      <Filter>b. Table\Project</Filter>
+      <Filter>2. Table\Project</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
-      <Filter>a. Project</Filter>
+      <Filter>0. Project</Filter>
     </Natvis>
   </ItemGroup>
 </Project>

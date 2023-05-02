@@ -1,0 +1,19 @@
+import "IHV4DOBJECT.idl";
+
+namespace HV4D
+{
+    [uuid("1079A24A-3B39-429D-88D8-57D1431DF0A9")]
+    [version(0x10000001)]
+    interface IHV4DEXTARGS
+    {
+        IHV4DCOBJECT HV4DSender;
+
+        Guid HV4DExtendedArgsType;
+
+        Object HV4DExtendedArgs;
+
+        String HV4DComments;
+
+    }
+
+}

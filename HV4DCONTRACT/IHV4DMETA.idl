@@ -1,0 +1,12 @@
+namespace HV4DCONTRACT
+{
+    [uuid("")]
+    [version(0x10000001)]
+    interface HV4DMETA
+    {
+
+
+
+    }
+
+}

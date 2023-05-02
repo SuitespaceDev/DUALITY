@@ -131,14 +131,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="HV4DCAM.h">
+      <DependentUpon>HV4DCAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DMESH.h">
+      <DependentUpon>HV4DMESH.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DMETA.h">
+      <DependentUpon>HV4DMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DPIPELINE.h">
+      <DependentUpon>HV4DPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="HV4DSERVICE.h">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSHADER.h">
+      <DependentUpon>HV4DSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DSUBJECT.h">
+      <DependentUpon>HV4DSUBJECT.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HV4DCAM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DMESH.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DMETA.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DPIPELINE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4DSERVICE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSHADER.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DSUBJECT.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -148,7 +196,7 @@
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="HV4DABI.def" />
+    <None Include="HV4DCONTRACT.def" />
     <None Include="packages.config" />
     <None Include="PropertySheet.props" />
   </ItemGroup>
@@ -159,8 +207,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="HV4DCAM.idl">
+      <DependentUpon>HV4DCAM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DMESH.idl">
+      <DependentUpon>HV4DMESH.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DMETA.idl">
+      <DependentUpon>HV4DMETA.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DPIPELINE.idl">
+      <DependentUpon>HV4DPIPELINE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="HV4DSERVICE.idl">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSHADER.idl">
+      <DependentUpon>HV4DSHADER.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DSUBJECT.idl">
+      <DependentUpon>HV4DSUBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DCAM.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DMESH.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DMETA.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DPIPELINE.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DSHADER.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DSUBJECT.idl">
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>

@@ -1,16 +1,16 @@
-import "IHV4DOBJECT.idl";
+import "IHV4DCOBJECT.idl";
 import "IHV4DRETURN.idl";
 
 namespace HV4D
 {
     [default_interface]
-    runtimeclass HV4D_NOT_SYSTEM_MODULE : [default] IHV4DOBJECT, IHV4DRETURN
+    runtimeclass HV4D_NOT_SYSTEM_MODULE : [default] IHV4DCOBJECT, IHV4DRETURN
     {
         HV4D_NOT_SYSTEM_MODULE();
 
-        HV4D_NOT_SYSTEM_MODULE(IHV4DOBJECT sender);
+        HV4D_NOT_SYSTEM_MODULE(IHV4DCOBJECT sender);
 
-        HV4D_NOT_SYSTEM_MODULE(IHV4DOBJECT sender, Guid boxed, Object args);
+        HV4D_NOT_SYSTEM_MODULE(IHV4DCOBJECT sender, Guid boxed, Object args);
 
     }
 

@@ -1,6 +1,6 @@
 namespace HV4DENCRYPTION
 {
-    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DOBJECT
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DCOBJECT
     {
         HV4DSERVICE();
 

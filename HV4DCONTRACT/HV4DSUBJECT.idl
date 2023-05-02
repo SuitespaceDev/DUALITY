@@ -1,0 +1,13 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DSUBJECT : [default] HV4D.IHV4DCOBJECT, IHV4DTTYPE
+    {
+        HV4DSUBJECT();
+        
+        HV4DSUBJECT(HV4D.IHV4DCOBJECT const&);
+                
+        HV4DSUBJECT(HV4D.IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+        
+    }
+
+}

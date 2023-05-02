@@ -1,12 +1,12 @@
 namespace HV4DTBASIC
 {
-    runtimeclass HV4DHVID : [default] HV4D.IHV4DOBJECT, HV4D.IHV4DTTYPE
+    runtimeclass HV4DHVID : [default] HV4D.IHV4DCOBJECT, HV4D.IHV4DTTYPE
     {
 		HV4DHVID();
 
-		HV4DHVID(HV4D.IHV4DOBJECT sender);
+		HV4DHVID(HV4D.IHV4DCOBJECT sender);
 
-		HV4DHVID(HV4D.IHV4DOBJECT sender, Guid boxed, Object args);
+		HV4DHVID(HV4D.IHV4DCOBJECT sender, Guid boxed, Object args);
 
 		HV4D.IHV4DRETURN HV4DHVIDFromHstring(String uid);
 

@@ -1,0 +1,25 @@
+
+namespace HV4DCONTRACT
+{
+    interface IHV4DPIPELINE
+    {
+        HV4D.IHV4DRETURN HV4DCreateSwapChainPanel();
+
+        HV4D.IHV4DRETURN HV4DCreateMessageQueue();
+
+        HV4D.IHV4DRETURN HV4DCreateDevice();
+
+        HV4D.IHV4DRETURN HV4DCreateRenderTarget();
+
+        HV4D.IHV4DRETURN HV4DBindContentResources();
+
+        HV4D.IHV4DRETURN HV4DUpdatePipeline();
+
+        HV4D.IHV4DRETURN HV4DRenderPipeline();
+
+        HV4D.IHV4DRETURN HV4DDestroyPipeline();
+
+    }
+
+}
+

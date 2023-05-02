@@ -1,0 +1,10 @@
+namespace PeregrineX12
+{
+    [default_interface]
+    runtimeclass PeregrineX12 : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        PeregrineX12();
+
+    }
+
+}

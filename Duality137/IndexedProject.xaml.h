@@ -1,128 +1,133 @@
 #pragma once
 
+#include <winstring.h>
+
 #include "IndexedProject.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFITT = winrt::Windows::Foundation::Collections;
-namespace WUX = winrt::Windows::UI::Xaml;
-namespace WUXI = winrt::Windows::UI::Xaml::Interop;
+namespace MU = winrt::Microsoft::UI;
 namespace MUX = winrt::Microsoft::UI::Xaml;
-namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
 namespace MUXD = winrt::Microsoft::UI::Xaml::Data;
+namespace MUXC = winrt::Microsoft::UI::Xaml::Controls;
+namespace MUXI = winrt::Microsoft::UI::Xaml::Interop;
+namespace MUXN = winrt::Microsoft::UI::Xaml::Navigation;
 
 namespace winrt::Duality137::implementation
 {
-    struct IndexedProject : IndexedProjectT<IndexedProject>
-    {
-    public:
-        IndexedProject();
+	struct IndexedProject : IndexedProjectT<IndexedProject>
+	{
+	public:
+		IndexedProject();
 
-    public:
-        winrt::hstring ValueIndexedProjectHVID();
+	public:
+		winrt::hstring ValueIndexedProjectHVID();
 
-        void ValueIndexedProjectHVID(winrt::hstring const&);
+		void ValueIndexedProjectHVID(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_hvid{};
+	private:
+		winrt::hstring value_project_index_hvid{};
 
-    public:
-        winrt::hstring ValueIndexedProjectMMM();
+	public:
+		winrt::hstring ValueIndexedProjectMMM();
 
-        void ValueIndexedProjectMMM(winrt::hstring const&);
+		void ValueIndexedProjectMMM(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_mmm{};
+	private:
+		winrt::hstring value_project_index_mmm{};
 
-    public:
-        winrt::hstring ValueIndexedProjectTag();
+	public:
+		winrt::hstring ValueIndexedProjectTag();
 
-        void ValueIndexedProjectTag(winrt::hstring const&);
+		void ValueIndexedProjectTag(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_tag{};
+	private:
+		winrt::hstring value_project_index_tag{};
 
-    public:
-        winrt::hstring ValueIndexedProjectCreated();
+	public:
+		winrt::hstring ValueIndexedProjectCreated();
 
-        void ValueIndexedProjectCreated(winrt::hstring const&);
+		void ValueIndexedProjectCreated(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_created{};
+	private:
+		winrt::hstring value_project_index_created{};
 
-    public:
-        winrt::hstring ValueIndexedProjectUpdated();
+	public:
+		winrt::hstring ValueIndexedProjectUpdated();
 
-        void ValueIndexedProjectUpdated(winrt::hstring const&);
+		void ValueIndexedProjectUpdated(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_updated{};
+	private:
+		winrt::hstring value_project_index_updated{};
 
-    public:
-        winrt::hstring ValueIndexedProjectDatabase();
+	public:
+		winrt::hstring ValueIndexedProjectDatabase();
 
-        void ValueIndexedProjectDatabase(winrt::hstring const&);
+		void ValueIndexedProjectDatabase(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_database{};
+	private:
+		winrt::hstring value_project_index_database{};
 
-    public:
-        winrt::hstring ValueIndexedProjectSchema();
+	public:
+		winrt::hstring ValueIndexedProjectSchema();
 
-        void ValueIndexedProjectSchema(winrt::hstring const&);
+		void ValueIndexedProjectSchema(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_schema{};
+	private:
+		winrt::hstring value_project_index_schema{};
 
-    public:
-        winrt::hstring ValueIndexedProjectAccessLevel();
+	public:
+		winrt::hstring ValueIndexedProjectAccessLevel();
 
-        void ValueIndexedProjectAccessLevel(winrt::hstring const&);
+		void ValueIndexedProjectAccessLevel(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_access_level{};
+	private:
+		winrt::hstring value_project_index_access_level{};
 
-    public:
-        winrt::hstring ValueIndexedProjectAdministratorHVID();
+	public:
+		winrt::hstring ValueIndexedProjectAdministratorHVID();
 
-        void ValueIndexedProjectAdministratorHVID(winrt::hstring const&);
+		void ValueIndexedProjectAdministratorHVID(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_administrator_hvid{};
+	private:
+		winrt::hstring value_project_index_administrator_hvid{};
 
-    public:
-        winrt::hstring ValueIndexedProjectAdministratorTag();
+	public:
+		winrt::hstring ValueIndexedProjectAdministratorTag();
 
-        void ValueIndexedProjectAdministratorTag(winrt::hstring const&);
+		void ValueIndexedProjectAdministratorTag(winrt::hstring const&);
 
-    private:
-        winrt::hstring value_project_index_administrator_tag{};
-        
-    public:
-        winrt::com_array<winrt::hstring> ValueIndexedProjectPermissions();
+	private:
+		winrt::hstring value_project_index_administrator_tag{};
 
-        void ValueIndexedProjectPermissions(winrt::array_view<winrt::hstring const>);
+	public:
+		winrt::com_array<winrt::hstring> ValueIndexedProjectPermissions();
 
-    private:
-        std::vector<winrt::hstring> value_project_index_permissions{};
-        
-    public:
-        winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
+		void ValueIndexedProjectPermissions(winrt::array_view<winrt::hstring const>);
 
-        void PropertyChanged(winrt::event_token const&) noexcept;
+	private:
+		std::vector<winrt::hstring> value_project_index_permissions{};
 
-    private:
-        winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+	public:
+		winrt::event_token PropertyChanged(MUXD::PropertyChangedEventHandler const&);
 
-    public:
-        void Bootstrap(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+		void PropertyChanged(winrt::event_token const&) noexcept;
 
-    };
+	private:
+		winrt::event<MUXD::PropertyChangedEventHandler> property_changed_event;
+
+	public:
+		void Bootstrap(WF::IInspectable const&, MUX::RoutedEventArgs const&);
+
+	private:
+
+	};
 
 }
 
 namespace winrt::Duality137::factory_implementation
 {
-    struct IndexedProject : IndexedProjectT<IndexedProject, implementation::IndexedProject>
-    {
-    };
+	struct IndexedProject : IndexedProjectT<IndexedProject, implementation::IndexedProject>
+	{
+	};
 }

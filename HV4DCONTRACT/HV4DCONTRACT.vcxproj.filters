@@ -40,9 +40,6 @@
     <Filter Include="Contracts\3D Model">
       <UniqueIdentifier>{a2142428-b7c3-4f2f-88c7-4a748b61b89e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contracts\3D Model\HV4DVIEW">
-      <UniqueIdentifier>{3c1d0e85-9927-457c-a5ba-f6dc2fdd6a57}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contracts\3D Model\HV4DSHADER">
       <UniqueIdentifier>{27e60ac8-fe63-4541-b972-bde72f3385a6}</UniqueIdentifier>
     </Filter>
@@ -51,9 +48,6 @@
     </Filter>
     <Filter Include="Contracts\3D Model\HV4DPIPELINE">
       <UniqueIdentifier>{d991a88c-6258-49a7-a888-2b31e9d12b28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Contracts\3D Model\HV4DOBJECT">
-      <UniqueIdentifier>{0614fcb0-7d11-44e4-9b0a-eff6034a70bc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Contracts\3D Model\HV4DGLOBAL">
       <UniqueIdentifier>{e34887e4-9c2b-4a13-9130-c4b88359947e}</UniqueIdentifier>
@@ -145,6 +139,15 @@
     <Filter Include="1. Service">
       <UniqueIdentifier>{c7cb2c3e-a279-46e7-b2ae-d87fd08f9384}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contracts\3D Model\HV4DSUBJECT">
+      <UniqueIdentifier>{0614fcb0-7d11-44e4-9b0a-eff6034a70bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3D Model\HV4DMESH">
+      <UniqueIdentifier>{3c1d0e85-9927-457c-a5ba-f6dc2fdd6a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3D Model\HV4DCAM">
+      <UniqueIdentifier>{7c155cb9-fd12-497b-aa79-b7b0381843c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
@@ -156,9 +159,27 @@
     <ClCompile Include="HV4DSERVICE.cpp">
       <Filter>1. Service</Filter>
     </ClCompile>
+    <ClCompile Include="HV4DPIPELINE.cpp">
+      <Filter>Contracts\3D Model\HV4DPIPELINE</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSUBJECT.cpp">
+      <Filter>Contracts\3D Model\HV4DSUBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DSHADER.cpp">
+      <Filter>Contracts\3D Model\HV4DSHADER</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMETA.cpp">
+      <Filter>Contracts\3D Model\HV4DMETA</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DMESH.cpp">
+      <Filter>Contracts\3D Model\HV4DMESH</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DCAM.cpp">
+      <Filter>Contracts\3D Model\HV4DCAM</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="HV4DABI.def">
+    <None Include="HV4DCONTRACT.def">
       <Filter>0. Project</Filter>
     </None>
     <None Include="packages.config">
@@ -177,5 +198,25 @@
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis">
       <Filter>0. Project</Filter>
     </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IHV4DPIPELINE.idl">
+      <Filter>Contracts\3D Model\HV4DPIPELINE</Filter>
+    </Midl>
+    <Midl Include="IHV4DSUBJECT.idl">
+      <Filter>Contracts\3D Model\HV4DSUBJECT</Filter>
+    </Midl>
+    <Midl Include="IHV4DSHADER.idl">
+      <Filter>Contracts\3D Model\HV4DSHADER</Filter>
+    </Midl>
+    <Midl Include="IHV4DMETA.idl">
+      <Filter>Contracts\3D Model\HV4DMETA</Filter>
+    </Midl>
+    <Midl Include="IHV4DMESH.idl">
+      <Filter>Contracts\3D Model\HV4DMESH</Filter>
+    </Midl>
+    <Midl Include="IHV4DCAM.idl">
+      <Filter>Contracts\3D Model\HV4DCAM</Filter>
+    </Midl>
   </ItemGroup>
 </Project>

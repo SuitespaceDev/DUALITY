@@ -1,8 +1,8 @@
-import "IHV4DOBJECT.idl";
+import "IHV4DCOBJECT.idl";
 
 namespace HV4D
 {
-    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DOBJECT
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DCOBJECT
     {
         HV4DSERVICE();
 

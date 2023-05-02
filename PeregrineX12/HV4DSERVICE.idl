@@ -1,0 +1,10 @@
+namespace PeregrineX12
+{
+    runtimeclass HV4DSERVICE : [default] HV4D.IHV4DCOBJECT
+    {
+        HV4DSERVICE();
+
+
+    }
+
+}

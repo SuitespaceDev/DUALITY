@@ -1,16 +1,16 @@
-import "IHV4DOBJECT.idl";
+import "IHV4DCOBJECT.idl";
 import "IHV4DRETURN.idl";
 
 namespace HV4D
 {
     [default_interface]
-    runtimeclass HV4D_RTCLASS_NOT_FOUND : [default] IHV4DOBJECT, IHV4DRETURN
+    runtimeclass HV4D_RTCLASS_NOT_FOUND : [default] IHV4DCOBJECT, IHV4DRETURN
     {
         HV4D_RTCLASS_NOT_FOUND();
 
-        HV4D_RTCLASS_NOT_FOUND(IHV4DOBJECT sender);
+        HV4D_RTCLASS_NOT_FOUND(IHV4DCOBJECT sender);
 
-        HV4D_RTCLASS_NOT_FOUND(IHV4DOBJECT sender, Guid boxed, Object args);
+        HV4D_RTCLASS_NOT_FOUND(IHV4DCOBJECT sender, Guid boxed, Object args);
 
     }
 

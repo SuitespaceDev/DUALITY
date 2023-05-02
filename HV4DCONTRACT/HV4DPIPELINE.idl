@@ -1,0 +1,13 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DPIPELINE : [default] HV4D.IHV4DCOBJECT, IHV4DTTYPE
+    {
+        HV4DPIPELINE();
+        
+        HV4DPIPELINE(HV4D.IHV4DCOBJECT const&);
+                
+        HV4DPIPELINE(HV4D.IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+        
+    }
+
+}

@@ -1,0 +1,11 @@
+namespace HV4D
+{
+    [uuid("CD7DFCE5-3208-424A-8498-3D96E011821A")]
+    [version(0x10000001)]
+    interface IHV4DCOBJECT
+    {
+        Windows.Foundation.Collections.IVector<HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
+
+    }
+
+}

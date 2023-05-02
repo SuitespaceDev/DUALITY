@@ -1,11 +1,10 @@
 import "IHV4DTTYPE.idl";
-import "HV4DT_TYPE_CONTRACT.idl";
 
 namespace HV4D
 {
     [uuid("06C46903-51FA-4F7B-8129-A82F95CF26D6")]
     [version(0x10000001)]
-    interface IHV4DITERATOR
+    interface IHV4DITERATOR : HV4D.IHV4DTTYPE
     {
 
 

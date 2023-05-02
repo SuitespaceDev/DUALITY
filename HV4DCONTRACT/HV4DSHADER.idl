@@ -1,0 +1,13 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DSHADER : [default] HV4D.IHV4DCOBJECT, IHV4DTTYPE
+    {
+        HV4DSHADER();
+        
+        HV4DSHADER(HV4D.IHV4DCOBJECT const&);
+                
+        HV4DSHADER(HV4D.IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+        
+    }
+
+}

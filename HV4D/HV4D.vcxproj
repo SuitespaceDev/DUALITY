@@ -15,7 +15,7 @@
     <AppContainerApplication>false</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
-    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.22621.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
     <DesktopCompatible>true</DesktopCompatible>
     <UseWinUI>true</UseWinUI>
@@ -110,24 +110,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HV4DITERATOR.h">
-      <DependentUpon>HV4DITERATOR.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DOBJECT.h">
-      <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DRETURN.h">
-      <DependentUpon>HV4DRETURN.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
     <ClInclude Include="HV4DSERVICE.h">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DTTYPE.h">
-      <DependentUpon>HV4DTTYPE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_CONTRACT.h">
@@ -353,23 +337,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HV4DITERATOR.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DOBJECT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DRETURN.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="HV4DSERVICE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DTTYPE.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -559,22 +527,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="HV4DITERATOR.idl">
-      <DependentUpon>HV4DITERATOR.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DOBJECT.idl">
-      <DependentUpon>HV4DOBJECT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DRETURN.idl">
-      <DependentUpon>HV4DRETURN.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
-    <Midl Include="HV4DTTYPE.idl">
-      <DependentUpon>HV4DTTYPE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </Midl>
+    <Midl Include="IHV4DEXTARGS.idl" />
     <Midl Include="HV4DT_TYPE_CONTRACT.idl">
       <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
       <SubType>
@@ -795,20 +748,29 @@
       <SubType>
       </SubType>
     </Midl>
+    <Midl Include="IHV4DAGGREGATE.idl">
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IHV4DCONTRACT.idl" />
+    <Midl Include="IHV4DEVENT.idl" />
+    <Midl Include="IHV4DFUNCTION.idl" />
+    <Midl Include="IHV4DINSTANCE.idl" />
     <Midl Include="IHV4DITERATOR.idl" />
-    <Midl Include="IHV4DOBJECT.idl">
+    <Midl Include="IHV4DCOBJECT.idl">
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="HV4DSERVICE.idl">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="IHV4DPARAMETER.idl" />
     <Midl Include="IHV4DRETURN.idl">
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="IHV4DTTYPE.idl">
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="Source.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0. Project">
+      <UniqueIdentifier>accd3aa8-1ba0-4223-9bbe-0c431709210b</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="1. Service">
+      <UniqueIdentifier>{ac958ebf-a76d-4701-a33b-db6a1593d3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Pipeline">
+      <UniqueIdentifier>{23649333-4761-40e8-8186-8ff6db9018b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Workspace">
+      <UniqueIdentifier>{b8e5e333-5f0a-4f1d-9f7f-e53d95de4c57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>0. Project</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DPeregrine23.cpp" />
+    <ClCompile Include="HV4DSERVICE.cpp">
+      <Filter>1. Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>0. Project</Filter>
+    </None>
+    <None Include="PeregrineX12.def">
+      <Filter>0. Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>0. Project</Filter>
+    </ClInclude>
+    <ClInclude Include="HV4DPeregrine23.h" />
+    <ClInclude Include="IPeregrine23.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="PeregrineX12.xaml">
+      <Filter>2. Pipeline</Filter>
+    </Page>
+  </ItemGroup>
+</Project>

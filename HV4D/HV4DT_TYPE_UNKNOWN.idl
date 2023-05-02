@@ -1,15 +1,15 @@
-import "IHV4DOBJECT.idl";
+import "IHV4DCOBJECT.idl";
 import "IHV4DTTYPE.idl";
 
 namespace HV4D
 {
-    runtimeclass HV4DT_TYPE_UNKNOWN : [default] IHV4DOBJECT, IHV4DTTYPE
+    runtimeclass HV4DT_TYPE_UNKNOWN : [default] IHV4DCOBJECT, IHV4DTTYPE
     {
         HV4DT_TYPE_UNKNOWN();
 
-        HV4DT_TYPE_UNKNOWN(IHV4DOBJECT sender);
+        HV4DT_TYPE_UNKNOWN(IHV4DCOBJECT sender);
 
-        HV4DT_TYPE_UNKNOWN(IHV4DOBJECT sender, Guid boxed, Object args);
+        HV4DT_TYPE_UNKNOWN(IHV4DCOBJECT sender, Guid boxed, Object args);
 
     }
 

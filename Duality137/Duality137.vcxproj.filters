@@ -42,6 +42,54 @@
     <ClCompile Include="CHV4DIndexProjects.cpp">
       <Filter>6. Landing\Project Index</Filter>
     </ClCompile>
+    <ClCompile Include="CHV4DKernelSpace.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DProcessBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSoftDiskBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DUserSpace.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMachineStateBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMachineStateBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DAssetBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DAssetBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDebugBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DDebugBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMetricBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DMetricBridge.cpp">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DKernelSpace.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DProcessBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DSoftDiskBridge.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CHV4DUserSpace.ixx">
+      <Filter>9. Bootstrap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="1. Project">
@@ -64,12 +112,6 @@
     </Filter>
     <Filter Include="7. Pickers">
       <UniqueIdentifier>{c5baaad6-c004-45d1-90eb-a0d98c253c3a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="9. Operational">
-      <UniqueIdentifier>{4e14c935-c09b-47d6-87ff-1141977700ce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="10. Diagnostics">
-      <UniqueIdentifier>{83b1219a-9d96-4fc1-a394-07d5cf7308d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="2. Property Pages\b. Accounts">
       <UniqueIdentifier>{abc28302-87b8-4140-b47b-3e9c9760d12b}</UniqueIdentifier>
@@ -115,6 +157,15 @@
     </Filter>
     <Filter Include="6. Landing\Project Index">
       <UniqueIdentifier>{cc567503-8086-49e5-a849-e29cf3c0a0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. Bootstrap">
+      <UniqueIdentifier>{071ab71a-0043-4f48-b75a-bb8fa9870956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10. Operational">
+      <UniqueIdentifier>{4e14c935-c09b-47d6-87ff-1141977700ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11. Diagnostics">
+      <UniqueIdentifier>{83b1219a-9d96-4fc1-a394-07d5cf7308d7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -203,10 +254,10 @@
       <Filter>7. Pickers</Filter>
     </Page>
     <Page Include="Operational.xaml">
-      <Filter>9. Operational</Filter>
+      <Filter>10. Operational</Filter>
     </Page>
     <Page Include="Diagnostics.xaml">
-      <Filter>10. Diagnostics</Filter>
+      <Filter>11. Diagnostics</Filter>
     </Page>
     <Page Include="RuntimeClassPage.xaml">
       <Filter>2. Property Pages\j. Process</Filter>

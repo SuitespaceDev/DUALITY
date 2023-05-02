@@ -1,0 +1,13 @@
+namespace HV4DCONTRACT
+{
+    runtimeclass HV4DMESH : [default] HV4D.IHV4DCOBJECT, IHV4DTTYPE
+    {
+        HV4DMESH();
+        
+        HV4DMESH(HV4D.IHV4DCOBJECT const&);
+                
+        HV4DMESH(HV4D.IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
+        
+    }
+
+}
