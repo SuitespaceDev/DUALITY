@@ -207,6 +207,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="..\HV4D\IHV4DCONTRACT.idl" />
+    <Midl Include="..\HV4D\IHV4DEVENT.idl" />
+    <Midl Include="..\HV4D\IHV4DFUNCTION.idl" />
+    <Midl Include="..\HV4D\IHV4DITERATOR.idl" />
+    <Midl Include="..\HV4D\IHV4DPARAMETER.idl" />
     <Midl Include="HV4DCAM.idl">
       <DependentUpon>HV4DCAM.cpp</DependentUpon>
       <SubType>Code</SubType>

@@ -1,8 +1,8 @@
-import "IHV4DOBJECT.idl";
+import "IHV4DCOBJECT.idl";
 
 namespace HV4D
 {
-    [uuid("1079A24A-3B39-429D-88D8-57D1431DF0A9")]
+    [uuid("49517524-B769-480F-BBA5-14549B2CD394")]
     [version(0x10000001)]
     interface IHV4DEXTARGS
     {

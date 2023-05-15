@@ -10,30 +10,6 @@
     <Filter Include="2. Base Contracts">
       <UniqueIdentifier>{66e6c489-c5ea-4d52-9367-fec9311cc582}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Base Contracts\IHV4DITERATOR">
-      <UniqueIdentifier>{78ebb321-bf1f-4c9f-8563-265969716200}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DTTYPE">
-      <UniqueIdentifier>{7b1d70b5-b9f9-4dd3-ae3f-bdc1334d4fc1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DRETURN">
-      <UniqueIdentifier>{fa5218a5-a275-4638-aa5c-112e783e089a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DCONTRACT">
-      <UniqueIdentifier>{15d537a0-0373-465d-8f47-7cb834367f32}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DEVENT">
-      <UniqueIdentifier>{6d86db71-d215-4e87-8b18-1576b8c0d6c2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DFUNCTION">
-      <UniqueIdentifier>{71afe0a7-83b2-4887-8e7a-7acd11017d60}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DPARAMETER">
-      <UniqueIdentifier>{c990b021-9957-4f25-908f-c0a450798a1c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Base Contracts\IHV4DCOBJECT">
-      <UniqueIdentifier>{5efacf46-f105-44f0-ae13-2a76d2d51287}</UniqueIdentifier>
-    </Filter>
     <Filter Include="3. System Contracts">
       <UniqueIdentifier>{c7f08d74-2943-42f5-8381-9fd69338138d}</UniqueIdentifier>
     </Filter>
@@ -90,9 +66,6 @@
     </Filter>
     <Filter Include="4. System Iterators\HV4DRETURN\HV4D_DIR_DOESNT_EXIST">
       <UniqueIdentifier>{e281ef47-2fcf-4944-93d4-0512afaef7a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="4. System Iterators\HV4DRETURN\HV4D_FALSE">
-      <UniqueIdentifier>{3814093e-aa85-44e0-a6f8-ff99c4d68a3f}</UniqueIdentifier>
     </Filter>
     <Filter Include="4. System Iterators\HV4DRETURN\HV4D_FILE_ALREADY_EXISTS">
       <UniqueIdentifier>{77f41dcc-fbbd-4f12-951e-6ee32d87a4ba}</UniqueIdentifier>
@@ -157,12 +130,6 @@
     <Filter Include="4. System Iterators\HV4DRETURN\HV4D_RTCLASS_NOT_FOUND">
       <UniqueIdentifier>{f5c574eb-c84e-4047-9847-0a370e2f7a12}</UniqueIdentifier>
     </Filter>
-    <Filter Include="4. System Iterators\HV4DRETURN\HV4D_TRUE">
-      <UniqueIdentifier>{657d5234-c55b-48e8-a413-1df661aa2f20}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="4. System Iterators\HV4DRETURN\HV4D_UNKNOWN">
-      <UniqueIdentifier>{1e942fb9-08e3-4fb0-92a3-b6edccfa9ea6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="4. System Iterators\HV4DRETURN\HV4D_VALID_ARGUMENT">
       <UniqueIdentifier>{829579da-6d62-4d49-917d-a797d942d131}</UniqueIdentifier>
     </Filter>
@@ -180,6 +147,63 @@
     </Filter>
     <Filter Include="4. System Iterators\HV4DRETURN\HV4D_COM_FAILED">
       <UniqueIdentifier>{7e7e7823-3533-4378-88b6-a23c960c2343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Base Contracts\IHV4DAGGREGATE">
+      <UniqueIdentifier>{b09ecc17-a686-4d87-a0c7-db6c191acddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Base Contracts\IHV4DCOBJECT">
+      <UniqueIdentifier>{b88b5a87-3fbd-4b0c-8a42-799d97860176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Base Contracts\IHV4DEXTARGS">
+      <UniqueIdentifier>{9f4e0f10-adc1-4367-809b-56e9e41ba343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Base Contracts\IHV4DINSTANCE">
+      <UniqueIdentifier>{d3b5c8f3-d559-414e-83c5-8c60e0be2fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DCONTRACT">
+      <UniqueIdentifier>{dc766ebf-ca8d-4362-90d3-8ec3e0ece715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DEVENT">
+      <UniqueIdentifier>{98ced43f-6b75-4441-84c8-a8ecc39dd8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DFUNCTION">
+      <UniqueIdentifier>{0dd8c156-2322-4776-b687-69b55f8191d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DITERATOR">
+      <UniqueIdentifier>{6b484f5c-3f57-4d4e-aae5-bb414f767a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DPARAMETER">
+      <UniqueIdentifier>{c1074dfd-ad28-4cab-9b12-6e593d199eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DRETURN\1. HV4D_FALSE">
+      <UniqueIdentifier>{3814093e-aa85-44e0-a6f8-ff99c4d68a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DRETURN\0. HV4D_UNKNOWN">
+      <UniqueIdentifier>{1e942fb9-08e3-4fb0-92a3-b6edccfa9ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DRETURN\2. HV4D_TRUE">
+      <UniqueIdentifier>{657d5234-c55b-48e8-a413-1df661aa2f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DUNKNOWN">
+      <UniqueIdentifier>{0547bec4-b387-4b7d-812d-63ff4b932a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DPROCESS">
+      <UniqueIdentifier>{15b99990-e470-4736-8141-9165c45c3aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DSERVICE">
+      <UniqueIdentifier>{f4ddbee9-b8aa-4b0d-8ade-da0c51a28403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DPROVIDER">
+      <UniqueIdentifier>{b113a3c2-b780-4425-a433-bc59d25132dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DLIBRARY">
+      <UniqueIdentifier>{b3cac006-aaaf-43c1-8f5f-97fa312fb26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DDICTIONARY">
+      <UniqueIdentifier>{371c40e4-1d8c-4af1-a9ef-6d7ff639d17e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. System Contracts\IHV4DSESSION">
+      <UniqueIdentifier>{165016ad-4fdf-42f7-9936-852e003e79ab}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -202,7 +226,7 @@
       <Filter>4. System Iterators\HV4DRETURN\HV4D_DIR_DOESNT_EXIST</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FALSE.cpp">
-      <Filter>4. System Iterators\HV4DRETURN\HV4D_FALSE</Filter>
+      <Filter>4. System Iterators\HV4DRETURN\1. HV4D_FALSE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_ALREADY_EXISTS.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_FILE_ALREADY_EXISTS</Filter>
@@ -262,10 +286,10 @@
       <Filter>4. System Iterators\HV4DRETURN\HV4D_RTCLASS_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_TRUE.cpp">
-      <Filter>4. System Iterators\HV4DRETURN\HV4D_TRUE</Filter>
+      <Filter>4. System Iterators\HV4DRETURN\2. HV4D_TRUE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_UNKNOWN.cpp">
-      <Filter>4. System Iterators\HV4DRETURN\HV4D_UNKNOWN</Filter>
+      <Filter>4. System Iterators\HV4DRETURN\0. HV4D_UNKNOWN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_VALID_ARGUMENT.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_VALID_ARGUMENT</Filter>
@@ -303,15 +327,6 @@
     <ClCompile Include="HV4DT_TYPE_SESSION.cpp">
       <Filter>4. System Iterators\HV4D_T_TYPE\11. HV4DT_TYPE_SESSION</Filter>
     </ClCompile>
-    <ClCompile Include="HV4DCOBJECT.cpp">
-      <Filter>2. Base Contracts\IHV4DCOBJECT</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DTTYPE.cpp">
-      <Filter>2. Base Contracts\IHV4DTTYPE</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DRETURN.cpp">
-      <Filter>2. Base Contracts\IHV4DRETURN</Filter>
-    </ClCompile>
     <ClCompile Include="HV4D_IS_GREATER.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_IS_GREATER</Filter>
     </ClCompile>
@@ -320,9 +335,6 @@
     </ClCompile>
     <ClCompile Include="HV4D_IS_EQUAL.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_IS_EQUAL</Filter>
-    </ClCompile>
-    <ClCompile Include="HV4DITERATOR.cpp">
-      <Filter>2. Base Contracts\IHV4DITERATOR</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_DIR_ALREADY_EXISTS</Filter>
@@ -335,6 +347,9 @@
     </ClCompile>
     <ClCompile Include="HV4D_COM_FAILED.cpp">
       <Filter>4. System Iterators\HV4DRETURN\HV4D_COM_FAILED</Filter>
+    </ClCompile>
+    <ClCompile Include="HV4DCOBJECT.cpp">
+      <Filter>2. Base Contracts\IHV4DCOBJECT</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -349,19 +364,67 @@
     <ClInclude Include="pch.h">
       <Filter>0. Project</Filter>
     </ClInclude>
+    <ClInclude Include="HV4DCOBJECT.h">
+      <Filter>2. Base Contracts\IHV4DCOBJECT</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="IHV4DAGGREGATE.idl">
+      <Filter>2. Base Contracts\IHV4DAGGREGATE</Filter>
+    </Midl>
     <Midl Include="IHV4DCOBJECT.idl">
       <Filter>2. Base Contracts\IHV4DCOBJECT</Filter>
     </Midl>
+    <Midl Include="IHV4DEXTARGS.idl">
+      <Filter>2. Base Contracts\IHV4DEXTARGS</Filter>
+    </Midl>
+    <Midl Include="IHV4DINSTANCE.idl">
+      <Filter>2. Base Contracts\IHV4DINSTANCE</Filter>
+    </Midl>
     <Midl Include="IHV4DTTYPE.idl">
-      <Filter>2. Base Contracts\IHV4DTTYPE</Filter>
+      <Filter>4. System Iterators\HV4D_T_TYPE</Filter>
     </Midl>
     <Midl Include="IHV4DRETURN.idl">
-      <Filter>2. Base Contracts\IHV4DRETURN</Filter>
+      <Filter>4. System Iterators\HV4DRETURN</Filter>
+    </Midl>
+    <Midl Include="HV4DCOBJECT.idl">
+      <Filter>2. Base Contracts\IHV4DCOBJECT</Filter>
+    </Midl>
+    <Midl Include="IHV4DCONTRACT.idl">
+      <Filter>3. System Contracts\IHV4DCONTRACT</Filter>
+    </Midl>
+    <Midl Include="IHV4DEVENT.idl">
+      <Filter>3. System Contracts\IHV4DEVENT</Filter>
+    </Midl>
+    <Midl Include="IHV4DFUNCTION.idl">
+      <Filter>3. System Contracts\IHV4DFUNCTION</Filter>
     </Midl>
     <Midl Include="IHV4DITERATOR.idl">
-      <Filter>2. Base Contracts\IHV4DITERATOR</Filter>
+      <Filter>3. System Contracts\IHV4DITERATOR</Filter>
+    </Midl>
+    <Midl Include="IHV4DPARAMETER.idl">
+      <Filter>3. System Contracts\IHV4DPARAMETER</Filter>
+    </Midl>
+    <Midl Include="IHV4DUNKNOWN.idl">
+      <Filter>3. System Contracts\IHV4DUNKNOWN</Filter>
+    </Midl>
+    <Midl Include="IHV4DPROCESS.idl">
+      <Filter>3. System Contracts\IHV4DPROCESS</Filter>
+    </Midl>
+    <Midl Include="IHV4DSERVICE.idl">
+      <Filter>3. System Contracts\IHV4DSERVICE</Filter>
+    </Midl>
+    <Midl Include="IHV4DPROVIDER.idl">
+      <Filter>3. System Contracts\IHV4DPROVIDER</Filter>
+    </Midl>
+    <Midl Include="IHV4DLIBRARY.idl">
+      <Filter>3. System Contracts\IHV4DLIBRARY</Filter>
+    </Midl>
+    <Midl Include="IHV4DDICTIONARY.idl">
+      <Filter>3. System Contracts\IHV4DDICTIONARY</Filter>
+    </Midl>
+    <Midl Include="IHV4DSESSION.idl">
+      <Filter>3. System Contracts\IHV4DSESSION</Filter>
     </Midl>
   </ItemGroup>
   <ItemGroup>

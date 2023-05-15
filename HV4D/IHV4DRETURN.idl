@@ -1,16 +1,11 @@
-import "IHV4DCOBJECT.idl";
-
 namespace HV4D
 {
-	[uuid("639FB8D2-1E34-4240-9FEE-9F030B5D15B5")]
+	[uuid("36E969D4-D9D2-450F-9E89-3B55957C396B")]
 	[version(0x10000001)]
 	interface IHV4DRETURN
 	{
-		Guid HV4DReturnTypeUid();
 
-		UInt64 HV4DReturnTypeID();
 
-		String HV4DReturnTypeName();
 
 	};
 

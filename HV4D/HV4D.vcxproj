@@ -110,233 +110,194 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="HV4DCOBJECT.h">
+      <DependentUpon>HV4DCOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="HV4DSERVICE.h">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_CONTRACT.h">
       <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_EVENT.h">
       <DependentUpon>HV4DT_TYPE_EVENT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_FUNCTION.h">
       <DependentUpon>HV4DT_TYPE_FUNCTION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_DICTIONARY.h">
       <DependentUpon>HV4DT_TYPE_DICTIONARY.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_ITERATOR.h">
       <DependentUpon>HV4DT_TYPE_ITERATOR.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_LIBRARY.h">
       <DependentUpon>HV4DT_TYPE_LIBRARY.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_PARAMETER.h">
       <DependentUpon>HV4DT_TYPE_PARAMETER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_PROCESS.h">
       <DependentUpon>HV4DT_TYPE_PROCESS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SERVICE.h">
       <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_SESSION.h">
       <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DT_TYPE_UNKNOWN.h">
       <DependentUpon>HV4DT_TYPE_UNKNOWN.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_ALREADY_CONFIGURED.h">
       <DependentUpon>HV4D_ALREADY_CONFIGURED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_COM_FAILED.h">
       <DependentUpon>HV4D_COM_FAILED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_COM_SUCCEEDED.h">
       <DependentUpon>HV4D_COM_SUCCEEDED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_DIR_ALREADY_EXISTS.h">
       <DependentUpon>HV4D_DIR_ALREADY_EXISTS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_DIR_DOESNT_EXIST.h">
       <DependentUpon>HV4D_DIR_DOESNT_EXIST.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_FALSE.h">
       <DependentUpon>HV4D_FALSE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_FILE_ALREADY_EXISTS.h">
       <DependentUpon>HV4D_FILE_ALREADY_EXISTS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_FILE_BAD_FORMATTING.h">
       <DependentUpon>HV4D_FILE_BAD_FORMATTING.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_FILE_DOESNT_EXIST.h">
       <DependentUpon>HV4D_FILE_DOESNT_EXIST.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_FILE_HANDLE_OPEN.h">
       <DependentUpon>HV4D_FILE_HANDLE_OPEN.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_IMAGE_NOT_LOADED.h">
       <DependentUpon>HV4D_IMAGE_NOT_LOADED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_IMPROPERLY_CONFIGURED.h">
       <DependentUpon>HV4D_IMPROPERLY_CONFIGURED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_INVALID_ARGUMENT.h">
       <DependentUpon>HV4D_INVALID_ARGUMENT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_INVALID_INTERFACE.h">
       <DependentUpon>HV4D_INVALID_INTERFACE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_INVALID_POINTER.h">
       <DependentUpon>HV4D_INVALID_POINTER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_IS_EQUAL.h">
       <DependentUpon>HV4D_IS_EQUAL.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_IS_GREATER.h">
       <DependentUpon>HV4D_IS_GREATER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_IS_LESSER.h">
       <DependentUpon>HV4D_IS_LESSER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_MODULE_NOT_FOUND.h">
       <DependentUpon>HV4D_MODULE_NOT_FOUND.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_NOT_CONFIGURED.h">
       <DependentUpon>HV4D_NOT_CONFIGURED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_NOT_SYSTEM_MODULE.h">
       <DependentUpon>HV4D_NOT_SYSTEM_MODULE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_NO_FILE_OPEN.h">
       <DependentUpon>HV4D_NO_FILE_OPEN.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_OPERATION_FAILED.h">
       <DependentUpon>HV4D_OPERATION_FAILED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_OPERATION_SUCCEEDED.h">
       <DependentUpon>HV4D_OPERATION_SUCCEEDED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_OUT_OF_MEM.h">
       <DependentUpon>HV4D_OUT_OF_MEM.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_OUT_OF_RANGE.h">
       <DependentUpon>HV4D_OUT_OF_RANGE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_PAGE_ALREADY_EXISTS.h">
       <DependentUpon>HV4D_PAGE_ALREADY_EXISTS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_PROCESS_NOT_FOUND.h">
       <DependentUpon>HV4D_PROCESS_NOT_FOUND.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_PROPERLY_CONFIGURED.h">
       <DependentUpon>HV4D_PROPERLY_CONFIGURED.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_RTCLASS_NOT_FOUND.h">
       <DependentUpon>HV4D_RTCLASS_NOT_FOUND.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_TRUE.h">
       <DependentUpon>HV4D_TRUE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_UNKNOWN.h">
       <DependentUpon>HV4D_UNKNOWN.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_VALID_ARGUMENT.h">
       <DependentUpon>HV4D_VALID_ARGUMENT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
+      <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HV4DCOBJECT.cpp" />
     <ClCompile Include="HV4DSERVICE.cpp">
       <SubType>
       </SubType>
@@ -527,7 +488,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="IHV4DEXTARGS.idl" />
+    <Midl Include="HV4DCOBJECT.idl">
+      <DependentUpon>HV4DCOBJECT.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
+    <Midl Include="IHV4DCONTRACT.idl" />
+    <Midl Include="IHV4DDICTIONARY.idl" />
+    <Midl Include="IHV4DEVENT.idl" />
+    <Midl Include="IHV4DEXTARGS.idl">
+      <DependentUpon>IHV4DEXTARGS.cpp</DependentUpon>
+      <SubType>
+      </SubType>
+    </Midl>
     <Midl Include="HV4DT_TYPE_CONTRACT.idl">
       <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
       <SubType>
@@ -751,11 +724,8 @@
     <Midl Include="IHV4DAGGREGATE.idl">
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="IHV4DCONTRACT.idl" />
-    <Midl Include="IHV4DEVENT.idl" />
     <Midl Include="IHV4DFUNCTION.idl" />
     <Midl Include="IHV4DINSTANCE.idl" />
-    <Midl Include="IHV4DITERATOR.idl" />
     <Midl Include="IHV4DCOBJECT.idl">
       <SubType>Code</SubType>
     </Midl>
@@ -763,14 +733,20 @@
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="IHV4DITERATOR.idl" />
+    <Midl Include="IHV4DLIBRARY.idl" />
     <Midl Include="IHV4DPARAMETER.idl" />
+    <Midl Include="IHV4DPROCESS.idl" />
+    <Midl Include="IHV4DPROVIDER.idl" />
     <Midl Include="IHV4DRETURN.idl">
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="IHV4DSERVICE.idl" />
+    <Midl Include="IHV4DSESSION.idl" />
     <Midl Include="IHV4DTTYPE.idl">
       <SubType>Code</SubType>
     </Midl>
-    <Midl Include="Source.idl" />
+    <Midl Include="IHV4DUNKNOWN.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

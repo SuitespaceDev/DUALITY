@@ -1,10 +1,8 @@
-import "IHV4DTTYPE.idl";
-
 namespace HV4D
 {
-    [uuid("60DB0172-4B9C-47AF-A5CE-E7C5FB4F0A3E")]
+    [uuid("13CDA31B-6385-43D6-AFEB-66AB115E1A3D")]
     [version(0x10000001)]
-    interface IHV4DCONTRACT : HV4D.IHV4DTTYPE
+    interface IHV4DCONTRACT
     {
 
 

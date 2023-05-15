@@ -148,6 +148,24 @@
     <Filter Include="Contracts\3D Model\HV4DCAM">
       <UniqueIdentifier>{7c155cb9-fd12-497b-aa79-b7b0381843c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contracts\3. System Contracts">
+      <UniqueIdentifier>{b7c6cb5a-1964-4483-bfa3-bf04883a9af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3. System Contracts\IHV4DCONTRACT">
+      <UniqueIdentifier>{6cf60e2c-bebb-4721-a2a0-404a1ed86cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3. System Contracts\IHV4DEVENT">
+      <UniqueIdentifier>{202363db-9339-4eac-bed4-3c3e89427e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3. System Contracts\IHV4DFUNCTION">
+      <UniqueIdentifier>{1ccd57c5-bf38-4f92-8fdc-e5383e94cb6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3. System Contracts\IHV4DITERATOR">
+      <UniqueIdentifier>{05bffed1-97b0-4dfd-8de7-c6a2e294fe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contracts\3. System Contracts\IHV4DPARAMETER">
+      <UniqueIdentifier>{94f3d505-7c1f-47e5-924b-44e5083d08db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
@@ -217,6 +235,21 @@
     </Midl>
     <Midl Include="IHV4DCAM.idl">
       <Filter>Contracts\3D Model\HV4DCAM</Filter>
+    </Midl>
+    <Midl Include="..\HV4D\IHV4DCONTRACT.idl">
+      <Filter>Contracts\3. System Contracts\IHV4DCONTRACT</Filter>
+    </Midl>
+    <Midl Include="..\HV4D\IHV4DEVENT.idl">
+      <Filter>Contracts\3. System Contracts\IHV4DEVENT</Filter>
+    </Midl>
+    <Midl Include="..\HV4D\IHV4DFUNCTION.idl">
+      <Filter>Contracts\3. System Contracts\IHV4DFUNCTION</Filter>
+    </Midl>
+    <Midl Include="..\HV4D\IHV4DITERATOR.idl">
+      <Filter>Contracts\3. System Contracts\IHV4DITERATOR</Filter>
+    </Midl>
+    <Midl Include="..\HV4D\IHV4DPARAMETER.idl">
+      <Filter>Contracts\3. System Contracts\IHV4DPARAMETER</Filter>
     </Midl>
   </ItemGroup>
 </Project>

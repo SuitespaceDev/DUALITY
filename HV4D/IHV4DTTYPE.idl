@@ -1,16 +1,18 @@
-import "IHV4DCOBJECT.idl";
+import "IHV4DSERVICE.idl";
 
 namespace HV4D
 {
-	[uuid("35BB4645-E9B1-4062-BCB4-F1E3FF7E94F8")]
+	[uuid("89CA4C6E-30F4-4EB2-B1FF-0D5321853283")]
 	[version(0x10000001)]
 	interface IHV4DTTYPE
 	{
-		Guid HV4DTTypeUid();
+		Guid HV4DGetTTypeUuid();
 
-		UInt64 HV4DTTypeID();
+		Guid HV4DGetTTypeId();
 
-		String HV4DTTypeName();
+		String HV4DGetTTypeName();
+
+		IHV4DSERVICE HV4DGetService();
 
 	};
 

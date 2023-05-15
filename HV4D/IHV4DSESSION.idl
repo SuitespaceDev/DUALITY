@@ -1,0 +1,11 @@
+namespace HV4D
+{
+    [uuid("61764CEB-F074-4623-93D4-66505A7651F9")]
+    [version(0x10000001)]
+    interface IHV4DUNKNOWN
+    {
+
+
+    }
+
+}

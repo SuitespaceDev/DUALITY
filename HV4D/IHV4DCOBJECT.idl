@@ -1,10 +1,12 @@
+import "HV4DT_TYPE_CONTRACT.idl";
+
 namespace HV4D
 {
-    [uuid("CD7DFCE5-3208-424A-8498-3D96E011821A")]
+    [uuid("99B07AB6-E4F6-47B3-9498-E04ABE6CD93C")]
     [version(0x10000001)]
     interface IHV4DCOBJECT
     {
-        Windows.Foundation.Collections.IVector<HV4DT_TYPE_CONTRACT> HV4DSupportsInterfaces();
+        Windows.Foundation.Collections.IVector<HV4DT_TYPE_CONTRACT> HV4DSupportedInterfaces();
 
     }
 

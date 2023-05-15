@@ -1,0 +1,18 @@
+import "IHV4DCOBJECT.idl";
+import "IHV4DINSTANCE.idl";
+import "IHV4DTTYPE.idl";
+import "IHV4DEXTARGS.idl";
+
+namespace HV4D
+{
+    runtimeclass HV4DCOBJECT : [default] IHV4DCOBJECT, IHV4DINSTANCE, IHV4DTTYPE, IHV4DEXTARGS
+    {
+        HV4DCOBJECT();
+
+        HV4DCOBJECT(IHV4DCOBJECT sender);
+
+        HV4DCOBJECT(IHV4DCOBJECT sender, Guid argtype, Object args);
+
+    }
+
+}

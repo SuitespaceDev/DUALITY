@@ -1,6 +1,6 @@
 namespace HV4D
 {
-    [uuid("D3E028DF-4C5A-4658-B4E1-124FE0E221F2")]
+    [uuid("154646C5-D701-47F2-9DA2-58AA22B6A0CF")]
     [version(0x10000001)]
     interface IHV4DAGGREGATE
     {
