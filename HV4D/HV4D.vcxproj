@@ -737,7 +737,7 @@
     <Midl Include="IHV4DLIBRARY.idl" />
     <Midl Include="IHV4DPARAMETER.idl" />
     <Midl Include="IHV4DPROCESS.idl" />
-    <Midl Include="IHV4DPROVIDER.idl" />
+    <Midl Include="IHV4DBROKER.idl" />
     <Midl Include="IHV4DRETURN.idl">
       <SubType>Code</SubType>
     </Midl>

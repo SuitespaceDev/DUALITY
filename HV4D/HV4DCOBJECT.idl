@@ -3,16 +3,14 @@ import "IHV4DINSTANCE.idl";
 import "IHV4DAGGREGATE.idl";
 import "IHV4DEXTARGS.idl";
 import "IHV4DTTYPE.idl";
+import "IHV4DITERATOR.idl";
 
 namespace HV4D
 {
-    runtimeclass HV4DCOBJECT : [default] IHV4DCOBJECT, IHV4DINSTANCE, IHV4DAGGREGATE, IHV4DEXTARGS, IHV4DTTYPE
+    runtimeclass HV4DCOBJECT : [default] IHV4DCOBJECT, IHV4DBROKER, IHV4DINSTANCE, 
+        IHV4DEXTARGS, IHV4DTTYPE
     {
-        HV4DCOBJECT();
-
-        HV4DCOBJECT(IHV4DCOBJECT sender);
-
-        HV4DCOBJECT(IHV4DCOBJECT sender, Guid argtype, Object args);
+        HV4DCOBJECT(Windows.Foundation.Collections.IMap<IHV4DINSTANCE, Object> ComponentInitializers);
 
     }
 

@@ -202,6 +202,48 @@
     <Filter Include="3. System Contracts\10. IHV4DSESSION">
       <UniqueIdentifier>{165016ad-4fdf-42f7-9936-852e003e79ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR">
+      <UniqueIdentifier>{b286ab5d-f958-4951-ac8b-916f0113dbe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DUINT32">
+      <UniqueIdentifier>{e210b02d-054d-4ad8-bdbe-43e02f605d01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DUINT8">
+      <UniqueIdentifier>{3fa75685-3a58-4e93-b5b0-7848f779cb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DUINT16">
+      <UniqueIdentifier>{4416642c-7252-41bc-beea-6b76c10a8be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DUINT64">
+      <UniqueIdentifier>{8a9d226b-7068-4bc0-bd1b-f8acccc6bb0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DINT16">
+      <UniqueIdentifier>{41b29f1a-5c2b-4d61-8e83-86d1cffbf802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DINT32">
+      <UniqueIdentifier>{2b4bf0c6-85d0-4dd4-b1c2-13cea5f36a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DINT64">
+      <UniqueIdentifier>{ed88915f-1c9b-4046-9d05-83c7bea8c060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DCHAR">
+      <UniqueIdentifier>{5b590c42-2003-4e93-b62e-054aa04043ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DSTRING">
+      <UniqueIdentifier>{ee83c041-620b-47cd-8f8b-3fd2a03437a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DSINGLE">
+      <UniqueIdentifier>{a7dcc061-8fe9-4855-bc7e-fc6ac1e7f085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DDOUBLE">
+      <UniqueIdentifier>{91089fa3-1661-4788-98c7-335e0471718a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DBOOLEAN">
+      <UniqueIdentifier>{7129dc16-9998-459b-b1b0-c7b0f16749e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. System Iterators\HV4DSCALAR\HV4DGUID">
+      <UniqueIdentifier>{58a70a16-98fd-4a29-b481-fd62f95235c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
