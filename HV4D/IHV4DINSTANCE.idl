@@ -10,11 +10,13 @@ namespace HV4D
 
 		UInt64 HV4DUpdatedDateTime();
 
+		Guid HV4DUuidOfCollection();
+
 		Guid HV4DUuidOfClassObject();
 
-		String HV4DClassObjectName();
+		String HV4DNameOfClassObject();
 
-		Guid HV4DUuidOfCollection();
+		Guid HV4DUuidOfClassObjectSet();
 
     }
 

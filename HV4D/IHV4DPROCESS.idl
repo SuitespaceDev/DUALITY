@@ -2,7 +2,7 @@ namespace HV4D
 {
     [uuid("8EA30777-E52F-43A2-B41B-3DB24CD2B722")]
     [version(0x10000001)]
-    interface IHV4DUNKNOWN
+    interface IHV4DPROCESS
     {
 
 
