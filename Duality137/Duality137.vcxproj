@@ -983,9 +983,6 @@
     <ProjectReference Include="..\HV4DX\HV4DX.vcxproj">
       <Project>{f3af785b-4012-49dd-998f-49673e1c7484}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\HV4D\HV4D.vcxproj">
-      <Project>{a4ed9b82-b439-4a9e-a0b4-b2748ee39ab2}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\PeregrineX12\PeregrineX12.vcxproj">
       <Project>{41946976-b2ad-4bae-8953-cca6c99b93bb}</Project>
     </ProjectReference>

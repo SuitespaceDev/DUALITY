@@ -155,9 +155,6 @@
     <ProjectReference Include="..\HV4DTBASIC\HV4DTBASIC.vcxproj">
       <Project>{ba2e88a2-1e17-437c-9be1-b44fe7e6e8ae}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\HV4D\HV4D.vcxproj">
-      <Project>{a4ed9b82-b439-4a9e-a0b4-b2748ee39ab2}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="PeregrineX12.xaml">

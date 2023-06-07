@@ -18,6 +18,8 @@ namespace HV4D
 
 		Guid HV4DUuidOfClassObjectSet();
 
+		UInt64 HV4DIdOfClassObjectSet();
+
     }
 
 }

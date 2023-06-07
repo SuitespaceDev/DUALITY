@@ -294,6 +294,14 @@
       <DependentUpon>HV4D_VALID_ARGUMENT.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="IInspectable.h">
+      <DependentUpon>IInspectable.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="IUnknown.h">
+      <DependentUpon>IUnknown.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -478,10 +486,15 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="IInspectable.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="IUnknown.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4D.def" />
@@ -496,11 +509,6 @@
     <Midl Include="IHV4DCONTRACT.idl" />
     <Midl Include="IHV4DDICTIONARY.idl" />
     <Midl Include="IHV4DEVENT.idl" />
-    <Midl Include="IHV4DEXTARGS.idl">
-      <DependentUpon>IHV4DEXTARGS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
     <Midl Include="HV4DT_TYPE_CONTRACT.idl">
       <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
       <SubType>
@@ -724,6 +732,7 @@
     <Midl Include="IHV4DAGGREGATE.idl">
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="IHV4DEXTARGS.idl" />
     <Midl Include="IHV4DFUNCTION.idl" />
     <Midl Include="IHV4DINSTANCE.idl" />
     <Midl Include="IHV4DCOBJECT.idl">
@@ -737,16 +746,23 @@
     <Midl Include="IHV4DLIBRARY.idl" />
     <Midl Include="IHV4DPARAMETER.idl" />
     <Midl Include="IHV4DPROCESS.idl" />
-    <Midl Include="IHV4DBROKER.idl" />
     <Midl Include="IHV4DRETURN.idl">
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="IHV4DSERVICE.idl" />
     <Midl Include="IHV4DSESSION.idl" />
-    <Midl Include="IHV4DTTYPE.idl">
+    <Midl Include="IHV4DBROKER.idl">
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="IHV4DUNKNOWN.idl" />
+    <Midl Include="IInspectable.idl">
+      <DependentUpon>IInspectable.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="IUnknown.idl">
+      <DependentUpon>IUnknown.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

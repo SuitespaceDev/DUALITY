@@ -1,11 +1,19 @@
+import "IHV4DSERVICE.idl";
+
 namespace HV4D
 {
-    [uuid("2F9E85C0-C820-44E9-A3F0-D61B4F3B80B6")]
-    [version(0x10000001)]
-    interface IHV4DBROKER
-    {
+	[uuid("89CA4C6E-30F4-4EB2-B1FF-0D5321853283")]
+	[version(0x10000001)]
+	interface IHV4DBROKER
+	{
+		Guid HV4DGetBrokerTypeUuid();
 
+		Guid HV4DGetBrokerTypeId();
 
-    }
+		String HV4DGetBrokerTypeName();
+
+		IHV4DSERVICE HV4DGetBrokerService();
+
+	};
 
 }

@@ -1,0 +1,9 @@
+namespace HV4D
+{
+    runtimeclass IInspectable : [default] HV4D.IHV4DCOBJECT
+    {
+        IInspectable();
+
+    }
+
+}

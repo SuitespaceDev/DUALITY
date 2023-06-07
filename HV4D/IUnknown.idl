@@ -1,0 +1,11 @@
+import "IHV4DCOBJECT.idl";
+
+namespace HV4D
+{
+    runtimeclass Unknown : [default] HV4D.IHV4DCOBJECT
+    {
+        Unknown();
+
+    }
+
+}
