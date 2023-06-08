@@ -14,103 +14,103 @@
       <Filter>4. HV4DCOM\c. IHV4DCOBJECT</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_UNKNOWN.cpp">
-      <Filter>8. HV4DRETURN\0. HV4D_UNKNOWN</Filter>
+      <Filter>9. HV4DRETURN\0. HV4D_UNKNOWN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FALSE.cpp">
-      <Filter>8. HV4DRETURN\1. HV4D_FALSE</Filter>
+      <Filter>9. HV4DRETURN\1. HV4D_FALSE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_TRUE.cpp">
-      <Filter>8. HV4DRETURN\2. HV4D_TRUE</Filter>
+      <Filter>9. HV4DRETURN\2. HV4D_TRUE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_LESSER.cpp">
-      <Filter>8. HV4DRETURN\3. HV4D_IS_LESSER</Filter>
+      <Filter>9. HV4DRETURN\3. HV4D_IS_LESSER</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_EQUAL.cpp">
-      <Filter>8. HV4DRETURN\4. HV4D_IS_EQUAL</Filter>
+      <Filter>9. HV4DRETURN\4. HV4D_IS_EQUAL</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IS_GREATER.cpp">
-      <Filter>8. HV4DRETURN\5. HV4D_IS_GREATER</Filter>
+      <Filter>9. HV4DRETURN\5. HV4D_IS_GREATER</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_COM_FAILED.cpp">
-      <Filter>8. HV4DRETURN\6. HV4D_COM_FAILED</Filter>
+      <Filter>9. HV4DRETURN\6. HV4D_COM_FAILED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_COM_SUCCEEDED.cpp">
-      <Filter>8. HV4DRETURN\7. HV4D_COM_SUCCEEDED</Filter>
+      <Filter>9. HV4DRETURN\7. HV4D_COM_SUCCEEDED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_ARGUMENT.cpp">
-      <Filter>8. HV4DRETURN\8. HV4D_INVALID_ARGUMENT</Filter>
+      <Filter>9. HV4DRETURN\8. HV4D_INVALID_ARGUMENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_VALID_ARGUMENT.cpp">
-      <Filter>8. HV4DRETURN\9. HV4D_VALID_ARGUMENT</Filter>
+      <Filter>9. HV4DRETURN\9. HV4D_VALID_ARGUMENT</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OPERATION_FAILED.cpp">
-      <Filter>8. HV4DRETURN\10. HV4D_OPERATION_FAILED</Filter>
+      <Filter>9. HV4DRETURN\10. HV4D_OPERATION_FAILED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OPERATION_SUCCEEDED.cpp">
-      <Filter>8. HV4DRETURN\11. HV4D_OPERATION_SUCCEEDED</Filter>
+      <Filter>9. HV4DRETURN\11. HV4D_OPERATION_SUCCEEDED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_POINTER.cpp">
-      <Filter>8. HV4DRETURN\12. HV4D_INVALID_POINTER</Filter>
+      <Filter>9. HV4DRETURN\12. HV4D_INVALID_POINTER</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_INVALID_INTERFACE.cpp">
-      <Filter>8. HV4DRETURN\13. HV4D_INVALID_INTERFACE</Filter>
+      <Filter>9. HV4DRETURN\13. HV4D_INVALID_INTERFACE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NOT_CONFIGURED.cpp">
-      <Filter>8. HV4DRETURN\14. HV4D_NOT_CONFIGURED</Filter>
+      <Filter>9. HV4DRETURN\14. HV4D_NOT_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_ALREADY_CONFIGURED.cpp">
-      <Filter>8. HV4DRETURN\16. HV4D_ALREADY_CONFIGURED</Filter>
+      <Filter>9. HV4DRETURN\16. HV4D_ALREADY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IMPROPERLY_CONFIGURED.cpp">
-      <Filter>8. HV4DRETURN\15. HV4D_IMPROPERLY_CONFIGURED</Filter>
+      <Filter>9. HV4DRETURN\15. HV4D_IMPROPERLY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PROPERLY_CONFIGURED.cpp">
-      <Filter>8. HV4DRETURN\16. HV4D_PROPERLY_CONFIGURED</Filter>
+      <Filter>9. HV4DRETURN\16. HV4D_PROPERLY_CONFIGURED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OUT_OF_MEM.cpp">
-      <Filter>8. HV4DRETURN\17. HV4D_OUT_OF_MEM</Filter>
+      <Filter>9. HV4DRETURN\17. HV4D_OUT_OF_MEM</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_OUT_OF_RANGE.cpp">
-      <Filter>8. HV4DRETURN\18. HV4D_OUT_OF_RANGE</Filter>
+      <Filter>9. HV4DRETURN\18. HV4D_OUT_OF_RANGE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_MODULE_NOT_FOUND.cpp">
-      <Filter>8. HV4DRETURN\19. HV4D_MODULE_NOT_FOUND</Filter>
+      <Filter>9. HV4DRETURN\19. HV4D_MODULE_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NOT_SYSTEM_MODULE.cpp">
-      <Filter>8. HV4DRETURN\20. HV4D_NOT_SYSTEM_MODULE</Filter>
+      <Filter>9. HV4DRETURN\20. HV4D_NOT_SYSTEM_MODULE</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_RTCLASS_NOT_FOUND.cpp">
-      <Filter>8. HV4DRETURN\21. HV4D_RTCLASS_NOT_FOUND</Filter>
+      <Filter>9. HV4DRETURN\21. HV4D_RTCLASS_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PROCESS_NOT_FOUND.cpp">
-      <Filter>8. HV4DRETURN\22. HV4D_PROCESS_NOT_FOUND</Filter>
+      <Filter>9. HV4DRETURN\22. HV4D_PROCESS_NOT_FOUND</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_IMAGE_NOT_LOADED.cpp">
-      <Filter>8. HV4DRETURN\23. HV4D_IMAGE_NOT_LOADED</Filter>
+      <Filter>9. HV4DRETURN\23. HV4D_IMAGE_NOT_LOADED</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_NO_FILE_OPEN.cpp">
-      <Filter>8. HV4DRETURN\24. HV4D_NO_FILE_OPEN</Filter>
+      <Filter>9. HV4DRETURN\24. HV4D_NO_FILE_OPEN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_DIR_DOESNT_EXIST.cpp">
-      <Filter>8. HV4DRETURN\25. HV4D_DIR_DOESNT_EXIST</Filter>
+      <Filter>9. HV4DRETURN\25. HV4D_DIR_DOESNT_EXIST</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_DIR_ALREADY_EXISTS.cpp">
-      <Filter>8. HV4DRETURN\26. HV4D_DIR_ALREADY_EXISTS</Filter>
+      <Filter>9. HV4DRETURN\26. HV4D_DIR_ALREADY_EXISTS</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_DOESNT_EXIST.cpp">
-      <Filter>8. HV4DRETURN\27. HV4D_FILE_DOESNT_EXIST</Filter>
+      <Filter>9. HV4DRETURN\27. HV4D_FILE_DOESNT_EXIST</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_ALREADY_EXISTS.cpp">
-      <Filter>8. HV4DRETURN\28. HV4D_FILE_ALREADY_EXISTS</Filter>
+      <Filter>9. HV4DRETURN\28. HV4D_FILE_ALREADY_EXISTS</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_BAD_FORMATTING.cpp">
-      <Filter>8. HV4DRETURN\29. HV4D_FILE_BAD_FORMATTING</Filter>
+      <Filter>9. HV4DRETURN\29. HV4D_FILE_BAD_FORMATTING</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_FILE_HANDLE_OPEN.cpp">
-      <Filter>8. HV4DRETURN\30. HV4D_FILE_HANDLE_OPEN</Filter>
+      <Filter>9. HV4DRETURN\30. HV4D_FILE_HANDLE_OPEN</Filter>
     </ClCompile>
     <ClCompile Include="HV4D_PAGE_ALREADY_EXISTS.cpp">
-      <Filter>8. HV4DRETURN\31. HV4D_PAGE_ALREADY_EXISTS</Filter>
+      <Filter>9. HV4DRETURN\31. HV4D_PAGE_ALREADY_EXISTS</Filter>
     </ClCompile>
     <ClCompile Include="IUnknown.cpp">
       <Filter>4. HV4DCOM\a. IUnknown</Filter>
@@ -205,7 +205,7 @@
       <Filter>2. Component\a. IUnknown</Filter>
     </Midl>
     <Midl Include="IHV4DRETURN.idl">
-      <Filter>8. HV4DRETURN</Filter>
+      <Filter>9. HV4DRETURN</Filter>
     </Midl>
   </ItemGroup>
   <ItemGroup>
@@ -234,9 +234,6 @@
     </Filter>
     <Filter Include="2. HV4DSCALAR\e. Uint8">
       <UniqueIdentifier>{a584a397-1c80-4bef-9cbd-c82e766ace23}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. HV4DSCALAR\f. Uint16">
-      <UniqueIdentifier>{15a19721-aee8-460f-b699-808a89e162b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="2. HV4DSCALAR\g. Uint32">
       <UniqueIdentifier>{f1e0d73e-de8e-4111-8c20-fe6b4dbdd213}</UniqueIdentifier>
@@ -319,108 +316,6 @@
     <Filter Include="0. HV4DPROJECT">
       <UniqueIdentifier>{3cda9bb5-a0b2-44d7-9905-9367af1af0bd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="8. HV4DRETURN">
-      <UniqueIdentifier>{b9079664-eeb7-4ae0-90cd-5a109da07709}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\0. HV4D_UNKNOWN">
-      <UniqueIdentifier>{41b2254e-23f4-4c5f-b780-18712606b0ed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\1. HV4D_FALSE">
-      <UniqueIdentifier>{a37197c6-b935-463e-92de-de6a395454a9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\2. HV4D_TRUE">
-      <UniqueIdentifier>{ce59177e-30e6-498e-836b-d3bb4227cb8c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\3. HV4D_IS_LESSER">
-      <UniqueIdentifier>{e66ae712-7ed2-4c4f-9a78-8d4c1ebcbd0b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\4. HV4D_IS_EQUAL">
-      <UniqueIdentifier>{6acb0c64-383d-4d3e-9f03-68e8b2bbab31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\5. HV4D_IS_GREATER">
-      <UniqueIdentifier>{5e7f6521-7124-4290-ab1f-cbab9ab62d05}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\6. HV4D_COM_FAILED">
-      <UniqueIdentifier>{f552ee55-9af3-4dce-90f2-d751e14f3a18}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\7. HV4D_COM_SUCCEEDED">
-      <UniqueIdentifier>{194471d7-ce4d-4ed5-879a-5f3b94d01926}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\8. HV4D_INVALID_ARGUMENT">
-      <UniqueIdentifier>{f0f69fd0-7ca3-4656-a63d-bbc301b92128}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\9. HV4D_VALID_ARGUMENT">
-      <UniqueIdentifier>{8ee081c5-71a3-4c5f-ab63-1e21cd33e3eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\10. HV4D_OPERATION_FAILED">
-      <UniqueIdentifier>{3386e9f8-3159-4f89-b999-257690fb02b7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\11. HV4D_OPERATION_SUCCEEDED">
-      <UniqueIdentifier>{90458080-c277-4945-bd14-20ec990e958e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\12. HV4D_INVALID_POINTER">
-      <UniqueIdentifier>{919cc729-9474-4994-84ab-5f68f8945fb3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\13. HV4D_INVALID_INTERFACE">
-      <UniqueIdentifier>{5430f600-270d-4336-ad2c-c9e1eb499879}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\14. HV4D_NOT_CONFIGURED">
-      <UniqueIdentifier>{54315a19-ff63-4a87-b293-b1355b9be8ee}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\15. HV4D_IMPROPERLY_CONFIGURED">
-      <UniqueIdentifier>{2a5dbe62-640f-4c5e-bfef-136c8e49631e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\16. HV4D_ALREADY_CONFIGURED">
-      <UniqueIdentifier>{74a44ee0-735a-4b0d-ace2-bab53608f10b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\16. HV4D_PROPERLY_CONFIGURED">
-      <UniqueIdentifier>{166a7b2d-6bd0-480a-a4b5-2fee14206f46}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\17. HV4D_OUT_OF_MEM">
-      <UniqueIdentifier>{163b7756-db77-463c-b996-b84a4ad11b72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\18. HV4D_OUT_OF_RANGE">
-      <UniqueIdentifier>{ed12068a-38ef-45a4-a7d6-afd750eb369f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\19. HV4D_MODULE_NOT_FOUND">
-      <UniqueIdentifier>{aa94e937-2493-4980-9ebf-2acb24ddfddf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\20. HV4D_NOT_SYSTEM_MODULE">
-      <UniqueIdentifier>{9226ef7c-00d0-4d3a-a59a-31d962df230e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\21. HV4D_RTCLASS_NOT_FOUND">
-      <UniqueIdentifier>{8f560d2e-e0f3-4930-8f95-1f0db3edc470}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\22. HV4D_PROCESS_NOT_FOUND">
-      <UniqueIdentifier>{34b1d4e7-0a1b-4ed0-98c5-ef3dfdac730e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\23. HV4D_IMAGE_NOT_LOADED">
-      <UniqueIdentifier>{04759870-3a8f-48a3-95dd-e14314bf6070}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\24. HV4D_NO_FILE_OPEN">
-      <UniqueIdentifier>{80a7ad53-1118-4ffe-94a8-f7d34aa41b2b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\25. HV4D_DIR_DOESNT_EXIST">
-      <UniqueIdentifier>{22857ffb-509b-4e7f-ada5-d941c851428d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\26. HV4D_DIR_ALREADY_EXISTS">
-      <UniqueIdentifier>{c7c4ed17-7161-49f2-9664-4643b382368e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\27. HV4D_FILE_DOESNT_EXIST">
-      <UniqueIdentifier>{e1e74077-b797-4c01-b1e6-7cdf519346f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\28. HV4D_FILE_ALREADY_EXISTS">
-      <UniqueIdentifier>{f0fc2c29-bbe0-4de9-8ff8-013ef03ad395}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\29. HV4D_FILE_BAD_FORMATTING">
-      <UniqueIdentifier>{20cbe24d-2a4c-4c1e-ba06-e05ec960836a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\30. HV4D_FILE_HANDLE_OPEN">
-      <UniqueIdentifier>{b78f2c46-1432-425f-b6f7-570abef6e006}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="8. HV4DRETURN\31. HV4D_PAGE_ALREADY_EXISTS">
-      <UniqueIdentifier>{ec584221-6d04-461b-a229-1dbc7aeabcda}</UniqueIdentifier>
-    </Filter>
     <Filter Include="3. HV4DRTTI">
       <UniqueIdentifier>{3e503584-20ea-4af9-9949-7427492bfe06}</UniqueIdentifier>
     </Filter>
@@ -489,6 +384,114 @@
     </Filter>
     <Filter Include="6. HV4DBROKER\i. IHV4DVALUE">
       <UniqueIdentifier>{0fadffc1-aa64-4ca2-802d-afc1d26a2784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="8. HV4DINSTRUCTION">
+      <UniqueIdentifier>{92400fd1-547f-4402-8e43-7eb28a186271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN">
+      <UniqueIdentifier>{b9079664-eeb7-4ae0-90cd-5a109da07709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\0. HV4D_UNKNOWN">
+      <UniqueIdentifier>{41b2254e-23f4-4c5f-b780-18712606b0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\1. HV4D_FALSE">
+      <UniqueIdentifier>{a37197c6-b935-463e-92de-de6a395454a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\2. HV4D_TRUE">
+      <UniqueIdentifier>{ce59177e-30e6-498e-836b-d3bb4227cb8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\3. HV4D_IS_LESSER">
+      <UniqueIdentifier>{e66ae712-7ed2-4c4f-9a78-8d4c1ebcbd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\4. HV4D_IS_EQUAL">
+      <UniqueIdentifier>{6acb0c64-383d-4d3e-9f03-68e8b2bbab31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\5. HV4D_IS_GREATER">
+      <UniqueIdentifier>{5e7f6521-7124-4290-ab1f-cbab9ab62d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\6. HV4D_COM_FAILED">
+      <UniqueIdentifier>{f552ee55-9af3-4dce-90f2-d751e14f3a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\7. HV4D_COM_SUCCEEDED">
+      <UniqueIdentifier>{194471d7-ce4d-4ed5-879a-5f3b94d01926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\8. HV4D_INVALID_ARGUMENT">
+      <UniqueIdentifier>{f0f69fd0-7ca3-4656-a63d-bbc301b92128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\9. HV4D_VALID_ARGUMENT">
+      <UniqueIdentifier>{8ee081c5-71a3-4c5f-ab63-1e21cd33e3eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\10. HV4D_OPERATION_FAILED">
+      <UniqueIdentifier>{3386e9f8-3159-4f89-b999-257690fb02b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\11. HV4D_OPERATION_SUCCEEDED">
+      <UniqueIdentifier>{90458080-c277-4945-bd14-20ec990e958e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\12. HV4D_INVALID_POINTER">
+      <UniqueIdentifier>{919cc729-9474-4994-84ab-5f68f8945fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\13. HV4D_INVALID_INTERFACE">
+      <UniqueIdentifier>{5430f600-270d-4336-ad2c-c9e1eb499879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\14. HV4D_NOT_CONFIGURED">
+      <UniqueIdentifier>{54315a19-ff63-4a87-b293-b1355b9be8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\15. HV4D_IMPROPERLY_CONFIGURED">
+      <UniqueIdentifier>{2a5dbe62-640f-4c5e-bfef-136c8e49631e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\16. HV4D_ALREADY_CONFIGURED">
+      <UniqueIdentifier>{74a44ee0-735a-4b0d-ace2-bab53608f10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\16. HV4D_PROPERLY_CONFIGURED">
+      <UniqueIdentifier>{166a7b2d-6bd0-480a-a4b5-2fee14206f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\17. HV4D_OUT_OF_MEM">
+      <UniqueIdentifier>{163b7756-db77-463c-b996-b84a4ad11b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\18. HV4D_OUT_OF_RANGE">
+      <UniqueIdentifier>{ed12068a-38ef-45a4-a7d6-afd750eb369f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\19. HV4D_MODULE_NOT_FOUND">
+      <UniqueIdentifier>{aa94e937-2493-4980-9ebf-2acb24ddfddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\20. HV4D_NOT_SYSTEM_MODULE">
+      <UniqueIdentifier>{9226ef7c-00d0-4d3a-a59a-31d962df230e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\21. HV4D_RTCLASS_NOT_FOUND">
+      <UniqueIdentifier>{8f560d2e-e0f3-4930-8f95-1f0db3edc470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\22. HV4D_PROCESS_NOT_FOUND">
+      <UniqueIdentifier>{34b1d4e7-0a1b-4ed0-98c5-ef3dfdac730e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\23. HV4D_IMAGE_NOT_LOADED">
+      <UniqueIdentifier>{04759870-3a8f-48a3-95dd-e14314bf6070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\24. HV4D_NO_FILE_OPEN">
+      <UniqueIdentifier>{80a7ad53-1118-4ffe-94a8-f7d34aa41b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\25. HV4D_DIR_DOESNT_EXIST">
+      <UniqueIdentifier>{22857ffb-509b-4e7f-ada5-d941c851428d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\26. HV4D_DIR_ALREADY_EXISTS">
+      <UniqueIdentifier>{c7c4ed17-7161-49f2-9664-4643b382368e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\27. HV4D_FILE_DOESNT_EXIST">
+      <UniqueIdentifier>{e1e74077-b797-4c01-b1e6-7cdf519346f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\28. HV4D_FILE_ALREADY_EXISTS">
+      <UniqueIdentifier>{f0fc2c29-bbe0-4de9-8ff8-013ef03ad395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\29. HV4D_FILE_BAD_FORMATTING">
+      <UniqueIdentifier>{20cbe24d-2a4c-4c1e-ba06-e05ec960836a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\30. HV4D_FILE_HANDLE_OPEN">
+      <UniqueIdentifier>{b78f2c46-1432-425f-b6f7-570abef6e006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. HV4DRETURN\31. HV4D_PAGE_ALREADY_EXISTS">
+      <UniqueIdentifier>{ec584221-6d04-461b-a229-1dbc7aeabcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. HV4DSCALAR\f. Uint16">
+      <UniqueIdentifier>{15a19721-aee8-460f-b699-808a89e162b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

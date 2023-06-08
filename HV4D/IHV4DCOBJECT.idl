@@ -7,7 +7,7 @@ namespace HV4D
     [version(0x10000001)]
     interface IHV4DCOBJECT
     {
-        Windows.Foundation.Collections.IMap<IHV4DITERATOR, IHV4DCONTRACT> HV4DSupportedInterfaces();
+        Windows.Foundation.Collections.IMap<Guid, Object> HV4DSupportedInterfaces();
 
     }
 

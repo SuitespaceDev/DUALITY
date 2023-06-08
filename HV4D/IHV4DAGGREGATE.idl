@@ -1,11 +1,15 @@
+import "IHV4DRETURN.idl";
+
 namespace HV4D
 {
     [uuid("154646C5-D701-47F2-9DA2-58AA22B6A0CF")]
     [version(0x10000001)]
     interface IHV4DAGGREGATE
     {
-
-
+        IHV4DRETURN HV4DAGGREGATE(
+            Windows.Foundation.Collections.IMap<Guid, Object> instruction,
+            Windows.Foundation.Collections.IMap<Guid, Object> PoP, 
+            Windows.Foundation.Collections.IMap<Guid, Object> values);
 
     }
 
