@@ -1,0 +1,15 @@
+import "IHV4DRETURN.idl";
+
+namespace HV4D
+{
+    [uuid("157103D3-6E33-4BBD-8AEA-37DFD1B8BF39")]
+    [version(0x10000001)]
+    interface IHV4DVALUE
+    {
+        IHV4DRETURN HV4DGetData(Windows.Foundation.Collections.IMap<Guid, Object> data);
+
+        IHV4DRETURN HV4DSetData(Windows.Foundation.Collections.IMap<Guid, Object> data);
+
+    }
+
+}

@@ -1,3 +1,5 @@
+import "IHV4DRETURN.idl";
+
 namespace HV4D
 {
     [uuid("06C46903-51FA-4F7B-8129-A82F95CF26D6")]

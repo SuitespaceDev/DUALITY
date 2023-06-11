@@ -110,56 +110,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="HV4DBASE.h">
+      <DependentUpon>HV4DBASE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="HV4DCOBJECT.h">
       <DependentUpon>HV4DCOBJECT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DCOM.h">
+      <DependentUpon>HV4DCOM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DDO.h">
+      <DependentUpon>HV4DDO.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HV4DRETURN.h">
+      <DependentUpon>HV4DRETURN.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4DSERVICE.h">
       <DependentUpon>HV4DSERVICE.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_CONTRACT.h">
-      <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_EVENT.h">
-      <DependentUpon>HV4DT_TYPE_EVENT.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_FUNCTION.h">
-      <DependentUpon>HV4DT_TYPE_FUNCTION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_DICTIONARY.h">
-      <DependentUpon>HV4DT_TYPE_DICTIONARY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_ITERATOR.h">
-      <DependentUpon>HV4DT_TYPE_ITERATOR.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_LIBRARY.h">
-      <DependentUpon>HV4DT_TYPE_LIBRARY.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_PARAMETER.h">
-      <DependentUpon>HV4DT_TYPE_PARAMETER.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_PROCESS.h">
-      <DependentUpon>HV4DT_TYPE_PROCESS.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_SERVICE.h">
-      <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_SESSION.h">
-      <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>Code</SubType>
-    </ClInclude>
-    <ClInclude Include="HV4DT_TYPE_UNKNOWN.h">
-      <DependentUpon>HV4DT_TYPE_UNKNOWN.cpp</DependentUpon>
+    <ClInclude Include="HV4DWINRT.h">
+      <DependentUpon>HV4DWINRT.cpp</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HV4D_ALREADY_CONFIGURED.h">
@@ -305,52 +281,28 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HV4DBASE.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4DCOBJECT.cpp" />
+    <ClCompile Include="HV4DCOM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DDO.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HV4DRETURN.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="HV4DSERVICE.cpp">
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_CONTRACT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_EVENT.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_FUNCTION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_DICTIONARY.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_ITERATOR.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_LIBRARY.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_PARAMETER.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_PROCESS.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_SERVICE.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_SESSION.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="HV4DT_TYPE_UNKNOWN.cpp">
+    <ClCompile Include="HV4DWINRT.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -490,80 +442,48 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="IUnknown.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
-    <ClCompile Include="IUnknown.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="HV4D.def" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="HV4DBASE.idl">
+      <DependentUpon>HV4DBASE.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="HV4DCOBJECT.idl">
       <DependentUpon>HV4DCOBJECT.cpp</DependentUpon>
       <SubType>
       </SubType>
     </Midl>
+    <Midl Include="HV4DCOM.idl">
+      <DependentUpon>HV4DCOM.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DDO.idl">
+      <DependentUpon>HV4DDO.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DRETURN.idl">
+      <DependentUpon>HV4DRETURN.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="HV4DWINRT.idl">
+      <DependentUpon>HV4DWINRT.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="IHV4DCONTRACT.idl" />
     <Midl Include="IHV4DDICTIONARY.idl" />
     <Midl Include="IHV4DEVENT.idl" />
-    <Midl Include="HV4DT_TYPE_CONTRACT.idl">
-      <DependentUpon>HV4DT_TYPE_CONTRACT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_EVENT.idl">
-      <DependentUpon>HV4DT_TYPE_EVENT.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_FUNCTION.idl">
-      <DependentUpon>HV4DT_TYPE_FUNCTION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_DICTIONARY.idl">
-      <DependentUpon>HV4DT_TYPE_DICTIONARY.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_ITERATOR.idl">
-      <DependentUpon>HV4DT_TYPE_ITERATOR.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_LIBRARY.idl">
-      <DependentUpon>HV4DT_TYPE_LIBRARY.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_PARAMETER.idl">
-      <DependentUpon>HV4DT_TYPE_PARAMETER.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_PROCESS.idl">
-      <DependentUpon>HV4DT_TYPE_PROCESS.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_SERVICE.idl">
-      <DependentUpon>HV4DT_TYPE_SERVICE.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_SESSION.idl">
-      <DependentUpon>HV4DT_TYPE_SESSION.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
-    <Midl Include="HV4DT_TYPE_UNKNOWN.idl">
-      <DependentUpon>HV4DT_TYPE_UNKNOWN.cpp</DependentUpon>
-      <SubType>
-      </SubType>
-    </Midl>
     <Midl Include="HV4D_ALREADY_CONFIGURED.idl">
       <DependentUpon>HV4D_ALREADY_CONFIGURED.cpp</DependentUpon>
       <SubType>
@@ -755,6 +675,7 @@
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="IHV4DUNKNOWN.idl" />
+    <Midl Include="IHV4DVALUE.idl" />
     <Midl Include="IInspectable.idl">
       <DependentUpon>IInspectable.cpp</DependentUpon>
       <SubType>Code</SubType>

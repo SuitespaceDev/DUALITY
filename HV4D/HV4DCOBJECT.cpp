@@ -4,47 +4,18 @@
 #include "HV4DCOBJECT.g.cpp"
 #endif
 
-namespace winrt::HV4DCOBJECT::implementation
+namespace winrt::HV4D::implementation
 {
 	HV4DCOBJECT::HV4DCOBJECT()
 	{
-		HV4DListSupportedInterfaces();
-
-		HV4DCreatedDateTime();
-
-		HV4DUpdatedDateTime();
 
 		return;
 
 	}
 
-	HV4DCOBJECT::HV4DCOBJECT(HV4D::IHV4DCOBJECT const& sender)
+	HV4DCOBJECT::HV4DCOBJECT(WFC::IMap<winrt::guid, IInspectable> initializers)
 	{
-		HV4DListSupportedInterfaces();
 
-		HV4DCreatedDateTime();
-
-		HV4DUpdatedDateTime();
-
-		owner_handle = sender;
-
-		return;
-
-	}
-
-	HV4DCOBJECT::HV4DCOBJECT(HV4D::IHV4DCOBJECT const& sender, winrt::guid const& boxed, WF::IInspectable const& args)
-	{
-		HV4DListSupportedInterfaces();
-
-		HV4DCreatedDateTime();
-
-		HV4DUpdatedDateTime();
-
-		owner_handle = sender;
-
-		extended_args_type = boxed;
-
-		extended_args = args;
 
 		return;
 

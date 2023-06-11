@@ -1,16 +1,16 @@
 #pragma once
 
-#include "IUnknown.g.h"
+#include "HV4DDO.g.h"
 
 namespace WF = winrt::Windows::Foundation;
 namespace WFC = winrt::Windows::Foundation::Collections;
 
 namespace winrt::HV4D::implementation
 {
-	struct IUnknown : IUnknownT<IUnknown>
+	struct HV4DDO : HV4DDOT<HV4DDO>
 	{
 	public:
-		IUnknown() = default;
+		HV4DDO() = default;
 
 
 
@@ -20,7 +20,7 @@ namespace winrt::HV4D::implementation
 
 namespace winrt::HV4D::factory_implementation
 {
-	struct IUnknown : IUnknownT<IUnknown, implementation::IUnknown>
+	struct HV4DDO : HV4DDOT<HV4DDO, implementation::HV4DDO>
 	{
 
 	};

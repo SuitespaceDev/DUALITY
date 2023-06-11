@@ -1,9 +1,12 @@
+import "IHV4DRETURN.idl";
+
 namespace HV4D
 {
     [uuid("A2562E19-2B87-47C9-B908-D8924B9BD9BF")]
     [version(0x10000001)]
     interface IHV4DPARAMETER
     {
+        IHV4DRETURN HV4DListValues(Windows.Foundation.Collections.IMap<Guid, Object> values);
 
 
     }

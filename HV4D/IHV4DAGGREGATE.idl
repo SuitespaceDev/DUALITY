@@ -7,9 +7,11 @@ namespace HV4D
     interface IHV4DAGGREGATE
     {
         IHV4DRETURN HV4DAGGREGATE(
-            Windows.Foundation.Collections.IMap<Guid, Object> instruction,
-            Windows.Foundation.Collections.IMap<Guid, Object> PoP, 
+            Windows.Foundation.Collections.IMap<Guid, Object> execute,
+            Windows.Foundation.Collections.IMap<Guid, Object> pop, 
             Windows.Foundation.Collections.IMap<Guid, Object> values);
+
+        event Windows.Foundation.TypedEventHandler<Object, Object> sink;
 
     }
 

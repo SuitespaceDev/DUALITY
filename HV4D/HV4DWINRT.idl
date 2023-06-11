@@ -1,0 +1,9 @@
+namespace HV4D
+{
+    runtimeclass HV4DWINRT : [default] HV4D.IHV4DCOBJECT
+    {
+        HV4DWINRT();
+
+    }
+
+}

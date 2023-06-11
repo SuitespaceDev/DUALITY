@@ -17,64 +17,84 @@ namespace winrt::HV4D::implementation
 	public:
 		HV4DCOBJECT();
 
-		HV4DCOBJECT(HV4D::IHV4DCOBJECT const&);
-
-		HV4DCOBJECT(HV4D::IHV4DCOBJECT const&, winrt::guid const&, WF::IInspectable const&);
-
-	private:
-		HV4D::IHV4DCOBJECT owner_handle{ nullptr };
-
-		winrt::guid extended_args_type{ L"{2D048E34-FDC5-4230-9C3A-BD05DAF60D1B}" };
-
-		WF::IInspectable extended_args{ nullptr };
+		HV4DCOBJECT(WFC::IMap<winrt::guid, IInspectable> initializers);
 
 	public:
-		winrt::Windows::Foundation::Collections::IVector<HV4D::HV4DT_TYPE_CONTRACT> HV4DSupportedInterfaces();
+		virtual HV4D::IHV4DRETURN HV4DSupportedInterfaces(WFC::IMap<winrt::guid, IInspectable> interfaces);
 
 	private:
-		void HV4DListSupportedInterfaces();
-
-		winrt::Windows::Foundation::Collections::IVector<HV4D::HV4DT_TYPE_CONTRACT> SupportedInterfaces{};
+		WFC::IMap<winrt::guid, IInspectable> SupportedInterfaces{ nullptr };
 
 	public:
-		winrt::guid HV4DUuidOfInstance();
+		virtual IHV4DRETURN HV4DSetInstanceData(WFC::IMap<winrt::guid, IInspectable> instance);
 
-		uint64_t HV4DCreatedDateTime();
-
-		uint64_t HV4DUpdatedDateTime();
-
-		winrt::guid HV4DUuidOfClassObject();
-
-		winrt::hstring HV4DNameOfClassObject();
-
-		winrt::guid HV4DUuidOfCollection();
+		virtual IHV4DRETURN HV4DGetInstanceData(WFC::IMap<winrt::guid, IInspectable> instance);
 
 	private:
-		void HV4DSetUuidOfInstance();
+		winrt::guid UuidOfInstance{ L"" };
 
-		winrt::guid uuid_of_instance{};
+		uint64_t CreatedDateTime{ 0 };
 
-		void HV4DSetCreatedDateTime();
+		uint64_t UpdatedDateTime{ 0 };
 
-		uint64_t date_created{};
+		winrt::guid UuidOfCollection{ L"" };
 
-		void HV4DSetUpdatedDateTime();
+		winrt::guid UuidOfClassObject{ L"" };
 
-		uint64_t date_updated{};
+		winrt::hstring NameOfClassObject{ L"" };
+
+		winrt::guid UuidOfClassObjectSet{ L"" };
+
+		uint64_t IdOfClassObjectSet{ 0 };
 
 	public:
-		HV4D::IHV4DTTYPE HV4DGetTType();
+		virtual IHV4DRETURN HV4DSetBrokerData(WFC::IMap<winrt::guid, IInspectable> broker);
 
-		HV4D::IHV4DSERVICE HV4DGetService();
+		virtual IHV4DRETURN HV4DGetBrokerData(WFC::IMap<winrt::guid, IInspectable> broker);
 
+	private:
+		winrt::guid HV4DGetBrokerTypeUuid{ L"" };
+
+		winrt::guid HV4DGetBrokerTypeId{ L"" };
+
+		winrt::hstring HV4DGetBrokerTypeName{ L"" };
+
+		HV4D::IHV4DSERVICE HV4DGetBrokerService{ nullptr };
+
+	public:
+		virtual HV4D::IHV4DRETURN HV4DAGGREGATE(
+			WFC::IMap<winrt::guid, IInspectable> execute,
+			WFC::IMap<winrt::guid, IInspectable> pop,
+			WFC::IMap<winrt::guid, IInspectable> values);
+
+		winrt::event<WF::TypedEventHandler<IInspectable, IInspectable>> sink;
+
+	private:
+		/*** FOR TEMPLATE PURPOSES ONLY ***/
+
+	public:
+		HV4D::IHV4DRETURN HV4DListFunctionMembers(WFC::IMap<winrt::guid, IInspectable> functions);
+
+		HV4D::IHV4DRETURN HV4DListEventMembers(WFC::IMap<winrt::guid, IInspectable> events);
+
+	private:
+		HV4D::IHV4DFUNCTION Functions{ nullptr };
+
+		HV4D::IHV4DFUNCTION Events{ nullptr };
+
+	public:
 
 
 	private:
+		IInspectable Sender{ nullptr };
 
+		winrt::guid ExtendedArgsType{ L"" };
 
+		IInspectable HV4DExtendedArgs{ nullptr };
 
+		winrt::hstring HV4DComments{ L"" };
 
-	}
+	};
 
 }
 

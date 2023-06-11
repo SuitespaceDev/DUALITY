@@ -11,6 +11,8 @@ namespace HV4D
     {
         HV4DCOBJECT();
 
+        HV4DCOBJECT(Windows.Foundation.Collections.IMap<Guid, Object> initializers);
+
     }
 
 }

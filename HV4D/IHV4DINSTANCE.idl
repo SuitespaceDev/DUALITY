@@ -1,24 +1,14 @@
+import "IHV4DRETURN.idl";
+
 namespace HV4D
 {
 	[uuid("C306CFBA-8DD6-4A03-8DE5-9C3329111EC1")]
     [version(0x10000001)]
     interface IHV4DINSTANCE
     {
-		Guid HV4DUuidOfInstance();
+		IHV4DRETURN HV4DSetInstanceData(Windows.Foundation.Collections.IMap<Guid, Object> instance);
 
-		UInt64 HV4DCreatedDateTime();
-
-		UInt64 HV4DUpdatedDateTime();
-
-		Guid HV4DUuidOfCollection();
-
-		Guid HV4DUuidOfClassObject();
-
-		String HV4DNameOfClassObject();
-
-		Guid HV4DUuidOfClassObjectSet();
-
-		UInt64 HV4DIdOfClassObjectSet();
+		IHV4DRETURN HV4DGetInstanceData(Windows.Foundation.Collections.IMap<Guid, Object> instance);
 
     }
 

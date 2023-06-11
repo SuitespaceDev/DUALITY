@@ -1,4 +1,4 @@
-import "IHV4DSERVICE.idl";
+import "IHV4DRETURN.idl";
 
 namespace HV4D
 {
@@ -6,13 +6,9 @@ namespace HV4D
 	[version(0x10000001)]
 	interface IHV4DBROKER
 	{
-		Guid HV4DGetBrokerTypeUuid();
+		IHV4DRETURN HV4DSetBrokerData(Windows.Foundation.Collections.IMap<Guid, Object> broker);
 
-		Guid HV4DGetBrokerTypeId();
-
-		String HV4DGetBrokerTypeName();
-
-		IHV4DSERVICE HV4DGetBrokerService();
+		IHV4DRETURN HV4DGetBrokerData(Windows.Foundation.Collections.IMap<Guid, Object> broker);
 
 	};
 

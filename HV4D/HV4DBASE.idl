@@ -1,0 +1,9 @@
+namespace HV4D
+{
+    runtimeclass HV4DBASE : [default] HV4D.IHV4DCOBJECT
+    {
+        HV4DBASE();
+
+    }
+
+}

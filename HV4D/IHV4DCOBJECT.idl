@@ -1,5 +1,4 @@
-import "IHV4DITERATOR.idl";
-import "IHV4DCONTRACT.idl";
+import "IHV4DRETURN.idl";
 
 namespace HV4D
 {
@@ -7,7 +6,7 @@ namespace HV4D
     [version(0x10000001)]
     interface IHV4DCOBJECT
     {
-        Windows.Foundation.Collections.IMap<Guid, Object> HV4DSupportedInterfaces();
+         IHV4DRETURN HV4DSupportedInterfaces(Windows.Foundation.Collections.IMap<Guid, Object> interfaces);
 
     }
 

@@ -1,10 +1,14 @@
+import "IHV4DRETURN.idl";
+
 namespace HV4D
 {
     [uuid("13CDA31B-6385-43D6-AFEB-66AB115E1A3D")]
     [version(0x10000001)]
     interface IHV4DCONTRACT
     {
+        IHV4DRETURN HV4DListFunctionMembers(Windows.Foundation.Collections.IMap<Guid, Object> functions);
 
+        IHV4DRETURN HV4DListEventMembers(Windows.Foundation.Collections.IMap<Guid, Object> events);
 
     }
 
